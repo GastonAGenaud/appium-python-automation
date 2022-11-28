@@ -1,0 +1,11 @@
+{
+    "PhoneField": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "#username"
+  },
+  "PasswordField": {
+    "GetFieldBy": "Id",
+    "ValueToFind": "#password"
+  }
+
+}
