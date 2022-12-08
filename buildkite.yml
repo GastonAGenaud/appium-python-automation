@@ -1,0 +1,13 @@
+env:
+  agents: mac-os
+
+steps:
+  - label: "Pipeline example"
+    command: 
+      - 'ls -l -a'
+      - 'pwd'
+        
+  - label: "Pipeline example - 2"
+    command: "echo $BUILDKITE_MESSAGE"
+    
+   
