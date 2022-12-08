@@ -11,8 +11,8 @@ def before_scenario(context, scenario):
                                                             'platformVersion': '11.0',
                                                             'deviceName': 'Pixel',
                                                             'automationName': 'UiAutomator2',
-                                                            'app': basedir + u'/app/binaries/app-release-4_1_2.apk',
-                                                            'appPackage': 'com.myWorkDoc',
+                                                            'app': basedir + u'/app/binaries/EXAMPLE.apk',
+                                                            'appPackage': '',
                                                             'autoAcceptAlerts': 'true',  # to accept all alerts
                                                             'autoGrantPermissions': 'true'
                                                             })
