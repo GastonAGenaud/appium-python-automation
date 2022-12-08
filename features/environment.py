@@ -1,5 +1,5 @@
 from appium import webdriver
-from app.application import Application
+from src.application import Application
 import os
 
 basedir = os.path.abspath(os.path.join(__file__, "../.."))
@@ -11,7 +11,7 @@ def before_scenario(context, scenario):
                                                             'platformVersion': '11.0',
                                                             'deviceName': 'Pixel',
                                                             'automationName': 'UiAutomator2',
-                                                            'app': basedir + u'/app/binaries/EXAMPLE.apk',
+                                                            'src': basedir + u'/src/binaries/EXAMPLE.apk',
                                                             'appPackage': '',
                                                             'autoAcceptAlerts': 'true',  # to accept all alerts
                                                             'autoGrantPermissions': 'true'

@@ -8,6 +8,6 @@ steps:
       - 'pwd'
         
   - label: "Pipeline example - 2"
-    command: "echo $BUILDKITE_MESSAGE"
+    command: "echo $MESSAGE"
     
    
