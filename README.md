@@ -24,6 +24,5 @@ PASSWORD=''
 #### Useful links:
 - https://www.swtestacademy.com/how-to-install-appium-on-mac/
 - https://automated-testing.info/t/mobilnaya-avtomatizacziya-s-appium-opyt-napisaniya-pervogo-testa/17221
-- https://www.youtube.com/watch?v=jnKd6PRhmDY
 - https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1
 
