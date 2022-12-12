@@ -11,7 +11,7 @@ def before_scenario(context, scenario):
                                                             'platformVersion': '11.0',
                                                             'deviceName': 'Pixel',
                                                             'automationName': 'UiAutomator2',
-                                                            'src': basedir + u'/src/binaries/EXAMPLE.apk',
+                                                            'src': basedir + u'/resources/binaries/EXAMPLE.apk',
                                                             'appPackage': '',
                                                             'autoAcceptAlerts': 'true',  # to accept all alerts
                                                             'autoGrantPermissions': 'true'
