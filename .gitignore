@@ -131,3 +131,5 @@ dmypy.json
 environment
 *.apk
 ./features/credentials.py
+./reports/report/
+json.pretty.output

@@ -1,0 +1,63 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/tests/login_tests.feature:3",
+      "name": "Successful Login",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/tests/login_tests.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:4"
+          },
+          "name": "I open login page",
+          "result": {
+            "duration": 5.43607759475708,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/tests/login_tests.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:9"
+          },
+          "name": "I login with email and password",
+          "result": {
+            "duration": 13.481578588485718,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/tests/login_tests.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:14"
+          },
+          "name": "I am on main page",
+          "result": {
+            "duration": 1.9173307418823242,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/tests/login_tests.feature:1",
+  "name": "Tests for MyWorkDoc application",
+  "status": "passed",
+  "tags": []
+}
+]
