@@ -1,2 +1,2 @@
-PHONE = "9032617001"
-PASSWORD = "!Mobile$toreReviewMWD22!"
+PHONE = ""
+PASSWORD = "!!"
