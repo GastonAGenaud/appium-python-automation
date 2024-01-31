@@ -1,7 +1,0 @@
-Feature: login for test APK # features/tests/loginPageTest.feature:1
-
-  Scenario: Login Successfully             # features/tests/loginPageTest.feature:3
-    Given I open the application           # features/steps/login_steps.py:4
-    When I enter my user and password      # features/steps/login_steps.py:9
-    Then I should see the successful login # features/steps/login_steps.py:14
-
