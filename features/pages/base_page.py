@@ -1,3 +1,6 @@
+from telnetlib import EC
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as expect
 from selenium.common.exceptions import TimeoutException
@@ -16,8 +19,10 @@ class Page:
                                         value=locator[1])
 
     def click_on_element(self, locator):
-        element = self.driver.find_element(by=locator[0],
-                                           value=locator[1])
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located(locator)
+        )
+        element = self.driver.find_element(by=locator[0], value=locator[1])
         element.click()
 
     def type_phone(self):

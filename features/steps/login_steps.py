@@ -1,17 +1,16 @@
 from behave import given, when, then
 
 
-@given("I open login page")
-def open_login_page(context):
-    context.app.launch_page.login_with_existing_account()
+@given('I open the application')
+def step_open_app(context):
+    context.app.login_state = context.app.login_page.login_successfully()
 
 
+@when("I enter my user and password")
+def step_enter_user_and_password(context):
+    context.app.login_page.login_successfully()
 
-@when("I login with email and password")
-def login_with_email_and_password(context):
-    context.app.login_page.login_with_email_and_password()
 
-
-@then("I am on main page")
-def verify_main_page_open(context):
-    assert bool(context.app.main_page.verify_main_page_is_open())
+@then(u'I should see the successful login')
+def step_check_successful_login(context):
+    assert context.app.login_page.is_logged_in(), "The login was unsuccessful"
