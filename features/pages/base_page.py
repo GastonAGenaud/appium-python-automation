@@ -48,3 +48,22 @@ class Page:
             wait.until(expect.visibility_of_element_located(locator))
         except TimeoutException:
             print("Element no visible")
+
+    def scroll_to_element(self, locator):
+        """
+        Scrolls the mobile view until the element specified by the locator is in view.
+        """
+        try:
+            element = self.find_element(locator)
+
+            if self.driver.capabilities['platformName'].lower() == 'android':
+                # Para Android, utilizando UIAutomator2
+                self.driver.execute_script("mobile: scroll", {"strategy": "accessibility id",
+                                                              "selector": element.accessibility_id,
+                                                              "action": "visible"})
+            else:
+                # Para iOS, utilizando Mobile: scroll
+                self.driver.execute_script("mobile: scroll", {"element": element.id,
+                                                              "toVisible": True})
+        except TimeoutException:
+            print("Element not found to scroll to")

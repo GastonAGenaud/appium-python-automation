@@ -16,7 +16,7 @@
           },
           "name": "I open the application",
           "result": {
-            "duration": 37.383118867874146,
+            "duration": 31.399312257766724,
             "status": "passed"
           },
           "step_type": "given"
@@ -28,9 +28,9 @@
             "arguments": [],
             "location": "features/steps/login_steps.py:9"
           },
-          "name": "I enter my user and password",
+          "name": "I enter my user",
           "result": {
-            "duration": 0.08212065696716309,
+            "duration": 0.597325325012207,
             "status": "passed"
           },
           "step_type": "when"
@@ -42,9 +42,75 @@
             "arguments": [],
             "location": "features/steps/login_steps.py:14"
           },
-          "name": "I should see the successful login",
+          "name": "I should see welcome text",
           "result": {
-            "duration": 0.05124187469482422,
+            "duration": 0.2016308307647705,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/tests/loginPageTest.feature:8",
+      "name": "Selecting Update States",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/tests/loginPageTest.feature:9",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:4"
+          },
+          "name": "I open the application",
+          "result": {
+            "duration": 31.40373396873474,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/tests/loginPageTest.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:9"
+          },
+          "name": "I enter my user",
+          "result": {
+            "duration": 1.0363283157348633,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/tests/loginPageTest.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:19"
+          },
+          "name": "select Update 1",
+          "result": {
+            "duration": 0.09849309921264648,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/tests/loginPageTest.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:24"
+          },
+          "name": "select Update 2",
+          "result": {
+            "duration": 0.09900736808776855,
             "status": "passed"
           },
           "step_type": "then"

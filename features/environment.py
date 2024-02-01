@@ -12,8 +12,8 @@ def before_scenario(context, scenario):
             'platformVersion': '14.0',
             'deviceName': 'Pixel XL API 34',
             'automationName': 'UiAutomator2',
-            'app': basedir + r'/Android_Appium_Demo.apk',
-            'appPackage': 'com.skill2lead.appiumdemo',
+            'app': basedir + r'/app-ruta-digital.apk',
+            'appPackage': 'com.rutadigital',
         })
 
         context.driver.implicitly_wait(30)

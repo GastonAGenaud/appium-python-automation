@@ -1,0 +1,13 @@
+Feature: login for test APK # features/tests/loginPageTest.feature:1
+
+  Scenario: Login Successfully     # features/tests/loginPageTest.feature:3
+    Given I open the application   # features/steps/login_steps.py:4
+    When I enter my user           # features/steps/login_steps.py:9
+    Then I should see welcome text # features/steps/login_steps.py:14
+
+  Scenario: Selecting Update States  # features/tests/loginPageTest.feature:8
+    Given I open the application     # features/steps/login_steps.py:4
+    When I enter my user             # features/steps/login_steps.py:9
+    And select Update 1              # features/steps/login_steps.py:19
+    Then select Update 2             # features/steps/login_steps.py:24
+
