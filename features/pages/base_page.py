@@ -1,5 +1,4 @@
 from telnetlib import EC
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as expect
@@ -19,11 +18,16 @@ class Page:
                                         value=locator[1])
 
     def click_on_element(self, locator):
-        WebDriverWait(self.driver, 10).until(
-            EC.presence_of_element_located(locator)
-        )
-        element = self.driver.find_element(by=locator[0], value=locator[1])
-        element.click()
+        print(f"Haciendo clic en el elemento: {locator}")
+        try:
+            WebDriverWait(self.driver, 10).until(
+                EC.visibility_of_element_located(locator)
+            )
+            element = self.driver.find_element(*locator)
+            element.click()
+            print("Clic exitoso.")
+        except TimeoutException as e:
+            print(f"Tiempo de espera excedido para hacer clic en el elemento: {e}")
 
     def type_phone(self):
         # https://developer.android.com/reference/android/view/KeyEvent#KEYCODE_1
@@ -38,9 +42,14 @@ class Page:
         element.press_keycode(0x0000000e)
 
     def input(self, text, locator):
-        password_input = self.driver.find_element(by=locator[0],
-                                                  value=locator[1])
-        password_input.send_keys(text)
+        try:
+            WebDriverWait(self.driver, 10).until(EC.presence_of_element_located(locator))
+            password_input = self.driver.find_element(by=locator[0], value=locator[1])
+            password_input.clear()
+            password_input.send_keys(text)
+        except TimeoutException as e:
+            print(f"Waiting time exceeded: {e}")
+            raise
 
     def implicit_wait_visible(self, locator):
         try:
@@ -57,13 +66,14 @@ class Page:
             element = self.find_element(locator)
 
             if self.driver.capabilities['platformName'].lower() == 'android':
-                # Para Android, utilizando UIAutomator2
+                # For Android, using UIAutomator2
                 self.driver.execute_script("mobile: scroll", {"strategy": "accessibility id",
                                                               "selector": element.accessibility_id,
                                                               "action": "visible"})
             else:
-                # Para iOS, utilizando Mobile: scroll
+                # For iOS, using Mobile: scroll
                 self.driver.execute_script("mobile: scroll", {"element": element.id,
                                                               "toVisible": True})
         except TimeoutException:
             print("Element not found to scroll to")
+

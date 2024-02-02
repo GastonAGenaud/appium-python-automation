@@ -18,34 +18,34 @@ class LoginPage(Page):
     submitButton = (MobileBy.ID, 'com.skill2lead.appiumdemo:id/Btn_admin_sub')
     successLoginPopUp = (MobileBy.XPATH, '//android.widget.FrameLayout['
                                          '@resource-id="android:id/content"]/android.widget.LinearLayout')
-    continueButton = MobileBy.CLASS_NAME, 'android.widget.Button'
-    welcomeMessage = MobileBy.XPATH, '//android.widget.TextView[@text="Bienvenido, Test!"]'
-    updateState1 = MobileBy.XPATH, '//android.widget.Button[@content-desc="Update State 1"]'
-    updateState2 = MobileBy.XPATH, '//android.widget.Button[@content-desc="Update State 2"]'
-
-    # def login_with_email_and_password(self):
-    #     self.click_on_element(self.login_btn)
-    #     self.click_on_element(self.password_txt)
-    #     self.input(PASSWORD, self.password_txt)
-    #     self.driver.hide_keyboard()
-    #     self.click_on_element(self.login_btn)
+    continueButton = (MobileBy.CLASS_NAME, 'android.widget.Button')
+    welcomeMessage = (MobileBy.XPATH, '//android.widget.TextView[@text="Bienvenido, Test!"]')
+    updateState1 = (MobileBy.XPATH, '//android.widget.Button[@content-desc="Update State 1"]')
+    updateState2 = (MobileBy.XPATH, '//android.widget.Button[@content-desc="Update State 2"]')
+    detailsBtn = (MobileBy.NAME, 'Details')
+    pedidosBtn = (MobileBy.NAME, 'Pedidos')
+    cameraBtn = (MobileBy.NAME, 'Camera')
 
     def login_successfully(self):
         if not self.is_logged_in():
             # self.click_on_element(self.loginbutton)
             self.input("Test", self.enterText)
             self.click_on_element(self.continueButton)
-            self.scroll_to_element(self.updateState1)
-            self.click_on_element(self.updateState1)
-            self.scroll_to_element(self.updateState2)
-            self.click_on_element(self.updateState2)
-            # self.input("admin123", self.enterPassword)
-            # self.click_on_element(self.clickloginButton)
-            #
-            # assert self.is_logged_in(), "El inicio de sesión no fue exitoso."
-            #
-            # self.input("Code2Lead", self.enterText)
-            # self.click_on_element(self.submitButton)
+
+    def selectingOptions(self):
+        print("Starting option selection...")
+        if not self.is_logged_in():
+            print("Not logged in.")
+            self.input("Test", self.enterText)
+            print("Text entered successfully.")
+            self.click_on_element(self.continueButton)
+            print("ContinueButton element clicked.")
+            self.click_on_element(self.detailsBtn)
+            print("DetailsBtn element clicked.")
+            self.click_on_element(self.ordersBtn)
+            print("OrdersBtn element clicked.")
+            self.click_on_element(self.cameraBtn)
+            print("CameraBtn element clicked.")
 
     def is_logged_in(self):
         return self.is_element_present(self.welcomeMessage)
@@ -58,4 +58,3 @@ class LoginPage(Page):
             return False
 
         # TODO: Validar que se utilicen credenciales correctas (No hay botón "Reintentar")
-

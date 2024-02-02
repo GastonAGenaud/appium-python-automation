@@ -16,7 +16,7 @@
           },
           "name": "I open the application",
           "result": {
-            "duration": 31.399312257766724,
+            "duration": 32.01731753349304,
             "status": "passed"
           },
           "step_type": "given"
@@ -30,7 +30,7 @@
           },
           "name": "I enter my user",
           "result": {
-            "duration": 0.597325325012207,
+            "duration": 0.8414411544799805,
             "status": "passed"
           },
           "step_type": "when"
@@ -44,7 +44,7 @@
           },
           "name": "I should see welcome text",
           "result": {
-            "duration": 0.2016308307647705,
+            "duration": 0.10076165199279785,
             "status": "passed"
           },
           "step_type": "then"
@@ -55,62 +55,76 @@
     },
     {
       "keyword": "Scenario",
-      "location": "features/tests/loginPageTest.feature:8",
-      "name": "Selecting Update States",
+      "location": "features/tests/loginPageTest.feature:14",
+      "name": "Select bottom options",
       "status": "passed",
       "steps": [
         {
           "keyword": "Given",
-          "location": "features/tests/loginPageTest.feature:9",
+          "location": "features/tests/loginPageTest.feature:15",
           "match": {
             "arguments": [],
             "location": "features/steps/login_steps.py:4"
           },
           "name": "I open the application",
           "result": {
-            "duration": 31.40373396873474,
+            "duration": 31.86906337738037,
             "status": "passed"
           },
           "step_type": "given"
         },
         {
           "keyword": "When",
-          "location": "features/tests/loginPageTest.feature:10",
+          "location": "features/tests/loginPageTest.feature:16",
           "match": {
             "arguments": [],
             "location": "features/steps/login_steps.py:9"
           },
           "name": "I enter my user",
           "result": {
-            "duration": 1.0363283157348633,
+            "duration": 0.7724785804748535,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "And",
-          "location": "features/tests/loginPageTest.feature:11",
+          "location": "features/tests/loginPageTest.feature:17",
           "match": {
             "arguments": [],
-            "location": "features/steps/login_steps.py:19"
+            "location": "features/steps/login_steps.py:29"
           },
-          "name": "select Update 1",
+          "name": "I select Details option",
           "result": {
-            "duration": 0.09849309921264648,
+            "duration": 0.09982109069824219,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "And",
+          "location": "features/tests/loginPageTest.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login_steps.py:34"
+          },
+          "name": "I select Pedidos option",
+          "result": {
+            "duration": 0.10663652420043945,
             "status": "passed"
           },
           "step_type": "when"
         },
         {
           "keyword": "Then",
-          "location": "features/tests/loginPageTest.feature:12",
+          "location": "features/tests/loginPageTest.feature:19",
           "match": {
             "arguments": [],
-            "location": "features/steps/login_steps.py:24"
+            "location": "features/steps/login_steps.py:39"
           },
-          "name": "select Update 2",
+          "name": "I select Camera option",
           "result": {
-            "duration": 0.09900736808776855,
+            "duration": 0.12180328369140625,
             "status": "passed"
           },
           "step_type": "then"

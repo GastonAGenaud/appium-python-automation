@@ -24,3 +24,18 @@ def step_check_successful_login(context):
 @then(u'select Update 2')
 def step_check_successful_login(context):
     context.app.login_page.login_successfully()
+
+
+@when(u'I select Details option')
+def step_check_successful_login(context):
+    context.app.login_page.selectingOptions()
+
+
+@when(u'I select Pedidos option')
+def step_check_successful_login(context):
+    context.app.login_page.selectingOptions()
+
+
+@then(u'I select Camera option')
+def step_check_successful_login(context):
+    context.app.login_page.selectingOptions()
