@@ -6,15 +6,16 @@ basedir = os.path.abspath(os.path.join(__file__, "../.."))
 
 
 def before_scenario(context, scenario):
-    context.driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub",
+    context.driver = webdriver.Remote("http://127.0.0.1:4723",
                                       desired_capabilities={'platformName': 'Android',
-                                                            'platformVersion': '11.0',
-                                                            'deviceName': 'Pixel',
+                                                            'platformVersion': '13.0',
+                                                            'deviceName': 'Pixel 7 Pro API 33',
                                                             'automationName': 'UiAutomator2',
-                                                            'src': basedir + u'/src/binaries/EXAMPLE.apk',
-                                                            'appPackage': '',
-                                                            'autoAcceptAlerts': 'true',  # to accept all alerts
-                                                            'autoGrantPermissions': 'true'
+                                                            'src': basedir + u'/src/binaries/app-ruta-digital.apk',
+                                                            'appPackage': 'com.rutadigital',
+                                                            'appActivity': 'com.rutadigital.MainActivity'
+                                                            #'autoAcceptAlerts': 'true',  # to accept all alerts
+                                                            #'autoGrantPermissions': 'true'
                                                             })
 
     context.driver.implicitly_wait(30)

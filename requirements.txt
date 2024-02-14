@@ -1,3 +1,4 @@
 behave~=1.2.6
 selenium~=4.7.2
 Appium-Python-Client~=2.7.1
+behave-html-formatter==0.9.8

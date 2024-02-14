@@ -14,3 +14,5 @@ def login_with_email_and_password(context):
 @then("I am on main page")
 def verify_main_page_open(context):
     assert bool(context.app.main_page.verify_main_page_is_open())
+
+
