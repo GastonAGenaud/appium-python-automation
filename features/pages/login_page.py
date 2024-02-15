@@ -4,8 +4,6 @@ from appium.webdriver.common.mobileby import MobileBy
 
 
 class LoginPage(Page):
-    # title_lbl = (MobileBy.ID, 'com.skill2lead.appiumdemo:id/imageView')
-    # phone_txt = (MobileBy.CLASS_NAME, a'android.widget.EditText')
     login_btn = (MobileBy.XPATH, "//android.widget.TextView[@text='Login']")
     password_txt = (MobileBy.XPATH, "//android.widget.EditText[@text='Password']")
     loginbutton = (MobileBy.ID, 'com.skill2lead.appiumdemo:id/Login')
@@ -28,7 +26,6 @@ class LoginPage(Page):
 
     def login_successfully(self):
         if not self.is_logged_in():
-            # self.click_on_element(self.loginbutton)
             self.input("Test", self.enterText)
             self.click_on_element(self.continueButton)
 

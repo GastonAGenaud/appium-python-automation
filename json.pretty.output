@@ -16,7 +16,7 @@
           },
           "name": "I open the application",
           "result": {
-            "duration": 32.01731753349304,
+            "duration": 31.89402723312378,
             "status": "passed"
           },
           "step_type": "given"
@@ -30,7 +30,7 @@
           },
           "name": "I enter my user",
           "result": {
-            "duration": 0.8414411544799805,
+            "duration": 0.8980903625488281,
             "status": "passed"
           },
           "step_type": "when"
@@ -44,7 +44,7 @@
           },
           "name": "I should see welcome text",
           "result": {
-            "duration": 0.10076165199279785,
+            "duration": 0.09149312973022461,
             "status": "passed"
           },
           "step_type": "then"
@@ -68,7 +68,7 @@
           },
           "name": "I open the application",
           "result": {
-            "duration": 31.86906337738037,
+            "duration": 31.827333211898804,
             "status": "passed"
           },
           "step_type": "given"
@@ -82,7 +82,7 @@
           },
           "name": "I enter my user",
           "result": {
-            "duration": 0.7724785804748535,
+            "duration": 0.7847223281860352,
             "status": "passed"
           },
           "step_type": "when"
@@ -96,7 +96,7 @@
           },
           "name": "I select Details option",
           "result": {
-            "duration": 0.09982109069824219,
+            "duration": 0.10191059112548828,
             "status": "passed"
           },
           "step_type": "when"
@@ -110,7 +110,7 @@
           },
           "name": "I select Pedidos option",
           "result": {
-            "duration": 0.10663652420043945,
+            "duration": 0.10031962394714355,
             "status": "passed"
           },
           "step_type": "when"
@@ -124,7 +124,7 @@
           },
           "name": "I select Camera option",
           "result": {
-            "duration": 0.12180328369140625,
+            "duration": 0.10546064376831055,
             "status": "passed"
           },
           "step_type": "then"

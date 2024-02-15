@@ -12,7 +12,7 @@ def before_scenario(context, scenario):
             'platformVersion': '14.0',
             'deviceName': 'Pixel XL API 34',
             'automationName': 'UiAutomator2',
-            'app': basedir + r'/app-ruta-digital.apk',
+            'app': r'C:\Users\Rogo_\AppiumPython\appium-python-automation\src\binaries\app-ruta-digital.apk',
             'appPackage': 'com.rutadigital',
         })
 
