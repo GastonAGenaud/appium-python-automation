@@ -115,11 +115,11 @@ function Collapsible_expandAllFailed()
         </div>
         <div id="summary">
           <p id="totals">
-            <p id="feature_totals">Features: failed: 2</p>
-            <p id="scenario_totals">Scenarios: failed: 2</p>
-            <p id="step_totals">Steps: failed: 2, skipped: 2, passed: 1</p>
+            <p id="feature_totals">Features: failed: 1</p>
+            <p id="scenario_totals">Scenarios: passed: 7, failed: 1</p>
+            <p id="step_totals">Steps: passed: 23, failed: 1, skipped: 3</p>
           </p>
-          <p id="duration">Finished in 67.3 seconds</p>
+          <p id="duration">Finished in 60.5 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -131,24 +131,150 @@ function Collapsible_expandAllFailed()
       </div>
       <div class="feature">
         <h2>
-          <span class="val">Feature: Tests</span>
+          <span class="val">Feature: Tests for MyWorkDoc application</span>
         </h2>
         <span/>
       </div>
       <div class="scenario">
-        <span class="scenario_file">features/tests/example_test.feature:4</span>
-        <h3 onclick="Collapsible_toggle('scenario_0')" class="failed">
-          <span class="val">Scenario: Login</span>
+        <span class="scenario_file">features/tests/login_tests.feature:3</span>
+        <h3 onclick="Collapsible_toggle('scenario_0')">
+          <span class="val">Scenario: Successful Login</span>
         </h3>
         <ol class="scenario_steps" id="scenario_0">
-          <li class="step failed">
+          <li class="step passed">
             <div class="step_name">
-              <span class="keyword">When </span>
+              <span class="keyword">Given </span>
               <span class="step val">The user input an name</span>
-              <small class="step_duration">(0.000s)</small>
+              <small class="step_duration">(3.814s)</small>
             </div>
             <div class="step_file">
-              <span>features/steps/login_example_steps.py:4</span>
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">I am on main page</span>
+              <small class="step_duration">(0.889s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:14</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/tests/login_tests.feature:8</span>
+        <h3 onclick="Collapsible_toggle('scenario_1')">
+          <span class="val">Scenario: title on the home page</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_1">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(3.292s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">Valid that the title of the home page is visible</span>
+              <small class="step_duration">(0.995s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:24</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/tests/login_tests.feature:13</span>
+        <h3 onclick="Collapsible_toggle('scenario_2')">
+          <span class="val">Scenario: texts on the home page</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_2">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(3.399s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">Valid that the texts of the home page is visible</span>
+              <small class="step_duration">(1.312s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:29</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/tests/login_tests.feature:18</span>
+        <h3 onclick="Collapsible_toggle('scenario_3')" class="failed">
+          <span class="val">Scenario: buttons on the home page</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_3">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(3.657s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">Select the Update State 1 button</span>
+              <small class="step_duration">(0.949s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:36</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">And </span>
+              <span class="step val">Select the Update State 2 button</span>
+              <small class="step_duration">(0.568s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:41</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step failed">
+            <div class="step_name">
+              <span class="keyword">And </span>
+              <span class="step val">Select the Open Modal button</span>
+              <small class="step_duration">(19.219s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:46</span>
             </div>
             <span class="embed">
               <a onclick="Collapsible_toggle('embed_1')">Error Message</a>
@@ -157,10 +283,31 @@ function Collapsible_expandAllFailed()
     match.run(runner.context)
   File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\behave\matchers.py&quot;, line 98, in run
     self.func(context, *args, **kwargs)
-  File &quot;features\steps\login_example_steps.py&quot;, line 6, in user_input_an_name
-    context.app.example_page.user_input_name()
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AttributeError: 'ExamplePage' object has no attribute 'user_input_name'
+  File &quot;features\steps\login_steps.py&quot;, line 48, in select_open_modal
+    context.app.main_page.select_open_modal()
+  File &quot;E:\trabajo\Andina\appium-python-automation\features\pages\main_page.py&quot;, line 103, in select_open_modal
+    self.click_on_element(self.open_modal_btn)
+  File &quot;E:\trabajo\Andina\appium-python-automation\features\pages\base_page.py&quot;, line 19, in click_on_element
+    element = self.driver.find_element(by=locator[0],
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\appium\webdriver\webdriver.py&quot;, line 371, in find_element
+    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py&quot;, line 444, in execute
+    self.error_handler.check_response(response)
+  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\appium\webdriver\errorhandler.py&quot;, line 30, in check_response
+    raise wde
+  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\appium\webdriver\errorhandler.py&quot;, line 26, in check_response
+    super().check_response(response)
+  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py&quot;, line 249, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (C:\Users\Dangelo\.appium\node_modules\appium-uiautomator2-driver\node_modules\appium-android-driver\lib\commands\find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\Users\Dangelo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (C:\Users\Dangelo\AppData\Roaming\npm\node_modules\appium\node_modules\@appium\base-driver\lib\basedriver\commands\find.ts:75:12)
 </pre>
                   
             </span>
@@ -168,56 +315,192 @@ AttributeError: 'ExamplePage' object has no attribute 'user_input_name'
         </ol>
         <span/>
       </div>
-      <div class="feature">
-        <h2>
-          <span class="val">Feature: Tests for MyWorkDoc application</span>
-        </h2>
-        <span/>
-      </div>
       <div class="scenario">
-        <span class="scenario_file">features/tests/login_tests.feature:3</span>
-        <h3 onclick="Collapsible_toggle('scenario_1')" class="failed">
-          <span class="val">Scenario: Successful Login</span>
+        <span class="scenario_file">features/tests/login_tests.feature:28</span>
+        <h3 onclick="Collapsible_toggle('scenario_4')">
+          <span class="val">Scenario: Pedidos Section</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_1">
+        <ol class="scenario_steps" id="scenario_4">
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">Given </span>
-              <span class="step val">I open login page</span>
-              <small class="step_duration">(67.250s)</small>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(3.284s)</small>
             </div>
             <div class="step_file">
-              <span>features/steps/login_steps.py:4</span>
+              <span>features/steps/login_steps.py:19</span>
             </div>
             <span class="embed"/>
           </li>
-          <li class="step failed">
+          <li class="step passed">
             <div class="step_name">
               <span class="keyword">When </span>
-              <span class="step val">I login with email and password</span>
-              <small class="step_duration">(0.001s)</small>
+              <span class="step val">Select the Pedidos section</span>
+              <small class="step_duration">(0.960s)</small>
             </div>
             <div class="step_file">
-              <span>features/steps/login_steps.py:9</span>
+              <span>features/steps/login_steps.py:61</span>
             </div>
-            <span class="embed">
-              <a onclick="Collapsible_toggle('embed_2')">Error Message</a>
-              <pre id="embed_2" style="display: none">Traceback (most recent call last):
-  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\behave\model.py&quot;, line 1329, in run
-    match.run(runner.context)
-  File &quot;E:\trabajo\Andina\appium-python-automation\venv\Lib\site-packages\behave\matchers.py&quot;, line 98, in run
-    self.func(context, *args, **kwargs)
-  File &quot;features\steps\login_steps.py&quot;, line 11, in login_with_email_and_password
-    context.app.login_page.login_with_email_and_password()
-  File &quot;E:\trabajo\Andina\appium-python-automation\features\pages\login_page.py&quot;, line 14, in login_with_email_and_password
-    raise Exception(&quot;Please add credentials to configuration file!&quot;)
-Exception: Please add credentials to configuration file!
-
-Captured stdout:
-Element no visible
-Element no visible</pre>
-                  
-            </span>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">I am on main page</span>
+              <small class="step_duration">(0.553s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:14</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/tests/login_tests.feature:34</span>
+        <h3 onclick="Collapsible_toggle('scenario_5')">
+          <span class="val">Scenario: Camera Section enabled</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_5">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(3.376s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">Select the Camera section</span>
+              <small class="step_duration">(0.984s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:66</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">And </span>
+              <span class="step val">Click on the option while using the app</span>
+              <small class="step_duration">(1.392s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:71</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">valid that the camera section is opened</span>
+              <small class="step_duration">(1.590s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:76</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/tests/login_tests.feature:41</span>
+        <h3 onclick="Collapsible_toggle('scenario_6')">
+          <span class="val">Scenario: Camera Section disabled</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_6">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(3.353s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">Select the Camera section</span>
+              <small class="step_duration">(1.236s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:66</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">And </span>
+              <span class="step val">Click on the option Don't Allow</span>
+              <small class="step_duration">(0.651s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:81</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">Valid if the camera section is not open</span>
+              <small class="step_duration">(0.661s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:86</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/tests/login_tests.feature:48</span>
+        <h3 onclick="Collapsible_toggle('scenario_7')">
+          <span class="val">Scenario: Details Section</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_7">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">The user input an name</span>
+              <small class="step_duration">(2.848s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:19</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">Select the details section</span>
+              <small class="step_duration">(0.967s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:91</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">I validate the section titles</span>
+              <small class="step_duration">(0.555s)</small>
+            </div>
+            <div class="step_file">
+              <span>features/steps/login_steps.py:96</span>
+            </div>
+            <span class="embed"/>
           </li>
         </ol>
         <span/>

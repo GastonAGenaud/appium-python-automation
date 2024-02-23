@@ -1,2 +1,3 @@
 PHONE = ""
 PASSWORD = ""
+NAME = "Test"
