@@ -49,3 +49,14 @@ Scenario: Details Section
     Given The user input an name
     When Select the details section
     Then  I validate the section titles
+
+
+Scenario: Add a new post
+    Given The user input an name
+    When Select the details section
+    And Click on the option Agregar un post
+    And The user enters the title
+    And The user enters the body
+    And Click on the option Agregar
+    Then Valid post was added
+

@@ -96,4 +96,33 @@ def select_details_section(context):
 @then("I validate the section titles")
 def valid_titles_section(context):
     assert bool(context.app.main_page.valid_flatlist_from_API_title())
+    assert bool(context.app.main_page.valid_title_text())
+    assert bool(context.app.main_page.valid_body_text())
+    assert bool(context.app.main_page.valid_agregar_un_post_button())
+    assert bool(context.app.main_page.valid_cambiar_otro_state_button())
+    assert bool(context.app.main_page.valid_quiero_cambiar_mi_nombre_button())
 
+
+@when("Click on the option Agregar un post")
+def click_the_option_agregar_un_post(context):
+    context.app.main_page.select_agregar_un_post()
+
+
+@when("The user enters the title")
+def enter_the_title(context):
+    context.app.main_page.user_input_title()
+
+
+@when("The user enters the body")
+def enter_the_body(context):
+    context.app.main_page.user_input_body()
+
+
+@when("Click on the option Agregar")
+def click_the_option_agregar(context):
+    context.app.main_page.select_agregar()
+
+
+@then("Valid post was added")
+def valid_post(context):
+    assert bool(context.app.main_page.valid_the_test_title())

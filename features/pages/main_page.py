@@ -1,3 +1,4 @@
+from features.credentials import BODY, NAME
 from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.mobileby import MobileBy
 from appium.webdriver.common.touch_action import TouchAction
@@ -34,7 +35,10 @@ class MainPage(Page):
     agregar_un_post_btn = (MobileBy.XPATH, '//android.widget.Button[@content-desc="Agregar un post"]')
     cambiar_otro_state_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Cambiar otro state"]')
     quiero_cambiar_mi_nombre_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Quiero cambiar mi nombre"]')
-
+    argegar_btn = (MobileBy.XPATH, '//android.widget.Button[@content-desc="AGREGAR"]')
+    test_title = (MobileBy.XPATH, '//android.widget.TextView[@text="Test"]')
+    title_field = (MobileBy.XPATH, '//android.widget.EditText[@text="Title"]')
+    body_field = (MobileBy.XPATH, '//android.widget.EditText[@text="Body"]')
 
     def verify_main_page_is_open(self):
         self.implicit_wait_visible(self.MYWORKDOC_ICON_LIST)
@@ -137,3 +141,47 @@ class MainPage(Page):
         self.implicit_wait_visible(self.flatlist_from_Api_title)
         flatlist_from_Api_text = self.find_element(self.flatlist_from_Api_title).is_displayed()
         return flatlist_from_Api_text
+
+    def valid_title_text(self):
+        self.implicit_wait_visible(self.title_text)
+        title_text = self.find_element(self.title_text).is_displayed()
+        return title_text
+
+    def valid_body_text(self):
+        self.implicit_wait_visible(self.body_text)
+        body_text = self.find_element(self.body_text).is_displayed()
+        return body_text
+
+    def valid_agregar_un_post_button(self):
+        self.implicit_wait_visible(self.agregar_un_post_btn)
+        agregar_un_post_button = self.find_element(self.agregar_un_post_btn).is_displayed()
+        return agregar_un_post_button
+
+    def valid_cambiar_otro_state_button(self):
+        self.implicit_wait_visible(self.cambiar_otro_state_btn)
+        cambiar_otro_state_button = self.find_element(self.cambiar_otro_state_btn).is_displayed()
+        return cambiar_otro_state_button
+
+    def valid_quiero_cambiar_mi_nombre_button(self):
+        self.implicit_wait_visible(self.quiero_cambiar_mi_nombre_btn)
+        quiero_cambiar_mi_nombre_button = self.find_element(self.quiero_cambiar_mi_nombre_btn).is_displayed()
+        return quiero_cambiar_mi_nombre_button
+
+    def select_agregar_un_post(self):
+        self.click_on_element(self.agregar_un_post_btn)
+
+    def user_input_title(self):
+        self.click_on_element(self.title_field)
+        self.input(NAME, self.title_field)
+
+    def user_input_body(self):
+        self.click_on_element(self.body_field)
+        self.input(BODY, self.body_field)
+
+    def select_agregar(self):
+        self.click_on_element(self.argegar_btn)
+
+    def valid_the_test_title(self):
+        self.implicit_wait_visible(self.test_title)
+        test_title = self.find_element(self.test_title).is_displayed()
+        return test_title
