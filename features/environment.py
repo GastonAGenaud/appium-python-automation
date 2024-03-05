@@ -14,8 +14,6 @@ def before_scenario(context, scenario):
                                                             'src': basedir + u'/src/binaries/app-ruta-digital.apk',
                                                             'appPackage': 'com.rutadigital',
                                                             'appActivity': 'com.rutadigital.MainActivity'
-                                                            #'autoAcceptAlerts': 'true',  # to accept all alerts
-                                                            #'autoGrantPermissions': 'true'
                                                             })
 
     context.driver.implicitly_wait(30)

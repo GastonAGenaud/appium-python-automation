@@ -1,14 +1,6 @@
 from features.credentials import BODY, NAME
-from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.common.mobileby import MobileBy
-from appium.webdriver.common.touch_action import TouchAction
-from selenium.webdriver.support.wait import WebDriverWait
-
 from features.pages.base_page import Page
-
-
-def compare_data_with_expected(expected, real):
-    assert expected == real, "Expected '{}', but got '{}'".format(expected, real)
 
 
 class MainPage(Page):
@@ -17,15 +9,10 @@ class MainPage(Page):
     secondary_title = (MobileBy.XPATH, '//android.widget.TextView[@text="Ruta Digital"]')
     introductory_message = (MobileBy.XPATH, '//android.widget.TextView[@text="Aquí comienza el gran viaje de la nueva '
                                             'app para transportistas"]')
-    update_state_one_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Update State 1"]')
-    update_state_two_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Update State 2"]')
-    open_modal_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Open Modal"]')
-    close_modal_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Close Modal"]')
-    go_to_detailScreen_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Go to DetailScreen"]')
     details_section = (MobileBy.XPATH, '//android.widget.TextView[@text="Details"]')
     pedidos_section = (MobileBy.XPATH, '//android.widget.TextView[@text="Pedidos"]')
     Camera_section = (MobileBy.XPATH, '//android.widget.TextView[@text="Camera"]')
-    while_using_the_app_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="com.android.permissioncontroller:id/permission_message"]')
+    while_using_the_app_btn = (MobileBy.XPATH, '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_foreground_only_button"]')
     capturar_foto_btn = (MobileBy.XPATH, '//android.widget.Button[@content-desc="Capturar foto"]')
     dont_allow_btn = (MobileBy.ID, 'com.android.permissioncontroller:id/permission_deny_button')
     no_permision_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="No permision"]')
@@ -44,19 +31,6 @@ class MainPage(Page):
         self.implicit_wait_visible(self.MYWORKDOC_ICON_LIST)
         user_icon_list = self.find_element(self.MYWORKDOC_ICON_LIST).is_displayed()
         return user_icon_list
-        # compare_data_with_expected(expected=5, real=len(user_icon_list))
-        # compare_data_with_expected(expected="Your Story", real=user_icon_list[0].text)
-        #
-        # tab_bar = self.find_element(self.TAB_BAR)
-        # liner_tab = tab_bar.find_elements(self.LINER_BAR[0], self.LINER_BAR[1])
-        #
-        # compare_data_with_expected(expected=5, real=len(liner_tab))
-        #
-        # compare_data_with_expected(expected="Home", real=liner_tab[0].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Search and Explore", real=liner_tab[1].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Camera", real=liner_tab[2].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Activity", real=liner_tab[3].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Profile", real=liner_tab[4].get_attribute("content-desc"))
 
     def valid_title_home(self):
         self.implicit_wait_visible(self.title_home_page)
@@ -72,45 +46,6 @@ class MainPage(Page):
         self.implicit_wait_visible(self.introductory_message)
         introductory_message_home = self.find_element(self.introductory_message).is_displayed()
         return introductory_message_home
-
-    def select_update_state_one(self):
-        self.click_on_element(self.update_state_one_btn)
-
-    def select_update_state_two(self):
-        self.click_on_element(self.update_state_two_btn)
-
-    def select_open_modal(self):
-        wait = WebDriverWait(self.driver, 10)
-        wait.until(EC.presence_of_element_located(self.update_state_one_btn))
-
-        size = self.driver.get_window_size()
-        start_y = size['height'] * 0.7
-        end_y = size['height'] * 0.1
-
-        TouchAction(self.driver).press(x=50, y=start_y).move_to(x=50, y=end_y).release().perform()
-
-        import time
-        time.sleep(2)
-        self.driver.implicitly_wait(10)
-
-        wait.until(EC.presence_of_element_located(self.update_state_one_btn))
-
-        size = self.driver.get_window_size()
-        start_y = size['height'] * 0.7
-        end_y = size['height'] * 0.1
-
-        TouchAction(self.driver).press(x=50, y=start_y).move_to(x=50, y=end_y).release().perform()
-
-        import time
-        time.sleep(2)
-        self.driver.implicitly_wait(10)
-        self.click_on_element(self.open_modal_btn)
-
-    def select_close_modal(self):
-        self.click_on_element(self.close_modal_btn)
-
-    def select_go_to_detailScreen(self):
-        self.click_on_element(self.go_to_detailScreen_btn)
 
     def select_details_section(self):
         self.click_on_element(self.details_section)

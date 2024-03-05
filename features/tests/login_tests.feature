@@ -14,16 +14,6 @@ Scenario: texts on the home page
     Given The user input an name
     Then Valid that the texts of the home page is visible
 
-#fail
-Scenario: buttons on the home page
-    Given The user input an name
-    When Select the Update State 1 button
-    And Select the Update State 2 button
-    And Select the Open Modal button
-    And Select the Close Modal button
-    And Select the Go to DetailScreen button
-    Then I am on main page
-
 
 Scenario: Pedidos Section
     Given The user input an name

@@ -1,11 +1,6 @@
 from behave import given, when, then
 
 
-@given("I open login page")
-def open_login_page(context):
-    context.app.launch_page.login_with_existing_account()
-
-
 @when("I login with email and password")
 def login_with_email_and_password(context):
     context.app.login_page.login_with_email_and_password()
@@ -31,31 +26,6 @@ def verify_texts_visible(context):
     assert bool(context.app.main_page.valid_title_home())
     assert bool(context.app.main_page.valid_secondary_title_text())
     assert bool(context.app.main_page.valid_introductory_message())
-
-
-@when("Select the Update State 1 button")
-def select_update_state_one(context):
-    context.app.main_page.select_update_state_one()
-
-
-@when("Select the Update State 2 button")
-def select_update_state_two(context):
-    context.app.main_page.select_update_state_two()
-
-
-@when("Select the Open Modal button")
-def select_open_modal(context):
-    context.app.main_page.select_open_modal()
-
-
-@when("Select the Close Modal button")
-def select_close_modal(context):
-    context.app.main_page.select_close_modal()
-
-
-@when("Select the Go to DetailScreen button")
-def select_go_to_detailScreen(context):
-    context.app.main_page.select_go_to_detailScreen()
 
 
 @when("Select the Pedidos section")
