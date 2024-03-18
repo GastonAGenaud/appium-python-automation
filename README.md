@@ -40,3 +40,5 @@ PASSWORD=''
 
 ### Command to run the tests:
 "behave -f allure_behave.formatter:AllureFormatter -o ./reports/allure/ -f pretty -o ./AppiumPython/appium-python-automation\features\tests"   
+
+"behave -f allure_behave.formatter:AllureFormatter -o ./reports/allure/"
