@@ -1,52 +1,42 @@
-Feature: Tests for MyWorkDoc application
+# language: es
 
-Scenario: Successful Login
-    Given The user input an name
-    Then I am on main page
+Característica: Pruebas para la aplicación App Mi Ruta
 
+    Escenario: Inicio de sesión exitoso
+        Dado que el usuario ingresa un nombre
+        Y el usuario ingresa una contrasena
+        Cuando el usuario permite el acceso a la ubicación de este dispositivo
+        Entonces estoy en la página principal
 
-Scenario: title on the home page
-    Given The user input an name
-    Then Valid that the title of the home page is visible
+    Escenario: Sección Mapa
+        Dado que el usuario ingresa un nombre
+        Y el usuario ingresa una contrasena
+        Cuando el usuario permite el acceso a la ubicación de este dispositivo
+        Entonces valido que sea visible el botón Comenzar ruta
+        Y valido que sea visible el botón Modificar manualmente
 
+    Esquema del escenario: Sección Lista
+        Dado que el usuario ingresa un nombre
+        Y el usuario ingresa una contrasena
+        Cuando el usuario permite el acceso a la ubicación de este dispositivo
+        Y el usuario selecciona la sección Lista
+        Entonces valido que sea visible el botón Comenzar ruta
+        Y valido que sea visible la "<caracteristica>" con el "<valor>" del pedido
 
-Scenario: texts on the home page
-    Given The user input an name
-    Then Valid that the texts of the home page is visible
-
-
-Scenario: Pedidos Section
-    Given The user input an name
-    When Select the Pedidos section
-    Then I am on main page
-
-
-Scenario: Camera Section enabled
-    Given The user input an name
-    When Select the Camera section
-    And Click on the option while using the app
-    Then valid that the camera section is opened
-
-
-Scenario: Camera Section disabled
-    Given The user input an name
-    When Select the Camera section
-    And Click on the option Don't Allow
-    Then Valid if the camera section is not open
+        Ejemplos:
+            | caracteristica | valor           |
+            |   Local        | Rosa Esveile    |
+            |   Direccion    | Padre Tadeo 957 |
+            |   Estado       | Abierto         |
+            |   Producto     | 32              |
+            |   Efectivo     | $460.000        |
 
 
-Scenario: Details Section
-    Given The user input an name
-    When Select the details section
-    Then  I validate the section titles
 
 
-Scenario: Add a new post
-    Given The user input an name
-    When Select the details section
-    And Click on the option Agregar un post
-    And The user enters the title
-    And The user enters the body
-    And Click on the option Agregar
-    Then Valid post was added
+
+
+
+
+
 

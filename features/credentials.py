@@ -1,2 +1,2 @@
-NAME = "Test"
-BODY = "Example"
+USUARIO = "Test"
+CONTRASENA = "TEST"

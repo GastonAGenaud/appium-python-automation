@@ -1,83 +1,81 @@
-# Automation for mobile testing
-## Python, Behave & Appium ( skeleton )
+# Automatización para pruebas móviles
+## Python, Behave y Appium (esqueleto)
 
-This is an example of how to run Appium on a local Android machine.
-The example is based on several BDD test scenario.
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=alert_status&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=sqale_rating&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=security_rating&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=bugs&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=vulnerabilities&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=duplicated_lines_density&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=reliability_rating&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=sqale_index&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=coverage&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=ncloc&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=code_smells&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)
 
-# Requirements.
+Este es un ejemplo de cómo ejecutar Appium en una máquina Android local.
+El ejemplo se basa en varios escenarios de prueba BDD.
 
+# Requisitos.
+* instalación del controlador de appium uiautomator2
+* ANDROID_HOME = \AppData\Local\Android\Sdk https://developer.android.com/studio/command-line/variables
 * Python 3.10.X
-* pip and setuptools
-* [venv](`https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/`) (recommended)
+* pip y setuptools
+* [venv](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/) (recomendado)
 
-#### Location of feature files:
+#### Ubicación de los archivos de características:
 
     *.feature = (/features/tests/*.feature)
 
-#### Location of steps files: **.py = (/features/tests/*.feature)
+#### Ubicación de los archivos de pasos: **.py = (/features/tests/*.feature)
 
     *.py = (/features/steps/*.py)
 
-#### Location of page files
+#### Ubicación de los archivos de página
 
     *.py = (/features/pages/*.py)
 
-#### File Description base_page.py file
-1.def() find_element : function that finds the selector in the page.
-2.def() click_on_element : function that locates and clicks the selector on the page.
-3.def() input : function that locates the field selector to write in it.
-4def() implicit_wait_visible : function that waits for the selector to be visible on the page.
+#### Descripción del archivo base_page.py
+1. def() find_element: función que encuentra el selector en la página.
+2. def() click_on_element: función que localiza y hace clic en el selector de la página.
+3. def() input: función que localiza el selector del campo para escribir en él.
+4. def() implicit_wait_visible: función que espera a que el selector sea visible en la página.
 
-#### App
-The test cases are executed in the app "rutadigital" which is located: 
-(/src/binaries/app-route-digital.apk).
+#### Aplicación
+Los casos de prueba se ejecutan en la aplicación "rutadigital" que se encuentra en:
+(/src/binaries/app-MiRuta.apk).
 
-#### How to run:  
-Go to project root folder "appium-python-automation" 2.  
-2. Add credentials.py (/features/credentials.py)  
-``` credentials.py 
-NAME = "Test"  
-BODY = "Example"  
-```  
-3. Update desired capabilities for Android (/features/environment.py)  
-4. Execute command: "behave -f html -o results/behave-report.html".
+#### Cómo ejecutar:
+1. Ir a la carpeta raíz del proyecto "app-ruta-digital-qa-movil".
+2. Actualizar las capacidades deseadas para Android (/features/environment.py)
+3. Ejecutar el comando: "behave -f html -o results/behave-report.html".
 
-Translated with DeepL.com (free version)
+#### Resultados
 
-#### Results
+1. Se generará un archivo de resultados (behave-report.html) en la carpeta "/results".
 
-1. A results file (behave-report.html) will be generated in the "/results" folder.
-  
+## Guía para ejecutar y generar informes con Behave y Allure:
 
-## Guide to Running and Generating Reports with Behave and Allure:
+### Ejecutar pruebas con Behave:
 
+Para ejecutar pruebas usando Behave, usa el siguiente comando en tu terminal:
 
-### Running Tests with Behave:
+`behave -f html -o results/behave-report.html`.
 
-To run tests using Behave, use the following command in your terminal:
+Este comando ejecutará las pruebas y generará un informe en formato HTML en la ubicación especificada.
 
-`behave -f html -o results/behave-report.html`. 
+### Generar informes con Allure:
 
-This command will run the tests and generate a report in HTML format at the specified location.
+Para generar informes detallados usando Allure, ejecuta el siguiente comando después de ejecutar las pruebas con Behave:
 
-### Generating Reports with Allure:
+`behave -f allure_behave.formatter:AllureFormatter -o ./reports/`
 
-To generate detailed reports using Allure, run the following command after running the tests with Behave:
+Este comando generará los informes de Allure en la carpeta especificada.
 
-`behave -f allure_behave.formatter:AllureFormatter -o ./reports/` 
+### Ver informes con Allure:
 
-This command will generate the Allure reports in the specified folder.
+Una vez que hayas generado los informes de Allure, puedes verlos fácilmente usando el siguiente comando en tu terminal:
 
-### Viewing Reports with Allure:
+`allure serve ./reports/`
 
-Once you have generated the Allure reports, you can easily view them using the following command in your terminal:
-
-`allure serve ./reports/`  
-
-This command will open a local server and launch a web browser to view the reports generated by Allure.
-  
-  
-#### Useful links:  
-- https://www.swtestacademy.com/how-to-install-appium-on-mac/  
-- https://automated-testing.info/t/mobilnaya-avtomatizacziya-s-appium-opyt-napisaniya-pervogo-testa/17221  
-- https://www.youtube.com/watch?v=jnKd6PRhmDY
+Este comando abrirá un servidor local y lanzará un navegador web para ver los informes generados por Allure.
