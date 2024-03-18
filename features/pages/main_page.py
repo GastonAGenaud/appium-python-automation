@@ -5,10 +5,16 @@ from features.pages.base_page import Page
 class MainPage(Page):
     comenzar_ruta_button = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
     title_home_page = (MobileBy.XPATH, '//android.widget.TextView[@text="Bienvenido, Test!"]')
-    while_using_the_app_button = (MobileBy.XPATH, '//android.widget.Button[@resource-id="com.android.permissioncontroller:id/permission_allow_foreground_only_button"]')
+    while_using_the_app_button = (MobileBy.XPATH, '//android.widget.Button['
+                                                  '@resource-id="com.android.permissioncontroller:id'
+                                                  '/permission_allow_foreground_only_button"]')
     modificar_manualmente_button = (MobileBy.XPATH, '//android.widget.TextView[@text="Modificar manualmente"]')
     lista_tab = (MobileBy.XPATH,
-                 '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.View/android.view.View[2]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[2]')
+                 '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android'
+                 '.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
+                 '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
+                 '.ViewGroup[2]/android.view.View/android.view.View['
+                 '2]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[2]')
     pendientes_btn = (MobileBy.XPATH, '//android.widget')
 
     def valid_comenzar_ruta_button(self):
@@ -29,5 +35,6 @@ class MainPage(Page):
 
     def valid_value(self, caracteristica, valor):
         self.implicit_wait_visible(self.comenzar_ruta_button)
-        value = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@resource-id="TestTitle" and @text="{valor}"]').is_displayed()
+        value = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@resource-id="TestTitle" and '
+                                                         f'@text="{valor}"]').is_displayed()
         return value
