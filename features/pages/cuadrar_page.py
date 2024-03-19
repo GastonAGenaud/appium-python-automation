@@ -3,15 +3,15 @@ from features.pages.base_page import Page
 
 
 class CuadrarPage(Page):
-    PRODUCTO_ESPERADO = ""
-    TOTAL_ESPERADO = ""
-    TRANSFERENCIA_ESPERADA = ""
-    EFECTIVO_ESPERADO = ""
-    CHEQUE_ESPERADO = ""
-    CREDITO_ESPERADO = ""
-    REBAJADO_ESPERADO = ""
-    BOTON_CERRAR_TRANSPORTE_ID = ""
-    MENSAJE_TRANSPORTE_LISTO_ID = ""
+    PRODUCTO_ESPERADO_ID = (MobileBy.ID, "")
+    TOTAL_ESPERADO_ID = (MobileBy.ID, "")
+    TRANSFERENCIA_ESPERADA_ID = (MobileBy.ID, "")
+    EFECTIVO_ESPERADO_ID = (MobileBy.ID, "")
+    CHEQUE_ESPERADO_ID = (MobileBy.ID, "")
+    CREDITO_ESPERADO_ID = (MobileBy.ID, "")
+    REBAJADO_ESPERADO_ID = (MobileBy.ID, "")
+    BOTON_CERRAR_TRANSPORTE_ID = (MobileBy.ID, "")
+    MENSAJE_TRANSPORTE_LISTO_ID = (MobileBy.ID, "")
 
     def ingreso_correo(self, correo):
         return True

@@ -3,17 +3,29 @@ from features.pages.base_page import Page
 
 
 class AnulacionPage(Page):
+    PANTALLA_ANULACION_ID = (MobileBy.ID, "")
+    MOTIVOS_ID = (MobileBy.ID, "")
+    BOTON_ENVIAR_ID = (MobileBy.ID, "")
+    NOMBRE_ID = (MobileBy.ID, "")
+    RUTA_ID = (MobileBy.ID, "")
+    BOTON_COMENZAR_RUTA_ID = (MobileBy.ID, "")
+    BOTON_RETOMAR_PEDIDO_ID = (MobileBy.ID, "")
+    BOTON_VER_DETALLE_ID = (MobileBy.ID, "")
+
     def validar_pantalla_anulacion(self):
-        return True
+        pantalla_presente = self.find_element(*self.PANTALLA_ANULACION_ID).is_displayed()
+        return pantalla_presente
 
     def visualizar_pantalla_anulacion(self):
         return True
 
     def validar_presencia_motivos(self, motivos):
-        return True
+        motivos_presentes = self.find_element(*self.MOTIVOS_ID).is_displayed()
+        return motivos_presentes
 
     def validar_presencia_boton_enviar(self):
-        return True
+        boton_presente = self.find_element(*self.BOTON_ENVIAR_ID).is_displayed()
+        return boton_presente
 
     def clic_enviar_motivo(self):
         return True
@@ -31,7 +43,8 @@ class AnulacionPage(Page):
         return True
 
     def validar_presencia_boton_comenzar_ruta(self):
-        return True
+        boton_presente = self.find_element(*self.BOTON_COMENZAR_RUTA_ID).is_displayed()
+        return boton_presente
 
     def visualizar_pantalla_retomar_pedidos(self):
         return True
@@ -40,7 +53,8 @@ class AnulacionPage(Page):
         return True
 
     def validar_presencia_boton_retomar_pedido(self):
-        return True
+        boton_presente = self.find_element(*self.BOTON_RETOMAR_PEDIDO_ID).is_displayed()
+        return boton_presente
 
     def clic_retomar_pedido(self):
         return True
@@ -52,7 +66,8 @@ class AnulacionPage(Page):
         return True
 
     def validar_presencia_boton_ver_detalle(self):
-        return True
+        boton_presente = self.find_element(*self.BOTON_VER_DETALLE_ID).is_displayed()
+        return boton_presente
 
     def clic_ver_detalle(self):
         return True
