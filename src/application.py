@@ -7,3 +7,4 @@ class Application:
         self.login_page = LoginPage(driver)
         self.main_page = MainPage(driver)
 
+

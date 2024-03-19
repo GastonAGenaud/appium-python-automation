@@ -2,11 +2,8 @@
 
 Característica: Entregar pedido
 
-  Antecedentes:
-    Dado que voy a la pantalla de inicio de sesión
-
   Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Rebajados"
-    Y ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electrónico "<correoElectronico>"
     Y ingreso la contraseña "<contraseña>"
     Y hago clic en el botón "Ingresar"
     Y elijo la ruta "Felix de Amesti 920"
@@ -22,7 +19,7 @@ Característica: Entregar pedido
       | 3942342       | $448.200     | $1.800        |
 
   Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
-    Y ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electrónico "<correoElectronico>"
     Y ingreso la contraseña "<contraseña>"
     Y hago clic en el botón "Ingresar"
     Y elijo la ruta "Felix de Amesti 920"

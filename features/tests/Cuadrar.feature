@@ -1,12 +1,9 @@
 # language: es
 
-Característica: Cuadrar
-
-  Antecedentes: :
-    Dado que voy a la pantalla de inicio de sesión
+Escenario: Cuadrar
 
   Esquema del escenario: Validación de la pantalla "Vuelta finalizada"
-    Y ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electrónico "<correoElectronico>"
     Y ingreso la contraseña "<contraseña>"
     Y hago clic en el botón "Ingresar"
     Y elijo la ruta "Felix de Amesti 920"

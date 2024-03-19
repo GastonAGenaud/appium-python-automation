@@ -11,11 +11,6 @@ def ingresar_contraseña(context, contraseña):
     return True
 
 
-@when('hago clic en el botón "Ingresar"')
-def hacer_clic_ingresar(context):
-    return True
-
-
 @when('selecciono "{opcion}"')
 def seleccionar_opcion(context, opcion):
     return True

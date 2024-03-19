@@ -1,21 +1,6 @@
 from behave import given, when, then
 
 
-@when('ingreso el correo electrónico "{correoElectronico}"')
-def ingresar_correo(context, correoElectronico):
-    return True
-
-
-@when('ingreso la contraseña "{contraseña}"')
-def ingresar_contraseña(context, contraseña):
-    return True
-
-
-@when('hago clic en el botón "Ingresar"')
-def hacer_clic_ingresar(context):
-    return True
-
-
 @when('visualizo la factura con número "{numeroFactura}"')
 def visualizar_factura(context, numeroFactura):
     return True

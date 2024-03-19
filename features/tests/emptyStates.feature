@@ -2,11 +2,8 @@
 
 Característica: Estados Vacíos
 
-  Antecedentes:
-    Dado que voy a la pantalla de inicio de sesión
-
   Esquema del escenario: Validación de pantalla "Visitados"
-    Y ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electrónico "<correoElectronico>"
     Y ingreso la contraseña "<contraseña>"
     Y hago clic en el botón "Ingresar"
     Cuando selecciono "Visitados"
@@ -19,7 +16,7 @@ Característica: Estados Vacíos
       | Jonathan          | test123    |
 
   Esquema del escenario: Validación de pantalla "Anulados"
-    Y ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electrónico "<correoElectronico>"
     Y ingreso la contraseña "<contraseña>"
     Y hago clic en el botón "Ingresar"
     Cuando selecciono "Anulados"

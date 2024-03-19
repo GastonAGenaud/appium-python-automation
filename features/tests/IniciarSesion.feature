@@ -1,8 +1,5 @@
 Feature: Iniciar sesión
 
-    Background:
-        Given Voy a la pantalla de inicio de sesion
-
     Scenario Outline: Validacion de Iniciar sesion exitosamente
         And ingreso el correo electronico "<correoElectronico>"
         And ingreso la contraseña "<contraseña>"
