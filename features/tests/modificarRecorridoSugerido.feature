@@ -1,26 +1,25 @@
-Feature: Modificar recorrido sugerido
+# language: es
 
-    Background:
-        Given Voy a la pantalla de inicio de sesion
+Característica: Modificar recorrido sugerido
 
-    Scenario Outline: Validacion de la pantalla Comenzar ruta
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        Then valido que se visualice el boton "Comenzar ruta" en la pantalla de rutas
+    Esquema del escenario: Validacion de la pantalla Comenzar ruta
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Entonces valido que se visualice el boton "Comenzar ruta" en la pantalla de rutas
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion de la ruta "<nombreRuta>"
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago clic en el boton "Login"
-        And elijo la ruta "<nombreRuta>"
-        Then valido la informacion:
+    Esquema del escenario: Validacion de la ruta "<nombreRuta>"
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago clic en el boton "Login"
+        Y elijo la ruta "<nombreRuta>"
+        Entonces valido la informacion:
             | Texto              |
             | Rosa Esveile       |
             | Padre Tadeo 980    |
@@ -29,119 +28,119 @@ Feature: Modificar recorrido sugerido
             | Productos          |
             | Efectivo           |
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña | nombreRuta      |
             | test@test.com     | test123    | Padre Tadeo 957 |
             | Jonathan          | test123    | Entre rios 234  |
 
-    Scenario Outline: Validacion de seleccion de ruta
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        When selecciono la ruta "<nombreRuta>"
-        Then se valida que la ruta "<nombreRuta>" este seleccionada
+    Esquema del escenario: Validacion de seleccion de ruta
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Y selecciono la ruta "<nombreRuta>"
+        Entonces se valida que la ruta "<nombreRuta>" este seleccionada
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña | nombreRuta      |
             | test@test.com     | test123    | Padre Tadeo 957 |
             | Jonathan          | test123    | Entre rios 234  |
 
-    Scenario Outline: Validacion del boton "Comenzar ruta"
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        When selecciono el boton "Comenzar ruta"
-        Then se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente
+    Esquema del escenario: Validacion del boton "Comenzar ruta"
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Y selecciono el boton "Comenzar ruta"
+        Entonces se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion del desplegable "Mas productos"
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        Then valido la informacion:
+    Esquema del escenario: Validacion del desplegable "Mas productos"
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Entonces valido la informacion:
             | Texto         |
             | Ruta sugerida |
             | Mas lejos     |
             | Mas cerca     |
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion de pantalla de modificar manualmente
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        And selecciono el boton "Modificar manualmente"
-        Then valido la informacion del texto de la pantalla de modificacion manual
+    Esquema del escenario: Validacion de pantalla de modificar manualmente
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Y selecciono el boton "Modificar manualmente"
+        Entonces valido la informacion del texto de la pantalla de modificacion manual
             | Texto                    |
             | Modifica tu ruta         |
             | Presiona prolongadamente |
             | Entendido                |
             | No volver a mostrar      |
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion de la modificacion de la ruta
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        And selecciono el boton "Modificar manualmente"
-        Then selecciono el boton "Entendido"
-        And desplazo un cliente hacia una nueva posicion
-        And valido el mensaje "Recorrido modificado"
+    Esquema del escenario: Validacion de la modificacion de la ruta
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Y selecciono el boton "Modificar manualmente"
+        Y selecciono el boton "Entendido"
+        Y desplazo un cliente hacia una nueva posicion
+        Entonces valido el mensaje "Recorrido modificado"
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion de opcion "Pendientes"
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        Then valido la funcionalidad del boton "Pendientes"
+    Esquema del escenario: Validacion de opcion "Pendientes"
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Entonces valido la funcionalidad del boton "Pendientes"
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion de opcion "Visitados"
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        Then valido la funcionalidad del boton "Visitados"
+    Esquema del escenario: Validacion de opcion "Visitados"
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Entonces valido la funcionalidad del boton "Visitados"
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
 
-    Scenario Outline: Validacion de opcion "Anulados"
-        And ingreso el correo electronico "<correoElectronico>"
-        And ingreso la contraseña "<contraseña>"
-        And hago click en el boton "Ingresar"
-        And elijo la ruta "1222654"
-        When selecciono el boton "Anulados"
-        Then valido la funcionalidad del boton "Anulados"
+    Esquema del escenario: Validacion de opcion "Anulados"
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contraseña "<contraseña>"
+        Cuando hago click en el boton "Ingresar"
+        Y elijo la ruta "1222654"
+        Y selecciono el boton "Anulados"
+        Entonces valido la funcionalidad del boton "Anulados"
 
-        Examples:
+        Ejemplos:
             | correoElectronico | contraseña |
             | test@test.com     | test123    |
             | Jonathan          | test123    |
