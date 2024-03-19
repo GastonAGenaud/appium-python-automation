@@ -1,6 +1,6 @@
 # language: es
 
-Escenario: Anular pedido
+Característica: : Anular pedido
 
   Esquema del escenario: Validación de presionar el botón "Anular pedido"
     Dado ingreso el correo electrónico "<correoElectronico>"
@@ -9,7 +9,7 @@ Escenario: Anular pedido
     Cuando visualizo la factura con número "<numeroFactura>"
     Y hago clic en el botón "Anular pedido"
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
-git
+
     Ejemplos:
     | correoElectronico | contraseña | numeroFactura |
     | test@test.com     | test123    | 3942342       |
@@ -55,7 +55,7 @@ git
     Y ingreso la contraseña "<contraseña>"
     Y hago clic en el botón "Ingresar"
     Y elijo el nombre "Test"
-    Y hago clic en el botón "Anulados" en el sector de selección de rutas
+    Cuando hago clic en el botón "Anulados" en el sector de selección de rutas
     Entonces valido que la ruta utilizada anteriormente "<idRuta>" esté presente
     Y valido la presencia del texto "Sobre stock"
     Y valido la presencia del botón "Comenzar ruta"
@@ -77,7 +77,7 @@ git
     | correoElectronico | contraseña |
     | test@test.com     | test123    |
 
-  Esquema del escenario: Validación del botón "Ver detalle" en la pantalla de retomar pedidos
+  Escenario: Validación del botón "Ver detalle" en la pantalla de retomar pedidos
     Dado hago clic en el botón "Ingresar"
     Y visualizo la pantalla de retomar pedidos
     Entonces valido la presencia del botón "Ver detalle"

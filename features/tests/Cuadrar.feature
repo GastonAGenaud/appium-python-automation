@@ -1,6 +1,6 @@
 # language: es
 
-Escenario: Cuadrar
+Característica: Cuadrar
 
   Esquema del escenario: Validación de la pantalla "Vuelta finalizada"
     Dado ingreso el correo electrónico "<correoElectronico>"
