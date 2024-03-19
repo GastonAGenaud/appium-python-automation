@@ -1,2 +1,3 @@
-PHONE = ""
-PASSWORD = "!!"
+USUARIO = "Test"
+CONTRASENA = "TEST"
+

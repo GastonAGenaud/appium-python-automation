@@ -129,7 +129,11 @@ dmypy.json
 
 .idea
 environment
+<<<<<<< HEAD
 *.apk
 ./features/credentials.py
 ./reports/report/
 json.pretty.output
+=======
+./features/credentials.py
+>>>>>>> dangelo-andina-v2

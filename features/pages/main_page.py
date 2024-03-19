@@ -1,29 +1,40 @@
 from appium.webdriver.common.mobileby import MobileBy
-
 from features.pages.base_page import Page
 
 
-def compare_data_with_expected(expected, real):
-    assert expected == real, "Expected '{}', but got '{}'".format(expected, real)
-
-
 class MainPage(Page):
-    MYWORKDOC_ICON_LIST = (MobileBy.CLASS_NAME, 'android.widget.ImageView')
+    comenzar_ruta_button = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
+    title_home_page = (MobileBy.XPATH, '//android.widget.TextView[@text="Bienvenido, Test!"]')
+    while_using_the_app_button = (MobileBy.XPATH, '//android.widget.Button['
+                                                  '@resource-id="com.android.permissioncontroller:id'
+                                                  '/permission_allow_foreground_only_button"]')
+    modificar_manualmente_button = (MobileBy.XPATH, '//android.widget.TextView[@text="Modificar manualmente"]')
+    lista_tab = (MobileBy.XPATH,
+                 '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android'
+                 '.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
+                 '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
+                 '.ViewGroup[2]/android.view.View/android.view.View['
+                 '2]/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[2]')
+    pendientes_btn = (MobileBy.XPATH, '//android.widget')
 
-    def verify_main_page_is_open(self):
-        self.implicit_wait_visible(self.MYWORKDOC_ICON_LIST)
-        user_icon_list = self.find_element(self.MYWORKDOC_ICON_LIST).is_displayed()
-        return user_icon_list
-        # compare_data_with_expected(expected=5, real=len(user_icon_list))
-        # compare_data_with_expected(expected="Your Story", real=user_icon_list[0].text)
-        #
-        # tab_bar = self.find_element(self.TAB_BAR)
-        # liner_tab = tab_bar.find_elements(self.LINER_BAR[0], self.LINER_BAR[1])
-        #
-        # compare_data_with_expected(expected=5, real=len(liner_tab))
-        #
-        # compare_data_with_expected(expected="Home", real=liner_tab[0].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Search and Explore", real=liner_tab[1].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Camera", real=liner_tab[2].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Activity", real=liner_tab[3].get_attribute("content-desc"))
-        # compare_data_with_expected(expected="Profile", real=liner_tab[4].get_attribute("content-desc"))
+    def valid_comenzar_ruta_button(self):
+        self.implicit_wait_visible(self.comenzar_ruta_button)
+        validar_comenzar_ruta = self.find_element(self.comenzar_ruta_button).is_displayed()
+        return validar_comenzar_ruta
+
+    def select_while_using_the_app(self):
+        self.click_on_element(self.while_using_the_app_button)
+
+    def valid_modificar_manualmente_btn(self):
+        self.implicit_wait_visible(self.modificar_manualmente_button)
+        valid_modificar_manualmente = self.find_element(self.modificar_manualmente_button).is_displayed()
+        return valid_modificar_manualmente
+
+    def select_lista_tab(self):
+        self.click_on_element(self.lista_tab)
+
+    def valid_value(self, caracteristica, valor):
+        self.implicit_wait_visible(self.comenzar_ruta_button)
+        value = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@resource-id="TestTitle" and '
+                                                         f'@text="{valor}"]').is_displayed()
+        return value
