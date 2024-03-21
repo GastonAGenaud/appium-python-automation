@@ -4,7 +4,7 @@ Característica: Cuadrar
 
   Esquema del escenario: Validación de la pantalla "Vuelta finalizada"
     Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contraseña "<contraseña>"
+    Y ingreso la contrasena "<contrasena>"
     Y hago clic en el botón "Ingresar"
     Y elijo la ruta "Felix de Amesti 920"
     Cuando selecciono el botón "Comenzar ruta"
@@ -20,6 +20,6 @@ Característica: Cuadrar
     Y valido que se muestre el mensaje "Transporte listo"
 
     Ejemplos:
-      | correoElectronico | contraseña |
+      | correoElectronico | contrasena |
       | test@test.com     | test123    |
       | Jonathan          | test123    |

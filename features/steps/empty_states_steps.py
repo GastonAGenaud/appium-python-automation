@@ -6,11 +6,6 @@ def ingreso_el_correo_electronico(context, correoElectronico):
     context.empty_states_page.ingreso_el_correo_electronico(correoElectronico)
 
 
-@when('ingreso la contraseña "{contraseña}"')
-def ingreso_la_contraseña(context, contraseña):
-    context.empty_states_page.ingreso_la_contraseña(contraseña)
-
-
 @when('selecciono "{opcion}"')
 def seleccionar_opcion(context, opcion):
     context.empty_states_page.seleccionar_opcion(opcion)

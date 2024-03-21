@@ -4,19 +4,19 @@ Característica: : Anular pedido
 
   Esquema del escenario: Validación de presionar el botón "Anular pedido"
     Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contraseña "<contraseña>"
+    Y ingreso la contrasena "<contrasena>"
     Y hago clic en el botón "Ingresar"
     Cuando visualizo la factura con número "<numeroFactura>"
     Y hago clic en el botón "Anular pedido"
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
 
     Ejemplos:
-    | correoElectronico | contraseña | numeroFactura |
+    | correoElectronico | contrasena | numeroFactura |
     | test@test.com     | test123    | 3942342       |
 
   Esquema del escenario: Validación de pantalla de selección de motivo de anulación
     Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contraseña "<contraseña>"
+    Y ingreso la contrasena "<contrasena>"
     Y hago clic en el botón "Ingresar"
     Cuando visualizo la pantalla de selección de motivo de anulación
     Entonces valido la presencia de los siguientes motivos:
@@ -46,13 +46,13 @@ Característica: : Anular pedido
     Entonces verifico que se envíe el motivo seleccionado correctamente
 
     Ejemplos:
-    | correoElectronico | contraseña |
+    | correoElectronico | contrasena |
     | test@test.com     | test123    |
     | Jonathan          | test123    |
 
   Esquema del escenario: Validación del sector "Anulados"
     Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contraseña "<contraseña>"
+    Y ingreso la contrasena "<contrasena>"
     Y hago clic en el botón "Ingresar"
     Y elijo el nombre "Test"
     Cuando hago clic en el botón "Anulados" en el sector de selección de rutas
@@ -61,7 +61,7 @@ Característica: : Anular pedido
     Y valido la presencia del botón "Comenzar ruta"
 
     Ejemplos:
-    | correoElectronico | contraseña | idRuta              |
+    | correoElectronico | contrasena | idRuta              |
     | test@test.com     | test123    | Felix de Amesti 920 |
 
   Esquema del escenario: Validación de la pantalla de retomar pedidos
@@ -74,7 +74,7 @@ Característica: : Anular pedido
     Y verifico que se muestre correctamente el pedido a retomar
 
     Ejemplos:
-    | correoElectronico | contraseña |
+    | correoElectronico | contrasena |
     | test@test.com     | test123    |
 
   Escenario: Validación del botón "Ver detalle" en la pantalla de retomar pedidos

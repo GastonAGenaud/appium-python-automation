@@ -6,34 +6,14 @@ def ingreso_correo(context, correo):
     context.cuadrar_page.ingreso_correo(correo)
 
 
-@given('ingreso la contraseña "{contraseña}"')
-def ingreso_contraseña(context, contraseña):
-    context.cuadrar_page.ingreso_contraseña(contraseña)
-
-
 @when('hago clic en el botón "Ingresar"')
 def clic_ingresar(context):
     context.cuadrar_page.clic_ingresar()
 
 
-@when('elijo la ruta "{ruta}"')
-def elegir_ruta(context, ruta):
-    context.cuadrar_page.elegir_ruta(ruta)
-
-
-@when('selecciono el botón "Comenzar ruta"')
-def seleccionar_comenzar_ruta(context):
-    context.cuadrar_page.seleccionar_comenzar_ruta()
-
-
 @then('visualizo la pantalla "Ruta finalizada"')
 def visualizar_pantalla_ruta_finalizada(context):
     assert context.cuadrar_page.visualizar_pantalla_ruta_finalizada()
-
-
-@then('valido que el producto "{producto}" esté presente')
-def producto_presente(context, producto):
-    assert context.cuadrar_page.producto_presente(producto)
 
 
 @then('valido el total como "{total}"')

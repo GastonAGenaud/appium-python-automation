@@ -4,7 +4,7 @@ Característica: Entregar pedido
 
   Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Rebajados"
     Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contraseña "<contraseña>"
+    Y ingreso la contrasena "<contrasena>"
     Y hago clic en el botón "Ingresar"
     Y elijo la ruta "Felix de Amesti 920"
     Cuando selecciono el botón "Comenzar ruta"
@@ -20,7 +20,7 @@ Característica: Entregar pedido
 
   Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
     Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contraseña "<contraseña>"
+    Y ingreso la contrasena "<contrasena>"
     Y hago clic en el botón "Ingresar"
     Y elijo la ruta "Felix de Amesti 920"
     Cuando selecciono el botón "Comenzar ruta"

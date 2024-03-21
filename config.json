@@ -5,8 +5,7 @@
       "platformVersion": "14.0",
       "deviceName": "Pixel XL API 34",
       "automationName": "UiAutomator2",
-      "appPackage": "com.rutadigital",
-      "appActivity": "com.rutadigital.MainActivity"
+      "app": "src/binaries/app-ruta-digital.apk"
     }
   }
 }

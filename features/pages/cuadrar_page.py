@@ -16,7 +16,7 @@ class CuadrarPage(Page):
     def ingreso_correo(self, correo):
         return True
 
-    def ingreso_contraseña(self, contraseña):
+    def ingreso_contrasena(self, contrasena):
         return True
 
     def clic_ingresar(self):
