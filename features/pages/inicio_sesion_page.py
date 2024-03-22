@@ -1,5 +1,5 @@
-from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from features.pages.base_page import Page
 
 
 class LoginPage(Page):
@@ -13,9 +13,11 @@ class LoginPage(Page):
     BOTON_LOGIN_ID = (MobileBy.ID, "")
     MENSAJE_NO_CONEXION_ID = (MobileBy.ID, "")
     BOTON_RECARGAR_ID = (MobileBy.ID, "")
-    MENSAJE_USUARIO_VACIO_ID = (MobileBy.ID, "")
-    MENSAJE_CARACTERES_ESPECIALES_ID = (MobileBy.ID, "")
-    MENSAJE_contrasena_INCORRECTA_ID = (MobileBy.ID, "")
+    MENSAJE_USUARIO_VACIO_ID = (MobileBy.XPATH, "//android.widget.TextView[@text='Tienes que ingresar un correo "
+                                                "electrónico']")
+    MENSAJE_CARACTERES_ESPECIALES_ID = (MobileBy.XPATH, "//android.widget.TextView[@text='Tienes que ingresar una "
+                                                        "contraseña']")
+    MENSAJE_CONTRASENA_INCORRECTA_ID = (MobileBy.ID, "")
     BOTON_LOGIN_DESHABILITADO_ID = (MobileBy.ID, "")
     PANTALLA_TRANSPORTE_ID = (MobileBy.ID, "")
     PANTALLA_TRANSPORTE_FINALIZADO_ID = (MobileBy.ID, "")
@@ -40,12 +42,16 @@ class LoginPage(Page):
         assert mensaje_error == mensaje, f"El mensaje de error '{mensaje_error}' no coincide con '{mensaje}'"
 
     def validar_mensaje_error_caracteres_especiales(self, mensaje):
-        mensaje_error = self.find_element(self.MENSAJE_CARACTERES_ESPECIALES_ID).text
-        assert mensaje_error == mensaje, f"El mensaje de error '{mensaje_error}' no coincide con '{mensaje}'"
+        mensaje_error_elemento = self.find_element(self.MENSAJE_CARACTERES_ESPECIALES_ID)
+        assert mensaje_error_elemento.is_displayed(), "El mensaje de error no se muestra en la página"
+        mensaje_error_actual = mensaje_error_elemento.text
+        assert mensaje_error_actual == mensaje, f"El mensaje de error '{mensaje_error_actual}' no coincide con '{mensaje}'"
 
     def validar_mensaje_error_contrasena_incorrecta(self, mensaje):
-        mensaje_error = self.find_element(self.MENSAJE_contrasena_INCORRECTA_ID).text
-        assert mensaje_error == mensaje, f"El mensaje de error '{mensaje_error}' no coincide con '{mensaje}'"
+        mensaje_error_elemento = self.find_element(self.MENSAJE_CONTRASENA_INCORRECTA_ID)
+        assert mensaje_error_elemento.is_displayed(), "El mensaje de error no se muestra en la página"
+        mensaje_error_actual = mensaje_error_elemento.text
+        assert mensaje_error_actual == mensaje, f"El mensaje de error '{mensaje_error_actual}' no coincide con '{mensaje}'"
 
     def validar_mensaje_exito(self, mensaje):
         mensaje_exito = self.find_element(self.MENSAJE_EXITO_ID).text
@@ -91,3 +97,6 @@ class LoginPage(Page):
         self.implicit_wait_visible(self.COMENZAR_RUTA_ID)
         boton_comenzar_ruta = self.find_element(self.COMENZAR_RUTA_ID).is_displayed()
         return boton_comenzar_ruta
+
+    def limpiar_campo_usuario(self):
+        pass

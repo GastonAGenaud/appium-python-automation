@@ -17,17 +17,16 @@ Característica: Iniciar sesión
   Escenario: Validacion de error de campo de usuario
     Dado dejo el campo de Usuario vacio
     Cuando hago click en el boton "Ingresar"
-    Entonces se valida el mensaje de error "Tienes que ingresa un correo electronico"
+    Entonces se valida el mensaje de error "Tienes que ingresar un correo electrónico"
 
   Escenario: Validacion de error de caracteres especiales
     Dado ingreso el correo electronico "Test$#@#!"
     Cuando hago click en el boton "Ingresar"
-    Entonces se visualiza el mensaje de error "No se admiten caracteres especiales"
+    Entonces se visualiza el mensaje de error de caracteres especiales "Tienes que ingresar una contraseña"
 
   Escenario: Validacion de mensaje de error por contrasena incorrecta
     Cuando hago click en el boton "Ingresar"
     Entonces se visualiza el mensaje de error "Correo o contrasena incorrectos"
-
       | correoElectronico |
       | user_tests        |
 

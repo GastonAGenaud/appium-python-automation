@@ -1,3 +1,5 @@
+import re
+
 from behave import given, when, then
 from features.pages.inicio_sesion_page import LoginPage
 
@@ -78,13 +80,22 @@ def validar_no_conexion(context):
     context.app.inicio_sesion_page.validar_mensaje_no_conexion("No tienes conexión a internet")
 
 
-@when('hago click en el boton "Ingresar"')
-def click_boton(context):
-    context.app.inicio_sesion_page.hacer_clic_ingresar()
+@when('hago click en el boton "{boton}"')
+def click_boton(context, boton):
+    boton = boton.lower()
+    if boton == "ingresar":
+        context.app.inicio_sesion_page.hacer_clic_ingresar()
+    elif boton == "entendido":
+        context.app.inicio_sesion_page.click_boton_entendido()
+    else:
+        raise ValueError(f"No se puede hacer clic en el botón '{boton}'")
 
 
-@when('hago click en el boton "Entendido"')
-def boton_entendido(context):
-    context.app.inicio_sesion_page.click_boton_entendido()
+@given("dejo el campo de Usuario vacio")
+def campo_vacio(context):
+    context.app.inicio_sesion_page.limpiar_campo_usuario()
 
 
+@then('se visualiza el mensaje de error de caracteres especiales "{mensaje}"')
+def validar_mensaje_error_caracteres_especiales(context, mensaje):
+    context.app.inicio_sesion_page.validar_mensaje_error_caracteres_especiales(mensaje)
