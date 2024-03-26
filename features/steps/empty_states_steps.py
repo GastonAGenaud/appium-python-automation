@@ -1,19 +1,14 @@
 from behave import given, when, then
 
 
-@when('ingreso el correo electrónico "{correoElectronico}"')
-def ingreso_el_correo_electronico(context, correoElectronico):
-    context.empty_states_page.ingreso_el_correo_electronico(correoElectronico)
-
-
 @when('selecciono "{opcion}"')
-def seleccionar_opcion(context, opcion):
-    context.empty_states_page.seleccionar_opcion(opcion)
+def seleccionar_opcion_visitados(context, opcion):
+    context.app.empty_states_page.seleccionar_opcion_visitados()
 
 
-@then('valido el texto "{texto}"')
-def valido_el_texto(context, texto):
-    assert context.empty_states_page.valido_el_texto(texto)
+@when('valido el texto "{texto}"')
+def valido_el_texto_visitados(context, texto):
+    assert context.app.empty_states_page.valido_el_texto_visitados(texto)
 
 
 @then('valido la pantalla de "{pantalla}"')

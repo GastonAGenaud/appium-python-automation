@@ -1,10 +1,6 @@
 from behave import given, when, then
 
 
-@given('ingreso el correo electrónico "{correo}"')
-def ingreso_correo(context, correo):
-    context.cuadrar_page.ingreso_correo(correo)
-
 
 @when('hago clic en el botón "Ingresar"')
 def clic_ingresar(context):

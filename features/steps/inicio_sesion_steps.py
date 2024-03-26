@@ -87,8 +87,12 @@ def click_boton(context, boton):
         context.app.inicio_sesion_page.hacer_clic_ingresar()
     elif boton == "entendido":
         context.app.inicio_sesion_page.click_boton_entendido()
+    elif boton == "visitados":
+        context.app.empty_states_page.seleccionar_opcion_visitados()
     else:
         raise ValueError(f"No se puede hacer clic en el botón '{boton}'")
+
+
 
 
 @given("dejo el campo de Usuario vacio")
@@ -99,3 +103,13 @@ def campo_vacio(context):
 @then('se visualiza el mensaje de error de caracteres especiales "{mensaje}"')
 def validar_mensaje_error_caracteres_especiales(context, mensaje):
     context.app.inicio_sesion_page.validar_mensaje_error_caracteres_especiales(mensaje)
+
+
+@given("estoy en la pantalla de inicio de sesion")
+def pantalla_inicio_validacion(context):
+    context.app.inicio_sesion_page.pantalla_inicio_validacion()
+
+
+# @when('el boton de "Login" esta deshabilitado')
+# def boton_login_deshabilitado(context):
+#     context

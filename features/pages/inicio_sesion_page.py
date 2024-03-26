@@ -24,6 +24,7 @@ class LoginPage(Page):
     PANTALLA_RUTAS_NO_CARGADAS_ID = (MobileBy.ID, "")
     TEXTO_RUTAS_NO_CARGADAS_ID = (MobileBy.ID, "")
     BOTON_ACTUALIZAR_ID = (MobileBy.ID, "")
+    PANTALLA_INICIO_SESION = MobileBy.XPATH, "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout"
 
     def ingresar_correo_electronico(self, correo):
         correo_input = self.find_element(self.CORREO_ELECTRONICO_INPUT_ID)
@@ -98,5 +99,6 @@ class LoginPage(Page):
         boton_comenzar_ruta = self.find_element(self.COMENZAR_RUTA_ID).is_displayed()
         return boton_comenzar_ruta
 
-    def limpiar_campo_usuario(self):
-        pass
+    def pantalla_inicio_validacion(self):
+        pantalla_inicio = self.find_element(self.PANTALLA_INICIO_SESION).is_displayed()
+        return pantalla_inicio

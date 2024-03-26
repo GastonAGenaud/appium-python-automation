@@ -3,23 +3,24 @@
 Característica: Estados Vacíos
 
   Esquema del escenario: Validación de pantalla "Visitados"
-    Dado ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electronico "<correoElectronico>"
     Y ingreso la contrasena "<contrasena>"
-    Y hago clic en el botón "Ingresar"
-    Cuando selecciono "Visitados"
+    Cuando hago click en el boton "Ingresar"
+    Y hago click en el boton "Entendido"
+    Y hago click en el boton "Visitados"
     Y valido el texto "Aun no visitas a ningun cliente"
     Entonces valido la pantalla de "Visitados"
 
     Ejemplos:
-      | correoElectronico | contrasena |
-      | test@test.com     | test123    |
-      | Jonathan          | test123    |
+      | correoElectronico | contrasena     |
+      | test@test.com     | Holamundo1234# |
 
   Esquema del escenario: Validación de pantalla "Anulados"
-    Dado ingreso el correo electrónico "<correoElectronico>"
+    Dado ingreso el correo electronico "<correoElectronico>"
     Y ingreso la contrasena "<contrasena>"
-    Y hago clic en el botón "Ingresar"
-    Cuando selecciono "Anulados"
+    Cuando hago click en el boton "Ingresar"
+    Y hago click en el boton "Entendido"
+    Y selecciono "Anulados"
     Y valido el texto "No has anulado pedidos"
     Y valido el texto "Presiona al cliente para anular un pedido completo"
     Entonces valido la pantalla de "Anulados"
@@ -27,4 +28,3 @@ Característica: Estados Vacíos
     Ejemplos:
       | correoElectronico | contrasena |
       | test@test.com     | test123    |
-      | Jonathan          | test123    |
