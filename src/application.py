@@ -23,3 +23,4 @@ class Application:
 #        self.cuadrar_page = CuadrarPage(driver)
 #        self.empty_states_page = EmptyStatesPage(driver)
 
+
