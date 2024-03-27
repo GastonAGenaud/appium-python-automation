@@ -5,7 +5,6 @@
       "platformVersion": "13.0",
       "deviceName": "Pixel 7 Pro API 33",
       "automationName": "UiAutomator2",
-      "app": "src/binaries/app-MiRuta.apk",
       "appPackage": "com.rutadigital",
       "appActivity": "com.rutadigital.MainActivity"
     }
