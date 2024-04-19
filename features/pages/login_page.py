@@ -6,7 +6,7 @@ from appium.webdriver.common.mobileby import MobileBy
 
 class LoginPage(Page):
     usuario_field = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[1]')
-#   contraseña_field = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
+#   contrasena_field = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
 #    login_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Login"]')
 
 #    def user_input_name(self):
@@ -14,6 +14,6 @@ class LoginPage(Page):
 #        self.input(USUARIO, self.usuario_field)
 
 #    def user_input_password(self):
-#        self.click_on_element(self.contraseña_field)
-#        self.input(CONTRASENA, self.contraseña_field)
+#        self.click_on_element(self.contrasena_field)
+#        self.input(CONTRASENA, self.contrasena_field)
 #        self.click_on_element(self.login_btn)

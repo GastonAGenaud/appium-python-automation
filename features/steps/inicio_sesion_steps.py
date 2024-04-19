@@ -22,6 +22,14 @@ def click_en_el_boton(context, boton):
         context.app.inicio_sesion_page.click_ingresa_btn()
     elif boton == "Test$#@#!":
         context.app.inicio_sesion_page.click_entendido_btn()
+    elif boton == "Anular pedido":
+        context.app.revisar_pedido_page.click_anular_pedido_btn()
+    elif boton == "Entregar":
+        context.app.revisar_pedido_page.click_entregar_btn()
+    elif boton == "Confirmar":
+        context.app.entregar_pedido_page.click_confirmar_btn()
+    elif boton == "Comenzar ruta":
+        context.app.modificar_recorrido_page.click_comenzar_ruta_btn()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
 
@@ -56,9 +64,9 @@ def estoy_pantalla_de_inicio(context):
     assert bool(context.app.inicio_sesion_page.valido_pantalla_de_inicio())
 
 
-@then('se valida que el boton de "{Login}" este deshabilitado')
-def boton_login_deshabilitado(context, Login):
-    assert bool(context.app.inicio_sesion_page)
+@then('se valida que el boton de "{boton}" este deshabilitado')
+def boton_login_deshabilitado(context, boton):
+    assert not bool(context.app.inicio_sesion_page.valido_btn_ingresar_desactivado())
 
 
 

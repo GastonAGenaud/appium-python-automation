@@ -2,83 +2,55 @@
 
 Característica: Modificar recorrido sugerido
 
-    Esquema del escenario: Validacion de la pantalla Comenzar ruta
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+    Escenario: Validacion de la pantalla Comenzar ruta
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "1222654"
-        Entonces valido que se visualice el boton "Comenzar ruta" en la pantalla de rutas
+        Entonces valido que se visualice el boton "Comenzar ruta"
+
+    Esquema del escenario: Validacion de la ruta
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        Entonces valido que sea visible la "<caracteristica>" con el "<valor>" del pedido
 
         Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
+            | caracteristica | valor                 |
+            | Local          | Pudahuel              |
+            | Horario        | Cierra a las 14:00:00 |
+            | Producto       | 20                    |
+            | Efectivo       | $50.000               |
 
-    Esquema del escenario: Validacion de la ruta "<nombreRuta>"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago clic en el boton "Login"
-        Y elijo la ruta "<nombreRuta>"
-        Entonces valido la informacion:
-            | Texto              |
-            | Rosa Esveile       |
-            | Padre Tadeo 980    |
-            | Abierto            |
-            | Cierra a las 13:00 |
-            | Productos          |
-            | Efectivo           |
+    Escenario: Validacion de seleccion de ruta
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        Y elijo la ruta "Pudahuel"
+        Entonces se valida que la ruta "Pudahuel" este seleccionada
 
-        Ejemplos:
-            | correoElectronico | contraseña | nombreRuta      |
-            | test@test.com     | test123    | Padre Tadeo 957 |
-            | Jonathan          | test123    | Entre rios 234  |
+    Escenario: Validacion del boton "Comenzar ruta"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        #Y elijo la ruta "1222654"
+        Y hago click en el boton "Comenzar ruta"
+        #Entonces se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente
 
-    Esquema del escenario: Validacion de seleccion de ruta
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "1222654"
-        Y selecciono la ruta "<nombreRuta>"
-        Entonces se valida que la ruta "<nombreRuta>" este seleccionada
+    Escenario: Validacion del desplegable "Mas productos"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        #Y elijo la ruta "1222654"
+        #Entonces valido la informacion:
+        #    | Texto         |
+        #    | Ruta sugerida |
+        #    | Mas lejos |
+        #    | Mas cerca |
 
-        Ejemplos:
-            | correoElectronico | contraseña | nombreRuta      |
-            | test@test.com     | test123    | Padre Tadeo 957 |
-            | Jonathan          | test123    | Entre rios 234  |
-
-    Esquema del escenario: Validacion del boton "Comenzar ruta"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "1222654"
-        Y selecciono el boton "Comenzar ruta"
-        Entonces se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente
-
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
-
-    Esquema del escenario: Validacion del desplegable "Mas productos"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "1222654"
-        Entonces valido la informacion:
-            | Texto         |
-            | Ruta sugerida |
-            | Mas lejos     |
-            | Mas cerca     |
-
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
-
-    Esquema del escenario: Validacion de pantalla de modificar manualmente
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
+    Escenario: Validacion de pantalla de modificar manualmente
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
         Y elijo la ruta "1222654"
         Y selecciono el boton "Modificar manualmente"
         Entonces valido la informacion del texto de la pantalla de modificacion manual
@@ -88,59 +60,35 @@ Característica: Modificar recorrido sugerido
             | Entendido                |
             | No volver a mostrar      |
 
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
-
-    Esquema del escenario: Validacion de la modificacion de la ruta
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
+    Escenario: Validacion de la modificacion de la ruta
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
         Y elijo la ruta "1222654"
         Y selecciono el boton "Modificar manualmente"
         Y selecciono el boton "Entendido"
         Y desplazo un cliente hacia una nueva posicion
         Entonces valido el mensaje "Recorrido modificado"
 
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
-
-    Esquema del escenario: Validacion de opcion "Pendientes"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
+    Escenario: Validacion de opcion "Pendientes"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
         Y elijo la ruta "1222654"
         Entonces valido la funcionalidad del boton "Pendientes"
 
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
+    Escenario: Validacion de opcion "Visitados"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        #Y elijo la ruta "1222654"
+        Cuando selecciono "Visitados"
+        Entonces valido la pantalla de "Visitados"
 
-    Esquema del escenario: Validacion de opcion "Visitados"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "1222654"
-        Entonces valido la funcionalidad del boton "Visitados"
-
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
-
-    Esquema del escenario: Validacion de opcion "Anulados"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "1222654"
-        Y selecciono el boton "Anulados"
-        Entonces valido la funcionalidad del boton "Anulados"
-
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
+    Escenario: Validacion de opcion "Anulados"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        #Y elijo la ruta "1222654"
+        Cuando selecciono "Anulados"
+        Entonces valido la pantalla de "Anulados

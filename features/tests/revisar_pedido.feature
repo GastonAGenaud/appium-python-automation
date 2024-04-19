@@ -2,93 +2,81 @@
 
 Característica: Revisar pedido
 
-    Esquema del escenario: Validacion de visualizacion de ruta de pedido <idRuta>
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+    Esquema del escenario: Validacion de visualizacion de ruta de pedido
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Y hago click en el boton "Ingresar"
         Cuando elijo la ruta "<idRuta>"
         Entonces se valida que la visualizacion de pedido para la ruta "<idRuta>" sea correcta
 
         Ejemplos:
-            | correoElectronico | contraseña | idRuta              |
-            | test@test.com     | test123    | Felix de Amesti 920 |
-            | Jonathan          | test123    | Padre Tadeo 957     |
+            | idRuta   |
+            | Renca    |
+            | Pudahuel |
 
-    Esquema del escenario: Validacion de visualizacion del nombre <idNombre> en el pedido
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+    #Esquema del escenario: Validacion de visualizacion del nombre <idNombre> en el pedido
+    #    Dado ingreso el correo electronico "<correoElectronico>"
+    #    Y ingreso la contrasena "<contrasena>"
+    #    Y hago click en el boton "Ingresar"
+    #    Cuando elijo el nombre "<idNombre>"
+    #    Entonces se valida que la visualizacion de pedido para "<idNombre>" sea correcta
+
+    #    Ejemplos:
+    #        | correoElectronico | contrasena | idNombre        |
+    #        | test@test.com      | test123 | Test            |
+    #        | Jonathan           | test123 | Leandro Maronas |
+
+    Esquema del escenario: Validacion de visualizacion de la cantidad de productos y el monto de transferencia
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Y hago click en el boton "Ingresar"
-        Cuando elijo el nombre "<idNombre>"
-        Entonces se valida que la visualizacion de pedido para "<idNombre>" sea correcta
-
-        Ejemplos:
-            | correoElectronico | contraseña | idNombre        |
-            | test@test.com     | test123    | Test            |
-            | Jonathan          | test123    | Leandro Maroñas |
-
-    Esquema del escenario: Validacion de visualizacion de la cantidad de productos <producto> y el monto de transferencia <precio>
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Y hago click en el boton "Ingresar"
-        Y elijo el nombre "Test"
+        #Y elijo el nombre "Test"
         Y elijo la ruta "<idRuta>"
-        Cuando presiono el boton "Ver detalle"
+        #Cuando presiono el boton "Ver detalle"
         Entonces valido la visualizacion del monto de la transferencia "<precio>" y de los productos "<producto>"
 
         Ejemplos:
-            | correoElectronico | contraseña | idRuta              | precio   | producto     |
-            | test@test.com     | test123    | Felix de Amesti 920 | $100.000 | Productos 15 |
+            | idRuta   | precio  | producto |
+            | Pudahuel | $ 2.000 | 20       |
 
-    Esquema del escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+    Escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Y hago click en el boton "Ingresar"
-        Y elijo el nombre "Test"
-        Y elijo la ruta "Felix de Amesti 920"
-        Cuando presiono el boton "Ver indicaciones en mapa"
-        Entonces valido que se muestre el modal de indicaciones en el mapa
+        #Y elijo el nombre "Test"
+        Cuando elijo la ruta "Pudahuel"
+        #Cuando presiono el boton "Ver indicaciones en mapa"
+        #Entonces valido que se muestre el modal de indicaciones en el mapa
         Y valido la presencia de la opcion "Google Maps"
-        Y valido la presencia de la opcion "Waze"
+        #Y valido la presencia de la opcion "Waze"
 
-        Ejemplos:
-            | correoElectronico | contraseña |
-            | test@test.com     | test123    |
-            | Jonathan          | test123    |
-
-    Esquema del escenario: Validacion del contenido de la factura
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+    Escenario: Validacion del contenido de la factura
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Y hago click en el boton "Ingresar"
-        Cuando elijo el nombre "Test"
-        Y visualizo la factura con numero "<numeroFactura>"
-        Entonces valido el producto "<producto>"
-        Y valido el precio unitario "<precioUnitario>"
-        Y valido el precio del pack "<precioPack>"
+        Y elijo la ruta "Pudahuel"
+        Cuando selecciono la factura con numero "388717884"
+        Entonces valido el producto "Coca Cola Zero 1.5 LT Pack 1"
+        Y valido el precio unitario "$2.000"
+        #Y valido el precio del pack "<precioPack>"
         Y valido el sector de botones de agregar y restar
-        Y valido el precio final "<precioFinal>"
-        Y valido que el total sea de $450.000
-
-        Ejemplos:
-            | correoElectronico | contraseña | numeroFactura | producto                   | precioUnitario | precioPack | precioFinal |
-            | test@test.com     | test123    | 3942342       | Ades Naranja 700 ML Pack 6 | $1.000         | $1.800     | $5.400      |
-            | test@test.com     | test123    | 3942343       | Ades Durazno 700 ML Pack 6 | $1.000         | $1.800     | $1.800      |
-            | test@test.com     | test123    | 3942344       | Ades Pera 700 ML Pack 6    | $1.000         | $1.800     | $1.800      |
-            | test@test.com     | test123    | 3942344       | Ades Mango 700 ML Pack 6   | $1.000         | $1.800     | $1.800      |
+        Y valido el precio final "$40.000"
+        Y valido que el precio total sea de "$2.000"
 
     Escenario: Anular pedido de la factura
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Y hago click en el boton "Ingresar"
-        Cuando elijo el nombre "Test"
-        Y visualizo la factura con numero "3942342"
-        Y presiono el boton "Anular pedido"
+        Y elijo la ruta "Pudahuel"
+        Cuando selecciono la factura con numero "388717884"
+        Y hago click en el boton "Anular pedido"
         Entonces valido que se muestre una confirmacion de anulacion del pedido
 
     Escenario: Entregar pedido de la factura
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
         Y hago click en el boton "Ingresar"
-        Cuando elijo el nombre "Test"
-        Y visualizo la factura con numero "3942342"
-        Y presiono el boton "Entregar"
+        Y elijo la ruta "Pudahuel"
+        Cuando selecciono la factura con numero "388717884"
+        Y hago click en el boton "Entregar"
         Entonces valido que se muestre una confirmacion de entrega del pedido

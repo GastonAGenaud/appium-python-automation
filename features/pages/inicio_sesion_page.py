@@ -11,7 +11,7 @@ class InicioSesionPage(Page):
     ingresar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Ingresar"]')
     entendido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entendido"]')
     mensaje_error_correo = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar un correo electrónico"]')
-    mensaje_error_contrasena = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar una contraseña"]')
+    mensaje_error_contrasena = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar una contrasena"]')
     mensaje_error_inicio_sesion = (MobileBy.XPATH, '//android.widget.LinearLayout[@resource-id="android:id/title_template"]')
     comenzar_ruta_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Comenzar ruta"]')
 
@@ -71,3 +71,8 @@ class InicioSesionPage(Page):
         self.implicit_wait_visible(self.ingresar_btn)
         pantalla_inicio = self.find_element(self.ingresar_btn).is_displayed()
         return pantalla_inicio
+
+    def valido_btn_ingresar_desactivado(self):
+        self.implicit_wait_visible(self.ingresar_btn)
+        ingresar_desactivado = self.find_element(self.ingresar_btn).is_enabled()
+        return ingresar_desactivado

@@ -1,7 +1,5 @@
 from behave import given, when, then
 
-<<<<<<< HEAD
-=======
 
 @when('visualizo la factura con número "{numeroFactura}"')
 def visualizar_factura(context, numeroFactura):
@@ -106,4 +104,4 @@ def clic_ver_detalle(context):
 @then('verifico que se redireccione')
 def verificar_redireccion(context):
     return True
->>>>>>> a95637b251ca4f3486cd0ac963c2aed92ef642c5
+

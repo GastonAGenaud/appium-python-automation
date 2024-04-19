@@ -36,7 +36,5 @@ from behave import given, when, then
 #    context.app.main_page.select_lista_tab()
 
 
-#@then('valido que sea visible la "{caracteristica}" con el "{valor}" del pedido')
-#def valido_las_caracteristicas_valor(context, caracteristica, valor):
-#    assert bool(context.app.main_page.valid_value(caracteristica, valor))
+
 

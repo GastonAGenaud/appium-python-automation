@@ -34,14 +34,14 @@ Característica: iniciar sesión
 
 #    Escenario: Validacion de pantalla de transporte
 #        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contraseña "<contraseña>"
+#        Y ingreso la contrasena "<contrasena>"
 #        Cuando hago click en el boton "Ingresar"
 #        Y visualizo la pantalla de transporte "<mensajeSaludo>"
 #        Entonces se visualizan los textos "<texto>" en la ruta "1222654"
 
 #    Escenario: Validacion de pantalla de transporte en curso
 #        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contraseña "<contraseña>"
+#        Y ingreso la contrasena "<contrasena>"
 #        Cuando hago click en el boton "Ingresar"
 #        Y visualizo la pantalla de transporte "Hola Jonathan!"
 #        Y valido que la ruta "1222654" este en curso
@@ -49,7 +49,7 @@ Característica: iniciar sesión
 
 #    Escenario: Validacion de pantalla de transporte finalizado
 #        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contraseña "<contraseña>"
+#        Y ingreso la contrasena "<contrasena>"
 #        Cuando hago click en el boton "Ingresar"
 #        Y visualizo la pantalla de transporte "Hola Jonathan!"
 #        Entonces valido que la palabra "finalizado" sea visible
@@ -57,7 +57,7 @@ Característica: iniciar sesión
 
 #    Escenario: Validacion de la ruta de transporte "<idRuta>"
 #        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contraseña "<contraseña>"
+#        Y ingreso la contrasena "<contrasena>"
 #        Cuando hago click en el boton "Ingresar"
 #        Entonces valido que la Vuelta sea "<textoVuelta>"
 #        Y valido que las Pallets sean "<textoPallets>"
@@ -65,7 +65,7 @@ Característica: iniciar sesión
 
 #    Escenario: Validacion de pantalla de rutas no cargadas para hoy
 #        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contraseña "<contraseña>"
+#        Y ingreso la contrasena "<contrasena>"
 #        Y visualizo el texto "No encontramos rutas cargadas para hoy"
 #        Y visiualizo el texto "Comunicate con mesa de ayuda"
 #        Cuando selecciono el botón "Actualizar"

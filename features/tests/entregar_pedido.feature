@@ -2,35 +2,35 @@
 
 Característica: Entregar pedido
 
-    Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Rebajados"
-        Dado ingreso el correo electrónico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Y hago clic en el botón "Ingresar"
-        Y elijo la ruta "Felix de Amesti 920"
-        Cuando selecciono el botón "Comenzar ruta"
-        Y visualizo la pantalla "Entregar pedidos" en el sector "Rebajados" con la factura "<numeroFactura>"
-        Entonces valido que el producto "Ades de Naranja 700 ML Pack 6" esté presente
-        Y valido el total de la factura como "<totalFactura>"
-        Y valido el total rebajado como "<totalRebajado>"
-        Y valido la presencia del botón "Confirmar"
+    Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Rebajados"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        Cuando elijo la ruta "Pudahuel"
+        Y selecciono la factura con numero "388717884"
+        Y selecciono para rebajar el pedido
+        Y hago click en el boton "Entregar"
+        Y selecciono "Rebajados"
+        Entonces valido el producto "Coca Cola Zero 1.5 LT Pack 1"
+        Y valido el total de la factura como "$ 38.000"
+        Y valido el total rebajado como "$ 2.000"
+        Y hago click en el boton "Confirmar"
+        Y valido mensaje de entrega completada
 
-        Ejemplos:
-            | numeroFactura | totalFactura | totalRebajado |
-            | 3942342       | $448.200     | $1.800        |
 
-    Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
-        Dado ingreso el correo electrónico "<correoElectronico>"
-        Y ingreso la contraseña "<contraseña>"
-        Y hago clic en el botón "Ingresar"
-        Y elijo la ruta "Felix de Amesti 920"
-        Cuando selecciono el botón "Comenzar ruta"
-        Y visualizo la pantalla "Entregar pedidos" en el sector "Entregados" con la factura "<numeroFactura>"
-        Entonces valido que el producto "Ades de Naranja 700 ML Pack 6" esté presente
-        Y valido el total de la factura como "<totalFactura>"
-        Y valido el total rebajado como "<totalRebajado>"
-        Y selecciono el botón "Confirmar"
-        Y verifico que al confirmar se redirija a la pantalla de confirmación de entrega
 
-        Ejemplos:
-            | numeroFactura | totalFactura | totalRebajado |
-            | 3942342       | $448.200     | $1.800        |
+    Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contrasena
+        Y hago click en el boton "Ingresar"
+        Cuando elijo la ruta "Pudahuel"
+        Y selecciono la factura con numero "388717884"
+        Y selecciono para rebajar el pedido
+        Y hago click en el boton "Entregar"
+        Entonces valido el producto "Coca Cola Zero 1.5 LT Pack 1"
+        Y valido el total de la factura como "$ 38.000"
+        Y valido el total rebajado como "$ 2.000"
+        Y hago click en el boton "Confirmar"
+        Y valido mensaje de entrega completada
+
+
