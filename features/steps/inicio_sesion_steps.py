@@ -3,35 +3,43 @@ from behave import given, when, then
 
 @given('el usuario ingresa el correo electronico "{correo}"')
 def usuario_ingresa_correo(context, correo):
-    if correo == "user_tests":
-        context.app.inicio_sesion_page.usuario_ingresa_correo_user_tests()
-    elif correo == "Test$#@#!":
-        context.app.inicio_sesion_page.usuario_ingresa_correo_erroneo()
-    else:
-        raise ValueError(f"No se encontro el mensaje de error en el campo al ingresar el correo '{correo}'")
+    context.app.inicio_sesion_page.usuario_ingresa_correo(correo)
 
 
-@given("el usuario ingresa una contrasena")
+@given("el usuario ingresa una contraseña")
 def usuario_ingresa_una_contrasena(context):
     context.app.inicio_sesion_page.usuario_ingresa_contrasena()
 
 
 @when('hago click en el boton "{boton}"')
 def click_en_el_boton(context, boton):
-    if boton == "ingresar":
+    if boton == "Ingresar":
         context.app.inicio_sesion_page.click_ingresa_btn()
+    elif boton == "Iniciar sesion":
+        context.app.inicio_sesion_page.click_iniciar_sesion_btn()
     elif boton == "Test$#@#!":
         context.app.inicio_sesion_page.click_entendido_btn()
     elif boton == "Anular pedido":
         context.app.revisar_pedido_page.click_anular_pedido_btn()
+    elif boton == "Retornar pedido":
+        context.app.revisar_pedido_page.click_retornar_pedido_btn()
     elif boton == "Entregar":
         context.app.revisar_pedido_page.click_entregar_btn()
+    elif boton == "entregar":
+        context.app.revisar_pedido_page.click_entregar_boton()
     elif boton == "Confirmar":
-        context.app.entregar_pedido_page.click_confirmar_btn()
+        context.app.entregar_pedido_page.click_confirmar_boton()
+    elif boton == "Modificar":
+        context.app.entregar_pedido_page.click_modificar_btn()
     elif boton == "Comenzar ruta":
         context.app.modificar_recorrido_page.click_comenzar_ruta_btn()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
+
+
+@then("hago click en el boton Confirmar")
+def click_en_boton_Confirmar(context):
+    context.app.entregar_pedido_page.click_confirmar_boton()
 
 
 @then('se valida el mensaje de error en el campo de "{texto}"')
@@ -52,6 +60,8 @@ def inicio_sesion_exitosamente(context):
 @given('valido el tamano de zona de accion del boton "{boton}"')
 def valido_tamano_zona_accion(context, boton):
     if boton == "Ingresar":
+        assert bool(context.app.inicio_sesion_page.valido_tamano_ingresar_btn())
+    elif boton == "Iniciar sesion":
         assert bool(context.app.inicio_sesion_page.valido_tamano_ingresar_btn())
     elif boton == "Comenzar ruta":
         assert bool(context.app.inicio_sesion_page.valido_tamano_comenzar_ruta_btn())

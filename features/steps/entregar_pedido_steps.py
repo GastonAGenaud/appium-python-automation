@@ -19,3 +19,8 @@ def valido_el_total_rebajado(context, precio):
 @then('valido mensaje de entrega completada')
 def mensaje_entrega_completada(context):
     assert bool(context.app.entregar_pedido_page.valido_entrega_completada())
+
+
+@when('cierro el cuadro de texto')
+def cierro_cuadro_de_texto(context):
+    context.app.entregar_pedido_page.click_cerrar_boton()
