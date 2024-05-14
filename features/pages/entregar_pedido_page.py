@@ -1,3 +1,4 @@
+from selenium.common import NoSuchElementException
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -11,6 +12,7 @@ class EntregarPedidoPage(Page):
     entrega_completada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
     cerrar_cuadro_btn = (MobileBy.XPATH, '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
     modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
+    modifica_tu_ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Modifica tu ruta"]')
 
     def rebajo_el_pedido(self):
         self.click_on_element(self.restar_btn)
@@ -30,9 +32,14 @@ class EntregarPedidoPage(Page):
         self.click_on_element(self.confirmar_btn)
 
     def click_modificar_btn(self):
-        self.click_on_element(self.modificar_btn)
-        self.click_on_element(self.modificar_btn)
-        self.click_on_element(self.modificar_btn)
+        try:
+            self.click_on_element(self.modificar_btn)
+            self.click_on_element(self.modificar_btn)
+            self.find_element(self.modifica_tu_ruta_texto).is_displayed()
+            #self.implicit_wait_visible(self.modifica_tu_ruta_texto)
+        except NoSuchElementException:
+            self.click_on_element(self.modificar_btn)
+            self.click_on_element(self.modificar_btn)
 
     def valido_entrega_completada(self):
         self.implicit_wait_visible(self.entrega_completada_txt)

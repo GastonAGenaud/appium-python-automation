@@ -18,7 +18,7 @@ def valida_ruta_seleccionada(context, ruta):
 
 @when('hago click en el desplegable')
 def hago_click_desplegable(context):
-    context.app.modificar_recorrido_page.click_dedsplegador_btn()
+    context.app.modificar_recorrido_page.click_desplegador_btn()
 
 
 @then('valido que sea visible la opcion "{opcion}"')

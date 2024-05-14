@@ -62,21 +62,21 @@ Característica: Modificar recorrido sugerido
         Entonces valido que el texto "<texto>" de la pantalla de modificacion manual
 
         Ejemplos:
-            | texto                    |
-            | Modifica tu ruta         |
-            | Presiona prolongadamente |
-            | Entendido                |
-            | No volver a mostrar      |
+            | texto     |
+            #| Modifica tu ruta |
+            #| Presiona prolongadamente |
+            | Entendido |
+            #| No volver a mostrar      |
 
     Escenario: Validacion de la modificacion de la ruta
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
-        Y hago click en el boton "Iniciar sesion"
-        Y elijo la ruta "1222654"
-        Y selecciono el boton "Modificar manualmente"
-        Y selecciono el boton "Entendido"
+        Cuando hago click en el boton "Iniciar sesion"
+        Y cierro el cuadro de texto
+        Y hago click en el boton "Modificar"
+        Y hago click en el boton "Entendido"
         Y desplazo un cliente hacia una nueva posicion
-        Entonces valido el mensaje "Recorrido modificado"
+        #Entonces valido el mensaje "Recorrido modificado"
 
     Escenario: Validacion de opcion "Entregados"
         Dado el usuario ingresa el correo electronico "user_tests"

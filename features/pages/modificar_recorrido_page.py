@@ -37,7 +37,7 @@ class ModificarRecorridoPage(Page):
         self.click_on_element(self.comenzar_ruta_btn)
         self.click_on_element(self.comenzar_ruta_btn)
 
-    def click_dedsplegador_btn(self):
+    def click_desplegador_btn(self):
         self.click_on_element(self.boton_desplegable_ruta)
         self.click_on_element(self.boton_desplegable_ruta)
         self.click_on_element(self.boton_desplegable_menos)
@@ -64,7 +64,8 @@ class ModificarRecorridoPage(Page):
 
     def valido_texto_modifica_tu_ruta(self):
         self.implicit_wait_visible(self.modifica_tu_ruta_txt)
-        valido_texto = self.find_element(self.modifica_tu_ruta_txt).is_displayed()
+        #valido_texto = self.find_element(self.modifica_tu_ruta_txt).is_displayed()
+        valido_texto = self.driver.find_element_by_id("00000000-0000-004a-ffff-ffff000001e2").is_displayed()
         return valido_texto
 
     def valido_texto_preiona_prolongadamente(self):
@@ -81,3 +82,6 @@ class ModificarRecorridoPage(Page):
         self.implicit_wait_visible(self.no_volver_a_mostrar_txt)
         valido_texto = self.find_element(self.no_volver_a_mostrar_txt).is_displayed()
         return valido_texto
+
+    def click_entendido_boton(self):
+        self.click_on_element(self.entendido_boton)
