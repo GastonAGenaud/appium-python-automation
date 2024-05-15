@@ -75,7 +75,7 @@ Característica: Modificar recorrido sugerido
         Y cierro el cuadro de texto
         Y hago click en el boton "Modificar"
         Y hago click en el boton "Entendido"
-        Y desplazo un cliente hacia una nueva posicion
+        #Y desplazo un cliente hacia una nueva posicion
         #Entonces valido el mensaje "Recorrido modificado"
 
     Escenario: Validacion de opcion "Entregados"

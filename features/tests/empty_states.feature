@@ -2,6 +2,7 @@
 
 Característica: Estados Vacíos
 
+    @regresion
     Escenario: Validación de pantalla "Visitados"
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -9,6 +10,7 @@ Característica: Estados Vacíos
         Y selecciono "Entregados"
         Entonces valido la pantalla de "Entregados"
 
+    @regresion
     Escenario: Validación de pantalla "Anulados"
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
