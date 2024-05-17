@@ -3,7 +3,7 @@
 Característica: Revisar pedido
 
     Escenario: Validacion de visualizacion de ruta de pedido
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto

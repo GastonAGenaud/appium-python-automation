@@ -1,0 +1,15 @@
+{
+  "name": "appium-python-automation",
+  "version": "1.0.0",
+  "description": "[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=alert_status&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=sqale_rating&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=security_rating&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=bugs&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=vulnerabilities&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=duplicated_lines_density&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=reliability_rating&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=sqale_index&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Coverage](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=coverage&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=ncloc&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)\r [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=koandina_app-ruta-digital-qa-movil&metric=code_smells&token=8472b9ab0f0bfa62d4725b0576f9d74c9cfb5274)](https://sonarcloud.io/summary/new_code?id=koandina_app-ruta-digital-qa-movil)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^6.0.7"
+  }
+}

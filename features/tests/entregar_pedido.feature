@@ -19,7 +19,6 @@ Característica: Entregar pedido
         Y hago click en el boton Confirmar
         #Y valido mensaje de entrega completada
 
-
     Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña

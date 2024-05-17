@@ -2,18 +2,20 @@ from features.credentials import CONTRASENA
 from features.credentials import CORREO_CON_CARACTERES
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from appium.webdriver.common.touch_action import TouchAction
 
 
 class InicioSesionPage(Page):
-    correo_campo = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[1]')
+    correo_campo = (MobileBy.XPATH, '//android.widget.EditText[contains(@resource-id, "customTextInput")][1]')
     contrasena_campo = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
-    ingresar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Ingresar"]')
+    ingresar_btn = (MobileBy.ID, 'Iniciar sesión')
     entendido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entendido"]')
     mensaje_error_correo = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar un usuario"]')
     mensaje_error_contrasena = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar una contraseña"]')
-    mensaje_error_inicio_sesion = (MobileBy.XPATH, '//android.widget.LinearLayout[@resource-id="android:id/title_template"]')
-    comenzar_ruta_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Comenzar ruta"]')
-    iniciar_sesion_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Iniciar sesión"]')
+    mensaje_error_inicio_sesion = (
+    MobileBy.XPATH, '//android.widget.LinearLayout[@resource-id="android:id/title_template"]')
+    comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
+    iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión"]')
 
     def usuario_ingresa_correo(self, correo):
         self.click_on_element(self.correo_campo)
@@ -79,3 +81,12 @@ class InicioSesionPage(Page):
         self.implicit_wait_visible(self.iniciar_sesion_btn)
         ingresar_desactivado = self.find_element(self.iniciar_sesion_btn).is_enabled()
         return ingresar_desactivado
+
+    def dismiss_keyboard(self):
+        # Método para cerrar el teclado
+        try:
+            self.driver.hide_keyboard()
+        except:
+            # Si falla, intenta hacer clic fuera del área de entrada de texto
+            action = TouchAction(self.driver)
+            action.tap(x=100, y=100).perform()

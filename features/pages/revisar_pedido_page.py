@@ -14,9 +14,9 @@ class RevisarPedidoPage(Page):
     pudahuel_titulo = (MobileBy.XPATH, '(//android.widget.TextView[@text="Pudahuel, Santiago, "])[2]')
     precio_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 930.470"])[1]')
     productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="16"]')
-    google_maps_opcion = (MobileBy.XPATH, '//android.widget.TextView[@text="Ver mapa"]')
+    google_maps_opcion = (MobileBy.ACCESSIBILITY_ID, 'Ver mapa')
     anular_pedido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anular pedido"]')
-    entregar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregar"]')
+    entregar_btn = (MobileBy.ACCESSIBILITY_ID, 'Entregar')
     coca_cola_zero_pack = (MobileBy.XPATH, '//android.widget.TextView[@text="Coca Cola Zero 1.5 LT Pack 1 "]')
     precio_unitario_coca_zero = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 2.000 "]')
     precio_final_coca_zero = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 40.000 "]')
@@ -109,7 +109,7 @@ class RevisarPedidoPage(Page):
 
     def click_entregar_btn(self):
         self.click_on_element(self.entregar_btn)
-        self.click_on_element(self.entregar_btn)
+        # self.click_on_element(self.entregar_btn)
 
     def click_entregar_boton(self):
         self.click_on_element(self.entregar_btn)
