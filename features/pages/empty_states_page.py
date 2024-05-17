@@ -5,8 +5,8 @@ from appium.webdriver.common.mobileby import MobileBy
 class EmptyStatesPage(Page):
     anulados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anulados"]')
     visitados_seccion = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="Visitados"]')
-    retornados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]')
-    entregados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregados"]')
+    retornados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleA']")
+    entregados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleFinish']")
     no_has_anulado_pedido_txt = [MobileBy.XPATH,
                                  '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
                                  '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[32]']
@@ -14,11 +14,8 @@ class EmptyStatesPage(Page):
                                '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux'
                                '.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]']
     no_has_visitado_clientes_txt = [MobileBy.XPATH,
-                                    '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget'
-                                    '.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view'
-                                    '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup'
-                                    '/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com'
-                                    '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[33]']
+                                    '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
+                                    '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]']
     imagen_seccion_visitados = [MobileBy.XPATH,
                                 '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget'
                                 '.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup'
@@ -36,10 +33,8 @@ class EmptyStatesPage(Page):
     def seccion_retornados(self):
         self.click_on_element(self.retornados_seccion)
         self.click_on_element(self.retornados_seccion)
-        self.click_on_element(self.retornados_seccion)
 
     def seccion_entregados(self):
-        self.click_on_element(self.entregados_seccion)
         self.click_on_element(self.entregados_seccion)
         self.click_on_element(self.entregados_seccion)
 

@@ -15,7 +15,7 @@ class InicioSesionPage(Page):
     mensaje_error_inicio_sesion = (
     MobileBy.XPATH, '//android.widget.LinearLayout[@resource-id="android:id/title_template"]')
     comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
-    iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión"]')
+    iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión')
 
     def usuario_ingresa_correo(self, correo):
         self.click_on_element(self.correo_campo)
