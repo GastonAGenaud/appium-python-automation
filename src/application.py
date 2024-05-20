@@ -1,3 +1,4 @@
+from features.pages.cuadrar_page import CuadrarPage
 from features.pages.login_page import LoginPage
 from features.pages.main_page import MainPage
 from features.pages.inicio_sesion_page import InicioSesionPage
@@ -20,7 +21,7 @@ class Application:
         self.revisar_pedido_page = RevisarPedidoPage(driver)
 #        self.anular_pedido_page = AnularPedidoPage(driver)
         self.entregar_pedido_page = EntregarPedidoPage(driver)
-#        self.cuadrar_page = CuadrarPage(driver)
+        self.cuadrar_page = CuadrarPage(driver)
         self.empty_states_page = EmptyStatesPage(driver)
 
 
