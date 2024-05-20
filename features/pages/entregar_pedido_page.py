@@ -11,8 +11,9 @@ class EntregarPedidoPage(Page):
     confirmar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Confirmar"]')
     entrega_completada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
     cerrar_cuadro_btn = (MobileBy.XPATH, '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
-    modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
+    modificar_btn = (MobileBy.ACCESSIBILITY_ID, 'Modificar')
     modifica_tu_ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Modifica tu ruta"]')
+    modifica_tu_ruta_texsto = (MobileBy.ID, 'title-amount-total')
 
     def rebajo_el_pedido(self):
         self.click_on_element(self.restar_btn)

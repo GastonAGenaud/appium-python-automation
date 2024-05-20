@@ -38,18 +38,26 @@ def valido_boton(context, boton):
     assert bool(context.app.modificar_recorrido_page.valido_comenzar_ruta_msg())
 
 
-@then('valido que el texto {texto} de la pantalla de modificacion manual')
-def valido_texto_pantalla_modificacion_manual(context, texto):
-    if texto == "Modifica tu ruta":
+@then('valido que el texto {opcion} de la pantalla de modificacion manual')
+def valido_texto_pantalla_modificacion_manual(context, opcion):
+    if opcion == "Modifica tu ruta":
         assert bool(context.app.modificar_recorrido_page.valido_texto_modifica_tu_ruta())
-    elif texto == "Presiona prolongadamente":
+    elif opcion == "Presiona prolongadamente":
         assert bool(context.app.modificar_recorrido_page.valido_texto_preiona_prolongadamente())
-    elif texto == "Entendido":
+    elif opcion == "Entendido":
         assert bool(context.app.modificar_recorrido_page.valido_texto_entendido())
-    elif texto == "No volver a mostrar":
+    elif opcion == "No volver a mostrar":
         assert bool(context.app.modificar_recorrido_page.valido_texto_no_volver_a_mostrar())
     else:
-        raise ValueError(f"No se encontro el texto '{texto}'")
+        raise ValueError(f"No se encontro el texto '{opcion}'")
+
+
+@when('desplazo un cliente hacia una nueva posicion')
+def desplazo_hacia_nueva_posicion(context):
+    context.app.modificar_recorrido_page.drag_text_box_down()
+
+#@then('valido el mensaje que el cliente modifico su ubicacion en la lista')
+#def valido_mensaje_cliente_modificado(context):
 
 
 
