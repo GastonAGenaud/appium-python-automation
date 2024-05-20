@@ -2,6 +2,7 @@
 
 Característica: Revisar pedido
 
+    @regresion
     Escenario: Validacion de visualizacion de ruta de pedido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -23,6 +24,7 @@ Característica: Revisar pedido
     #        | test@test.com      | test123 | Test            |
     #        | Jonathan           | test123 | Leandro Maronas |
 
+    @regresion
     Escenario: Validacion de visualizacion de la cantidad de productos y el monto de transferencia
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -35,6 +37,7 @@ Característica: Revisar pedido
         Entonces valido la visualizacion del monto de la transferencia
         Y valido la visualizacion de la cantidad de los productos
 
+    @regresion
     Escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -48,6 +51,7 @@ Característica: Revisar pedido
         Entonces valido la presencia de la opcion "Google Maps"
         #Y valido la presencia de la opcion "Waze"
 
+    @regresion
     Esquema del escenario: Validacion del contenido de la factura
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -69,6 +73,7 @@ Característica: Revisar pedido
             | Fanta MidCal PT250cc       | $ 46.913       | 5            | $ 234.565   |
             | Fanta MidCal Express 237cc | $ 66.471       | 7            | $ 465.297   |
 
+    @regresion
     Escenario: Anular pedido de la factura
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -80,6 +85,7 @@ Característica: Revisar pedido
         Y hago click en el boton "Retornar pedido"
         #Entonces valido que se muestre una confirmacion de anulacion del pedido
 
+    @regresion
     Escenario: Entregar pedido de la factura
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -92,6 +98,7 @@ Característica: Revisar pedido
         Y hago click en el boton "Confirmar"
         #Entonces valido mensaje de entrega completada
 
+    @regresion
     Escenario: Validacion del precio total del pedido
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña

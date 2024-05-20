@@ -35,6 +35,12 @@ def click_en_el_boton(context, boton):
         context.app.modificar_recorrido_page.click_comenzar_ruta_btn()
     elif boton == "Entendido":
         context.app.modificar_recorrido_page.click_entendido_boton()
+    elif boton == "Desplegar":
+        context.app.modificar_recorrido_page.click_desplegar_boton()
+    elif boton == "Mover hacia arriba":
+        context.app.modificar_recorrido_page.click_mover_hacia_arriba_boton()
+    elif boton == "Mover a lo más abajo":
+        context.app.modificar_recorrido_page.click_mover_a_lo_mas_abajo_boton()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
 
@@ -59,7 +65,7 @@ def inicio_sesion_exitosamente(context):
     assert bool(context.app.inicio_sesion_page.valid_comenzar_ruta_btn())
 
 
-@given('valido el tamano de zona de accion del boton "{boton}"')
+@given('valido el tamaño de zona de accion del boton "{boton}"')
 def valido_tamano_zona_accion(context, boton):
     if boton == "Ingresar":
         assert bool(context.app.inicio_sesion_page.valido_tamano_ingresar_btn())

@@ -16,6 +16,7 @@ class EntregarPedidoPage(Page):
                                          '2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
     modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
     modifica_tu_ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Modifica tu ruta"]')
+    modifica_tu_ruta_texsto = (MobileBy.ID, 'title-amount-total')
 
     def rebajo_el_pedido(self):
         self.click_on_element(self.restar_btn)
