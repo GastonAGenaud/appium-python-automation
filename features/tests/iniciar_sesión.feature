@@ -13,7 +13,6 @@ Característica: iniciar sesión
     @smoke @regresion
     Escenario: Validacion de error por falta de correo
         Dado el usuario ingresa una contraseña
-        Y valido el tamano de zona de accion del boton "Iniciar sesion"
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "correo electronico"
 

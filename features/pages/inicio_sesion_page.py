@@ -48,27 +48,16 @@ class InicioSesionPage(Page):
         valido_comenzar_ruta = self.find_element(self.comenzar_ruta_btn).is_displayed()
         return valido_comenzar_ruta
 
-    def valido_tamano_ingresar_btn(self):
-        boton = self.driver.find_element(MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Iniciar sesión"]')
-        tamano = boton.size
-        ancho = tamano['width']
-        alto = tamano['height']
+    #def valido_tamano_ingresar_btn(self):
+    #    boton = self.driver.find_element(MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Iniciar sesión"]')
+    #    tamano = boton.size
+    #    ancho = tamano['width']
+    #    alto = tamano['height']
 
-        if ancho >= 48 and alto >= 48:
-            return True
-        else:
-            return False
-
-    def valido_tamano_comenzar_ruta_btn(self):
-        boton = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@text="Comenzar ruta"]')
-        tamano = boton.size
-        ancho = tamano['width']
-        alto = tamano['height']
-
-        if ancho >= 48 and alto >= 48:
-            return True
-        else:
-            return False
+    #    if ancho >= 48 and alto >= 48:
+    #        return True
+    #    else:
+    #        return False
 
     def valido_pantalla_de_inicio(self):
         self.implicit_wait_visible(self.iniciar_sesion_btn)

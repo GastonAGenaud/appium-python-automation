@@ -83,7 +83,7 @@ Característica: Modificar recorrido sugerido
         Y desplazo un cliente hacia una nueva posicion
         #Entonces valido el mensaje "Recorrido modificado"
 
-
+    @regresion
     Escenario: Validacion de la modificacion de la ruta por boton (hacia arriba)
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -93,9 +93,9 @@ Característica: Modificar recorrido sugerido
         Y hago click en el boton "Entendido"
         Y hago click en el boton "Desplegar"
         Y hago click en el boton "Mover hacia arriba"
-        #Entonces valido el mensaje que el cliente modifico su ubicacion en la lista
+        Entonces valido el mensaje que el cliente modifico su ubicacion hacia arriba en la lista
 
-
+    @regresion
     Escenario: Validacion de la modificacion de la ruta por boton (hacia abajo)
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
@@ -105,7 +105,7 @@ Característica: Modificar recorrido sugerido
         Y hago click en el boton "Entendido"
         Y hago click en el boton "Desplegar"
         Y hago click en el boton "Mover a lo más abajo"
-        #Entonces valido el mensaje que el cliente modifico su ubicacion en la lista
+        Entonces valido el mensaje que el cliente modifico su ubicacion hacia mas abajo en la lista
 
 
     @regresion
