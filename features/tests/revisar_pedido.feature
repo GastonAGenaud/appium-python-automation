@@ -109,3 +109,14 @@ Característica: Revisar pedido
         Y selecciono la factura con numero "404145544"
         Entonces valido que este correcta la suma del precio de los productos
 
+    Escenario: Validacion del mensaje al rebajar producto
+        Dado el usuario ingresa el correo electronico "user_tests"
+        Y el usuario ingresa una contraseña
+        Cuando hago click en el boton "Iniciar sesion"
+        Y cierro el cuadro de texto
+        Y hago click en el boton "Comenzar ruta"
+        Y elijo la ruta "El Deseo SPA"
+        Y selecciono la factura con numero "404145544"
+        Entonces debería ver el mensaje "El producto ha sido rebajado exitosamente a 50.00"
+
+

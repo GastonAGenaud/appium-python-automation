@@ -106,6 +106,11 @@ def valido_sector_agregar_y_restar(context):
     assert bool(context.app.revisar_pedido_page.valido_agregar_btn())
 
 
+@when('selecciono el botón de restar producto')
+def valido_sector_agregar_y_restar(context):
+    assert bool(context.app.revisar_pedido_page.valido_restar_btn())
+
+
 @then('valido el precio final "{precio}"')
 def valido_precio_final(context, precio):
     if precio == "$ 230.608":

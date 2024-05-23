@@ -40,3 +40,26 @@ Característica: Cuadrar
     Cuando hago click en el boton "Iniciar sesion"
     Y cierro el cuadro de texto
     Entonces se valida el texto "25 clientes"
+
+  @modalComenzarRuta
+  Escenario: Validacion del modal de ruta comenzada
+    Dado el usuario ingresa el correo electronico "user_tests"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y cierro el cuadro de texto
+    Y hago click en el boton "Comenzar ruta"
+    Entonces valido el modal de ruta comenzada
+
+  @modalComenzarRuta
+  Escenario: Validacion del texto "Entregada"
+    Dado el usuario ingresa el correo electronico "user_tests"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y cierro el cuadro de texto
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145544"
+    Y hago click en el boton "entregar"
+    Y hago click en el boton "Confirmar"
+    Entonces valido el texto "Entregada"
+

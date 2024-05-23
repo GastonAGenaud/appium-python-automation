@@ -33,6 +33,7 @@ class EntregarPedidoPage(Page):
 
     def click_confirmar_boton(self):
         self.click_on_element(self.confirmar_btn)
+        self.click_on_element(self.confirmar_btn)
 
     def click_modificar_btn(self):
         try:
