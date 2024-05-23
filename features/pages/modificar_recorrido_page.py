@@ -1,6 +1,8 @@
-from appium.webdriver.common.touch_action import TouchAction
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class ModificarRecorridoPage(Page):
@@ -41,8 +43,22 @@ class ModificarRecorridoPage(Page):
         return nombre_local
 
     def click_comenzar_ruta_btn(self):
-        self.click_on_element(self.comenzar_ruta_btn)
-        self.click_on_element(self.comenzar_ruta_btn)
+        max_attempts = 5  # Número máximo de intentos
+        attempts = 0
+
+        while attempts < max_attempts:
+            self.click_on_element(self.comenzar_ruta_btn)
+            try:
+                WebDriverWait(self.driver, 5).until_not(
+                    EC.presence_of_element_located(self.comenzar_ruta_btn)
+                )
+                print("El botón ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El botón aún está presente. Intentando nuevamente...")
+                attempts += 1
+                if attempts == max_attempts:
+                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def click_desplegador_btn(self):
         self.click_on_element(self.boton_desplegable_ruta)
