@@ -65,18 +65,6 @@ def inicio_sesion_exitosamente(context):
     assert bool(context.app.inicio_sesion_page.valid_comenzar_ruta_btn())
 
 
-@given('valido el tamaño de zona de accion del boton "{boton}"')
-def valido_tamano_zona_accion(context, boton):
-    if boton == "Ingresar":
-        assert bool(context.app.inicio_sesion_page.valido_tamano_ingresar_btn())
-    elif boton == "Iniciar sesion":
-        assert bool(context.app.inicio_sesion_page.valido_tamano_ingresar_btn())
-    elif boton == "Comenzar ruta":
-        assert bool(context.app.inicio_sesion_page.valido_tamano_comenzar_ruta_btn())
-    else:
-        raise ValueError(f"No se encontro el mensaje de error en el campo de '{boton}'")
-
-
 @given('estoy en la pantalla de inicio de sesion')
 def estoy_pantalla_de_inicio(context):
     assert bool(context.app.inicio_sesion_page.valido_pantalla_de_inicio())

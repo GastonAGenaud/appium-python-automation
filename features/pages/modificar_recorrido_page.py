@@ -1,6 +1,8 @@
-from appium.webdriver.common.touch_action import TouchAction
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class ModificarRecorridoPage(Page):
@@ -22,6 +24,8 @@ class ModificarRecorridoPage(Page):
     boton_desplegable = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="COMERCIAL Y GASTRONOMICA ..., AVENIDA ISIDORA GOYENECHEA 2971, Abierto, Cierra a las 23:59"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView')
     mover_hacia_arriba_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover hacia arriba')
     mover_a_lo_mas_abajo_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover a lo más abajo')
+    mover_hacia_arriba_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado arriba de la lista')
+    mover_hacia_abajo_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado al final de la lista')
 
     def valido_comenzar_ruta_btn(self):
         self.implicit_wait_visible(self.comenzar_ruta_btn)
@@ -39,8 +43,22 @@ class ModificarRecorridoPage(Page):
         return nombre_local
 
     def click_comenzar_ruta_btn(self):
-        self.click_on_element(self.comenzar_ruta_btn)
-        self.click_on_element(self.comenzar_ruta_btn)
+        max_attempts = 5  # Número máximo de intentos
+        attempts = 0
+
+        while attempts < max_attempts:
+            self.click_on_element(self.comenzar_ruta_btn)
+            try:
+                WebDriverWait(self.driver, 5).until_not(
+                    EC.presence_of_element_located(self.comenzar_ruta_btn)
+                )
+                print("El botón ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El botón aún está presente. Intentando nuevamente...")
+                attempts += 1
+                if attempts == max_attempts:
+                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def click_desplegador_btn(self):
         self.click_on_element(self.boton_desplegable_ruta)
@@ -100,6 +118,15 @@ class ModificarRecorridoPage(Page):
     def click_mover_a_lo_mas_abajo_boton(self):
         self.click_on_element(self.mover_a_lo_mas_abajo_boton)
 
+    def valido_mensaje_cliente_modificado_arriba(self):
+        self.implicit_wait_visible(self.mover_hacia_arriba_mensaje)
+        valido_texto = self.find_element(self.mover_hacia_arriba_mensaje).is_displayed()
+        return valido_texto
+
+    def valido_mensaje_cliente_modificado_abajo(self):
+        self.implicit_wait_visible(self.mover_hacia_abajo_mensaje)
+        valido_texto = self.find_element(self.mover_hacia_abajo_mensaje).is_displayed()
+        return valido_texto
     #def drag_text_box_down(self):
         #text_box = self.driver.find_element_by_xpath(self.'//android.widget.TextView[@resource-id="title-location" and @text="EL DESEO SPA"]')
         #actions = TouchAction(self.driver)

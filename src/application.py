@@ -9,6 +9,7 @@ from features.pages.revisar_pedido_page import RevisarPedidoPage
 from features.pages.entregar_pedido_page import EntregarPedidoPage
 #from features.pages.cuadrar_page import CuadrarPage
 from features.pages.empty_states_page import EmptyStatesPage
+from features.pages.ux_page import UXPage
 
 
 class Application:
@@ -23,5 +24,6 @@ class Application:
         self.entregar_pedido_page = EntregarPedidoPage(driver)
         self.cuadrar_page = CuadrarPage(driver)
         self.empty_states_page = EmptyStatesPage(driver)
+        self.ux_page = UXPage(driver)
 
 

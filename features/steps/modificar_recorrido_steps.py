@@ -56,8 +56,12 @@ def valido_texto_pantalla_modificacion_manual(context, opcion):
 def desplazo_hacia_nueva_posicion(context):
     context.app.modificar_recorrido_page.drag_text_box_down()
 
-#@then('valido el mensaje que el cliente modifico su ubicacion en la lista')
-#def valido_mensaje_cliente_modificado(context):
+
+@then('valido el mensaje que el cliente modifico su ubicacion hacia arriba en la lista')
+def valido_mensaje_cliente_modificado(context):
+    assert bool(context.app.modificar_recorrido_page.valido_mensaje_cliente_modificado_arriba())
 
 
-
+@then('valido el mensaje que el cliente modifico su ubicacion hacia mas abajo en la lista')
+def valido_mensaje_cliente_modificado_en_la_lista(context):
+    assert bool(context.app.modificar_recorrido_page.valido_mensaje_cliente_modificado_abajo())
