@@ -36,4 +36,3 @@ Característica: Entregar pedido
         Y valido el total rebajado como "$ 57.652"
         Y hago click en el boton Confirmar
         #Y valido mensaje de entrega completada
-

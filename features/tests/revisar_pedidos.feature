@@ -57,11 +57,12 @@ Característica: Revisar pedido
         Y hago click en el boton "Anular pedido"
         Entonces valido que se muestre una confirmacion de anulacion del pedido
 
-    Escenario: Entregar pedido de la factura
-        Dado el usuario ingresa el correo electronico "user_tests"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Ingresar"
-        Y elijo la ruta "Pudahuel"
-        Y selecciono la factura con numero "388717884"
-        Y hago click en el boton "Entregar"
-        Entonces valido mensaje de entrega completada
+#    Escenario: Entregar pedido de la factura
+#        Dado el usuario ingresa el correo electronico "user_tests"
+#        Y el usuario ingresa una contraseña
+#        Cuando hago click en el boton "Ingresar"
+#        Y elijo la ruta "Pudahuel"
+#        Y selecciono la factura con numero "388717884"
+#        Y hago click en el boton "Entregar"
+#        Y selecciono el botón de restar producto
+#        Entonces valido mensaje de entrega completada

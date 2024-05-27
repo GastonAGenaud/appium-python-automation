@@ -5,18 +5,20 @@ from appium.webdriver.common.mobileby import MobileBy
 
 class EntregarPedidoPage(Page):
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
-    entregar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregar"]')
+    entregar_btn = (MobileBy.ACCESSIBILITY_ID, 'Confirmar')
     precio_total_factura = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 872.818"]')
     precio_rebajado = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 57.652"]')
-    confirmar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Confirmar"]')
+    confirmar_btn = (MobileBy.ACCESSIBILITY_ID, 'Confirmar')
     entrega_completada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
-    cerrar_cuadro_btn = (MobileBy.XPATH, '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
-    modificar_btn = (MobileBy.ACCESSIBILITY_ID, 'Modificar')
+    cerrar_cuadro_btn = (MobileBy.XPATH, '//android.widget.FrameLayout['
+                                         '@resource-id="android:id/content"]/android.widget.FrameLayout/android.view'
+                                         '.ViewGroup['
+                                         '2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
+    modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
     modifica_tu_ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Modifica tu ruta"]')
     modifica_tu_ruta_texsto = (MobileBy.ID, 'title-amount-total')
 
     def rebajo_el_pedido(self):
-        self.click_on_element(self.restar_btn)
         self.click_on_element(self.restar_btn)
 
     def valido_precio_total_factura(self):
@@ -30,6 +32,7 @@ class EntregarPedidoPage(Page):
         return valor_precio_rebajado
 
     def click_confirmar_boton(self):
+        self.click_on_element(self.confirmar_btn)
         self.click_on_element(self.confirmar_btn)
 
     def click_modificar_btn(self):

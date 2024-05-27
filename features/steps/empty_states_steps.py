@@ -23,6 +23,8 @@ def valido_texto(context, texto):
         assert bool(context.app.empty_states_page.valido_txt_seccion_anulados())
     elif texto == 'Aun no visitas a ningun cliente':
         assert bool(context.app.empty_states_page.no_has_visitado_clientes_txt())
+    elif texto == 'Entregada':
+        assert context.app.cuadrar_page.validar_texto_entregada()
     else:
         raise ValueError(f"No se encontro el texto '{texto}'")
 
