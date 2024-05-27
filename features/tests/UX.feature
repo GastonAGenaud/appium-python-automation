@@ -2,11 +2,12 @@
 
 Característica: UX
 
-
+    @regresion
     Escenario: Valido las zonas de accion de la pantalla de Inicio de sesion
         Dado estoy en la pantalla de inicio de sesion
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar sesión"]"
 
+    @regresion
     Escenario: Valido las zonas de accion de la pantalla de la seccion "Pendientes"
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -20,6 +21,7 @@ Característica: UX
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Ruta sugerida"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Ruta sugerida"]"
 
+    @regresion
     Escenario: Valido las zonas de accion de la pantalla del Pedido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -31,6 +33,7 @@ Característica: UX
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Confirmar"]"
         Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Ver mapa"]"
 
+    @regresion
     Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145544
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -53,6 +56,7 @@ Característica: UX
         Y valido el tamaño de zona de accion del boton "(//android.widget.CheckBox[@resource-id="Test Checkbox"])[3]/android.view.ViewGroup/android.view.ViewGroup"
         Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="closeIcon"]"
 
+    @regresion
     Escenario: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145544
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -67,6 +71,7 @@ Característica: UX
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Confirmar"]"
         Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="closeIcon"]"
 
+    @regresion
     Escenario: Valido las zonas de accion del desplegable "Ordenar por"
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -76,6 +81,7 @@ Característica: UX
         Y valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Menos productos"]"
         Y valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Ruta sugerida"]"
 
+    @regresion
     Escenario: Valido las zonas de accion de los botones de modificacion de la ruta
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
@@ -87,6 +93,7 @@ Característica: UX
         Entonces valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Mover hacia arriba"]"
         Y valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Mover a lo más abajo"]"
 
+    @regresion
     Escenario: Valido las zonas de accion del modal de modificacion de la ruta
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
