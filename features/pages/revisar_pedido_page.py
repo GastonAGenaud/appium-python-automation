@@ -5,13 +5,8 @@ from appium.webdriver.common.mobileby import MobileBy
 
 
 class RevisarPedidoPage(Page):
-    avenida_las_condes_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 25, Método no reconocido, $40.000"]')
-    renca_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 15, Método no reconocido, $35.000"]')
-    pudahuel_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 20, Método no reconocido, $50.000"]')
     el_deseo_spa_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 16, Transferencia, $930.470"]')
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
-    avenida_las_condes_titulo = (MobileBy.XPATH, '(//android.widget.TextView[@text="Avenida Las Condes, "])[2]')
-    pudahuel_titulo = (MobileBy.XPATH, '(//android.widget.TextView[@text="Pudahuel, Santiago, "])[2]')
     precio_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 930.470"])[1]')
     productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="16"]')
     google_maps_opcion = (MobileBy.ACCESSIBILITY_ID, 'Ver mapa')
@@ -23,8 +18,7 @@ class RevisarPedidoPage(Page):
     precio_total_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 930.470"]')
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
-    factura_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 388717884"]')
-    factura_del_pedido_deseo_spa = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 404145544"]')
+    factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
     coca_cola_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Coca Cola LT220cc x 6 "]')
     fanta_midcal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal PT250cc x 6 "]')
     fanta_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
@@ -38,37 +32,6 @@ class RevisarPedidoPage(Page):
     precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 234.565 "]')
     precio_final_fanta_express = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 465.297 "]')
     retornar_pedido_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Retornar pedido"]')
-
-    def click_avenida_las_condes_btn(self):
-        self.click_on_element(self.avenida_las_condes_pedido)
-
-    def click_pudahuel_btn(self):
-        self.click_on_element(self.pudahuel_pedido)
-        self.click_on_element(self.pudahuel_pedido)
-        self.click_on_element(self.pudahuel_pedido)
-
-    def click_renca_btn(self):
-        self.click_on_element(self.renca_pedido)
-        self.click_on_element(self.renca_pedido)
-        self.click_on_element(self.renca_pedido)
-
-    def click_el_deseo_spa_btn(self):
-        self.click_on_element(self.el_deseo_spa_pedido)
-
-    def valido_pedido_avenida_las_condes(self):
-        self.implicit_wait_visible(self.avenida_las_condes_titulo)
-        valido_avenida_las_condes = self.find_element(self.avenida_las_condes_titulo).is_displayed()
-        return valido_avenida_las_condes
-
-    def valido_pedido_pudahuel(self):
-        self.implicit_wait_visible(self.pudahuel_pedido)
-        valido_pudahuel = self.find_element(self.pudahuel_pedido).is_displayed()
-        return valido_pudahuel
-
-    def valido_pedido_renca(self):
-        self.implicit_wait_visible(self.renca_pedido)
-        valido_renca = self.find_element(self.renca_pedido).is_displayed()
-        return valido_renca
 
     def valido_pedido_el_deseo_spa(self):
         self.implicit_wait_visible(self.el_deseo_spa_titulo)
@@ -109,7 +72,6 @@ class RevisarPedidoPage(Page):
 
     def click_entregar_btn(self):
         self.click_on_element(self.entregar_btn)
-        # self.click_on_element(self.entregar_btn)
 
     def click_entregar_boton(self):
         self.click_on_element(self.entregar_btn)
@@ -205,22 +167,22 @@ class RevisarPedidoPage(Page):
         return valido_agregar
 
     def valido_comparacion_de_precio(self):
-        producto_1 = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@text="$ 230.608 "]')
+        producto_1 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
-        producto_2 = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@text="$ 234.565 "]')
+        producto_2 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        producto_3 = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@text="$ 465.297 "]')
+        producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)
 
-        valor_total = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@text="$ 930.470"]')
+        valor_total = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')
         precio_producto_total = valor_total.text
         solo_numeros_total = re.sub(r'\D', '', precio_producto_total)
         productoTotal = int(solo_numeros_total)

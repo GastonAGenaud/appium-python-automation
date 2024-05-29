@@ -40,7 +40,6 @@ class EntregarPedidoPage(Page):
             self.click_on_element(self.modificar_btn)
             self.click_on_element(self.modificar_btn)
             self.find_element(self.modifica_tu_ruta_texto).is_displayed()
-            #self.implicit_wait_visible(self.modifica_tu_ruta_texto)
         except NoSuchElementException:
             self.click_on_element(self.modificar_btn)
             self.click_on_element(self.modificar_btn)
