@@ -1,29 +1,21 @@
-from features.pages.base_page import Page
-from appium.webdriver.common.mobileby import MobileBy
 import os
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
-import cv2
-import numpy as np
 import re
-import unicodedata
-from appium.webdriver.extensions.android.nativekey import AndroidKey
+import cv2
 import calendar
 import time
+import unicodedata
+import numpy as np
+from selenium.common.exceptions import NoSuchElementException
+from appium.webdriver.common.mobileby import MobileBy
+from appium.webdriver.extensions.android.nativekey import AndroidKey
+from features.pages.base_page import Page
 
 
 class UXPage(Page):
     el_deseo_spa_pedido = (
     MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
 
-    def valido_tamano_ingresar_btn(self, boton):
-        boton = self.driver.find_element(MobileBy.XPATH, f'{boton}')
-        tamano = boton.size
-        ancho = tamano['width']
-        alto = tamano['height']
-
-        return ancho >= 48 and alto >= 48
-
-    def scroll_down_until_element(self, locator, max_attempts=5):
+    def scroll_down_until_element(self, locator, max_attempts=10):
         attempts = 0
         move_end_executed = False
 
@@ -35,6 +27,7 @@ class UXPage(Page):
             except NoSuchElementException:
                 if not move_end_executed:
                     self.driver.press_keycode(AndroidKey.MOVE_END)
+                    self.driver.press_keycode(AndroidKey.DPAD_DOWN)
                     self.driver.press_keycode(AndroidKey.DPAD_DOWN)
 
                 move_end_executed = True

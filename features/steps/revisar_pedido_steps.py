@@ -3,27 +3,15 @@ from behave import given, when, then
 
 @when('elijo la ruta "{idRuta}"')
 def usuario_ingresa_correo(context, idRuta):
-    if idRuta == "Avenida Las Condes":
-        context.app.revisar_pedido_page.click_avenida_las_condes_btn()
-    elif idRuta == "Pudahuel":
-        context.app.revisar_pedido_page.click_pudahuel_btn()
-    elif idRuta == "Renca":
-        context.app.revisar_pedido_page.click_renca_btn()
-    elif idRuta == "El Deseo SPA":
-        context.app.revisar_pedido_page.click_el_deseo_spa_btn()
+    if idRuta == "El Deseo SPA":
+        context.app.ux_page.click_el_deseo_spa_btn()
     else:
         raise ValueError(f"No se encontro la ruta '{idRuta}'")
 
 
 @then('se valida que la visualizacion de pedido para la ruta "{idRuta}" sea correcta')
 def visualizaciones_correcta_del_pedido(context, idRuta):
-    if idRuta == "Avenida Las Condes":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_avenida_las_condes())
-    elif idRuta == "Pudahuel":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_pudahuel())
-    elif idRuta == "Renca":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_renca())
-    elif idRuta == "El Deseo SPA":
+    if idRuta == "El Deseo SPA":
         assert bool(context.app.revisar_pedido_page.valido_pedido_el_deseo_spa())
     else:
         raise ValueError(f"No se encontro el mensaje de error en el campo de '{idRuta}'")
@@ -51,10 +39,8 @@ def visualizo_la_factura(context, factura):
 
 @when('selecciono la factura con numero "{factura}"')
 def visualizo_la_factura(context, factura):
-    if factura == "388717884":
+    if factura == "404145531":
         context.app.revisar_pedido_page.selecciono_la_factura()
-    elif factura == "404145544":
-        context.app.revisar_pedido_page.selecciono_la_factura_deseo_spa()
     else:
         raise ValueError(f"No se encontro la factura con numero '{factura}'")
 

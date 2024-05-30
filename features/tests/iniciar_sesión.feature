@@ -1,5 +1,5 @@
 # language: es
-
+@iniciar_sesion
 Característica: iniciar sesión
 
     @regresion

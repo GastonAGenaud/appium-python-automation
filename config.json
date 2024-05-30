@@ -2,8 +2,8 @@
   "target": {
     "capabilities": {
       "platformName": "Android",
-      "platformVersion": "14.0",
-      "deviceName": "emulator-5554",
+      "platformVersion": "13.0",
+      "deviceName": "Pixel 7 Pro API 33",
       "automationName": "UiAutomator2",
       "appPackage": "com.rutadigital",
       "appActivity": "com.rutadigital.MainActivity"
