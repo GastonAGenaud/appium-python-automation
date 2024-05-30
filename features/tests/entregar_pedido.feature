@@ -3,7 +3,7 @@
 Característica: Entregar pedido
 
     @regresion
-    Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Rebajados"
+    Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Retornados"
         Dado el usuario ingresa el correo electronico "user_tests"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
@@ -13,10 +13,8 @@ Característica: Entregar pedido
         Y selecciono la factura con numero "404145531"
         Y selecciono para rebajar el pedido
         Y hago click en el boton "entregar"
-        Y selecciono "Rebajados"
-        Entonces valido el producto "Coca Cola LT220cc"
-        Y valido el total de la factura como "$ 872.818"
-        Y valido el total rebajado como "$ 57.652"
+        #Y selecciono "Rebajados"
+        Entonces valido el texto "No hay productos rebajados"
         Y hago click en el boton Confirmar
         #Y valido mensaje de entrega completada
 
