@@ -1,0 +1,416 @@
+{
+  "uid" : "9cd0b2b73b33d2cf",
+  "name" : "Valido las zonas de accion de la pantalla del Pedido",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion de la pantalla del Pedido",
+  "historyId" : "4cdd6b93650cfa134c1cf166942cfb2a",
+  "time" : {
+    "start" : 1717099343600,
+    "stop" : 1717099343602,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y cierro el cuadro de texto",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Retornar pedido\"]\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Confirmar\"]\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.widget.TextView[@text=\"Ver mapa\"]\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Cerrar pedido\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la pantalla con la imagen de referencia \"//android.view.ViewGroup[@content-desc='Retornados']/android.view.ViewGroup\" \"features/screenshots/referencia_pedido.png\"",
+      "time" : {
+        "start" : 1717099343602,
+        "stop" : 1717099343602,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f7d961e6ce9dbc39",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717095956878,
+        "stop" : 1717095956879,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c55824be9bbd065f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094881853,
+        "stop" : 1717094881854,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b6ec5b7898dba8f2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094751012,
+        "stop" : 1717094751014,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8268f86460cc435b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094485045,
+        "stop" : 1717094485046,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a74dc21513cc1335",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094382978,
+        "stop" : 1717094382980,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "14360b82d207d326",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086581623,
+        "stop" : 1717086581624,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f6fe63f0ea96f6ea",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086498208,
+        "stop" : 1717086498209,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "62e442ad8ad76ca8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086323442,
+        "stop" : 1717086323444,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c3590c1eafaddc9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085349324,
+        "stop" : 1717085349356,
+        "duration" : 32
+      }
+    }, {
+      "uid" : "7f1716e56529308e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085279236,
+        "stop" : 1717085279238,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6e2861b8ea7187f3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085246527,
+        "stop" : 1717085246529,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eaf9d129b75f0018",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085208787,
+        "stop" : 1717085208788,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cfa0ce899c326e53",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084998590,
+        "stop" : 1717084998592,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "faeef7196ad2a362",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084877280,
+        "stop" : 1717084877282,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f37d34ff9c801365",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084642354,
+        "stop" : 1717084642355,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c36af416bf517052",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084599072,
+        "stop" : 1717084599074,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "17849c2080125d04",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084588290,
+        "stop" : 1717084588291,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cc657bc1725b3ce4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084438286,
+        "stop" : 1717084438287,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e462303a21987bd6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083385806,
+        "stop" : 1717083385809,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a2aa664ca2b976cd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083260563,
+        "stop" : 1717083260565,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "433cc31ba80a17b4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717082892144,
+        "stop" : 1717082892145,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e409c43b6ccb01c2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006047141,
+        "stop" : 1717006047142,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4759bde0064e366e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717005919439,
+        "stop" : 1717005919440,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d4c8737bf158fead",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717003111482,
+        "stop" : 1717003111483,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "9cd0b2b73b33d2cf.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,476 @@
+{
+  "uid" : "31a3f491d514ca2e",
+  "name" : "Validación de la pantalla \"Vuelta finalizada\" -- @1.2 ",
+  "fullName" : "Cuadrar: Validación de la pantalla \"Vuelta finalizada\"",
+  "historyId" : "b817a29ca3fda8cc0993d933494c45ed",
+  "time" : {
+    "start" : 1717099343635,
+    "stop" : 1717099343637,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado ingreso el correo electrónico \"Jonathan\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y ingreso la contrasena \"test123\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago clic en el botón \"Ingresar\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"Felix de Amesti 920\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando selecciono el botón \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y visualizo la pantalla \"Ruta finalizada\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que el producto \"Ades de Naranja 700 ML Pack 6\" esté presente",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el total como \"$3.400.200\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el total de transferencia como \"$1.700.000\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el total de efectivo como \"$1.000.000\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el total de cheque como \"$400.200\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el total de crédito como \"$1.600.200\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el total rebajado como \"$90.800\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido la presencia del botón \"Cerrar transporte\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido que se muestre el mensaje \"Transporte listo\"",
+      "time" : {
+        "start" : 1717099343637,
+        "stop" : 1717099343637,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 15,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Cuadrar"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "Jonathan"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e1a3b5d9c59fa4e5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717095956917,
+        "stop" : 1717095956919,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c79e9555d356ae19",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094881887,
+        "stop" : 1717094881889,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "aeb22f209d26a18d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094751051,
+        "stop" : 1717094751052,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8dc613c1e4a8418d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094485085,
+        "stop" : 1717094485087,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2becf8abba3dcdd3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094383016,
+        "stop" : 1717094383017,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5ed1ff5274535b20",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086581657,
+        "stop" : 1717086581659,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b31dd6df48550f4d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086498246,
+        "stop" : 1717086498247,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c68f85bce72ae469",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086323492,
+        "stop" : 1717086323494,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f19bdda253cc0d2c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085349423,
+        "stop" : 1717085349424,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c5910f674fc8eed3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085279271,
+        "stop" : 1717085279272,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "da0bf8e1cbe11804",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085246562,
+        "stop" : 1717085246565,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9c2bb8a482ce7173",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085208821,
+        "stop" : 1717085208823,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c7ab76801067dd83",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084998625,
+        "stop" : 1717084998626,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2143d802ccba96df",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084877315,
+        "stop" : 1717084877317,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eacd89a1d4e03bf3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084642397,
+        "stop" : 1717084642399,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1d6862dbef68ccf6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084599108,
+        "stop" : 1717084599109,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6266a06fb1dfe27f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084588326,
+        "stop" : 1717084588327,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4765e64e8f87d67f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084438324,
+        "stop" : 1717084438327,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "965fd1544bb4f4a5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083385878,
+        "stop" : 1717083385880,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ca9f39e39352368e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083260630,
+        "stop" : 1717083260632,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1188df032c97028d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717082892181,
+        "stop" : 1717082892182,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c34ea6d91bff9be6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006047169,
+        "stop" : 1717006047170,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bfa571bbce20db60",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717005919466,
+        "stop" : 1717005919468,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fac3f618eab82ad",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717003111508,
+        "stop" : 1717003111509,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "31a3f491d514ca2e.json",
+  "parameterValues" : [ "test123", "Jonathan" ]
+}

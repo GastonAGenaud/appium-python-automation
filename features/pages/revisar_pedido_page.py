@@ -5,7 +5,7 @@ from appium.webdriver.common.mobileby import MobileBy
 
 
 class RevisarPedidoPage(Page):
-    el_deseo_spa_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 16, Transferencia, $930.470"]')
+    el_deseo_spa_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 16, Transferencia, $866.455"]')
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
     precio_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 930.470"])[1]')
     productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="16"]')

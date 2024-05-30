@@ -1,0 +1,340 @@
+{
+  "uid" : "34ff7e064606bf2b",
+  "name" : "Validacion del precio total del pedido",
+  "fullName" : "Revisar pedido: Validacion del precio total del pedido",
+  "historyId" : "4f79a222ef2f3ecf33dc95fb96556cac",
+  "time" : {
+    "start" : 1717101178623,
+    "stop" : 1717101485022,
+    "duration" : 306399
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 119, in valido_sea_correcto_precio\n    assert bool(context.app.revisar_pedido_page.valido_comparacion_de_precio())\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 180, in valido_comparacion_de_precio\n    producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id=\"title-amount-total\"])[3]')\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 119, in valido_sea_correcto_precio\n    assert bool(context.app.revisar_pedido_page.valido_comparacion_de_precio())\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 180, in valido_comparacion_de_precio\n    producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id=\"title-amount-total\"])[3]')\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717101185155,
+        "stop" : 1717101191552,
+        "duration" : 6397
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717101191552,
+        "stop" : 1717101193107,
+        "duration" : 1555
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717101193107,
+        "stop" : 1717101194013,
+        "duration" : 906
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717101194013,
+        "stop" : 1717101236612,
+        "duration" : 42599
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717101236612,
+        "stop" : 1717101451240,
+        "duration" : 214628
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1717101451240,
+        "stop" : 1717101452688,
+        "duration" : 1448
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que este correcta la suma del precio de los productos",
+      "time" : {
+        "start" : 1717101452705,
+        "stop" : 1717101484328,
+        "duration" : 31623
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 119, in valido_sea_correcto_precio\n    assert bool(context.app.revisar_pedido_page.valido_comparacion_de_precio())\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 180, in valido_comparacion_de_precio\n    producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id=\"title-amount-total\"])[3]')\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "629b3cbbced40ec1",
+      "name" : "Validacion del precio total del pedido",
+      "source" : "629b3cbbced40ec1.mp4",
+      "type" : "video/mp4",
+      "size" : 7006420
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c9791589fdbfa6b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717097828129,
+        "stop" : 1717098136784,
+        "duration" : 308655
+      }
+    }, {
+      "uid" : "1a4aff29cbbbd06e",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro la factura con numero '404145544'\n",
+      "time" : {
+        "start" : 1717095812666,
+        "stop" : 1717095900497,
+        "duration" : 87831
+      }
+    }, {
+      "uid" : "46082140c2775294",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro la factura con numero '404145544'\n",
+      "time" : {
+        "start" : 1717087262601,
+        "stop" : 1717087315798,
+        "duration" : 53197
+      }
+    }, {
+      "uid" : "3fc4950bef174570",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086498999,
+        "stop" : 1717086499088,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "b6dd05862fa7e423",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086413232,
+        "stop" : 1717086413333,
+        "duration" : 101
+      }
+    }, {
+      "uid" : "36d9aea1dd3085e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085350048,
+        "stop" : 1717085350125,
+        "duration" : 77
+      }
+    }, {
+      "uid" : "97abd780b584d188",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085280164,
+        "stop" : 1717085280226,
+        "duration" : 62
+      }
+    }, {
+      "uid" : "f691dba12de38cd1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085247208,
+        "stop" : 1717085247266,
+        "duration" : 58
+      }
+    }, {
+      "uid" : "fea4ece97e818522",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085209522,
+        "stop" : 1717085209601,
+        "duration" : 79
+      }
+    }, {
+      "uid" : "fcef1e6519eef78",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084999297,
+        "stop" : 1717084999378,
+        "duration" : 81
+      }
+    }, {
+      "uid" : "f398b8283ac9fe75",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084878116,
+        "stop" : 1717084878181,
+        "duration" : 65
+      }
+    }, {
+      "uid" : "49e637e35d555ac5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084643289,
+        "stop" : 1717084643381,
+        "duration" : 92
+      }
+    }, {
+      "uid" : "ea19d7e516dde2a6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084599787,
+        "stop" : 1717084599849,
+        "duration" : 62
+      }
+    }, {
+      "uid" : "2f02fceb73ec8253",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084589008,
+        "stop" : 1717084589069,
+        "duration" : 61
+      }
+    }, {
+      "uid" : "3749b4e6c38cada8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084439190,
+        "stop" : 1717084439276,
+        "duration" : 86
+      }
+    }, {
+      "uid" : "7b1ad3d0d8479108",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083386707,
+        "stop" : 1717083386773,
+        "duration" : 66
+      }
+    }, {
+      "uid" : "5bb00b0fa6fbb7e9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083287738,
+        "stop" : 1717083287827,
+        "duration" : 89
+      }
+    }, {
+      "uid" : "ce5de56b109698f1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006525277,
+        "stop" : 1717006525279,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f3deb82055802fe",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006006578,
+        "stop" : 1717006006579,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f9af222053c0707b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717003178692,
+        "stop" : 1717003178693,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "34ff7e064606bf2b.json",
+  "parameterValues" : [ ]
+}

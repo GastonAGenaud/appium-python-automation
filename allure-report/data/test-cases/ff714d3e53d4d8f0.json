@@ -1,0 +1,338 @@
+{
+  "uid" : "ff714d3e53d4d8f0",
+  "name" : "Validación de pantalla \"Retornados\"",
+  "fullName" : "Estados Vacíos: Validación de pantalla \"Retornados\"",
+  "historyId" : "22858f0721762bbcdc6d467194492537",
+  "time" : {
+    "start" : 1717099343648,
+    "stop" : 1717099343649,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717099343649,
+        "stop" : 1717099343649,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717099343649,
+        "stop" : 1717099343649,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717099343649,
+        "stop" : 1717099343649,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono \"Retornados\"",
+      "time" : {
+        "start" : 1717099343649,
+        "stop" : 1717099343649,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el texto \"No has anulado pedidos\"",
+      "time" : {
+        "start" : 1717099343649,
+        "stop" : 1717099343649,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido la pantalla de \"Retornados\"",
+      "time" : {
+        "start" : 1717099343649,
+        "stop" : 1717099343649,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Estados Vacíos"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "ac9c49b1a327905a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717095956931,
+        "stop" : 1717095956932,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "571fc20afc46871c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094881900,
+        "stop" : 1717094881901,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "10224e9f695c8e6d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094751063,
+        "stop" : 1717094751065,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d49d0f9596a9aaf4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094485100,
+        "stop" : 1717094485101,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "129ea28a74c02438",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094383029,
+        "stop" : 1717094383030,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8b1315bf452ac8f7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086581670,
+        "stop" : 1717086581671,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c5ca454508ae528b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086498259,
+        "stop" : 1717086498260,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "18382380ce9814e1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086323509,
+        "stop" : 1717086323510,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "184d6f478f54a949",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085349437,
+        "stop" : 1717085349438,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1a50ed2212f8216",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085279284,
+        "stop" : 1717085279286,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9b05e68da2a5c1c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085246576,
+        "stop" : 1717085246577,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ce874c3854c9b693",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085208834,
+        "stop" : 1717085208835,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2efd836c20ec034f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084998637,
+        "stop" : 1717084998638,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4ff9893924aa5b8d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084877327,
+        "stop" : 1717084877328,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d17b70124b3b24ec",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084642413,
+        "stop" : 1717084642415,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b2927244d32df97b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084599121,
+        "stop" : 1717084599122,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "80f8ee3110c95dc5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084588340,
+        "stop" : 1717084588341,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9fbac1d35a207532",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084438337,
+        "stop" : 1717084438339,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4d3dc3f2e6fec6f2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083385896,
+        "stop" : 1717083385897,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "54be9b80dead8dd4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083260645,
+        "stop" : 1717083260646,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "18210085d244fe89",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717082892194,
+        "stop" : 1717082892195,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6a3de0bb3a887f6a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006047179,
+        "stop" : 1717006047180,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "54cd2f9f726ea6b6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717005919475,
+        "stop" : 1717005919476,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f7b796e76fc0f5a9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717003111518,
+        "stop" : 1717003111519,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "ff714d3e53d4d8f0.json",
+  "parameterValues" : [ ]
+}

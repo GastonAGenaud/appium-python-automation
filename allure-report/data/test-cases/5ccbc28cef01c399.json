@@ -1,0 +1,111 @@
+{
+  "uid" : "5ccbc28cef01c399",
+  "name" : "Validacion de mensaje de error por falta de contraseña",
+  "fullName" : "iniciar sesión: Validacion de mensaje de error por falta de contraseña",
+  "historyId" : "9371ca7a80a8293bf8d82e649b5a3c72",
+  "time" : {
+    "start" : 1717003144556,
+    "stop" : 1717003157198,
+    "duration" : 12642
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717003149540,
+        "stop" : 1717003154610,
+        "duration" : 5070
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717003154610,
+        "stop" : 1717003155338,
+        "duration" : 728
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces se valida el mensaje de error en el campo de \"contrasena\"",
+      "time" : {
+        "start" : 1717003155339,
+        "stop" : 1717003156223,
+        "duration" : 884
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f33164f17ef28f74",
+      "name" : "Validacion de mensaje de error por falta de contraseña",
+      "source" : "f33164f17ef28f74.mp4",
+      "type" : "video/mp4",
+      "size" : 1518916
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "iniciar_sesion"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "feature",
+    "value" : "iniciar sesión"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "iniciar_sesion", "regresion", "smoke" ]
+  },
+  "source" : "5ccbc28cef01c399.json",
+  "parameterValues" : [ ]
+}

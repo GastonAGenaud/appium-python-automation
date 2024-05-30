@@ -1,0 +1,377 @@
+{
+  "uid" : "d976d3ac029449aa",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.1 ",
+  "fullName" : "Anular pedido: Validación de pantalla de selección de motivo de anulación",
+  "historyId" : "9a33209e927aac19b27d768766bc5c6c",
+  "time" : {
+    "start" : 1717099343620,
+    "stop" : 1717099343621,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado ingreso el correo electrónico \"test@test.com\"",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y ingreso la contrasena \"test123\"",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago clic en el botón \"Ingresar\"",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulación",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7a9c6e5939be76a8",
+        "name" : ".table",
+        "source" : "7a9c6e5939be76a8.csv",
+        "type" : "text/csv",
+        "size" : 412
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y valido la presencia del botón \"Enviar motivo\"",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago clic en el botón \"Enviar motivo\"",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces verifico que se envíe el motivo seleccionado correctamente",
+      "time" : {
+        "start" : 1717099343621,
+        "stop" : 1717099343621,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "test@test.com"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "725b4c896a8e6744",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717095956900,
+        "stop" : 1717095956901,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a7f442fac0475f5b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094881871,
+        "stop" : 1717094881873,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4242edfb954cb6b5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094751033,
+        "stop" : 1717094751035,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "576c7c7202641ada",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094485066,
+        "stop" : 1717094485068,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3752b3e084eab6b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094383000,
+        "stop" : 1717094383002,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b8ae0cdb13942abb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086581641,
+        "stop" : 1717086581644,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3869c4adaafcaf34",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086498228,
+        "stop" : 1717086498230,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b37718e7066e89d6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086323472,
+        "stop" : 1717086323474,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8366c3d1c73e5cd9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085349397,
+        "stop" : 1717085349399,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b8ea458bad71274",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085279255,
+        "stop" : 1717085279257,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "53ac7ef2416f130",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085246546,
+        "stop" : 1717085246548,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c17775a9c291debb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085208806,
+        "stop" : 1717085208807,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a40f0f4c64993ab0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084998609,
+        "stop" : 1717084998611,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4d102bf1056126dc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084877300,
+        "stop" : 1717084877301,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "687c3881080b9764",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084642378,
+        "stop" : 1717084642380,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e5d854a401052464",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084599092,
+        "stop" : 1717084599093,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "82681efa520303b6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084588309,
+        "stop" : 1717084588312,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "360c6c2e39067d04",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084438308,
+        "stop" : 1717084438310,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d66bef52e5e3c962",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083385843,
+        "stop" : 1717083385847,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "ab1b331126f18015",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083260606,
+        "stop" : 1717083260608,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a43dbc82e28bd097",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717082892164,
+        "stop" : 1717082892167,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8006cafb591c7303",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006047156,
+        "stop" : 1717006047158,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6e09a82bee046f1b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717005919454,
+        "stop" : 1717005919455,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c73dff4bf229c59e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717003111497,
+        "stop" : 1717003111498,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d976d3ac029449aa.json",
+  "parameterValues" : [ "test123", "test@test.com" ]
+}

@@ -1,0 +1,338 @@
+{
+  "uid" : "326f90a3a641f949",
+  "name" : "Validacion del modal de ruta comenzada",
+  "fullName" : "Cuadrar: Validacion del modal de ruta comenzada",
+  "historyId" : "6b97417a17bd0c7893f9189208de6c1a",
+  "time" : {
+    "start" : 1717099343642,
+    "stop" : 1717099343643,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717099343643,
+        "stop" : 1717099343643,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717099343643,
+        "stop" : 1717099343643,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717099343643,
+        "stop" : 1717099343643,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y cierro el cuadro de texto",
+      "time" : {
+        "start" : 1717099343643,
+        "stop" : 1717099343643,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717099343643,
+        "stop" : 1717099343643,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el modal de ruta comenzada",
+      "time" : {
+        "start" : 1717099343643,
+        "stop" : 1717099343643,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "modalComenzarRuta"
+  }, {
+    "name" : "feature",
+    "value" : "Cuadrar"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "67875d49931f961f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717095956924,
+        "stop" : 1717095956925,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cf0527e79b37e768",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094881894,
+        "stop" : 1717094881895,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d7247896be7b9a4a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094751058,
+        "stop" : 1717094751059,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "dfc9e919dbfb00c9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094485092,
+        "stop" : 1717094485094,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ae5ca0ff50ae652c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717094383022,
+        "stop" : 1717094383024,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "731d3cd3a6be20ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086581664,
+        "stop" : 1717086581665,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "dd7b817945b0b57f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086498252,
+        "stop" : 1717086498253,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e2532f345143ed0d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717086323500,
+        "stop" : 1717086323502,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d06c8b43c8abd76",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085349430,
+        "stop" : 1717085349431,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4eeeadd162322eb4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085279278,
+        "stop" : 1717085279279,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "51f985ee1422e3e0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085246569,
+        "stop" : 1717085246571,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "346fa462251fb117",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717085208828,
+        "stop" : 1717085208829,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5b58e0013d8adef",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084998631,
+        "stop" : 1717084998632,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7a92954400642db5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084877322,
+        "stop" : 1717084877323,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "18830c01005729bc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084642406,
+        "stop" : 1717084642407,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "964c830dc68a6ea4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084599114,
+        "stop" : 1717084599115,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a0e7ee9ec98ca402",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084588333,
+        "stop" : 1717084588335,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ad23b8ea47ac90b6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717084438331,
+        "stop" : 1717084438332,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f7741ec0c0743347",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083385886,
+        "stop" : 1717083385888,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "736d4b1549a055b3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717083260638,
+        "stop" : 1717083260639,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4c89830b76b1a280",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717082892189,
+        "stop" : 1717082892190,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ca98ee20cabf1b0a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717006047175,
+        "stop" : 1717006047176,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a688a935acf13433",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717005919472,
+        "stop" : 1717005919472,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1964a7543bdf0730",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717003111513,
+        "stop" : 1717003111514,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "modalComenzarRuta" ]
+  },
+  "source" : "326f90a3a641f949.json",
+  "parameterValues" : [ ]
+}
