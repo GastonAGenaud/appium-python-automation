@@ -5,22 +5,11 @@
     "name" : "Revisar pedido",
     "statistic" : {
       "failed" : 0,
-      "broken" : 8,
+      "broken" : 4,
       "skipped" : 6,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 16
-    }
-  }, {
-    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
-    "name" : "Entregar pedido",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 2,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 3
+      "total" : 12
     }
   }, {
     "uid" : "06bababefb3c8696475b9760b65f8227",
@@ -80,6 +69,17 @@
   }, {
     "uid" : "aa27a4883f03339e6ee080f8d9d5a976",
     "name" : "Estados Vacíos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
+    "name" : "Entregar pedido",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

@@ -1,0 +1,187 @@
+{
+  "uid" : "9e936356abed9409",
+  "name" : "Validación de pantalla \"Entregados\"",
+  "fullName" : "Estados Vacíos: Validación de pantalla \"Entregados\"",
+  "historyId" : "fa826da67e0096180e948ff6a793d5d8",
+  "time" : {
+    "start" : 1717185406655,
+    "stop" : 1717185406655,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717185406655,
+        "stop" : 1717185406655,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717185406655,
+        "stop" : 1717185406655,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717185406655,
+        "stop" : 1717185406655,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono \"Entregados\"",
+      "time" : {
+        "start" : 1717185406655,
+        "stop" : 1717185406655,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la pantalla de \"Entregados\"",
+      "time" : {
+        "start" : 1717185406655,
+        "stop" : 1717185406655,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Estados Vacíos"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "de6f852f05887f8c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183847141,
+        "stop" : 1717183847141,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "156926fc28987a5c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183430450,
+        "stop" : 1717183430451,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d1968acb52135671",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717175043267,
+        "stop" : 1717175043268,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6f3d0de4d6b7a84c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717173061185,
+        "stop" : 1717173061186,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f673e3eb3aa9a0e0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717172582757,
+        "stop" : 1717172582758,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c606272b4a774241",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717167725912,
+        "stop" : 1717167725913,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "aed14ea6091517ef",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717162204750,
+        "stop" : 1717162204750,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "9e936356abed9409.json",
+  "parameterValues" : [ ]
+}

@@ -52,26 +52,38 @@ def valido_anulacion_del_pedido(context):
 
 @then('valido el producto "{producto}"')
 def valido_producto(context, producto):
-    if producto == "Coca Cola LT220cc":
-        assert bool(context.app.revisar_pedido_page.valido_producto_coca_cola())
-    elif producto == "Fanta MidCal PT250cc":
+    if producto == "Fanta MidCal PT250cc":
         assert bool(context.app.revisar_pedido_page.valido_producto_fanta())
     elif producto == "Fanta MidCal Express 237cc":
         assert bool(context.app.revisar_pedido_page.valido_producto_fanta_express())
+    elif producto == "Sprite MidCal PT250cc":
+        assert bool(context.app.revisar_pedido_page.valido_producto_sprite_express())
+    elif producto == "Benedictino S/G PT6.5":
+        assert bool(context.app.revisar_pedido_page.valido_producto_benedictino())
     else:
-        raise ValueError(f"No se encontro el producto '{producto}'")
+        raise ValueError(f"No se encontró el producto '{producto}'")
 
 
 @then('valido el precio unitario "{precio}"')
 def valido_precio_unitario(context, precio):
-    if precio == "$ 57.652":
-        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_coca_cola())
-    elif precio == "$ 46.913":
-        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta())
-    elif precio == "$ 66.471":
+    if precio == "$ 33.105":
         assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta_express())
+    elif precio == "$ 65.064":
+        assert bool(context.app.revisar_pedido_page.valido_producto_sprite_express())
     else:
         raise ValueError(f"No se encontro el precio '{precio}'")
+
+
+@then('valido el precio unitario "{precio}" en la factura')
+def valido_precio_unitario_factura(context, precio):
+    if precio == "$ 65.064":
+        assert bool(context.app.revisar_pedido_page.valido_producto_sprite_express())
+    elif precio == "$ 53.839":
+        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_benedictino())
+    elif precio == "$ 33.105":
+        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta_express())
+    else:
+        raise ValueError(f"No se encontró el precio '{precio}' para validar en la factura")
 
 
 @then('valido la cantidad de pack pedidos "{cantidad}"')
@@ -117,4 +129,3 @@ def valido_total_precio(context, precio):
 @then('valido que este correcta la suma del precio de los productos')
 def valido_sea_correcto_precio(context):
     assert bool(context.app.revisar_pedido_page.valido_comparacion_de_precio())
-

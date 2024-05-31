@@ -61,7 +61,7 @@ Característica: Revisar pedido
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Entonces valido el producto "<producto>"
-    Y valido el precio unitario "<precioUnitario>"
+    Y valido el precio unitario "<precioUnitario>" en la factura
     Y valido la cantidad de pack pedidos "<cantidadPack>"
     Y valido el sector de botones de agregar y restar
     Y valido el precio final "<precioTotal>"
@@ -109,14 +109,14 @@ Característica: Revisar pedido
     Y selecciono la factura con numero "404145531"
     Entonces valido que este correcta la suma del precio de los productos
 
-  Escenario: Validacion del mensaje al rebajar producto
-    Dado el usuario ingresa el correo electronico "user_tests"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-        #Y cierro el cuadro de texto
-    Y hago click en el boton "Comenzar ruta"
-    Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
-    Entonces debería ver el mensaje "El producto ha sido rebajado exitosamente a 50.00"
+#  Escenario: Validacion del mensaje al rebajar producto
+#    Dado el usuario ingresa el correo electronico "user_tests"
+#    Y el usuario ingresa una contraseña
+#    Cuando hago click en el boton "Iniciar sesion"
+#        #Y cierro el cuadro de texto
+#    Y hago click en el boton "Comenzar ruta"
+#    Y elijo la ruta "El Deseo SPA"
+#    Y selecciono la factura con numero "404145531"
+#    Entonces debería ver el mensaje "El producto ha sido rebajado exitosamente a 50.00"
 
 

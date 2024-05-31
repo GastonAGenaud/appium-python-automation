@@ -1,0 +1,190 @@
+{
+  "uid" : "81fd21ca517b667b",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.3 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion del desplegable \"Ordenar por\"",
+  "historyId" : "9b5318f227621d7eeaf25106c8136e35",
+  "time" : {
+    "start" : 1717185406689,
+    "stop" : 1717185406690,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717185406690,
+        "stop" : 1717185406690,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717185406690,
+        "stop" : 1717185406690,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717185406690,
+        "stop" : 1717185406690,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el desplegable",
+      "time" : {
+        "start" : 1717185406690,
+        "stop" : 1717185406690,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que sea visible la opcion \"Ruta sugerida\"",
+      "time" : {
+        "start" : 1717185406690,
+        "stop" : 1717185406690,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Ruta sugerida"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "dfd5c0862e5f9005",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183847177,
+        "stop" : 1717183847178,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2306eab16d6e83e5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183430484,
+        "stop" : 1717183430486,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c49d2f1c4e644a49",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717175043303,
+        "stop" : 1717175043305,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d3b5ae6b29c74f8d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717173061225,
+        "stop" : 1717173061226,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "815166b8bfb31fb0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717172582793,
+        "stop" : 1717172582794,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6665d5916dabb704",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717167725946,
+        "stop" : 1717167725947,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "94f0167693a27d59",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717162204786,
+        "stop" : 1717162204788,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "81fd21ca517b667b.json",
+  "parameterValues" : [ "Ruta sugerida" ]
+}

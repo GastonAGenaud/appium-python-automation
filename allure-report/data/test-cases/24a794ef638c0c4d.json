@@ -1,0 +1,214 @@
+{
+  "uid" : "24a794ef638c0c4d",
+  "name" : "Anular pedido de la factura",
+  "fullName" : "Revisar pedido: Anular pedido de la factura",
+  "historyId" : "0098f63bfe89bc6b09fc396a4729c3a5",
+  "time" : {
+    "start" : 1717187989166,
+    "stop" : 1717187989168,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Ingresar\"",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"Pudahuel\"",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"388717884\"",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Anular pedido\"",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que se muestre una confirmacion de anulacion del pedido",
+      "time" : {
+        "start" : 1717187989168,
+        "stop" : 1717187989168,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "74f03b802379647c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717187124140,
+        "stop" : 1717187404092,
+        "duration" : 279952
+      }
+    }, {
+      "uid" : "3b3d7a575b67b857",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717177393079,
+        "stop" : 1717177393080,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4e758d1dad691d36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717176535341,
+        "stop" : 1717176808531,
+        "duration" : 273190
+      }
+    }, {
+      "uid" : "b2edfc2e659212af",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717170356362,
+        "stop" : 1717170356364,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c25a8b77ebdc5ea2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717169497241,
+        "stop" : 1717169773885,
+        "duration" : 276644
+      }
+    }, {
+      "uid" : "21fcc2350e955f47",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717164831532,
+        "stop" : 1717164831534,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5effd456d0fc4a2b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717163976024,
+        "stop" : 1717164250211,
+        "duration" : 274187
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "24a794ef638c0c4d.json",
+  "parameterValues" : [ ]
+}

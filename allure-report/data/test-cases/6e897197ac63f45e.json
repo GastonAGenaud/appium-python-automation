@@ -1,0 +1,192 @@
+{
+  "uid" : "6e897197ac63f45e",
+  "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "fullName" : "Revisar pedido: Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "historyId" : "d5fa3a42b39b0cbebdca29f1d9bed3fb",
+  "time" : {
+    "start" : 1717187989160,
+    "stop" : 1717187989161,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717187989161,
+        "stop" : 1717187989161,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717187989161,
+        "stop" : 1717187989161,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Ingresar\"",
+      "time" : {
+        "start" : 1717187989161,
+        "stop" : 1717187989161,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"Pudahuel\"",
+      "time" : {
+        "start" : 1717187989161,
+        "stop" : 1717187989161,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de la opcion \"Google Maps\"",
+      "time" : {
+        "start" : 1717187989161,
+        "stop" : 1717187989161,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "1181146271f281aa",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717185959923,
+        "stop" : 1717186234785,
+        "duration" : 274862
+      }
+    }, {
+      "uid" : "a0a3d6334cfa01cc",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717184270020,
+        "stop" : 1717184545502,
+        "duration" : 275482
+      }
+    }, {
+      "uid" : "d34333f3518626f7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717177393074,
+        "stop" : 1717177393075,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e98014e4ec7d7d0f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717175376443,
+        "stop" : 1717175650028,
+        "duration" : 273585
+      }
+    }, {
+      "uid" : "54e08e0c9a492763",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717170356357,
+        "stop" : 1717170356359,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f8cb6bfe47851114",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717168337989,
+        "stop" : 1717168609617,
+        "duration" : 271628
+      }
+    }, {
+      "uid" : "21dbb581c25c2315",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717164831526,
+        "stop" : 1717164831528,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dfc5273ba23cebba",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717162814114,
+        "stop" : 1717163087486,
+        "duration" : 273372
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6e897197ac63f45e.json",
+  "parameterValues" : [ ]
+}

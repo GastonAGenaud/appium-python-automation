@@ -1,0 +1,210 @@
+{
+  "uid" : "dbd9f27d4c9782ca",
+  "name" : "Validacion de visualizacion de ruta de pedido",
+  "fullName" : "Revisar pedido: Validacion de visualizacion de ruta de pedido",
+  "historyId" : "5c760f392c0b79273548c46a56a47a12",
+  "time" : {
+    "start" : 1717185406710,
+    "stop" : 1717185681628,
+    "duration" : 274918
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717185412211,
+        "stop" : 1717185418438,
+        "duration" : 6227
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717185418438,
+        "stop" : 1717185419844,
+        "duration" : 1406
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717185419844,
+        "stop" : 1717185420638,
+        "duration" : 794
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717185420638,
+        "stop" : 1717185463456,
+        "duration" : 42818
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717185463456,
+        "stop" : 1717185679000,
+        "duration" : 215544
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces se valida que la visualizacion de pedido para la ruta \"El Deseo SPA\" sea correcta",
+      "time" : {
+        "start" : 1717185679001,
+        "stop" : 1717185680756,
+        "duration" : 1755
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "554d82ebd535063a",
+      "name" : "Validacion de visualizacion de ruta de pedido",
+      "source" : "554d82ebd535063a.mp4",
+      "type" : "video/mp4",
+      "size" : 7258368
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "299ad28e10092775",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: Elemento no encontrado después de 10 intentos: ('xpath', \"//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']\")\n\n",
+      "time" : {
+        "start" : 1717183847201,
+        "stop" : 1717184209031,
+        "duration" : 361830
+      }
+    }, {
+      "uid" : "6f43a6e9bc8c8934",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: Elemento no encontrado después de 10 intentos: ('xpath', \"//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']\")\n\n",
+      "time" : {
+        "start" : 1717183430508,
+        "stop" : 1717183793178,
+        "duration" : 362670
+      }
+    }, {
+      "uid" : "13bd92429cc2576",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717175043326,
+        "stop" : 1717175317630,
+        "duration" : 274304
+      }
+    }, {
+      "uid" : "7c869af00bd8cd2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717173061249,
+        "stop" : 1717173339892,
+        "duration" : 278643
+      }
+    }, {
+      "uid" : "935fc39711f9a797",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717172582821,
+        "stop" : 1717172859059,
+        "duration" : 276238
+      }
+    }, {
+      "uid" : "5809084169358927",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717167725968,
+        "stop" : 1717168002703,
+        "duration" : 276735
+      }
+    }, {
+      "uid" : "7486c2df92af5854",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717162204810,
+        "stop" : 1717162479703,
+        "duration" : 274893
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "dbd9f27d4c9782ca.json",
+  "parameterValues" : [ ]
+}

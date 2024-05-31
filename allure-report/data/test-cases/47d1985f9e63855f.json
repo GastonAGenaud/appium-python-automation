@@ -1,0 +1,250 @@
+{
+  "uid" : "47d1985f9e63855f",
+  "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531",
+  "historyId" : "d5551858caf73038ab66b82e3879cd61",
+  "time" : {
+    "start" : 1717185406615,
+    "stop" : 1717185406616,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"entregar\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Retornados\"]\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Entregados \"]\"",
+      "time" : {
+        "start" : 1717185406616,
+        "stop" : 1717185406616,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8ae4ec2480e6fd6a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183847102,
+        "stop" : 1717183847103,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5e7180af97d19847",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183430414,
+        "stop" : 1717183430415,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cfdf876d63f0c9c7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717175043227,
+        "stop" : 1717175043228,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "581757deba9e8f6b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717173061141,
+        "stop" : 1717173061143,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "31378e537d9ddb2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717172582696,
+        "stop" : 1717172582697,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "65aa8ee69cd55967",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717167725875,
+        "stop" : 1717167725876,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "86d52fa9917944ca",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717162204707,
+        "stop" : 1717162204709,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "47d1985f9e63855f.json",
+  "parameterValues" : [ ]
+}

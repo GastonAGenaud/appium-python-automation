@@ -5,10 +5,12 @@ from appium.webdriver.common.mobileby import MobileBy
 
 
 class RevisarPedidoPage(Page):
-    el_deseo_spa_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 16, Transferencia, $866.455"]')
+    el_deseo_spa_pedido = (
+        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 16, Transferencia, $866.455"]')
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
-    precio_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 930.470"])[1]')
-    productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="16"]')
+    precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 866.455"]')
+    productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="10"]')
+    productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="6"]')
     google_maps_opcion = (MobileBy.ACCESSIBILITY_ID, 'Ver mapa')
     anular_pedido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anular pedido"]')
     entregar_btn = (MobileBy.ACCESSIBILITY_ID, 'Entregar')
@@ -21,32 +23,43 @@ class RevisarPedidoPage(Page):
     factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
     coca_cola_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Coca Cola LT220cc x 6 "]')
     fanta_midcal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal PT250cc x 6 "]')
-    fanta_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
+    fanta_midcal_express_pedido = (
+        MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
     precio_unitario_coca_cola = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 57.652 "]')
-    precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 46.913 "]')
+    precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 33.105 "]')
     precio_unitario_fanta_express = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 66.471 "]')
-    cantidad_pack_coca_cola = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="4"]')
+    cantidad_pack_coca_cola = (
+        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="4"]')
     cantidad_pack_fanta = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="5"]')
-    cantidad_pack_fanta_express = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="7"]')
+    cantidad_pack_fanta_express = (
+        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="7"]')
     precio_final_coca_cola = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 230.608 "]')
     precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 234.565 "]')
     precio_final_fanta_express = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 465.297 "]')
     retornar_pedido_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Retornar pedido"]')
+    sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
+    benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
+    benedictino_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and '
+                                                   '@text="$ 53.839 "]')
 
     def valido_pedido_el_deseo_spa(self):
         self.implicit_wait_visible(self.el_deseo_spa_titulo)
         valido_deseo_spa = self.find_element(self.el_deseo_spa_titulo).is_displayed()
         return valido_deseo_spa
 
-    def valido_precio_del_pedido(self,):
+    def valido_precio_del_pedido(self, ):
         self.implicit_wait_visible(self.precio_del_pedido)
         valido_precio = self.find_element(self.precio_del_pedido).is_displayed()
         return valido_precio
 
-    def valido_cantidad_de_productos(self,):
+    def valido_cantidad_de_productos(self):
         self.implicit_wait_visible(self.productos_del_pedido)
+        self.implicit_wait_visible(self.productos_del_pedido_dos)
+
         cantidad_de_productos = self.find_element(self.productos_del_pedido).is_displayed()
-        return cantidad_de_productos
+        cantidad_de_productos_dos = self.find_element(self.productos_del_pedido_dos).is_displayed()
+
+        return cantidad_de_productos and cantidad_de_productos_dos
 
     def valido_opcion_google_maps(self):
         self.implicit_wait_visible(self.google_maps_opcion)
@@ -55,7 +68,8 @@ class RevisarPedidoPage(Page):
 
     def valido_numero_de_factura(self, factura):
         self.implicit_wait_visible(self.google_maps_opcion)
-        numero_de_factura = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@text="Factura N° {factura}"]')
+        numero_de_factura = self.driver.find_element(MobileBy.XPATH,
+                                                     f'//android.widget.TextView[@text="Factura N° {factura}"]')
         return numero_de_factura
 
     def selecciono_la_factura(self):
@@ -96,6 +110,16 @@ class RevisarPedidoPage(Page):
         fanta_express = self.find_element(self.fanta_midcal_express_pedido).is_displayed()
         return fanta_express
 
+    def valido_producto_sprite_express(self):
+        self.implicit_wait_visible(self.sprite_midcal_express_pedido)
+        sprite_express = self.find_element(self.sprite_midcal_express_pedido).is_displayed()
+        return sprite_express
+
+    def valido_producto_benedictino(self):
+        self.implicit_wait_visible(self.benedictino_pedido)
+        benedictino_express = self.find_element(self.benedictino_pedido).is_displayed()
+        return benedictino_express
+
     def valido_precio_unitario(self):
         self.implicit_wait_visible(self.precio_unitario_coca_zero)
         precio_unitario = self.find_element(self.precio_unitario_coca_zero).is_displayed()
@@ -115,6 +139,11 @@ class RevisarPedidoPage(Page):
         self.implicit_wait_visible(self.precio_unitario_fanta_express)
         precio_unitario = self.find_element(self.precio_unitario_fanta_express).is_displayed()
         return precio_unitario
+
+    def valido_precio_unitario_benedictino(self):
+        self.implicit_wait_visible(self.benedictino_precio_unitario)
+        benedictino_precio_unitario = self.find_element(self.benedictino_precio_unitario).is_displayed()
+        return benedictino_precio_unitario
 
     def valido_cantidad_pack_coca_cola(self):
         self.implicit_wait_visible(self.cantidad_pack_coca_cola)
@@ -167,17 +196,20 @@ class RevisarPedidoPage(Page):
         return valido_agregar
 
     def valido_comparacion_de_precio(self):
-        producto_1 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
+        producto_1 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
-        producto_2 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
+        producto_2 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
+        producto_3 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)
