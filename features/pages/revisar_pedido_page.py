@@ -33,6 +33,10 @@ class RevisarPedidoPage(Page):
     cantidad_pack_fanta = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="5"]')
     cantidad_pack_fanta_express = (
         MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="7"]')
+    cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
+                                            '@text="de 1 "]')
+    cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
+                                                 '@text="de 7 "]')
     precio_final_coca_cola = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 230.608 "]')
     precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 234.565 "]')
     precio_final_fanta_express = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 465.297 "]')
@@ -158,6 +162,16 @@ class RevisarPedidoPage(Page):
     def valido_cantidad_pack_fanta_express(self):
         self.implicit_wait_visible(self.cantidad_pack_fanta_express)
         cantidad_pack = self.find_element(self.cantidad_pack_fanta_express).is_displayed()
+        return cantidad_pack
+
+    def valido_cantidad_pack_sprite_express(self):
+        self.implicit_wait_visible(self.cantidad_pack_sprite)
+        cantidad_pack = self.find_element(self.cantidad_pack_sprite).is_displayed()
+        return cantidad_pack
+
+    def valido_cantidad_pack_benedictino(self):
+        self.implicit_wait_visible(self.cantidad_pack_benedictino)
+        cantidad_pack = self.find_element(self.cantidad_pack_benedictino).is_displayed()
         return cantidad_pack
 
     def valido_precio_final(self):

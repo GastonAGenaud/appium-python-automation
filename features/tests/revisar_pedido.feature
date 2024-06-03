@@ -69,7 +69,7 @@ Característica: Revisar pedido
 
     Ejemplos:
       | producto                   | precioUnitario | cantidadPack | precioTotal |
-      | Sprite MidCal PT250cc      | $ 65.064       | 6            | $ 65.064    |
+      | Sprite MidCal PT250cc      | $ 65.064       | 1            | $ 65.064    |
       | Fanta MidCal Express 237cc | $ 33.105       | 2            | $ 66.210    |
       | Benedictino S/G PT6.5      | $ 53.389       | 7            | $ 376.873   |
 
@@ -107,7 +107,7 @@ Característica: Revisar pedido
     Y hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
-    Entonces valido que este correcta la suma del precio de los productos
+      Entonces valido que este correcta la suma del precio de los productos
 
 #  Escenario: Validacion del mensaje al rebajar producto
 #    Dado el usuario ingresa el correo electronico "user_tests"

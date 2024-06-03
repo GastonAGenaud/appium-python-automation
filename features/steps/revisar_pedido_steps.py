@@ -88,14 +88,14 @@ def valido_precio_unitario_factura(context, precio):
 
 @then('valido la cantidad de pack pedidos "{cantidad}"')
 def valido_cantidad_pack(context, cantidad):
-    if cantidad == "4":
-        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_coca_cola())
-    elif cantidad == "5":
+    if cantidad == "1":
+        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_sprite_express())
+    elif cantidad == "2":
         assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_fanta())
     elif cantidad == "7":
-        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_fanta_express())
+        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_benedictino())
     else:
-        raise ValueError(f"No se encontro la cantidad de pack pedidos '{cantidad}'")
+        raise ValueError(f"No se encontró la cantidad de pack pedidos '{cantidad}'")
 
 
 @then('valido el sector de botones de agregar y restar')
