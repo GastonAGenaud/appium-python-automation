@@ -43,7 +43,7 @@ Característica: Cuadrar
 
   @modalComenzarRuta
   Escenario: Validacion del modal de ruta comenzada
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
     Y cierro el cuadro de texto
@@ -52,7 +52,7 @@ Característica: Cuadrar
 
   @modalComenzarRuta
   Escenario: Validacion del texto "Entregada"
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
     Y cierro el cuadro de texto

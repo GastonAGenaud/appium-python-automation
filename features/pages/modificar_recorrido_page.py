@@ -10,7 +10,7 @@ class ModificarRecorridoPage(Page):
     el_deseo_spa_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
     boton_desplegable_mas = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Más productos"]')
     boton_desplegable_menos = (MobileBy.XPATH, '//android.widget.TextView[@text="Menos productos"]')
-    boton_desplegable_ruta = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Ruta sugerida"]')
+    boton_desplegable_ruta = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Más productos"]')
     mas_productos_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Más productos"]')
     menos_productos_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Menos productos"]')
     ruta_sugerida_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Ruta sugerida"]')

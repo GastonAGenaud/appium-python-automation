@@ -4,7 +4,7 @@ Característica: Estados Vacíos
 
     @regresion
     Escenario: Validación de pantalla "Entregados"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono "Entregados"
@@ -12,7 +12,7 @@ Característica: Estados Vacíos
 
     @regresion
     Escenario: Validación de pantalla "Retornados"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono "Retornados"

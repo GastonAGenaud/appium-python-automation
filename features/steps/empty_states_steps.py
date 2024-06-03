@@ -17,6 +17,16 @@ def selecciono_seccion(context, seccion):
         raise ValueError(f"No se encontro la seccion '{seccion}'")
 
 
+@when('selecciono el sector "{seccion}"')
+def selecciono_seccion(context, seccion):
+    if seccion == 'Entregados':
+        context.app.empty_states_page.sector_entregados()
+    elif seccion == 'Retornados':
+        context.app.empty_states_page.seccion_retornados()
+    else:
+        raise ValueError(f"No se encontro la seccion '{seccion}'")
+
+
 @then('valido el texto "{texto}"')
 def valido_texto(context, texto):
     if texto == 'No has anulado pedidos':
@@ -26,7 +36,7 @@ def valido_texto(context, texto):
     elif texto == 'Entregada':
         assert context.app.cuadrar_page.validar_texto_entregada()
     elif texto == 'No hay productos rebajados':
-        assert context.app.cuadrar_page.validar_texto_entregada()
+        assert context.app.cuadrar_page.validar_texto_no_hay_producto()
     else:
         raise ValueError(f"No se encontro el texto '{texto}'")
 

@@ -52,24 +52,24 @@ def valido_anulacion_del_pedido(context):
 
 @then('valido el producto "{producto}"')
 def valido_producto(context, producto):
-    if producto == "Coca Cola LT220cc":
-        assert bool(context.app.revisar_pedido_page.valido_producto_coca_cola())
-    elif producto == "Fanta MidCal PT250cc":
-        assert bool(context.app.revisar_pedido_page.valido_producto_fanta())
-    elif producto == "Fanta MidCal Express 237cc":
+    if producto == "Sprite MidCal PT250cc x6":
+        assert bool(context.app.revisar_pedido_page.valido_producto_sprite_MidCal())
+    elif producto == "Fanta MidCal Express 237cc x 24":
         assert bool(context.app.revisar_pedido_page.valido_producto_fanta_express())
+    elif producto == "Benedictino S/G PT6.5 x 2 Cilindrico":
+        assert bool(context.app.revisar_pedido_page.benedictino_cilindrico_pedido())
     else:
         raise ValueError(f"No se encontro el producto '{producto}'")
 
 
 @then('valido el precio unitario "{precio}"')
 def valido_precio_unitario(context, precio):
-    if precio == "$ 57.652":
-        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_coca_cola())
-    elif precio == "$ 46.913":
+    if precio == "$65.064":
+        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_sprite_midCal())
+    elif precio == "$66.210":
         assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta())
-    elif precio == "$ 66.471":
-        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta_express())
+    elif precio == "$376.873":
+        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_benedictino())
     else:
         raise ValueError(f"No se encontro el precio '{precio}'")
 

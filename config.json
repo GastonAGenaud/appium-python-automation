@@ -6,6 +6,7 @@
       "deviceName": "Pixel 7 Pro API 33",
       "automationName": "UiAutomator2",
       "appPackage": "com.rutadigital",
+      "src": "E:/trabajo/Andina/appium-python-automation/src/binaries/app-release.apk",
       "appActivity": "com.rutadigital.MainActivity"
     }
   }

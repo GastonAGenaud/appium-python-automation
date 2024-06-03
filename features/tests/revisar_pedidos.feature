@@ -3,7 +3,7 @@
 Característica: Revisar pedido
 
     Esquema del escenario: Validacion de visualizacion de ruta de pedido
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Y hago click en el boton "Ingresar"
         Cuando elijo la ruta "<idRuta>"
@@ -15,7 +15,7 @@ Característica: Revisar pedido
             | Pudahuel |
 
     Escenario: Validacion de visualizacion de la cantidad de productos y el monto de transferencia
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Ingresar"
         #Y elijo el nombre "Test"
@@ -25,7 +25,7 @@ Característica: Revisar pedido
         Y valido la visualizacion de la cantidad de los productos
 
     Escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Ingresar"
         #Y elijo el nombre "Test"
@@ -36,7 +36,7 @@ Característica: Revisar pedido
         #Y valido la presencia de la opcion "Waze"
 
     Escenario: Validacion del contenido de la factura
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Ingresar"
         Y elijo la ruta "Pudahuel"
@@ -49,7 +49,7 @@ Característica: Revisar pedido
         Y valido que el precio total sea de "$40.000"
 
     Escenario: Anular pedido de la factura
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Ingresar"
         Y elijo la ruta "Pudahuel"

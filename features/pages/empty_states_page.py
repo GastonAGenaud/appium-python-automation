@@ -7,6 +7,7 @@ class EmptyStatesPage(Page):
     visitados_seccion = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="Visitados"]')
     retornados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleA']")
     entregados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleFinish']")
+    entregados_sector = (MobileBy.ACCESSIBILITY_ID, "Entregados ")
     no_has_anulado_pedido_txt = [MobileBy.XPATH,
                                  '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
                                  '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[32]']
@@ -40,6 +41,9 @@ class EmptyStatesPage(Page):
 
     def seccion_visitados(self):
         self.click_on_element(self.visitados_seccion)
+
+    def sector_entregados(self):
+        self.click_on_element(self.entregados_sector)
 
     def seccion_rebajados(self):
         self.click_on_element(self.rebajados_seccion)

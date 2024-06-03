@@ -4,7 +4,7 @@ Característica: iniciar sesión
 
     @regresion
     Escenario: Validacion de Iniciar sesion exitosamente
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         #Y hago click en el boton "Entendido"
@@ -18,7 +18,7 @@ Característica: iniciar sesión
 
     @smoke @regresion
     Escenario: Validacion de mensaje de error por falta de contraseña
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "contrasena"
 

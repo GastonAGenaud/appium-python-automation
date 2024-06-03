@@ -8,6 +8,7 @@ class CuadrarPage(Page):
     rutaComenzar = (MobileBy.ACCESSIBILITY_ID, ', Ruta comenzada')
     textoRutaEntregada = (MobileBy.XPATH, '//android.widget.TextView[@text="Entregada"]')
     confirmar_btn = (MobileBy.ACCESSIBILITY_ID, 'Confirmar')
+    no_hay_productos_rebajados_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
 
     def validar_texto_ruta_mayo(self):
         self.implicit_wait_visible(self.textoRutaMayo)
@@ -25,3 +26,8 @@ class CuadrarPage(Page):
         self.implicit_wait_visible(self.textoRutaEntregada)
         texto_entregado = self.find_element(self.textoRutaEntregada).is_displayed()
         return texto_entregado
+
+    def validar_texto_no_hay_producto(self):
+        self.implicit_wait_visible(self.no_hay_productos_rebajados_texto)
+        texto_no_hay_producto = self.find_element(self.no_hay_productos_rebajados_texto).is_displayed()
+        return texto_no_hay_producto

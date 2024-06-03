@@ -4,7 +4,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion de la pantalla Comenzar ruta
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto
@@ -12,7 +12,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Esquema del escenario: Validacion de la ruta
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Entonces valido que sea visible la "<caracteristica>" con el "<valor>" del pedido
@@ -26,7 +26,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion de seleccion de ruta
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto
@@ -36,7 +36,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion del boton "Comenzar ruta"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         #Y elijo la ruta "1222654"
@@ -46,7 +46,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Esquema del escenario: Validacion del desplegable "Ordenar por"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y hago click en el desplegable
@@ -59,7 +59,7 @@ Característica: Modificar recorrido sugerido
             | Ruta sugerida   |
 
     Esquema del escenario: Validacion de pantalla de modificar manualmente
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto
@@ -74,7 +74,7 @@ Característica: Modificar recorrido sugerido
             #| No volver a mostrar |
 
     Escenario: Validacion de la modificacion de la ruta
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto
@@ -85,7 +85,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion de la modificacion de la ruta por boton (hacia arriba)
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto
@@ -97,7 +97,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion de la modificacion de la ruta por boton (hacia abajo)
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y cierro el cuadro de texto
@@ -110,7 +110,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion de opcion "Entregados"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono "Entregados"
@@ -118,7 +118,7 @@ Característica: Modificar recorrido sugerido
 
     @regresion
     Escenario: Validacion de opcion "Retornados"
-        Dado el usuario ingresa el correo electronico "user_tests"
+        Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono "Retornados"

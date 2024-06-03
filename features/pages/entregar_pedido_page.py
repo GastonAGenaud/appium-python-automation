@@ -1,6 +1,8 @@
-from selenium.common import NoSuchElementException
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class EntregarPedidoPage(Page):
@@ -36,13 +38,22 @@ class EntregarPedidoPage(Page):
         self.click_on_element(self.confirmar_btn)
 
     def click_modificar_btn(self):
-        try:
+        max_attempts = 4  # Número máximo de intentos
+        attempts = 0
+
+        while attempts < max_attempts:
             self.click_on_element(self.modificar_btn)
-            self.click_on_element(self.modificar_btn)
-            self.find_element(self.modifica_tu_ruta_texto).is_displayed()
-        except NoSuchElementException:
-            self.click_on_element(self.modificar_btn)
-            self.click_on_element(self.modificar_btn)
+            try:
+                WebDriverWait(self.driver, 2).until_not(
+                    EC.presence_of_element_located(self.modificar_btn)
+                )
+                print("El botón ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El botón aún está presente. Intentando nuevamente...")
+                attempts += 1
+                if attempts == max_attempts:
+                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def valido_entrega_completada(self):
         self.implicit_wait_visible(self.entrega_completada_txt)
