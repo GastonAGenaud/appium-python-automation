@@ -6,7 +6,7 @@
       "deviceName": "emulator-5554",
       "automationName": "UiAutomator2",
       "appPackage": "com.rutadigital",
-      "src": "E:/trabajo/Andina/appium-python-automation/src/binaries/app-release.apk",
+      "src": "C:/Users/Rogo_/OneDrive/Documentos/Apk Andina/app-release.apk",
       "appActivity": "com.rutadigital.MainActivity"
     }
   }

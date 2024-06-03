@@ -207,7 +207,8 @@ class RevisarPedidoPage(Page):
         return valido_agregar
 
     def valido_comparacion_de_precio(self):
-        producto_1 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
+        producto_1 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView['
+                                                              '@resource-id="title-amount-total"])[1]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
