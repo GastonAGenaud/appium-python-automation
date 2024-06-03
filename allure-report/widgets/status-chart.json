@@ -1,0 +1,601 @@
+[ {
+  "uid" : "6c9098c3dd214bea",
+  "name" : "Validación del texto \"RUTA 20 MAYO\"",
+  "time" : {
+    "start" : 1717426064658,
+    "stop" : 1717426064659,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e16101f90e6b8c8b",
+  "name" : "Validacion del modal de ruta comenzada",
+  "time" : {
+    "start" : 1717426064661,
+    "stop" : 1717426064663,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d1c1ea3f1abecf08",
+  "name" : "Validacion de la modificacion de la ruta por boton (hacia abajo)",
+  "time" : {
+    "start" : 1717426064711,
+    "stop" : 1717426064712,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "32e9d20460e8a4fd",
+  "name" : "Validacion de visualizacion de ruta de pedido -- @1.2 ",
+  "time" : {
+    "start" : 1717428615016,
+    "stop" : 1717428615017,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "58572f8a7a7329af",
+  "name" : "Validación de pantalla \"Retornados\"",
+  "time" : {
+    "start" : 1717426064667,
+    "stop" : 1717426064668,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "88dde353db87aee4",
+  "name" : "Validacion de visualizacion de ruta de pedido -- @1.1 ",
+  "time" : {
+    "start" : 1717428615014,
+    "stop" : 1717428615015,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "a331d72c9f0d0511",
+  "name" : "Validacion de la modificacion de la ruta",
+  "time" : {
+    "start" : 1717426064707,
+    "stop" : 1717426064708,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "64a888b4f5529cdf",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.1 ",
+  "time" : {
+    "start" : 1717426064639,
+    "stop" : 1717426064641,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ddca32c6b17512ac",
+  "name" : "Validacion del contenido de la factura",
+  "time" : {
+    "start" : 1717428615023,
+    "stop" : 1717428615025,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c2b75e574cc4d792",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+  "time" : {
+    "start" : 1717426064697,
+    "stop" : 1717426064698,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ef2e02db161b047e",
+  "name" : "Validacion de seleccion de ruta",
+  "time" : {
+    "start" : 1717426064694,
+    "stop" : 1717426064695,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "679447b6de2fb766",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.2 ",
+  "time" : {
+    "start" : 1717426064642,
+    "stop" : 1717426064645,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7d30f0376075fc21",
+  "name" : "Validacion del contenido de la factura -- @1.1 ",
+  "time" : {
+    "start" : 1717426886227,
+    "stop" : 1717427162098,
+    "duration" : 275871
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6f611e9c90fcb906",
+  "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "time" : {
+    "start" : 1717428615021,
+    "stop" : 1717428615022,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d7899ad910ba23dd",
+  "name" : "Valido las zonas de accion del desplegable \"Ordenar por\"",
+  "time" : {
+    "start" : 1717426064629,
+    "stop" : 1717426064630,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "195ed00416eda25",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\"",
+  "time" : {
+    "start" : 1717426064671,
+    "stop" : 1717426064672,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "64e8ed3bc106fe88",
+  "name" : "Valido las zonas de accion de la pantalla de Inicio de sesion",
+  "time" : {
+    "start" : 1717426064616,
+    "stop" : 1717426064617,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "d6021f4ae18784f5",
+  "name" : "Validacion de la ruta -- @1.1 ",
+  "time" : {
+    "start" : 1717426064687,
+    "stop" : 1717426064688,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "25433b068faae364",
+  "name" : "Validacion de error por falta de correo",
+  "time" : {
+    "start" : 1717426064676,
+    "stop" : 1717426064677,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2ff42de69a2d204f",
+  "name" : "Valido las zonas de accion de la pantalla del Pedido",
+  "time" : {
+    "start" : 1717426064619,
+    "stop" : 1717426064620,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "41afbacabe19eba2",
+  "name" : "Validación de presionar el botón \"Anular pedido\" -- @1.1 ",
+  "time" : {
+    "start" : 1717426064637,
+    "stop" : 1717426064638,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "6b10173211b24539",
+  "name" : "Valido las zonas de accion del modal de modificacion de la ruta",
+  "time" : {
+    "start" : 1717426064633,
+    "stop" : 1717426064634,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4d9e70da94e90aa5",
+  "name" : "Validacion del contenido de la factura -- @1.2 ",
+  "time" : {
+    "start" : 1717427162099,
+    "stop" : 1717427502691,
+    "duration" : 340592
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "70f4cdd5b6bc4c70",
+  "name" : "Validacion de mensaje de error por falta de contraseña",
+  "time" : {
+    "start" : 1717426064678,
+    "stop" : 1717426064679,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4e4679fcbdb1dfbc",
+  "name" : "Validacion de opcion \"Retornados\"",
+  "time" : {
+    "start" : 1717426064715,
+    "stop" : 1717426064716,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4518d46a230dd066",
+  "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531",
+  "time" : {
+    "start" : 1717426064624,
+    "stop" : 1717426064626,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "5cd3d49d96886965",
+  "name" : "Validacion de pantalla de modificar manualmente -- @1.1 ",
+  "time" : {
+    "start" : 1717426064702,
+    "stop" : 1717426064704,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "74f7e42a4c563e9d",
+  "name" : "Validacion de Iniciar sesion exitosamente",
+  "time" : {
+    "start" : 1717426064675,
+    "stop" : 1717426064675,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2caccd4b8b90c48e",
+  "name" : "Entregar pedido de la factura",
+  "time" : {
+    "start" : 1717428061803,
+    "stop" : 1717428341520,
+    "duration" : 279717
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a7d6fc47e3e234e7",
+  "name" : "Validacion de la ruta -- @1.4 ",
+  "time" : {
+    "start" : 1717426064692,
+    "stop" : 1717426064692,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "156d0219d76429ec",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.3 ",
+  "time" : {
+    "start" : 1717426064701,
+    "stop" : 1717426064702,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e3f6c483f4b2a4bf",
+  "name" : "Validacion de opcion \"Entregados\"",
+  "time" : {
+    "start" : 1717426064712,
+    "stop" : 1717426064714,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "1a31c30db1cc86bb",
+  "name" : "Validación de la pantalla \"Vuelta finalizada\" -- @1.1 ",
+  "time" : {
+    "start" : 1717426064652,
+    "stop" : 1717426064654,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "610357d059a4849e",
+  "name" : "Validación de la pantalla de retomar pedidos -- @1.1 ",
+  "time" : {
+    "start" : 1717426064648,
+    "stop" : 1717426064649,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ef5330d48ec0716f",
+  "name" : "Validacion de visualizacion de ruta de pedido",
+  "time" : {
+    "start" : 1717426064724,
+    "stop" : 1717426339114,
+    "duration" : 274390
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5bd8509d9a676d5d",
+  "name" : "Validacion del boton \"Comenzar ruta\"",
+  "time" : {
+    "start" : 1717426064695,
+    "stop" : 1717426064696,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "be46c0dfd8174cc",
+  "name" : "Validacion de pantalla de modificar manualmente -- @1.2 ",
+  "time" : {
+    "start" : 1717426064705,
+    "stop" : 1717426064706,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8bc16df7736cd69c",
+  "name" : "Valido las zonas de accion de los botones de modificacion de la ruta",
+  "time" : {
+    "start" : 1717426064631,
+    "stop" : 1717426064632,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "cc6d2a2a7156ca00",
+  "name" : "Validacion de la modificacion de la ruta por boton (hacia arriba)",
+  "time" : {
+    "start" : 1717426064708,
+    "stop" : 1717426064710,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "788a270ef499d84a",
+  "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+  "time" : {
+    "start" : 1717426064617,
+    "stop" : 1717426064618,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c2b5a9357ed8e2a4",
+  "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531",
+  "time" : {
+    "start" : 1717426064626,
+    "stop" : 1717426064628,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b9be44cc58b85bce",
+  "name" : "Anular pedido de la factura",
+  "time" : {
+    "start" : 1717428615027,
+    "stop" : 1717428615029,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "5dbb0cac0204ba76",
+  "name" : "Validacion del precio total del pedido",
+  "time" : {
+    "start" : 1717428341521,
+    "stop" : 1717428615011,
+    "duration" : 273490
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "e0862bbdfb4d509",
+  "name" : "Validacion de error de caracteres especiales",
+  "time" : {
+    "start" : 1717426064680,
+    "stop" : 1717426064681,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e9008bfbfd9ca7ff",
+  "name" : "Validación del botón \"Ver detalle\" en la pantalla de retomar pedidos",
+  "time" : {
+    "start" : 1717426064650,
+    "stop" : 1717426064651,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ab4509725c782756",
+  "name" : "Validacion del texto \"Entregada\"",
+  "time" : {
+    "start" : 1717426064663,
+    "stop" : 1717426064664,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "719991f55d93132b",
+  "name" : "Validacion de pantalla de seleccion de motivo de rebaja -- @1.1 ",
+  "time" : {
+    "start" : 1717426064720,
+    "stop" : 1717426064722,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ea621072ebcb803b",
+  "name" : "Validación de la pantalla \"Vuelta finalizada\" -- @1.2 ",
+  "time" : {
+    "start" : 1717426064655,
+    "stop" : 1717426064657,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "97b9383496a0ab6c",
+  "name" : "Validación de pantalla \"Entregados\"",
+  "time" : {
+    "start" : 1717426064666,
+    "stop" : 1717426064666,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f0d5ba2f2edfd259",
+  "name" : "Validacion de boton \"Login\" deshabilitado",
+  "time" : {
+    "start" : 1717426064681,
+    "stop" : 1717426064682,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "9038b46855e6ff6e",
+  "name" : "Validacion del contenido de la factura -- @1.3 ",
+  "time" : {
+    "start" : 1717427502693,
+    "stop" : 1717427781301,
+    "duration" : 278608
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "eac91ea0303950c8",
+  "name" : "Validación del texto \"25 clientes\"",
+  "time" : {
+    "start" : 1717426064660,
+    "stop" : 1717426064661,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "844feea242bdafe",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.2 ",
+  "time" : {
+    "start" : 1717426064699,
+    "stop" : 1717426064700,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "cbecbf0098ec337d",
+  "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura -- @1.1 ",
+  "time" : {
+    "start" : 1717426064718,
+    "stop" : 1717426064719,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "42233d1debc10741",
+  "name" : "Validacion de la pantalla Comenzar ruta",
+  "time" : {
+    "start" : 1717426064685,
+    "stop" : 1717426064686,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4f6c6e5a723b8bd3",
+  "name" : "Validacion de visualizacion de la cantidad de productos y el monto de transferencia",
+  "time" : {
+    "start" : 1717428615018,
+    "stop" : 1717428615020,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "657d25823424d60c",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Retornados\"",
+  "time" : {
+    "start" : 1717426064670,
+    "stop" : 1717426064670,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "7593bf9cee63bc36",
+  "name" : "Validacion de la ruta -- @1.2 ",
+  "time" : {
+    "start" : 1717426064688,
+    "stop" : 1717426064689,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "b51fdff016cb1017",
+  "name" : "Validación del sector \"Anulados\" -- @1.1 ",
+  "time" : {
+    "start" : 1717426064645,
+    "stop" : 1717426064647,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "200b0f2e56012af5",
+  "name" : "Validacion de la ruta -- @1.3 ",
+  "time" : {
+    "start" : 1717426064690,
+    "stop" : 1717426064691,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+} ]

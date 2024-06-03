@@ -1,0 +1,73 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "ValueError: No se encontro la cantidad de pack pedidos '$ 65.064'\n",
+      "children" : [ {
+        "name" : "Validacion del contenido de la factura -- @1.1 ",
+        "uid" : "7d30f0376075fc21",
+        "parentUid" : "953a18336387c6bd46e016ef6e0f8bd3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1717426886227,
+          "stop" : 1717427162098,
+          "duration" : 275871
+        },
+        "flaky" : true,
+        "parameters" : [ "1", "$ 65.064", "$ 65.064", "Sprite MidCal PT250cc" ]
+      } ],
+      "uid" : "953a18336387c6bd46e016ef6e0f8bd3"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "children" : [ {
+        "name" : "Validacion del contenido de la factura -- @1.2 ",
+        "uid" : "4d9e70da94e90aa5",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1717427162099,
+          "stop" : 1717427502691,
+          "duration" : 340592
+        },
+        "flaky" : true,
+        "parameters" : [ "2", "$ 66.210", "$ 33.105", "Fanta MidCal Express 237cc" ]
+      } ],
+      "uid" : "c761cc1e1f67c97166ba2758d9324261"
+    }, {
+      "name" : "ValueError: No se encontró el precio '$ 53.389' para validar en la factura\n",
+      "children" : [ {
+        "name" : "Validacion del contenido de la factura -- @1.3 ",
+        "uid" : "9038b46855e6ff6e",
+        "parentUid" : "d60d9d795d31a5dda27bb68df30ec8e7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1717427502693,
+          "stop" : 1717427781301,
+          "duration" : 278608
+        },
+        "flaky" : true,
+        "parameters" : [ "7", "$ 376.873", "$ 53.389", "Benedictino S/G PT6.5" ]
+      } ],
+      "uid" : "d60d9d795d31a5dda27bb68df30ec8e7"
+    }, {
+      "name" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'||')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then ||')\n\n",
+      "children" : [ {
+        "name" : "Validacion del precio total del pedido",
+        "uid" : "5dbb0cac0204ba76",
+        "parentUid" : "96d0884aefa5b6220ab48301db6bff25",
+        "status" : "broken",
+        "time" : {
+          "start" : 1717428341521,
+          "stop" : 1717428615011,
+          "duration" : 273490
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "96d0884aefa5b6220ab48301db6bff25"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

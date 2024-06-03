@@ -74,16 +74,28 @@ def valido_precio_unitario(context, precio):
         raise ValueError(f"No se encontro el precio '{precio}'")
 
 
+@then('valido el precio unitario "{precio}" en la factura')
+def valido_precio_unitario_factura(context, precio):
+    if precio == "$ 65.064":
+        assert bool(context.app.revisar_pedido_page.valido_producto_sprite_express())
+    elif precio == "$ 53.839":
+        assert bool(context.app.revisar_pedido_page.valido_benedictino_precio_unitario())
+    elif precio == "$ 33.105":
+        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta_express())
+    else:
+        raise ValueError(f"No se encontró el precio '{precio}' para validar en la factura")
+
+
 @then('valido la cantidad de pack pedidos "{cantidad}"')
 def valido_cantidad_pack(context, cantidad):
-    if cantidad == "4":
-        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_coca_cola())
-    elif cantidad == "5":
+    if cantidad == "1":
+        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_sprite_express())
+    elif cantidad == "2":
         assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_fanta())
     elif cantidad == "7":
-        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_fanta_express())
+        assert bool(context.app.revisar_pedido_page.valido_cantidad_pack_benedictino())
     else:
-        raise ValueError(f"No se encontro la cantidad de pack pedidos '{cantidad}'")
+        raise ValueError(f"No se encontró la cantidad de pack pedidos '{cantidad}'")
 
 
 @then('valido el sector de botones de agregar y restar')
