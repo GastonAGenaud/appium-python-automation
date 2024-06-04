@@ -1,0 +1,242 @@
+{
+  "uid" : "24fff8d5efe95a88",
+  "name" : "Validacion de la ruta -- @1.3 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion de la ruta",
+  "historyId" : "153d289470b2146fdc65611ab39ce63e",
+  "time" : {
+    "start" : 1717516769945,
+    "stop" : 1717516769946,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516769946,
+        "stop" : 1717516769946,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516769946,
+        "stop" : 1717516769946,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717516769946,
+        "stop" : 1717516769946,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que sea visible la \"Producto\" con el \"16\" del pedido",
+      "time" : {
+        "start" : 1717516769946,
+        "stop" : 1717516769946,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caracteristica",
+    "value" : "Producto"
+  }, {
+    "name" : "valor",
+    "value" : "16"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "552c452a7046c930",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837378,
+        "stop" : 1717515837379,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ac159269a49b5f2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461428,
+        "stop" : 1717515461429,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5b6d040f2c068ef3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097563,
+        "stop" : 1717515097564,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "490fdab458f2e698",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811874,
+        "stop" : 1717514811875,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bc4147f284e45d12",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512522039,
+        "stop" : 1717512522040,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6f13c146b4fa1c39",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854719,
+        "stop" : 1717510854721,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "507e2e1c8c06d64e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508109977,
+        "stop" : 1717508109978,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8c75bbeaa6b0dfbb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499122,
+        "stop" : 1717507499123,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ea06ac7e73cdb80",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084374,
+        "stop" : 1717507084375,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c34547790f581894",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300350,
+        "stop" : 1717446300352,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1c08607c6e4ec9a6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190602,
+        "stop" : 1717446190603,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "76a94a251675fad1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064690,
+        "stop" : 1717426064691,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ee5c09041491c278",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275862,
+        "stop" : 1717420275864,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "34f228193e973933",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669745,
+        "stop" : 1717187669746,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a7c02cba1a522ff0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797376,
+        "stop" : 1717183797377,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "24fff8d5efe95a88.json",
+  "parameterValues" : [ "Producto", "16" ]
+}

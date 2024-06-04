@@ -1,0 +1,414 @@
+{
+  "uid" : "c98c692c1cff5add",
+  "name" : "Valido las zonas de accion del modal de modificacion de la ruta",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion del modal de modificacion de la ruta",
+  "historyId" : "56495a87ab12401a2efcae6e0bff039f",
+  "time" : {
+    "start" : 1717516634867,
+    "stop" : 1717516634868,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516634868,
+        "stop" : 1717516634868,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516634868,
+        "stop" : 1717516634868,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717516634868,
+        "stop" : 1717516634868,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Modificar\"",
+      "time" : {
+        "start" : 1717516634868,
+        "stop" : 1717516634868,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Entendido\"]\"",
+      "time" : {
+        "start" : 1717516634868,
+        "stop" : 1717516634868,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.widget.CheckBox[@resource-id=\"Test Checkbox\"]/android.view.ViewGroup/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1717516634868,
+        "stop" : 1717516634868,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 6,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a66ae31602090b8a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717516634856,
+        "stop" : 1717516634857,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "679b5df6dff0e388",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515568225,
+        "stop" : 1717515568226,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ca4374916c8c7635",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515568213,
+        "stop" : 1717515568215,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d06a1b6ae6dc8588",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515148560,
+        "stop" : 1717515148561,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3039dfbba8fc7fc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515148548,
+        "stop" : 1717515148549,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3ec20c2517c590a6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514998750,
+        "stop" : 1717514998751,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b16559172175785",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514998739,
+        "stop" : 1717514998740,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "714aa7ac5b136739",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514698005,
+        "stop" : 1717514698006,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9b44d488dcf3124a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514697994,
+        "stop" : 1717514697995,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "37074694800283dd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717511879647,
+        "stop" : 1717511879648,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ceb0d7d00f306997",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717511879637,
+        "stop" : 1717511879638,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8891c27578523a82",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510271776,
+        "stop" : 1717510271777,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "47d65647907288d0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510271767,
+        "stop" : 1717510271767,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "e340860df1072648",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508015051,
+        "stop" : 1717508015053,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8142b840e6b0411e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508015041,
+        "stop" : 1717508015043,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "bec0179737cb494d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507225739,
+        "stop" : 1717507225740,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8763970a05d24c3a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507225720,
+        "stop" : 1717507225724,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "9806671727c8b1d7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717506995695,
+        "stop" : 1717506995696,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cb145d3c064b73f2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717506995684,
+        "stop" : 1717506995685,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1ad40816c2488b5f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717506900006,
+        "stop" : 1717506900008,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "445945dbeda11bb4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717506899995,
+        "stop" : 1717506899996,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "22b9c58de5f8834c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446199214,
+        "stop" : 1717446199216,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f74cf3f5e1ac1727",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446199204,
+        "stop" : 1717446199206,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "24074068be1c072d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190535,
+        "stop" : 1717446190537,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "741ea05731487822",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190524,
+        "stop" : 1717446190526,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2e0d7bc3d842ad89",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064633,
+        "stop" : 1717426064634,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "40efbd5f4d38aaed",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064621,
+        "stop" : 1717426064622,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5a797ec42d24bf2d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275801,
+        "stop" : 1717420275802,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b90d0425298b54e4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275790,
+        "stop" : 1717420275791,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8220fe1182545c6e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717187620454,
+        "stop" : 1717187669677,
+        "duration" : 49223
+      }
+    }, {
+      "uid" : "9b7a90409176f881",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717186965155,
+        "stop" : 1717187015322,
+        "duration" : 50167
+      }
+    }, {
+      "uid" : "27f1fdaca12b5ab1",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Dangelo\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Dangelo\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Dangelo\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717183754253,
+        "stop" : 1717183797311,
+        "duration" : 43058
+      }
+    }, {
+      "uid" : "ec496097f7fca25b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717183139401,
+        "stop" : 1717183188314,
+        "duration" : 48913
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "c98c692c1cff5add.json",
+  "parameterValues" : [ ]
+}

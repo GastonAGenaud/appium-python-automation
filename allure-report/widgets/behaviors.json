@@ -1,15 +1,15 @@
 {
   "total" : 9,
   "items" : [ {
-    "uid" : "08a9ea78c977b359dcf6bec3fcc05566",
-    "name" : "Revisar pedido",
+    "uid" : "9156f7e8357968e26970019847d01d76",
+    "name" : "Anular pedido",
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
-      "skipped" : 6,
+      "broken" : 0,
+      "skipped" : 4,
       "passed" : 2,
       "unknown" : 0,
-      "total" : 12
+      "total" : 6
     }
   }, {
     "uid" : "06bababefb3c8696475b9760b65f8227",
@@ -23,6 +23,17 @@
       "total" : 17
     }
   }, {
+    "uid" : "08a9ea78c977b359dcf6bec3fcc05566",
+    "name" : "Revisar pedido",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 16,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 16
+    }
+  }, {
     "uid" : "a798121a847b20988440e5fe2e56a8c9",
     "name" : "Validaciones de UX/UI",
     "statistic" : {
@@ -34,17 +45,6 @@
       "total" : 8
     }
   }, {
-    "uid" : "9156f7e8357968e26970019847d01d76",
-    "name" : "Anular pedido",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 6,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 6
-    }
-  }, {
     "uid" : "b6bf0ae5120f106aa3f19ec552e14e38",
     "name" : "Cuadrar",
     "statistic" : {
@@ -54,6 +54,17 @@
       "passed" : 0,
       "unknown" : 0,
       "total" : 6
+    }
+  }, {
+    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
+    "name" : "Entregar pedido",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 5,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 5
     }
   }, {
     "uid" : "d7d5217b489d5c22cd53910c0b118662",
@@ -69,17 +80,6 @@
   }, {
     "uid" : "aa27a4883f03339e6ee080f8d9d5a976",
     "name" : "Estados Vacíos",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 2,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 2
-    }
-  }, {
-    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
-    "name" : "Entregar pedido",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

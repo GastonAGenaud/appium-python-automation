@@ -1,0 +1,242 @@
+{
+  "uid" : "7d1c504fdbe5dbc1",
+  "name" : "Validacion de la ruta -- @1.2 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion de la ruta",
+  "historyId" : "3d724ab532d5b56ea7f2f4292f5429cb",
+  "time" : {
+    "start" : 1717516769943,
+    "stop" : 1717516769944,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516769944,
+        "stop" : 1717516769944,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516769944,
+        "stop" : 1717516769944,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717516769944,
+        "stop" : 1717516769944,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que sea visible la \"Direccion\" con el \"AVDA ANDRES BELLO 2447\" del pedido",
+      "time" : {
+        "start" : 1717516769944,
+        "stop" : 1717516769944,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caracteristica",
+    "value" : "Direccion"
+  }, {
+    "name" : "valor",
+    "value" : "AVDA ANDRES BELLO 2447"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6e4392c4890472e3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837376,
+        "stop" : 1717515837377,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "36d92a167f901945",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461426,
+        "stop" : 1717515461427,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9e1c49ad03300496",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097561,
+        "stop" : 1717515097562,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7d2fa7a7d5e21d9d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811871,
+        "stop" : 1717514811872,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d834a4b8900adbf0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512522035,
+        "stop" : 1717512522037,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "78f56b0fd0178608",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854717,
+        "stop" : 1717510854718,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cc3ba9fa805a1e07",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508109975,
+        "stop" : 1717508109976,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f3266d9d5c34494",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499119,
+        "stop" : 1717507499120,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c4979bb35216f8b6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084373,
+        "stop" : 1717507084373,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "945408cdd84d288",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300346,
+        "stop" : 1717446300349,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c0bb43613af58812",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190600,
+        "stop" : 1717446190601,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "52227eb0109d7883",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064688,
+        "stop" : 1717426064689,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "de7a815474922d71",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275860,
+        "stop" : 1717420275861,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f910d6aa8c149e06",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669744,
+        "stop" : 1717187669745,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "dea9c71bc0ff6e54",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797375,
+        "stop" : 1717183797375,
+        "duration" : 0
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "7d1c504fdbe5dbc1.json",
+  "parameterValues" : [ "Direccion", "AVDA ANDRES BELLO 2447" ]
+}

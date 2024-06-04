@@ -1,0 +1,290 @@
+{
+  "uid" : "8b72e62811f9e281",
+  "name" : "Validacion de pantalla de seleccion de motivo de rebaja -- @1.1 ",
+  "fullName" : "Rebajar Pedido: Validacion de pantalla de seleccion de motivo de rebaja",
+  "historyId" : "6eb3de71fb9cef56b1c29ab4e04f777d",
+  "time" : {
+    "start" : 1717516770016,
+    "stop" : 1717516770019,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado ingreso el correo electronico \"test@test.com\"",
+      "time" : {
+        "start" : 1717516770017,
+        "stop" : 1717516770017,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y ingreso la contrasena \"test123\"",
+      "time" : {
+        "start" : 1717516770017,
+        "stop" : 1717516770017,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Ingresar\"",
+      "time" : {
+        "start" : 1717516770017,
+        "stop" : 1717516770017,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo el nombre \"Test\"",
+      "time" : {
+        "start" : 1717516770017,
+        "stop" : 1717516770017,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y visualizo la pantalla de seleccion de motivo de rebaja",
+      "time" : {
+        "start" : 1717516770017,
+        "stop" : 1717516770017,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717516770017,
+        "stop" : 1717516770019,
+        "duration" : 2
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "90a7f33947c2e63b",
+        "name" : ".table",
+        "source" : "90a7f33947c2e63b.csv",
+        "type" : "text/csv",
+        "size" : 202
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y valido la presencia del boton \"Enviar motivo\"",
+      "time" : {
+        "start" : 1717516770019,
+        "stop" : 1717516770019,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "test@test.com"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "8c14d0e978baa32b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837421,
+        "stop" : 1717515837423,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "58e9c8ecf0795232",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461467,
+        "stop" : 1717515461469,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d31021258380f1d3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097599,
+        "stop" : 1717515097602,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "27a2618662b977db",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811915,
+        "stop" : 1717514811919,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "bc3c1df3a5eb5465",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512522074,
+        "stop" : 1717512522076,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "baf70ae6de62f4ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854764,
+        "stop" : 1717510854767,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "436565d0d2b5dd1e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508110009,
+        "stop" : 1717508110011,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2a22fb10b1225d49",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499154,
+        "stop" : 1717507499157,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7abff4c7442168ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084404,
+        "stop" : 1717507084405,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6c63031bad6df79e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300790,
+        "stop" : 1717446300797,
+        "duration" : 7
+      }
+    }, {
+      "uid" : "11561944b9af67c6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190635,
+        "stop" : 1717446190636,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9024a324c0f9af27",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064720,
+        "stop" : 1717426064722,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7401f9a2e0d41aec",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275892,
+        "stop" : 1717420275894,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3b7eb8acc819af6f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669775,
+        "stop" : 1717187669776,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7c04e3f9b9ee0cf4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797404,
+        "stop" : 1717183797405,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8b72e62811f9e281.json",
+  "parameterValues" : [ "test123", "test@test.com" ]
+}

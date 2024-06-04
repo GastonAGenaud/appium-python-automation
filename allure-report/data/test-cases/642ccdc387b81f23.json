@@ -1,0 +1,393 @@
+{
+  "uid" : "642ccdc387b81f23",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.1 ",
+  "fullName" : "Anular pedido: Validación de pantalla de selección de motivo de anulación",
+  "historyId" : "9a33209e927aac19b27d768766bc5c6c",
+  "time" : {
+    "start" : 1717516634873,
+    "stop" : 1717516710866,
+    "duration" : 75993
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516640730,
+        "stop" : 1717516643970,
+        "duration" : 3240
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516643970,
+        "stop" : 1717516645337,
+        "duration" : 1367
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717516645339,
+        "stop" : 1717516646119,
+        "duration" : 780
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717516646119,
+        "stop" : 1717516681956,
+        "duration" : 35837
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717516681956,
+        "stop" : 1717516698756,
+        "duration" : 16800
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717516698756,
+        "stop" : 1717516699953,
+        "duration" : 1197
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1717516699953,
+        "stop" : 1717516700860,
+        "duration" : 907
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717516700860,
+        "stop" : 1717516706511,
+        "duration" : 5651
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2a19538b2ca340a0",
+        "name" : ".table",
+        "source" : "2a19538b2ca340a0.csv",
+        "type" : "text/csv",
+        "size" : 466
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717516706511,
+        "stop" : 1717516706852,
+        "duration" : 341
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido la presencia del botón \"Confirmar\"",
+      "time" : {
+        "start" : 1717516706852,
+        "stop" : 1717516707598,
+        "duration" : 746
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago clic en el botón \"Confirmar\"",
+      "time" : {
+        "start" : 1717516707598,
+        "stop" : 1717516707745,
+        "duration" : 147
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces verifico que se envíe el motivo seleccionado correctamente",
+      "time" : {
+        "start" : 1717516707745,
+        "stop" : 1717516709262,
+        "duration" : 1517
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "5bb9a629332c5186",
+      "name" : "Validación de pantalla de selección de motivo de anulación -- @1.1 ",
+      "source" : "5bb9a629332c5186.mp4",
+      "type" : "video/mp4",
+      "size" : 12923786
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 12,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "AnularPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "test@test.com"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "89e1d9cef90af0bd",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717515568231,
+        "stop" : 1717515725061,
+        "duration" : 156830
+      }
+    }, {
+      "uid" : "71d465b0fe84a1f8",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'tuple' object is not callable\n",
+      "time" : {
+        "start" : 1717515148566,
+        "stop" : 1717515197656,
+        "duration" : 49090
+      }
+    }, {
+      "uid" : "cc45193a7bbdaae2",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'visualizo la pantalla de selección de motivo de anulacion')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When visualizo la pantalla de selección de motivo de anulacion')\n\n",
+      "time" : {
+        "start" : 1717514998756,
+        "stop" : 1717515048407,
+        "duration" : 49651
+      }
+    }, {
+      "uid" : "e41f9e07497e8c51",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'visualizo la pantalla de selección de motivo de anulación')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When visualizo la pantalla de selección de motivo de anulación')\n\n",
+      "time" : {
+        "start" : 1717514698011,
+        "stop" : 1717514762661,
+        "duration" : 64650
+      }
+    }, {
+      "uid" : "9018e164069da967",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717511879653,
+        "stop" : 1717512200945,
+        "duration" : 321292
+      }
+    }, {
+      "uid" : "da297812226deaf4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717510271782,
+        "stop" : 1717510564070,
+        "duration" : 292288
+      }
+    }, {
+      "uid" : "2fd83c813db20dbc",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'selecciono el boton \"Retornar pedido\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When selecciono el boton \"Retornar pedido\"')\n\n",
+      "time" : {
+        "start" : 1717508015058,
+        "stop" : 1717508063513,
+        "duration" : 48455
+      }
+    }, {
+      "uid" : "7340c179bfdf4a20",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717507225745,
+        "stop" : 1717507303065,
+        "duration" : 77320
+      }
+    }, {
+      "uid" : "8b1d393e2ccc16d",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'AnularPedidoPage' object has no attribute 'anular_pedido_page'\n",
+      "time" : {
+        "start" : 1717506995701,
+        "stop" : 1717507044250,
+        "duration" : 48549
+      }
+    }, {
+      "uid" : "c05b30453bd95e5f",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'AnularPedidoPage' object has no attribute 'anular_pedido_page'\n",
+      "time" : {
+        "start" : 1717506900014,
+        "stop" : 1717506989333,
+        "duration" : 89319
+      }
+    }, {
+      "uid" : "7ac15530f8be09db",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro la seccion 'Retornar pedido'\n",
+      "time" : {
+        "start" : 1717446199221,
+        "stop" : 1717446250672,
+        "duration" : 51451
+      }
+    }, {
+      "uid" : "b013bc1bbe4995a7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190542,
+        "stop" : 1717446190543,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2b8aed72a91de645",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064639,
+        "stop" : 1717426064641,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2a4a4f5df89208b5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275807,
+        "stop" : 1717420275809,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1251011600e058f9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669685,
+        "stop" : 1717187669687,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "aa073c4dadb4b05e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797316,
+        "stop" : 1717183797319,
+        "duration" : 3
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "AnularPedido" ]
+  },
+  "source" : "642ccdc387b81f23.json",
+  "parameterValues" : [ "test123", "test@test.com" ]
+}

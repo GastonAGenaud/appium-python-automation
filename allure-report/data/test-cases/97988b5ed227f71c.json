@@ -1,0 +1,238 @@
+{
+  "uid" : "97988b5ed227f71c",
+  "name" : "Validacion de boton \"Login\" deshabilitado",
+  "fullName" : "iniciar sesión: Validacion de boton \"Login\" deshabilitado",
+  "historyId" : "3c5e8208cf998e11e03e820f1090709a",
+  "time" : {
+    "start" : 1717516769932,
+    "stop" : 1717516769933,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado estoy en la pantalla de inicio de sesion",
+      "time" : {
+        "start" : 1717516769933,
+        "stop" : 1717516769933,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces se valida que el boton de \"Login\" este deshabilitado",
+      "time" : {
+        "start" : 1717516769933,
+        "stop" : 1717516769933,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "iniciar_sesion"
+  }, {
+    "name" : "feature",
+    "value" : "iniciar sesión"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c6ac2e0233b7559d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837366,
+        "stop" : 1717515837368,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "70ee225e830b6b8e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461417,
+        "stop" : 1717515461418,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c15ffd4de7d58799",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097552,
+        "stop" : 1717515097553,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "980af48ccc3fffaf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811862,
+        "stop" : 1717514811864,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dff8cbaa8dea9160",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512522026,
+        "stop" : 1717512522027,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1827ea709f8b65d3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854705,
+        "stop" : 1717510854707,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a545843211c354df",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508109967,
+        "stop" : 1717508109967,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "ab5a1d6de8c3bd80",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499110,
+        "stop" : 1717507499110,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "2cd96a3d472d2953",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084364,
+        "stop" : 1717507084365,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "70970d7339e39d6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300327,
+        "stop" : 1717446300331,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "8f943b17340e233c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190592,
+        "stop" : 1717446190593,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b398273e962d654b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064681,
+        "stop" : 1717426064682,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ee5c3bb7e4ad3ef0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064613,
+        "stop" : 1717426064615,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9087446f7be44dac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275853,
+        "stop" : 1717420275854,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3c8faf0f35d9bb03",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275780,
+        "stop" : 1717420275781,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2e1e923b54ec2672",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669737,
+        "stop" : 1717187669738,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d54e6fa32556f7dd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717186666981,
+        "stop" : 1717186666982,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a22ad7223e25a7d8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797367,
+        "stop" : 1717183797368,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "96e19067f60b050",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183040787,
+        "stop" : 1717183040788,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "iniciar_sesion" ]
+  },
+  "source" : "97988b5ed227f71c.json",
+  "parameterValues" : [ ]
+}

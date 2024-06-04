@@ -1,0 +1,326 @@
+{
+  "uid" : "7b03427c1e0e528b",
+  "name" : "Validacion del texto \"Entregada\"",
+  "fullName" : "Cuadrar: Validacion del texto \"Entregada\"",
+  "historyId" : "6b078aff24fe7521c4b009f3ddea04f4",
+  "time" : {
+    "start" : 1717516769897,
+    "stop" : 1717516769899,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y cierro el cuadro de texto",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145544\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"entregar\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el texto \"Entregada\"",
+      "time" : {
+        "start" : 1717516769899,
+        "stop" : 1717516769899,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "modalComenzarRuta"
+  }, {
+    "name" : "feature",
+    "value" : "Cuadrar"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "83e427094672a66f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837333,
+        "stop" : 1717515837334,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "333f93b98725356",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461388,
+        "stop" : 1717515461389,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c8cd829b8bd9bcbf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097515,
+        "stop" : 1717515097518,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e50406939b59ed84",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811829,
+        "stop" : 1717514811830,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1de9a30cee2229d0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512521997,
+        "stop" : 1717512521998,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f6c8e093d287da15",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854668,
+        "stop" : 1717510854669,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "537d1b665e1de81e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508109941,
+        "stop" : 1717508109942,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b0699d030d77e67e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499082,
+        "stop" : 1717507499082,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "1e6369aafa776dec",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084334,
+        "stop" : 1717507084336,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "54af783ba4ba44d3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300277,
+        "stop" : 1717446300278,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c23a91cbceb507ca",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190568,
+        "stop" : 1717446190570,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "23fa0688ee78a4e2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064663,
+        "stop" : 1717426064664,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "dbca9529bb36108b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275834,
+        "stop" : 1717420275835,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "be24ab37c4841236",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669712,
+        "stop" : 1717187669713,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8b671bf7c7b789a9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797342,
+        "stop" : 1717183797343,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "modalComenzarRuta" ]
+  },
+  "source" : "7b03427c1e0e528b.json",
+  "parameterValues" : [ ]
+}

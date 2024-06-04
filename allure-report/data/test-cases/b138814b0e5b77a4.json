@@ -1,0 +1,278 @@
+{
+  "uid" : "b138814b0e5b77a4",
+  "name" : "Validacion de la modificacion de la ruta",
+  "fullName" : "Modificar recorrido sugerido: Validacion de la modificacion de la ruta",
+  "historyId" : "1b9ce65a0dff17ad0e3055b7905c4e31",
+  "time" : {
+    "start" : 1717516769967,
+    "stop" : 1717516769969,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y cierro el cuadro de texto",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Modificar\"",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Entendido\"",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y desplazo un cliente hacia una nueva posicion",
+      "time" : {
+        "start" : 1717516769969,
+        "stop" : 1717516769969,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "d8a3b35e6283554b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837401,
+        "stop" : 1717515837404,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4bf9149ea674692d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461450,
+        "stop" : 1717515461451,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "44636691c740c15b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097584,
+        "stop" : 1717515097585,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9af0618e104ea51",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811897,
+        "stop" : 1717514811898,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2fe73f328284bcfd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512522059,
+        "stop" : 1717512522060,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "279378828a9f69b1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854744,
+        "stop" : 1717510854746,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b186a0cc8675fa6b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508109995,
+        "stop" : 1717508109995,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "720b31a1f3d353ca",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499140,
+        "stop" : 1717507499141,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c233691b783efcf3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084391,
+        "stop" : 1717507084392,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ffd31d84d8348b82",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300409,
+        "stop" : 1717446300525,
+        "duration" : 116
+      }
+    }, {
+      "uid" : "5da5ada2b2ce85f5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190619,
+        "stop" : 1717446190619,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "c0a737a31aed172b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717426064707,
+        "stop" : 1717426064708,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "158cd7cb826463be",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717420275879,
+        "stop" : 1717420275880,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8c612376c3cff257",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669762,
+        "stop" : 1717187669763,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bba797afb666abc7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797391,
+        "stop" : 1717183797392,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b138814b0e5b77a4.json",
+  "parameterValues" : [ ]
+}

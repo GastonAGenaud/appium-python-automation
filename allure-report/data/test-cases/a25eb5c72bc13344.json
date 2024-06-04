@@ -1,0 +1,251 @@
+{
+  "uid" : "a25eb5c72bc13344",
+  "name" : "Validacion de visualizacion de ruta de pedido -- @1.1 ",
+  "fullName" : "Revisar pedido: Validacion de visualizacion de ruta de pedido",
+  "historyId" : "cdc83b07694c810ea344c4c314417651",
+  "time" : {
+    "start" : 1717516770046,
+    "stop" : 1717516770046,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717516770046,
+        "stop" : 1717516770046,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717516770046,
+        "stop" : 1717516770046,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Ingresar\"",
+      "time" : {
+        "start" : 1717516770046,
+        "stop" : 1717516770046,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando elijo la ruta \"Renca\"",
+      "time" : {
+        "start" : 1717516770046,
+        "stop" : 1717516770046,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces se valida que la visualizacion de pedido para la ruta \"Renca\" sea correcta",
+      "time" : {
+        "start" : 1717516770046,
+        "stop" : 1717516770046,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 5,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "idRuta",
+    "value" : "Renca"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a951be4f560f683a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515837455,
+        "stop" : 1717515837455,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d7ab1b03af479837",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515461500,
+        "stop" : 1717515461503,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ee3d9a8f258e952e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717515097631,
+        "stop" : 1717515097631,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "73bba4acd6869781",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717514811946,
+        "stop" : 1717514811946,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "718de22068580a0d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717512522099,
+        "stop" : 1717512522100,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a02b0433d46b6d08",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717510854798,
+        "stop" : 1717510854799,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b662b57cef808447",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717508110037,
+        "stop" : 1717508110037,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "cfb6aacaf8b19d25",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507499180,
+        "stop" : 1717507499182,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ab1b6f7fa95971a2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717507084429,
+        "stop" : 1717507084429,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "d376d5c075e864cc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446300944,
+        "stop" : 1717446300945,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c9240c776da23c2e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717446190662,
+        "stop" : 1717446190663,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9030590b64efc08c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717428615014,
+        "stop" : 1717428615015,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ebdf4f681b3991d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717422858461,
+        "stop" : 1717422858463,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "27a0d03369f0ad5f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717187669800,
+        "stop" : 1717187669800,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6880de3d3e46ef43",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717183797427,
+        "stop" : 1717183797428,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a25eb5c72bc13344.json",
+  "parameterValues" : [ "Renca" ]
+}
