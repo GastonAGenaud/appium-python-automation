@@ -13,7 +13,7 @@ class InicioSesionPage(Page):
     mensaje_error_correo = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar un usuario"]')
     mensaje_error_contrasena = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar una contraseña"]')
     mensaje_error_inicio_sesion = (
-    MobileBy.XPATH, '//android.widget.LinearLayout[@resource-id="android:id/title_template"]')
+        MobileBy.XPATH, '//android.widget.LinearLayout[@resource-id="android:id/title_template"]')
     comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
     iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión')
 
@@ -33,6 +33,8 @@ class InicioSesionPage(Page):
         self.click_on_element(self.ingresar_btn)
 
     def click_iniciar_sesion_btn(self):
+        if self.driver.is_keyboard_shown():
+            self.driver.hide_keyboard()
         self.click_on_element(self.iniciar_sesion_btn)
 
     def valido_mensaje_error_correo(self):
@@ -50,7 +52,7 @@ class InicioSesionPage(Page):
         valido_comenzar_ruta = self.find_element(self.comenzar_ruta_btn).is_displayed()
         return valido_comenzar_ruta
 
-    #def valido_tamano_ingresar_btn(self):
+    # def valido_tamano_ingresar_btn(self):
     #    boton = self.driver.find_element(MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Iniciar sesión"]')
     #    tamano = boton.size
     #    ancho = tamano['width']
