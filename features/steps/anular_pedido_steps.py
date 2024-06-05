@@ -47,6 +47,11 @@ def verificar_envio_motivo(context):
     assert context.app.anular_pedido_page.valido_cliente_retornado_mensaje()
 
 
+@then('verifico la validacion del retorno de la factura')
+def valido_boton_ver_detalle(context):
+    assert context.app.anular_pedido_page.valido_boton_ver_detalle()
+
+
 @when('visualizo la pantalla de selección de motivo de anulacion')
-def valido_pantalla_motivo_anulacion(context):
+def valido_redireccion_detalles(context):
     assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion()

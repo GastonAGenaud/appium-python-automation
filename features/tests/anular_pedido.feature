@@ -100,8 +100,20 @@ Característica: Anular pedido
     Y hago click en el boton "Retornados"
     Entonces valido que la ruta utilizada anteriormente esté presente
 
+    @anularPedidoFactura
+  Escenario: Validación de retornar pedido de factura
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Entonces verifico la validacion del retorno de la factura
 
-  Esquema del escenario: Validación de la pantalla de retomar pedidos
+  Escenario: Validación de la pantalla de retomar pedidos
     Dado hago click en el boton "Ingresar"
     Y visualizo la pantalla de retomar pedidos
     Y valido que la ruta del pedido sea "Felix de Amesti 920"
@@ -110,9 +122,6 @@ Característica: Anular pedido
     Entonces verifico que se redireccione a la pantalla de detalles del pedido
     Y verifico que se muestre correctamente el pedido a retomar
 
-    Ejemplos:
-      | correoElectronico | contrasena |
-      | test@test.com     | test123    |
 
   Escenario: Validación del boton "Ver detalle" en la pantalla de retomar pedidos
     Dado hago click en el boton "Ingresar"
