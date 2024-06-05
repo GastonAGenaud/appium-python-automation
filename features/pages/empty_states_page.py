@@ -1,12 +1,15 @@
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class EmptyStatesPage(Page):
     anulados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anulados"]')
     visitados_seccion = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="Visitados"]')
-    retornados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleA']")
-    entregados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleFinish']")
+    retornados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup')
+    entregados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregados"]/android.view.ViewGroup')
     entregados_sector = (MobileBy.ACCESSIBILITY_ID, "Entregados ")
     no_has_anulado_pedido_txt = [MobileBy.XPATH,
                                  '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
@@ -32,8 +35,22 @@ class EmptyStatesPage(Page):
         self.click_on_element(self.anulados_seccion)
 
     def seccion_retornados(self):
-        self.click_on_element(self.retornados_seccion)
-        self.click_on_element(self.retornados_seccion)
+        max_attempts = 4  # Número máximo de intentos
+        attempts = 0
+
+        while attempts < max_attempts:
+            self.click_on_element(self.retornados_seccion)
+            try:
+                WebDriverWait(self.driver, 2).until_not(
+                    EC.presence_of_element_located(self.retornados_seccion)
+                )
+                print("El botón ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El botón aún está presente. Intentando nuevamente...")
+                attempts += 1
+                if attempts == max_attempts:
+                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def seccion_entregados(self):
         self.click_on_element(self.entregados_seccion)

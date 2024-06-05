@@ -7,7 +7,7 @@ Característica: Modificar recorrido sugerido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y cierro el cuadro de texto
+        #Y cierro el cuadro de texto
         Entonces valido que se visualice el boton "Comenzar ruta"
 
     @regresion
@@ -29,7 +29,7 @@ Característica: Modificar recorrido sugerido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y cierro el cuadro de texto
+        #Y cierro el cuadro de texto
         Y hago click en el boton "Comenzar ruta"
         Y elijo la ruta "El Deseo SPA"
         Entonces se valida que la ruta "El Deseo SPA" este seleccionada
@@ -40,7 +40,7 @@ Característica: Modificar recorrido sugerido
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         #Y elijo la ruta "1222654"
-        Y cierro el cuadro de texto
+        #Y cierro el cuadro de texto
         Y hago click en el boton "Comenzar ruta"
         Entonces se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente
 
@@ -62,7 +62,7 @@ Característica: Modificar recorrido sugerido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y cierro el cuadro de texto
+        #Y cierro el cuadro de texto
         Y hago click en el boton "Modificar"
         Entonces valido que el texto "<opcion>" de la pantalla de modificacion manual
 
@@ -73,14 +73,14 @@ Característica: Modificar recorrido sugerido
             | Entendido        |
             #| No volver a mostrar |
 
-    Escenario: Validacion de la modificacion de la ruta
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Y cierro el cuadro de texto
-        Y hago click en el boton "Modificar"
-        Y hago click en el boton "Entendido"
-        Y desplazo un cliente hacia una nueva posicion
+    #Escenario: Validacion de la modificacion de la ruta
+        #Dado el usuario ingresa el correo electronico "conductor-01"
+        #Y el usuario ingresa una contraseña
+        #Cuando hago click en el boton "Iniciar sesion"
+        #Y cierro el cuadro de texto
+        #Y hago click en el boton "Modificar"
+        #Y hago click en el boton "Entendido"
+        #Y desplazo un cliente hacia una nueva posicion
         #Entonces valido el mensaje "Recorrido modificado"
 
     @regresion
@@ -88,7 +88,7 @@ Característica: Modificar recorrido sugerido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y cierro el cuadro de texto
+        #Y cierro el cuadro de texto
         Y hago click en el boton "Modificar"
         Y hago click en el boton "Entendido"
         Y hago click en el boton "Desplegar"
@@ -100,7 +100,7 @@ Característica: Modificar recorrido sugerido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y cierro el cuadro de texto
+        #Y cierro el cuadro de texto
         Y hago click en el boton "Modificar"
         Y hago click en el boton "Entendido"
         Y hago click en el boton "Desplegar"

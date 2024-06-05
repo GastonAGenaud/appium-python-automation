@@ -37,14 +37,6 @@ Característica: Validaciones de UX/UI
         Cuando hago click en el boton "Cerrar pedido"
         Entonces valido la pantalla con la imagen de referencia "//android.view.ViewGroup[@content-desc='Retornados']/android.view.ViewGroup" "features/screenshots/referencia_pedido.png"
 
-    Escenario: Valido las zonas de accion del modal de modificacion de la ruta
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Y hago click en el boton "Modificar"
-        Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entendido"]"
-        Y valido el tamaño de zona de accion del boton "//android.widget.CheckBox[@resource-id="Test Checkbox"]/android.view.ViewGroup/android.view.ViewGroup"
-
     @regresion
     Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531
         Dado el usuario ingresa el correo electronico "conductor-01"

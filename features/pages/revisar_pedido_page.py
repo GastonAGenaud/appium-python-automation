@@ -28,21 +28,19 @@ class RevisarPedidoPage(Page):
     precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$66.210"]')
     precio_unitario_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@text="$376.873"]')
     cantidad_pack_coca_cola = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="4"]')
-    cantidad_pack_fanta = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="5"]')
-    cantidad_pack_fanta_express = (
-        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="7"]')
+    cantidad_pack_fanta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and @text="de 2 "]')
     cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
                                             '@text="de 1 "]')
     cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
                                                  '@text="de 7 "]')
-    precio_final_coca_cola = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 230.608 "]')
-    precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 234.565 "]')
-    precio_final_fanta_express = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 465.297 "]')
+    precio_final_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
+    precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
+    precio_final_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
     retornar_pedido_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Retornar pedido"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
     #benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
-    benedictino_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and '
-                                                   '@text="$ 53.839 "]')
+    benedictino_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 53.839 "]')
+    fanta_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 33.105 "]')
 
     def valido_pedido_el_deseo_spa(self):
         self.implicit_wait_visible(self.el_deseo_spa_titulo)
@@ -146,6 +144,11 @@ class RevisarPedidoPage(Page):
         benedictino_precio_unitario = self.find_element(self.benedictino_precio_unitario).is_displayed()
         return benedictino_precio_unitario
 
+    def valido_fanta_MidCal_precio_unitario(self):
+        self.implicit_wait_visible(self.fanta_precio_unitario)
+        fanta_midcal_precio_unitario = self.find_element(self.fanta_precio_unitario).is_displayed()
+        return fanta_midcal_precio_unitario
+
     def valido_cantidad_pack_coca_cola(self):
         self.implicit_wait_visible(self.cantidad_pack_coca_cola)
         cantidad_pack = self.find_element(self.cantidad_pack_coca_cola).is_displayed()
@@ -176,9 +179,9 @@ class RevisarPedidoPage(Page):
         precio_final = self.find_element(self.precio_final_coca_zero).is_displayed()
         return precio_final
 
-    def valido_precio_final_coca_cola(self):
-        self.implicit_wait_visible(self.precio_final_coca_cola)
-        precio_final = self.find_element(self.precio_final_coca_cola).is_displayed()
+    def valido_precio_final_sprite(self):
+        self.implicit_wait_visible(self.precio_final_sprite)
+        precio_final = self.find_element(self.precio_final_sprite).is_displayed()
         return precio_final
 
     def valido_precio_final_fanta(self):
@@ -186,9 +189,9 @@ class RevisarPedidoPage(Page):
         precio_final = self.find_element(self.precio_final_fanta).is_displayed()
         return precio_final
 
-    def valido_precio_final_fanta_express(self):
-        self.implicit_wait_visible(self.precio_final_fanta_express)
-        precio_final = self.find_element(self.precio_final_fanta_express).is_displayed()
+    def valido_precio_final_benedictino(self):
+        self.implicit_wait_visible(self.precio_final_benedictino)
+        precio_final = self.find_element(self.precio_final_benedictino).is_displayed()
         return precio_final
 
     def valido_precio_total(self):

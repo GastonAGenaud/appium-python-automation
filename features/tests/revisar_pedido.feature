@@ -26,7 +26,7 @@ Característica: Revisar pedido
 
 
   Escenario: Validacion de visualizacion de la cantidad de productos y el monto de transferencia
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
         #Y elijo el nombre "Test"
@@ -39,7 +39,7 @@ Característica: Revisar pedido
 
 
   Escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
         #Y elijo el nombre "Test"
@@ -53,7 +53,7 @@ Característica: Revisar pedido
 
 
   Esquema del escenario: Validacion del contenido de la factura
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
         #Y cierro el cuadro de texto
@@ -68,14 +68,14 @@ Característica: Revisar pedido
     Y valido que el precio total sea de "$ 508.147"
 
     Ejemplos:
-      | producto                   | precioUnitario | cantidadPack | precioTotal |
-      | Sprite MidCal PT250cc      | $ 65.064       | 1            | $ 65.064    |
-      | Fanta MidCal Express 237cc | $ 33.105       | 2            | $ 66.210    |
-      | Benedictino S/G PT6.5      | $ 53.389       | 7            | $ 376.873   |
+      | producto                             | precioUnitario | cantidadPack | precioTotal |
+      | Sprite MidCal PT250cc x6             | $ 65.064       | 1            | $ 65.064    |
+      | Fanta MidCal Express 237cc x 24      | $ 33.105       | 2            | $ 66.210    |
+      | Benedictino S/G PT6.5 x 2 Cilindrico | $ 53.839       | 7            | $ 376.873   |
 
 
   Escenario: Anular pedido de la factura
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
         #Y cierro el cuadro de texto
@@ -87,7 +87,7 @@ Característica: Revisar pedido
 
 
   Escenario: Entregar pedido de la factura
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
         #Y cierro el cuadro de texto
@@ -100,7 +100,7 @@ Característica: Revisar pedido
 
 
   Escenario: Validacion del precio total del pedido
-    Dado el usuario ingresa el correo electronico "user_tests"
+    Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
         #Y cierro el cuadro de texto

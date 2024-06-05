@@ -15,4 +15,4 @@ def valido_captura_pantalla(context, xpath):
 @then('valido la pantalla con la imagen de referencia "{xpath}" "{ruta_referencia}"')
 def valido_pantalla_con_referencia(context, xpath, ruta_referencia):
     ruta_captura = context.app.ux_page.capturar_captura_elemento(xpath)
-    assert context.app.UX_page.comparar_imagenes(ruta_captura, ruta_referencia)
+    assert context.app.ux_page.comparar_imagenes(ruta_captura, ruta_referencia)

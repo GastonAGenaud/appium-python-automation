@@ -1,6 +1,6 @@
 {
-  "platformName": "android",
-  "appium:deviceName": "emulator-5554",
-  "appium:platformVersion": "14.0",
+  "platformName": "Android",
+  "appium:platformVersion": "13.0",
+  "appium:deviceName": "Pixel 7 Pro API 33",
   "appium:automationName": "UiAutomator2"
 }

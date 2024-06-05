@@ -81,7 +81,7 @@ def valido_precio_unitario_factura(context, precio):
     elif precio == "$ 53.839":
         assert bool(context.app.revisar_pedido_page.valido_benedictino_precio_unitario())
     elif precio == "$ 33.105":
-        assert bool(context.app.revisar_pedido_page.valido_precio_unitario_fanta_express())
+        assert bool(context.app.revisar_pedido_page.valido_fanta_MidCal_precio_unitario())
     else:
         raise ValueError(f"No se encontró el precio '{precio}' para validar en la factura")
 
@@ -111,12 +111,12 @@ def valido_sector_agregar_y_restar(context):
 
 @then('valido el precio final "{precio}"')
 def valido_precio_final(context, precio):
-    if precio == "$ 230.608":
-        assert bool(context.app.revisar_pedido_page.valido_precio_final_coca_cola())
-    elif precio == "$ 234.565":
+    if precio == "$ 65.064":
+        assert bool(context.app.revisar_pedido_page.valido_precio_final_sprite())
+    elif precio == "$ 66.210":
         assert bool(context.app.revisar_pedido_page.valido_precio_final_fanta())
-    elif precio == "$ 465.297":
-        assert bool(context.app.revisar_pedido_page.valido_precio_final_fanta_express())
+    elif precio == "$ 376.873":
+        assert bool(context.app.revisar_pedido_page.valido_precio_final_benedictino())
     else:
         raise ValueError(f"No se encontro la cantidad de pack pedidos '{precio}'")
 
