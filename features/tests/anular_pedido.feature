@@ -2,18 +2,15 @@
 
 Característica: Anular pedido
 
-
-  Esquema del escenario: Validación de presionar el boton "Anular pedido"
-    Dado ingreso el correo electrónico "<correoElectronico>"
-    Y ingreso la contrasena "<contrasena>"
-    Y hago click en el boton "Ingresar"
-    Cuando visualizo la factura con número "<numeroFactura>"
-    Y hago click en el boton "Anular pedido"
+  @porqueretornar
+  Escenario: Validación de presionar el boton "Anular pedido"
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono el boton "Retornar pedido"
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
-
-    Ejemplos:
-      | correoElectronico | contrasena | numeroFactura |
-      | test@test.com     | test123    | 3942342       |
 
   Escenario: Validación de motivo de anulación
     Dado el usuario ingresa el correo electronico "conductor-01"
@@ -47,7 +44,6 @@ Característica: Anular pedido
       | Horario inadecuado              |
       | Entrega atrasada                |
       | Exceso de clientes              |
-
 
   @AnularPedido
   Escenario: Validación de pantalla de selección de motivo de anulación
@@ -121,7 +117,6 @@ Característica: Anular pedido
     Y hago click en el boton "Retomar pedido"
     Entonces verifico que se redireccione a la pantalla de detalles del pedido
     Y verifico que se muestre correctamente el pedido a retomar
-
 
   Escenario: Validación del boton "Ver detalle" en la pantalla de retomar pedidos
     Dado hago click en el boton "Ingresar"

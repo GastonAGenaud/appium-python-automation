@@ -9,7 +9,7 @@ def selecciono_retornar_pedido(context):
 @then('valido la presencia de los siguientes motivos')
 def validar_presencia_motivos(context):
     motivos = [row['motivo'] for row in context.table]
-    assert context.app.anular_pedido_page.valido_deseo_spa_retornado
+    assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion
 
 
 @then('selecciono "Sobre stock"')
@@ -49,6 +49,11 @@ def verificar_envio_motivo(context):
 
 @then('verifico la validacion del retorno de la factura')
 def valido_boton_ver_detalle(context):
+    assert context.app.anular_pedido_page.textoPorqueRetornar()
+
+
+@then('valido que se haya abierto la pantalla de selección de motivo de anulación')
+def valido_texto_porque_retornar(context):
     assert context.app.anular_pedido_page.valido_boton_ver_detalle()
 
 

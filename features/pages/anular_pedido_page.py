@@ -19,8 +19,14 @@ class AnularPedidoPage(Page):
                                                                "Efectivo, $866.455")
     click_retornadosBtn = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup')
+    textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
 
     # Métodos para interactuar con la página y validar elementos
+
+    def valido_texto_porque_retornar(self):
+        self.implicit_wait_visible(self.textoPorqueRetornar)
+        return self.find_element(self.textoPorqueRetornar).is_displayed()
+
     def valido_numero_de_factura(self, numero_factura):
         numero_de_factura = (MobileBy.XPATH, f"//android.widget.TextView[@text='Factura N° {numero_factura}']")
         self.implicit_wait_visible(numero_de_factura)
