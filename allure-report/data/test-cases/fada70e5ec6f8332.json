@@ -1,0 +1,210 @@
+{
+  "uid" : "fada70e5ec6f8332",
+  "name" : "Validación del sector \"Retornados\"",
+  "fullName" : "Anular pedido: Validación del sector \"Retornados\"",
+  "historyId" : "26c45fc10d271046937b0790f08df93b",
+  "time" : {
+    "start" : 1717591103705,
+    "stop" : 1717591163466,
+    "duration" : 59761
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717591111263,
+        "stop" : 1717591114672,
+        "duration" : 3409
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717591114672,
+        "stop" : 1717591116113,
+        "duration" : 1441
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717591116113,
+        "stop" : 1717591116803,
+        "duration" : 690
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717591116803,
+        "stop" : 1717591153375,
+        "duration" : 36572
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717591153375,
+        "stop" : 1717591153739,
+        "duration" : 364
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717591153739,
+        "stop" : 1717591155202,
+        "duration" : 1463
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717591155202,
+        "stop" : 1717591156325,
+        "duration" : 1123
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717591156325,
+        "stop" : 1717591157077,
+        "duration" : 752
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Retornados\"",
+      "time" : {
+        "start" : 1717591157077,
+        "stop" : 1717591161007,
+        "duration" : 3930
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que la ruta utilizada anteriormente esté presente",
+      "time" : {
+        "start" : 1717591161007,
+        "stop" : 1717591162088,
+        "duration" : 1081
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "1c035f3b82166435",
+      "name" : "Validación del sector \"Retornados\"",
+      "source" : "1c035f3b82166435.mp4",
+      "type" : "video/mp4",
+      "size" : 10306587
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rutaAnterior"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "rutaAnterior" ]
+  },
+  "source" : "fada70e5ec6f8332.json",
+  "parameterValues" : [ ]
+}

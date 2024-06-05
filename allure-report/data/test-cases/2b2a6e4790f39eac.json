@@ -1,0 +1,120 @@
+{
+  "uid" : "2b2a6e4790f39eac",
+  "name" : "Validacion de la ruta -- @1.2 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion de la ruta",
+  "historyId" : "3d724ab532d5b56ea7f2f4292f5429cb",
+  "time" : {
+    "start" : 1717594290015,
+    "stop" : 1717594290016,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717594290016,
+        "stop" : 1717594290016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717594290016,
+        "stop" : 1717594290016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717594290016,
+        "stop" : 1717594290016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que sea visible la \"Direccion\" con el \"AVDA ANDRES BELLO 2447\" del pedido",
+      "time" : {
+        "start" : 1717594290016,
+        "stop" : 1717594290016,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caracteristica",
+    "value" : "Direccion"
+  }, {
+    "name" : "valor",
+    "value" : "AVDA ANDRES BELLO 2447"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "2b2a6e4790f39eac.json",
+  "parameterValues" : [ "Direccion", "AVDA ANDRES BELLO 2447" ]
+}

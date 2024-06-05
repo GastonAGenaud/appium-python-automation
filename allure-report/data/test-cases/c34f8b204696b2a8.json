@@ -1,0 +1,225 @@
+{
+  "uid" : "c34f8b204696b2a8",
+  "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+  "fullName" : "Rebajar Pedido: Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+  "historyId" : "a5ce62f138a458ea214a4bd6f4f02880",
+  "time" : {
+    "start" : 1717601876142,
+    "stop" : 1717601935831,
+    "duration" : 59689
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717601883051,
+        "stop" : 1717601886423,
+        "duration" : 3372
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717601886423,
+        "stop" : 1717601887935,
+        "duration" : 1512
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717601887935,
+        "stop" : 1717601890707,
+        "duration" : 2772
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717601890707,
+        "stop" : 1717601926777,
+        "duration" : 36070
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717601926777,
+        "stop" : 1717601927155,
+        "duration" : 378
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1717601927155,
+        "stop" : 1717601928443,
+        "duration" : 1288
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono para rebajar el pedido",
+      "time" : {
+        "start" : 1717601928443,
+        "stop" : 1717601929310,
+        "duration" : 867
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717601929310,
+        "stop" : 1717601930688,
+        "duration" : 1378
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717601930688,
+        "stop" : 1717601931961,
+        "duration" : 1273
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717601931962,
+        "stop" : 1717601932777,
+        "duration" : 815
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces verifico pantalla del producto rebajado",
+      "time" : {
+        "start" : 1717601932777,
+        "stop" : 1717601934396,
+        "duration" : 1619
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "df24b837e4ad80f7",
+      "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+      "source" : "df24b837e4ad80f7.mp4",
+      "type" : "video/mp4",
+      "size" : 10800758
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rebajarPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "rebajarPedido" ]
+  },
+  "source" : "c34f8b204696b2a8.json",
+  "parameterValues" : [ ]
+}

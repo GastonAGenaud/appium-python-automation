@@ -1,5 +1,5 @@
 # language: es
-
+@probandoAnular
 Característica: Anular pedido
 
   @porqueretornar

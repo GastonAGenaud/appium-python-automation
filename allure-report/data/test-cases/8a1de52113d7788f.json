@@ -1,0 +1,231 @@
+{
+  "uid" : "8a1de52113d7788f",
+  "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+  "fullName" : "Rebajar Pedido: Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+  "historyId" : "a5ce62f138a458ea214a4bd6f4f02880",
+  "time" : {
+    "start" : 1717600081775,
+    "stop" : 1717600140305,
+    "duration" : 58530
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: Page.find_element() takes 2 positional arguments but 3 were given\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\rebajar_pedido_steps.py\", line 6, in valido_texto_retornar\n    assert context.app.rebajar_pedido_page.retornado_sobreStock_texto()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\rebajar_pedido_page.py\", line 21, in retornado_sobreStock_texto\n    return self.find_element(*self.retornado_sobreStock).is_displayed()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: Page.find_element() takes 2 positional arguments but 3 were given\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\rebajar_pedido_steps.py\", line 6, in valido_texto_retornar\n    assert context.app.rebajar_pedido_page.retornado_sobreStock_texto()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\rebajar_pedido_page.py\", line 21, in retornado_sobreStock_texto\n    return self.find_element(*self.retornado_sobreStock).is_displayed()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717600088002,
+        "stop" : 1717600091058,
+        "duration" : 3056
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717600091058,
+        "stop" : 1717600092603,
+        "duration" : 1545
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717600092603,
+        "stop" : 1717600095376,
+        "duration" : 2773
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717600095376,
+        "stop" : 1717600131074,
+        "duration" : 35698
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717600131074,
+        "stop" : 1717600131461,
+        "duration" : 387
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1717600131461,
+        "stop" : 1717600132865,
+        "duration" : 1404
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono para rebajar el pedido",
+      "time" : {
+        "start" : 1717600132865,
+        "stop" : 1717600133784,
+        "duration" : 919
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717600133784,
+        "stop" : 1717600135165,
+        "duration" : 1381
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717600135166,
+        "stop" : 1717600136439,
+        "duration" : 1273
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717600136440,
+        "stop" : 1717600137243,
+        "duration" : 803
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces verifico pantalla del producto rebajado",
+      "time" : {
+        "start" : 1717600137243,
+        "stop" : 1717600138833,
+        "duration" : 1590
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: Page.find_element() takes 2 positional arguments but 3 were given\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\rebajar_pedido_steps.py\", line 6, in valido_texto_retornar\n    assert context.app.rebajar_pedido_page.retornado_sobreStock_texto()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\rebajar_pedido_page.py\", line 21, in retornado_sobreStock_texto\n    return self.find_element(*self.retornado_sobreStock).is_displayed()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f440bb016cfddc27",
+      "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+      "source" : "f440bb016cfddc27.mp4",
+      "type" : "video/mp4",
+      "size" : 11818451
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 11
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rebajarPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "rebajarPedido" ]
+  },
+  "source" : "8a1de52113d7788f.json",
+  "parameterValues" : [ ]
+}

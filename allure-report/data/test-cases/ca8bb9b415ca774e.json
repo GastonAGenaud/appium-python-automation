@@ -1,0 +1,180 @@
+{
+  "uid" : "ca8bb9b415ca774e",
+  "name" : "Entregar pedido de la factura",
+  "fullName" : "Revisar pedido: Entregar pedido de la factura",
+  "historyId" : "b57f47407a199e2e48042da4e98f4dda",
+  "time" : {
+    "start" : 1717422274262,
+    "stop" : 1717422553085,
+    "duration" : 278823
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717422280577,
+        "stop" : 1717422286403,
+        "duration" : 5826
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717422286403,
+        "stop" : 1717422287800,
+        "duration" : 1397
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717422287800,
+        "stop" : 1717422288491,
+        "duration" : 691
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717422288491,
+        "stop" : 1717422333026,
+        "duration" : 44535
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717422333026,
+        "stop" : 1717422548855,
+        "duration" : 215829
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1717422548855,
+        "stop" : 1717422550337,
+        "duration" : 1482
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Entregar\"",
+      "time" : {
+        "start" : 1717422550337,
+        "stop" : 1717422551606,
+        "duration" : 1269
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717422551606,
+        "stop" : 1717422552492,
+        "duration" : 886
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8fbbf5ad30faa20e",
+      "name" : "Entregar pedido de la factura",
+      "source" : "8fbbf5ad30faa20e.mp4",
+      "type" : "video/mp4",
+      "size" : 6917098
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "ca8bb9b415ca774e.json",
+  "parameterValues" : [ ]
+}

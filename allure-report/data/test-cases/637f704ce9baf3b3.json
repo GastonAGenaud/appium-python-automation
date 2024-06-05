@@ -1,0 +1,216 @@
+{
+  "uid" : "637f704ce9baf3b3",
+  "name" : "Validación del sector \"Retornados\"",
+  "fullName" : "Anular pedido: Validación del sector \"Retornados\"",
+  "historyId" : "26c45fc10d271046937b0790f08df93b",
+  "time" : {
+    "start" : 1717530912394,
+    "stop" : 1717531003050,
+    "duration" : 90656
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'tuple' object is not callable\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 42, in validar_presencia_ruta\n    assert context.app.anular_pedido_page.deseo_spa_retornados()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'tuple' object is not callable\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 42, in validar_presencia_ruta\n    assert context.app.anular_pedido_page.deseo_spa_retornados()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717530917399,
+        "stop" : 1717530920063,
+        "duration" : 2664
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717530920063,
+        "stop" : 1717530921457,
+        "duration" : 1394
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717530921458,
+        "stop" : 1717530922227,
+        "duration" : 769
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717530922227,
+        "stop" : 1717530957621,
+        "duration" : 35394
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717530957621,
+        "stop" : 1717530996374,
+        "duration" : 38753
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717530996374,
+        "stop" : 1717530997743,
+        "duration" : 1369
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717530997743,
+        "stop" : 1717530998809,
+        "duration" : 1066
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717530998809,
+        "stop" : 1717530999609,
+        "duration" : 800
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Retornados\"",
+      "time" : {
+        "start" : 1717530999609,
+        "stop" : 1717531001710,
+        "duration" : 2101
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que la ruta utilizada anteriormente esté presente",
+      "time" : {
+        "start" : 1717531001710,
+        "stop" : 1717531001712,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: 'tuple' object is not callable\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 42, in validar_presencia_ruta\n    assert context.app.anular_pedido_page.deseo_spa_retornados()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f6cd37ec08d7489c",
+      "name" : "Validación del sector \"Retornados\"",
+      "source" : "f6cd37ec08d7489c.mp4",
+      "type" : "video/mp4",
+      "size" : 8863584
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 10
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rutaAnterior"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "rutaAnterior" ]
+  },
+  "source" : "637f704ce9baf3b3.json",
+  "parameterValues" : [ ]
+}

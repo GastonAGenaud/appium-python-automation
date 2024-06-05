@@ -1,0 +1,144 @@
+{
+  "uid" : "243fba9a7094298b",
+  "name" : "Anular pedido de la factura",
+  "fullName" : "Revisar pedido: Anular pedido de la factura",
+  "historyId" : "0098f63bfe89bc6b09fc396a4729c3a5",
+  "time" : {
+    "start" : 1717592139654,
+    "stop" : 1717592139656,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"user_tests\"",
+      "time" : {
+        "start" : 1717592139656,
+        "stop" : 1717592139656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717592139656,
+        "stop" : 1717592139656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717592139656,
+        "stop" : 1717592139656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717592139656,
+        "stop" : 1717592139656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717592139656,
+        "stop" : 1717592139656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717592139656,
+        "stop" : 1717592139656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "243fba9a7094298b.json",
+  "parameterValues" : [ ]
+}

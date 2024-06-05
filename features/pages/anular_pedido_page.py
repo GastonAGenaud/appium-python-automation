@@ -1,3 +1,6 @@
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 import time
@@ -128,20 +131,33 @@ class AnularPedidoPage(Page):
         self.click_on_element(self.retornar_pedido)
 
     def deseo_spa_retornados(self):
-        self.implicit_wait_visible(self.deseo_spa_retornados_locator)
-        return self.find_element(self.deseo_spa_retornados_locator).is_displayed()
+        try:
+            # Añadir espera explícita
+            wait = WebDriverWait(self.driver, 20)  # Aumentado a 20 segundos
+            elemento = wait.until(EC.visibility_of_element_located(self.deseo_spa_retornados_locator))
+            return elemento.is_displayed()
+        except (NoSuchElementException, TimeoutException) as e:
+            # Manejar el caso donde el elemento no se encuentra
+            print(f"Elemento 'El Deseo SPA Retornados' no encontrado: {e}")
+            return False
+        except Exception as e:
+            # Manejar cualquier otra excepción
+            print(f"Ocurrió un error: {e}")
+            return False
 
     def selecciono_boton_retornado(self):
-        # Intentar hacer clic dos veces en el botón "Retornados"
-        for _ in range(2):
-            try:
-                boton_retornados = self.driver.find_element(*self.click_retornadosBtn)
-                if boton_retornados.is_displayed():
-                    boton_retornados.click()
-                    time.sleep(1)  # Esperar 1 segundo entre los clics
-                    boton_retornados.click()
-                    break
-            except Exception as e:
-                print(f"Error: {e}")
-                pass  # Si hay algún error, simplemente lo ignoramos y continuamos esperando
-            time.sleep(1)  # Esperar 1 segundo antes de intentarlo nuevamente
+        # Intentar hacer clic en el botón "Retornados"
+        wait = WebDriverWait(self.driver, 20)  # Aumentado a 20 segundos
+        try:
+            boton_retornados = wait.until(EC.visibility_of_element_located(self.click_retornadosBtn))
+            print("Botón 'Retornados' visible, intentando hacer clic...")
+            boton_retornados.click()
+            time.sleep(2)  # Esperar 2 segundos entre los clics
+            boton_retornados.click()
+            print("Clic en el botón 'Retornados' realizado con éxito.")
+        except TimeoutException:
+            print("Error: El botón 'Retornados' no está visible después de 20 segundos.")
+        except NoSuchElementException:
+            print("Error: No se pudo encontrar el botón 'Retornados'.")
+        except Exception as e:
+            print(f"Error al hacer clic en el botón 'Retornados': {e}")

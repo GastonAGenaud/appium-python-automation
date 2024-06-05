@@ -9,7 +9,7 @@ def selecciono_retornar_pedido(context):
 @then('valido la presencia de los siguientes motivos')
 def validar_presencia_motivos(context):
     motivos = [row['motivo'] for row in context.table]
-    assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion
+    assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion()
 
 
 @then('selecciono "Sobre stock"')
@@ -34,12 +34,13 @@ def clic_confirmar(context):
 
 @when('hago clic en el botón "Retornados"')
 def clic_retornados(context):
-    context.app.anular_pedido_page.click_retornadosBtn()
+    context.app.anular_pedido_page.selecciono_boton_retornado()
 
 
 @then('valido que la ruta utilizada anteriormente esté presente')
 def deseo_spa_retornados(context):
-    assert context.app.anular_pedido_page.deseo_spa_retornados()
+    assert context.app.anular_pedido_page.deseo_spa_retornados(), (
+        "La ruta 'El Deseo SPA' no está presente en el sector 'Retornados'.")
 
 
 @then('verifico que se envíe el motivo seleccionado correctamente')

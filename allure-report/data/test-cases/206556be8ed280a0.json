@@ -1,0 +1,126 @@
+{
+  "uid" : "206556be8ed280a0",
+  "name" : "Validación del botón \"Ver detalle\" en la pantalla de retomar pedidos",
+  "fullName" : "Anular pedido: Validación del botón \"Ver detalle\" en la pantalla de retomar pedidos",
+  "historyId" : "e24fb8c62313e6123ed487497a8b22ac",
+  "time" : {
+    "start" : 1717524952270,
+    "stop" : 1717524952272,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado hago clic en el botón \"Ingresar\"",
+      "time" : {
+        "start" : 1717524952271,
+        "stop" : 1717524952271,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y visualizo la pantalla de retomar pedidos",
+      "time" : {
+        "start" : 1717524952272,
+        "stop" : 1717524952272,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido la presencia del botón \"Ver detalle\"",
+      "time" : {
+        "start" : 1717524952272,
+        "stop" : 1717524952272,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago clic en el botón \"Ver detalle\"",
+      "time" : {
+        "start" : 1717524952272,
+        "stop" : 1717524952272,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces verifico que se redireccione",
+      "time" : {
+        "start" : 1717524952272,
+        "stop" : 1717524952272,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "206556be8ed280a0.json",
+  "parameterValues" : [ ]
+}

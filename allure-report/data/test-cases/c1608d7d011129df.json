@@ -1,0 +1,258 @@
+{
+  "uid" : "c1608d7d011129df",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.1 ",
+  "fullName" : "Anular pedido: Validación de pantalla de selección de motivo de anulación",
+  "historyId" : "9a33209e927aac19b27d768766bc5c6c",
+  "time" : {
+    "start" : 1717515148566,
+    "stop" : 1717515197656,
+    "duration" : 49090
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: 'tuple' object is not callable\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 37, in valido_pantalla_motivo_anulacion\n    assert context.app.anular_pedido_page.motivo_anulacion_pantalla()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: 'tuple' object is not callable\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 37, in valido_pantalla_motivo_anulacion\n    assert context.app.anular_pedido_page.motivo_anulacion_pantalla()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717515153709,
+        "stop" : 1717515156241,
+        "duration" : 2532
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717515156242,
+        "stop" : 1717515157620,
+        "duration" : 1378
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717515157620,
+        "stop" : 1717515158441,
+        "duration" : 821
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717515158441,
+        "stop" : 1717515194392,
+        "duration" : 35951
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717515194393,
+        "stop" : 1717515194738,
+        "duration" : 345
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717515194739,
+        "stop" : 1717515195958,
+        "duration" : 1219
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1717515195958,
+        "stop" : 1717515195961,
+        "duration" : 3
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: 'tuple' object is not callable\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 37, in valido_pantalla_motivo_anulacion\n    assert context.app.anular_pedido_page.motivo_anulacion_pantalla()\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717515197655,
+        "stop" : 1717515197656,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "9a84b9fcfac07d1b",
+        "name" : ".table",
+        "source" : "9a84b9fcfac07d1b.csv",
+        "type" : "text/csv",
+        "size" : 455
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717515197656,
+        "stop" : 1717515197656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido la presencia del botón \"Confirmar\"",
+      "time" : {
+        "start" : 1717515197656,
+        "stop" : 1717515197656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago clic en el botón \"Confirmar\"",
+      "time" : {
+        "start" : 1717515197656,
+        "stop" : 1717515197656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces verifico que se envíe el motivo seleccionado correctamente",
+      "time" : {
+        "start" : 1717515197656,
+        "stop" : 1717515197656,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f58340b1b0c3489c",
+      "name" : "Validación de pantalla de selección de motivo de anulación -- @1.1 ",
+      "source" : "f58340b1b0c3489c.mp4",
+      "type" : "video/mp4",
+      "size" : 16704823
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 12
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "AnularPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "test@test.com"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "AnularPedido" ]
+  },
+  "source" : "c1608d7d011129df.json",
+  "parameterValues" : [ "test123", "test@test.com" ]
+}

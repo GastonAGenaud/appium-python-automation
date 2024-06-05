@@ -1,0 +1,129 @@
+{
+  "uid" : "dbc3ed78ecbb77f0",
+  "name" : "Valido las zonas de accion de la pantalla de Inicio de sesion",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion de la pantalla de Inicio de sesion",
+  "historyId" : "3aad1f1b905cb0d4fb81319a0c74ffe1",
+  "time" : {
+    "start" : 1717183040789,
+    "stop" : 1717183052036,
+    "duration" : 11247
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'Application' object has no attribute 'UX_page'\n",
+  "statusTrace" : "  File \"E:\\trabajo\\Andina\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"E:\\trabajo\\Andina\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\UX_steps.py\", line 18, in valido_pantalla_con_referencia\n    assert context.app.UX_page.comparar_imagenes(ruta_captura, ruta_referencia)\n           ^^^^^^^^^^^^^^^^^^^\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'Application' object has no attribute 'UX_page'\n",
+    "statusTrace" : "  File \"E:\\trabajo\\Andina\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"E:\\trabajo\\Andina\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\UX_steps.py\", line 18, in valido_pantalla_con_referencia\n    assert context.app.UX_page.comparar_imagenes(ruta_captura, ruta_referencia)\n           ^^^^^^^^^^^^^^^^^^^\n",
+    "steps" : [ {
+      "name" : "Dado estoy en la pantalla de inicio de sesion",
+      "time" : {
+        "start" : 1717183045768,
+        "stop" : 1717183049701,
+        "duration" : 3933
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc='Iniciar sesión']\"",
+      "time" : {
+        "start" : 1717183049701,
+        "stop" : 1717183050004,
+        "duration" : 303
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido la captura de pantalla del elemento \"//android.view.ViewGroup[@content-desc='Iniciar sesión']\"",
+      "time" : {
+        "start" : 1717183050004,
+        "stop" : 1717183050562,
+        "duration" : 558
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido la pantalla con la imagen de referencia \"//android.view.ViewGroup[@content-desc='Iniciar sesión']\" \"features/screenshots/referencia_inicio_sesion.png\"",
+      "time" : {
+        "start" : 1717183050562,
+        "stop" : 1717183051102,
+        "duration" : 540
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'Application' object has no attribute 'UX_page'\n",
+      "statusTrace" : "  File \"E:\\trabajo\\Andina\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"E:\\trabajo\\Andina\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\UX_steps.py\", line 18, in valido_pantalla_con_referencia\n    assert context.app.UX_page.comparar_imagenes(ruta_captura, ruta_referencia)\n           ^^^^^^^^^^^^^^^^^^^\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "dcb35444bfd189aa",
+      "name" : "Valido las zonas de accion de la pantalla de Inicio de sesion",
+      "source" : "dcb35444bfd189aa.mp4",
+      "type" : "video/mp4",
+      "size" : 1028706
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "dbc3ed78ecbb77f0.json",
+  "parameterValues" : [ ]
+}

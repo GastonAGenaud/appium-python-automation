@@ -1,0 +1,192 @@
+{
+  "uid" : "15a97dafe1a242d2",
+  "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
+  "fullName" : "Rebajar Pedido: Validacion de pantalla de seleccion de motivo de rebaja",
+  "historyId" : "3f43c61b93b45238925eb7afc68e5e46",
+  "time" : {
+    "start" : 1717601935833,
+    "stop" : 1717601990379,
+    "duration" : 54546
+  },
+  "status" : "broken",
+  "statusMessage" : "NotImplementedError: Paso no implementado: validar la presencia de los motivos\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 12, in validar_presencia_motivos\n    raise NotImplementedError(\"Paso no implementado: validar la presencia de los motivos\")\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NotImplementedError: Paso no implementado: validar la presencia de los motivos\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 12, in validar_presencia_motivos\n    raise NotImplementedError(\"Paso no implementado: validar la presencia de los motivos\")\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717601942244,
+        "stop" : 1717601945827,
+        "duration" : 3583
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717601945827,
+        "stop" : 1717601947597,
+        "duration" : 1770
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717601947597,
+        "stop" : 1717601950355,
+        "duration" : 2758
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717601950355,
+        "stop" : 1717601985862,
+        "duration" : 35507
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717601985862,
+        "stop" : 1717601986271,
+        "duration" : 409
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717601986271,
+        "stop" : 1717601987749,
+        "duration" : 1478
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1717601987749,
+        "stop" : 1717601988774,
+        "duration" : 1025
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717601988774,
+        "stop" : 1717601988777,
+        "duration" : 3
+      },
+      "status" : "broken",
+      "statusMessage" : "NotImplementedError: Paso no implementado: validar la presencia de los motivos\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 12, in validar_presencia_motivos\n    raise NotImplementedError(\"Paso no implementado: validar la presencia de los motivos\")\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e01c3b5ff18112bb",
+        "name" : ".table",
+        "source" : "e01c3b5ff18112bb.csv",
+        "type" : "text/csv",
+        "size" : 466
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "16e4d90d65b16eac",
+      "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
+      "source" : "16e4d90d65b16eac.mp4",
+      "type" : "video/mp4",
+      "size" : 8888711
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rebajarPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "rebajarPedido" ]
+  },
+  "source" : "15a97dafe1a242d2.json",
+  "parameterValues" : [ ]
+}

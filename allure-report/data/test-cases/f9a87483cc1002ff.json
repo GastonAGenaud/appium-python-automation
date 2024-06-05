@@ -1,0 +1,259 @@
+{
+  "uid" : "f9a87483cc1002ff",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.2 ",
+  "fullName" : "Anular pedido: Validación de pantalla de selección de motivo de anulación",
+  "historyId" : "f164a802a73ac3f206afe06d1ae9a708",
+  "time" : {
+    "start" : 1717512200947,
+    "stop" : 1717512521974,
+    "duration" : 321027
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 6, in seleccionar_boton_retornar_pedido\n    context.app.anular_pedido_page.seleccionar_retornar_pedido()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\anular_pedido_page.py\", line 25, in seleccionar_retornar_pedido\n    self.click_on_element(self.retornar_pedido)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 6, in seleccionar_boton_retornar_pedido\n    context.app.anular_pedido_page.seleccionar_retornar_pedido()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\anular_pedido_page.py\", line 25, in seleccionar_retornar_pedido\n    self.click_on_element(self.retornar_pedido)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717512205501,
+        "stop" : 1717512208009,
+        "duration" : 2508
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717512208010,
+        "stop" : 1717512209345,
+        "duration" : 1335
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717512209345,
+        "stop" : 1717512210031,
+        "duration" : 686
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717512210031,
+        "stop" : 1717512244998,
+        "duration" : 34967
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717512244998,
+        "stop" : 1717512460756,
+        "duration" : 215758
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717512460756,
+        "stop" : 1717512521372,
+        "duration" : 60616
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\anular_pedido_steps.py\", line 6, in seleccionar_boton_retornar_pedido\n    context.app.anular_pedido_page.seleccionar_retornar_pedido()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\anular_pedido_page.py\", line 25, in seleccionar_retornar_pedido\n    self.click_on_element(self.retornar_pedido)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\venv\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulación",
+      "time" : {
+        "start" : 1717512521973,
+        "stop" : 1717512521973,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'visualizo la pantalla de selección de motivo de anulación')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When visualizo la pantalla de selección de motivo de anulación')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717512521973,
+        "stop" : 1717512521974,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2a5584c5ece38b02",
+        "name" : ".table",
+        "source" : "2a5584c5ece38b02.csv",
+        "type" : "text/csv",
+        "size" : 455
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717512521974,
+        "stop" : 1717512521974,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido la presencia del botón \"Confirmar\"",
+      "time" : {
+        "start" : 1717512521974,
+        "stop" : 1717512521974,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago clic en el botón \"Confirmar\"",
+      "time" : {
+        "start" : 1717512521974,
+        "stop" : 1717512521974,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces verifico que se envíe el motivo seleccionado correctamente",
+      "time" : {
+        "start" : 1717512521974,
+        "stop" : 1717512521974,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "c9b8dca41493f58e",
+      "name" : "Validación de pantalla de selección de motivo de anulación -- @1.2 ",
+      "source" : "c9b8dca41493f58e.mp4",
+      "type" : "video/mp4",
+      "size" : 7159457
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 12
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "AnularPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "Jonathan"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "AnularPedido" ]
+  },
+  "source" : "f9a87483cc1002ff.json",
+  "parameterValues" : [ "test123", "Jonathan" ]
+}

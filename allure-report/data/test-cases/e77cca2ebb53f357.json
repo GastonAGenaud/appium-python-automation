@@ -1,0 +1,277 @@
+{
+  "uid" : "e77cca2ebb53f357",
+  "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
+  "fullName" : "Rebajar Pedido: Validacion de pantalla de seleccion de motivo de rebaja",
+  "historyId" : "3f43c61b93b45238925eb7afc68e5e46",
+  "time" : {
+    "start" : 1717605430369,
+    "stop" : 1717605430371,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430370,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los motivos de anulacion",
+      "time" : {
+        "start" : 1717605430370,
+        "stop" : 1717605430371,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "daa6afe0a7c81389",
+        "name" : ".table",
+        "source" : "daa6afe0a7c81389.csv",
+        "type" : "text/csv",
+        "size" : 466
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rebajarPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "59f6dc33f4621562",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717605057249,
+        "stop" : 1717605057252,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7d9e50a91da2a83b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717604846664,
+        "stop" : 1717604846667,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "eb28c38ff7ac3c69",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717604112688,
+        "stop" : 1717604166646,
+        "duration" : 53958
+      }
+    }, {
+      "uid" : "2670f77ab80be0a3",
+      "status" : "broken",
+      "statusDetails" : "TypeError: argument of type 'bool' is not iterable\n",
+      "time" : {
+        "start" : 1717603816035,
+        "stop" : 1717603933944,
+        "duration" : 117909
+      }
+    }, {
+      "uid" : "354a847ef4520663",
+      "status" : "broken",
+      "statusDetails" : "TypeError: argument of type 'method' is not iterable\n",
+      "time" : {
+        "start" : 1717603563870,
+        "stop" : 1717603705431,
+        "duration" : 141561
+      }
+    }, {
+      "uid" : "a545d555431f220",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717603036527,
+        "stop" : 1717603090003,
+        "duration" : 53476
+      }
+    }, {
+      "uid" : "e1d04a0d650aa343",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia de los siguientes motivos')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia de los siguientes motivos')\n\n",
+      "time" : {
+        "start" : 1717602184175,
+        "stop" : 1717602238971,
+        "duration" : 54796
+      }
+    }, {
+      "uid" : "15a97dafe1a242d2",
+      "status" : "broken",
+      "statusDetails" : "NotImplementedError: Paso no implementado: validar la presencia de los motivos\n",
+      "time" : {
+        "start" : 1717601935833,
+        "stop" : 1717601990379,
+        "duration" : 54546
+      }
+    }, {
+      "uid" : "2c246208d48b2b66",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia de los siguientes motivos')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia de los siguientes motivos')\n\n",
+      "time" : {
+        "start" : 1717601382397,
+        "stop" : 1717601650070,
+        "duration" : 267673
+      }
+    }, {
+      "uid" : "cb36148c52fadf71",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia de los siguientes motivos')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia de los siguientes motivos')\n\n",
+      "time" : {
+        "start" : 1717600936100,
+        "stop" : 1717600989388,
+        "duration" : 53288
+      }
+    }, {
+      "uid" : "d6b2226b7808b895",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'AnularPedidoPage' object has no attribute 'valido_deseo_spa_retornado'. Did you mean: 'deseo_spa_retornados'?\n",
+      "time" : {
+        "start" : 1717600746851,
+        "stop" : 1717600801094,
+        "duration" : 54243
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "rebajarPedido" ]
+  },
+  "source" : "e77cca2ebb53f357.json",
+  "parameterValues" : [ ]
+}

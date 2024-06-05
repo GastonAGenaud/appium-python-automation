@@ -1,0 +1,654 @@
+{
+  "uid" : "d0d999a0cecc43bb",
+  "name" : "Validación de pantalla de selección de motivo de anulación",
+  "fullName" : "Anular pedido: Validación de pantalla de selección de motivo de anulación",
+  "historyId" : "78c941a72f1378295b22a52299735645",
+  "time" : {
+    "start" : 1717605129182,
+    "stop" : 1717605129184,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5dd585307c38f4b3",
+        "name" : ".table",
+        "source" : "5dd585307c38f4b3.csv",
+        "type" : "text/csv",
+        "size" : 466
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido la presencia del boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces verifico que se envíe el motivo seleccionado correctamente",
+      "time" : {
+        "start" : 1717605129184,
+        "stop" : 1717605129184,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 12
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "AnularPedido"
+  }, {
+    "name" : "tag",
+    "value" : "probandoAnular"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2b45e83a0adb5989",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717604937840,
+        "stop" : 1717604937842,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "21cf81c70cfe1c09",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia del boton \"Confirmar\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia del boton \"Confirmar\"')\n\n",
+      "time" : {
+        "start" : 1717604595653,
+        "stop" : 1717604650557,
+        "duration" : 54904
+      }
+    }, {
+      "uid" : "2b165909551e63bc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717604055053,
+        "stop" : 1717604055056,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "91ae4381bfffc5e2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603758100,
+        "stop" : 1717603758102,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6db173cb395015de",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603494420,
+        "stop" : 1717603494422,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "13f08760575f33eb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603255355,
+        "stop" : 1717603255358,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e1201f40b005c518",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603118739,
+        "stop" : 1717603118742,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "287accacf6f9be10",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603036428,
+        "stop" : 1717603036431,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6c817b92a23eb965",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717602184086,
+        "stop" : 1717602184089,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e3842a0082c9a6ad",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717601876054,
+        "stop" : 1717601876056,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3f3c6a406c3f4eb9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717601111130,
+        "stop" : 1717601111133,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d0ac493d8ae4960e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600877471,
+        "stop" : 1717600877473,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1c93572e4a6adff3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600474331,
+        "stop" : 1717600474333,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8c0f1e0247c6ca2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600255834,
+        "stop" : 1717600255837,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "271a73711bd08f1a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600081689,
+        "stop" : 1717600081692,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "88f0f5fec07f533b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599968125,
+        "stop" : 1717599968127,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a6ab676f7fbe5a6c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599792065,
+        "stop" : 1717599792068,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d45183741662413c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599547548,
+        "stop" : 1717599547551,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3e3e2bf99da1a506",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599200267,
+        "stop" : 1717599200270,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d82037220e98df55",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717598385884,
+        "stop" : 1717598385886,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eb86e22645ff2f3e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717597904934,
+        "stop" : 1717597904937,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "156bf46e012145f9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717597844566,
+        "stop" : 1717597844568,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "bf83b76fec7f7a08",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717597720764,
+        "stop" : 1717597720767,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b5208b72bd8e172d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717595750620,
+        "stop" : 1717595750623,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "56102db35e5e62d3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717595401660,
+        "stop" : 1717595401663,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "2778f901efdbfdc5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717594222673,
+        "stop" : 1717594222677,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "a64fae0bd93628fe",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717594165032,
+        "stop" : 1717594165035,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d47ed177915370c8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717593157076,
+        "stop" : 1717593157078,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c2095bb25468ebd9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717592434644,
+        "stop" : 1717592434648,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "2752fa5451410181",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717592025236,
+        "stop" : 1717592025239,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6c963c2b597ac1d5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717591902548,
+        "stop" : 1717591902551,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "eeade04715eb0d14",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717591103701,
+        "stop" : 1717591103703,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "998d8bb7cac21b2c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717532905464,
+        "stop" : 1717532905467,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a104f7e4353e7629",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717532745229,
+        "stop" : 1717532745232,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ffd13b1bb4cdf3b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717532628125,
+        "stop" : 1717532628128,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "cad257641f29f480",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717532346361,
+        "stop" : 1717532346364,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e17f7159c5edd659",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717532234072,
+        "stop" : 1717532234074,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ae428e4649a025bf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717531891316,
+        "stop" : 1717531891318,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2f5514d93db706ad",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717531716225,
+        "stop" : 1717531716228,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "23dbddde1fff0dfa",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717531509594,
+        "stop" : 1717531509596,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5891f23f604fc449",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717531379430,
+        "stop" : 1717531379436,
+        "duration" : 6
+      }
+    }, {
+      "uid" : "829e0a7b73c0f69",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717530912390,
+        "stop" : 1717530912393,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a54bd712a941e76e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717530406526,
+        "stop" : 1717530406529,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "10f89028d6f3e390",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717530210546,
+        "stop" : 1717530210549,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b0445936693a2886",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717529811142,
+        "stop" : 1717529811144,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1c6b2edf46abeb04",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717529643229,
+        "stop" : 1717529643231,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b6ac8cdd45ad6b03",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717529483653,
+        "stop" : 1717529483656,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "f08278caece465be",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717529234504,
+        "stop" : 1717529234507,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "e98acb52ffed444b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717529168145,
+        "stop" : 1717529168148,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "54dc5e9766cb3578",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717529076332,
+        "stop" : 1717529076335,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "8457d7dcf16ef734",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717528979782,
+        "stop" : 1717528979786,
+        "duration" : 4
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "AnularPedido", "probandoAnular" ]
+  },
+  "source" : "d0d999a0cecc43bb.json",
+  "parameterValues" : [ ]
+}
