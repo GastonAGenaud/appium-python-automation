@@ -4,10 +4,10 @@
     "uid" : "9156f7e8357968e26970019847d01d76",
     "name" : "Anular pedido",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 2,
       "skipped" : 13,
-      "passed" : 0,
+      "passed" : 1,
       "unknown" : 0,
       "total" : 16
     }

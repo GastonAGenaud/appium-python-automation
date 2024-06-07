@@ -1,0 +1,50 @@
+{
+  "uid" : "d0acba0e6bdc9eaf",
+  "name" : "Validación de pantalla de selección de motivo de anulación -- @1.2 ",
+  "fullName" : "Anular pedido: Validación de pantalla de selección de motivo de anulación",
+  "historyId" : "f164a802a73ac3f206afe06d1ae9a708",
+  "time" : {
+    "start" : 1717506989333,
+    "stop" : 1717506993409,
+    "duration" : 4076
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "AnularPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "contrasena",
+    "value" : "test123"
+  }, {
+    "name" : "correoElectronico",
+    "value" : "Jonathan"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "AnularPedido" ]
+  },
+  "source" : "d0acba0e6bdc9eaf.json",
+  "parameterValues" : [ "test123", "Jonathan" ]
+}

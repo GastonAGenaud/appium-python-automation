@@ -7,7 +7,7 @@
       "name" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
       "children" : [ {
         "name" : "Validación del sector \"Retornados\" -- @1.1 ",
-        "uid" : "30efeacc0f4f8265",
+        "uid" : "20d46f0fd6ccedc1",
         "parentUid" : "67f8cc4768a7aefaf7fe0428e00845ad",
         "status" : "broken",
         "time" : {
@@ -19,7 +19,7 @@
         "parameters" : [ "test123", "test@test.com" ]
       }, {
         "name" : "Validación del sector \"Retornados\" -- @1.2 ",
-        "uid" : "873606205dd16775",
+        "uid" : "4f5a77cc531411ce",
         "parentUid" : "67f8cc4768a7aefaf7fe0428e00845ad",
         "status" : "broken",
         "time" : {
@@ -33,25 +33,5 @@
       "uid" : "67f8cc4768a7aefaf7fe0428e00845ad"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError\n",
-      "children" : [ {
-        "name" : "Validación del sector \"Retornados\"",
-        "uid" : "431c916c526e271e",
-        "parentUid" : "a730cf0b0a23aabea6d11aa0391c8a76",
-        "status" : "failed",
-        "time" : {
-          "start" : 1717605129186,
-          "stop" : 1717605430274,
-          "duration" : 301088
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a730cf0b0a23aabea6d11aa0391c8a76"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }

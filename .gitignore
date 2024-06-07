@@ -125,10 +125,12 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
-.pyre/
+.pyre/<
 
 .idea
 environment
 ./features/credentials.py
 config.json
+videos/*
+allure-results
 videos
