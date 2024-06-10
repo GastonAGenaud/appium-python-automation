@@ -21,13 +21,16 @@ class RevisarPedidoPage(Page):
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
     factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
+    factura_del_pedido2 = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[2]')
     sprite_MidCal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
     benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
-    fanta_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
+    fanta_midcal_express_pedido = (
+    MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
     precio_unitario_sprite_midCal = (MobileBy.XPATH, '//android.widget.TextView[@text="$65.064"]')
     precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$66.210"]')
     precio_unitario_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@text="$376.873"]')
-    cantidad_pack_coca_cola = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="4"]')
+    cantidad_pack_coca_cola = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and '
+                                               '@text="4"]')
     cantidad_pack_fanta = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="5"]')
     cantidad_pack_fanta_express = (
         MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="7"]')
@@ -70,11 +73,15 @@ class RevisarPedidoPage(Page):
 
     def valido_numero_de_factura(self, factura):
         self.implicit_wait_visible(self.google_maps_opcion)
-        numero_de_factura = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@text="Factura N° {factura}"]')
+        numero_de_factura = self.driver.find_element(MobileBy.XPATH,
+                                                     f'//android.widget.TextView[@text="Factura N° {factura}"]')
         return numero_de_factura
 
     def selecciono_la_factura(self):
         self.click_on_element(self.factura_del_pedido)
+
+    def selecciono_la_factura2(self):
+        self.click_on_element(self.factura_del_pedido2)
 
     #def selecciono_la_factura_deseo_spa(self):
     #    self.click_on_element(self.factura_del_pedido_deseo_spa)
@@ -213,12 +220,14 @@ class RevisarPedidoPage(Page):
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
-        producto_2 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
+        producto_2 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
+        producto_3 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)

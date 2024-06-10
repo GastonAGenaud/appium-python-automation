@@ -8,12 +8,12 @@ import time
 
 class AnularPedidoPage(Page):
     # Localizadores de elementos
-    retornar_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar pedido"]')
+    retornar_pedido = (MobileBy.ACCESSIBILITY_ID, 'Retornar pedido')
     sobre_stock = (MobileBy.ACCESSIBILITY_ID, 'Sobre stock, 10')
     confirmar_btn = (MobileBy.ACCESSIBILITY_ID, "Confirmar")
     cliente_retornado_mensaje = (MobileBy.ACCESSIBILITY_ID, ", Cliente retornado")
     motivo_anulacion_pantalla = (MobileBy.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout')
-    anulados_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup')
+    anulados_btn = (MobileBy.ACCESSIBILITY_ID, 'Retornar pedido')
     retomar_pedido_btn = (MobileBy.ACCESSIBILITY_ID, "Retomar pedido")
     detalles_pedido_pantalla = (MobileBy.XPATH, '//android.widget.TextView[@text=" Retornada - Sobre stock"]')
     redireccion = (MobileBy.ID, "redireccion")
@@ -23,8 +23,20 @@ class AnularPedidoPage(Page):
     click_retornadosBtn = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup')
     textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
+    validar_pantalla_retomar_detalles = (
+        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="EL DESEO SPA, Sobre stock, '
+                        'AVDA ANDRES BELLO 2447, Abierto, Cierra a las 23:59, Productos , 16,'
+                        ' Efectivo, $866.455"]')
 
     # Métodos para interactuar con la página y validar elementos
+
+    def valido_pantalla_retomar(self):
+        self.implicit_wait_visible(self.validar_pantalla_retomar_detalles)
+        return self.find_element(self.validar_pantalla_retomar_detalles).is_displayed()
+
+    def valido_pantalla_retomar_detalles(self):
+        self.implicit_wait_visible(self.validar_pantalla_retomar_detalles)
+        return self.find_element(self.validar_pantalla_retomar_detalles).is_displayed()
 
     def valido_texto_porque_retornar(self):
         self.implicit_wait_visible(self.textoPorqueRetornar)

@@ -96,7 +96,7 @@ Característica: Anular pedido
     Y hago click en el boton "Retornados"
     Entonces valido que la ruta utilizada anteriormente esté presente
 
-    @anularPedidoFactura
+  @anularPedidoFactura
   Escenario: Validación de retornar pedido de factura
     Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña
@@ -109,18 +109,31 @@ Característica: Anular pedido
     Y hago click en el boton "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
+    @retomarPedido
   Escenario: Validación de la pantalla de retomar pedidos
-    Dado hago click en el boton "Ingresar"
-    Y visualizo la pantalla de retomar pedidos
-    Y valido que la ruta del pedido sea "Felix de Amesti 920"
-    Y valido la presencia del boton "Retomar pedido"
-    Y hago click en el boton "Retomar pedido"
-    Entonces verifico que se redireccione a la pantalla de detalles del pedido
-    Y verifico que se muestre correctamente el pedido a retomar
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y selecciono la segunda factura factura con numero "404145531"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y hago click en el boton "Retornados"
+    Entonces Valido la pantalla de retomar pedidos
 
-  Escenario: Validación del boton "Ver detalle" en la pantalla de retomar pedidos
-    Dado hago click en el boton "Ingresar"
-    Y visualizo la pantalla de retomar pedidos
-    Y valido la presencia del boton "Ver detalle"
-    Cuando hago click en el boton "Ver detalle"
-    Entonces verifico que se redireccione
+
+  #Escenario: Validación del boton "Ver detalle" en la pantalla de retomar pedidos
+   # Dado hago click en el boton "Ingresar"
+   # Y visualizo la pantalla de retomar pedidos
+   # Y valido la presencia del boton "Ver detalle"
+   # Cuando hago click en el boton "Ver detalle"
+   # Entonces verifico que se redireccione

@@ -45,6 +45,14 @@ def visualizo_la_factura(context, factura):
         raise ValueError(f"No se encontro la factura con numero '{factura}'")
 
 
+@when('selecciono la segunda factura factura con numero "{factura}"')
+def visualizo_la_factura2(context, factura):
+    if factura == "404145531":
+        context.app.revisar_pedido_page.selecciono_la_factura2()
+    else:
+        raise ValueError(f"No se encontro la factura con numero '{factura}'")
+
+
 @then('valido que se muestre una confirmacion de anulacion del pedido')
 def valido_anulacion_del_pedido(context):
     assert bool(context.app.revisar_pedido_page.valido_opcion_google_maps())
@@ -129,4 +137,3 @@ def valido_total_precio(context, precio):
 @then('valido que este correcta la suma del precio de los productos')
 def valido_sea_correcto_precio(context):
     assert bool(context.app.revisar_pedido_page.valido_comparacion_de_precio())
-
