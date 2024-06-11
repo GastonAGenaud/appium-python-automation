@@ -79,7 +79,6 @@ Característica: Anular pedido
       | Entrega atrasada                |
       | Exceso de clientes              |
     Y selecciono "Sobre stock"
-    Y valido la presencia del boton "Confirmar"
     Cuando hago click en el boton "Confirmar"
     Entonces verifico que se envíe el motivo seleccionado correctamente
 
@@ -106,10 +105,10 @@ Característica: Anular pedido
     Y selecciono la factura con numero "404145531"
     Y selecciono el boton "Retornar pedido"
     Y selecciono "Sobre stock"
-    Y hago click en el boton "Confirmar"
+    Y hago clic en el botón "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
-    @retomarPedido
+  @retomarPedido
   Escenario: Validación de la pantalla de retomar pedidos
     Dado el usuario ingresa el correo electronico "conductor-01"
     Y el usuario ingresa una contraseña

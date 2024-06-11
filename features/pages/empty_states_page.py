@@ -12,13 +12,20 @@ class EmptyStatesPage(Page):
     entregados_seccion = (MobileBy.XPATH, "//*[@resource-id='SegmentBtnTitleFinish']")
     entregados_sector = (MobileBy.ACCESSIBILITY_ID, "Entregados ")
     no_has_anulado_pedido_txt = (MobileBy.XPATH,
-                                 '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[32]')
+                                 '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
+                                 '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[32]')
     imagen_seccion_anulados = (MobileBy.XPATH,
-                               '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
+                               '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux'
+                               '.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     no_has_visitado_clientes_txt = (MobileBy.XPATH,
-                                    '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
+                                    '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
+                                    '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     imagen_seccion_visitados = (MobileBy.XPATH,
-                                '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
+                                '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget'
+                                '.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup'
+                                '/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
+                                '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com'
+                                '.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     rebajados_seccion = (MobileBy.ACCESSIBILITY_ID, 'Rebajados')
     pedido_entregado = (MobileBy.XPATH, '//android.widget.TextView[@text="ANTONIO BELLET 345"]')
 

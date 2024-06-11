@@ -10,7 +10,7 @@ class AnularPedidoPage(Page):
     # Localizadores de elementos
     retornar_pedido = (MobileBy.ACCESSIBILITY_ID, 'Retornar pedido')
     sobre_stock = (MobileBy.ACCESSIBILITY_ID, 'Sobre stock, 10')
-    confirmar_btn = (MobileBy.ACCESSIBILITY_ID, "Confirmar")
+    confirmar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Confirmar"]')
     cliente_retornado_mensaje = (MobileBy.ACCESSIBILITY_ID, ", Cliente retornado")
     motivo_anulacion_pantalla = (MobileBy.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout')
     anulados_btn = (MobileBy.ACCESSIBILITY_ID, 'Retornar pedido')
@@ -22,7 +22,7 @@ class AnularPedidoPage(Page):
                                                                "Efectivo, $866.455")
     click_retornadosBtn = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup')
-    textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
+    textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@text=" Retornada - Sobre stock"]')
     validar_pantalla_retomar_detalles = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="EL DESEO SPA, Sobre stock, '
                         'AVDA ANDRES BELLO 2447, Abierto, Cierra a las 23:59, Productos , 16,'
@@ -39,8 +39,8 @@ class AnularPedidoPage(Page):
         return self.find_element(self.validar_pantalla_retomar_detalles).is_displayed()
 
     def valido_texto_porque_retornar(self):
-        self.implicit_wait_visible(self.textoPorqueRetornar)
-        return self.find_element(self.textoPorqueRetornar).is_displayed()
+        element = self.find_element(self.textoPorqueRetornar)
+        return element.is_displayed()
 
     def valido_numero_de_factura(self, numero_factura):
         numero_de_factura = (MobileBy.XPATH, f"//android.widget.TextView[@text='Factura N° {numero_factura}']")
