@@ -1,5 +1,5 @@
 # language: es
-
+@modificar_recorrido
 Característica: Modificar recorrido sugerido
 
     @regresion
@@ -22,7 +22,7 @@ Característica: Modificar recorrido sugerido
             | Local          | EL DESEO SPA           |
             | Direccion      | AVDA ANDRES BELLO 2447 |
             | Producto       | 16                     |
-            | Transferencia  | $930.470               |
+            | Transferencia  | $866.455               |
 
     @regresion
     Escenario: Validacion de seleccion de ruta

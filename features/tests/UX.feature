@@ -95,3 +95,25 @@ Característica: Validaciones de UX/UI
         Y hago click en el boton "Modificar"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entendido"]"
         Y valido el tamaño de zona de accion del boton "//android.widget.CheckBox[@resource-id="Test Checkbox"]/android.view.ViewGroup/android.view.ViewGroup"
+
+    Escenario: Valido las zonas de accion de los botones de la seccion Cuadratura
+        Dado el usuario ingresa el correo electronico "simple"
+        Y el usuario ingresa una contraseña
+        Cuando hago click en el boton "Iniciar sesion"
+        #Y cierro el cuadro de texto
+        Y hago click en el boton "Comenzar ruta"
+        Y elijo la ruta "Erbi"
+        Y selecciono la factura con numero "83908330"
+        Y hago click en el boton "entregar"
+        Y hago click en el boton "Confirmar"
+        Y selecciono la factura con numero "8390812"
+        Y hago click en el boton "entregar"
+        Y hago click en el boton "Confirmar"
+        Entonces valido que las facturas fueron entregadas
+        Cuando hago click en el boton "Confirmar"
+        Entonces valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="ChevronRightIcon"]"
+        Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Rebajados"]"
+        Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
+        Y valido el tamaño de zona de accion del boton "(//android.view.ViewGroup[@resource-id="chevron-button"])[1]/com.horcrux.svg.SvgView"
+        Y valido el tamaño de zona de accion del boton "(//android.view.ViewGroup[@resource-id="chevron-button"])[2]/com.horcrux.svg.SvgView"
+        Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Cerrar transporte"]"

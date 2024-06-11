@@ -1,5 +1,5 @@
 # language: es
-
+@estados_vacios
 Característica: Estados Vacíos
 
     @regresion

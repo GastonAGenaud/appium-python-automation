@@ -41,6 +41,8 @@ def click_en_el_boton(context, boton):
         context.app.modificar_recorrido_page.click_mover_hacia_arriba_boton()
     elif boton == "Mover a lo más abajo":
         context.app.modificar_recorrido_page.click_mover_a_lo_mas_abajo_boton()
+    elif boton == "Cerrar transporte":
+        context.app.cuadrar_page.click_cerrar_transporte_btn()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
 

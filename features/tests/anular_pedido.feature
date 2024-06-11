@@ -1,5 +1,5 @@
 # language: es
-
+@anular_pedido
 Característica: Anular pedido
 
 

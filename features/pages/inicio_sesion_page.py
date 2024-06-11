@@ -33,6 +33,9 @@ class InicioSesionPage(Page):
         self.click_on_element(self.ingresar_btn)
 
     def click_iniciar_sesion_btn(self):
+        #self.driver.hide_keyboard()
+        #if self.driver.is_keyboard_shown():
+        #    self.driver.hide_keyboard()
         self.click_on_element(self.iniciar_sesion_btn)
 
     def valido_mensaje_error_correo(self):

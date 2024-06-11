@@ -33,11 +33,6 @@ class ModificarRecorridoPage(Page):
         valido_comenzar_ruta = self.find_element(self.comenzar_ruta_btn).is_displayed()
         return valido_comenzar_ruta
 
-    def valid_value(self, caracteristica, valor):
-        self.implicit_wait_visible(self.comenzar_ruta_btn)
-        value = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@text="{valor}"]').is_displayed()
-        return value
-
     def valido_el_deseo_spa_local(self):
         self.implicit_wait_visible(self.el_deseo_spa_local)
         nombre_local = self.find_element(self.el_deseo_spa_local).is_displayed()

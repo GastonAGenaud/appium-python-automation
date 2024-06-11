@@ -107,7 +107,15 @@ Característica: Revisar pedido
     Y hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
-      Entonces valido que este correcta la suma del precio de los productos
+    Entonces valido que este correcta la suma del precio de los productos
+
+  Escenario: Valido la Nota de Credito
+    Dado el usuario ingresa el correo electronico "simple"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "Erbi"
+    Entonces valido que la nota de credito sea "- $ 25.000"
 
 #  Escenario: Validacion del mensaje al rebajar producto
 #    Dado el usuario ingresa el correo electronico "user_tests"

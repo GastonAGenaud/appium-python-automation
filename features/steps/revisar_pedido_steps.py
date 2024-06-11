@@ -5,6 +5,8 @@ from behave import given, when, then
 def usuario_ingresa_correo(context, idRuta):
     if idRuta == "El Deseo SPA":
         context.app.ux_page.click_el_deseo_spa_btn()
+    elif idRuta == "Erbi":
+        context.app.revisar_pedido_page.click_erbi_btn()
     else:
         raise ValueError(f"No se encontro la ruta '{idRuta}'")
 
@@ -13,6 +15,8 @@ def usuario_ingresa_correo(context, idRuta):
 def visualizaciones_correcta_del_pedido(context, idRuta):
     if idRuta == "El Deseo SPA":
         assert bool(context.app.revisar_pedido_page.valido_pedido_el_deseo_spa())
+    elif idRuta == "Erbi":
+        assert bool(context.app.revisar_pedido_page.valido_pedido_erbi())
     else:
         raise ValueError(f"No se encontro el mensaje de error en el campo de '{idRuta}'")
 
@@ -41,6 +45,10 @@ def visualizo_la_factura(context, factura):
 def visualizo_la_factura(context, factura):
     if factura == "404145531":
         context.app.revisar_pedido_page.selecciono_la_factura()
+    elif factura == "83908330":
+        context.app.revisar_pedido_page.selecciono_la_factura_erbi_A()
+    elif factura == "8390812":
+        context.app.revisar_pedido_page.selecciono_la_factura_erbi_B()
     else:
         raise ValueError(f"No se encontro la factura con numero '{factura}'")
 
@@ -129,4 +137,9 @@ def valido_total_precio(context, precio):
 @then('valido que este correcta la suma del precio de los productos')
 def valido_sea_correcto_precio(context):
     assert bool(context.app.revisar_pedido_page.valido_comparacion_de_precio())
+
+
+@then('valido que la nota de credito sea "{monto}"')
+def valido_nota_de_credito(context, monto):
+    assert bool(context.app.revisar_pedido_page.valido_nota_pedido())
 

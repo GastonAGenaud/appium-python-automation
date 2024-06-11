@@ -14,6 +14,7 @@ from features.pages.base_page import Page
 class UXPage(Page):
     el_deseo_spa_pedido = (
     MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
+    comenzar_ruta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
 
     def scroll_down_until_element(self, locator, max_attempts=10):
         attempts = 0
@@ -39,6 +40,13 @@ class UXPage(Page):
     def click_el_deseo_spa_btn(self):
         element = self.scroll_down_until_element(self.el_deseo_spa_pedido)
         element.click()
+
+    def valid_value(self, caracteristica, valor):
+        self.implicit_wait_visible(self.comenzar_ruta_btn)
+        element = self.scroll_down_until_element(self.el_deseo_spa_pedido)
+        element.is_displayed()
+        value = self.driver.find_element(MobileBy.XPATH, f'//android.widget.TextView[@text="{valor}"]').is_displayed()
+        return value
 
     def valido_tamano_ingresar_btn(self, boton):
         boton = self.driver.find_element(MobileBy.XPATH, f'{boton}')

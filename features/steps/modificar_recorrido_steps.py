@@ -8,7 +8,7 @@ def valido_sea_visible_boton(context, boton):
 
 @then('valido que sea visible la "{caracteristica}" con el "{valor}" del pedido')
 def valido_las_caracteristicas_valor(context, caracteristica, valor):
-    assert bool(context.app.modificar_recorrido_page.valid_value(caracteristica, valor))
+    assert bool(context.app.ux_page.valid_value(caracteristica, valor))
 
 
 @then('se valida que la ruta "{ruta}" este seleccionada')

@@ -1,5 +1,5 @@
 # language: es
-
+@rebajar_pedido
 Característica: Rebajar Pedido
 
     Esquema del escenario: Rebajar precio de un producto y seleccionar motivo de anulacion en la factura

@@ -8,6 +8,7 @@ class RevisarPedidoPage(Page):
     el_deseo_spa_pedido = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Productos , 16, Transferencia, $866.455"]')
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
+    erbi_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-location"]')
     precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 866.455"]')
     productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="10"]')
     productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="6"]')
@@ -21,6 +22,8 @@ class RevisarPedidoPage(Page):
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
     factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
+    factura_del_pedido_erbi_uno = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 83908330"]')
+    factura_del_pedido_erbi_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 8390812"]')
     sprite_MidCal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
     benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
     fanta_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
@@ -38,14 +41,22 @@ class RevisarPedidoPage(Page):
     precio_final_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
     retornar_pedido_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Retornar pedido"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
-    #benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
     benedictino_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 53.839 "]')
     fanta_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 33.105 "]')
+    nota_de_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="- $ 25.000"]')
 
     def valido_pedido_el_deseo_spa(self):
         self.implicit_wait_visible(self.el_deseo_spa_titulo)
         valido_deseo_spa = self.find_element(self.el_deseo_spa_titulo).is_displayed()
         return valido_deseo_spa
+
+    def valido_pedido_erbi(self):
+        self.implicit_wait_visible(self.erbi_titulo)
+        valido_erbi = self.find_element(self.erbi_titulo).is_displayed()
+        return valido_erbi
+
+    def click_erbi_btn(self):
+        self.click_on_element(self.erbi_titulo)
 
     def valido_precio_del_pedido(self):
         self.implicit_wait_visible(self.precio_del_pedido)
@@ -74,8 +85,11 @@ class RevisarPedidoPage(Page):
     def selecciono_la_factura(self):
         self.click_on_element(self.factura_del_pedido)
 
-    #def selecciono_la_factura_deseo_spa(self):
-    #    self.click_on_element(self.factura_del_pedido_deseo_spa)
+    def selecciono_la_factura_erbi_A(self):
+        self.click_on_element(self.factura_del_pedido_erbi_uno)
+
+    def selecciono_la_factura_erbi_B(self):
+        self.click_on_element(self.factura_del_pedido_erbi_dos)
 
     def click_anular_pedido_btn(self):
         self.click_on_element(self.anular_pedido_btn)
@@ -159,11 +173,6 @@ class RevisarPedidoPage(Page):
         cantidad_pack = self.find_element(self.cantidad_pack_fanta).is_displayed()
         return cantidad_pack
 
-    def valido_cantidad_pack_fanta_express(self):
-        self.implicit_wait_visible(self.cantidad_pack_fanta_express)
-        cantidad_pack = self.find_element(self.cantidad_pack_fanta_express).is_displayed()
-        return cantidad_pack
-
     def valido_cantidad_pack_sprite_express(self):
         self.implicit_wait_visible(self.cantidad_pack_sprite)
         cantidad_pack = self.find_element(self.cantidad_pack_sprite).is_displayed()
@@ -233,3 +242,8 @@ class RevisarPedidoPage(Page):
         comparacion_de_precios = (producto1 + producto2 + producto3) == productoTotal
         assert comparacion_de_precios, "La comparación de precios no es válida"
         return True
+
+    def valido_nota_pedido(self):
+        self.implicit_wait_visible(self.nota_de_pedido)
+        valido_monto = self.find_element(self.nota_de_pedido).is_displayed()
+        return valido_monto
