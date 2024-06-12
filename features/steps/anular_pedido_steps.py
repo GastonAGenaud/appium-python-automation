@@ -12,11 +12,6 @@ def validar_presencia_motivos(context):
     assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion()
 
 
-@then('selecciono "Sobre stock"')
-def seleccionar_motivo(context):
-    context.app.anular_pedido_page.seleccionar_nombre("Sobre stock")
-
-
 @when('selecciono "Sobre stock"')
 def seleccionar_motivo(context):
     context.app.anular_pedido_page.seleccionar_nombre("Sobre stock")

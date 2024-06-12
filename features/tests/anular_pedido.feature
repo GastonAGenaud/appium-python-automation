@@ -78,8 +78,8 @@ Característica: Anular pedido
       | Horario inadecuado              |
       | Entrega atrasada                |
       | Exceso de clientes              |
-    Y selecciono "Sobre stock"
-    Cuando hago click en el boton "Confirmar"
+    Cuando selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
     Entonces verifico que se envíe el motivo seleccionado correctamente
 
   @rutaAnterior

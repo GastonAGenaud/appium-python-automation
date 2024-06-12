@@ -27,7 +27,8 @@ class EmptyStatesPage(Page):
                                 '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com'
                                 '.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     rebajados_seccion = (MobileBy.ACCESSIBILITY_ID, 'Rebajados')
-    pedido_entregado = (MobileBy.XPATH, '//android.widget.TextView[@text="ANTONIO BELLET 345"]')
+    seccion_entregado_texto = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[33]')
+    comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
 
     def seccion_anulados(self):
         self.click_on_element(self.anulados_seccion)
@@ -42,7 +43,7 @@ class EmptyStatesPage(Page):
             self.click_on_element(self.retornados_seccion)
             try:
                 WebDriverWait(self.driver, 2).until_not(
-                    EC.presence_of_element_located(self.retornados_seccion)
+                    EC.presence_of_element_located(self.comenzar_ruta_btn)
                 )
                 print("El botón ha desaparecido.")
                 break
@@ -53,8 +54,22 @@ class EmptyStatesPage(Page):
                     print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def seccion_entregados(self):
-        self.click_on_element(self.entregados_seccion)
-        self.click_on_element(self.entregados_seccion)
+        max_attempts = 4  # Número máximo de intentos
+        attempts = 0
+
+        while attempts < max_attempts:
+            self.click_on_element(self.entregados_seccion)
+            try:
+                WebDriverWait(self.driver, 2).until_not(
+                    EC.presence_of_element_located(self.comenzar_ruta_btn)
+                )
+                print("El botón ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El botón aún está presente. Intentando nuevamente...")
+                attempts += 1
+                if attempts == max_attempts:
+                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def seccion_visitados(self):
         wait = WebDriverWait(self.driver, 10)
@@ -82,7 +97,7 @@ class EmptyStatesPage(Page):
         return imagen_anulados
 
     def valido_seccion_entregados(self):
-        self.implicit_wait_visible(self.pedido_entregado)
-        valido_pedido = self.find_element(self.pedido_entregado).is_displayed()
+        self.implicit_wait_visible(self.seccion_entregado_texto)
+        valido_pedido = self.find_element(self.seccion_entregado_texto).is_displayed()
         return valido_pedido
 

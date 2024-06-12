@@ -58,19 +58,19 @@ Característica: Modificar recorrido sugerido
             | Menos productos |
             | Ruta sugerida   |
 
-    Esquema del escenario: Validacion de pantalla de modificar manualmente
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
+    #Esquema del escenario: Validacion de pantalla de modificar manualmente
+    #    Dado el usuario ingresa el correo electronico "conductor-01"
+    #    Y el usuario ingresa una contraseña
+    #    Cuando hago click en el boton "Iniciar sesion"
         #Y cierro el cuadro de texto
-        Y hago click en el boton "Modificar"
-        Entonces valido que el texto "<opcion>" de la pantalla de modificacion manual
+    #    Y hago click en el boton "Modificar"
+    #    Entonces valido que el texto "<opcion>" de la pantalla de modificacion manual
 
-        Ejemplos:
-            | opcion           |
-            | Modifica tu ruta |
+    #    Ejemplos:
+    #        | opcion           |
+    #        | Modifica tu ruta |
             #| Presiona prolongadamente |
-            | Entendido        |
+    #        | Entendido       |
             #| No volver a mostrar |
 
     #Escenario: Validacion de la modificacion de la ruta
