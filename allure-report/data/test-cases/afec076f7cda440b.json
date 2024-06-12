@@ -1,0 +1,317 @@
+{
+  "uid" : "afec076f7cda440b",
+  "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
+  "fullName" : "Rebajar Pedido: Validacion de pantalla de seleccion de motivo de rebaja",
+  "historyId" : "3f43c61b93b45238925eb7afc68e5e46",
+  "time" : {
+    "start" : 1717613716331,
+    "stop" : 1717613716333,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716332,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de los motivos de anulacion",
+      "time" : {
+        "start" : 1717613716332,
+        "stop" : 1717613716333,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1a8d1eb51fc16a84",
+        "name" : ".table",
+        "source" : "1a8d1eb51fc16a84.csv",
+        "type" : "text/csv",
+        "size" : 466
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rebajarPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "7ae3831bbd1d8a6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717613308367,
+        "stop" : 1717613308369,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "97dcfd44c8c80cb9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717613057791,
+        "stop" : 1717613057793,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6056bb05e8eb2701",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717612799644,
+        "stop" : 1717612799647,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "d93bef4379336e2d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717612525199,
+        "stop" : 1717612525200,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e88438157fadec1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717605430369,
+        "stop" : 1717605430371,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a42c967c3b619ccf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717605057249,
+        "stop" : 1717605057252,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dbd5aa73f6b18c8f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717604846664,
+        "stop" : 1717604846667,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "91567cf0c052ac8b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717604112688,
+        "stop" : 1717604166646,
+        "duration" : 53958
+      }
+    }, {
+      "uid" : "473bd13abfb95b98",
+      "status" : "broken",
+      "statusDetails" : "TypeError: argument of type 'bool' is not iterable\n",
+      "time" : {
+        "start" : 1717603816035,
+        "stop" : 1717603933944,
+        "duration" : 117909
+      }
+    }, {
+      "uid" : "6b8f3de6f36eb933",
+      "status" : "broken",
+      "statusDetails" : "TypeError: argument of type 'method' is not iterable\n",
+      "time" : {
+        "start" : 1717603563870,
+        "stop" : 1717603705431,
+        "duration" : 141561
+      }
+    }, {
+      "uid" : "bcb9a12027a1fe12",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717603036527,
+        "stop" : 1717603090003,
+        "duration" : 53476
+      }
+    }, {
+      "uid" : "ef819f27c633ba0c",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia de los siguientes motivos')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia de los siguientes motivos')\n\n",
+      "time" : {
+        "start" : 1717602184175,
+        "stop" : 1717602238971,
+        "duration" : 54796
+      }
+    }, {
+      "uid" : "42641821cc90d731",
+      "status" : "broken",
+      "statusDetails" : "NotImplementedError: Paso no implementado: validar la presencia de los motivos\n",
+      "time" : {
+        "start" : 1717601935833,
+        "stop" : 1717601990379,
+        "duration" : 54546
+      }
+    }, {
+      "uid" : "af32dd451f5b46db",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia de los siguientes motivos')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia de los siguientes motivos')\n\n",
+      "time" : {
+        "start" : 1717601382397,
+        "stop" : 1717601650070,
+        "duration" : 267673
+      }
+    }, {
+      "uid" : "b36e742d2438292",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido la presencia de los siguientes motivos')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido la presencia de los siguientes motivos')\n\n",
+      "time" : {
+        "start" : 1717600936100,
+        "stop" : 1717600989388,
+        "duration" : 53288
+      }
+    }, {
+      "uid" : "85c3e2b072e658d3",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'AnularPedidoPage' object has no attribute 'valido_deseo_spa_retornado'. Did you mean: 'deseo_spa_retornados'?\n",
+      "time" : {
+        "start" : 1717600746851,
+        "stop" : 1717600801094,
+        "duration" : 54243
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "rebajarPedido" ]
+  },
+  "source" : "afec076f7cda440b.json",
+  "parameterValues" : [ ]
+}

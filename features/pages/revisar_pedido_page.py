@@ -22,6 +22,7 @@ class RevisarPedidoPage(Page):
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
     factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
+    factura_del_pedido2 = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[2]')
     factura_del_pedido_erbi_uno = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 83908330"]')
     factura_del_pedido_erbi_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 8390812"]')
     sprite_MidCal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
@@ -90,6 +91,8 @@ class RevisarPedidoPage(Page):
 
     def selecciono_la_factura_erbi_B(self):
         self.click_on_element(self.factura_del_pedido_erbi_dos)
+    def selecciono_la_factura2(self):
+        self.click_on_element(self.factura_del_pedido2)
 
     def click_anular_pedido_btn(self):
         self.click_on_element(self.anular_pedido_btn)

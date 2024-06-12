@@ -2,85 +2,137 @@
 @anular_pedido
 Característica: Anular pedido
 
+  @porqueretornar
+  Escenario: Validación de presionar el boton "Anular pedido"
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono el boton "Retornar pedido"
+    Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
 
-    Esquema del escenario: Validación de presionar el botón "Anular pedido"
-        Dado ingreso el correo electrónico "<correoElectronico>"
-        Y ingreso la contrasena "<contrasena>"
-        Y hago clic en el botón "Ingresar"
-        Cuando visualizo la factura con número "<numeroFactura>"
-        Y hago clic en el botón "Anular pedido"
-        Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
+  Escenario: Validación de motivo de anulación
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono el boton "Retornar pedido"
+    Cuando visualizo la pantalla de selección de motivo de anulacion
+    Entonces valido la presencia de los siguientes motivos:
+      | motivo                          |
+      | Duplicado/Mal digitado          |
+      | Local No Encontrado             |
+      | Ausencia Encargado Local        |
+      | Sobre stock                     |
+      | Problema de fecha               |
+      | Diferencia de condición de pago |
+      | Falta de producto               |
+      | Sin orden de compra             |
+      | Dificultad en ruta              |
+      | Capacidad cliente               |
+      | Fuera de ruta                   |
+      | Producto deteriorado            |
+      | Sin dinero                      |
+      | Cliente anula pedido            |
+      | Diferencia de condicion de pago |
+      | Envase                          |
+      | Capacidad cliente               |
+      | Diferencia en condición de pago |
+      | Falta de producto               |
+      | Horario inadecuado              |
+      | Entrega atrasada                |
+      | Exceso de clientes              |
 
-        Ejemplos:
-          | correoElectronico | contrasena | numeroFactura |
-          | test@test.com     | test123    | 3942342       |
+  @AnularPedido
+  Escenario: Validación de pantalla de selección de motivo de anulación
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono el boton "Retornar pedido"
+    Cuando visualizo la pantalla de selección de motivo de anulacion
+    Entonces valido la presencia de los siguientes motivos:
+      | motivo                          |
+      | Duplicado/Mal digitado          |
+      | Local No Encontrado             |
+      | Ausencia Encargado Local        |
+      | Sobre stock                     |
+      | Problema de fecha               |
+      | Diferencia de condición de pago |
+      | Falta de producto               |
+      | Sin orden de compra             |
+      | Dificultad en ruta              |
+      | Capacidad cliente               |
+      | Fuera de ruta                   |
+      | Producto deteriorado            |
+      | Sin dinero                      |
+      | Cliente anula pedido            |
+      | Diferencia de condicion de pago |
+      | Envase                          |
+      | Capacidad cliente               |
+      | Diferencia en condición de pago |
+      | Falta de producto               |
+      | Horario inadecuado              |
+      | Entrega atrasada                |
+      | Exceso de clientes              |
+    Y selecciono "Sobre stock"
+    Cuando hago click en el boton "Confirmar"
+    Entonces verifico que se envíe el motivo seleccionado correctamente
 
-    Esquema del escenario: Validación de pantalla de selección de motivo de anulación
-        Dado ingreso el correo electrónico "<correoElectronico>"
-        Y ingreso la contrasena "<contrasena>"
-        Y hago clic en el botón "Ingresar"
-        Cuando visualizo la pantalla de selección de motivo de anulación
-        Entonces valido la presencia de los siguientes motivos:
-          | Sin dinero                      |
-          | Cliente anula pedido            |
-          | Diferencia en condición de pago |
-          | Duplicado/Mal digitado          |
-          | Sin orden de compra             |
-          | Envase                          |
-          | Ausencia del encargado          |
-          | Producto deteriorado            |
-          | Problema de fecha (producto)    |
-          | Cerrado                         |
-          | Sobre stock                     |
-          | Problema de fecha               |
-          | Dificultad en ruta              |
-          | Falta de producto               |
-          | Capacidad cliente               |
-          | Horario inadecuado              |
-          | Diferencia de precio            |
-          | Entrega atrasada                |
-          | Fuera de ruta                   |
-          | Local no encontrado             |
-          | Exceso de clientes              |
-        Y valido la presencia del botón "Enviar motivo"
-        Cuando hago clic en el botón "Enviar motivo"
-        Entonces verifico que se envíe el motivo seleccionado correctamente
+  @rutaAnterior
+  Escenario: Validación del sector "Retornados"
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y hago click en el boton "Retornados"
+    Entonces valido que la ruta utilizada anteriormente esté presente
 
-        Ejemplos:
-          | correoElectronico | contrasena |
-          | test@test.com     | test123    |
-          | Jonathan          | test123    |
+  @anularPedidoFactura
+  Escenario: Validación de retornar pedido de factura
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago clic en el botón "Confirmar"
+    Entonces verifico la validacion del retorno de la factura
 
-    Esquema del escenario: Validación del sector "Anulados"
-        Dado ingreso el correo electrónico "<correoElectronico>"
-        Y ingreso la contrasena "<contrasena>"
-        Cuando hago clic en el botón "Ingresar"
-        Y elijo el nombre "Test"
-        Y hago clic en el botón "Anulados" en el sector de selección de rutas
-        Entonces valido que la ruta utilizada anteriormente "<idRuta>" esté presente
-        Y valido la presencia del texto "Sobre stock"
-        Y valido la presencia del botón "Comenzar ruta"
+  @retomarPedido
+  Escenario: Validación de la pantalla de retomar pedidos
+    Dado el usuario ingresa el correo electronico "conductor-01"
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Y hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y selecciono la segunda factura factura con numero "404145531"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y selecciono el boton "Retornar pedido"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Y hago click en el boton "Retornados"
+    Entonces Valido la pantalla de retomar pedidos
 
-        Ejemplos:
-          | correoElectronico | contrasena | idRuta              |
-          | test@test.com     | test123    | Felix de Amesti 920 |
 
-    Esquema del escenario: Validación de la pantalla de retomar pedidos
-        Dado hago clic en el botón "Ingresar"
-        Y visualizo la pantalla de retomar pedidos
-        Y valido que la ruta del pedido sea "Felix de Amesti 920"
-        Y valido la presencia del botón "Retomar pedido"
-        Y hago clic en el botón "Retomar pedido"
-        Entonces verifico que se redireccione a la pantalla de detalles del pedido
-        Y verifico que se muestre correctamente el pedido a retomar
-
-        Ejemplos:
-          | correoElectronico | contrasena |
-          | test@test.com     | test123    |
-
-    Escenario: Validación del botón "Ver detalle" en la pantalla de retomar pedidos
-        Dado hago clic en el botón "Ingresar"
-        Y visualizo la pantalla de retomar pedidos
-        Y valido la presencia del botón "Ver detalle"
-        Cuando hago clic en el botón "Ver detalle"
-        Entonces verifico que se redireccione
+  #Escenario: Validación del boton "Ver detalle" en la pantalla de retomar pedidos
+   # Dado hago click en el boton "Ingresar"
+   # Y visualizo la pantalla de retomar pedidos
+   # Y valido la presencia del boton "Ver detalle"
+   # Cuando hago click en el boton "Ver detalle"
+   # Entonces verifico que se redireccione

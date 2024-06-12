@@ -132,3 +132,6 @@ environment
 ./features/credentials.py
 config.json
 Capabilities.txt
+videos/*
+allure-results
+videos

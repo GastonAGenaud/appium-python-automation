@@ -1,0 +1,1018 @@
+{
+  "uid" : "e46b90a47f5a2937",
+  "name" : "Validación del sector \"Retornados\"",
+  "fullName" : "Anular pedido: Validación del sector \"Retornados\"",
+  "historyId" : "26c45fc10d271046937b0790f08df93b",
+  "time" : {
+    "start" : 1717613654709,
+    "stop" : 1717613716224,
+    "duration" : 61515
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1717613660993,
+        "stop" : 1717613664501,
+        "duration" : 3508
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1717613664501,
+        "stop" : 1717613666215,
+        "duration" : 1714
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1717613666215,
+        "stop" : 1717613668951,
+        "duration" : 2736
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1717613668951,
+        "stop" : 1717613705406,
+        "duration" : 36455
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1717613705406,
+        "stop" : 1717613705752,
+        "duration" : 346
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1717613705753,
+        "stop" : 1717613706962,
+        "duration" : 1209
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1717613706962,
+        "stop" : 1717613707962,
+        "duration" : 1000
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1717613707963,
+        "stop" : 1717613708981,
+        "duration" : 1018
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Retornados\"",
+      "time" : {
+        "start" : 1717613708981,
+        "stop" : 1717613713803,
+        "duration" : 4822
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que la ruta utilizada anteriormente esté presente",
+      "time" : {
+        "start" : 1717613713803,
+        "stop" : 1717613714849,
+        "duration" : 1046
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "714c496e691c79bd",
+      "name" : "Validación del sector \"Retornados\"",
+      "source" : "714c496e691c79bd.mp4",
+      "type" : "video/mp4",
+      "size" : 10372070
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "probandoAnular"
+  }, {
+    "name" : "tag",
+    "value" : "rutaAnterior"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "c752e967851e649a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: La ruta 'El Deseo SPA' no está presente en el sector 'Retornados'.\n",
+      "time" : {
+        "start" : 1717613219323,
+        "stop" : 1717613308266,
+        "duration" : 88943
+      }
+    }, {
+      "uid" : "31c5f400677c4285",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: La ruta 'El Deseo SPA' no está presente en el sector 'Retornados'.\n",
+      "time" : {
+        "start" : 1717613002432,
+        "stop" : 1717613057687,
+        "duration" : 55255
+      }
+    }, {
+      "uid" : "7e5432315cdad641",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: La ruta 'El Deseo SPA' no está presente en el sector 'Retornados'.\n",
+      "time" : {
+        "start" : 1717612739970,
+        "stop" : 1717612799536,
+        "duration" : 59566
+      }
+    }, {
+      "uid" : "7af9da221d9e056d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: La ruta 'El Deseo SPA' no está presente en el sector 'Retornados'.\n",
+      "time" : {
+        "start" : 1717612254426,
+        "stop" : 1717612525094,
+        "duration" : 270668
+      }
+    }, {
+      "uid" : "898be6fd0f371c09",
+      "status" : "failed",
+      "statusDetails" : "AssertionError\n",
+      "time" : {
+        "start" : 1717605129186,
+        "stop" : 1717605430274,
+        "duration" : 301088
+      }
+    }, {
+      "uid" : "9e317cac8bc52b13",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717604937844,
+        "stop" : 1717605057130,
+        "duration" : 119286
+      }
+    }, {
+      "uid" : "8e012c1284157a5a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717604650558,
+        "stop" : 1717604765505,
+        "duration" : 114947
+      }
+    }, {
+      "uid" : "2d87c98766e2a98c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717604055056,
+        "stop" : 1717604055058,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "45656b675ed518e9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603758103,
+        "stop" : 1717603758105,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6da76e87ca3becff",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603494423,
+        "stop" : 1717603494425,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "317366523a6d269e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603255359,
+        "stop" : 1717603255361,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e06c798afcb5e3b8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603118743,
+        "stop" : 1717603118745,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "504815989ca9bf08",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717603036432,
+        "stop" : 1717603036434,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "39fd7fe1c83bcb79",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717602184090,
+        "stop" : 1717602184092,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8fb22ae278787785",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717601876058,
+        "stop" : 1717601876060,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d0e51621fa41fdd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717601111133,
+        "stop" : 1717601111136,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "af09ee6f8243a7c7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600877474,
+        "stop" : 1717600877476,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f6229474ef834553",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600474334,
+        "stop" : 1717600474337,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "7569e18191f42203",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600255837,
+        "stop" : 1717600255839,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "731aec3497b5c954",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717600081693,
+        "stop" : 1717600081695,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eb9170e573964180",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599968128,
+        "stop" : 1717599968129,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e0c56285029420e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599792069,
+        "stop" : 1717599792071,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2e0b32f13cc77f24",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599547552,
+        "stop" : 1717599547554,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4a98327ecea35891",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717599200271,
+        "stop" : 1717599200273,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "db3ce9d6faf7d2c9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717598385887,
+        "stop" : 1717598385889,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "368f98fc0669e379",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717597904938,
+        "stop" : 1717597904941,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9b99ab96c571a013",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717597844569,
+        "stop" : 1717597844571,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eda2215daa637b34",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717597720768,
+        "stop" : 1717597720770,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "98163edd8a49270b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717595750623,
+        "stop" : 1717595750628,
+        "duration" : 5
+      }
+    }, {
+      "uid" : "54a6d0cc561965df",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717595401664,
+        "stop" : 1717595401666,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3ff9ae711d3bfe4e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717594222678,
+        "stop" : 1717594222680,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6fb9b0b82dbb8003",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717594165036,
+        "stop" : 1717594165038,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "867de98595dca1aa",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717593157079,
+        "stop" : 1717593157082,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6817ecb8640edd1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717592434649,
+        "stop" : 1717592434651,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "698320c895a2df2e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717592025240,
+        "stop" : 1717592025242,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c0e4897fa1c54a0c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717591902552,
+        "stop" : 1717591902554,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9133fc5db10b2a6f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717591103705,
+        "stop" : 1717591163466,
+        "duration" : 59761
+      }
+    }, {
+      "uid" : "abee76f13986e3d8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717532905468,
+        "stop" : 1717532963488,
+        "duration" : 58020
+      }
+    }, {
+      "uid" : "9940cda1cd83400c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717532745233,
+        "stop" : 1717532860683,
+        "duration" : 115450
+      }
+    }, {
+      "uid" : "bdf2f327756099a7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717532628129,
+        "stop" : 1717532707538,
+        "duration" : 79409
+      }
+    }, {
+      "uid" : "9f89cbb09da949ea",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717532346365,
+        "stop" : 1717532459961,
+        "duration" : 113596
+      }
+    }, {
+      "uid" : "2bdb4a61450a21f1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1717532234074,
+        "stop" : 1717532320266,
+        "duration" : 86192
+      }
+    }, {
+      "uid" : "d520c93b96572614",
+      "status" : "broken",
+      "statusDetails" : "TypeError: appium.webdriver.webdriver.WebDriver.find_element() argument after * must be an iterable, not method\n",
+      "time" : {
+        "start" : 1717531891319,
+        "stop" : 1717531947868,
+        "duration" : 56549
+      }
+    }, {
+      "uid" : "1fc61fded64a2dfd",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'AnularPedidoPage' object has no attribute 'deseo_spa_retornados_elemento'\n",
+      "time" : {
+        "start" : 1717531716228,
+        "stop" : 1717531768452,
+        "duration" : 52224
+      }
+    }, {
+      "uid" : "a15bef9ad3977346",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'tuple' object is not callable\n",
+      "time" : {
+        "start" : 1717531509597,
+        "stop" : 1717531563982,
+        "duration" : 54385
+      }
+    }, {
+      "uid" : "f2754502379dd005",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'tuple' object is not callable\n",
+      "time" : {
+        "start" : 1717531379437,
+        "stop" : 1717531438407,
+        "duration" : 58970
+      }
+    }, {
+      "uid" : "91855bf6a30c332a",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'tuple' object is not callable\n",
+      "time" : {
+        "start" : 1717530912394,
+        "stop" : 1717531003050,
+        "duration" : 90656
+      }
+    }, {
+      "uid" : "2963e8c44b1fee4b",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'tuple' object is not callable\n",
+      "time" : {
+        "start" : 1717530406530,
+        "stop" : 1717530464176,
+        "duration" : 57646
+      }
+    }, {
+      "uid" : "a86af680744c684f",
+      "status" : "broken",
+      "statusDetails" : "AttributeError: 'Application' object has no attribute 'anular_pedido'. Did you mean: 'anular_pedido_page'?\n",
+      "time" : {
+        "start" : 1717530210550,
+        "stop" : 1717530351244,
+        "duration" : 140694
+      }
+    }, {
+      "uid" : "b550aaa70225cf9f",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro el boton de 'Retornados'\n",
+      "time" : {
+        "start" : 1717529811145,
+        "stop" : 1717529881783,
+        "duration" : 70638
+      }
+    }, {
+      "uid" : "3a0af000ef6e0b28",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717529643232,
+        "stop" : 1717529732981,
+        "duration" : 89749
+      }
+    }, {
+      "uid" : "649c81aeec30ef67",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro el boton de 'Retornados'\n",
+      "time" : {
+        "start" : 1717529483657,
+        "stop" : 1717529532998,
+        "duration" : 49341
+      }
+    }, {
+      "uid" : "3259727f3402be14",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717529234508,
+        "stop" : 1717529314998,
+        "duration" : 80490
+      }
+    }, {
+      "uid" : "951c561793cc523e",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'hago clic en el boton \"Iniciar sesion\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When hago clic en el boton \"Iniciar sesion\"')\n\n",
+      "time" : {
+        "start" : 1717529168149,
+        "stop" : 1717529177768,
+        "duration" : 9619
+      }
+    }, {
+      "uid" : "e9d0cc4ad41af340",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'hago clic en el boton \"Iniciar sesión\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When hago clic en el boton \"Iniciar sesión\"')\n\n",
+      "time" : {
+        "start" : 1717529076336,
+        "stop" : 1717529086039,
+        "duration" : 9703
+      }
+    }, {
+      "uid" : "ea36cd74c369311d",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717528979786,
+        "stop" : 1717528985751,
+        "duration" : 5965
+      }
+    }, {
+      "uid" : "313d351b3e8d7b8",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717528960446,
+        "stop" : 1717528966464,
+        "duration" : 6018
+      }
+    }, {
+      "uid" : "69ba94e99d220521",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717526959636,
+        "stop" : 1717526965509,
+        "duration" : 5873
+      }
+    }, {
+      "uid" : "629a2d85cbd33d31",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526928345,
+        "stop" : 1717526928346,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "532d755f204ecf64",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526652191,
+        "stop" : 1717526652225,
+        "duration" : 34
+      }
+    }, {
+      "uid" : "7da021c8d2c8cb8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526582419,
+        "stop" : 1717526582421,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "81efa52f64970bda",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526372008,
+        "stop" : 1717526372011,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "533707e515e78333",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526303274,
+        "stop" : 1717526303276,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c343c646d5ec1afe",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526212344,
+        "stop" : 1717526212347,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "31077f17a46c5a64",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526142621,
+        "stop" : 1717526142623,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3c931c2d84a051c8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1717526117688,
+        "stop" : 1717526117690,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b189726242d7087b",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'ingreso el correo electrónico \"<correoElectronico>\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given ingreso el correo electrónico \"<correoElectronico>\"')\n\n",
+      "time" : {
+        "start" : 1717526072809,
+        "stop" : 1717526078591,
+        "duration" : 5782
+      }
+    }, {
+      "uid" : "7b2e1138192dda61",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'ingreso el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given ingreso el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717525994395,
+        "stop" : 1717526001135,
+        "duration" : 6740
+      }
+    }, {
+      "uid" : "fadbc0692a81d706",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717525177174,
+        "stop" : 1717525184082,
+        "duration" : 6908
+      }
+    }, {
+      "uid" : "e59c375d7888217a",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717525061564,
+        "stop" : 1717525068413,
+        "duration" : 6849
+      }
+    }, {
+      "uid" : "dc7fd11bbed297cc",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717524945487,
+        "stop" : 1717524952266,
+        "duration" : 6779
+      }
+    }, {
+      "uid" : "8012ed076f3a6c44",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717524843662,
+        "stop" : 1717524850228,
+        "duration" : 6566
+      }
+    }, {
+      "uid" : "e3637028beca31ab",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717524783728,
+        "stop" : 1717524790348,
+        "duration" : 6620
+      }
+    }, {
+      "uid" : "81ed83c8ce3e32a1",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717524694372,
+        "stop" : 1717524701034,
+        "duration" : 6662
+      }
+    }, {
+      "uid" : "c93cd7f9d19638cc",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717524076084,
+        "stop" : 1717524082686,
+        "duration" : 6602
+      }
+    }, {
+      "uid" : "534dedbf75f6dae",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717523865057,
+        "stop" : 1717523872403,
+        "duration" : 7346
+      }
+    }, {
+      "uid" : "50fbed939601761f",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717523080358,
+        "stop" : 1717523086313,
+        "duration" : 5955
+      }
+    }, {
+      "uid" : "371b9657a75c96c6",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717523026641,
+        "stop" : 1717523032723,
+        "duration" : 6082
+      }
+    }, {
+      "uid" : "c64f5eec6709c955",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717522954863,
+        "stop" : 1717522961968,
+        "duration" : 7105
+      }
+    }, {
+      "uid" : "4d38412124340183",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717522916915,
+        "stop" : 1717522922875,
+        "duration" : 5960
+      }
+    }, {
+      "uid" : "d689af88b1699935",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717522586173,
+        "stop" : 1717522592181,
+        "duration" : 6008
+      }
+    }, {
+      "uid" : "3a48b8d7275af3cb",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717522480461,
+        "stop" : 1717522486277,
+        "duration" : 5816
+      }
+    }, {
+      "uid" : "a88d32f8c34f1b58",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717522412384,
+        "stop" : 1717522418750,
+        "duration" : 6366
+      }
+    }, {
+      "uid" : "6c98bfcd93f56eb8",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717522039213,
+        "stop" : 1717522045259,
+        "duration" : 6046
+      }
+    }, {
+      "uid" : "8e8f0958ae06d5df",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717521950816,
+        "stop" : 1717521956669,
+        "duration" : 5853
+      }
+    }, {
+      "uid" : "fc7bb92d51fb6669",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "time" : {
+        "start" : 1717521892181,
+        "stop" : 1717521899428,
+        "duration" : 7247
+      }
+    }, {
+      "uid" : "1c3e07cbd01564c",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'hago clic en el botón \"Confirmar\"Entonces verifico que se envíe el motivo seleccionado correctamente')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When hago clic en el botón \"Confirmar\"Entonces verifico que se envíe el motivo seleccionado correctamente')\n\n",
+      "time" : {
+        "start" : 1717521748447,
+        "stop" : 1717521816714,
+        "duration" : 68267
+      }
+    }, {
+      "uid" : "30623345049ffabb",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'hago clic en el botón \"Confirmar\"Entonces verifico que se envíe el motivo seleccionado correctamente')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When hago clic en el botón \"Confirmar\"Entonces verifico que se envíe el motivo seleccionado correctamente')\n\n",
+      "time" : {
+        "start" : 1717521273468,
+        "stop" : 1717521536608,
+        "duration" : 263140
+      }
+    }, {
+      "uid" : "c13292b51abf3ff5",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'hago clic en el botón \"Confirmar\"Entonces verifico que se envíe el motivo seleccionado correctamente')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When hago clic en el botón \"Confirmar\"Entonces verifico que se envíe el motivo seleccionado correctamente')\n\n",
+      "time" : {
+        "start" : 1717519017981,
+        "stop" : 1717519068863,
+        "duration" : 50882
+      }
+    }, {
+      "uid" : "3b49fdaaaa453dd4",
+      "status" : "broken",
+      "statusDetails" : "TypeError: 'tuple' object is not callable\n",
+      "time" : {
+        "start" : 1717518804410,
+        "stop" : 1717518856434,
+        "duration" : 52024
+      }
+    }, {
+      "uid" : "76215123147ec93e",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1717518306511,
+        "stop" : 1717518418098,
+        "duration" : 111587
+      }
+    }, {
+      "uid" : "e83fe26ac17f4c52",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.StaleElementReferenceException: Message: The element 'By.accessibilityId: Confirmar' does not exist in DOM anymore\nStacktrace:\nio.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element 'By.accessibilityId: Confirmar' does not exist in DOM anymore\n\tat io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:117)\n\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)\n\tat io.appium.uiautomator2.handler.Click.safeHandle(Click.java:36)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:1012)\n\n",
+      "time" : {
+        "start" : 1717518126652,
+        "stop" : 1717518177418,
+        "duration" : 50766
+      }
+    }, {
+      "uid" : "3646a86194f42c15",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro la seccion 'Sobre stock'\n",
+      "time" : {
+        "start" : 1717517973840,
+        "stop" : 1717518023074,
+        "duration" : 49234
+      }
+    }, {
+      "uid" : "525bdfff2f63a35",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro la seccion 'Sobre stock'\n",
+      "time" : {
+        "start" : 1717517887646,
+        "stop" : 1717517937546,
+        "duration" : 49900
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "probandoAnular", "rutaAnterior" ]
+  },
+  "source" : "e46b90a47f5a2937.json",
+  "parameterValues" : [ ]
+}
