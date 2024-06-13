@@ -27,8 +27,16 @@ class EmptyStatesPage(Page):
                                 '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com'
                                 '.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     rebajados_seccion = (MobileBy.ACCESSIBILITY_ID, 'Rebajados')
-    seccion_entregado_texto = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[33]')
-    comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
+    seccion_entregado_texto = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view'
+                                               '.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com'
+                                               '.horcrux.svg.PathView[33]')
+    ordenar_por_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Ordenar por:  "]')
+    producto_en_entregados = (MobileBy.ACCESSIBILITY_ID, 'EL DESEO SPA, AVDA ANDRES BELLO 2447, Abierto, Cierra a las '
+                                                         '23:59, Productos , 16, Efectivo, $866.455')
+
+    def productos_en_entregados(self):
+        self.implicit_wait_visible(self.producto_en_entregados)
+        return self.find_element(self.producto_en_entregados).is_displayed()
 
     def seccion_anulados(self):
         self.click_on_element(self.anulados_seccion)
@@ -43,7 +51,7 @@ class EmptyStatesPage(Page):
             self.click_on_element(self.retornados_seccion)
             try:
                 WebDriverWait(self.driver, 2).until_not(
-                    EC.presence_of_element_located(self.comenzar_ruta_btn)
+                    EC.presence_of_element_located(self.ordenar_por_txt)
                 )
                 print("El botón ha desaparecido.")
                 break
@@ -61,7 +69,7 @@ class EmptyStatesPage(Page):
             self.click_on_element(self.entregados_seccion)
             try:
                 WebDriverWait(self.driver, 2).until_not(
-                    EC.presence_of_element_located(self.comenzar_ruta_btn)
+                    EC.presence_of_element_located(self.ordenar_por_txt)
                 )
                 print("El botón ha desaparecido.")
                 break
@@ -100,4 +108,3 @@ class EmptyStatesPage(Page):
         self.implicit_wait_visible(self.seccion_entregado_texto)
         valido_pedido = self.find_element(self.seccion_entregado_texto).is_displayed()
         return valido_pedido
-

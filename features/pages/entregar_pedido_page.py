@@ -19,6 +19,17 @@ class EntregarPedidoPage(Page):
     modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
     modifica_tu_ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Modifica tu ruta"]')
     modifica_tu_ruta_texsto = (MobileBy.ID, 'title-amount-total')
+    entrega_impecable_icon = (MobileBy.XPATH, '//com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg'
+                                              '.PathView[2]')
+    entrega_impecable_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
+    entrega_impecable_felicitaciones_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Felicitaciones! Has '
+                                                              'entregado el pedido sin rebajas. Que siga la buena '
+                                                              'racha."]')
+    volver_a_mi_ruta_boton = (MobileBy.ACCESSIBILITY_ID, 'Volver a mi ruta')
+
+    def click_volver_a_mi_ruta(self):
+        self.implicit_wait_visible(self.volver_a_mi_ruta_boton)
+        self.find_element(self.volver_a_mi_ruta_boton).click()
 
     def rebajo_el_pedido(self):
         self.click_on_element(self.restar_btn)
@@ -61,3 +72,8 @@ class EntregarPedidoPage(Page):
 
     def click_cerrar_boton(self):
         self.click_on_element(self.cerrar_cuadro_btn)
+
+    def valido_icono_entregar_pedido(self):
+        self.implicit_wait_visible(self.entrega_impecable_icon)
+        valido_icono = self.find_element(self.entrega_impecable_icon).is_displayed()
+        return valido_icono

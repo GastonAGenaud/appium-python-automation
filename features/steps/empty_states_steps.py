@@ -37,8 +37,12 @@ def valido_texto(context, texto):
         assert context.app.cuadrar_page.validar_texto_entregada()
     elif texto == 'No hay productos rebajados':
         assert context.app.cuadrar_page.validar_texto_no_hay_producto()
+    elif texto == 'Entrega impecable':
+        assert bool(context.app.cuadrar_page.valido_mensaje_entrega_impecable())
+    elif texto == '¡Felicitaciones! Has entregado el pedido sin rebajas. Que siga la buena racha.':
+        assert bool(context.app.cuadrar_page.validar_entrega_exitosa_texto())
     else:
-        raise ValueError(f"No se encontro el texto '{texto}'")
+        raise ValueError(f"No se encontró el texto '{texto}'")
 
 
 @then('valido la pantalla de "{pantalla}"')

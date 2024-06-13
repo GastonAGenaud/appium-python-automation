@@ -20,6 +20,11 @@ class CuadrarPage(Page):
     mensaje_transporte_listo = (MobileBy.XPATH, '//android.widget.TextView[@text="Transporte listo"]')
     factura_entregada_a = (MobileBy.XPATH, '(//android.widget.TextView[@text="Entregada"])[1]')
     factura_entregada_b = (MobileBy.XPATH, '(//android.widget.TextView[@text="Entregada"])[2]')
+    entrega_impecable_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
+    entrega_impecable_felicitaciones_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Felicitaciones! Has '
+                                                              'entregado el pedido sin rebajas. Que siga la buena '
+                                                              'racha."]')
+    volver_a_mi_ruta_boton = (MobileBy.ACCESSIBILITY_ID, 'Volver a mi ruta')
 
     def click_cerrar_transporte_btn(self):
         self.click_on_element(self.cerrar_transporte_boton)
@@ -47,10 +52,25 @@ class CuadrarPage(Page):
         texto_no_hay_producto = self.find_element(self.no_hay_productos_rebajados_texto).is_displayed()
         return texto_no_hay_producto
 
+    def valido_mensaje_entrega_impecable(self):
+        self.implicit_wait_visible(self.entrega_impecable_texto)
+        valido_texto_entrega = self.find_element(self.entrega_impecable_texto).is_displayed()
+        return valido_texto_entrega
+
+    def valido_volver_mi_ruta(self):
+        self.implicit_wait_visible(self.volver_a_mi_ruta_boton)
+        valido_boton_volver_mi_ruta = self.find_element(self.volver_a_mi_ruta_boton).is_displayed()
+        return valido_boton_volver_mi_ruta
+
     def validar_precio_total_esperado(self):
         self.implicit_wait_visible(self.total_esperado_precio)
         total_esperado = self.find_element(self.total_esperado_precio).is_displayed()
         return total_esperado
+
+    def validar_entrega_exitosa_texto(self):
+        self.implicit_wait_visible(self.entrega_impecable_felicitaciones_texto)
+        entrega_impecable_txt = self.find_element(self.entrega_impecable_felicitaciones_texto).is_displayed()
+        return entrega_impecable_txt
 
     def validar_precio_total_recaudado(self):
         self.implicit_wait_visible(self.total_recaudado_precio)
