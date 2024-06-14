@@ -1,4 +1,3 @@
-from appium.webdriver.common.mobileby import MobileBy
 from behave import given, when, then
 
 

@@ -4,11 +4,9 @@ from appium.webdriver.common.mobileby import MobileBy
 
 
 class RebajarPedidoPage(Page):
-    # Localizadores de elementos
     retornado_sobre_stock = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc=" Retornada - Sobre stock, '
                                              'Factura N° 404145531, Productos, 10, Cheque, '
                                              '$ 0"]/android.view.ViewGroup[1]')
-    motivo_anulacion_pantalla = (MobileBy.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout')
 
     def valido_precio_final_rebajado(self):
         valor_total = self.find_element(MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')

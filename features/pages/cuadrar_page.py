@@ -7,7 +7,6 @@ class CuadrarPage(Page):
     texto25Clientes = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-quantity"]')
     rutaComenzar = (MobileBy.ACCESSIBILITY_ID, ', Ruta comenzada')
     textoRutaEntregada = (MobileBy.XPATH, '//android.widget.TextView[@text="Entregada"]')
-    confirmar_btn = (MobileBy.ACCESSIBILITY_ID, 'Confirmar')
     no_hay_productos_rebajados_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
     total_esperado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$811.371"])[1]')
     total_recaudado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$811.371"])[2]')

@@ -11,13 +11,10 @@ Característica: Entregar pedido
         Y hago click en el boton "Comenzar ruta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
-        #Y selecciono para rebajar el pedido
         Y hago click en el boton "entregar"
-        #Y selecciono "Rebajados"
         Entonces valido el texto "No hay productos rebajados"
-        Y hago click en el boton Confirmar
-        Y valido el texto "Entregada"
-        #Y valido mensaje de entrega completada
+        Cuando hago click en el boton "Confirmar"
+        Entonces valido el texto "Entregada"
 
     @regresion
     Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
@@ -28,15 +25,13 @@ Característica: Entregar pedido
         Y hago click en el boton "Comenzar ruta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
-        #Y selecciono para rebajar el pedido
         Y hago click en el boton "entregar"
-        Y selecciono el sector "Entregados"
+        Y selecciono pestaña de "Entregados"
         Entonces valido el producto "<producto>"
         Y valido el precio unitario "<precioUnitario>"
         Y valido que el precio total sea de "$ 508.147"
-        Y hago click en el boton Confirmar
-        Y valido el texto "Entregada"
-        #Y valido mensaje de entrega completada
+        Cuando hago click en el boton "Confirmar"
+        Entonces valido el texto "Entregada"
 
         Ejemplos:
             | producto                             | precioUnitario |

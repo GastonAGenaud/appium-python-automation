@@ -39,7 +39,6 @@ Característica: Modificar recorrido sugerido
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        #Y elijo la ruta "1222654"
         #Y cierro el cuadro de texto
         Y hago click en el boton "Comenzar ruta"
         Entonces se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente

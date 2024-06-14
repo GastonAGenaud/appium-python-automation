@@ -12,36 +12,6 @@ def validar_presencia_motivos(context):
     assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion()
 
 
-@when('selecciono "Sobre stock"')
-def seleccionar_motivo(context):
-    context.app.anular_pedido_page.seleccionar_nombre("Sobre stock")
-
-
-@then('valido la presencia del botón "Confirmar"')
-def validar_presencia_boton_confirmar(context):
-    assert context.app.anular_pedido_page.valido_boton_enviar_motivo()
-
-
-@when('hago clic en el botón "Confirmar"')
-def clic_confirmar(context):
-    context.app.anular_pedido_page.click_confirmar_btn()
-
-
-@when('hago clic en el botón "Retornados"')
-def clic_retornados(context):
-    context.app.anular_pedido_page.selecciono_boton_retornado()
-
-
-@then('verifico que se redireccione a la pantalla de detalles del pedido')
-def validar_pantalla_retomar_detalles(context):
-    context.app.anular_pedido_page.valido_pantalla_retomar_detalles()
-
-
-@when('verifico que se muestre correctamente el pedido a retomar')
-def validar_retomar(context):
-    context.app.anular_pedido_page.validar_retomar()
-
-
 @then('Valido la pantalla de retomar pedidos')
 def pantalla_retomar_pedidos(context):
     context.app.anular_pedido_page.valido_pantalla_retomar()

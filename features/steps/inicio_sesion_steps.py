@@ -13,14 +13,8 @@ def usuario_ingresa_una_contrasena(context):
 
 @when('hago click en el boton "{boton}"')
 def click_en_el_boton(context, boton):
-    if boton == "Ingresar":
-        context.app.inicio_sesion_page.click_ingresa_btn()
-    elif boton == "Iniciar sesion":
+    if boton == "Iniciar sesion":
         context.app.inicio_sesion_page.click_iniciar_sesion_btn()
-    elif boton == "Test$#@#!":
-        context.app.inicio_sesion_page.click_entendido_btn()
-    elif boton == "Anular pedido":
-        context.app.revisar_pedido_page.click_anular_pedido_btn()
     elif boton == "Retornar pedido":
         context.app.revisar_pedido_page.click_retornar_pedido_btn()
     elif boton == "Entregar":
@@ -41,17 +35,12 @@ def click_en_el_boton(context, boton):
         context.app.modificar_recorrido_page.click_mover_hacia_arriba_boton()
     elif boton == "Mover a lo más abajo":
         context.app.modificar_recorrido_page.click_mover_a_lo_mas_abajo_boton()
-    elif boton == "Retornados":
-        context.app.anular_pedido_page.selecciono_boton_retornado()
     elif boton == "Cerrar transporte":
         context.app.cuadrar_page.click_cerrar_transporte_btn()
+    elif boton == "Cerrar pedido":
+        context.app.modificar_recorrido_page.click_cerrar_pedido_boton()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
-
-
-@then("hago click en el boton Confirmar")
-def click_en_boton_Confirmar(context):
-    context.app.entregar_pedido_page.click_confirmar_boton()
 
 
 @then('se valida el mensaje de error en el campo de "{texto}"')

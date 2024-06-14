@@ -13,12 +13,7 @@ def usuario_ingresa_correo(context, idRuta):
 
 @then('se valida que la visualizacion de pedido para la ruta "{idRuta}" sea correcta')
 def visualizaciones_correcta_del_pedido(context, idRuta):
-    if idRuta == "El Deseo SPA":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_el_deseo_spa())
-    elif idRuta == "Erbi":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_erbi())
-    else:
-        raise ValueError(f"No se encontro el mensaje de error en el campo de '{idRuta}'")
+    assert bool(context.app.revisar_pedido_page.valido_pedido_el_deseo_spa())
 
 
 @then('valido la visualizacion del monto de la transferencia')
@@ -36,11 +31,6 @@ def valido_google_maps(context, maps):
     assert bool(context.app.revisar_pedido_page.valido_opcion_google_maps())
 
 
-@when('visualizo la factura con numero "{factura}"')
-def visualizo_la_factura(context, factura):
-    assert bool(context.app.revisar_pedido_page.valido_numero_de_factura(factura))
-
-
 @when('selecciono la factura con numero "{factura}"')
 def visualizo_la_factura(context, factura):
     if factura == "404145531":
@@ -53,7 +43,7 @@ def visualizo_la_factura(context, factura):
         raise ValueError(f"No se encontro la factura con numero '{factura}'")
 
 
-@when('selecciono la segunda factura factura con numero "{factura}"')
+@when('selecciono la segunda factura con numero "{factura}"')
 def visualizo_la_factura2(context, factura):
     if factura == "404145531":
         context.app.revisar_pedido_page.selecciono_la_factura2()
@@ -118,11 +108,6 @@ def valido_cantidad_pack(context, cantidad):
 def valido_sector_agregar_y_restar(context):
     assert bool(context.app.revisar_pedido_page.valido_restar_btn())
     assert bool(context.app.revisar_pedido_page.valido_agregar_btn())
-
-
-@when('selecciono el botón de restar producto')
-def valido_sector_agregar_y_restar(context):
-    assert bool(context.app.revisar_pedido_page.valido_restar_btn())
 
 
 @then('valido el precio final "{precio}"')

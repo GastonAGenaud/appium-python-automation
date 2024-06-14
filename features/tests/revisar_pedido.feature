@@ -12,18 +12,12 @@ Característica: Revisar pedido
     Y elijo la ruta "El Deseo SPA"
     Entonces se valida que la visualizacion de pedido para la ruta "El Deseo SPA" sea correcta
 
-    #Esquema del escenario: Validacion de visualizacion del nombre <idNombre> en el pedido
+    #Escenario: Validacion de visualizacion del nombre <idNombre> en el pedido
     #    Dado ingreso el correo electronico "<correoElectronico>"
     #    Y ingreso la contrasena "<contrasena>"
     #    Y hago click en el boton "Ingresar"
     #    Cuando elijo el nombre "<idNombre>"
     #    Entonces se valida que la visualizacion de pedido para "<idNombre>" sea correcta
-
-    #    Ejemplos:
-    #        | correoElectronico | contrasena | idNombre        |
-    #        | test@test.com      | test123 | Test            |
-    #        | Jonathan           | test123 | Leandro Maronas |
-
 
   Escenario: Validacion de visualizacion de la cantidad de productos y el monto de transferencia
     Dado el usuario ingresa el correo electronico "conductor-01"
@@ -36,7 +30,6 @@ Característica: Revisar pedido
         #Cuando presiono el boton "Ver detalle"
     Entonces valido la visualizacion del monto de la transferencia
     Y valido la visualizacion de la cantidad de los productos
-
 
   Escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
     Dado el usuario ingresa el correo electronico "conductor-01"

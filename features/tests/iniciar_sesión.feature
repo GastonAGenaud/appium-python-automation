@@ -7,7 +7,6 @@ Característica: iniciar sesión
         Dado el usuario ingresa el correo electronico "conductor-01"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        #Y hago click en el boton "Entendido"
         Entonces se inicia sesion exitosamente
 
     @smoke @regresion

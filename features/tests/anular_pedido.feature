@@ -19,7 +19,7 @@ Característica: Anular pedido
     Y hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono el boton "Retornar pedido"
-    Cuando visualizo la pantalla de selección de motivo de anulacion
+    Y visualizo la pantalla de selección de motivo de anulacion
     Entonces valido la presencia de los siguientes motivos:
       | motivo                          |
       | Duplicado/Mal digitado          |
@@ -53,7 +53,7 @@ Característica: Anular pedido
     Y hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono el boton "Retornar pedido"
-    Cuando visualizo la pantalla de selección de motivo de anulacion
+    Y visualizo la pantalla de selección de motivo de anulacion
     Entonces valido la presencia de los siguientes motivos:
       | motivo                          |
       | Duplicado/Mal digitado          |
@@ -92,7 +92,7 @@ Característica: Anular pedido
     Y selecciono el boton "Retornar pedido"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
-    Y hago click en el boton "Retornados"
+    Y selecciono "Retornados"
     Entonces valido que la ruta utilizada anteriormente esté presente
 
   @anularPedidoFactura
@@ -105,7 +105,7 @@ Característica: Anular pedido
     Y selecciono la factura con numero "404145531"
     Y selecciono el boton "Retornar pedido"
     Y selecciono "Sobre stock"
-    Y hago clic en el botón "Confirmar"
+    Y hago click en el boton "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
   @retomarPedido
@@ -119,20 +119,12 @@ Característica: Anular pedido
     Y selecciono el boton "Retornar pedido"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
-    Y selecciono la segunda factura factura con numero "404145531"
+    Y selecciono la segunda factura con numero "404145531"
     Y selecciono el boton "Retornar pedido"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
     Y selecciono el boton "Retornar pedido"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
-    Y hago click en el boton "Retornados"
+    Y selecciono "Retornados"
     Entonces Valido la pantalla de retomar pedidos
-
-
-  #Escenario: Validación del boton "Ver detalle" en la pantalla de retomar pedidos
-   # Dado hago click en el boton "Ingresar"
-   # Y visualizo la pantalla de retomar pedidos
-   # Y valido la presencia del boton "Ver detalle"
-   # Cuando hago click en el boton "Ver detalle"
-   # Entonces verifico que se redireccione
