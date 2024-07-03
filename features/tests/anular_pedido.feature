@@ -4,22 +4,14 @@ Característica: Anular pedido
 
   @porqueretornar
   Escenario: Validación de presionar el boton "Anular pedido"
-    Dado el usuario ingresa el correo electronico "conductor-01"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
+    Dado Ingreso con el conductor a la aplicacion
+    Cuando hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono el boton "Retornar pedido"
+    Y hago click en el boton "Retornar todo"
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
 
   Escenario: Validación de motivo de anulación
-    Dado el usuario ingresa el correo electronico "conductor-01"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
-    Y elijo la ruta "El Deseo SPA"
-    Y selecciono el boton "Retornar pedido"
-    Y visualizo la pantalla de selección de motivo de anulacion
+    Dado Ingreso con el conductor a la aplicacion
     Entonces valido la presencia de los siguientes motivos:
       | motivo                          |
       | Duplicado/Mal digitado          |
@@ -47,13 +39,7 @@ Característica: Anular pedido
 
   @AnularPedido
   Escenario: Validación de pantalla de selección de motivo de anulación
-    Dado el usuario ingresa el correo electronico "conductor-01"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
-    Y elijo la ruta "El Deseo SPA"
-    Y selecciono el boton "Retornar pedido"
-    Y visualizo la pantalla de selección de motivo de anulacion
+    Dado Ingreso con el conductor a la aplicacion
     Entonces valido la presencia de los siguientes motivos:
       | motivo                          |
       | Duplicado/Mal digitado          |
@@ -84,46 +70,37 @@ Característica: Anular pedido
 
   @rutaAnterior
   Escenario: Validación del sector "Retornados"
-    Dado el usuario ingresa el correo electronico "conductor-01"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
-    Y elijo la ruta "El Deseo SPA"
-    Y selecciono el boton "Retornar pedido"
-    Y selecciono "Sobre stock"
-    Y hago click en el boton "Confirmar"
-    Y selecciono "Retornados"
+    Dado Ingreso con el conductor a la aplicacion
+    Cuando selecciono "Retornados"
     Entonces valido que la ruta utilizada anteriormente esté presente
 
   @anularPedidoFactura
   Escenario: Validación de retornar pedido de factura
-    Dado el usuario ingresa el correo electronico "conductor-01"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
-    Y selecciono el boton "Retornar pedido"
+    Y hago click en el boton "Retornar factura"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
   @retomarPedido
   Escenario: Validación de la pantalla de retomar pedidos
-    Dado el usuario ingresa el correo electronico "conductor-01"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando hago click en el boton "Comenzar ruta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
-    Y selecciono el boton "Retornar pedido"
+    Y hago click en el boton "Retornar factura"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
     Y selecciono la segunda factura con numero "404145531"
-    Y selecciono el boton "Retornar pedido"
+    Y hago click en el boton "Retornar factura"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
-    Y selecciono el boton "Retornar pedido"
+    Y hago click en el boton "Retornar todo"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
     Y selecciono "Retornados"

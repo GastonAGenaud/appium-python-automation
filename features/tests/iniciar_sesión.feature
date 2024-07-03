@@ -4,29 +4,31 @@ Característica: iniciar sesión
 
     @regresion
     Escenario: Validacion de Iniciar sesion exitosamente
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
+        Dado Ingreso con el conductor a la aplicacion
         Entonces se inicia sesion exitosamente
 
     @smoke @regresion
     Escenario: Validacion de error por falta de correo
-        Dado el usuario ingresa una contraseña
+        Dado Reseteo la app
+        Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "correo electronico"
 
     @smoke @regresion
     Escenario: Validacion de mensaje de error por falta de contraseña
-        Dado el usuario ingresa el correo electronico "conductor-01"
+        Dado Reseteo la app
+        Y el usuario ingresa el correo electronico "conductor-01"
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "contrasena"
 
     Escenario: Validacion de error de caracteres especiales
-        Dado el usuario ingresa el correo electronico "Test$#@#!"
+        Dado Reseteo la app
+        Y el usuario ingresa el correo electronico "Test$#@#!"
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "No se admiten caracteres especiales"
 
     Escenario: Validacion de boton "Login" deshabilitado
+        Dado Reseteo la app
         Dado estoy en la pantalla de inicio de sesion
         Entonces se valida que el boton de "Login" este deshabilitado
 

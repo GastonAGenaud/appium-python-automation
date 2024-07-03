@@ -33,11 +33,18 @@ class RevisarPedidoPage(Page):
     precio_final_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
     precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
     precio_final_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
-    retornar_pedido_btn = (MobileBy.XPATH, '//android.widget.TextView[@text="Retornar pedido"]')
+    retornar_factura_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar factura"]')
+    retornar_todo_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar todo"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
     benedictino_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 53.839 "]')
     fanta_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 33.105 "]')
     nota_de_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="- $ 25.000"]')
+    metodo_de_pago = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="formatted-product"]')
+    metodo_de_pago_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
+    transferencia_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
+    efectivo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Efectivo"]')
+    mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Con más de un método de pago"]')
+    transferencia_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
 
     def valido_pedido_el_deseo_spa(self):
         self.implicit_wait_visible(self.el_deseo_spa_titulo)
@@ -81,8 +88,11 @@ class RevisarPedidoPage(Page):
     def click_anular_pedido_btn(self):
         self.click_on_element(self.anular_pedido_btn)
 
-    def click_retornar_pedido_btn(self):
-        self.click_on_element(self.retornar_pedido_btn)
+    def click_retornar_factura_btn(self):
+        self.click_on_element(self.retornar_factura_btn)
+
+    def click_retornar_todo_btn(self):
+        self.click_on_element(self.retornar_todo_btn)
 
     def click_entregar_btn(self):
         self.click_on_element(self.entregar_btn)
@@ -209,3 +219,41 @@ class RevisarPedidoPage(Page):
         self.implicit_wait_visible(self.nota_de_pedido)
         valido_monto = self.find_element(self.nota_de_pedido).is_displayed()
         return valido_monto
+
+    def click_metodo_de_pago(self):
+        self.click_on_element(self.metodo_de_pago)
+
+    def valido_titulo_metodo_de_pago(self):
+        self.implicit_wait_visible(self.metodo_de_pago_titulo)
+        titulo = self.find_element(self.metodo_de_pago_titulo).is_displayed()
+        return titulo
+
+    def valido_transferencia_opcion(self):
+        self.implicit_wait_visible(self.transferencia_txt)
+        texto = self.find_element(self.transferencia_txt).is_displayed()
+        return texto
+
+    def click_transferencia_opcion(self):
+        self.click_on_element(self.transferencia_txt)
+
+    def valido_efectivo_opcion(self):
+        self.implicit_wait_visible(self.efectivo_txt)
+        texto = self.find_element(self.efectivo_txt).is_displayed()
+        return texto
+
+    def click_efectivo_opcion(self):
+        self.click_on_element(self.efectivo_txt)
+
+    def valido_mas_de_un_metodo_opcion(self):
+        self.implicit_wait_visible(self.mas_de_un_metodo_txt)
+        texto = self.find_element(self.mas_de_un_metodo_txt).is_displayed()
+        return texto
+
+    def click_mas_de_un_metodo_opcion(self):
+        self.click_on_element(self.mas_de_un_metodo_txt)
+
+    def valido_metodo_seleccionado(self):
+        self.implicit_wait_visible(self.transferencia_texto)
+        metodo_seleccionado = self.find_element(self.transferencia_texto).is_displayed()
+        return metodo_seleccionado
+

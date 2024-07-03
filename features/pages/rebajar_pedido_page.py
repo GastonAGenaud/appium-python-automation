@@ -19,7 +19,7 @@ class RebajarPedidoPage(Page):
 
     def motivo_anulacion_pantalla_lista(self, motivos):
         for motivo in motivos:
-            motivo_element = (MobileBy.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout')
+            motivo_element = (MobileBy.XPATH, f'//*[@text="${motivo}"]')
             self.implicit_wait_visible(motivo_element)
             if not self.find_element(motivo_element).is_displayed():
                 return False

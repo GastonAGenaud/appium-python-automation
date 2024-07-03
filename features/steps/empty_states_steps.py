@@ -21,6 +21,8 @@ def valido_texto(context, texto):
         assert context.app.cuadrar_page.validar_texto_entregada()
     elif texto == 'No hay productos rebajados':
         assert context.app.cuadrar_page.validar_texto_no_hay_producto()
+    elif texto == '¿Con qué te van a pagar?':
+        assert context.app.revisar_pedido_page.valido_titulo_metodo_de_pago()
     else:
         raise ValueError(f"No se encontro el texto '{texto}'")
 
@@ -33,3 +35,9 @@ def valido_pantalla(context, pantalla):
         assert bool(context.app.empty_states_page.valido_seccion_entregados())
     else:
         raise ValueError(f"No se pudo validar la siguiente pantalla '{pantalla}'")
+
+
+@given('Reseteo la app')
+def reseteo_app(context):
+    context.driver.reset()
+    context.logged_in = False

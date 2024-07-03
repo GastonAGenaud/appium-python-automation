@@ -1,8 +1,5 @@
-from features.credentials import CONTRASENA
-from features.credentials import CORREO_CON_CARACTERES
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
-from appium.webdriver.common.touch_action import TouchAction
 
 
 class InicioSesionPage(Page):
@@ -13,17 +10,33 @@ class InicioSesionPage(Page):
     comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
     iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión')
 
-    def usuario_ingresa_correo(self, correo):
+    def usuario_ingresa_correo(self, correo, logged_in):
+        if not logged_in:
+            self.click_on_element(self.correo_campo)
+            self.input(correo, self.correo_campo)
+
+    def usuario_ingresa_correo_manual(self, correo):
         self.click_on_element(self.correo_campo)
         self.input(correo, self.correo_campo)
 
-    def usuario_ingresa_contrasena(self):
-        self.click_on_element(self.contrasena_campo)
-        self.input(CONTRASENA, self.contrasena_campo)
+    def usuario_ingresa_contrasena(self, password, logged_in):
+        if not logged_in:
+            self.click_on_element(self.contrasena_campo)
+            self.input(password, self.contrasena_campo)
 
-    def click_iniciar_sesion_btn(self):
-        #if self.driver.is_keyboard_shown():
-        #    self.driver.hide_keyboard()
+    def usuario_ingresa_contrasena_manual(self, password):
+        self.click_on_element(self.contrasena_campo)
+        self.input(password, self.contrasena_campo)
+
+    def click_iniciar_sesion_btn(self, logged_in):
+        if not logged_in:
+            # if self.driver.is_keyboard_shown():
+            # self.driver.hide_keyboard()
+            self.click_on_element(self.iniciar_sesion_btn)
+
+    def click_iniciar_sesion_boton(self):
+        # if self.driver.is_keyboard_shown():
+        # self.driver.hide_keyboard()
         self.click_on_element(self.iniciar_sesion_btn)
 
     def valido_mensaje_error_correo(self):

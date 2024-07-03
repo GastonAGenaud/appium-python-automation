@@ -8,6 +8,8 @@
       "appPackage": "com.rutadigital",
       "src": "E:/trabajo/Andina/appium-python-automation/src/binaries/app-release.apk",
       "appActivity": "com.rutadigital.MainActivity"
-    }
+    },
+    "usuario": "conductor-01",
+    "password": "Holamundo1234#"
   }
 }

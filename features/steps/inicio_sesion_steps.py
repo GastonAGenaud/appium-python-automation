@@ -1,22 +1,44 @@
+import json
+import os
+
 from behave import given, when, then
 
 
 @given('el usuario ingresa el correo electronico "{correo}"')
-def usuario_ingresa_correo(context, correo):
-    context.app.inicio_sesion_page.usuario_ingresa_correo(correo)
+def usuario_ingresa_correo_electronico(context, correo):
+    context.app.inicio_sesion_page.usuario_ingresa_correo_manual(correo)
 
 
 @given("el usuario ingresa una contraseña")
 def usuario_ingresa_una_contrasena(context):
-    context.app.inicio_sesion_page.usuario_ingresa_contrasena()
+    with open(os.path.join(context.basedir, 'config.json')) as config_file:
+        config = json.load(config_file)
+    context.app.inicio_sesion_page.usuario_ingresa_contrasena_manual(config['target']['password'])
+
+
+@given('Ingreso con el conductor a la aplicacion')
+def usuario_ingresa_aplicacion(context):
+    print(context.logged_in)
+    if not context.logged_in:
+        print("dentro del if not")
+        # Leer la configuración del archivo config.json
+        with open(os.path.join(context.basedir, 'config.json')) as config_file:
+            config = json.load(config_file)
+            print("config" + str(config['target']['password']))
+        context.app.inicio_sesion_page.usuario_ingresa_correo(config['target']['usuario'], context.logged_in)
+        context.app.inicio_sesion_page.usuario_ingresa_contrasena(config['target']['password'], context.logged_in)
+        context.app.inicio_sesion_page.click_iniciar_sesion_btn(context.logged_in)
+        context.logged_in = True
 
 
 @when('hago click en el boton "{boton}"')
 def click_en_el_boton(context, boton):
     if boton == "Iniciar sesion":
-        context.app.inicio_sesion_page.click_iniciar_sesion_btn()
-    elif boton == "Retornar pedido":
-        context.app.revisar_pedido_page.click_retornar_pedido_btn()
+        context.app.inicio_sesion_page.click_iniciar_sesion_boton()
+    elif boton == "Retornar factura":
+        context.app.revisar_pedido_page.click_retornar_factura_btn()
+    elif boton == "Retornar todo":
+        context.app.revisar_pedido_page.click_retornar_todo_btn()
     elif boton == "Entregar":
         context.app.revisar_pedido_page.click_entregar_btn()
     elif boton == "entregar":

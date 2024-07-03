@@ -18,7 +18,7 @@ class ModificarRecorridoPage(Page):
     presiona_prolongadamente_txt = (MobileBy.ID, 'modal-alert-subtitle')
     entendido_boton = (MobileBy.ACCESSIBILITY_ID, 'Entendido')
     no_volver_a_mostrar_txt = (MobileBy.XPATH, '//android.widget.CheckBox[@resource-id="Test Checkbox"]')
-    boton_desplegable = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="GASTRONOMICA LUSA SPA, ANTONIO BELLET 345, Abierto, Cierra a las 20:00, Productos , 35, Pago mixto, $1.778.687"]/android.view.ViewGroup[1]/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView')
+    boton_desplegable = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="GASTRONOMICA LUSA SPA, ANTONIO BELLET 345, Abierto, Cierra a las 20:00, Productos , 35, 3 métodos de pago, $1.778.687"]/android.view.ViewGroup[1]/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView')
     mover_hacia_arriba_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover hacia arriba')
     mover_a_lo_mas_abajo_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover a lo más abajo')
     mover_hacia_arriba_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado arriba de la lista')

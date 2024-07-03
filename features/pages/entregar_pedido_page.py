@@ -15,6 +15,7 @@ class EntregarPedidoPage(Page):
                                          '2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
     modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
     entregados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregados "]')
+    efectivo_checkbox = (MobileBy.XPATH, '//android.widget.TextView[@text="Efectivo"]')
 
     def rebajo_el_pedido(self):
         self.click_on_element(self.restar_btn)
@@ -50,3 +51,6 @@ class EntregarPedidoPage(Page):
 
     def click_seccion_entregados(self):
         self.click_on_element(self.entregados_seccion)
+
+    def click_efectivo_checkbox(self):
+        self.click_on_element(self.efectivo_checkbox)
