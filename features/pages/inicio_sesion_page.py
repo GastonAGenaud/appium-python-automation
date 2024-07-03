@@ -72,12 +72,3 @@ class InicioSesionPage(Page):
         self.implicit_wait_visible(self.iniciar_sesion_btn)
         ingresar_desactivado = self.find_element(self.iniciar_sesion_btn).is_enabled()
         return ingresar_desactivado
-
-    def dismiss_keyboard(self):
-        # Método para cerrar el teclado
-        try:
-            self.driver.hide_keyboard()
-        except:
-            # Si falla, intenta hacer clic fuera del área de entrada de texto
-            action = TouchAction(self.driver)
-            action.tap(x=100, y=100).perform()
