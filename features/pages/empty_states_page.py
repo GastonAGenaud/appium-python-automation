@@ -16,6 +16,22 @@ class EmptyStatesPage(Page):
                                '.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     seccion_entregado_texto = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[33]')
     ordenar_por_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Ordenar por:  "]')
+    no_has_visitado_clientes_txt = (MobileBy.XPATH,
+                                    '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
+                                    '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
+    imagen_seccion_visitados = (MobileBy.XPATH,
+                                '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget'
+                                '.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup'
+                                '/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
+                                '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com'
+                                '.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
+    rebajados_seccion = (MobileBy.ACCESSIBILITY_ID, 'Rebajados')
+    producto_en_entregados = (MobileBy.ACCESSIBILITY_ID, 'EL DESEO SPA, AVDA ANDRES BELLO 2447, Abierto, Cierra a las '
+                                                         '23:59, Productos , 16, Efectivo, $866.455')
+
+    def productos_en_entregados(self):
+        self.implicit_wait_visible(self.producto_en_entregados)
+        return self.find_element(self.producto_en_entregados).is_displayed()
 
     def seccion_retornados(self):
         max_attempts = 4  # Número máximo de intentos

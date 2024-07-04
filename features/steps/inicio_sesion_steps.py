@@ -61,6 +61,8 @@ def click_en_el_boton(context, boton):
         context.app.cuadrar_page.click_cerrar_transporte_btn()
     elif boton == "Cerrar pedido":
         context.app.modificar_recorrido_page.click_cerrar_pedido_boton()
+    elif boton == "Volver a mi ruta":
+        context.app.entregar_pedido_page.click_volver_a_mi_ruta()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
 
@@ -88,6 +90,3 @@ def estoy_pantalla_de_inicio(context):
 @then('se valida que el boton de "{boton}" este deshabilitado')
 def boton_login_deshabilitado(context, boton):
     assert not bool(context.app.inicio_sesion_page.valido_btn_ingresar_desactivado())
-
-
-
