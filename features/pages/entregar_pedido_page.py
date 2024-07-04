@@ -17,6 +17,8 @@ class EntregarPedidoPage(Page):
                                          '.ViewGroup['
                                          '2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[3]')
     modificar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Modificar"]')
+    entregados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregados "]')
+    efectivo_checkbox = (MobileBy.XPATH, '//android.widget.TextView[@text="Efectivo"]')
     modifica_tu_ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Modifica tu ruta"]')
     modifica_tu_ruta_texsto = (MobileBy.ID, 'title-amount-total')
     entrega_impecable_icon = (MobileBy.XPATH, '//com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg'
@@ -72,6 +74,12 @@ class EntregarPedidoPage(Page):
 
     def click_cerrar_boton(self):
         self.click_on_element(self.cerrar_cuadro_btn)
+
+    def click_seccion_entregados(self):
+        self.click_on_element(self.entregados_seccion)
+
+    def click_efectivo_checkbox(self):
+        self.click_on_element(self.efectivo_checkbox)
 
     def valido_icono_entregar_pedido(self):
         self.implicit_wait_visible(self.entrega_impecable_icon)

@@ -4,18 +4,13 @@ Característica: Estados Vacíos
 
     @regresion
     Escenario: Validación de pantalla "Entregados"
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Y selecciono "Entregados"
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando selecciono "Entregados"
         Entonces valido la pantalla de "Entregados"
 
     @regresion
     Escenario: Validación de pantalla "Retornados"
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Y selecciono "Retornados"
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando selecciono "Retornados"
         Entonces valido el texto "No has anulado pedidos"
         Y valido la pantalla de "Retornados"
-

@@ -1,28 +1,44 @@
+import json
+import os
+
 from behave import given, when, then
 
 
 @given('el usuario ingresa el correo electronico "{correo}"')
-def usuario_ingresa_correo(context, correo):
-    context.app.inicio_sesion_page.usuario_ingresa_correo(correo)
+def usuario_ingresa_correo_electronico(context, correo):
+    context.app.inicio_sesion_page.usuario_ingresa_correo_manual(correo)
 
 
 @given("el usuario ingresa una contraseña")
 def usuario_ingresa_una_contrasena(context):
-    context.app.inicio_sesion_page.usuario_ingresa_contrasena()
+    with open(os.path.join(context.basedir, 'config.json')) as config_file:
+        config = json.load(config_file)
+    context.app.inicio_sesion_page.usuario_ingresa_contrasena_manual(config['target']['password'])
+
+
+@given('Ingreso con el conductor a la aplicacion')
+def usuario_ingresa_aplicacion(context):
+    print(context.logged_in)
+    if not context.logged_in:
+        print("dentro del if not")
+        # Leer la configuración del archivo config.json
+        with open(os.path.join(context.basedir, 'config.json')) as config_file:
+            config = json.load(config_file)
+            print("config" + str(config['target']['password']))
+        context.app.inicio_sesion_page.usuario_ingresa_correo(config['target']['usuario'], context.logged_in)
+        context.app.inicio_sesion_page.usuario_ingresa_contrasena(config['target']['password'], context.logged_in)
+        context.app.inicio_sesion_page.click_iniciar_sesion_btn(context.logged_in)
+        context.logged_in = True
 
 
 @when('hago click en el boton "{boton}"')
 def click_en_el_boton(context, boton):
-    if boton == "Ingresar":
-        context.app.inicio_sesion_page.click_ingresa_btn()
-    elif boton == "Iniciar sesion":
-        context.app.inicio_sesion_page.click_iniciar_sesion_btn()
-    elif boton == "Test$#@#!":
-        context.app.inicio_sesion_page.click_entendido_btn()
-    elif boton == "Anular pedido":
-        context.app.revisar_pedido_page.click_anular_pedido_btn()
-    elif boton == "Retornar pedido":
-        context.app.revisar_pedido_page.click_retornar_pedido_btn()
+    if boton == "Iniciar sesion":
+        context.app.inicio_sesion_page.click_iniciar_sesion_boton()
+    elif boton == "Retornar factura":
+        context.app.revisar_pedido_page.click_retornar_factura_btn()
+    elif boton == "Retornar todo":
+        context.app.revisar_pedido_page.click_retornar_todo_btn()
     elif boton == "Entregar":
         context.app.revisar_pedido_page.click_entregar_btn()
     elif boton == "entregar":
@@ -41,19 +57,14 @@ def click_en_el_boton(context, boton):
         context.app.modificar_recorrido_page.click_mover_hacia_arriba_boton()
     elif boton == "Mover a lo más abajo":
         context.app.modificar_recorrido_page.click_mover_a_lo_mas_abajo_boton()
-    elif boton == "Retornados":
-        context.app.anular_pedido_page.selecciono_boton_retornado()
     elif boton == "Cerrar transporte":
         context.app.cuadrar_page.click_cerrar_transporte_btn()
+    elif boton == "Cerrar pedido":
+        context.app.modificar_recorrido_page.click_cerrar_pedido_boton()
     elif boton == "Volver a mi ruta":
         context.app.entregar_pedido_page.click_volver_a_mi_ruta()
     else:
         raise ValueError(f"No se encontro el boton de '{boton}'")
-
-
-@then("hago click en el boton Confirmar")
-def click_en_boton_Confirmar(context):
-    context.app.entregar_pedido_page.click_confirmar_boton()
 
 
 @then('se valida el mensaje de error en el campo de "{texto}"')

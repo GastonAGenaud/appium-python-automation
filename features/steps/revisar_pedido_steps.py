@@ -2,7 +2,7 @@ from behave import given, when, then
 
 
 @when('elijo la ruta "{idRuta}"')
-def usuario_ingresa_correo(context, idRuta):
+def usuario_elije_ruta(context, idRuta):
     if idRuta == "El Deseo SPA":
         context.app.ux_page.click_el_deseo_spa_btn()
     elif idRuta == "Erbi":
@@ -13,12 +13,7 @@ def usuario_ingresa_correo(context, idRuta):
 
 @then('se valida que la visualizacion de pedido para la ruta "{idRuta}" sea correcta')
 def visualizaciones_correcta_del_pedido(context, idRuta):
-    if idRuta == "El Deseo SPA":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_el_deseo_spa())
-    elif idRuta == "Erbi":
-        assert bool(context.app.revisar_pedido_page.valido_pedido_erbi())
-    else:
-        raise ValueError(f"No se encontro el mensaje de error en el campo de '{idRuta}'")
+    assert bool(context.app.revisar_pedido_page.valido_pedido_el_deseo_spa())
 
 
 @then('valido la visualizacion del monto de la transferencia')
@@ -36,11 +31,6 @@ def valido_google_maps(context, maps):
     assert bool(context.app.revisar_pedido_page.valido_opcion_google_maps())
 
 
-@when('visualizo la factura con numero "{factura}"')
-def visualizo_la_factura(context, factura):
-    assert bool(context.app.revisar_pedido_page.valido_numero_de_factura(factura))
-
-
 @when('selecciono la factura con numero "{factura}"')
 def visualizo_la_factura(context, factura):
     if factura == "404145531":
@@ -53,7 +43,7 @@ def visualizo_la_factura(context, factura):
         raise ValueError(f"No se encontro la factura con numero '{factura}'")
 
 
-@when('selecciono la segunda factura factura con numero "{factura}"')
+@when('selecciono la segunda factura con numero "{factura}"')
 def visualizo_la_factura2(context, factura):
     if factura == "404145531":
         context.app.revisar_pedido_page.selecciono_la_factura2()
@@ -120,11 +110,6 @@ def valido_sector_agregar_y_restar(context):
     assert bool(context.app.revisar_pedido_page.valido_agregar_btn())
 
 
-@when('selecciono el botón de restar producto')
-def valido_sector_agregar_y_restar(context):
-    assert bool(context.app.revisar_pedido_page.valido_restar_btn())
-
-
 @then('valido el precio final "{precio}"')
 def valido_precio_final(context, precio):
     if precio == "$ 65.064":
@@ -151,3 +136,36 @@ def valido_sea_correcto_precio(context):
 def valido_nota_de_credito(context, monto):
     assert bool(context.app.revisar_pedido_page.valido_nota_pedido())
 
+
+@when('hago click en la opcion "{metodo}"')
+def hago_click_opcion_metodo(context, metodo):
+    context.app.revisar_pedido_page.click_metodo_de_pago()
+
+
+@when('selecciono el metodo de pago "{metodo}"')
+def selecciono_metodo_de_pago(context, metodo):
+    if metodo == "Transferencia":
+        context.app.revisar_pedido_page.click_transferencia_opcion()
+    elif metodo == "Efectivo":
+        context.app.revisar_pedido_page.click_efectivo_opcion()
+    elif metodo == "Con mas de un metodo de pago":
+        context.app.revisar_pedido_page.click_mas_de_un_metodo_opcion()
+    else:
+        raise ValueError(f"No se encontro el metodo de pago de '{metodo}'")
+
+
+@then('valido que sea visible el metodo de de pago "{metodo}"')
+def valido_sea_visible_metodo(context, metodo):
+    if metodo == "Transferencia":
+        assert bool(context.app.revisar_pedido_page.valido_transferencia_opcion())
+    elif metodo == "Efectivo":
+        assert bool(context.app.revisar_pedido_page.valido_efectivo_opcion())
+    elif metodo == "Con mas de un metodo de pago":
+        assert bool(context.app.revisar_pedido_page.valido_mas_de_un_metodo_opcion())
+    else:
+        raise ValueError(f"No se encontro el metodo de pago de '{metodo}'")
+
+
+@then('valido que el metodo de pago fue seleccionado')
+def valido_sea_seleccionado_metodo(context):
+    assert bool(context.app.revisar_pedido_page.valido_metodo_seleccionado())

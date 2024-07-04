@@ -1,3 +1,5 @@
+# environment.py
+
 from appium import webdriver
 from src.application import Application
 import os
@@ -12,7 +14,12 @@ VIDEO_DIR = os.path.join(basedir, "videos")
 if not os.path.exists(VIDEO_DIR):
     os.makedirs(VIDEO_DIR)
 
-def before_scenario(context, scenario):
+# Variable global para el estado de logged_in
+global_logged_in = False
+
+
+def before_all(context):
+    context.basedir = basedir
     # Leer la configuración del archivo config.json
     with open(os.path.join(basedir, 'config.json')) as config_file:
         config = json.load(config_file)
@@ -28,11 +35,20 @@ def before_scenario(context, scenario):
 
     # Inicializar la aplicación
     context.app = Application(context.driver)
+    context.logged_in = False
 
+
+def before_scenario(context, scenario):
+    global global_logged_in
+    context.logged_in = global_logged_in  # Sincronizar con la variable global
     # Iniciar la grabación de la pantalla
     context.driver.start_recording_screen()
 
+
 def after_scenario(context, scenario):
+    global global_logged_in
+    global_logged_in = context.logged_in  # Actualizar la variable global
+
     # Detener la grabación de la pantalla
     video_data = context.driver.stop_recording_screen()
 
@@ -48,5 +64,7 @@ def after_scenario(context, scenario):
     with open(video_path, "rb") as video_file:
         allure.attach(video_file.read(), name=f"{scenario.name}", attachment_type=allure.attachment_type.MP4)
 
+
+def after_all(context):
     # Cerrar el driver
     context.driver.quit()

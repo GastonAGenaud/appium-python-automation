@@ -39,3 +39,16 @@ def valido_productos_en_entregados(context):
 @when('cierro el cuadro de texto')
 def cierro_cuadro_de_texto(context):
     context.app.entregar_pedido_page.click_cerrar_boton()
+
+
+@when('selecciono pestaña de "{texto}"')
+def selecciono_entregados(context, texto):
+    context.app.entregar_pedido_page.click_seccion_entregados()
+
+
+@when('selecciono el metodo que te van a pagar "{metodo}"')
+def selecciono_metodo(context, metodo):
+    if metodo == "efectivo":
+        context.app.entregar_pedido_page.click_efectivo_checkbox()
+    else:
+        raise ValueError(f"No se encontro el metodo a pagar '{metodo}'")
