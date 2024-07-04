@@ -90,3 +90,44 @@ Característica: Revisar pedido
       | Transferencia                |
       | Efectivo                     |
       | Con mas de un metodo de pago |
+
+
+  @validarMetodoTransferencia
+  Escenario: Valido la seccion de metodo de pago "Transferencia"
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y hago click en la opcion "metodo de pago"
+    Y selecciono el metodo de pago "Transferencia"
+    Y hago click en el boton "Confirmar"
+    Entonces valido el mensaje "Metodo de pago editado"
+
+  @validarMetodoTransferencia
+  Escenario: Valido la seccion de metodo de pago "Efectivo"
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y hago click en la opcion "metodo de pago"
+    Y selecciono el metodo de pago "Efectivo"
+    Y hago click en el boton "Confirmar"
+    Entonces valido el mensaje "Metodo de pago editado"
+
+  @validarConMasDeUnMetodo
+  Escenario: Valido la seccion de metodo de pago "Con más de un método de pago"
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando hago click en el boton "Comenzar ruta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y hago click en la opcion "método de pago"
+    Y selecciono el metodo de pago "Con mas de un metodo de pago"
+    Y hago click en el check "Efectivo"
+    Y Escribo el numero total "{total}" y lo divido en dos partes para "Efectivo" y "Transferencia"
+    Y hago click en el check "Transferencia"
+    Y Escribo el numero total "{total}" y lo divido en dos partes para "Efectivo" y "Transferencia"
+    Y hago click en el boton "Confirmar"
+    Entonces valido el mensaje "Método de pago editado"
