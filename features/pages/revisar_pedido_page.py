@@ -60,20 +60,27 @@ class RevisarPedidoPage(Page):
                                            '2]/android.view.ViewGroup/android.view.ViewGroup')
     campo_texto_efectivo = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[1]')
     campo_texto_transferencia = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
+    mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
+                                                    'parte de pago. Solo se acepta para el total."]')
+
+    def cheque_mensaje_no_poder_usar(self):
+        self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
+        valido_mensaje_sector_cheque = self.find_element(self.mensaje_cheche_no_poder_usar).is_displayed()
+        return valido_mensaje_sector_cheque
+
+    def escribir_en_campo_texto(self, campo, numero):
+        self.implicit_wait_visible(campo)
+        elemento = self.driver.find_element(*campo)
+        elemento.click()
+        elemento.send_keys(numero)
 
     def escribir_numero_efectivo(self, numero):
-        self.implicit_wait_visible(self.campo_texto_efectivo)
-        self.driver.find_element(*self.campo_texto_efectivo).click()  # Hacer click en el campo
-        self.driver.find_element(*self.campo_texto_efectivo).send_keys(numero)  # Escribir el número
+        self.escribir_en_campo_texto(self.campo_texto_efectivo, numero)
+        self.driver.hide_keyboard()
 
     def escribir_numero_transferencia(self, numero):
-        self.implicit_wait_visible(self.campo_texto_transferencia)
-        self.driver.find_element(*self.campo_texto_transferencia).click()  # Hacer click en el campo
-        self.driver.find_element(*self.campo_texto_transferencia).send_keys(numero)  # Escribir el número
-
-    def escribir_numero_transferencia(self, numero):
-        # Escribir el número en el campo de texto de transferencia
         self.escribir_en_campo_texto(self.campo_texto_transferencia, numero)
+        self.driver.hide_keyboard()
 
     def seleccionar_check_transferencia(self):
         self.implicit_wait_visible(self.check_transferencia)
