@@ -21,23 +21,30 @@ class RevisarPedidoPage(Page):
     factura_del_pedido_erbi_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 8390812"]')
     sprite_MidCal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
     benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
-    fanta_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
+    fanta_midcal_express_pedido = (
+        MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
     precio_unitario_sprite_midCal = (MobileBy.XPATH, '//android.widget.TextView[@text="$65.064"]')
     precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$66.210"]')
     precio_unitario_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@text="$376.873"]')
-    cantidad_pack_fanta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and @text="de 2 "]')
+    cantidad_pack_fanta = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and @text="de 2 "]')
     cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
                                             '@text="de 1 "]')
     cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
                                                  '@text="de 7 "]')
-    precio_final_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
-    precio_final_fanta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
-    precio_final_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
+    precio_final_sprite = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
+    precio_final_fanta = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
+    precio_final_benedictino = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
     retornar_factura_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar factura"]')
     retornar_todo_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar todo"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
-    benedictino_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 53.839 "]')
-    fanta_precio_unitario = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 33.105 "]')
+    benedictino_precio_unitario = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 53.839 "]')
+    fanta_precio_unitario = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-unit-price" and @text="$ 33.105 "]')
     nota_de_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="- $ 25.000"]')
     metodo_de_pago = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="formatted-product"]')
     metodo_de_pago_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
@@ -45,6 +52,52 @@ class RevisarPedidoPage(Page):
     efectivo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Efectivo"]')
     mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Con más de un método de pago"]')
     transferencia_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
+    validar_metodo_pago_mensaje = (
+        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc=", Método de pago editado"]')
+    check_efectivo = (MobileBy.XPATH, '(//android.widget.CheckBox[@resource-id="check-ContainerTwoPage"])['
+                                      '1]/android.view.ViewGroup/android.view.ViewGroup')
+    check_transferencia = (MobileBy.XPATH, '(//android.widget.CheckBox[@resource-id="check-ContainerTwoPage"])['
+                                           '2]/android.view.ViewGroup/android.view.ViewGroup')
+    campo_texto_efectivo = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[1]')
+    campo_texto_transferencia = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
+    mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
+                                                    'parte de pago. Solo se acepta para el total."]')
+
+    def cheque_mensaje_no_poder_usar(self):
+        self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
+        valido_mensaje_sector_cheque = self.find_element(self.mensaje_cheche_no_poder_usar).is_displayed()
+        return valido_mensaje_sector_cheque
+
+    def escribir_en_campo_texto(self, campo, numero):
+        self.implicit_wait_visible(campo)
+        elemento = self.driver.find_element(*campo)
+        elemento.click()
+        elemento.send_keys(numero)
+
+    def escribir_numero_efectivo(self, numero):
+        self.escribir_en_campo_texto(self.campo_texto_efectivo, numero)
+        self.driver.hide_keyboard()
+
+    def escribir_numero_transferencia(self, numero):
+        self.escribir_en_campo_texto(self.campo_texto_transferencia, numero)
+        self.driver.hide_keyboard()
+
+    def seleccionar_check_transferencia(self):
+        self.implicit_wait_visible(self.check_transferencia)
+        valido_check_transferencia = self.find_element(self.check_transferencia).is_displayed()
+        self.click_on_element(self.check_transferencia)
+        return valido_check_transferencia
+
+    def seleccionar_check_efectivo(self):
+        self.implicit_wait_visible(self.check_efectivo)
+        valido_check_efectivo = self.find_element(self.check_efectivo).is_displayed()
+        self.click_on_element(self.check_efectivo)
+        return valido_check_efectivo
+
+    def metodo_pago_mensaje(self):
+        self.implicit_wait_visible(self.validar_metodo_pago_mensaje)
+        valido_mensaje_pago = self.find_element(self.validar_metodo_pago_mensaje).is_displayed()
+        return valido_mensaje_pago
 
     def valido_pedido_el_deseo_spa(self):
         self.implicit_wait_visible(self.el_deseo_spa_titulo)
@@ -191,17 +244,20 @@ class RevisarPedidoPage(Page):
         return valido_agregar
 
     def valido_comparacion_de_precio(self):
-        producto_1 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
+        producto_1 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
-        producto_2 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
+        producto_2 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        producto_3 = self.driver.find_element(MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
+        producto_3 = self.driver.find_element(MobileBy.XPATH,
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)
@@ -256,4 +312,3 @@ class RevisarPedidoPage(Page):
         self.implicit_wait_visible(self.transferencia_texto)
         metodo_seleccionado = self.find_element(self.transferencia_texto).is_displayed()
         return metodo_seleccionado
-

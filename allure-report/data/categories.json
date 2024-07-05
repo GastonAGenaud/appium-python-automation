@@ -1,1 +1,37 @@
-{"uid":"4b4757e66a1912dae1a509f688f20b0f","name":"categories","children":[{"name":"Product defects","children":[{"name":"AssertionError\n","children":[{"name":"Valido las zonas de accion de la pantalla de Inicio de sesion","uid":"55bee266100950a9","parentUid":"a730cf0b0a23aabea6d11aa0391c8a76","status":"failed","time":{"start":1718286614424,"stop":1718286625689,"duration":11265},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["regresion","ux"]},{"name":"Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"","uid":"3bcb241f8202d8bc","parentUid":"a730cf0b0a23aabea6d11aa0391c8a76","status":"failed","time":{"start":1718286625690,"stop":1718286641250,"duration":15560},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["regresion","ux"]},{"name":"Validacion de boton \"Login\" deshabilitado","uid":"2300e51567beb412","parentUid":"a730cf0b0a23aabea6d11aa0391c8a76","status":"failed","time":{"start":1718288208812,"stop":1718288215409,"duration":6597},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["iniciar_sesion"]}],"uid":"a730cf0b0a23aabea6d11aa0391c8a76"}],"uid":"8fb3a91ba5aaf9de24cc8a92edc82b5d"},{"name":"Test defects","children":[{"name":"ValueError: No se encontro el boton de 'Cerrar pedido'\n","children":[{"name":"Valido las zonas de accion de la pantalla del Pedido","uid":"18d6064010787cd","parentUid":"c454b941226f264012817e6ebc987f11","status":"broken","time":{"start":1718286641250,"stop":1718286722624,"duration":81374},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["regresion","ux"]}],"uid":"c454b941226f264012817e6ebc987f11"},{"name":"ValueError: No se encontro el mensaje de error en el campo de 'No se admiten caracteres especiales'\n","children":[{"name":"Validacion de error de caracteres especiales","uid":"41791d8e4987f211","parentUid":"76e0989a4c2e32c6e54b70187119a654","status":"broken","time":{"start":1718288199900,"stop":1718288208811,"duration":8911},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["iniciar_sesion"]}],"uid":"76e0989a4c2e32c6e54b70187119a654"}],"uid":"bdbf199525818fae7a8651db9eafe741"}]}
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'el usuario ingresa el correo electrónico \"conductor-01\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given el usuario ingresa el correo electrónico \"conductor-01\"')\n\n",
+      "children" : [ {
+        "name" : "Validación del sector \"Retornados\" -- @1.1 ",
+        "uid" : "20d46f0fd6ccedc1",
+        "parentUid" : "67f8cc4768a7aefaf7fe0428e00845ad",
+        "status" : "broken",
+        "time" : {
+          "start" : 1717527017998,
+          "stop" : 1717527023813,
+          "duration" : 5815
+        },
+        "flaky" : false,
+        "parameters" : [ "test123", "test@test.com" ]
+      }, {
+        "name" : "Validación del sector \"Retornados\" -- @1.2 ",
+        "uid" : "4f5a77cc531411ce",
+        "parentUid" : "67f8cc4768a7aefaf7fe0428e00845ad",
+        "status" : "broken",
+        "time" : {
+          "start" : 1717527023815,
+          "stop" : 1717527029427,
+          "duration" : 5612
+        },
+        "flaky" : false,
+        "parameters" : [ "test123", "Jonathan" ]
+      } ],
+      "uid" : "67f8cc4768a7aefaf7fe0428e00845ad"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
