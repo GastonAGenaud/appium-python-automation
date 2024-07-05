@@ -33,7 +33,7 @@ def valido_icono_entrega_impecable(context):
 
 @then('Valido el pedido entregado correctamente')
 def valido_productos_en_entregados(context):
-    assert context.app.empty_states_page.productos_en_entregados()
+    assert bool(context.app.empty_states_page.productos_en_entregados())
 
 
 @when('cierro el cuadro de texto')
