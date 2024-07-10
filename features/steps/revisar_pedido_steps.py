@@ -216,21 +216,6 @@ def valido_check_como_pagar(context, metodo):
         raise ValueError(f"No se encontró el check de '{metodo}'")
 
 
-@when('Escribo el numero total "{total}" y lo divido en dos partes para "{metodo1}" y "{metodo2}"')
-def escribo_numero_dividido(context, total, metodo1, metodo2):
-    valor_efectivo = 1
-    valor_transferencia = 508146
-
-    if metodo1.strip() == "Efectivo":
-        context.app.revisar_pedido_page.escribir_numero_efectivo(str(valor_efectivo))
-    elif metodo1.strip() == "Transferencia":
-        context.app.revisar_pedido_page.escribir_numero_transferencia(str(valor_transferencia))
-    else:
-        raise ValueError(f"No se encontró el método de pago '{metodo1}'")
-
-    if metodo2.strip() == "Efectivo":
-        context.app.revisar_pedido_page.escribir_numero_efectivo(str(valor_efectivo))
-    elif metodo2.strip() == "Transferencia":
-        context.app.revisar_pedido_page.escribir_numero_transferencia(str(valor_transferencia))
-    else:
-        raise ValueError(f"No se encontró el método de pago '{metodo2}'")
+@when('Ingreso los montos en efectivo y transferencia')
+def ingreso_montos_efectivo_transferencia(context):
+    context.app.revisar_pedido_page.ingreso_montos_transferencia_efectivo()

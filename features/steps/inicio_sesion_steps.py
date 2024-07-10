@@ -18,13 +18,10 @@ def usuario_ingresa_una_contrasena(context):
 
 @given('Ingreso con el conductor a la aplicacion')
 def usuario_ingresa_aplicacion(context):
-    print(context.logged_in)
     if not context.logged_in:
-        print("dentro del if not")
         # Leer la configuración del archivo config.json
         with open(os.path.join(context.basedir, 'config.json')) as config_file:
             config = json.load(config_file)
-            print("config" + str(config['target']['password']))
         context.app.inicio_sesion_page.usuario_ingresa_correo(config['target']['usuario'], context.logged_in)
         context.app.inicio_sesion_page.usuario_ingresa_contrasena(config['target']['password'], context.logged_in)
         context.app.inicio_sesion_page.click_iniciar_sesion_btn(context.logged_in)

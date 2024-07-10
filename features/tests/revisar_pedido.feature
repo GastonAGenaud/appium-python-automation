@@ -125,7 +125,7 @@ Característica: Revisar pedido
     Y selecciono el metodo de pago "Con mas de un metodo de pago"
     Y hago click en el check "Efectivo"
     Y hago click en el check "Transferencia"
-    Y Escribo el numero total "{total}" y lo divido en dos partes para "Efectivo" y "Transferencia"
+    Y Ingreso los montos en efectivo y transferencia
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 

@@ -68,20 +68,6 @@ class RevisarPedidoPage(Page):
         valido_mensaje_sector_cheque = self.find_element(self.mensaje_cheche_no_poder_usar).is_displayed()
         return valido_mensaje_sector_cheque
 
-    def escribir_en_campo_texto(self, campo, numero):
-        self.implicit_wait_visible(campo)
-        elemento = self.driver.find_element(*campo)
-        elemento.click()
-        elemento.send_keys(numero)
-
-    def escribir_numero_efectivo(self, numero):
-        self.escribir_en_campo_texto(self.campo_texto_efectivo, numero)
-        self.driver.hide_keyboard()
-
-    def escribir_numero_transferencia(self, numero):
-        self.escribir_en_campo_texto(self.campo_texto_transferencia, numero)
-        self.driver.hide_keyboard()
-
     def seleccionar_check_transferencia(self):
         self.implicit_wait_visible(self.check_transferencia)
         valido_check_transferencia = self.find_element(self.check_transferencia).is_displayed()
@@ -312,3 +298,20 @@ class RevisarPedidoPage(Page):
         self.implicit_wait_visible(self.transferencia_texto)
         metodo_seleccionado = self.find_element(self.transferencia_texto).is_displayed()
         return metodo_seleccionado
+
+    def ingreso_montos_transferencia_efectivo(self):
+        total = self.driver.find_element(MobileBy.XPATH,
+                                              '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
+        precio_total = total.text
+        solo_numeros = re.sub(r'\D', '', precio_total)
+        total = int(solo_numeros)
+        monto_indivivual = total / 2
+
+        self.click_on_element(self.campo_texto_efectivo)
+        self.input(monto_indivivual, self.campo_texto_efectivo)
+
+        self.click_on_element(self.campo_texto_transferencia)
+        self.input(monto_indivivual, self.campo_texto_transferencia)
+
+
+
