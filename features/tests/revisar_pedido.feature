@@ -5,7 +5,8 @@ Característica: Revisar pedido
 
   Escenario: Validacion de visualizacion de ruta de pedido
     Dado Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Entonces se valida que la visualizacion de pedido para la ruta "El Deseo SPA" sea correcta
 
@@ -22,7 +23,7 @@ Característica: Revisar pedido
   Esquema del escenario: Validacion del contenido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Entonces valido el producto "<producto>"
@@ -42,7 +43,7 @@ Característica: Revisar pedido
   Escenario: Anular pedido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en el boton "Retornar factura"
@@ -51,7 +52,7 @@ Característica: Revisar pedido
   Escenario: Validacion del precio total del pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Entonces valido que este correcta la suma del precio de los productos
@@ -70,14 +71,14 @@ Característica: Revisar pedido
     Y el usuario ingresa el correo electronico "simple"
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
-    Y hago click en el boton "Comenzar ruta"
+    Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "Erbi"
     Entonces valido que la nota de credito sea "- $ 25.000"
 
   Esquema del escenario: Valido la seccion de metodo de pago desde la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "metodo de pago"
@@ -95,7 +96,7 @@ Característica: Revisar pedido
   Escenario: Valido la seccion de metodo de pago "Transferencia"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "metodo de pago"
@@ -106,7 +107,7 @@ Característica: Revisar pedido
   Escenario: Valido la seccion de metodo de pago "Efectivo"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "metodo de pago"
@@ -118,7 +119,7 @@ Característica: Revisar pedido
   Escenario: Valido la seccion de metodo de pago "Con más de un método de pago"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "método de pago"
@@ -133,7 +134,7 @@ Característica: Revisar pedido
   Escenario: Valido el texto que se muestra en el sector de pago con Cheque
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Comenzar ruta"
+    Cuando hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "método de pago"

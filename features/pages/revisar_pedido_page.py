@@ -62,6 +62,7 @@ class RevisarPedidoPage(Page):
     campo_texto_transferencia = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
     mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
                                                     'parte de pago. Solo se acepta para el total."]')
+    vuelta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-home-1"]')
 
     def cheque_mensaje_no_poder_usar(self):
         self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
@@ -313,5 +314,6 @@ class RevisarPedidoPage(Page):
         self.click_on_element(self.campo_texto_transferencia)
         self.input(monto_indivivual, self.campo_texto_transferencia)
 
-
+    def click_vuelta_1(self):
+        self.click_on_element(self.vuelta)
 

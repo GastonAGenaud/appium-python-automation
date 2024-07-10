@@ -219,3 +219,8 @@ def valido_check_como_pagar(context, metodo):
 @when('Ingreso los montos en efectivo y transferencia')
 def ingreso_montos_efectivo_transferencia(context):
     context.app.revisar_pedido_page.ingreso_montos_transferencia_efectivo()
+
+
+@when('selecciono la vuelta "{vuelta}"')
+def seleccionar_vuelta(context, vuelta):
+    context.app.revisar_pedido_page.click_vuelta_1()
