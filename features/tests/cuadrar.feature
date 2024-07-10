@@ -6,7 +6,7 @@ Característica: Cuadrar
         Dado el usuario ingresa el correo electronico "simple"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y hago click en el boton "Comenzar ruta"
+        Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "Erbi"
         Y selecciono la factura con numero "83908330"
         Y hago click en el boton "entregar"
@@ -47,7 +47,7 @@ Característica: Cuadrar
     @modalComenzarRuta
     Escenario: Validacion del texto "Entregada"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Comenzar ruta"
+        Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"

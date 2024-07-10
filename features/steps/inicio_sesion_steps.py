@@ -44,8 +44,8 @@ def click_en_el_boton(context, boton):
         context.app.entregar_pedido_page.click_confirmar_boton()
     elif boton == "Modificar":
         context.app.entregar_pedido_page.click_modificar_btn()
-    elif boton == "Comenzar ruta":
-        context.app.modificar_recorrido_page.click_comenzar_ruta_btn()
+    elif boton == "Iniciar vuelta":
+        context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()
     elif boton == "Entendido":
         context.app.modificar_recorrido_page.click_entendido_boton()
     elif boton == "Desplegar":
@@ -76,7 +76,7 @@ def validar_mensaje_de_error(context, texto):
 
 @then('se inicia sesion exitosamente')
 def inicio_sesion_exitosamente(context):
-    assert bool(context.app.inicio_sesion_page.valid_comenzar_ruta_btn())
+    assert bool(context.app.inicio_sesion_page.valid_mensaje_saludo())
 
 
 @given('estoy en la pantalla de inicio de sesion')

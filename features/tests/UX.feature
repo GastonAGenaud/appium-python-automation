@@ -16,7 +16,7 @@ Característica: Validaciones de UX/UI
     @regresion
     Escenario: Valido las zonas de accion de la pantalla del Pedido
         Dado Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Comenzar ruta"
+        Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornar todo"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Confirmar"]"
@@ -79,7 +79,7 @@ Característica: Validaciones de UX/UI
         Y el usuario ingresa el correo electronico "simple"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
-        Y hago click en el boton "Comenzar ruta"
+        Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "Erbi"
         Y selecciono la factura con numero "83908330"
         Y hago click en el boton "entregar"
@@ -105,7 +105,7 @@ Característica: Validaciones de UX/UI
     Escenario: Valido las zonas de accion del modal de Metodo de Pago
         Dado Reseteo la app
         Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Comenzar ruta"
+        Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"

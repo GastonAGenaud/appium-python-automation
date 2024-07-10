@@ -10,7 +10,7 @@ Característica: Modificar recorrido sugerido
     @regresion
     Escenario: Validacion del boton "Comenzar ruta"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Comenzar ruta"
+        Cuando hago click en el boton "Iniciar vuelta"
         Entonces se valida que el boton "Comenzar ruta" haya sido seleccionado correctamente
 
     @regresion

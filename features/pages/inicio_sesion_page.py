@@ -9,6 +9,7 @@ class InicioSesionPage(Page):
     mensaje_error_contrasena = (MobileBy.XPATH, '//android.widget.TextView[@text="Tienes que ingresar una contraseña"]')
     comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
     iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión')
+    mensaje_saludo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-home"]')
 
     def usuario_ingresa_correo(self, correo, logged_in):
         if not logged_in:
@@ -53,6 +54,11 @@ class InicioSesionPage(Page):
         self.implicit_wait_visible(self.comenzar_ruta_btn)
         valido_comenzar_ruta = self.find_element(self.comenzar_ruta_btn).is_displayed()
         return valido_comenzar_ruta
+
+    def valid_mensaje_saludo(self):
+        self.implicit_wait_visible(self.mensaje_saludo)
+        valido_saludo = self.find_element(self.mensaje_saludo).is_displayed()
+        return valido_saludo
 
     def valido_pantalla_de_inicio(self):
         self.implicit_wait_visible(self.iniciar_sesion_btn)

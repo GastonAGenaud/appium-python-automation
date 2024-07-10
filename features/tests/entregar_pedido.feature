@@ -5,7 +5,7 @@ Característica: Entregar pedido
     @regresion
     Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Retornados"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Comenzar ruta"
+        Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"
@@ -31,7 +31,7 @@ Característica: Entregar pedido
     Escenario: Valido la entrega de un pedido
         Dado Reseteo la app
         Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Comenzar ruta"
+        Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"

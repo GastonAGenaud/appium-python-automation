@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class ModificarRecorridoPage(Page):
-    comenzar_ruta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
+    iniciar_vuelta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Iniciar vuelta"]')
     el_deseo_spa_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
     boton_desplegable_mas = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Más productos"]')
     boton_desplegable_menos = (MobileBy.XPATH, '//android.widget.TextView[@text="Menos productos"]')
@@ -35,15 +35,15 @@ class ModificarRecorridoPage(Page):
         nombre_local = self.find_element(self.el_deseo_spa_local).is_displayed()
         return nombre_local
 
-    def click_comenzar_ruta_btn(self):
+    def click_iniciar_vuelta_btn(self):
         max_attempts = 4  # Número máximo de intentos
         attempts = 0
 
         while attempts < max_attempts:
-            self.click_on_element(self.comenzar_ruta_btn)
+            self.click_on_element(self.iniciar_vuelta_btn)
             try:
                 WebDriverWait(self.driver, 2).until_not(
-                    EC.presence_of_element_located(self.comenzar_ruta_btn)
+                    EC.presence_of_element_located(self.iniciar_vuelta_btn)
                 )
                 print("El botón ha desaparecido.")
                 break
