@@ -26,12 +26,12 @@ class EmptyStatesPage(Page):
                                 '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com'
                                 '.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     rebajados_seccion = (MobileBy.ACCESSIBILITY_ID, 'Rebajados')
-    producto_en_entregados = (MobileBy.ACCESSIBILITY_ID, 'EL DESEO SPA, AVDA ANDRES BELLO 2447, Abierto, Cierra a las '
-                                                         '23:59, Productos , 16, Efectivo, $866.455')
+    producto_en_entregados = (MobileBy.XPATH, '//android.widget.TextView[@text="EL DESEO SPA"]')
 
     def productos_en_entregados(self):
         self.implicit_wait_visible(self.producto_en_entregados)
-        return self.find_element(self.producto_en_entregados).is_displayed()
+        producto_entregado = self.find_element(self.producto_en_entregados).is_displayed()
+        return producto_entregado
 
     def seccion_retornados(self):
         max_attempts = 4  # Número máximo de intentos

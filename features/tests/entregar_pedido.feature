@@ -29,17 +29,22 @@ Característica: Entregar pedido
 
 
     Escenario: Valido la entrega de un pedido
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Y hago click en el boton "Comenzar ruta"
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Comenzar ruta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"
+        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Y selecciono la segunda factura factura con numero "404145531"
+        Entonces valido que el metodo de pago fue seleccionado
+        Cuando hago click en el boton "Confirmar"
+        Y selecciono la segunda factura con numero "404145531"
         Y hago click en el boton "entregar"
+        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
+        Entonces valido que el metodo de pago fue seleccionado
+        Cuando hago click en el boton "Confirmar"
         Entonces valido que las facturas fueron entregadas
         Cuando hago click en el boton "Confirmar"
         Entonces valido el icono de la pantalla "Entrega impecable"
@@ -48,19 +53,6 @@ Característica: Entregar pedido
         Y valido el botón "Volver a mi ruta"
 
     Escenario: Valido que un pedido entregado este en el sector "Entregados"
-        Dado el usuario ingresa el correo electronico "conductor-01"
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Y hago click en el boton "Comenzar ruta"
-        Y elijo la ruta "El Deseo SPA"
-        Y selecciono la factura con numero "404145531"
-        Y hago click en el boton "entregar"
-        Y hago click en el boton "Confirmar"
-        Y selecciono la segunda factura factura con numero "404145531"
-        Y hago click en el boton "entregar"
-        Y hago click en el boton "Confirmar"
-        Entonces valido que las facturas fueron entregadas
-        Cuando hago click en el boton "Confirmar"
-        Y hago click en el boton "Volver a mi ruta"
-        Y selecciono "Entregados"
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando selecciono "Entregados"
         Entonces Valido el pedido entregado correctamente
