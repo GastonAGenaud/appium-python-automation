@@ -1,0 +1,518 @@
+{
+  "uid" : "356c039e79963b3d",
+  "name" : "Valido la seccion de metodo de pago \"Transferencia\"",
+  "fullName" : "Revisar pedido: Valido la seccion de metodo de pago \"Transferencia\"",
+  "historyId" : "84e9f3acabb6e6cfe86f8627d3afc288",
+  "time" : {
+    "start" : 1720703875962,
+    "stop" : 1720703932491,
+    "duration" : 56529
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1720703876482,
+        "stop" : 1720703881988,
+        "duration" : 5506
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1720703881988,
+        "stop" : 1720703889890,
+        "duration" : 7902
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1720703889890,
+        "stop" : 1720703890917,
+        "duration" : 1027
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1720703890917,
+        "stop" : 1720703925932,
+        "duration" : 35015
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1720703925932,
+        "stop" : 1720703926268,
+        "duration" : 336
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1720703926268,
+        "stop" : 1720703927603,
+        "duration" : 1335
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en la opcion \"metodo de pago\"",
+      "time" : {
+        "start" : 1720703927603,
+        "stop" : 1720703929365,
+        "duration" : 1762
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el metodo de pago \"Transferencia\"",
+      "time" : {
+        "start" : 1720703929365,
+        "stop" : 1720703930602,
+        "duration" : 1237
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1720703930602,
+        "stop" : 1720703931350,
+        "duration" : 748
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el mensaje \"Metodo de pago editado\"",
+      "time" : {
+        "start" : 1720703931350,
+        "stop" : 1720703932384,
+        "duration" : 1034
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "24782d98f1ba640f",
+      "name" : "Valido la seccion de metodo de pago \"Transferencia\"",
+      "source" : "24782d98f1ba640f.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 10,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f96744560fe7113a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702930395,
+        "stop" : 1720702930396,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d031c74d6731df83",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702848025,
+        "stop" : 1720702848026,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6b964e9a5efe8e03",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702347552,
+        "stop" : 1720702347553,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "961e078ba14a0b3a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720640305796,
+        "stop" : 1720640305796,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "b8c57af87837b3d8",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720625420672,
+        "stop" : 1720625463404,
+        "duration" : 42732
+      }
+    }, {
+      "uid" : "a00df55c2c4c018b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720189678671,
+        "stop" : 1720189678672,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1dbd549e71b28671",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720185090877,
+        "stop" : 1720185145897,
+        "duration" : 55020
+      }
+    }, {
+      "uid" : "571ba40d2d711a85",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184877042,
+        "stop" : 1720184877043,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e63bd2acc988f4c1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184755219,
+        "stop" : 1720184755222,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "c79d1871c99458c4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184596035,
+        "stop" : 1720184596037,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7f9400a9bb42a8e4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720183647583,
+        "stop" : 1720183647585,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dfccac4e42a06b83",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720126011205,
+        "stop" : 1720126011205,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "f1236ace7c891c03",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720125379217,
+        "stop" : 1720125379218,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b09736de40aa3fc6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122738675,
+        "stop" : 1720122738677,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3f6429af04516d22",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122574942,
+        "stop" : 1720122574943,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "55059a090ab5a89c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122514985,
+        "stop" : 1720122514987,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7006b70eec317871",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122071451,
+        "stop" : 1720122071452,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c39a227bec12dd9b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121847229,
+        "stop" : 1720121847231,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8d39f52420fe96bc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121721518,
+        "stop" : 1720121721520,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c392abbcf90cc9cd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121448168,
+        "stop" : 1720121448170,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b636f6ff2ff80b15",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121008268,
+        "stop" : 1720121008269,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "325d1525771751fe",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120663161,
+        "stop" : 1720120663163,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "da06e68cae0da8f8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120431581,
+        "stop" : 1720120431583,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4113395e5147869",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720120228136,
+        "stop" : 1720120284052,
+        "duration" : 55916
+      }
+    }, {
+      "uid" : "d2f5cde8661e47cf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119895488,
+        "stop" : 1720119895489,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5dcf822a9dcdc067",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119803129,
+        "stop" : 1720119803131,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b16f9c5e92b7336d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119758128,
+        "stop" : 1720119758130,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "834ecec77594c6ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119668215,
+        "stop" : 1720119668217,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "51291d4c7de2a7e9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119516393,
+        "stop" : 1720119516394,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed4901e8118d0ab9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119377558,
+        "stop" : 1720119377559,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a503f89ac60c79c1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119249811,
+        "stop" : 1720119249812,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "24b037746a21acea",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118789554,
+        "stop" : 1720118789556,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c278213d1a55cc9d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118574652,
+        "stop" : 1720118574654,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9e2c680281d773f3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118351276,
+        "stop" : 1720118351278,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d029094b46972663",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118258492,
+        "stop" : 1720118258493,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2017e861c02ae004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720116990427,
+        "stop" : 1720117048442,
+        "duration" : 58015
+      }
+    }, {
+      "uid" : "104b48b5020e7dc8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720109422540,
+        "stop" : 1720109507163,
+        "duration" : 84623
+      }
+    }, {
+      "uid" : "e0c42881826bc0a",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720108518374,
+        "stop" : 1720108558678,
+        "duration" : 40304
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "356c039e79963b3d.json",
+  "parameterValues" : [ ]
+}

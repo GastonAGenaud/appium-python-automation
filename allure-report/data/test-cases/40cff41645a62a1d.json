@@ -1,0 +1,90 @@
+{
+  "uid" : "40cff41645a62a1d",
+  "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "fullName" : "Revisar pedido: Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "historyId" : "d5fa3a42b39b0cbebdca29f1d9bed3fb",
+  "time" : {
+    "start" : 1720624301504,
+    "stop" : 1720624302965,
+    "duration" : 1461
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1720624302033,
+        "stop" : 1720624302034,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de la opcion \"Google Maps\"",
+      "time" : {
+        "start" : 1720624302034,
+        "stop" : 1720624302166,
+        "duration" : 132
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "af070cb4c0e2d2db",
+      "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+      "source" : "af070cb4c0e2d2db.mp4",
+      "type" : "video/mp4",
+      "size" : 94134
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "40cff41645a62a1d.json",
+  "parameterValues" : [ ]
+}

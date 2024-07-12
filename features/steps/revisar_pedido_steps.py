@@ -57,20 +57,24 @@ def visualizo_la_factura2(context, factura):
 @then('valido que se muestre una confirmacion de anulacion del pedido')
 def valido_anulacion_del_pedido(context):
     assert bool(
-        context.app.revisar_pedido_page.valido_opcion_google_maps()), "La confirmación de anulación del pedido no es visible"
+        context.app.revisar_pedido_page.valido_opcion_google_maps()), ("La confirmación de anulación del pedido no es "
+                                                                       "visible")
 
 
 @then('valido el producto "{producto}"')
 def valido_producto(context, producto):
     if producto == "Sprite MidCal PT250cc x6":
         assert bool(
-            context.app.revisar_pedido_page.valido_producto_sprite_MidCal()), f"El producto '{producto}' no está en la lista"
+            context.app.revisar_pedido_page.valido_producto_sprite_MidCal()), (f"El producto '{producto}' no está en "
+                                                                               f"la lista")
     elif producto == "Fanta MidCal Express 237cc x 24":
         assert bool(
-            context.app.revisar_pedido_page.valido_producto_fanta_express()), f"El producto '{producto}' no está en la lista"
+            context.app.revisar_pedido_page.valido_producto_fanta_express()), (f"El producto '{producto}' no está en "
+                                                                               f"la lista")
     elif producto == "Benedictino S/G PT6.5 x 2 Cilindrico":
         assert bool(
-            context.app.revisar_pedido_page.benedictino_cilindrico_pedido()), f"El producto '{producto}' no está en la lista"
+            context.app.revisar_pedido_page.benedictino_cilindrico_pedido()), (f"El producto '{producto}' no está en "
+                                                                               f"la lista")
     else:
         raise ValueError(f"No se encontró el producto '{producto}'")
 
@@ -149,7 +153,8 @@ def valido_total_precio(context, precio):
 @then('valido que este correcta la suma del precio de los productos')
 def valido_sea_correcto_precio(context):
     assert bool(
-        context.app.revisar_pedido_page.valido_comparacion_de_precio()), "La suma del precio de los productos no es correcta"
+        context.app.revisar_pedido_page.valido_comparacion_de_precio()), ("La suma del precio de los productos no es "
+                                                                          "correcta")
 
 
 @then('valido que la nota de credito sea "{monto}"')

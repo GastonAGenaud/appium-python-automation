@@ -1,0 +1,246 @@
+{
+  "uid" : "5e0c57d4290c35f0",
+  "name" : "Valido el texto que se muestra en el sector de pago con Cheque",
+  "fullName" : "Revisar pedido: Valido el texto que se muestra en el sector de pago con Cheque",
+  "historyId" : "570bac549b57fa98e2f394c853ac986e",
+  "time" : {
+    "start" : 1720704048808,
+    "stop" : 1720704102836,
+    "duration" : 54028
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1720704049329,
+        "stop" : 1720704054665,
+        "duration" : 5336
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1720704054665,
+        "stop" : 1720704062006,
+        "duration" : 7341
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1720704062006,
+        "stop" : 1720704063003,
+        "duration" : 997
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1720704063003,
+        "stop" : 1720704098254,
+        "duration" : 35251
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1720704098254,
+        "stop" : 1720704098582,
+        "duration" : 328
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1720704098582,
+        "stop" : 1720704099933,
+        "duration" : 1351
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en la opcion \"método de pago\"",
+      "time" : {
+        "start" : 1720704099933,
+        "stop" : 1720704101233,
+        "duration" : 1300
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el metodo de pago \"Con mas de un metodo de pago\"",
+      "time" : {
+        "start" : 1720704101233,
+        "stop" : 1720704101972,
+        "duration" : 739
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el mensaje que se muestra en el sector Cheque",
+      "time" : {
+        "start" : 1720704101972,
+        "stop" : 1720704102732,
+        "duration" : 760
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "50f9a63869e5335",
+      "name" : "Valido el texto que se muestra en el sector de pago con Cheque",
+      "source" : "50f9a63869e5335.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 9,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a4700df83eb570e5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702930401,
+        "stop" : 1720702930402,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9197a44ac4be89c6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702848032,
+        "stop" : 1720702848033,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "70769408d509c8a2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702347557,
+        "stop" : 1720702347559,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "401825bb11cf6116",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720640305801,
+        "stop" : 1720640305802,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "64b3f9fc10205a2c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720625550472,
+        "stop" : 1720625594087,
+        "duration" : 43615
+      }
+    }, {
+      "uid" : "f9b051f943ef19d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1720189678677,
+        "stop" : 1720189732471,
+        "duration" : 53794
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "5e0c57d4290c35f0.json",
+  "parameterValues" : [ ]
+}

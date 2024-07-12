@@ -1,1 +1,5 @@
-[{"data":{"Product defects":3,"Test defects":2}}]
+[ {
+  "data" : {
+    "Test defects" : 8
+  }
+} ]

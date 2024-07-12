@@ -1,0 +1,243 @@
+{
+  "uid" : "56f9e1f34d85f4fd",
+  "name" : "Validacion del contenido de la factura -- @1.2 ",
+  "fullName" : "Revisar pedido: Validacion del contenido de la factura",
+  "historyId" : "508c9d15e8f202bb9204b34a580808a7",
+  "time" : {
+    "start" : 1720624346784,
+    "stop" : 1720624390452,
+    "duration" : 43668
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\inicio_sesion_steps.py\", line 48, in click_en_el_boton\n    context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\modificar_recorrido_page.py\", line 43, in click_iniciar_vuelta_btn\n    self.click_on_element(self.iniciar_vuelta_btn)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\inicio_sesion_steps.py\", line 48, in click_en_el_boton\n    context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\modificar_recorrido_page.py\", line 43, in click_iniciar_vuelta_btn\n    self.click_on_element(self.iniciar_vuelta_btn)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1720624347300,
+        "stop" : 1720624352916,
+        "duration" : 5616
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1720624352916,
+        "stop" : 1720624360274,
+        "duration" : 7358
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1720624360274,
+        "stop" : 1720624390347,
+        "duration" : 30073
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\inicio_sesion_steps.py\", line 48, in click_en_el_boton\n    context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\modificar_recorrido_page.py\", line 43, in click_iniciar_vuelta_btn\n    self.click_on_element(self.iniciar_vuelta_btn)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1720624390451,
+        "stop" : 1720624390451,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1720624390451,
+        "stop" : 1720624390451,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el producto \"Fanta MidCal Express 237cc x 24\"",
+      "time" : {
+        "start" : 1720624390452,
+        "stop" : 1720624390452,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el precio unitario \"$ 33.105\" en la factura",
+      "time" : {
+        "start" : 1720624390452,
+        "stop" : 1720624390452,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido la cantidad de pack pedidos \"2\"",
+      "time" : {
+        "start" : 1720624390452,
+        "stop" : 1720624390452,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el sector de botones de agregar y restar",
+      "time" : {
+        "start" : 1720624390452,
+        "stop" : 1720624390452,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el precio final \"$ 66.210\"",
+      "time" : {
+        "start" : 1720624390452,
+        "stop" : 1720624390452,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido que el precio total sea de \"$ 508.147\"",
+      "time" : {
+        "start" : 1720624390452,
+        "stop" : 1720624390452,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "83ab3260846e80b1",
+      "name" : "Validacion del contenido de la factura -- @1.2 ",
+      "source" : "83ab3260846e80b1.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cantidadPack",
+    "value" : "2"
+  }, {
+    "name" : "precioTotal",
+    "value" : "$ 66.210"
+  }, {
+    "name" : "precioUnitario",
+    "value" : "$ 33.105"
+  }, {
+    "name" : "producto",
+    "value" : "Fanta MidCal Express 237cc x 24"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "56f9e1f34d85f4fd.json",
+  "parameterValues" : [ "2", "$ 66.210", "$ 33.105", "Fanta MidCal Express 237cc x 24" ]
+}

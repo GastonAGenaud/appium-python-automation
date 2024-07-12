@@ -1,0 +1,354 @@
+{
+  "uid" : "b9281f9f24445c6",
+  "name" : "Validación de la pantalla de retomar pedidos",
+  "fullName" : "Anular pedido: Validación de la pantalla de retomar pedidos",
+  "historyId" : "cf9e1395d3ba38690d1e041df4f1f5cc",
+  "time" : {
+    "start" : 1718029891192,
+    "stop" : 1718029952980,
+    "duration" : 61788
+  },
+  "status" : "broken",
+  "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'verifico que se redireccione a la pantalla de detalles del pedido')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then verifico que se redireccione a la pantalla de detalles del pedido')\n\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'verifico que se redireccione a la pantalla de detalles del pedido')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then verifico que se redireccione a la pantalla de detalles del pedido')\n\n",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1718029897193,
+        "stop" : 1718029900889,
+        "duration" : 3696
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1718029900890,
+        "stop" : 1718029902742,
+        "duration" : 1852
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1718029902742,
+        "stop" : 1718029905583,
+        "duration" : 2841
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1718029905584,
+        "stop" : 1718029941184,
+        "duration" : 35600
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1718029941184,
+        "stop" : 1718029941549,
+        "duration" : 365
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1718029941549,
+        "stop" : 1718029942627,
+        "duration" : 1078
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1718029942627,
+        "stop" : 1718029944449,
+        "duration" : 1822
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1718029944449,
+        "stop" : 1718029945527,
+        "duration" : 1078
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1718029945527,
+        "stop" : 1718029946484,
+        "duration" : 957
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la segunda factura factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1718029946484,
+        "stop" : 1718029948026,
+        "duration" : 1542
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1718029948026,
+        "stop" : 1718029948967,
+        "duration" : 941
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1718029948967,
+        "stop" : 1718029950677,
+        "duration" : 1710
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1718029950678,
+        "stop" : 1718029951394,
+        "duration" : 716
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces verifico que se redireccione a la pantalla de detalles del pedido",
+      "time" : {
+        "start" : 1718029951394,
+        "stop" : 1718029951394,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'verifico que se redireccione a la pantalla de detalles del pedido')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then verifico que se redireccione a la pantalla de detalles del pedido')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y selecciono el boton \"Retornar pedido\"",
+      "time" : {
+        "start" : 1718029952979,
+        "stop" : 1718029952980,
+        "duration" : 1
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'selecciono el boton \"Retornar pedido\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then selecciono el boton \"Retornar pedido\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y selecciono \"Sobre stock\"",
+      "time" : {
+        "start" : 1718029952980,
+        "stop" : 1718029952980,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1718029952980,
+        "stop" : 1718029952980,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'hago click en el boton \"Confirmar\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then hago click en el boton \"Confirmar\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y selecciono el sector \"Retornados\"",
+      "time" : {
+        "start" : 1718029952980,
+        "stop" : 1718029952980,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'selecciono el sector \"Retornados\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then selecciono el sector \"Retornados\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Entonces Valido la pantalla de retomar pedidos",
+      "time" : {
+        "start" : 1718029952980,
+        "stop" : 1718029952980,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "33c5429d1d451e23",
+      "name" : "Validación de la pantalla de retomar pedidos",
+      "source" : "33c5429d1d451e23.mp4",
+      "type" : "video/mp4",
+      "size" : 15506414
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 19,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "probandoAnular"
+  }, {
+    "name" : "tag",
+    "value" : "retomarPedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "retomarPedido", "probandoAnular" ]
+  },
+  "source" : "b9281f9f24445c6.json",
+  "parameterValues" : [ ]
+}

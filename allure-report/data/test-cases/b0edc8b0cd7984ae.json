@@ -1,0 +1,177 @@
+{
+  "uid" : "b0edc8b0cd7984ae",
+  "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+  "historyId" : "1e0d01dc500cd12a070bf35f69c23873",
+  "time" : {
+    "start" : 1720185090723,
+    "stop" : 1720185090724,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1720185090723,
+        "stop" : 1720185090723,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Retornados\"]\"",
+      "time" : {
+        "start" : 1720185090723,
+        "stop" : 1720185090723,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Entregados\"]\"",
+      "time" : {
+        "start" : 1720185090723,
+        "stop" : 1720185090724,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Pendientes\"]\"",
+      "time" : {
+        "start" : 1720185090724,
+        "stop" : 1720185090724,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Comenzar ruta\"]\"",
+      "time" : {
+        "start" : 1720185090724,
+        "stop" : 1720185090724,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Modificar\"]\"",
+      "time" : {
+        "start" : 1720185090724,
+        "stop" : 1720185090724,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Más productos\"]\"",
+      "time" : {
+        "start" : 1720185090724,
+        "stop" : 1720185090724,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido la pantalla con la imagen de referencia \"//android.view.ViewGroup[@content-desc='Pendientes']\" \"features/screenshots/referencia_pendientes.png\"",
+      "time" : {
+        "start" : 1720185090724,
+        "stop" : 1720185090724,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "b0edc8b0cd7984ae.json",
+  "parameterValues" : [ ]
+}

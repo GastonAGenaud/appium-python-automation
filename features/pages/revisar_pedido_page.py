@@ -1,4 +1,7 @@
 import re
+
+from appium.webdriver.extensions.android.nativekey import AndroidKey
+
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -27,11 +30,10 @@ class RevisarPedidoPage(Page):
     precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$66.210"]')
     precio_unitario_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@text="$376.873"]')
     cantidad_pack_fanta = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and @text="de 2 "]')
-    cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
-                                            '@text="de 1 "]')
-    cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
-                                                 '@text="de 7 "]')
+        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="2"]')
+    cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="1"]')
+    cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and '
+                                                 '@text="2"]')
     precio_final_sprite = (
         MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
     precio_final_fanta = (
@@ -62,7 +64,8 @@ class RevisarPedidoPage(Page):
     campo_texto_transferencia = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
     mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
                                                     'parte de pago. Solo se acepta para el total."]')
-    vuelta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-home-1"]')
+    vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
+
 
     def cheque_mensaje_no_poder_usar(self):
         self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
@@ -243,6 +246,9 @@ class RevisarPedidoPage(Page):
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
+        self.driver.press_keycode(AndroidKey.MOVE_END)
+        self.driver.press_keycode(AndroidKey.DPAD_DOWN)
+        self.driver.press_keycode(AndroidKey.DPAD_DOWN)
         producto_3 = self.driver.find_element(MobileBy.XPATH,
                                               '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
         precio_producto_3 = producto_3.text

@@ -1,0 +1,667 @@
+{
+  "uid" : "566f8e30c47497f8",
+  "name" : "Valido la Nota de Credito",
+  "fullName" : "Revisar pedido: Valido la Nota de Credito",
+  "historyId" : "4f3173c8481c66f69fa6f55464cf25e0",
+  "time" : {
+    "start" : 1720703670279,
+    "stop" : 1720703713851,
+    "duration" : 43572
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\inicio_sesion_steps.py\", line 48, in click_en_el_boton\n    context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\modificar_recorrido_page.py\", line 43, in click_iniciar_vuelta_btn\n    self.click_on_element(self.iniciar_vuelta_btn)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\inicio_sesion_steps.py\", line 48, in click_en_el_boton\n    context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\modificar_recorrido_page.py\", line 43, in click_iniciar_vuelta_btn\n    self.click_on_element(self.iniciar_vuelta_btn)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1720703670800,
+        "stop" : 1720703676285,
+        "duration" : 5485
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa el correo electronico \"simple\"",
+      "time" : {
+        "start" : 1720703676285,
+        "stop" : 1720703679921,
+        "duration" : 3636
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1720703679921,
+        "stop" : 1720703681395,
+        "duration" : 1474
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1720703681395,
+        "stop" : 1720703683635,
+        "duration" : 2240
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1720703683635,
+        "stop" : 1720703713733,
+        "duration" : 30098
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\inicio_sesion_steps.py\", line 48, in click_en_el_boton\n    context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\modificar_recorrido_page.py\", line 43, in click_iniciar_vuelta_btn\n    self.click_on_element(self.iniciar_vuelta_btn)\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 17, in click_on_element\n    element = self.driver.find_element(by=locator[0],\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y elijo la ruta \"Erbi\"",
+      "time" : {
+        "start" : 1720703713851,
+        "stop" : 1720703713851,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que la nota de credito sea \"- $ 25.000\"",
+      "time" : {
+        "start" : 1720703713851,
+        "stop" : 1720703713851,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "1e83769dd4b614cb",
+      "name" : "Valido la Nota de Credito",
+      "source" : "1e83769dd4b614cb.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 7,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "2847bcc55ea836ed",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702930386,
+        "stop" : 1720702930387,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7cfe39cb376a2209",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702848016,
+        "stop" : 1720702848017,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "382799d77059145b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702347543,
+        "stop" : 1720702347544,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "daccd97efa7e5f70",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720640305787,
+        "stop" : 1720640305789,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4bbebb4856324d1b",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720625247840,
+        "stop" : 1720625291422,
+        "duration" : 43582
+      }
+    }, {
+      "uid" : "8c30f8c5fce06853",
+      "status" : "broken",
+      "statusDetails" : "KeyboardInterrupt\n",
+      "time" : {
+        "start" : 1720624551375,
+        "stop" : 1720624585969,
+        "duration" : 34594
+      }
+    }, {
+      "uid" : "1ca5d8b2c7ab95db",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720189678661,
+        "stop" : 1720189678663,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "82465c1ec156e53d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720185090866,
+        "stop" : 1720185090867,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ca19f1c0f19a06e6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184877033,
+        "stop" : 1720184877035,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "80faea38541f724",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184755209,
+        "stop" : 1720184755211,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ec21c2714497f379",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184596026,
+        "stop" : 1720184596027,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "43e0b332b5c3cfd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720183647574,
+        "stop" : 1720183647575,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "50c7b9ace46118f8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720126011194,
+        "stop" : 1720126011195,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cac6340555be36b7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720125379206,
+        "stop" : 1720125379207,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b0c54228b41ff5d6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122738664,
+        "stop" : 1720122738667,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "979cd05c581b06b3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122574932,
+        "stop" : 1720122574933,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "427dab69426e63f0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122514975,
+        "stop" : 1720122514977,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8ff2af0c42270167",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122071438,
+        "stop" : 1720122071440,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5eb2218bd8e0f627",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121847219,
+        "stop" : 1720121847220,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f2420668eae81026",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121721508,
+        "stop" : 1720121721509,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1da9db68daedbdfa",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121448157,
+        "stop" : 1720121448158,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "baee4b6740f0f256",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121008256,
+        "stop" : 1720121008258,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "35293ae23c03c91e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120663151,
+        "stop" : 1720120663152,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "10d50f08acf3fe7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120431571,
+        "stop" : 1720120431574,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a91a9bb3b1e03d1a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120228125,
+        "stop" : 1720120228127,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3f22b155df4e91f7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119895476,
+        "stop" : 1720119895478,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "741c39277b9fee02",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119803120,
+        "stop" : 1720119803122,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cf9069127c5acd43",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119758121,
+        "stop" : 1720119758122,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4acea7e67436d9fd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119668203,
+        "stop" : 1720119668205,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "92a889dd4176638f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119516384,
+        "stop" : 1720119516386,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7c3ca6b7fd196d57",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119377547,
+        "stop" : 1720119377548,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e66aef288dac1b72",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119249798,
+        "stop" : 1720119249800,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2c5dc32fd9732ee0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118789544,
+        "stop" : 1720118789545,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f83a52b58239b906",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118574642,
+        "stop" : 1720118574644,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b36a92e94e014889",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118351267,
+        "stop" : 1720118351270,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "32b5466593ae397c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118258482,
+        "stop" : 1720118258483,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3fdbd0df2e37749d",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720116990415,
+        "stop" : 1720116990416,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6abfacc50816ca44",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720109422530,
+        "stop" : 1720109422532,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c4cb49a50e9e9440",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720108518367,
+        "stop" : 1720108518367,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "762fe814d9c4cdad",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718390510443,
+        "stop" : 1718390510444,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ab6f24e8454eb8fb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718390496492,
+        "stop" : 1718390496493,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "be40185fdea57c4f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718308469241,
+        "stop" : 1718308469243,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "dbe58c86c00d9ddd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718308123738,
+        "stop" : 1718308123740,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6cb49a163dbc66e1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718307697209,
+        "stop" : 1718307697210,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f26fcdf067587f59",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718307160573,
+        "stop" : 1718307160574,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "19ddc4890d8f0e61",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718306611835,
+        "stop" : 1718306611836,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3ff610b0370765db",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718306322782,
+        "stop" : 1718306322784,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e56807b0b2c2eb03",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718305504266,
+        "stop" : 1718305504267,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6331d49e92dd9c2c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718304596377,
+        "stop" : 1718304596378,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3e3b95750eae071c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718304215325,
+        "stop" : 1718304215328,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "f73bce275d4ebfb5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718304058532,
+        "stop" : 1718304058534,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5de1c3c6255fbe8c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718303572916,
+        "stop" : 1718303572919,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "a05e498fc19676e4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718303157806,
+        "stop" : 1718303157809,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "edd83495698d5d33",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718292458201,
+        "stop" : 1718292458202,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fbe8f1424feeae59",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718292177057,
+        "stop" : 1718292177059,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5be66d3404239345",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718291812415,
+        "stop" : 1718291812417,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "74395a71b0bba973",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718291533249,
+        "stop" : 1718291533250,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "34fb5691066b2682",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718291121141,
+        "stop" : 1718291121142,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "423d0035577c0a75",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718290186668,
+        "stop" : 1718290186669,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ba74a1bc734810be",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718287708278,
+        "stop" : 1718287708279,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f307aabd12232cf7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718287434228,
+        "stop" : 1718287434230,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "566f8e30c47497f8.json",
+  "parameterValues" : [ ]
+}
