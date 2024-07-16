@@ -5,11 +5,11 @@
     "name" : "Revisar pedido",
     "statistic" : {
       "failed" : 0,
-      "broken" : 8,
+      "broken" : 5,
       "skipped" : 6,
-      "passed" : 11,
+      "passed" : 16,
       "unknown" : 0,
-      "total" : 25
+      "total" : 27
     }
   }, {
     "uid" : "06bababefb3c8696475b9760b65f8227",

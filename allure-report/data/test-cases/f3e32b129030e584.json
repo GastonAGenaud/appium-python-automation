@@ -1,0 +1,997 @@
+{
+  "uid" : "f3e32b129030e584",
+  "name" : "Valido la Nota de Credito",
+  "fullName" : "Revisar pedido: Valido la Nota de Credito",
+  "historyId" : "4f3173c8481c66f69fa6f55464cf25e0",
+  "time" : {
+    "start" : 1721158179426,
+    "stop" : 1721158288896,
+    "duration" : 109470
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 162, in valido_nota_de_credito\n    assert bool(context.app.revisar_pedido_page.valido_nota_pedido()), f\"La nota de crédito '{monto}' no es correcta\"\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 276, in valido_nota_pedido\n    valido_monto = self.find_element(self.nota_de_pedido).is_displayed()\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 13, in find_element\n    return self.driver.find_element(by=locator[0],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 162, in valido_nota_de_credito\n    assert bool(context.app.revisar_pedido_page.valido_nota_pedido()), f\"La nota de crédito '{monto}' no es correcta\"\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 276, in valido_nota_pedido\n    valido_monto = self.find_element(self.nota_de_pedido).is_displayed()\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 13, in find_element\n    return self.driver.find_element(by=locator[0],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721158179922,
+        "stop" : 1721158185767,
+        "duration" : 5845
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa el correo electronico \"simple\"",
+      "time" : {
+        "start" : 1721158185767,
+        "stop" : 1721158189374,
+        "duration" : 3607
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1721158189374,
+        "stop" : 1721158190854,
+        "duration" : 1480
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1721158190854,
+        "stop" : 1721158193127,
+        "duration" : 2273
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1721158193127,
+        "stop" : 1721158194227,
+        "duration" : 1100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1721158194227,
+        "stop" : 1721158227834,
+        "duration" : 33607
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"Erbi\"",
+      "time" : {
+        "start" : 1721158227834,
+        "stop" : 1721158228028,
+        "duration" : 194
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que la nota de credito sea \"- $ 25.000\"",
+      "time" : {
+        "start" : 1721158228029,
+        "stop" : 1721158288781,
+        "duration" : 60752
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 162, in valido_nota_de_credito\n    assert bool(context.app.revisar_pedido_page.valido_nota_pedido()), f\"La nota de crédito '{monto}' no es correcta\"\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 276, in valido_nota_pedido\n    valido_monto = self.find_element(self.nota_de_pedido).is_displayed()\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 13, in find_element\n    return self.driver.find_element(by=locator[0],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "4f823bb4f4c2fcd6",
+      "name" : "Valido la Nota de Credito",
+      "source" : "4f823bb4f4c2fcd6.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "3b37370edb679740",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721157654003,
+        "stop" : 1721157654005,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b7744c86f383e26c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721157502632,
+        "stop" : 1721157502633,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c0ea8a4435d6b1fa",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1721156699447,
+        "stop" : 1721156808815,
+        "duration" : 109368
+      }
+    }, {
+      "uid" : "5662502ce3f2bbeb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721155711313,
+        "stop" : 1721155711314,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "16673ece8f0e8e5b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721154253338,
+        "stop" : 1721154253339,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1a53d651b42f0e2e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721154083002,
+        "stop" : 1721154083004,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "67b6033a50f3b01b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721154003716,
+        "stop" : 1721154003717,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7b347c698e7c72cc",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1721143332622,
+        "stop" : 1721143442038,
+        "duration" : 109416
+      }
+    }, {
+      "uid" : "89d28849809daed7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721142895172,
+        "stop" : 1721142895174,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d29eb29aa3d6275b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721142776091,
+        "stop" : 1721142776093,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2b423be6c5b05cef",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721142426273,
+        "stop" : 1721142426275,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c46b23130c5d1dac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721139682686,
+        "stop" : 1721139682687,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a1033cfc9fa81d79",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721138748225,
+        "stop" : 1721138748228,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "3f19bc6cf4438e44",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720715681031,
+        "stop" : 1720715790552,
+        "duration" : 109521
+      }
+    }, {
+      "uid" : "8d35ef561dbb0a4",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720715618248,
+        "stop" : 1720715663759,
+        "duration" : 45511
+      }
+    }, {
+      "uid" : "6050326cf2a35287",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720715550704,
+        "stop" : 1720715594636,
+        "duration" : 43932
+      }
+    }, {
+      "uid" : "6fe19df929986f0c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up\nStacktrace:\nUnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up\n    at UIA2Proxy.command (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\jsonwp-proxy\\proxy.js:355:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.doFindElementOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\lib\\commands\\find.js:40:5)\n    at doFind (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:47:17)\n    at wrappedCondFn (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\timeout.ts:137:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:219:20)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n    at spin (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\asyncbox\\lib\\asyncbox.js:229:14)\n",
+      "time" : {
+        "start" : 1720715446563,
+        "stop" : 1720715483204,
+        "duration" : 36641
+      }
+    }, {
+      "uid" : "b262578999e011f5",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720715266988,
+        "stop" : 1720715310009,
+        "duration" : 43021
+      }
+    }, {
+      "uid" : "6d80b64714c9f38f",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720715129162,
+        "stop" : 1720715171958,
+        "duration" : 42796
+      }
+    }, {
+      "uid" : "a13e6d8af9855733",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'hago click en el boton \"Iniciar sesion\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given hago click en el boton \"Iniciar sesion\"')\n\n",
+      "time" : {
+        "start" : 1720715098066,
+        "stop" : 1720715109618,
+        "duration" : 11552
+      }
+    }, {
+      "uid" : "e06d71d17443fd21",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720714766601,
+        "stop" : 1720714809857,
+        "duration" : 43256
+      }
+    }, {
+      "uid" : "8dfd61e3c2d838e4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720713669187,
+        "stop" : 1720713669189,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "64e70f6d00de60a6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720713375406,
+        "stop" : 1720713375407,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "117cd1f21e998d4c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720709933252,
+        "stop" : 1720709933254,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1127a8c914f21bac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720709733387,
+        "stop" : 1720709733388,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e1b0e5311690ddf5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720709251272,
+        "stop" : 1720709251273,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "de9770c70239a13",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720707534804,
+        "stop" : 1720707534806,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f230a16342f7e12e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720707208909,
+        "stop" : 1720707208910,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "465e6713e1134a80",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720706866807,
+        "stop" : 1720706866808,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2e586c62ea735ff1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720706689773,
+        "stop" : 1720706689774,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "834e16cfc51e0468",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720706549609,
+        "stop" : 1720706549612,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "21bde7c916ebdcb6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720706138920,
+        "stop" : 1720706138921,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d35e76767d02bc60",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720705904368,
+        "stop" : 1720705904369,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5ccde65e221c64a4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720705179169,
+        "stop" : 1720705179170,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "16f9841887d48195",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720704767606,
+        "stop" : 1720704767607,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d1c00812e511b621",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720704607155,
+        "stop" : 1720704607156,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3fc69d8a7337ebd6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720704328915,
+        "stop" : 1720704328917,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "42d7ebc85e8d645c",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720703670279,
+        "stop" : 1720703713851,
+        "duration" : 43572
+      }
+    }, {
+      "uid" : "69d66888dc7e84c0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702930386,
+        "stop" : 1720702930387,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8e62b490c3c79d6f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702848016,
+        "stop" : 1720702848017,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d21159565b7aa14",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720702347543,
+        "stop" : 1720702347544,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b1ab9ab6860dc1a9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720640305787,
+        "stop" : 1720640305789,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "210d8feb5a1c9b08",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1720625247840,
+        "stop" : 1720625291422,
+        "duration" : 43582
+      }
+    }, {
+      "uid" : "b80af9cd834b0ae1",
+      "status" : "broken",
+      "statusDetails" : "KeyboardInterrupt\n",
+      "time" : {
+        "start" : 1720624551375,
+        "stop" : 1720624585969,
+        "duration" : 34594
+      }
+    }, {
+      "uid" : "e31b366c0b92a04",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720189678661,
+        "stop" : 1720189678663,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4b6a25a5955c19f9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720185090866,
+        "stop" : 1720185090867,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2a2859dc6d6f6513",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184877033,
+        "stop" : 1720184877035,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4bbc127d76b02542",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184755209,
+        "stop" : 1720184755211,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f2b91838071d93b6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720184596026,
+        "stop" : 1720184596027,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "225bd8883713fca7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720183647574,
+        "stop" : 1720183647575,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "105f344f3691af36",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720126011194,
+        "stop" : 1720126011195,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "114b483277d20936",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720125379206,
+        "stop" : 1720125379207,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4722b7ef7a29e950",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122738664,
+        "stop" : 1720122738667,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "ded55e90adbdeeaf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122574932,
+        "stop" : 1720122574933,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b91b73f172696469",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122514975,
+        "stop" : 1720122514977,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "72419a18cb4ad9fc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720122071438,
+        "stop" : 1720122071440,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d0bd790864b7943",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121847219,
+        "stop" : 1720121847220,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1b4aaa2241f5c318",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121721508,
+        "stop" : 1720121721509,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3cfb55bffa21a579",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121448157,
+        "stop" : 1720121448158,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a76955581f1ee213",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720121008256,
+        "stop" : 1720121008258,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e8d3b37db8a8c055",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120663151,
+        "stop" : 1720120663152,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a0502c9a3b807481",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120431571,
+        "stop" : 1720120431574,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "36091a31e312ed46",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720120228125,
+        "stop" : 1720120228127,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "39cbb48c6029b7e1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119895476,
+        "stop" : 1720119895478,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "efeb49b94101930b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119803120,
+        "stop" : 1720119803122,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7c38af51484d2b99",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119758121,
+        "stop" : 1720119758122,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7cd5ff7311d9e971",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119668203,
+        "stop" : 1720119668205,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f592a29075762797",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119516384,
+        "stop" : 1720119516386,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4fec5cdc1bb65492",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119377547,
+        "stop" : 1720119377548,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1c85d7cdfa1763a9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720119249798,
+        "stop" : 1720119249800,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "616f7ee9518547be",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118789544,
+        "stop" : 1720118789545,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "eea710419e9287c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118574642,
+        "stop" : 1720118574644,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1ba768ce85ea9997",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118351267,
+        "stop" : 1720118351270,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "dd980468b3acd00",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720118258482,
+        "stop" : 1720118258483,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "75d07d701b9672ab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720116990415,
+        "stop" : 1720116990416,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fe407dbe6eb86cb0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720109422530,
+        "stop" : 1720109422532,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cbe9d56e00ab4788",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1720108518367,
+        "stop" : 1720108518367,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "29524188b3746339",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718390510443,
+        "stop" : 1718390510444,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "25f3fa0312c67d8f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718390496492,
+        "stop" : 1718390496493,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ae4e879eb1f66b88",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718308469241,
+        "stop" : 1718308469243,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "db7f2a29b51df9c0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718308123738,
+        "stop" : 1718308123740,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "70fd60a03ddb17fc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718307697209,
+        "stop" : 1718307697210,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b3d453a4f63ad581",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718307160573,
+        "stop" : 1718307160574,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d716e1887b040e06",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718306611835,
+        "stop" : 1718306611836,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c455ba6fca4c9bff",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718306322782,
+        "stop" : 1718306322784,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "76a1b301e9a9973e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718305504266,
+        "stop" : 1718305504267,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "c30b77a23c53e1a9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718304596377,
+        "stop" : 1718304596378,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9d06e0b7d33b127b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718304215325,
+        "stop" : 1718304215328,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "9aad9a00130f5594",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718304058532,
+        "stop" : 1718304058534,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d65cd85d15b685cf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718303572916,
+        "stop" : 1718303572919,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "179cf61fec78d1f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718303157806,
+        "stop" : 1718303157809,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "950cca685db2a0d0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718292458201,
+        "stop" : 1718292458202,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7cfed1eec8077afb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718292177057,
+        "stop" : 1718292177059,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c571629db19a4b0b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718291812415,
+        "stop" : 1718291812417,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "d030abeac983d3cb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718291533249,
+        "stop" : 1718291533250,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "25baa3c4a49fbed5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718291121141,
+        "stop" : 1718291121142,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "759760b80de9be87",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718290186668,
+        "stop" : 1718290186669,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d7c4757f135b294c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718287708278,
+        "stop" : 1718287708279,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b9885c815e8e6beb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718287434228,
+        "stop" : 1718287434230,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "f3e32b129030e584.json",
+  "parameterValues" : [ ]
+}

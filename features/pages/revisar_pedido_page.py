@@ -1,9 +1,10 @@
 import re
 
 from appium.webdriver.extensions.android.nativekey import AndroidKey
-
+from selenium.common import NoSuchElementException
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from features.pages.ux_page import UXPage
 
 
 class RevisarPedidoPage(Page):
@@ -33,13 +34,13 @@ class RevisarPedidoPage(Page):
         MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="2"]')
     cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="1"]')
     cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and '
-                                                 '@text="2"]')
+                                                 '@text="7"]')
     precio_final_sprite = (
         MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
     precio_final_fanta = (
         MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
     precio_final_benedictino = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 376.873 "]')
     retornar_factura_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar factura"]')
     retornar_todo_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar todo"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
@@ -51,8 +52,8 @@ class RevisarPedidoPage(Page):
     metodo_de_pago = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="formatted-product"]')
     metodo_de_pago_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
     transferencia_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
-    efectivo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Efectivo"]')
-    mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Con más de un método de pago"]')
+    efectivo_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Con más de un método de pago"]')
+    mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Con más de un método de pago"]')
     transferencia_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
     validar_metodo_pago_mensaje = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc=", Método de pago editado"]')
@@ -148,10 +149,16 @@ class RevisarPedidoPage(Page):
         coca_cola = self.find_element(self.sprite_MidCal_pedido).is_displayed()
         return coca_cola
 
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.ux_page = UXPage(driver)  # Crear una instancia de UXPage
+
     def benedictino_cilindrico_pedido(self):
-        self.implicit_wait_visible(self.benedictino_pedido)
-        fanta = self.find_element(self.benedictino_pedido).is_displayed()
-        return fanta
+        try:
+            elemento = self.ux_page.scroll_down_until_element(self.benedictino_pedido)
+            return True if elemento else False
+        except NoSuchElementException:
+            return False
 
     def valido_producto_fanta_express(self):
         self.implicit_wait_visible(self.fanta_midcal_express_pedido)
@@ -316,9 +323,10 @@ class RevisarPedidoPage(Page):
 
         self.click_on_element(self.campo_texto_efectivo)
         self.input(monto_indivivual, self.campo_texto_efectivo)
-
+        self.driver.hide_keyboard()
         self.click_on_element(self.campo_texto_transferencia)
         self.input(monto_indivivual, self.campo_texto_transferencia)
+        self.driver.hide_keyboard()
 
     def click_vuelta_1(self):
         self.click_on_element(self.vuelta)

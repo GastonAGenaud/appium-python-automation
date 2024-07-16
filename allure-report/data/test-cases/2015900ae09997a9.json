@@ -1,0 +1,354 @@
+{
+  "uid" : "2015900ae09997a9",
+  "name" : "Validacion de la ruta -- @1.4 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion de la ruta",
+  "historyId" : "f492abcdaf2276c74083bc5e4f2e7664",
+  "time" : {
+    "start" : 1718123197809,
+    "stop" : 1718123197810,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"conductor-01\"",
+      "time" : {
+        "start" : 1718123197810,
+        "stop" : 1718123197810,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1718123197810,
+        "stop" : 1718123197810,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1718123197810,
+        "stop" : 1718123197810,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido que sea visible la \"Transferencia\" con el \"$930.470\" del pedido",
+      "time" : {
+        "start" : 1718123197810,
+        "stop" : 1718123197810,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 4,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caracteristica",
+    "value" : "Transferencia"
+  }, {
+    "name" : "valor",
+    "value" : "$930.470"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f3252753e677cf62",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718122514805,
+        "stop" : 1718122514807,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a4a57cbcb3716558",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718122322344,
+        "stop" : 1718122322345,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "84810062af3fe853",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718121566002,
+        "stop" : 1718121566002,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "6474faeeca3e5872",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718121008802,
+        "stop" : 1718121008804,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "df012a8019b7ed39",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718120946564,
+        "stop" : 1718120946565,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "251d1d24bf4a7adb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718120507907,
+        "stop" : 1718120507908,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b3747617c0fda60",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718120270950,
+        "stop" : 1718120270951,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "e347fbd13f614ce",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718120171657,
+        "stop" : 1718120171658,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "5eb292a6b6833d14",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718119802300,
+        "stop" : 1718119802302,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "f172237f09ef3875",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718119559988,
+        "stop" : 1718119559990,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "ad8418d672edcf77",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718119077196,
+        "stop" : 1718119077198,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "67644a2ff36e3aa4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718116999385,
+        "stop" : 1718116999386,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "390b78c5322b7c5a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718042372828,
+        "stop" : 1718042372828,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "47d48272d1ab72c5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718042105510,
+        "stop" : 1718042105511,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "689e45c5a9db5e52",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718041824634,
+        "stop" : 1718041824635,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "eb5734182a8e793f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718041224309,
+        "stop" : 1718041224311,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e3da0ae4ccbfcc77",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718040603700,
+        "stop" : 1718040603701,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "debe9291e8bafacf",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718039908150,
+        "stop" : 1718039908151,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9c775638e634e05b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718039295134,
+        "stop" : 1718039295136,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "567c03e9f058e2ae",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718038673837,
+        "stop" : 1718038673838,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "47dc87c3b32baee8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718037044931,
+        "stop" : 1718037044932,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "28087e355dcf5f97",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718036655467,
+        "stop" : 1718036655468,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7ef8a174bac1ae96",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718033557555,
+        "stop" : 1718033557556,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "62a1a2baaa2613ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718032265306,
+        "stop" : 1718032265307,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1c1a4b1ab3eab42c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718032052228,
+        "stop" : 1718032052229,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7ffb4ac19d9807eb",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718031721670,
+        "stop" : 1718031721672,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "431c2d50f9c58f60",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718030820778,
+        "stop" : 1718030820780,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4881a84ec850af4c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718030433937,
+        "stop" : 1718030433938,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f11c90c00fe3126c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1718029953040,
+        "stop" : 1718029953041,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion" ]
+  },
+  "source" : "2015900ae09997a9.json",
+  "parameterValues" : [ "Transferencia", "$930.470" ]
+}

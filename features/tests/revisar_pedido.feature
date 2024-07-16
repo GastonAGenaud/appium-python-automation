@@ -19,7 +19,6 @@ Característica: Revisar pedido
     Dado Ingreso con el conductor a la aplicacion
     Entonces valido la presencia de la opcion "Google Maps"
 
-  #No hace scroll a Benedictino
   Esquema del escenario: Validacion del contenido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -61,14 +60,14 @@ Característica: Revisar pedido
 
 
   Escenario: Entregar pedido de la factura
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en el boton "entregar"
     #Y selecciono el metodo que te van a pagar "efectivo"
-    Y hago click en el boton "Confirmar"
     Entonces valido el texto "No hay productos rebajados"
     Cuando hago click en el boton "Confirmar"
     Entonces valido el texto "Entregada"
@@ -127,7 +126,6 @@ Característica: Revisar pedido
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 
-
   Escenario: Valido la seccion de metodo de pago "Con más de un método de pago"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -148,7 +146,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"|
+    Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "método de pago"

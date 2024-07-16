@@ -1,0 +1,263 @@
+{
+  "uid" : "1f5e1380fae63409",
+  "name" : "Valido la seccion de metodo de pago \"Con más de un método de pago\"",
+  "fullName" : "Revisar pedido: Valido la seccion de metodo de pago \"Con más de un método de pago\"",
+  "historyId" : "d4e84b6b9395537f69b2077ce1eb51b1",
+  "time" : {
+    "start" : 1720126011211,
+    "stop" : 1720126129426,
+    "duration" : 118215
+  },
+  "status" : "broken",
+  "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\n\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\n\n",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1720126011950,
+        "stop" : 1720126017867,
+        "duration" : 5917
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1720126017867,
+        "stop" : 1720126026057,
+        "duration" : 8190
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando hago click en el boton \"Comenzar ruta\"",
+      "time" : {
+        "start" : 1720126026057,
+        "stop" : 1720126061578,
+        "duration" : 35521
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1720126061578,
+        "stop" : 1720126125828,
+        "duration" : 64250
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"404145531\"",
+      "time" : {
+        "start" : 1720126125828,
+        "stop" : 1720126125996,
+        "duration" : 168
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en la opcion \"método de pago\"",
+      "time" : {
+        "start" : 1720126125998,
+        "stop" : 1720126127065,
+        "duration" : 1067
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono el metodo de pago \"Con mas de un metodo de pago\"",
+      "time" : {
+        "start" : 1720126127065,
+        "stop" : 1720126128265,
+        "duration" : 1200
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el check \"Efectivo\"",
+      "time" : {
+        "start" : 1720126128265,
+        "stop" : 1720126129313,
+        "duration" : 1048
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"",
+      "time" : {
+        "start" : 1720126129314,
+        "stop" : 1720126129314,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y hago click en el check \"Transferencia\"",
+      "time" : {
+        "start" : 1720126129426,
+        "stop" : 1720126129426,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"",
+      "time" : {
+        "start" : 1720126129426,
+        "stop" : 1720126129426,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When Escribo el numero total \"{total}\" y lo divido en dos partes para \"Efectivo\" y \"Transferencia\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1720126129426,
+        "stop" : 1720126129426,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el mensaje \"Método de pago editado\"",
+      "time" : {
+        "start" : 1720126129426,
+        "stop" : 1720126129426,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@then(u'valido el mensaje \"Método de pago editado\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Then valido el mensaje \"Método de pago editado\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "12bcefbfb12eb2b9",
+      "name" : "Valido la seccion de metodo de pago \"Con más de un método de pago\"",
+      "source" : "12bcefbfb12eb2b9.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 13,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "tag",
+    "value" : "validarConMasDeUnMetodo"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido", "validarConMasDeUnMetodo" ]
+  },
+  "source" : "1f5e1380fae63409.json",
+  "parameterValues" : [ ]
+}
