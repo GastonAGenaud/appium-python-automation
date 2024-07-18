@@ -51,9 +51,11 @@ class RevisarPedidoPage(Page):
     nota_de_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="- $ 25.000"]')
     metodo_de_pago = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="formatted-product"]')
     metodo_de_pago_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
-    transferencia_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
-    efectivo_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Con más de un método de pago"]')
-    mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Con más de un método de pago"]')
+    transferencia_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Transferencia"]')
+    efectivo_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Efectivo"]')
+    mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Con más de un método de pago"]')
+    mas_de_un_metodo_xpath = (MobileBy.XPATH, '(//android.widget.RadioButton[@resource-id="RadioButtonConfirm"])['
+                                              '3]/android.view.ViewGroup')
     transferencia_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
     validar_metodo_pago_mensaje = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc=", Método de pago editado"]')
@@ -66,7 +68,6 @@ class RevisarPedidoPage(Page):
     mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
                                                     'parte de pago. Solo se acepta para el total."]')
     vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
-
 
     def cheque_mensaje_no_poder_usar(self):
         self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
@@ -242,22 +243,23 @@ class RevisarPedidoPage(Page):
 
     def valido_comparacion_de_precio(self):
         producto_1 = self.driver.find_element(MobileBy.XPATH,
-                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
+                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
+                                              '@text="$ 66.210 "]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
         producto_2 = self.driver.find_element(MobileBy.XPATH,
-                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
+                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
+                                              '@text="$ 65.064 "]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        self.driver.press_keycode(AndroidKey.MOVE_END)
-        self.driver.press_keycode(AndroidKey.DPAD_DOWN)
-        self.driver.press_keycode(AndroidKey.DPAD_DOWN)
+        self.ux_page.scroll_down_until_element(self.benedictino_pedido)
         producto_3 = self.driver.find_element(MobileBy.XPATH,
-                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
+                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
+                                              '@text="$ 376.873 "]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)
@@ -306,7 +308,12 @@ class RevisarPedidoPage(Page):
         return texto
 
     def click_mas_de_un_metodo_opcion(self):
+        self.implicit_wait_visible(self.mas_de_un_metodo_txt)
         self.click_on_element(self.mas_de_un_metodo_txt)
+
+    def mas_de_un_metodo(self):
+        self.implicit_wait_visible(self.mas_de_un_metodo_xpath)
+        self.click_on_element(self.mas_de_un_metodo_xpath)
 
     def valido_metodo_seleccionado(self):
         self.implicit_wait_visible(self.transferencia_texto)
@@ -315,7 +322,7 @@ class RevisarPedidoPage(Page):
 
     def ingreso_montos_transferencia_efectivo(self):
         total = self.driver.find_element(MobileBy.XPATH,
-                                              '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
+                                         '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
         precio_total = total.text
         solo_numeros = re.sub(r'\D', '', precio_total)
         total = int(solo_numeros)
@@ -330,4 +337,3 @@ class RevisarPedidoPage(Page):
 
     def click_vuelta_1(self):
         self.click_on_element(self.vuelta)
-

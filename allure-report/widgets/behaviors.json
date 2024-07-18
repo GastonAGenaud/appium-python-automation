@@ -5,11 +5,11 @@
     "name" : "Revisar pedido",
     "statistic" : {
       "failed" : 0,
-      "broken" : 5,
-      "skipped" : 6,
+      "broken" : 1,
+      "skipped" : 0,
       "passed" : 16,
       "unknown" : 0,
-      "total" : 27
+      "total" : 17
     }
   }, {
     "uid" : "06bababefb3c8696475b9760b65f8227",
@@ -17,10 +17,10 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 18,
+      "skipped" : 14,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 18
+      "total" : 14
     }
   }, {
     "uid" : "a798121a847b20988440e5fe2e56a8c9",
@@ -28,21 +28,10 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 10,
+      "skipped" : 9,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 10
-    }
-  }, {
-    "uid" : "b6bf0ae5120f106aa3f19ec552e14e38",
-    "name" : "Cuadrar",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 0,
-      "skipped" : 8,
-      "passed" : 0,
-      "unknown" : 0,
-      "total" : 8
+      "total" : 9
     }
   }, {
     "uid" : "9156f7e8357968e26970019847d01d76",
@@ -50,10 +39,10 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 7,
+      "skipped" : 6,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 7
+      "total" : 6
     }
   }, {
     "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
@@ -76,6 +65,17 @@
       "passed" : 0,
       "unknown" : 0,
       "total" : 5
+    }
+  }, {
+    "uid" : "b6bf0ae5120f106aa3f19ec552e14e38",
+    "name" : "Cuadrar",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 4,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 4
     }
   }, {
     "uid" : "aa27a4883f03339e6ee080f8d9d5a976",

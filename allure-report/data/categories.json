@@ -4,74 +4,18 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "ValueError: No se encontro el metodo de pago de '\"Efectivo\"'\n",
-      "children" : [ {
-        "name" : "Valido la seccion de metodo de pago \"Con mas de un metodo de pago\"",
-        "uid" : "1602e50dfaccfd4",
-        "parentUid" : "7d8a81f8bfe75bf46950de84c1c7aaf5",
-        "status" : "broken",
-        "time" : {
-          "start" : 1720118574657,
-          "stop" : 1720118629542,
-          "duration" : 54885
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "7d8a81f8bfe75bf46950de84c1c7aaf5"
-    }, {
-      "name" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'Ingreso con el conductor a la aplicación')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given Ingreso con el conductor a la aplicación')\n\n",
-      "children" : [ {
-        "name" : "Valido la sección de método de pago \"Con más de un método de pago\"",
-        "uid" : "c6cc7723a1db096d",
-        "parentUid" : "b975292ff64085ed180c7862683c280c",
-        "status" : "broken",
-        "time" : {
-          "start" : 1720121721523,
-          "stop" : 1720121727973,
-          "duration" : 6450
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      } ],
-      "uid" : "b975292ff64085ed180c7862683c280c"
-    }, {
       "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
       "children" : [ {
-        "name" : "Validacion del precio total del pedido",
-        "uid" : "2569867c505bc1b0",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1721158039704,
-          "stop" : 1721158124744,
-          "duration" : 85040
-        },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
         "name" : "Valido la Nota de Credito",
-        "uid" : "f3e32b129030e584",
+        "uid" : "34b1a55e5540d9c1",
         "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
         "status" : "broken",
         "time" : {
-          "start" : 1721158179426,
-          "stop" : 1721158288896,
-          "duration" : 109470
+          "start" : 1721314499400,
+          "stop" : 1721314608091,
+          "duration" : 108691
         },
-        "flaky" : true,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido la seccion de metodo de pago \"Efectivo\"",
-        "uid" : "f57856ece8824fbf",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1721158510255,
-          "stop" : 1721158625837,
-          "duration" : 115582
-        },
-        "flaky" : true,
+        "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "c761cc1e1f67c97166ba2758d9324261"

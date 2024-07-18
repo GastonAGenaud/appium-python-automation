@@ -2,7 +2,6 @@
 @revisar_pedido
 Característica: Revisar pedido
 
-
   Escenario: Validacion de visualizacion de ruta de pedido
     Dado Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
@@ -58,7 +57,6 @@ Característica: Revisar pedido
     Y selecciono la factura con numero "404145531"
     Entonces valido que este correcta la suma del precio de los productos
 
-
   Escenario: Entregar pedido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -83,6 +81,7 @@ Característica: Revisar pedido
     Y elijo la ruta "Erbi"
     Entonces valido que la nota de credito sea "- $ 25.000"
 
+    @validoMetodoPago
   Esquema del escenario: Valido la seccion de metodo de pago desde la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -93,15 +92,15 @@ Característica: Revisar pedido
     Y hago click en la opcion "metodo de pago"
     Entonces valido el texto "¿Con qué te van a pagar?"
     Y valido que el precio total sea de "$ 508.147"
-    Y valido que sea visible el metodo de de pago "<metodo>"
+    Y valido que sea visible el metodo de pago "<metodo>"
 
     Ejemplos:
       | metodo                       |
       | Transferencia                |
       | Efectivo                     |
-      | Con mas de un metodo de pago |
+      | Con más de un método de pago |
 
-
+  @errorMetodoDePago
   Escenario: Valido la seccion de metodo de pago "Transferencia"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -114,6 +113,7 @@ Característica: Revisar pedido
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 
+  @errorMetodoDePago
   Escenario: Valido la seccion de metodo de pago "Efectivo"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -126,7 +126,7 @@ Característica: Revisar pedido
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 
-  Escenario: Valido la seccion de metodo de pago "Con más de un método de pago"
+  Escenario: Valido la seccion de metodo de pago "Con mas de un metodo de pago"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
@@ -134,14 +134,14 @@ Característica: Revisar pedido
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "método de pago"
-    Y selecciono el metodo de pago "Con mas de un metodo de pago"
+    Y selecciono el metodo de pago "Con más de un método de pago"
     Y hago click en el check "Efectivo"
     Y hago click en el check "Transferencia"
     Y Ingreso los montos en efectivo y transferencia
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 
-
+    @chequeValidar
   Escenario: Valido el texto que se muestra en el sector de pago con Cheque
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -150,5 +150,5 @@ Característica: Revisar pedido
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en la opcion "método de pago"
-    Y selecciono el metodo de pago "Con mas de un metodo de pago"
+    Y selecciono el metodo de pago "Con más de un método de pago"
     Entonces valido el mensaje que se muestra en el sector Cheque

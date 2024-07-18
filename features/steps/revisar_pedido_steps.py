@@ -173,13 +173,13 @@ def selecciono_metodo_de_pago(context, metodo):
         context.app.revisar_pedido_page.click_transferencia_opcion()
     elif metodo == "Efectivo":
         context.app.revisar_pedido_page.click_efectivo_opcion()
-    elif metodo == "Con mas de un metodo de pago":
-        context.app.revisar_pedido_page.click_mas_de_un_metodo_opcion()
+    elif metodo == "Con más de un método de pago":
+        context.app.revisar_pedido_page.mas_de_un_metodo()
     else:
         raise ValueError(f"No se encontró el método de pago '{metodo}'")
 
 
-@then('valido que sea visible el metodo de de pago "{metodo}"')
+@then('valido que sea visible el metodo de pago "{metodo}"')
 def valido_sea_visible_metodo(context, metodo):
     if metodo == "Transferencia":
         assert bool(
@@ -187,7 +187,7 @@ def valido_sea_visible_metodo(context, metodo):
     elif metodo == "Efectivo":
         assert bool(
             context.app.revisar_pedido_page.valido_efectivo_opcion()), f"El método de pago '{metodo}' no está visible"
-    elif metodo == "Con mas de un metodo de pago":
+    elif metodo == "Con más de un método de pago":
         assert bool(
             context.app.revisar_pedido_page.valido_mas_de_un_metodo_opcion()), f"El método de pago '{metodo}' no está visible"
     else:
