@@ -81,7 +81,6 @@ Característica: Revisar pedido
     Y elijo la ruta "Erbi"
     Entonces valido que la nota de credito sea "- $ 25.000"
 
-    @validoMetodoPago
   Esquema del escenario: Valido la seccion de metodo de pago desde la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -100,7 +99,6 @@ Característica: Revisar pedido
       | Efectivo                     |
       | Con más de un método de pago |
 
-  @errorMetodoDePago
   Escenario: Valido la seccion de metodo de pago "Transferencia"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -113,7 +111,6 @@ Característica: Revisar pedido
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 
-  @errorMetodoDePago
   Escenario: Valido la seccion de metodo de pago "Efectivo"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -141,7 +138,6 @@ Característica: Revisar pedido
     Y hago click en el boton "Confirmar"
     Entonces valido el mensaje "Metodo de pago editado"
 
-    @chequeValidar
   Escenario: Valido el texto que se muestra en el sector de pago con Cheque
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
