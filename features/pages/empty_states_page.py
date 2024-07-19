@@ -6,15 +6,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class EmptyStatesPage(Page):
-    retornados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]')
-    entregados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregados"]')
+    retornados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup')
+    entregados_seccion = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregados"]/android.view.ViewGroup')
     no_has_anulado_pedido_txt = (MobileBy.XPATH,
                                  '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
                                  '.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[32]')
     imagen_seccion_anulados = (MobileBy.XPATH,
                                '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux'
                                '.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
-    seccion_entregado_texto = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView/com.horcrux.svg.PathView[33]')
+    seccion_entregado_imagen = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view'
+                                                '.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView')
     ordenar_por_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Ordenar por:  "]')
     no_has_visitado_clientes_txt = (MobileBy.XPATH,
                                     '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup/com'
@@ -80,7 +81,7 @@ class EmptyStatesPage(Page):
         return imagen_anulados
 
     def valido_seccion_entregados(self):
-        self.implicit_wait_visible(self.seccion_entregado_texto)
-        valido_pedido = self.find_element(self.seccion_entregado_texto).is_displayed()
+        self.implicit_wait_visible(self.seccion_entregado_imagen)
+        valido_pedido = self.find_element(self.seccion_entregado_imagen).is_displayed()
         return valido_pedido
 

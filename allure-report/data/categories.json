@@ -4,16 +4,92 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
+      "name" : "TypeError: 'tuple' object is not callable\n",
+      "children" : [ {
+        "name" : "Validacion de la pantalla Comenzar ruta",
+        "uid" : "d57618fd91a3df90",
+        "parentUid" : "5aa7befecde442a417aba42b967feb94",
+        "status" : "broken",
+        "time" : {
+          "start" : 1721421815379,
+          "stop" : 1721421826248,
+          "duration" : 10869
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validacion del boton \"Comenzar ruta\"",
+        "uid" : "a2fa629f4f9ac8cd",
+        "parentUid" : "5aa7befecde442a417aba42b967feb94",
+        "status" : "broken",
+        "time" : {
+          "start" : 1721421826249,
+          "stop" : 1721421860055,
+          "duration" : 33806
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5aa7befecde442a417aba42b967feb94"
+    }, {
       "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
       "children" : [ {
-        "name" : "Valido la Nota de Credito",
-        "uid" : "34b1a55e5540d9c1",
+        "name" : "Validacion de la ruta -- @1.1 ",
+        "uid" : "8ad019b9bb9edc57",
         "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
         "status" : "broken",
         "time" : {
-          "start" : 1721314499400,
-          "stop" : 1721314608091,
-          "duration" : 108691
+          "start" : 1721421860056,
+          "stop" : 1721421891946,
+          "duration" : 31890
+        },
+        "flaky" : false,
+        "parameters" : [ "Local", "EL DESEO SPA" ]
+      }, {
+        "name" : "Validacion de la ruta -- @1.2 ",
+        "uid" : "5b0c3dba614f2be0",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1721421891947,
+          "stop" : 1721421923500,
+          "duration" : 31553
+        },
+        "flaky" : false,
+        "parameters" : [ "Direccion", "AVDA ANDRES BELLO 2447" ]
+      }, {
+        "name" : "Validacion de la ruta -- @1.3 ",
+        "uid" : "64230f8a15f15b44",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1721421923501,
+          "stop" : 1721421955184,
+          "duration" : 31683
+        },
+        "flaky" : false,
+        "parameters" : [ "Producto", "16" ]
+      }, {
+        "name" : "Validacion de la ruta -- @1.4 ",
+        "uid" : "e9bfcee59d5a204b",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1721421955185,
+          "stop" : 1721421986851,
+          "duration" : 31666
+        },
+        "flaky" : false,
+        "parameters" : [ "Transferencia", "$866.455" ]
+      }, {
+        "name" : "Validacion de seleccion de ruta",
+        "uid" : "d13d48a93fbf5d21",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1721421986852,
+          "stop" : 1721422018508,
+          "duration" : 31656
         },
         "flaky" : false,
         "parameters" : [ ]

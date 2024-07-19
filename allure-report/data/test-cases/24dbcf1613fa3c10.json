@@ -1,0 +1,161 @@
+{
+  "uid" : "24dbcf1613fa3c10",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion del desplegable \"Ordenar por\"",
+  "historyId" : "86f12e2200b0f882544d15781ba6cb9c",
+  "time" : {
+    "start" : 1721418276882,
+    "stop" : 1721418291220,
+    "duration" : 14338
+  },
+  "status" : "broken",
+  "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721418277490,
+        "stop" : 1721418283384,
+        "duration" : 5894
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721418283384,
+        "stop" : 1721418291112,
+        "duration" : 7728
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1721418291112,
+        "stop" : 1721418291112,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1721418291220,
+        "stop" : 1721418291220,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'hago click en el boton \"Iniciar vuelta\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given hago click en el boton \"Iniciar vuelta\"')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el desplegable",
+      "time" : {
+        "start" : 1721418291220,
+        "stop" : 1721418291220,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'hago click en el desplegable')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given hago click en el desplegable')\n\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que sea visible la opcion \"Más cajas primero\"",
+      "time" : {
+        "start" : 1721418291220,
+        "stop" : 1721418291220,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "b2e8c0f5c30b0cad",
+      "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+      "source" : "b2e8c0f5c30b0cad.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "modificar_recorrido"
+  }, {
+    "name" : "tag",
+    "value" : "validarOpcionesOrdenar"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Más cajas primero"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "validarOpcionesOrdenar", "modificar_recorrido" ]
+  },
+  "source" : "24dbcf1613fa3c10.json",
+  "parameterValues" : [ "Más cajas primero" ]
+}

@@ -1,0 +1,221 @@
+{
+  "uid" : "7bba869fc6592eb3",
+  "name" : "Validacion de boton \"Login\" deshabilitado",
+  "fullName" : "iniciar sesión: Validacion de boton \"Login\" deshabilitado",
+  "historyId" : "3c5e8208cf998e11e03e820f1090709a",
+  "time" : {
+    "start" : 1721421815375,
+    "stop" : 1721421815376,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721421815376,
+        "stop" : 1721421815376,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Dado estoy en la pantalla de inicio de sesion",
+      "time" : {
+        "start" : 1721421815376,
+        "stop" : 1721421815376,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces se valida que el boton de \"Login\" este deshabilitado",
+      "time" : {
+        "start" : 1721421815376,
+        "stop" : 1721421815376,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "iniciar_sesion"
+  }, {
+    "name" : "feature",
+    "value" : "iniciar sesión"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5568fb557bc3a802",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588343,
+        "stop" : 1721421588345,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5995285916a3e165",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963563,
+        "stop" : 1721420963564,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9814aef3af441269",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835649,
+        "stop" : 1721420835650,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "846b133647698a63",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607360,
+        "stop" : 1721420607361,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9c39e79036daa20f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419767370,
+        "stop" : 1721419767371,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "448cc5d64a892ea4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419245272,
+        "stop" : 1721419245273,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "265d4ed6624c1216",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419012463,
+        "stop" : 1721419012465,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "c079e8730f40133b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418875618,
+        "stop" : 1721418875619,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ff6a463ae32a61a4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418710747,
+        "stop" : 1721418710748,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "f9fdf315715933ac",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418388393,
+        "stop" : 1721418388394,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "39de1e6a7a4b6d07",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418276865,
+        "stop" : 1721418276866,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3f35ae1c6be457e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418110986,
+        "stop" : 1721418110987,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1586df2929ab0e3f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418002663,
+        "stop" : 1721418002664,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "305c6cd42416db25",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721417959319,
+        "stop" : 1721417959320,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1b53e80737fe2aa4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721415479862,
+        "stop" : 1721415479863,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "iniciar_sesion" ]
+  },
+  "source" : "7bba869fc6592eb3.json",
+  "parameterValues" : [ ]
+}

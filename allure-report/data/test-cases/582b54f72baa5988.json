@@ -1,0 +1,276 @@
+{
+  "uid" : "582b54f72baa5988",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion del desplegable \"Ordenar por\"",
+  "historyId" : "86f12e2200b0f882544d15781ba6cb9c",
+  "time" : {
+    "start" : 1721422018509,
+    "stop" : 1721422075471,
+    "duration" : 56962
+  },
+  "status" : "passed",
+  "flaky" : true,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721422019037,
+        "stop" : 1721422025336,
+        "duration" : 6299
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721422025336,
+        "stop" : 1721422033079,
+        "duration" : 7743
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1721422033079,
+        "stop" : 1721422034206,
+        "duration" : 1127
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1721422034206,
+        "stop" : 1721422073277,
+        "duration" : 39071
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el desplegable",
+      "time" : {
+        "start" : 1721422073277,
+        "stop" : 1721422073929,
+        "duration" : 652
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que sea visible la opcion \"Más cajas primero\"",
+      "time" : {
+        "start" : 1721422073929,
+        "stop" : 1721422075378,
+        "duration" : 1449
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "2e0acc2df0c5e141",
+      "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+      "source" : "2e0acc2df0c5e141.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "modificar_recorrido"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Más cajas primero"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "a8b2e02241f76c14",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588364,
+        "stop" : 1721421588365,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cb6aa97f21b2712a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963585,
+        "stop" : 1721420963587,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6ca7cc4314cdae19",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835670,
+        "stop" : 1721420835671,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "87240dfb0283b7ee",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607380,
+        "stop" : 1721420607380,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "eec44ba4e5277e41",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721419767388,
+        "stop" : 1721419822219,
+        "duration" : 54831
+      }
+    }, {
+      "uid" : "41c45e8b0c49b75f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721419245291,
+        "stop" : 1721419300745,
+        "duration" : 55454
+      }
+    }, {
+      "uid" : "65a8caf75ccb5a10",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721419012481,
+        "stop" : 1721419106070,
+        "duration" : 93589
+      }
+    }, {
+      "uid" : "3fc1c329380ca2e2",
+      "status" : "broken",
+      "statusDetails" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "time" : {
+        "start" : 1721418875638,
+        "stop" : 1721418995895,
+        "duration" : 120257
+      }
+    }, {
+      "uid" : "13bd74fbdda872e6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1721418710767,
+        "stop" : 1721418812432,
+        "duration" : 101665
+      }
+    }, {
+      "uid" : "544a4a763d08dfa3",
+      "status" : "broken",
+      "statusDetails" : "ValueError: No se encontro la opcion 'Más cajas primero'\n",
+      "time" : {
+        "start" : 1721418388413,
+        "stop" : 1721418451219,
+        "duration" : 62806
+      }
+    }, {
+      "uid" : "24dbcf1613fa3c10",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+      "time" : {
+        "start" : 1721418276882,
+        "stop" : 1721418291220,
+        "duration" : 14338
+      }
+    }, {
+      "uid" : "97b5faf1cbe273ac",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+      "time" : {
+        "start" : 1721418111003,
+        "stop" : 1721418124930,
+        "duration" : 13927
+      }
+    }, {
+      "uid" : "d96481b90cfdc0df",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+      "time" : {
+        "start" : 1721418002682,
+        "stop" : 1721418016555,
+        "duration" : 13873
+      }
+    }, {
+      "uid" : "99f84b576b748e2b",
+      "status" : "broken",
+      "statusDetails" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'selecciono la vuelta \"Vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given selecciono la vuelta \"Vuelta 1\"')\n\n",
+      "time" : {
+        "start" : 1721417959340,
+        "stop" : 1721417973520,
+        "duration" : 14180
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "modificar_recorrido", "regresion" ]
+  },
+  "source" : "582b54f72baa5988.json",
+  "parameterValues" : [ "Más cajas primero" ]
+}

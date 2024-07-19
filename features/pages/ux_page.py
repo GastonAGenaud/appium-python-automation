@@ -13,7 +13,7 @@ from features.pages.base_page import Page
 
 class UXPage(Page):
     el_deseo_spa_pedido = (
-    MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
+        MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
     comenzar_ruta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
 
     def scroll_down_until_element(self, locator, max_attempts=10):

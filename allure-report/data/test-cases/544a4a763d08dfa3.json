@@ -1,0 +1,162 @@
+{
+  "uid" : "544a4a763d08dfa3",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+  "fullName" : "Modificar recorrido sugerido: Validacion del desplegable \"Ordenar por\"",
+  "historyId" : "86f12e2200b0f882544d15781ba6cb9c",
+  "time" : {
+    "start" : 1721418388413,
+    "stop" : 1721418451219,
+    "duration" : 62806
+  },
+  "status" : "broken",
+  "statusMessage" : "ValueError: No se encontro la opcion 'Más cajas primero'\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\modificar_recorrido_steps.py\", line 35, in valido_las_opcion\n    raise ValueError(f\"No se encontro la opcion '{opcion}'\")\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "ValueError: No se encontro la opcion 'Más cajas primero'\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\modificar_recorrido_steps.py\", line 35, in valido_las_opcion\n    raise ValueError(f\"No se encontro la opcion '{opcion}'\")\n",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721418389115,
+        "stop" : 1721418394947,
+        "duration" : 5832
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721418394947,
+        "stop" : 1721418402522,
+        "duration" : 7575
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1721418402523,
+        "stop" : 1721418403556,
+        "duration" : 1033
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1721418403557,
+        "stop" : 1721418441676,
+        "duration" : 38119
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el desplegable",
+      "time" : {
+        "start" : 1721418441677,
+        "stop" : 1721418451136,
+        "duration" : 9459
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que sea visible la opcion \"Más cajas primero\"",
+      "time" : {
+        "start" : 1721418451136,
+        "stop" : 1721418451138,
+        "duration" : 2
+      },
+      "status" : "broken",
+      "statusMessage" : "ValueError: No se encontro la opcion 'Más cajas primero'\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\modificar_recorrido_steps.py\", line 35, in valido_las_opcion\n    raise ValueError(f\"No se encontro la opcion '{opcion}'\")\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "718e56ee1f4785e9",
+      "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
+      "source" : "718e56ee1f4785e9.mp4",
+      "type" : "video/mp4",
+      "size" : 0
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 6
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "modificar_recorrido"
+  }, {
+    "name" : "tag",
+    "value" : "validarOpcionesOrdenar"
+  }, {
+    "name" : "feature",
+    "value" : "Modificar recorrido sugerido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "opcion",
+    "value" : "Más cajas primero"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "validarOpcionesOrdenar", "modificar_recorrido" ]
+  },
+  "source" : "544a4a763d08dfa3.json",
+  "parameterValues" : [ "Más cajas primero" ]
+}

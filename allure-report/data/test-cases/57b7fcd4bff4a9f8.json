@@ -1,0 +1,102 @@
+{
+  "uid" : "57b7fcd4bff4a9f8",
+  "name" : "Validación de pantalla \"Entregados\"",
+  "fullName" : "Estados Vacíos: Validación de pantalla \"Entregados\"",
+  "historyId" : "fa826da67e0096180e948ff6a793d5d8",
+  "time" : {
+    "start" : 1721418110958,
+    "stop" : 1721418110960,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721418110960,
+        "stop" : 1721418110960,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando selecciono \"Entregados\"",
+      "time" : {
+        "start" : 1721418110960,
+        "stop" : 1721418110960,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la pantalla de \"Entregados\"",
+      "time" : {
+        "start" : 1721418110960,
+        "stop" : 1721418110960,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "estados_vacios"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Estados Vacíos"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "estados_vacios", "regresion" ]
+  },
+  "source" : "57b7fcd4bff4a9f8.json",
+  "parameterValues" : [ ]
+}

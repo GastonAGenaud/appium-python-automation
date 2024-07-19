@@ -1,0 +1,239 @@
+{
+  "uid" : "b6bd3d726216cc38",
+  "name" : "Valido las zonas de accion del modal de modificacion de la ruta",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion del modal de modificacion de la ruta",
+  "historyId" : "56495a87ab12401a2efcae6e0bff039f",
+  "time" : {
+    "start" : 1721421815304,
+    "stop" : 1721421815305,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721421815305,
+        "stop" : 1721421815305,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Modificar\"",
+      "time" : {
+        "start" : 1721421815305,
+        "stop" : 1721421815305,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Entendido\"]\"",
+      "time" : {
+        "start" : 1721421815305,
+        "stop" : 1721421815305,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.widget.CheckBox/android.view.ViewGroup/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1721421815305,
+        "stop" : 1721421815305,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "bac29a11bd43b0f3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588193,
+        "stop" : 1721421588194,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3148ac98690437f0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963483,
+        "stop" : 1721420963484,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "d3533e4ede7a4fce",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835553,
+        "stop" : 1721420835555,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a15d52ea992d87e8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607287,
+        "stop" : 1721420607289,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1121541b6f65f31",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419767296,
+        "stop" : 1721419767297,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4bd74945f31cde98",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419245204,
+        "stop" : 1721419245205,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "525587dae3f2feba",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419012394,
+        "stop" : 1721419012395,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ac55e84b4f3e5717",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418875553,
+        "stop" : 1721418875555,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "6a1defbf152ecdb0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418710676,
+        "stop" : 1721418710677,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "b1181bd872ccb1a4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418388321,
+        "stop" : 1721418388322,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4af106c43ace3c84",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418276792,
+        "stop" : 1721418276794,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "79b0ee8d83e9ed23",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418110917,
+        "stop" : 1721418110919,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "323529e9e26bba2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418002589,
+        "stop" : 1721418002590,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "efb509d62fe885c5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721417959238,
+        "stop" : 1721417959239,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a2ac5d370415526c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721415479800,
+        "stop" : 1721415479801,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "b6bd3d726216cc38.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,236 @@
+{
+  "uid" : "c2eb611ab03962ee",
+  "name" : "Validacion de error de caracteres especiales",
+  "fullName" : "iniciar sesión: Validacion de error de caracteres especiales",
+  "historyId" : "1923e982b18510ef1bb518ac193ff9d8",
+  "time" : {
+    "start" : 1721421815372,
+    "stop" : 1721421815374,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721421815374,
+        "stop" : 1721421815374,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa el correo electronico \"Test$#@#!\"",
+      "time" : {
+        "start" : 1721421815374,
+        "stop" : 1721421815374,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1721421815374,
+        "stop" : 1721421815374,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces se valida el mensaje de error en el campo de \"No se admiten caracteres especiales\"",
+      "time" : {
+        "start" : 1721421815374,
+        "stop" : 1721421815374,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 4
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "iniciar_sesion"
+  }, {
+    "name" : "feature",
+    "value" : "iniciar sesión"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "eaef38945ca5ba2b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588341,
+        "stop" : 1721421588342,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a7449ac2970d12dd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963560,
+        "stop" : 1721420963562,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7625f4e5772f8f2e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835646,
+        "stop" : 1721420835648,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9133241d5960fac6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607357,
+        "stop" : 1721420607359,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "4bf2cd20451aa4f2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419767368,
+        "stop" : 1721419767369,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "919180c5c06b0d6c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419245270,
+        "stop" : 1721419245270,
+        "duration" : 0
+      }
+    }, {
+      "uid" : "5e0e99a374873dfe",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419012460,
+        "stop" : 1721419012463,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b115a959f9edbdd0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418875616,
+        "stop" : 1721418875617,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "65dca11122ae5fd7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418710745,
+        "stop" : 1721418710746,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a1537c60e7bcaa51",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418388391,
+        "stop" : 1721418388392,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "ed67e4de8264194",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418276862,
+        "stop" : 1721418276864,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "a14377228d34fc3e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418110984,
+        "stop" : 1721418110985,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "12f65d1b2a83d7da",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418002661,
+        "stop" : 1721418002662,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "80860ffc8d4a1399",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721417959317,
+        "stop" : 1721417959318,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "537389a16c99b859",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721415479860,
+        "stop" : 1721415479861,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "iniciar_sesion" ]
+  },
+  "source" : "c2eb611ab03962ee.json",
+  "parameterValues" : [ ]
+}

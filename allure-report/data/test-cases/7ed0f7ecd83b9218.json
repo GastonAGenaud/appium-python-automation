@@ -1,0 +1,221 @@
+{
+  "uid" : "7ed0f7ecd83b9218",
+  "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
+  "fullName" : "Entregar pedido: Valido que un pedido entregado este en el sector \"Entregados\"",
+  "historyId" : "ac9884b044ca063f737bed02edf2e05d",
+  "time" : {
+    "start" : 1721421815362,
+    "stop" : 1721421815364,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721421815364,
+        "stop" : 1721421815364,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando selecciono \"Entregados\"",
+      "time" : {
+        "start" : 1721421815364,
+        "stop" : 1721421815364,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces Valido el pedido entregado correctamente",
+      "time" : {
+        "start" : 1721421815364,
+        "stop" : 1721421815364,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 3
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "entregar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Entregar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "f0292a92054565dc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588332,
+        "stop" : 1721421588335,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "6b987375ee5a87ad",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963549,
+        "stop" : 1721420963550,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "4e03d0b8583920e4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835636,
+        "stop" : 1721420835638,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "313c54ee662847b4",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607346,
+        "stop" : 1721420607348,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "754f54d7c648903",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419767356,
+        "stop" : 1721419767360,
+        "duration" : 4
+      }
+    }, {
+      "uid" : "fea93f7993c8eccc",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419245260,
+        "stop" : 1721419245262,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "cb5cf0229b56765a",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419012452,
+        "stop" : 1721419012454,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "67324f5b9a3b86b3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418875607,
+        "stop" : 1721418875609,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9303def69ca2ac5c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418710735,
+        "stop" : 1721418710738,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "b2ba0f41aae423a7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418388380,
+        "stop" : 1721418388382,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9d5c9621eb069d83",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418276851,
+        "stop" : 1721418276854,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "41b1efca55865b8f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418110977,
+        "stop" : 1721418110979,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "24d11559ad8967b0",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418002650,
+        "stop" : 1721418002653,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "4f1d8fc5ea76b662",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721417959306,
+        "stop" : 1721417959309,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "859a5a7bda71f944",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721415479851,
+        "stop" : 1721415479854,
+        "duration" : 3
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "entregar_pedido" ]
+  },
+  "source" : "7ed0f7ecd83b9218.json",
+  "parameterValues" : [ ]
+}

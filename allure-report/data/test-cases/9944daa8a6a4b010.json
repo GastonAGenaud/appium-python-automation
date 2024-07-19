@@ -1,0 +1,596 @@
+{
+  "uid" : "9944daa8a6a4b010",
+  "name" : "Validación de la pantalla \"Vuelta finalizada\"",
+  "fullName" : "Cuadrar: Validación de la pantalla \"Vuelta finalizada\"",
+  "historyId" : "82faf354cdc9584e94be63b5a1e9ab7d",
+  "time" : {
+    "start" : 1721421815334,
+    "stop" : 1721421815335,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado el usuario ingresa el correo electronico \"simple\"",
+      "time" : {
+        "start" : 1721421815334,
+        "stop" : 1721421815335,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y el usuario ingresa una contraseña",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Iniciar sesion\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"Erbi\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono la factura con numero \"83908330\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"entregar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el metodo de pago \"Transferencia\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que el metodo de pago fue seleccionado",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono la factura con numero \"8390812\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"entregar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y selecciono el metodo de pago \"Transferencia\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que el metodo de pago fue seleccionado",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que las facturas fueron entregadas",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Confirmar\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido el Total esperado \"$786.371\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido el Total recaudado \"$811.371\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido el Total rebajado \"$0\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido que por Transferencia el monto abonado es \"$811.371\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido que por Efectivo el monto abonado es \"$0\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido que por Cheque el monto abonado es \"$0\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido que por Credito el monto abonado es \"$0\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando hago click en el boton \"Cerrar transporte\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido que se muestre el mensaje \"Transporte listo\"",
+      "time" : {
+        "start" : 1721421815335,
+        "stop" : 1721421815335,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 28
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "cuadrar"
+  }, {
+    "name" : "feature",
+    "value" : "Cuadrar"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "556121a4552a3be3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588300,
+        "stop" : 1721421588301,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8cc3866effef5e8f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963514,
+        "stop" : 1721420963516,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "fc62fa8118ac16a7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835602,
+        "stop" : 1721420835604,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "8825102298935059",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607317,
+        "stop" : 1721420607318,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "edc28a40be2a1345",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419767326,
+        "stop" : 1721419767328,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "5ca416dbce11265c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419245233,
+        "stop" : 1721419245234,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2e60d76527f4f6e7",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419012424,
+        "stop" : 1721419012425,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "fff0e22af71dbafd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418875581,
+        "stop" : 1721418875583,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eea4e00289ff4d71",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418710705,
+        "stop" : 1721418710706,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "faa67e28d0a17cab",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418388355,
+        "stop" : 1721418388356,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "7f2f12098fbf2b8f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418276824,
+        "stop" : 1721418276825,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "9f31e2ab52a61cbd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418110948,
+        "stop" : 1721418110949,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3724689ac6b16604",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418002621,
+        "stop" : 1721418002622,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "8e3987a4e7829c48",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721417959271,
+        "stop" : 1721417959273,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "892a0bf9b7d05f3f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721415479828,
+        "stop" : 1721415479829,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "cuadrar" ]
+  },
+  "source" : "9944daa8a6a4b010.json",
+  "parameterValues" : [ ]
+}

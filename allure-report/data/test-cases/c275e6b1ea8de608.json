@@ -1,0 +1,254 @@
+{
+  "uid" : "c275e6b1ea8de608",
+  "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
+  "fullName" : "Rebajar Pedido: Validacion de pantalla de seleccion de motivo de rebaja",
+  "historyId" : "3f43c61b93b45238925eb7afc68e5e46",
+  "time" : {
+    "start" : 1721422415260,
+    "stop" : 1721422415261,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Retornar todo\"",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los motivos de anulacion",
+      "time" : {
+        "start" : 1721422415261,
+        "stop" : 1721422415261,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "1350d5558909f14a",
+        "name" : ".table",
+        "source" : "1350d5558909f14a.csv",
+        "type" : "text/csv",
+        "size" : 361
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 8
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "rebajar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Rebajar Pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5ed91fdd610fcb28",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421761209,
+        "stop" : 1721421761211,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "47dfca7c65a818a5",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421130145,
+        "stop" : 1721421130148,
+        "duration" : 3
+      }
+    }, {
+      "uid" : "663c8922e1c2ace3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420946733,
+        "stop" : 1721420946735,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "74579bcfb1654c92",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420718305,
+        "stop" : 1721420718306,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1faf5351147bc05e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419989454,
+        "stop" : 1721419989456,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3752bd3db941b429",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419466010,
+        "stop" : 1721419466012,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "106cf6fe5dea0f1",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418333690,
+        "stop" : 1721418333692,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "7911ee9abd7517a6",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418168824,
+        "stop" : 1721418168826,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "eb2d0c99b9755a2c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418057111,
+        "stop" : 1721418057113,
+        "duration" : 2
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "rebajar_pedido" ]
+  },
+  "source" : "c275e6b1ea8de608.json",
+  "parameterValues" : [ ]
+}

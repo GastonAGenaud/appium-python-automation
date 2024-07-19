@@ -1,0 +1,260 @@
+{
+  "uid" : "768921ac21bfad23",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
+  "fullName" : "Entregar pedido: Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\"",
+  "historyId" : "5533096916197d613382fbb44c00cc38",
+  "time" : {
+    "start" : 1721421815357,
+    "stop" : 1721421815359,
+    "duration" : 2
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721421815359,
+        "stop" : 1721421815359,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Cuando selecciono pestaña de \"Entregados\"",
+      "time" : {
+        "start" : 1721421815359,
+        "stop" : 1721421815359,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido el producto \"Benedictino S/G PT6.5 x 2 Cilindrico\"",
+      "time" : {
+        "start" : 1721421815359,
+        "stop" : 1721421815359,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido el precio unitario \"$376.873\"",
+      "time" : {
+        "start" : 1721421815359,
+        "stop" : 1721421815359,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Y valido que el precio total sea de \"$ 508.147\"",
+      "time" : {
+        "start" : 1721421815359,
+        "stop" : 1721421815359,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 5
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "entregar_pedido"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "feature",
+    "value" : "Entregar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "precioUnitario",
+    "value" : "$376.873"
+  }, {
+    "name" : "producto",
+    "value" : "Benedictino S/G PT6.5 x 2 Cilindrico"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "639bffab39765e3c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721421588327,
+        "stop" : 1721421588328,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "6aae94a14b0b00dd",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420963543,
+        "stop" : 1721420963545,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "3aa0ad989f1756c2",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420835630,
+        "stop" : 1721420835631,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "bd571a4221407c77",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721420607340,
+        "stop" : 1721420607341,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "1352d16be2d5f9c9",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419767352,
+        "stop" : 1721419767353,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "62b6650f9a22591f",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419245255,
+        "stop" : 1721419245257,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "e3c2aea67144996b",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721419012447,
+        "stop" : 1721419012448,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "2ac795840d06f429",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418875604,
+        "stop" : 1721418875605,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "a648405ac34e7a41",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418710729,
+        "stop" : 1721418710730,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "15af91f5d2e7845c",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418388376,
+        "stop" : 1721418388378,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "2a52ce00b3f43144",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418276846,
+        "stop" : 1721418276848,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "b5a4844990fd3b3e",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418110971,
+        "stop" : 1721418110973,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "9ea9217a7f8f8145",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721418002645,
+        "stop" : 1721418002646,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3a41e9fe1aadb3d8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721417959300,
+        "stop" : 1721417959302,
+        "duration" : 2
+      }
+    }, {
+      "uid" : "1873ff695a6bccc8",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721415479847,
+        "stop" : 1721415479848,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "regresion", "entregar_pedido" ]
+  },
+  "source" : "768921ac21bfad23.json",
+  "parameterValues" : [ "$376.873", "Benedictino S/G PT6.5 x 2 Cilindrico" ]
+}

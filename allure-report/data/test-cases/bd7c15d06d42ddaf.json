@@ -1,0 +1,90 @@
+{
+  "uid" : "bd7c15d06d42ddaf",
+  "name" : "Validación de motivo de anulación",
+  "fullName" : "Anular pedido: Validación de motivo de anulación",
+  "historyId" : "d593486ca55df8906ae6470c66fc6b4f",
+  "time" : {
+    "start" : 1721419245217,
+    "stop" : 1721419245220,
+    "duration" : 3
+  },
+  "status" : "skipped",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "skipped",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721419245219,
+        "stop" : 1721419245219,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los siguientes motivos",
+      "time" : {
+        "start" : 1721419245219,
+        "stop" : 1721419245220,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "365c6c00f3bb9462",
+        "name" : ".table",
+        "source" : "365c6c00f3bb9462.csv",
+        "type" : "text/csv",
+        "size" : 466
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "anular_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "anular_pedido" ]
+  },
+  "source" : "bd7c15d06d42ddaf.json",
+  "parameterValues" : [ ]
+}

@@ -34,6 +34,7 @@ class EntregarPedidoPage(Page):
         self.find_element(self.volver_a_mi_ruta_boton).click()
 
     def rebajo_el_pedido(self):
+        self.implicit_wait_visible(self.restar_btn)
         self.click_on_element(self.restar_btn)
 
     def valido_precio_total_factura(self):

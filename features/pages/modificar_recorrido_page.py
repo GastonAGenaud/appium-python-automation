@@ -6,24 +6,39 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 
 class ModificarRecorridoPage(Page):
-    iniciar_vuelta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Iniciar vuelta"]')
+    iniciar_vuelta_btn = (MobileBy.XPATH,
+                          '//android.view.ViewGroup[@content-desc="Iniciar vuelta"]')
     el_deseo_spa_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
-    boton_desplegable_mas = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Más productos"]')
-    boton_desplegable_menos = (MobileBy.XPATH, '//android.widget.TextView[@text="Menos productos"]')
-    boton_desplegable_ruta = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Más productos"]')
-    mas_productos_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Más productos"]')
-    menos_productos_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Menos productos"]')
+    boton_desplegable_mas = (MobileBy.XPATH, '(//android.widget.TextView[@text="Más cajas primero"])[1]')
+    boton_desplegable_menos = (MobileBy.XPATH, '//android.widget.TextView[@text="Menos cajas primero"]')
+    boton_desplegable_ruta = (MobileBy.XPATH, '//android.widget.TextView[@text="Ruta"]')
+    boton_desplegable_personalizado = (MobileBy.XPATH, '//android.widget.TextView[@text="Personalizado"]')
+    ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Ruta"]')
+    mas_cajas_texto = (
+    MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Más cajas primero"]')
+    menos_cajas_texto = (
+    MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Menos cajas primero"]')
+    personalizado_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and '
+                                           '@text="Personalizado"]')
     comenzar_ruta_msg = (MobileBy.XPATH, '//android.widget.TextView[@text="0 de 25 clientes completados"]')
     modifica_tu_ruta_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="modal-alert-title"]')
     presiona_prolongadamente_txt = (MobileBy.ID, 'modal-alert-subtitle')
     entendido_boton = (MobileBy.ACCESSIBILITY_ID, 'Entendido')
     no_volver_a_mostrar_txt = (MobileBy.XPATH, '//android.widget.CheckBox[@resource-id="Test Checkbox"]')
-    boton_desplegable = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="GASTRONOMICA LUSA SPA, ANTONIO BELLET 345, Abierto, Cierra a las 20:00, Productos , 35, 3 métodos de pago, $1.778.687"]/android.view.ViewGroup[1]/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView')
+    boton_desplegable = (MobileBy.XPATH,
+                         '//android.view.ViewGroup[@content-desc="GASTRONOMICA LUSA SPA, ANTONIO BELLET 345, Abierto, '
+                         'Cierra a las 20:00, Productos , 35, 3 métodos de pago, $1.778.687"]/android.view.ViewGroup['
+                         '1]/android.view.ViewGroup/com.horcrux.svg.SvgView/com.horcrux.svg.GroupView')
     mover_hacia_arriba_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover hacia arriba')
     mover_a_lo_mas_abajo_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover a lo más abajo')
     mover_hacia_arriba_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado arriba de la lista')
     mover_hacia_abajo_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado al final de la lista')
     cerrar_pedido_boton = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="closeIcon"]')
+
+    def valido_personalizado_opcion(self):
+        self.implicit_wait_visible(self.personalizado_texto)
+        valido_personalizado_texto = self.find_element(self.personalizado_texto).is_displayed()
+        return valido_personalizado_texto
 
     def valido_comenzar_ruta_btn(self):
         self.implicit_wait_visible(self.comenzar_ruta_btn)
@@ -35,52 +50,49 @@ class ModificarRecorridoPage(Page):
         nombre_local = self.find_element(self.el_deseo_spa_local).is_displayed()
         return nombre_local
 
-    def click_iniciar_vuelta_btn(self):
-        max_attempts = 4  # Número máximo de intentos
-        attempts = 0
+    def iniciar_vuelta_button(self):
+        self.implicit_wait_visible(self.iniciar_vuelta_btn)
+        button_iniciar_vuelta = self.find_element(self.iniciar_vuelta_btn).is_displayed()
+        return button_iniciar_vuelta
 
-        while attempts < max_attempts:
+    def scroll_to_element(self, locator):
+        element = self.driver.find_element(*locator)
+        self.driver.execute_script("arguments[0].scrollIntoView();", element)
+
+    def click_iniciar_vuelta_btn(self):
+        while True:
             self.click_on_element(self.iniciar_vuelta_btn)
             try:
-                WebDriverWait(self.driver, 2).until_not(
+                WebDriverWait(self.driver, 5).until_not(
                     EC.presence_of_element_located(self.iniciar_vuelta_btn)
                 )
                 print("El botón ha desaparecido.")
                 break
             except TimeoutException:
                 print("El botón aún está presente. Intentando nuevamente...")
-                attempts += 1
-                if attempts == max_attempts:
-                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
 
     def click_desplegador_btn(self):
-        max_attempts = 3
-        attempts = 0
+        # Espera hasta que el botón sea visible
+        WebDriverWait(self.driver, 10).until(
+            EC.visibility_of_element_located(self.boton_desplegable_mas)
+        )
+        # Hace clic en el botón
+        self.click_on_element(self.boton_desplegable_mas)
 
-        while attempts < max_attempts:
-            self.click_on_element(self.boton_desplegable_ruta)
-            try:
-                WebDriverWait(self.driver, 2).until_not(
-                    EC.presence_of_element_located(self.boton_desplegable_ruta)
-                )
-                print("El botón ha desaparecido.")
-                break
-            except TimeoutException:
-                print("El botón aún está presente. Intentando nuevamente...")
-                attempts += 1
-                if attempts == max_attempts:
-                    print("Número máximo de intentos alcanzado. El botón aún está presente.")
-        self.click_on_element(self.boton_desplegable_menos)
+    def valido_mas_cajas_opcion(self):
+        self.implicit_wait_visible(self.mas_cajas_texto)
+        valido_mas_cajas = self.find_element(self.mas_cajas_texto).is_displayed()
+        return valido_mas_cajas
 
-    def valido_mas_productos_opcion(self):
-        self.implicit_wait_visible(self.mas_productos_texto)
-        valido_mas_productos = self.find_element(self.mas_productos_texto).is_displayed()
-        return valido_mas_productos
+    def valido_ruta_opcion(self):
+        self.implicit_wait_visible(self.ruta_texto)
+        valido_ruta_texto = self.find_element(self.ruta_texto).is_displayed()
+        return valido_ruta_texto
 
-    def valido_menos_productos_opcion(self):
-        self.implicit_wait_visible(self.menos_productos_texto)
-        valido_menos_productos = self.find_element(self.menos_productos_texto).is_displayed()
-        return valido_menos_productos
+    def valido_menos_cajas_opcion(self):
+        self.implicit_wait_visible(self.menos_cajas_texto)
+        valido_menos_cajas = self.find_element(self.menos_cajas_texto).is_displayed()
+        return valido_menos_cajas
 
     def click_cerrar_pedido_boton(self):
         self.click_on_element(self.cerrar_pedido_boton)
