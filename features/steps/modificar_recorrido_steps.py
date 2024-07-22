@@ -3,7 +3,7 @@ from behave import given, when, then
 
 @then('valido que se visualice el boton "{boton}"')
 def valido_sea_visible_boton(context, boton):
-    assert bool(context.app.modificar_recorrido_page.valido_comenzar_ruta_btn())
+    assert context.app.modificar_recorrido_page.iniciar_vuelta_button(), f"El botón '{boton}' no está visible."
 
 
 @then('valido que sea visible la "{caracteristica}" con el "{valor}" del pedido')
@@ -23,19 +23,21 @@ def hago_click_desplegable(context):
 
 @then('valido que sea visible la opcion "{opcion}"')
 def valido_las_opcion(context, opcion):
-    if opcion == "Mas productos":
-        assert bool(context.app.modificar_recorrido_page.valido_mas_productos_opcion())
-    elif opcion == "Menos productos":
-        assert bool(context.app.modificar_recorrido_page.valido_menos_productos_opcion())
-    elif opcion == "Ruta sugerida":
-        assert bool(context.app.modificar_recorrido_page.valido_menos_productos_opcion())
+    if opcion == "Más cajas primero":
+        assert bool(context.app.modificar_recorrido_page.valido_mas_cajas_opcion())
+    elif opcion == "Menos cajas primero":
+        assert bool(context.app.modificar_recorrido_page.valido_menos_cajas_opcion())
+    elif opcion == "Ruta":
+        assert bool(context.app.modificar_recorrido_page.valido_ruta_opcion())
+    elif opcion == "Personalizado":
+        assert bool(context.app.modificar_recorrido_page.valido_personalizado_opcion())
     else:
         raise ValueError(f"No se encontro la opcion '{opcion}'")
 
 
 @then('se valida que el boton {boton} haya sido seleccionado correctamente')
 def valido_boton(context, boton):
-    assert bool(context.app.modificar_recorrido_page.valido_comenzar_ruta_msg())
+    assert bool(context.app.modificar_recorrido_page.valido_comenzar_vuelta_boton())
 
 
 @then('valido que el texto {opcion} de la pantalla de modificacion manual')

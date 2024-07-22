@@ -30,7 +30,10 @@ class AnularPedidoPage(Page):
         return self.find_element(self.motivo_anulacion_pantalla).is_displayed()
 
     def seleccionar_nombre(self, nombre):
-        nombre_element = (MobileBy.XPATH, f"//android.widget.TextView[@text='{nombre}']")
+        nombre_element = (
+            MobileBy.XPATH,
+            f"//android.widget.TextView[@text='{nombre}']"
+        )
         self.implicit_wait_visible(nombre_element)
         self.find_element(nombre_element).click()
 

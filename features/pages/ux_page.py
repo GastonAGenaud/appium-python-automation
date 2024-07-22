@@ -13,7 +13,7 @@ from features.pages.base_page import Page
 
 class UXPage(Page):
     el_deseo_spa_pedido = (
-    MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
+        MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
     comenzar_ruta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
 
     def scroll_down_until_element(self, locator, max_attempts=10):
@@ -24,15 +24,14 @@ class UXPage(Page):
             try:
                 element = self.driver.find_element(*locator)
                 return element
-
             except NoSuchElementException:
+                print(f"Intento {attempts + 1} de {max_attempts} fallido. Desplazando hacia abajo.")
                 if not move_end_executed:
                     self.driver.press_keycode(AndroidKey.MOVE_END)
-                    self.driver.press_keycode(AndroidKey.DPAD_DOWN)
-                    self.driver.press_keycode(AndroidKey.DPAD_DOWN)
+                    move_end_executed = True
 
-                move_end_executed = True
-                self.driver.press_keycode(AndroidKey.DPAD_DOWN)
+                # Realiza un desplazamiento hacia abajo más largo
+                self.driver.swipe(start_x=500, start_y=1500, end_x=500, end_y=500, duration=500)
                 attempts += 1
 
         raise NoSuchElementException(f"Elemento no encontrado después de {max_attempts} intentos: {locator}")

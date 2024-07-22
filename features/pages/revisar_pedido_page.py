@@ -1,6 +1,10 @@
 import re
+
+from appium.webdriver.extensions.android.nativekey import AndroidKey
+from selenium.common import NoSuchElementException
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from features.pages.ux_page import UXPage
 
 
 class RevisarPedidoPage(Page):
@@ -29,17 +33,16 @@ class RevisarPedidoPage(Page):
     precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$66.210"]')
     precio_unitario_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@text="$376.873"]')
     cantidad_pack_fanta = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and @text="de 2 "]')
-    cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
-                                            '@text="de 1 "]')
-    cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-planned-units" and '
-                                                 '@text="de 7 "]')
+        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="2"]')
+    cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="1"]')
+    cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and '
+                                                 '@text="7"]')
     precio_final_sprite = (
         MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
     precio_final_fanta = (
         MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
     precio_final_benedictino = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 376.873 "]')
     retornar_factura_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar factura"]')
     retornar_todo_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar todo"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
@@ -50,9 +53,11 @@ class RevisarPedidoPage(Page):
     nota_de_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="- $ 25.000"]')
     metodo_de_pago = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="formatted-product"]')
     metodo_de_pago_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
-    transferencia_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
-    efectivo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Efectivo"]')
+    transferencia_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Transferencia"]')
+    efectivo_txt = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Efectivo"]')
     mas_de_un_metodo_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Con más de un método de pago"]')
+    mas_de_un_metodo_xpath = (MobileBy.XPATH, '(//android.widget.RadioButton[@resource-id="RadioButtonConfirm"])['
+                                              '3]/android.view.ViewGroup')
     transferencia_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="Transferencia"]')
     validar_metodo_pago_mensaje = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc=", Método de pago editado"]')
@@ -64,7 +69,7 @@ class RevisarPedidoPage(Page):
     campo_texto_transferencia = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="customTextInput"])[2]')
     mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
                                                     'parte de pago. Solo se acepta para el total."]')
-    vuelta = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-home-1"]')
+    vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
 
     def cheque_mensaje_no_poder_usar(self):
         self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
@@ -153,10 +158,16 @@ class RevisarPedidoPage(Page):
         coca_cola = self.find_element(self.sprite_MidCal_pedido).is_displayed()
         return coca_cola
 
+    def __init__(self, driver):
+        super().__init__(driver)
+        self.ux_page = UXPage(driver)  # Crear una instancia de UXPage
+
     def benedictino_cilindrico_pedido(self):
-        self.implicit_wait_visible(self.benedictino_pedido)
-        fanta = self.find_element(self.benedictino_pedido).is_displayed()
-        return fanta
+        try:
+            elemento = self.ux_page.scroll_down_until_element(self.benedictino_pedido)
+            return True if elemento else False
+        except NoSuchElementException:
+            return False
 
     def valido_producto_fanta_express(self):
         self.implicit_wait_visible(self.fanta_midcal_express_pedido)
@@ -240,19 +251,23 @@ class RevisarPedidoPage(Page):
 
     def valido_comparacion_de_precio(self):
         producto_1 = self.driver.find_element(MobileBy.XPATH,
-                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[1]')
+                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
+                                              '@text="$ 66.210 "]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
         producto_2 = self.driver.find_element(MobileBy.XPATH,
-                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
+                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
+                                              '@text="$ 65.064 "]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
+        self.ux_page.scroll_down_until_element(self.benedictino_pedido)
         producto_3 = self.driver.find_element(MobileBy.XPATH,
-                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
+                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
+                                              '@text="$ 376.873 "]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)
@@ -301,7 +316,12 @@ class RevisarPedidoPage(Page):
         return texto
 
     def click_mas_de_un_metodo_opcion(self):
+        self.implicit_wait_visible(self.mas_de_un_metodo_txt)
         self.click_on_element(self.mas_de_un_metodo_txt)
+
+    def mas_de_un_metodo(self):
+        self.implicit_wait_visible(self.mas_de_un_metodo_xpath)
+        self.click_on_element(self.mas_de_un_metodo_xpath)
 
     def valido_metodo_seleccionado(self):
         self.implicit_wait_visible(self.transferencia_texto)
@@ -310,7 +330,7 @@ class RevisarPedidoPage(Page):
 
     def ingreso_montos_transferencia_efectivo(self):
         total = self.driver.find_element(MobileBy.XPATH,
-                                              '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
+                                         '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
         precio_total = total.text
         solo_numeros = re.sub(r'\D', '', precio_total)
         total = int(solo_numeros)
@@ -318,10 +338,10 @@ class RevisarPedidoPage(Page):
 
         self.click_on_element(self.campo_texto_efectivo)
         self.input(monto_indivivual, self.campo_texto_efectivo)
-
+        self.driver.hide_keyboard()
         self.click_on_element(self.campo_texto_transferencia)
         self.input(monto_indivivual, self.campo_texto_transferencia)
+        self.driver.hide_keyboard()
 
     def click_vuelta_1(self):
         self.click_on_element(self.vuelta)
-

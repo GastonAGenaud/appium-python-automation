@@ -1,4 +1,7 @@
 import re
+
+from selenium.common import NoSuchElementException
+
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -19,8 +22,25 @@ class RebajarPedidoPage(Page):
 
     def motivo_anulacion_pantalla_lista(self, motivos):
         for motivo in motivos:
-            motivo_element = (MobileBy.XPATH, f'//*[@text="${motivo}"]')
-            self.implicit_wait_visible(motivo_element)
-            if not self.find_element(motivo_element).is_displayed():
+            motivo_element = (MobileBy.XPATH, f"//*[@text='{motivo}']")
+            if not self.scroll_down_until_element(motivo_element):
                 return False
         return True
+
+    def scroll_down_until_element(self, locator, max_scrolls=10):
+        scroll_attempts = 0
+        while scroll_attempts < max_scrolls:
+            try:
+                element = self.driver.find_element(*locator)
+                if element.is_displayed():
+                    return True
+            except NoSuchElementException:
+                self.scroll_down()
+                scroll_attempts += 1
+        return False
+
+    def scroll_down(self):
+        # Implementa la lógica para desplazarse hacia abajo en la pantalla
+        # Esto puede variar según tu implementación específica de Appium
+        self.driver.swipe(start_x=500, start_y=1500, end_x=500, end_y=500,
+                          duration=500)  # Duración más corta para un scroll más rápido

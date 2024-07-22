@@ -1,1 +1,10 @@
-[{"data":{"failed":3,"broken":2,"skipped":0,"passed":51,"unknown":0,"total":56}}]
+[ {
+  "data" : {
+    "failed" : 1,
+    "broken" : 39,
+    "skipped" : 0,
+    "passed" : 25,
+    "unknown" : 0,
+    "total" : 65
+  }
+} ]
