@@ -34,6 +34,12 @@ class ModificarRecorridoPage(Page):
     mover_hacia_arriba_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado arriba de la lista')
     mover_hacia_abajo_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado al final de la lista')
     cerrar_pedido_boton = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="closeIcon"]')
+    vueltaComenzadaValidar = (MobileBy.XPATH, '//android.widget.TextView[@text="0 de 25 clientes completados"]')
+
+    def valido_comenzar_vuelta_boton(self):
+        self.implicit_wait_visible(self.iniciar_vuelta_btn)
+        valido_mensaje_vuelta_comenzada = self.find_element(self.vueltaComenzadaValidar).is_displayed()
+        return valido_mensaje_vuelta_comenzada
 
     def valido_personalizado_opcion(self):
         self.implicit_wait_visible(self.personalizado_texto)

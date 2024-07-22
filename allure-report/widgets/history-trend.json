@@ -1,10 +1,10 @@
 [ {
   "data" : {
-    "failed" : 0,
-    "broken" : 7,
-    "skipped" : 53,
-    "passed" : 6,
+    "failed" : 1,
+    "broken" : 39,
+    "skipped" : 0,
+    "passed" : 25,
     "unknown" : 0,
-    "total" : 66
+    "total" : 65
   }
 } ]

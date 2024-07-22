@@ -3,7 +3,7 @@ from behave import given, when, then
 
 @then('valido que se visualice el boton "{boton}"')
 def valido_sea_visible_boton(context, boton):
-    assert bool(context.app.modificar_recorrido_page.iniciar_vuelta_button())
+    assert context.app.modificar_recorrido_page.iniciar_vuelta_button(), f"El botón '{boton}' no está visible."
 
 
 @then('valido que sea visible la "{caracteristica}" con el "{valor}" del pedido')
@@ -37,7 +37,7 @@ def valido_las_opcion(context, opcion):
 
 @then('se valida que el boton {boton} haya sido seleccionado correctamente')
 def valido_boton(context, boton):
-    assert bool(context.app.modificar_recorrido_page.iniciar_vuelta_btn())
+    assert bool(context.app.modificar_recorrido_page.valido_comenzar_vuelta_boton())
 
 
 @then('valido que el texto {opcion} de la pantalla de modificacion manual')

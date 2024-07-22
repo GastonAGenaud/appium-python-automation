@@ -1,5 +1,6 @@
 [ {
   "data" : {
-    "Test defects" : 7
+    "Product defects" : 1,
+    "Test defects" : 39
   }
 } ]

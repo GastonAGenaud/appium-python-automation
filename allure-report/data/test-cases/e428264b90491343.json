@@ -1,0 +1,126 @@
+{
+  "uid" : "e428264b90491343",
+  "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "fullName" : "Revisar pedido: Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "historyId" : "d5fa3a42b39b0cbebdca29f1d9bed3fb",
+  "time" : {
+    "start" : 1721663207004,
+    "stop" : 1721663268983,
+    "duration" : 61979
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+  "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 34, in valido_google_maps\n    assert bool(context.app.revisar_pedido_page.valido_opcion_google_maps()), f\"La opción '{maps}' no está presente\"\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 118, in valido_opcion_google_maps\n    google_maps = self.find_element(self.google_maps_opcion).is_displayed()\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 13, in find_element\n    return self.driver.find_element(by=locator[0],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+    "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 34, in valido_google_maps\n    assert bool(context.app.revisar_pedido_page.valido_opcion_google_maps()), f\"La opción '{maps}' no está presente\"\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 118, in valido_opcion_google_maps\n    google_maps = self.find_element(self.google_maps_opcion).is_displayed()\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 13, in find_element\n    return self.driver.find_element(by=locator[0],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1721663207530,
+        "stop" : 1721663207530,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido la presencia de la opcion \"Google Maps\"",
+      "time" : {
+        "start" : 1721663207530,
+        "stop" : 1721663268197,
+        "duration" : 60667
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "statusTrace" : "  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\model.py\", line 1329, in run\n    match.run(runner.context)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run\n    self.func(context, *args, **kwargs)\n  File \"features\\steps\\revisar_pedido_steps.py\", line 34, in valido_google_maps\n    assert bool(context.app.revisar_pedido_page.valido_opcion_google_maps()), f\"La opción '{maps}' no está presente\"\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\revisar_pedido_page.py\", line 118, in valido_opcion_google_maps\n    google_maps = self.find_element(self.google_maps_opcion).is_displayed()\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\OneDrive\\Documentos\\Appium Automation\\appium-python-automation\\features\\pages\\base_page.py\", line 13, in find_element\n    return self.driver.find_element(by=locator[0],\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\webdriver.py\", line 371, in find_element\n    return self.execute(RemoteCommand.FIND_ELEMENT, {'using': by, 'value': value})['value']\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 444, in execute\n    self.error_handler.check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 30, in check_response\n    raise wde\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\appium\\webdriver\\errorhandler.py\", line 26, in check_response\n    super().check_response(response)\n  File \"C:\\Users\\Rogo_\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 249, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : true,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "38e78cf7db7b6123",
+      "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+      "source" : "38e78cf7db7b6123.mp4",
+      "type" : "video/mp4",
+      "size" : 73282
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 2,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "5af7115052307551",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721656241481,
+        "stop" : 1721656241482,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "cf924ab8ebe492a3",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721655345025,
+        "stop" : 1721655345026,
+        "duration" : 1
+      }
+    }, {
+      "uid" : "3819cdb73c4e7243",
+      "status" : "skipped",
+      "time" : {
+        "start" : 1721654699081,
+        "stop" : 1721654699082,
+        "duration" : 1
+      }
+    } ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "e428264b90491343.json",
+  "parameterValues" : [ ]
+}
