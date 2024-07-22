@@ -1,5 +1,8 @@
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class InicioSesionPage(Page):
@@ -10,6 +13,9 @@ class InicioSesionPage(Page):
     comenzar_ruta_btn = (MobileBy.ACCESSIBILITY_ID, 'Comenzar ruta')
     iniciar_sesion_btn = (MobileBy.ACCESSIBILITY_ID, 'Iniciar sesión')
     mensaje_saludo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-home"]')
+    vueltas_disponibles_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="subtitle-home"]')
+    icono_back = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="ChevronRightIcon"]')
+    vuelta_iniciada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Iniciada"]')
 
     def usuario_ingresa_correo(self, correo, logged_in):
         if not logged_in:
@@ -60,6 +66,11 @@ class InicioSesionPage(Page):
         valido_saludo = self.find_element(self.mensaje_saludo).is_displayed()
         return valido_saludo
 
+    def valid_titulo_vueltas_disponible(self):
+        self.implicit_wait_visible(self.vueltas_disponibles_txt)
+        valido_saludo = self.find_element(self.vueltas_disponibles_txt).is_displayed()
+        return valido_saludo
+
     def valido_pantalla_de_inicio(self):
         self.implicit_wait_visible(self.iniciar_sesion_btn)
         pantalla_inicio = self.find_element(self.iniciar_sesion_btn).is_displayed()
@@ -69,3 +80,26 @@ class InicioSesionPage(Page):
         self.implicit_wait_visible(self.iniciar_sesion_btn)
         ingresar_desactivado = self.find_element(self.iniciar_sesion_btn).is_enabled()
         return ingresar_desactivado
+
+    def click_icono_back(self):
+        max_attempts = 4  # Número máximo de intentos
+        attempts = 0
+
+        while attempts < max_attempts:
+            self.click_on_element(self.icono_back)
+            try:
+                WebDriverWait(self.driver, 2).until_not(
+                    EC.presence_of_element_located(self.icono_back)
+                )
+                print("El Icono ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El Icono aún está presente. Intentando nuevamente...")
+                attempts += 1
+                if attempts == max_attempts:
+                    print("Número máximo de intentos alcanzado. El Icono aún está presente.")
+
+    def valido_vuelta_iniciada_txt(self):
+        self.implicit_wait_visible(self.vuelta_iniciada_txt)
+        vuelta_iniciada = self.find_element(self.vuelta_iniciada_txt).is_enabled()
+        return vuelta_iniciada

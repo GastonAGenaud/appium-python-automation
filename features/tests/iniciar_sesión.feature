@@ -29,15 +29,21 @@ Característica: iniciar sesión
 
     Escenario: Validacion de boton "Login" deshabilitado
         Dado Reseteo la app
-        Dado estoy en la pantalla de inicio de sesion
+        Y estoy en la pantalla de inicio de sesion
         Entonces se valida que el boton de "Login" este deshabilitado
 
-#    Escenario: Validacion de pantalla de transporte
-#        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contrasena "<contrasena>"
-#        Cuando hago click en el boton "Ingresar"
-#        Y visualizo la pantalla de transporte "<mensajeSaludo>"
-#        Entonces se visualizan los textos "<texto>" en la ruta "1222654"
+    Escenario: Validacion de pantalla de transporte
+        Dado Ingreso con el conductor a la aplicacion
+        Entonces valido el texto "Hola conductor-01"
+        Y valido el texto "Estas son tus vueltas disponibles"
+
+    Escenario: Validacion de vuelta 1 iniciada
+    Dado Ingreso con el conductor a la aplicacion
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el icono "back"
+    Entonces Valido que la vuelta 1 fue iniciada
+
 
 #    Escenario: Validacion de pantalla de transporte en curso
 #        Dado ingreso el correo electronico "<correoElectronico>"

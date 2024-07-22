@@ -5,7 +5,9 @@ Característica: Estados Vacíos
     @regresion
     Escenario: Validación de pantalla "Entregados"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando selecciono "Entregados"
+        Cuando selecciono la vuelta "Vuelta 1"
+        Y hago click en el boton "Iniciar vuelta"
+        Y selecciono "Entregados"
         Entonces valido la pantalla de "Entregados"
 
     @regresion

@@ -5,8 +5,8 @@ from behave import given, when, then
 def usuario_elije_ruta(context, idRuta):
     if idRuta == "El Deseo SPA":
         context.app.ux_page.click_el_deseo_spa_btn()
-    elif idRuta == "Erbi":
-        context.app.revisar_pedido_page.click_erbi_btn()
+    elif idRuta == "LIKE EAT FOODS SPA":
+        context.app.revisar_pedido_page.click_like_eat_foods_spa_btn()
     else:
         raise ValueError(f"No se encontró la ruta '{idRuta}'")
 
@@ -38,6 +38,8 @@ def valido_google_maps(context, maps):
 def visualizo_la_factura(context, factura):
     if factura == "404145531":
         context.app.revisar_pedido_page.selecciono_la_factura()
+    elif factura == "404145535":
+        context.app.revisar_pedido_page.selecciono_la_factura_foods_spa()
     elif factura == "83908330":
         context.app.revisar_pedido_page.selecciono_la_factura_erbi_A()
     elif factura == "8390812":
@@ -50,6 +52,8 @@ def visualizo_la_factura(context, factura):
 def visualizo_la_factura2(context, factura):
     if factura == "404145531":
         context.app.revisar_pedido_page.selecciono_la_factura2()
+    elif factura == "404145535":
+        context.app.revisar_pedido_page.selecciono_la_factura_foods_spa2()
     else:
         raise ValueError(f"No se encontró la segunda factura con número '{factura}'")
 

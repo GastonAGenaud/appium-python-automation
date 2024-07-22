@@ -25,11 +25,6 @@ class ModificarRecorridoPage(Page):
     mover_hacia_abajo_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado al final de la lista')
     cerrar_pedido_boton = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="closeIcon"]')
 
-    def valido_comenzar_ruta_btn(self):
-        self.implicit_wait_visible(self.comenzar_ruta_btn)
-        valido_comenzar_ruta = self.find_element(self.comenzar_ruta_btn).is_displayed()
-        return valido_comenzar_ruta
-
     def valido_el_deseo_spa_local(self):
         self.implicit_wait_visible(self.el_deseo_spa_local)
         nombre_local = self.find_element(self.el_deseo_spa_local).is_displayed()

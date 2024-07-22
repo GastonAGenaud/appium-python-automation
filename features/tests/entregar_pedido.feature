@@ -5,12 +5,11 @@ Característica: Entregar pedido
     @regresion
     Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Retornados"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Iniciar vuelta"
+        Cuando selecciono la vuelta "Vuelta 1"
+        Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"
-        Y selecciono el metodo que te van a pagar "efectivo"
-        Y hago click en el boton "Confirmar"
         Entonces valido el texto "No hay productos rebajados"
 
     @regresion
@@ -31,28 +30,24 @@ Característica: Entregar pedido
     Escenario: Valido la entrega de un pedido
         Dado Reseteo la app
         Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Iniciar vuelta"
+        Cuando selecciono la vuelta "Vuelta 1"
+        Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"
-        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Entonces valido que el metodo de pago fue seleccionado
-        Cuando hago click en el boton "Confirmar"
         Y selecciono la segunda factura con numero "404145531"
         Y hago click en el boton "entregar"
-        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Entonces valido que el metodo de pago fue seleccionado
-        Cuando hago click en el boton "Confirmar"
         Entonces valido que las facturas fueron entregadas
         Cuando hago click en el boton "Confirmar"
         Entonces valido el icono de la pantalla "Entrega impecable"
         Y valido el texto "Entrega impecable"
         Y valido el texto "¡Felicitaciones! Has entregado el pedido sin rebajas. Que siga la buena racha."
-        Y valido el botón "Volver a mi ruta"
+        Y valido el botón "Confirmar"
 
     Escenario: Valido que un pedido entregado este en el sector "Entregados"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando selecciono "Entregados"
+        Cuando hago click en el boton "Confirmar"
+        Y selecciono "Entregados"
         Entonces Valido el pedido entregado correctamente

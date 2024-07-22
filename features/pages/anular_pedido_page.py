@@ -15,9 +15,7 @@ class AnularPedidoPage(Page):
                                                                "Efectivo, $866.455")
     textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@text=" Retornada - Sobre stock"]')
     validar_pantalla_retomar_detalles = (
-        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="EL DESEO SPA, Sobre stock, '
-                        'AVDA ANDRES BELLO 2447, Abierto, Cierra a las 23:59, Productos , 16,'
-                        ' Efectivo, $866.455"]')
+        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="EL DESEO SPA, Sobre stock, AVDA ANDRES BELLO 2447, Abierto, Cierra a las 23:59, Productos , 16, 2 métodos de pago, $866.455"]')
 
     def valido_pantalla_retomar(self):
         self.implicit_wait_visible(self.validar_pantalla_retomar_detalles)
@@ -53,7 +51,7 @@ class AnularPedidoPage(Page):
         try:
             # Añadir espera explícita
             wait = WebDriverWait(self.driver, 20)  # Aumentado a 20 segundos
-            elemento = wait.until(EC.visibility_of_element_located(self.deseo_spa_retornados_locator))
+            elemento = wait.until(EC.visibility_of_element_located(self.validar_pantalla_retomar_detalles))
             return elemento.is_displayed()
         except (NoSuchElementException, TimeoutException) as e:
             # Manejar el caso donde el elemento no se encuentra

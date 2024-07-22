@@ -5,7 +5,8 @@ Característica: Anular pedido
   @porqueretornar
   Escenario: Validación de presionar el boton "Anular pedido"
     Dado Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Iniciar vuelta"
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y hago click en el boton "Retornar todo"
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
@@ -23,16 +24,8 @@ Característica: Anular pedido
       | Falta de producto               |
       | Sin orden de compra             |
       | Dificultad en ruta              |
-      | Capacidad cliente               |
-      | Fuera de ruta                   |
-      | Producto deteriorado            |
-      | Sin dinero                      |
-      | Cliente anula pedido            |
-      | Diferencia de condicion de pago |
       | Envase                          |
       | Capacidad cliente               |
-      | Diferencia en condición de pago |
-      | Falta de producto               |
       | Horario inadecuado              |
       | Entrega atrasada                |
       | Exceso de clientes              |
@@ -51,16 +44,8 @@ Característica: Anular pedido
       | Falta de producto               |
       | Sin orden de compra             |
       | Dificultad en ruta              |
-      | Capacidad cliente               |
-      | Fuera de ruta                   |
-      | Producto deteriorado            |
-      | Sin dinero                      |
-      | Cliente anula pedido            |
-      | Diferencia de condicion de pago |
       | Envase                          |
       | Capacidad cliente               |
-      | Diferencia en condición de pago |
-      | Falta de producto               |
       | Horario inadecuado              |
       | Entrega atrasada                |
       | Exceso de clientes              |
@@ -78,7 +63,8 @@ Característica: Anular pedido
   Escenario: Validación de retornar pedido de factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Iniciar vuelta"
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en el boton "Retornar factura"
@@ -90,7 +76,8 @@ Característica: Anular pedido
   Escenario: Validación de la pantalla de retomar pedidos
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Iniciar vuelta"
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Y hago click en el boton "Retornar factura"
