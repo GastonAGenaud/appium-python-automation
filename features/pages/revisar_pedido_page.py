@@ -76,15 +76,11 @@ class RevisarPedidoPage(Page):
 
     def seleccionar_check_transferencia(self):
         self.implicit_wait_visible(self.check_transferencia)
-        valido_check_transferencia = self.find_element(self.check_transferencia).is_displayed()
         self.click_on_element(self.check_transferencia)
-        return valido_check_transferencia
 
     def seleccionar_check_efectivo(self):
         self.implicit_wait_visible(self.check_efectivo)
-        valido_check_efectivo = self.find_element(self.check_efectivo).is_displayed()
         self.click_on_element(self.check_efectivo)
-        return valido_check_efectivo
 
     def metodo_pago_mensaje(self):
         self.implicit_wait_visible(self.validar_metodo_pago_mensaje)
@@ -300,6 +296,7 @@ class RevisarPedidoPage(Page):
         return texto
 
     def click_efectivo_opcion(self):
+        self.implicit_wait_visible(self.efectivo_txt)
         self.click_on_element(self.efectivo_txt)
 
     def valido_mas_de_un_metodo_opcion(self):
