@@ -4,7 +4,8 @@ Característica: iniciar sesión
 
     @regresion
     Escenario: Validacion de Iniciar sesion exitosamente
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
         Entonces se inicia sesion exitosamente
 
     @smoke @regresion

@@ -3,7 +3,8 @@
 Característica: Cuadrar
 
     Escenario: Validación de la pantalla "Vuelta finalizada"
-        Dado el usuario ingresa el correo electronico "simple"
+        Dado Reseteo la app
+        Y el usuario ingresa el correo electronico "simple"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono la vuelta "Vuelta 1"

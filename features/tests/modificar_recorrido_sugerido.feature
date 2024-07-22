@@ -4,7 +4,8 @@ Característica: Modificar recorrido sugerido
 
 
   Escenario: Validacion de la pantalla Comenzar ruta
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Entonces valido que se visualice el boton "Iniciar vuelta"
 
