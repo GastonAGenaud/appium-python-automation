@@ -304,6 +304,7 @@ class RevisarPedidoPage(Page):
         return texto
 
     def click_efectivo_opcion(self):
+        self.implicit_wait_visible(self.efectivo_txt)
         self.click_on_element(self.efectivo_txt)
 
     def valido_mas_de_un_metodo_opcion(self):

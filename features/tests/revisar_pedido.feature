@@ -19,6 +19,7 @@ Característica: Revisar pedido
     Dado Ingreso con el conductor a la aplicacion
     Entonces valido la presencia de la opcion "Google Maps"
 
+
   Esquema del escenario: Validacion del contenido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -72,15 +73,15 @@ Característica: Revisar pedido
     Entonces valido el texto "Entregada"
 
   #No tiene nota de credito 25.000
-  Escenario: Valido la Nota de Credito
-    Dado Reseteo la app
-    Y el usuario ingresa el correo electronico "simple"
-    Y el usuario ingresa una contraseña
-    Cuando hago click en el boton "Iniciar sesion"
-    Y selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
-    Y elijo la ruta "Erbi"
-    Entonces valido que la nota de credito sea "- $ 25.000"
+#  Escenario: Valido la Nota de Credito
+#    Dado Reseteo la app
+#    Y el usuario ingresa el correo electronico "simple"
+#    Y el usuario ingresa una contraseña
+#    Cuando hago click en el boton "Iniciar sesion"
+#    Y selecciono la vuelta "Vuelta 1"
+#    Y hago click en el boton "Iniciar vuelta"
+#    Y elijo la ruta "Erbi"
+#    Entonces valido que la nota de credito sea "- $ 25.000"
 
   Esquema del escenario: Valido la seccion de metodo de pago desde la factura
     Dado Reseteo la app

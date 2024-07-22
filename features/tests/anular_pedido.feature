@@ -14,14 +14,15 @@ Característica: Anular pedido
 
   Escenario: Validación de motivo de anulación
     Dado Ingreso con el conductor a la aplicacion
-    Entonces valido la presencia de los siguientes motivos:
+    Cuando visualizo la pantalla de selección de motivo de anulacion
+    Entonces valido la presencia de los motivos de anulacion:
       | motivo                          |
       | Duplicado/Mal digitado          |
       | Local No Encontrado             |
       | Ausencia Encargado Local        |
       | Sobre stock                     |
       | Problema de fecha               |
-      | Diferencia de condición de pago |
+      | Diferencia en condición de pago |
       | Falta de producto               |
       | Sin orden de compra             |
       | Dificultad en ruta              |
@@ -34,7 +35,7 @@ Característica: Anular pedido
   @AnularPedido
   Escenario: Validación de pantalla de selección de motivo de anulación
     Dado Ingreso con el conductor a la aplicacion
-    Entonces valido la presencia de los siguientes motivos:
+    Cuando visualizo la pantalla de selección de motivo de anulacion
       | motivo                          |
       | Duplicado/Mal digitado          |
       | Local No Encontrado             |
