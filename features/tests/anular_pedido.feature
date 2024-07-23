@@ -35,7 +35,7 @@ Característica: Anular pedido
   @AnularPedido
   Escenario: Validación de pantalla de selección de motivo de anulación
     Dado Ingreso con el conductor a la aplicacion
-    Cuando visualizo la pantalla de selección de motivo de anulacion
+    Entonces valido la presencia de los motivos de anulacion:
       | motivo                          |
       | Duplicado/Mal digitado          |
       | Local No Encontrado             |
