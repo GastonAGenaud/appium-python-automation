@@ -99,3 +99,9 @@ def hago_click_en_icono(context, icono):
 @then('Valido que la vuelta 1 fue iniciada')
 def valido_vuelta_iniciada(context):
     assert bool(context.app.inicio_sesion_page.valido_vuelta_iniciada_txt())
+
+
+@then('Valido la opcion Vuelta 1')
+def valido_opcion_vuelta_1(context):
+    assert context.app.inicio_sesion_page.opcion_vuelta_1_visible(), \
+        "La opción 'Vuelta 1' no está visible en la pantalla"

@@ -233,3 +233,10 @@ def ingreso_montos_efectivo_transferencia(context):
 @when('selecciono la vuelta "{vuelta}"')
 def seleccionar_vuelta(context, vuelta):
     context.app.revisar_pedido_page.click_vuelta_1()
+
+
+@then("valido el numero de telefono del local")
+def valido_numero_telefono(context):
+    assert context.app.revisar_pedido_page.numero_telefono_local_visible(), \
+        "El número de teléfono del local no está visible en la pantalla"
+

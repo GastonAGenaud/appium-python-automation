@@ -2,48 +2,54 @@
 @iniciar_sesion
 Característica: iniciar sesión
 
-    @regresion
-    Escenario: Validacion de Iniciar sesion exitosamente
-        Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
-        Entonces se inicia sesion exitosamente
+  @regresion
+  Escenario: Validacion de Iniciar sesion exitosamente
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Entonces se inicia sesion exitosamente
 
-    @smoke @regresion
-    Escenario: Validacion de error por falta de correo
-        Dado Reseteo la app
-        Y el usuario ingresa una contraseña
-        Cuando hago click en el boton "Iniciar sesion"
-        Entonces se valida el mensaje de error en el campo de "correo electronico"
+  @smoke @regresion
+  Escenario: Validacion de error por falta de correo
+    Dado Reseteo la app
+    Y el usuario ingresa una contraseña
+    Cuando hago click en el boton "Iniciar sesion"
+    Entonces se valida el mensaje de error en el campo de "correo electronico"
 
-    @smoke @regresion
-    Escenario: Validacion de mensaje de error por falta de contraseña
-        Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "conductor-01"
-        Cuando hago click en el boton "Iniciar sesion"
-        Entonces se valida el mensaje de error en el campo de "contrasena"
+  @smoke @regresion
+  Escenario: Validacion de mensaje de error por falta de contraseña
+    Dado Reseteo la app
+    Y el usuario ingresa el correo electronico "conductor-01"
+    Cuando hago click en el boton "Iniciar sesion"
+    Entonces se valida el mensaje de error en el campo de "contrasena"
 
-    Escenario: Validacion de error de caracteres especiales
-        Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "Test$#@#!"
-        Cuando hago click en el boton "Iniciar sesion"
-        Entonces se valida el mensaje de error en el campo de "No se admiten caracteres especiales"
+  Escenario: Validacion de error de caracteres especiales
+    Dado Reseteo la app
+    Y el usuario ingresa el correo electronico "Test$#@#!"
+    Cuando hago click en el boton "Iniciar sesion"
+    Entonces se valida el mensaje de error en el campo de "No se admiten caracteres especiales"
 
-    Escenario: Validacion de boton "Login" deshabilitado
-        Dado Reseteo la app
-        Y estoy en la pantalla de inicio de sesion
-        Entonces se valida que el boton de "Login" este deshabilitado
+  Escenario: Validacion de boton "Login" deshabilitado
+    Dado Reseteo la app
+    Y estoy en la pantalla de inicio de sesion
+    Entonces se valida que el boton de "Login" este deshabilitado
 
-    Escenario: Validacion de pantalla de transporte
-        Dado Ingreso con el conductor a la aplicacion
-        Entonces valido el texto "Hola conductor-01"
-        Y valido el texto "Estas son tus vueltas disponibles"
+  Escenario: Validacion de pantalla de transporte
+    Dado Ingreso con el conductor a la aplicacion
+    Entonces valido el texto "Hola conductor-01"
+    Y valido el texto "Estas son tus vueltas disponibles"
 
-    Escenario: Validacion de vuelta 1 iniciada
+  Escenario: Validacion de vuelta 1 iniciada
     Dado Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y hago click en el icono "back"
     Entonces Valido que la vuelta 1 fue iniciada
+
+  @validarOpcionVuelta
+  Escenario: Validacion de Vuelta 1
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Entonces Valido la opcion Vuelta 1
 
 
 #    Escenario: Validacion de pantalla de transporte en curso
