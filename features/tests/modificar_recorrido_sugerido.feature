@@ -3,7 +3,8 @@
 Característica: Modificar recorrido sugerido
 
   Escenario: Validacion de la pantalla Comenzar ruta
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Entonces valido que se visualice el boton "Iniciar vuelta"
 
@@ -17,7 +18,6 @@ Característica: Modificar recorrido sugerido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-#    Y hago click en el boton "Iniciar vuelta"
     Entonces valido que sea visible la "<caracteristica>" con el "<valor>" del pedido
     Ejemplos:
       | caracteristica | valor                  |

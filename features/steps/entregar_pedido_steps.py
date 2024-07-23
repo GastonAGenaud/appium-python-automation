@@ -21,9 +21,9 @@ def mensaje_entrega_completada(context):
     assert bool(context.app.entregar_pedido_page.valido_entrega_completada())
 
 
-@then('valido el botón "Volver a mi ruta"')
+@then('valido el botón "Confirmar"')
 def valido_boton_volver_a_mi_ruta(context):
-    assert bool(context.app.cuadrar_page.valido_volver_mi_ruta())
+    assert bool(context.app.cuadrar_page.valido_confirmar_btn())
 
 
 @then('valido el icono de la pantalla "Entrega impecable"')

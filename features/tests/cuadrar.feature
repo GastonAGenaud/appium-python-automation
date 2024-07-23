@@ -3,40 +3,38 @@
 Característica: Cuadrar
 
     Escenario: Validación de la pantalla "Vuelta finalizada"
-        Dado el usuario ingresa el correo electronico "simple"
+        Dado Reseteo la app
+        Y el usuario ingresa el correo electronico "simple"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
+        Y selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
-        Y elijo la ruta "Erbi"
-        Y selecciono la factura con numero "83908330"
+        Y elijo la ruta "LIKE EAT FOODS SPA"
+        Y selecciono la factura con numero "404145535"
         Y hago click en el boton "entregar"
-        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Entonces valido que el metodo de pago fue seleccionado
-        Cuando hago click en el boton "Confirmar"
-        Y selecciono la factura con numero "8390812"
+        Y selecciono la segunda factura con numero "404145535"
         Y hago click en el boton "entregar"
-        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Entonces valido que el metodo de pago fue seleccionado
-        Cuando hago click en el boton "Confirmar"
         Entonces valido que las facturas fueron entregadas
         Cuando hago click en el boton "Confirmar"
-        Entonces valido el Total esperado "$786.371"
-        Y valido el Total recaudado "$811.371"
+        Entonces valido el Total esperado "$ 1.885.008"
+        Y valido el Total recaudado "$ 1.885.008"
         Y valido el Total rebajado "$0"
-        Y valido que por Transferencia el monto abonado es "$811.371"
-        Y valido que por Efectivo el monto abonado es "$0"
+        Y valido que por Transferencia el monto abonado es "0"
+        Y valido que por Efectivo el monto abonado es "$ 1.885.008"
         Y valido que por Cheque el monto abonado es "$0"
         Y valido que por Credito el monto abonado es "$0"
-        Cuando hago click en el boton "Cerrar transporte"
-        Entonces valido que se muestre el mensaje "Transporte listo"
+        Cuando hago click en el boton "Cerrar vuelta 1"
+        Y hago click en el boton "Confirmar cierre de vueltas"
+        Entonces valido que se muestre el mensaje "¡Vuelta cerrada!"
 
 
     @regresion
     Escenario: Validación del texto de la fecha de ruta
         Dado Reseteo la app
         Y Ingreso con el conductor a la aplicacion
+        Cuando selecciono la vuelta "Vuelta 1"
         Entonces se valida el texto de la fecha
 
     @regresion
@@ -51,9 +49,6 @@ Característica: Cuadrar
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Y hago click en el boton "entregar"
-        Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Entonces valido que el metodo de pago fue seleccionado
-        Cuando hago click en el boton "Confirmar"
         Entonces valido el texto "Entregada"
 

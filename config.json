@@ -2,11 +2,11 @@
   "target": {
     "capabilities": {
       "platformName": "Android",
-      "platformVersion": "14.0",
-      "deviceName": "emulator-5554",
+      "platformVersion": "13.0",
+      "deviceName": "Pixel 7 Pro API 33",
       "automationName": "UiAutomator2",
       "appPackage": "com.rutadigital",
-      "src": "C:/Users/Rogo_/OneDrive/Documentos/Apk Andina/app-release.apk",
+      "src": "E:/trabajo/Andina/appium-python-automation/src/binaries/app-release.apk",
       "appActivity": "com.rutadigital.MainActivity"
     },
     "usuario": "conductor-01",

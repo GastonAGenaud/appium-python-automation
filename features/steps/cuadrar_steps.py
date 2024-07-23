@@ -56,7 +56,7 @@ def valido_monto_por_credito(context, texto):
 
 @then('valido que se muestre el mensaje "{texto}"')
 def valido_mensaje_transporte_listo(context, texto):
-    assert bool(context.app.cuadrar_page.valido_mensaje_de_transporte_listo())
+    assert bool(context.app.cuadrar_page.valido_mensaje_de_vuelta_cerrada())
 
 
 @then('valido que las facturas fueron entregadas')

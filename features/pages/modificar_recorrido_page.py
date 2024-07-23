@@ -9,7 +9,7 @@ class ModificarRecorridoPage(Page):
     iniciar_vuelta_btn = (MobileBy.XPATH,
                           '//android.view.ViewGroup[@content-desc="Iniciar vuelta"]')
     el_deseo_spa_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
-    boton_desplegable_mas = (MobileBy.XPATH, '(//android.widget.TextView[@text="Más cajas primero"])[1]')
+    boton_desplegable_mas = (MobileBy.XPATH, '//android.widget.TextView[@text="Más cajas primero"]')
     boton_desplegable_menos = (MobileBy.XPATH, '//android.widget.TextView[@text="Menos cajas primero"]')
     boton_desplegable_ruta = (MobileBy.XPATH, '//android.widget.TextView[@text="Ruta"]')
     boton_desplegable_personalizado = (MobileBy.XPATH, '//android.widget.TextView[@text="Personalizado"]')
@@ -46,11 +46,6 @@ class ModificarRecorridoPage(Page):
         valido_personalizado_texto = self.find_element(self.personalizado_texto).is_displayed()
         return valido_personalizado_texto
 
-    def valido_comenzar_ruta_btn(self):
-        self.implicit_wait_visible(self.comenzar_ruta_btn)
-        valido_comenzar_ruta = self.find_element(self.comenzar_ruta_btn).is_displayed()
-        return valido_comenzar_ruta
-
     def valido_el_deseo_spa_local(self):
         self.implicit_wait_visible(self.el_deseo_spa_local)
         nombre_local = self.find_element(self.el_deseo_spa_local).is_displayed()
@@ -78,12 +73,17 @@ class ModificarRecorridoPage(Page):
                 print("El botón aún está presente. Intentando nuevamente...")
 
     def click_desplegador_btn(self):
-        # Espera hasta que el botón sea visible
-        WebDriverWait(self.driver, 10).until(
-            EC.visibility_of_element_located(self.boton_desplegable_mas)
-        )
-        # Hace clic en el botón
-        self.click_on_element(self.boton_desplegable_mas)
+        while True:
+            self.click_on_element(self.boton_desplegable_mas)
+            try:
+                WebDriverWait(self.driver, 1).until(
+                    EC.presence_of_element_located(self.boton_desplegable_menos)
+                )
+                print("El botón ha desaparecido.")
+                break
+            except TimeoutException:
+                print("El botón aún está presente. Intentando nuevamente...")
+
 
     def valido_mas_cajas_opcion(self):
         self.implicit_wait_visible(self.mas_cajas_texto)

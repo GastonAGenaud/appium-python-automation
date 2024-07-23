@@ -3,7 +3,8 @@
 Característica: Revisar pedido
 
   Escenario: Validacion de visualizacion de ruta de pedido
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"

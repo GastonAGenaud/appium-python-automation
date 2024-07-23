@@ -29,6 +29,10 @@ def valido_texto(context, texto):
         assert bool(context.app.cuadrar_page.valido_mensaje_entrega_impecable())
     elif texto == '¡Felicitaciones! Has entregado el pedido sin rebajas. Que siga la buena racha.':
         assert bool(context.app.cuadrar_page.validar_entrega_exitosa_texto())
+    elif texto == 'Hola conductor-01':
+        assert bool(context.app.inicio_sesion_page.valid_mensaje_saludo())
+    elif texto == 'Estas son tus vueltas disponibles':
+        assert bool(context.app.inicio_sesion_page.valid_titulo_vueltas_disponible())
     else:
         raise ValueError(f"No se encontró el texto '{texto}'")
 

@@ -9,7 +9,7 @@ from features.pages.ux_page import UXPage
 
 class RevisarPedidoPage(Page):
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
-    erbi_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-location"]')
+    like_eat_foods_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-location"]')
     precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 866.455"]')
     productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="10"]')
     productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="6"]')
@@ -21,6 +21,8 @@ class RevisarPedidoPage(Page):
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
     factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
     factura_del_pedido2 = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[2]')
+    factura_del_pedido_foods_spa = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145535"])[1]')
+    factura_del_pedido_foods_spa2 = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145535"])[2]')
     factura_del_pedido_erbi_uno = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 83908330"]')
     factura_del_pedido_erbi_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 8390812"]')
     sprite_MidCal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
@@ -92,8 +94,8 @@ class RevisarPedidoPage(Page):
         valido_deseo_spa = self.find_element(self.el_deseo_spa_titulo).is_displayed()
         return valido_deseo_spa
 
-    def click_erbi_btn(self):
-        self.click_on_element(self.erbi_titulo)
+    def click_like_eat_foods_spa_btn(self):
+        self.click_on_element(self.like_eat_foods_spa_titulo)
 
     def valido_precio_del_pedido(self):
         self.implicit_wait_visible(self.precio_del_pedido)
@@ -122,6 +124,12 @@ class RevisarPedidoPage(Page):
 
     def selecciono_la_factura_erbi_B(self):
         self.click_on_element(self.factura_del_pedido_erbi_dos)
+
+    def selecciono_la_factura_foods_spa(self):
+        self.click_on_element(self.factura_del_pedido_foods_spa)
+
+    def selecciono_la_factura_foods_spa2(self):
+        self.click_on_element(self.factura_del_pedido_foods_spa2)
 
     def selecciono_la_factura2(self):
         self.click_on_element(self.factura_del_pedido2)
