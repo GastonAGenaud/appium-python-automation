@@ -18,6 +18,7 @@ Característica: Revisar pedido
     Dado Ingreso con el conductor a la aplicacion
     Entonces valido la presencia de la opcion "Google Maps"
 
+    @benedictinoTest
   Esquema del escenario: Validacion del contenido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
