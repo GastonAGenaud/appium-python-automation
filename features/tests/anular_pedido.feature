@@ -34,24 +34,29 @@ Característica: Anular pedido
 
   @AnularPedido
   Escenario: Validación de pantalla de selección de motivo de anulación
-    Dado Ingreso con el conductor a la aplicacion
-    Entonces valido la presencia de los motivos de anulacion:
-      | motivo                          |
-      | Duplicado/Mal digitado          |
-      | Local No Encontrado             |
-      | Ausencia Encargado Local        |
-      | Sobre stock                     |
-      | Problema de fecha               |
-      | Diferencia de condición de pago |
-      | Falta de producto               |
-      | Sin orden de compra             |
-      | Dificultad en ruta              |
-      | Envase                          |
-      | Capacidad cliente               |
-      | Horario inadecuado              |
-      | Entrega atrasada                |
-      | Exceso de clientes              |
-    Cuando selecciono "Sobre stock"
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
+    Y elijo la ruta "El Deseo SPA"
+    Y hago click en el boton "Retornar todo"
+    #Entonces valido la presencia de los motivos de anulacion:
+    #  | motivo                          |
+    #  | Duplicado/Mal digitado          |
+    #  | Local No Encontrado             |
+    #  | Ausencia Encargado Local        |
+    #  | Sobre stock                     |
+    #  | Problema de fecha               |
+    #  | Diferencia de condición de pago |
+    #  | Falta de producto   |
+    #  | Sin orden de compra |
+    #  | Dificultad en ruta |
+    #  | Envase             |
+    #  | Capacidad cliente  |
+    #  | Horario inadecuado |
+    #  | Entrega atrasada   |
+    #  | Exceso de clientes |
+    Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"
     Entonces verifico que se envíe el motivo seleccionado correctamente
 

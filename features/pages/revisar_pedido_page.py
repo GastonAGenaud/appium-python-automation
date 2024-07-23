@@ -211,9 +211,14 @@ class RevisarPedidoPage(Page):
         return cantidad_pack
 
     def valido_cantidad_pack_benedictino(self):
-        self.implicit_wait_visible(self.cantidad_pack_benedictino)
-        cantidad_pack = self.find_element(self.cantidad_pack_benedictino).is_displayed()
-        return cantidad_pack
+        try:
+            elemento = self.ux_page.scroll_down_until_element(self.cantidad_pack_benedictino)
+            return True if elemento else False
+        except NoSuchElementException:
+            return False
+        #self.implicit_wait_visible(self.cantidad_pack_benedictino)
+        #cantidad_pack = self.find_element(self.cantidad_pack_benedictino).is_displayed()
+        #return cantidad_pack
 
     def valido_precio_final_sprite(self):
         self.implicit_wait_visible(self.precio_final_sprite)
@@ -260,7 +265,7 @@ class RevisarPedidoPage(Page):
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        self.ux_page.scroll_down_until_element(self.benedictino_pedido)
+        self.ux_page.scroll_down_until_element(self.cantidad_pack_benedictino)
         producto_3 = self.driver.find_element(MobileBy.XPATH,
                                               '//android.widget.TextView[@resource-id="title-amount-total" and '
                                               '@text="$ 376.873 "]')
@@ -335,10 +340,10 @@ class RevisarPedidoPage(Page):
 
         self.click_on_element(self.campo_texto_efectivo)
         self.input(monto_indivivual, self.campo_texto_efectivo)
-        self.driver.hide_keyboard()
+        #self.driver.hide_keyboard()
         self.click_on_element(self.campo_texto_transferencia)
         self.input(monto_indivivual, self.campo_texto_transferencia)
-        self.driver.hide_keyboard()
+        #self.driver.hide_keyboard()
 
     def click_vuelta_1(self):
         self.click_on_element(self.vuelta)

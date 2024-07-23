@@ -1,3 +1,5 @@
+import time
+
 from behave import given, when, then
 
 
@@ -49,5 +51,12 @@ def valido_pantalla(context, pantalla):
 
 @given('Reseteo la app')
 def reseteo_app(context):
-    context.driver.reset()
+    package_name = "com.rutadigital"
+
+    # Terminar la app
+    context.driver.terminate_app(package_name)
+    # Esperar un momento para asegurarse de que la app esté completamente cerrada
+    time.sleep(5)
+    # Abrir la app nuevamente
+    context.driver.activate_app(package_name)
     context.logged_in = False
