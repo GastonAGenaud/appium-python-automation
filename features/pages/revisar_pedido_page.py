@@ -71,6 +71,11 @@ class RevisarPedidoPage(Page):
                                                     'parte de pago. Solo se acepta para el total."]')
     vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
     numero_telefono_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="phoneNumber"]')
+    texto_cierre_local = (MobileBy.XPATH, '//android.widget.TextView[@text="Cierra a las 23:59"]')
+
+    def cierre_de_local(self):
+        self.implicit_wait_visible(self.texto_cierre_local)
+        return self.driver.find_element(*self.texto_cierre_local).is_displayed()
 
     def numero_telefono_local_visible(self):
         self.implicit_wait_visible(self.numero_telefono_local)

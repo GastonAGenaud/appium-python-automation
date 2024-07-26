@@ -240,3 +240,9 @@ def valido_numero_telefono(context):
     assert context.app.revisar_pedido_page.numero_telefono_local_visible(), \
         "El número de teléfono del local no está visible en la pantalla"
 
+
+@then("valido el horario del cierre del local")
+def valido_horario_cierre(context):
+    assert context.app.revisar_pedido_page.cierre_de_local(), "El mensaje que se muestra en el sector horario no es válido"
+
+
