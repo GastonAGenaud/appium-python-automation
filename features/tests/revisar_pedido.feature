@@ -168,3 +168,12 @@ Característica: Revisar pedido
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "404145531"
     Entonces valido el horario del cierre del local
+
+  Escenario: valido que el local está abierto
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Entonces valido que el local se encuentra abierto

@@ -72,6 +72,11 @@ class RevisarPedidoPage(Page):
     vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
     numero_telefono_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="phoneNumber"]')
     texto_cierre_local = (MobileBy.XPATH, '//android.widget.TextView[@text="Cierra a las 23:59"]')
+    local_abierto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="storeStatus"]')
+
+    def local_texto_abierto(self):
+        self.implicit_wait_visible(self.local_abierto)
+        return self.driver.find_element(*self.local_abierto).is_displayed()
 
     def cierre_de_local(self):
         self.implicit_wait_visible(self.texto_cierre_local)
