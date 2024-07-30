@@ -16,6 +16,8 @@ class InicioSesionPage(Page):
     vueltas_disponibles_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="subtitle-home"]')
     icono_back = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="ChevronRightIcon"]')
     vuelta_iniciada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Iniciada"]')
+    vuelta_1 = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 1234567, Clientes '
+                                'gestionados, 0/25"]')
     menu_lateral_btn = (MobileBy.XPATH, '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/com.horcrux.svg.SvgView')
     cerrar_sesion_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-session"]')
     si_eliminar_mi_cuenta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]')
@@ -26,6 +28,11 @@ class InicioSesionPage(Page):
     cerrar_sesion_modal_btn = (MobileBy.XPATH, '//android.widget.Button[@resource-id="android:id/button1"]')
     mensaje_exito_termino_condiciones = (MobileBy.XPATH, '//android.widget.TextView[@text="Aceptar términos y condiciones"]')
     cuenta_eliminada_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-title-app"]')
+
+    def opcion_vuelta_1_visible(self):
+        self.implicit_wait_visible(self.vuelta_1)
+        opcion_vuelta_1 = self.find_element(self.vuelta_1).is_displayed()
+        return opcion_vuelta_1
 
     def usuario_ingresa_correo(self, correo, logged_in):
         if not logged_in:
@@ -48,12 +55,12 @@ class InicioSesionPage(Page):
     def click_iniciar_sesion_btn(self, logged_in):
         if not logged_in:
             # if self.driver.is_keyboard_shown():
-            #self.driver.hide_keyboard()
+            self.driver.hide_keyboard()
             self.click_on_element(self.iniciar_sesion_btn)
 
     def click_iniciar_sesion_boton(self):
         # if self.driver.is_keyboard_shown():
-        #self.driver.hide_keyboard()
+        self.driver.hide_keyboard()
 
         self.click_on_element(self.iniciar_sesion_btn)
 

@@ -15,7 +15,23 @@ class AnularPedidoPage(Page):
                                                                "Efectivo, $866.455")
     textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@text=" Retornada - Sobre stock"]')
     validar_pantalla_retomar_detalles = (
-        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="EL DESEO SPA, Sobre stock, AVDA ANDRES BELLO 2447, Abierto, Cierra a las 23:59, Productos , 16, 2 métodos de pago, $866.455"]')
+        MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="EL DESEO SPA, Sobre stock, AVDA ANDRES BELLO 2447, '
+                        'Abierto, Cierra a las 23:59, Productos , 16, 2 métodos de pago, $866.455"]')
+    campo_busqueda_motivo = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="text-input-outlined"]')
+
+    def ingresar_texto_busqueda_motivo(self, texto):
+        self.implicit_wait_visible(self.campo_busqueda_motivo)
+        self.click_on_element(self.campo_busqueda_motivo)
+        campo_busqueda = self.driver.find_element(*self.campo_busqueda_motivo)
+        campo_busqueda.send_keys(texto)
+        self.driver.hide_keyboard()
+
+    def click_busqueda_motivo(self):
+        self.implicit_wait_visible(self.campo_busqueda_motivo)
+        self.click_on_element(self.campo_busqueda_motivo)
+        campo_busqueda = self.driver.find_element(*self.campo_busqueda_motivo)
+        campo_busqueda.send_keys("10")
+        self.driver.hide_keyboard()
 
     def valido_pantalla_retomar(self):
         self.implicit_wait_visible(self.validar_pantalla_retomar_detalles)

@@ -233,3 +233,22 @@ def ingreso_montos_efectivo_transferencia(context):
 @when('selecciono la vuelta "{vuelta}"')
 def seleccionar_vuelta(context, vuelta):
     context.app.revisar_pedido_page.click_vuelta_1()
+
+
+@then("valido el numero de telefono del local")
+def valido_numero_telefono(context):
+    assert context.app.revisar_pedido_page.numero_telefono_local_visible(), \
+        "El número de teléfono del local no está visible en la pantalla"
+
+
+@then("valido el horario del cierre del local")
+def valido_horario_cierre(context):
+    assert context.app.revisar_pedido_page.cierre_de_local(), ("El mensaje que se muestra en el sector horario no es "
+                                                               "válido")
+
+
+@then("valido que el local se encuentra abierto")
+def valido_local_abierto(context):
+    assert context.app.revisar_pedido_page.local_texto_abierto(), (
+        "El mensaje que se muestra en el sector abierto/cerrado no "
+        "es válido")

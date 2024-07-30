@@ -26,6 +26,10 @@ Característica: Anular pedido
       | Falta de producto               |
       | Sin orden de compra             |
       | Dificultad en ruta              |
+      | Fuera de ruta                   |
+      | Producto deteriorado            |
+      | Sin dinero                      |
+      | Cliente anula pedido            |
       | Envase                          |
       | Capacidad cliente               |
       | Horario inadecuado              |
@@ -99,3 +103,30 @@ Característica: Anular pedido
     Y hago click en el boton "Confirmar"
     Y selecciono "Retornados"
     Entonces Valido la pantalla de retomar pedidos
+
+  Escenario: Validación de pantalla de selección de motivo de anulación mediante busqueda de numero
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y hago click en el boton "Retornar factura"
+    Y ingreso el numero 10
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Entonces verifico la validacion del retorno de la factura
+
+
+  Escenario: Validación de pantalla de selección de motivo de anulación mediante busqueda de texto
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
+    Y elijo la ruta "El Deseo SPA"
+    Y selecciono la factura con numero "404145531"
+    Y hago click en el boton "Retornar factura"
+    Y ingreso el texto "sobre stock"
+    Y selecciono "Sobre stock"
+    Y hago click en el boton "Confirmar"
+    Entonces verifico la validacion del retorno de la factura

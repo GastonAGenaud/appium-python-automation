@@ -41,3 +41,13 @@ def valido_texto_porque_retornar(context):
 @when('visualizo la pantalla de selección de motivo de anulacion')
 def valido_redireccion_detalles(context):
     assert context.app.anular_pedido_page.valido_pantalla_motivo_anulacion()
+
+
+@when('ingreso el numero 10')
+def ingreso_numero_11(context):
+    context.app.anular_pedido_page.click_busqueda_motivo()
+
+
+@when('ingreso el texto "{texto}"')
+def ingreso_texto(context, texto):
+    context.app.anular_pedido_page.ingresar_texto_busqueda_motivo(texto)

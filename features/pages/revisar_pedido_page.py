@@ -70,11 +70,26 @@ class RevisarPedidoPage(Page):
     mensaje_cheche_no_poder_usar = (MobileBy.XPATH, '//android.widget.TextView[@text="No puedes usar un cheque como '
                                                     'parte de pago. Solo se acepta para el total."]')
     vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
+    numero_telefono_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="phoneNumber"]')
+    texto_cierre_local = (MobileBy.XPATH, '//android.widget.TextView[@text="Cierra a las 23:59"]')
+    local_abierto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="storeStatus"]')
 
-    def cheque_mensaje_no_poder_usar(self):
-        self.implicit_wait_visible(self.mensaje_cheche_no_poder_usar)
-        valido_mensaje_sector_cheque = self.find_element(self.mensaje_cheche_no_poder_usar).is_displayed()
-        return valido_mensaje_sector_cheque
+    def local_texto_abierto(self):
+        self.implicit_wait_visible(self.local_abierto)
+        return self.driver.find_element(*self.local_abierto).is_displayed()
+
+    def cierre_de_local(self):
+        self.implicit_wait_visible(self.texto_cierre_local)
+        return self.driver.find_element(*self.texto_cierre_local).is_displayed()
+
+    def numero_telefono_local_visible(self):
+        self.implicit_wait_visible(self.numero_telefono_local)
+        return self.driver.find_element(*self.numero_telefono_local).is_displayed()
+
+    def numero_telefono_local_visible(self):
+        self.implicit_wait_visible(self.numero_telefono_local)
+        numero_telefono_local_visible = self.driver.find_element(*self.numero_telefono_local).is_displayed()
+        return numero_telefono_local_visible
 
     def seleccionar_check_transferencia(self):
         self.implicit_wait_visible(self.check_transferencia)

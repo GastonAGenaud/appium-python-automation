@@ -1,7 +1,9 @@
 import re
+import time
+from telnetlib import EC
 
 from selenium.common import NoSuchElementException
-
+from selenium.webdriver.support.wait import WebDriverWait
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -24,10 +26,12 @@ class RebajarPedidoPage(Page):
         for motivo in motivos:
             motivo_element = (MobileBy.XPATH, f"//*[@text='{motivo}']")
             if not self.scroll_down_until_element(motivo_element):
+                print(f"Motivo no encontrado: {motivo}")  # Logging para motivos no encontrados
                 return False
         return True
 
-    def scroll_down_until_element(self, locator, max_scrolls=10):
+    def scroll_down_until_element(self, locator,
+                                  max_scrolls=20):  # Aumentar el número máximo de intentos de desplazamiento
         scroll_attempts = 0
         while scroll_attempts < max_scrolls:
             try:
@@ -37,10 +41,16 @@ class RebajarPedidoPage(Page):
             except NoSuchElementException:
                 self.scroll_down()
                 scroll_attempts += 1
+                print(f"Intento de scroll: {scroll_attempts}")  # Logging para intentos de scroll
+                time.sleep(1.5)  # Aumentar el tiempo de espera entre cada intento de scroll
         return False
 
     def scroll_down(self):
-        # Implementa la lógica para desplazarse hacia abajo en la pantalla
-        # Esto puede variar según tu implementación específica de Appium
-        self.driver.swipe(start_x=500, start_y=1500, end_x=500, end_y=500,
-                          duration=500)  # Duración más corta para un scroll más rápido
+        # Aumenta la duración para un scroll más lento y más profundo
+        self.driver.swipe(start_x=500, start_y=1500, end_x=500, end_y=300, duration=1500)
+
+    def implicit_wait_visible(self, locator, timeout=10):
+        WebDriverWait(self.driver, timeout).until(
+            EC.visibility_of_element_located(locator),
+            message=f"El elemento con el locator {locator} no se visualizó dentro del tiempo especificado."
+        )

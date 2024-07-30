@@ -45,6 +45,11 @@ Característica: iniciar sesión
         Y hago click en el icono "back"
         Entonces Valido que la vuelta 1 fue iniciada
 
+    Escenario: Validacion de Vuelta 1
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
+        Entonces Valido la opcion Vuelta 1
+
     Escenario: Validacion de cerrar sesion exitosamente
         Dado Ingreso con el conductor a la aplicacion
         Cuando hago click en el boton "Menu Lateral"

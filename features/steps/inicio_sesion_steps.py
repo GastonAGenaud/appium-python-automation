@@ -118,6 +118,12 @@ def valido_vuelta_iniciada(context):
     assert bool(context.app.inicio_sesion_page.valido_vuelta_iniciada_txt())
 
 
+@then('Valido la opcion Vuelta 1')
+def valido_opcion_vuelta_1(context):
+    assert context.app.inicio_sesion_page.opcion_vuelta_1_visible(), \
+        "La opción 'Vuelta 1' no está visible en la pantalla"
+
+
 @when('hago click en el boton "{boton}" en el modal')
 def hago_click_en_boton_cerrar_sesion_modal(context, boton):
     context.app.inicio_sesion_page.click_cerrar_sesion_modal_btn()
