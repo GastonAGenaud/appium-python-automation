@@ -39,12 +39,35 @@ Característica: iniciar sesión
         Y valido el texto "Estas son tus vueltas disponibles"
 
     Escenario: Validacion de vuelta 1 iniciada
-    Dado Ingreso con el conductor a la aplicacion
-    Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
-    Y hago click en el icono "back"
-    Entonces Valido que la vuelta 1 fue iniciada
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando selecciono la vuelta "Vuelta 1"
+        Y hago click en el boton "Iniciar vuelta"
+        Y hago click en el icono "back"
+        Entonces Valido que la vuelta 1 fue iniciada
 
+    Escenario: Validacion de cerrar sesion exitosamente
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Menu Lateral"
+        Y hago click en el boton "Cerrar sesion"
+        Y hago click en el boton "CERRAR SESION" en el modal
+        Entonces valido que se cerro la sesion
+
+    Escenario: Acepto termino y condiciones
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Menu Lateral"
+        Y hago click en el boton "Terminos y condiciones"
+        Y hago click en el icono "scroll down"
+        Y hago click en el boton "Aceptar términos y condiciones"
+        Entonces valido que se aceptaron los terminos y condiciones
+
+    Escenario: Validacion de eliminar cuenta exitosamente
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Menu Lateral"
+        Y hago click en el boton "Eliminar mi cuenta"
+        Y hago click en el boton "Sí, eliminar mi cuenta"
+        Entonces valido que la cuenta se elimino exitosamente
 
 #    Escenario: Validacion de pantalla de transporte en curso
 #        Dado ingreso el correo electronico "<correoElectronico>"

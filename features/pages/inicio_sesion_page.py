@@ -16,6 +16,16 @@ class InicioSesionPage(Page):
     vueltas_disponibles_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="subtitle-home"]')
     icono_back = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="ChevronRightIcon"]')
     vuelta_iniciada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Iniciada"]')
+    menu_lateral_btn = (MobileBy.XPATH, '//android.widget.FrameLayout[@resource-id="android:id/content"]/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/com.horcrux.svg.SvgView')
+    cerrar_sesion_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-session"]')
+    si_eliminar_mi_cuenta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]')
+    terminos_y_condiciones_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-terms-conditions"]')
+    aceptar_terminos_y_condiciones_btn = (MobileBy.ACCESSIBILITY_ID, 'Aceptar términos y condiciones')
+    scroll_down_icono = (MobileBy.XPATH, '//android.view.ViewGroup[@resource-id="scrollDownButton"]')
+    eliminar_cuenta_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-delete-account"]')
+    cerrar_sesion_modal_btn = (MobileBy.XPATH, '//android.widget.Button[@resource-id="android:id/button1"]')
+    mensaje_exito_termino_condiciones = (MobileBy.XPATH, '//android.widget.TextView[@text="Aceptar términos y condiciones"]')
+    cuenta_eliminada_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-title-app"]')
 
     def usuario_ingresa_correo(self, correo, logged_in):
         if not logged_in:
@@ -46,6 +56,9 @@ class InicioSesionPage(Page):
         #self.driver.hide_keyboard()
 
         self.click_on_element(self.iniciar_sesion_btn)
+
+    def click_scroll_down_icono(self):
+        self.click_on_element(self.scroll_down_icono)
 
     def valido_mensaje_error_correo(self):
         self.implicit_wait_visible(self.mensaje_error_correo)
@@ -102,5 +115,36 @@ class InicioSesionPage(Page):
 
     def valido_vuelta_iniciada_txt(self):
         self.implicit_wait_visible(self.vuelta_iniciada_txt)
-        vuelta_iniciada = self.find_element(self.vuelta_iniciada_txt).is_enabled()
+        vuelta_iniciada = self.find_element(self.vuelta_iniciada_txt).is_displayed()
         return vuelta_iniciada
+
+    def click_menu_lateral_btn(self):
+        self.click_on_element(self.menu_lateral_btn)
+
+    def click_cerrar_sesion_btn(self):
+        self.click_on_element(self.cerrar_sesion_btn)
+
+    def click_si_eliminar_mi_cuenta_btn(self):
+        self.click_on_element(self.si_eliminar_mi_cuenta_btn)
+
+    def click_cerrar_sesion_modal_btn(self):
+        self.click_on_element(self.cerrar_sesion_modal_btn)
+
+    def click_terminos_condiciones_btn(self):
+        self.click_on_element(self.terminos_y_condiciones_btn)
+
+    def click_aceptar_terminos_y_condiciones_btn(self):
+        self.click_on_element(self.aceptar_terminos_y_condiciones_btn)
+
+    def click_eliminar_cuenta_btn(self):
+        self.click_on_element(self.eliminar_cuenta_btn)
+
+    def valido_mensaje_de_exito(self):
+        self.implicit_wait_visible(self.mensaje_exito_termino_condiciones)
+        mensaje_de_exito = self.find_element(self.mensaje_exito_termino_condiciones).is_displayed()
+        return mensaje_de_exito
+
+    def valido_cuenta_eliminada_txt(self):
+        self.implicit_wait_visible(self.cuenta_eliminada_txt)
+        cuenta_eliminada = self.find_element(self.cuenta_eliminada_txt).is_displayed()
+        return cuenta_eliminada

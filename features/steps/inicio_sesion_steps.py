@@ -32,6 +32,18 @@ def usuario_ingresa_aplicacion(context):
 def click_en_el_boton(context, boton):
     if boton == "Iniciar sesion":
         context.app.inicio_sesion_page.click_iniciar_sesion_boton()
+    elif boton == "Menu Lateral":
+        context.app.inicio_sesion_page.click_menu_lateral_btn()
+    elif boton == "Cerrar sesion":
+        context.app.inicio_sesion_page.click_cerrar_sesion_btn()
+    elif boton == "Sí, eliminar mi cuenta":
+        context.app.inicio_sesion_page.click_si_eliminar_mi_cuenta_btn()
+    elif boton == "Eliminar mi cuenta":
+        context.app.inicio_sesion_page.click_eliminar_cuenta_btn()
+    elif boton == "Terminos y condiciones":
+        context.app.inicio_sesion_page.click_terminos_condiciones_btn()
+    elif boton == "Aceptar términos y condiciones":
+        context.app.inicio_sesion_page.click_aceptar_terminos_y_condiciones_btn()
     elif boton == "Retornar factura":
         context.app.revisar_pedido_page.click_retornar_factura_btn()
     elif boton == "Retornar todo":
@@ -93,9 +105,34 @@ def boton_login_deshabilitado(context, boton):
 
 @when('hago click en el icono "{icono}"')
 def hago_click_en_icono(context, icono):
-    context.app.inicio_sesion_page.click_icono_back()
+    if icono == "back":
+        context.app.inicio_sesion_page.click_icono_back()
+    elif icono == "scroll down":
+        context.app.inicio_sesion_page.click_scroll_down_icono()
+    else:
+        raise ValueError(f"No se encontro el icono de '{icono}'")
 
 
 @then('Valido que la vuelta 1 fue iniciada')
 def valido_vuelta_iniciada(context):
     assert bool(context.app.inicio_sesion_page.valido_vuelta_iniciada_txt())
+
+
+@when('hago click en el boton "{boton}" en el modal')
+def hago_click_en_boton_cerrar_sesion_modal(context, boton):
+    context.app.inicio_sesion_page.click_cerrar_sesion_modal_btn()
+
+
+@then('valido que se cerro la sesion')
+def valido_sesion_cerrada(context):
+    assert bool(context.app.inicio_sesion_page.valido_pantalla_de_inicio())
+
+
+@then('valido que se aceptaron los terminos y condiciones')
+def valido_aceptaron_los_terminos(context):
+    assert bool(context.app.inicio_sesion_page.valido_mensaje_de_exito())
+
+
+@then('valido que la cuenta se elimino exitosamente')
+def valido_cuenta_elimino_exitosamente(context):
+    assert bool(context.app.inicio_sesion_page.valido_cuenta_eliminada_txt())

@@ -2,9 +2,41 @@
 @ux
 Característica: Validaciones de UX/UI
 
+    Escenario: Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion
+        Dado estoy en la pantalla de inicio de sesion
+        Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar sesión"]"
+        Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="󰈈"]"
+
+    Escenario: Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles
+        Dado Ingreso con el conductor a la aplicacion
+        Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 1234567, Clientes gestionados, 0/25"]"
+        Y valido el tamaño de zona de accion del boton "//android.widget.FrameLayout[@resource-id="android:id/content"]"
+
+    Escenario: Valido las zonas de accion de la pantalla del menu lateral
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Menu Lateral"
+        Entonces valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-close-session"]"
+        Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-terms-conditions"]"
+        Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-delete-account"]"
+
+    Escenario: Valido las zonas de accion de la pantalla de Términos y condiciones
+        Dado Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Terminos y condiciones"
+        Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="scrollDownButton"]/com.horcrux.svg.SvgView"
+        Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar términos y condiciones"]"
+
+    Escenario: Valido las zonas de accion del modal de Eliminar mi cuenta
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Menu Lateral"
+        Y hago click en el boton "Eliminar mi cuenta"
+        Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]"
+        Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Cancelar"]"
+
     @regresion
     Escenario: Valido las zonas de accion de la pantalla de la seccion "Pendientes"
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
@@ -94,3 +126,4 @@ Característica: Validaciones de UX/UI
         Y valido el tamaño de zona de accion del boton "(//android.widget.RadioButton[@resource-id="RadioButtonConfirm"])[3]/android.view.ViewGroup"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Confirmar"]"
         Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="ChevronRightIcon"]"
+
