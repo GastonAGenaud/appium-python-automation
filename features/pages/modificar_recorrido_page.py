@@ -84,7 +84,6 @@ class ModificarRecorridoPage(Page):
             except TimeoutException:
                 print("El botón aún está presente. Intentando nuevamente...")
 
-
     def valido_mas_cajas_opcion(self):
         self.implicit_wait_visible(self.mas_cajas_texto)
         valido_mas_cajas = self.find_element(self.mas_cajas_texto).is_displayed()

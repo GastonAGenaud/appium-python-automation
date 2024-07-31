@@ -22,16 +22,18 @@ class AnularPedidoPage(Page):
     def ingresar_texto_busqueda_motivo(self, texto):
         self.implicit_wait_visible(self.campo_busqueda_motivo)
         self.click_on_element(self.campo_busqueda_motivo)
-        campo_busqueda = self.driver.find_element(*self.campo_busqueda_motivo)
-        campo_busqueda.send_keys(texto)
-        self.driver.hide_keyboard()
+        #campo_busqueda = self.driver.find_element(*self.campo_busqueda_motivo)
+        #campo_busqueda.send_keys(texto)
+        self.input(texto, self.campo_busqueda_motivo)
+        #self.driver.hide_keyboard()
 
     def click_busqueda_motivo(self):
         self.implicit_wait_visible(self.campo_busqueda_motivo)
         self.click_on_element(self.campo_busqueda_motivo)
-        campo_busqueda = self.driver.find_element(*self.campo_busqueda_motivo)
-        campo_busqueda.send_keys("10")
-        self.driver.hide_keyboard()
+        #campo_busqueda = self.driver.find_element(*self.campo_busqueda_motivo)
+        #campo_busqueda.send_keys("10")
+        self.input("10", self.campo_busqueda_motivo)
+        #self.driver.hide_keyboard()
 
     def valido_pantalla_retomar(self):
         self.implicit_wait_visible(self.validar_pantalla_retomar_detalles)
@@ -48,9 +50,10 @@ class AnularPedidoPage(Page):
     def seleccionar_nombre(self, nombre):
         nombre_element = (
             MobileBy.XPATH,
-            f"//android.widget.TextView[@text='{nombre}']"
+            f'//android.widget.TextView[@text="{nombre}"]'
         )
         self.implicit_wait_visible(nombre_element)
+        self.find_element(nombre_element).click()
         self.find_element(nombre_element).click()
 
     def valido_boton_ver_detalle(self):

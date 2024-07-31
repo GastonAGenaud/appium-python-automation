@@ -74,6 +74,12 @@ Característica: iniciar sesión
         Y hago click en el boton "Sí, eliminar mi cuenta"
         Entonces valido que la cuenta se elimino exitosamente
 
+    Escenario: Reseteo la aplicacion luesgo de eliminar la cuenta
+        Dado Reseteo la app
+        Y Ingreso con el conductor a la aplicacion
+        Cuando hago click en el boton "Cerrar aplicación"
+        Y hago click en el boton "CERRAR SESION" en el modal
+
 #    Escenario: Validacion de pantalla de transporte en curso
 #        Dado ingreso el correo electronico "<correoElectronico>"
 #        Y ingreso la contrasena "<contrasena>"

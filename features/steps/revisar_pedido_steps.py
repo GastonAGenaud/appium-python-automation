@@ -212,7 +212,7 @@ def valido_mensaje_pago_editado(context):
 @then('valido el mensaje que se muestra en el sector Cheque')
 def valido_mensaje_sector_cheque(context):
     assert bool(
-        context.app.revisar_pedido_page.cheque_mensaje_no_poder_usar()), "El mensaje que se muestra en el sector Cheque"
+        context.app.revisar_pedido_page.valido_sector_cheque()), "El metodo de pago Cheque, no es visible"
 
 
 @when('hago click en el check "{metodo}"')
