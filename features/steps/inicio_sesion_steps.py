@@ -36,6 +36,8 @@ def click_en_el_boton(context, boton):
         context.app.inicio_sesion_page.click_menu_lateral_btn()
     elif boton == "Cerrar sesion":
         context.app.inicio_sesion_page.click_cerrar_sesion_btn()
+    elif boton == "Cerrar aplicación":
+        context.app.inicio_sesion_page.click_cerrar_aplicacion_btn()
     elif boton == "Sí, eliminar mi cuenta":
         context.app.inicio_sesion_page.click_si_eliminar_mi_cuenta_btn()
     elif boton == "Eliminar mi cuenta":

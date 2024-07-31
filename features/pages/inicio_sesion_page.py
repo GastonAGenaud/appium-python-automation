@@ -28,6 +28,7 @@ class InicioSesionPage(Page):
     cerrar_sesion_modal_btn = (MobileBy.XPATH, '//android.widget.Button[@resource-id="android:id/button1"]')
     mensaje_exito_termino_condiciones = (MobileBy.XPATH, '//android.widget.TextView[@text="Aceptar términos y condiciones"]')
     cuenta_eliminada_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-title-app"]')
+    cerrar_aplicacion_btn = (MobileBy.ACCESSIBILITY_ID, 'Cerrar aplicación')
 
     def opcion_vuelta_1_visible(self):
         self.implicit_wait_visible(self.vuelta_1)
@@ -55,17 +56,20 @@ class InicioSesionPage(Page):
     def click_iniciar_sesion_btn(self, logged_in):
         if not logged_in:
             # if self.driver.is_keyboard_shown():
-            self.driver.hide_keyboard()
+            #self.driver.hide_keyboard()
             self.click_on_element(self.iniciar_sesion_btn)
 
     def click_iniciar_sesion_boton(self):
         # if self.driver.is_keyboard_shown():
-        self.driver.hide_keyboard()
+        #self.driver.hide_keyboard()
 
         self.click_on_element(self.iniciar_sesion_btn)
 
     def click_scroll_down_icono(self):
         self.click_on_element(self.scroll_down_icono)
+
+    def click_cerrar_aplicacion_btn(self):
+        self.click_on_element(self.cerrar_aplicacion_btn)
 
     def valido_mensaje_error_correo(self):
         self.implicit_wait_visible(self.mensaje_error_correo)

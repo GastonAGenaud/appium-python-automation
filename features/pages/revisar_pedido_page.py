@@ -73,22 +73,19 @@ class RevisarPedidoPage(Page):
     numero_telefono_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="phoneNumber"]')
     texto_cierre_local = (MobileBy.XPATH, '//android.widget.TextView[@text="Cierra a las 23:59"]')
     local_abierto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="storeStatus"]')
+    metodo_cheque = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-ContainerTwoPage-TypeCheck"]')
 
     def local_texto_abierto(self):
         self.implicit_wait_visible(self.local_abierto)
-        return self.driver.find_element(*self.local_abierto).is_displayed()
+        return self.find_element(self.local_abierto).is_displayed()
 
     def cierre_de_local(self):
         self.implicit_wait_visible(self.texto_cierre_local)
-        return self.driver.find_element(*self.texto_cierre_local).is_displayed()
+        return self.find_element(self.texto_cierre_local).is_displayed()
 
     def numero_telefono_local_visible(self):
         self.implicit_wait_visible(self.numero_telefono_local)
-        return self.driver.find_element(*self.numero_telefono_local).is_displayed()
-
-    def numero_telefono_local_visible(self):
-        self.implicit_wait_visible(self.numero_telefono_local)
-        numero_telefono_local_visible = self.driver.find_element(*self.numero_telefono_local).is_displayed()
+        numero_telefono_local_visible = self.find_element(self.numero_telefono_local).is_displayed()
         return numero_telefono_local_visible
 
     def seleccionar_check_transferencia(self):
@@ -231,9 +228,11 @@ class RevisarPedidoPage(Page):
             return True if elemento else False
         except NoSuchElementException:
             return False
-        #self.implicit_wait_visible(self.cantidad_pack_benedictino)
-        #cantidad_pack = self.find_element(self.cantidad_pack_benedictino).is_displayed()
-        #return cantidad_pack
+
+    def valido_sector_cheque(self):
+        self.implicit_wait_visible(self.metodo_cheque)
+        metodo = self.find_element(self.metodo_cheque).is_displayed()
+        return metodo
 
     def valido_precio_final_sprite(self):
         self.implicit_wait_visible(self.precio_final_sprite)
