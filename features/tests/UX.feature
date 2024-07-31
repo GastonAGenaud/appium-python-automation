@@ -8,26 +8,26 @@ Característica: Validaciones de UX/UI
         Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="󰈈"]"
 
     Escenario: Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 1234567, Clientes gestionados, 0/25"]"
         Y valido el tamaño de zona de accion del boton "//android.widget.FrameLayout[@resource-id="android:id/content"]"
 
     Escenario: Valido las zonas de accion de la pantalla del menu lateral
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Menu Lateral"
         Entonces valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-close-session"]"
         Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-terms-conditions"]"
         Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-delete-account"]"
 
     Escenario: Valido las zonas de accion de la pantalla de Términos y condiciones
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Terminos y condiciones"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="scrollDownButton"]/com.horcrux.svg.SvgView"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar términos y condiciones"]"
 
     Escenario: Valido las zonas de accion del modal de Eliminar mi cuenta
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Menu Lateral"
         Y hago click en el boton "Eliminar mi cuenta"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]"
@@ -36,7 +36,7 @@ Característica: Validaciones de UX/UI
     @regresion
     Escenario: Valido las zonas de accion de la pantalla de la seccion "Pendientes"
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
@@ -48,7 +48,7 @@ Característica: Validaciones de UX/UI
 
     @regresion
     Escenario: Valido las zonas de accion de la pantalla del Pedido
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornar todo"]"
@@ -60,7 +60,7 @@ Característica: Validaciones de UX/UI
 
     @regresion
     Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="+"]"
@@ -73,7 +73,7 @@ Característica: Validaciones de UX/UI
 
     @regresion
     Escenario: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "entregar"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados "]"
@@ -82,7 +82,7 @@ Característica: Validaciones de UX/UI
     @regresion
     Escenario: Valido las zonas de accion del desplegable "Ordenar por"
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Y hago click en el desplegable
         Entonces valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Menos cajas primero"]"
@@ -92,7 +92,7 @@ Característica: Validaciones de UX/UI
 
     Escenario: Valido las zonas de accion de los botones de la seccion Cuadratura
         Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "simple"
+        Y el usuario ingresa el N° de camion a la aplicacion "simple"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono la vuelta "Vuelta 1"
@@ -115,7 +115,7 @@ Característica: Validaciones de UX/UI
 
     Escenario: Valido las zonas de accion del modal de Metodo de Pago
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"

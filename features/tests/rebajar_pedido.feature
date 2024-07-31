@@ -4,7 +4,7 @@ Característica: Rebajar Pedido
 
   Escenario: Rebajar precio de un producto y seleccionar motivo de anulacion en la factura
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -17,7 +17,7 @@ Característica: Rebajar Pedido
 
   Escenario: Validacion de pantalla de seleccion de motivo de rebaja
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"

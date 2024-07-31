@@ -4,7 +4,7 @@ import os
 from behave import given, when, then
 
 
-@given('el usuario ingresa el correo electronico "{correo}"')
+@given('el usuario ingresa el N° de camion a la aplicacion "{correo}"')
 def usuario_ingresa_correo_electronico(context, correo):
     context.app.inicio_sesion_page.usuario_ingresa_correo_manual(correo)
 
@@ -16,7 +16,7 @@ def usuario_ingresa_una_contrasena(context):
     context.app.inicio_sesion_page.usuario_ingresa_contrasena_manual(config['target']['password'])
 
 
-@given('Ingreso con el conductor a la aplicacion')
+@given('Ingreso con el N° de camion a la aplicacion')
 def usuario_ingresa_aplicacion(context):
     if not context.logged_in:
         # Leer la configuración del archivo config.json

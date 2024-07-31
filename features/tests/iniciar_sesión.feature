@@ -5,7 +5,7 @@ Característica: iniciar sesión
     @regresion
     Escenario: Validacion de Iniciar sesion exitosamente
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Entonces se inicia sesion exitosamente
 
     @smoke @regresion
@@ -18,13 +18,13 @@ Característica: iniciar sesión
     @smoke @regresion
     Escenario: Validacion de mensaje de error por falta de contraseña
         Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "conductor-01"
+        Y el usuario ingresa el N° de camion a la aplicacion "5001"
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "contrasena"
 
     Escenario: Validacion de error de caracteres especiales
         Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "Test$#@#!"
+        Y el usuario ingresa el N° de camion a la aplicacion "Test$#@#!"
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "No se admiten caracteres especiales"
 
@@ -34,12 +34,12 @@ Característica: iniciar sesión
         Entonces se valida que el boton de "Login" este deshabilitado
 
     Escenario: Validacion de pantalla de transporte
-        Dado Ingreso con el conductor a la aplicacion
-        Entonces valido el texto "Hola conductor-01"
+        Dado Ingreso con el N° de camion a la aplicacion
+        Entonces valido el texto "Buenas tardes"
         Y valido el texto "Estas son tus vueltas disponibles"
 
     Escenario: Validacion de vuelta 1 iniciada
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y hago click en el icono "back"
@@ -47,11 +47,11 @@ Característica: iniciar sesión
 
     Escenario: Validacion de Vuelta 1
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Entonces Valido la opcion Vuelta 1
 
     Escenario: Validacion de cerrar sesion exitosamente
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Menu Lateral"
         Y hago click en el boton "Cerrar sesion"
         Y hago click en el boton "CERRAR SESION" en el modal
@@ -59,26 +59,12 @@ Característica: iniciar sesión
 
     Escenario: Acepto termino y condiciones
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Menu Lateral"
         Y hago click en el boton "Terminos y condiciones"
         Y hago click en el icono "scroll down"
         Y hago click en el boton "Aceptar términos y condiciones"
         Entonces valido que se aceptaron los terminos y condiciones
-
-    Escenario: Validacion de eliminar cuenta exitosamente
-        Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Menu Lateral"
-        Y hago click en el boton "Eliminar mi cuenta"
-        Y hago click en el boton "Sí, eliminar mi cuenta"
-        Entonces valido que la cuenta se elimino exitosamente
-
-    Escenario: Reseteo la aplicacion luesgo de eliminar la cuenta
-        Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Cerrar aplicación"
-        Y hago click en el boton "CERRAR SESION" en el modal
 
 #    Escenario: Validacion de pantalla de transporte en curso
 #        Dado ingreso el correo electronico "<correoElectronico>"

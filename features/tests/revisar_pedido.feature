@@ -4,25 +4,25 @@ Característica: Revisar pedido
 
   Escenario: Validacion de visualizacion de ruta de pedido
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Entonces se valida que la visualizacion de pedido para la ruta "El Deseo SPA" sea correcta
 
   Escenario: Validacion de visualizacion de la cantidad de productos y el monto de transferencia
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Ingreso con el N° de camion a la aplicacion
     Entonces valido la visualizacion del monto de la transferencia
     Y valido la visualizacion de la cantidad de los productos
 
   Escenario: Validacion de opciones en el modal al presionar "Ver indicaciones en mapa"
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Ingreso con el N° de camion a la aplicacion
     Entonces valido la presencia de la opcion "Google Maps"
 
 
   Esquema del escenario: Validacion del contenido de la factura
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -42,7 +42,7 @@ Característica: Revisar pedido
 
   Escenario: Anular pedido de la factura
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -52,7 +52,7 @@ Característica: Revisar pedido
 
   Escenario: Validacion del precio total del pedido
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -61,7 +61,7 @@ Característica: Revisar pedido
 
   Escenario: Entregar pedido de la factura
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -75,7 +75,7 @@ Característica: Revisar pedido
   #No tiene nota de credito 25.000
 #  Escenario: Valido la Nota de Credito
 #    Dado Reseteo la app
-#    Y el usuario ingresa el correo electronico "simple"
+#    Y el usuario ingresa el N° de camion a la aplicacion "simple"
 #    Y el usuario ingresa una contraseña
 #    Cuando hago click en el boton "Iniciar sesion"
 #    Y selecciono la vuelta "Vuelta 1"
@@ -85,7 +85,7 @@ Característica: Revisar pedido
 
   Esquema del escenario: Valido la seccion de metodo de pago desde la factura
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -103,7 +103,7 @@ Característica: Revisar pedido
 
   Escenario: Valido la seccion de metodo de pago "Transferencia"
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -115,7 +115,7 @@ Característica: Revisar pedido
 
   Escenario: Valido la seccion de metodo de pago "Efectivo"
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -127,7 +127,7 @@ Característica: Revisar pedido
 
   Escenario: Valido la seccion de metodo de pago "Con mas de un metodo de pago"
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -142,7 +142,7 @@ Característica: Revisar pedido
 
   Escenario: Valido el texto que se muestra en el sector de pago con Cheque
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -153,7 +153,7 @@ Característica: Revisar pedido
 
   Escenario: Valido el numero de telefono del local
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -162,7 +162,7 @@ Característica: Revisar pedido
 
   Escenario: valido el horario del cierre del local
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -171,7 +171,7 @@ Característica: Revisar pedido
 
   Escenario: valido que el local está abierto
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"

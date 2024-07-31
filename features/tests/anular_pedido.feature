@@ -5,7 +5,7 @@ Característica: Anular pedido
   @porqueretornar
   Escenario: Validación de presionar el boton "Anular pedido"
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -13,7 +13,7 @@ Característica: Anular pedido
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
 
   Escenario: Validación de motivo de anulación
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Ingreso con el N° de camion a la aplicacion
     Cuando visualizo la pantalla de selección de motivo de anulacion
     Entonces valido la presencia de los motivos de anulacion:
       | motivo                          |
@@ -39,7 +39,7 @@ Característica: Anular pedido
   @AnularPedido
   Escenario: Validación de pantalla de selección de motivo de anulación
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -66,14 +66,14 @@ Característica: Anular pedido
 
   @rutaAnterior
   Escenario: Validación del sector "Retornados"
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Ingreso con el N° de camion a la aplicacion
     Cuando selecciono "Retornados"
     Entonces valido que la ruta utilizada anteriormente esté presente
 
   @anularPedidoFactura
   Escenario: Validación de retornar pedido de factura
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -86,7 +86,7 @@ Característica: Anular pedido
   @retomarPedido
   Escenario: Validación de la pantalla de retomar pedidos
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -106,7 +106,7 @@ Característica: Anular pedido
 
   Escenario: Validación de pantalla de selección de motivo de anulación mediante busqueda de numero
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
@@ -120,7 +120,7 @@ Característica: Anular pedido
 
   Escenario: Validación de pantalla de selección de motivo de anulación mediante busqueda de texto
     Dado Reseteo la app
-    Y Ingreso con el conductor a la aplicacion
+    Y Ingreso con el N° de camion a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"

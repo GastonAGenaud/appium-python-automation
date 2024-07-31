@@ -4,7 +4,7 @@ Característica: Cuadrar
 
     Escenario: Validación de la pantalla "Vuelta finalizada"
         Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "simple"
+        Y el usuario ingresa el N° de camion a la aplicacion "simple"
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono la vuelta "Vuelta 1"
@@ -33,18 +33,18 @@ Característica: Cuadrar
     @regresion
     Escenario: Validación del texto de la fecha de ruta
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Entonces se valida el texto de la fecha
 
     @regresion
     Escenario: Validación del texto "25 clientes"
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Entonces se valida el texto "25 clientes"
 
     @modalComenzarRuta
     Escenario: Validacion del texto "Entregada"
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "404145531"

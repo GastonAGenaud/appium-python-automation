@@ -5,7 +5,7 @@ Característica: Entregar pedido
     @regresion
     Escenario: Validación de la pantalla "Entregar pedidos" en el sector "Retornados"
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
@@ -15,7 +15,7 @@ Característica: Entregar pedido
 
     @regresion
     Esquema del escenario: Validación de la pantalla "Entregar pedidos" en el sector "Entregados"
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando selecciono pestaña de "Entregados"
         Entonces valido el producto "<producto>"
         Y valido el precio unitario "<precioUnitario>"
@@ -30,7 +30,7 @@ Característica: Entregar pedido
 
     Escenario: Valido la entrega de un pedido
         Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
+        Y Ingreso con el N° de camion a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
@@ -48,7 +48,7 @@ Característica: Entregar pedido
         Y valido el botón "Confirmar"
 
     Escenario: Valido que un pedido entregado este en el sector "Entregados"
-        Dado Ingreso con el conductor a la aplicacion
+        Dado Ingreso con el N° de camion a la aplicacion
         Cuando hago click en el boton "Confirmar"
         Y selecciono "Entregados"
         Entonces Valido el pedido entregado correctamente
