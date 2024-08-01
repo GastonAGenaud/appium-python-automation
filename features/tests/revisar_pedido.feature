@@ -19,26 +19,25 @@ Característica: Revisar pedido
     Dado Ingreso con el conductor a la aplicacion
     Entonces valido la presencia de la opcion "Google Maps"
 
-
   Esquema del escenario: Validacion del contenido de la factura
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Entonces valido el producto "<producto>"
-    Y valido el precio unitario "<precioUnitario>" en la factura
+    Y valido el precio unitario "<precioUnitario>"
     Y valido la cantidad de pack pedidos "<cantidadPack>"
     Y valido el sector de botones de agregar y restar
     Y valido el precio final "<precioTotal>"
-    Y valido que el precio total sea de "$ 508.147"
+    Y valido que el precio total sea de "$ 20.000"
 
     Ejemplos:
-      | producto                             | precioUnitario | cantidadPack | precioTotal |
-      | Sprite MidCal PT250cc x6             | $ 65.064       | 1            | $ 65.064    |
-      | Fanta MidCal Express 237cc x 24      | $ 33.105       | 2            | $ 66.210    |
-      | Benedictino S/G PT6.5 x 2 Cilindrico | $ 53.839       | 7            | $ 376.873   |
+      | producto                         | precioUnitario | cantidadPack | precioTotal |
+      | Coca Cola Sin Azucar LT350cc x 6 | $ 1.000        | 10           | $ 10.000    |
+      | Nordic Zero Ginger Ale PT3,0 x 6 | $ 1.000        | 5            | $ 5.000     |
+      | Andina Nectar Damasco PT1,5 x 6  | $ 1.000        | 5            | $ 5.000     |
 
   Escenario: Anular pedido de la factura
     Dado Reseteo la app
@@ -46,7 +45,7 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Retornar factura"
         #Entonces valido que se muestre una confirmacion de anulacion del pedido
 
@@ -56,7 +55,7 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Entonces valido que este correcta la suma del precio de los productos
 
   Escenario: Entregar pedido de la factura
@@ -65,12 +64,13 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
-    Y hago click en el boton "entregar"
-    #Y selecciono el metodo que te van a pagar "efectivo"
+    Y selecciono la factura con numero "812345672"
+    Y hago click en el boton "aceptar"
+    Y selecciono el metodo que te van a pagar "efectivo"
+    Y hago click en el boton "Confirmar"
     Entonces valido el texto "No hay productos rebajados"
     Cuando hago click en el boton "Confirmar"
-    Entonces valido el texto "Entregada"
+    Entonces valido el texto "Entregado"
 
   #No tiene nota de credito 25.000
 #  Escenario: Valido la Nota de Credito
@@ -89,10 +89,10 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"
     Entonces valido el texto "¿Con qué te van a pagar?"
-    Y valido que el precio total sea de "$ 508.147"
+    Y valido que el precio total sea de "$ 20.000"
     Y valido que sea visible el metodo de pago "<metodo>"
 
     Ejemplos:
@@ -107,7 +107,7 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"
     Y selecciono el metodo de pago "Transferencia"
     Y hago click en el boton "Confirmar"
@@ -119,7 +119,7 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"
     Y selecciono el metodo de pago "Efectivo"
     Y hago click en el boton "Confirmar"
@@ -131,7 +131,7 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "método de pago"
     Y selecciono el metodo de pago "Con más de un método de pago"
     Y hago click en el check "Efectivo"
@@ -146,7 +146,7 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "método de pago"
     Y selecciono el metodo de pago "Con más de un método de pago"
     Entonces valido el mensaje que se muestra en el sector Cheque
@@ -157,7 +157,6 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
     Entonces valido el numero de telefono del local
 
   Escenario: valido el horario del cierre del local
@@ -166,7 +165,6 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
     Entonces valido el horario del cierre del local
 
   Escenario: valido que el local está abierto
@@ -175,5 +173,4 @@ Característica: Revisar pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
     Entonces valido que el local se encuentra abierto

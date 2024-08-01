@@ -1,1 +1,49 @@
-{"uid":"4b4757e66a1912dae1a509f688f20b0f","name":"categories","children":[{"name":"Test defects","children":[{"name":"ValueError: No se encontro el mensaje de error en el campo de 'No se admiten caracteres especiales'\n","children":[{"name":"Validacion de error de caracteres especiales","uid":"521b78985e993736","parentUid":"76e0989a4c2e32c6e54b70187119a654","status":"broken","time":{"start":1722427000865,"stop":1722427011958,"duration":11093},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["iniciar_sesion"]}],"uid":"76e0989a4c2e32c6e54b70187119a654"}],"uid":"bdbf199525818fae7a8651db9eafe741"},{"name":"Product defects","children":[{"name":"AssertionError\n","children":[{"name":"Validacion de boton \"Login\" deshabilitado","uid":"aa5b897b61675275","parentUid":"a730cf0b0a23aabea6d11aa0391c8a76","status":"failed","time":{"start":1722427011958,"stop":1722427021093,"duration":9135},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["iniciar_sesion"]}],"uid":"a730cf0b0a23aabea6d11aa0391c8a76"}],"uid":"8fb3a91ba5aaf9de24cc8a92edc82b5d"}]}
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "children" : [ {
+        "name" : "Valido la seccion de metodo de pago desde la factura -- @1.1 ",
+        "uid" : "f6e6164f87b225ec",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722545486272,
+          "stop" : 1722545603972,
+          "duration" : 117700
+        },
+        "flaky" : false,
+        "parameters" : [ "Transferencia" ]
+      }, {
+        "name" : "Valido la seccion de metodo de pago desde la factura -- @1.2 ",
+        "uid" : "fbab4c7a64c1c8db",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722545603973,
+          "stop" : 1722545722236,
+          "duration" : 118263
+        },
+        "flaky" : false,
+        "parameters" : [ "Efectivo" ]
+      }, {
+        "name" : "Valido la seccion de metodo de pago desde la factura -- @1.3 ",
+        "uid" : "441599097e7ccc8f",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722545722237,
+          "stop" : 1722545839998,
+          "duration" : 117761
+        },
+        "flaky" : false,
+        "parameters" : [ "Con más de un método de pago" ]
+      } ],
+      "uid" : "c761cc1e1f67c97166ba2758d9324261"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

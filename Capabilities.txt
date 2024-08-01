@@ -1,6 +1,15 @@
 {
-  "platformName": "Android",
-  "appium:platformVersion": "13.0",
-  "appium:deviceName": "Pixel 7 Pro API 33",
-  "appium:automationName": "UiAutomator2"
+  "target": {
+    "capabilities": {
+      "platformName": "Android",
+      "platformVersion": "14.0",
+      "deviceName": "emulator-5554",
+      "automationName": "UiAutomator2",
+      "appPackage": "com.rutadigital",
+      "src": "C:/Users/Rogo_/OneDrive/Documentos/Apk Andina/app-release.apk",
+      "appActivity": "com.rutadigital.MainActivity"
+    },
+    "usuario": "5001",
+    "password": "Holamundo1234#"
+  }
 }

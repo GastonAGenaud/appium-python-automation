@@ -21,8 +21,8 @@ def valido_texto(context, texto):
         assert bool(context.app.empty_states_page.valido_txt_seccion_anulados())
     elif texto == 'Aun no visitas a ningun cliente':
         assert bool(context.app.empty_states_page.no_has_visitado_clientes_txt())
-    elif texto == 'Entregada':
-        assert context.app.cuadrar_page.validar_texto_entregada()
+    elif texto == 'Entregado':
+        assert context.app.cuadrar_page.validar_texto_entregado()
     elif texto == 'No hay productos rebajados':
         assert context.app.cuadrar_page.validar_texto_no_hay_producto()
     elif texto == '¿Con qué te van a pagar?':

@@ -56,12 +56,12 @@ class InicioSesionPage(Page):
     def click_iniciar_sesion_btn(self, logged_in):
         if not logged_in:
             # if self.driver.is_keyboard_shown():
-            #self.driver.hide_keyboard()
+            self.driver.hide_keyboard()
             self.click_on_element(self.iniciar_sesion_btn)
 
     def click_iniciar_sesion_boton(self):
         # if self.driver.is_keyboard_shown():
-        #self.driver.hide_keyboard()
+        self.driver.hide_keyboard()
 
         self.click_on_element(self.iniciar_sesion_btn)
 

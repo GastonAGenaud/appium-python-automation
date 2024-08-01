@@ -62,7 +62,7 @@ Característica: Validaciones de UX/UI
     Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531
         Dado Ingreso con el conductor a la aplicacion
         Cuando elijo la ruta "El Deseo SPA"
-        Y selecciono la factura con numero "404145531"
+        Y selecciono la factura con numero "812345672"
         Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="+"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="-"]"
         Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregar"]"
@@ -98,7 +98,7 @@ Característica: Validaciones de UX/UI
         Y selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "LIKE EAT FOODS SPA"
-        Y selecciono la factura con numero "404145535"
+        Y selecciono la factura con numero "812345672"
         Y hago click en el boton "entregar"
         Y hago click en el boton "Confirmar"
         Y selecciono la segunda factura con numero "404145535"
@@ -119,7 +119,7 @@ Característica: Validaciones de UX/UI
         Cuando selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
-        Y selecciono la factura con numero "404145531"
+        Y selecciono la factura con numero "812345672"
         Y hago click en la opcion "metodo de pago"
         Entonces valido el tamaño de zona de accion del boton "(//android.widget.RadioButton[@resource-id="RadioButtonConfirm"])[1]/android.view.ViewGroup"
         Y valido el tamaño de zona de accion del boton "(//android.widget.RadioButton[@resource-id="RadioButtonConfirm"])[2]/android.view.ViewGroup"

@@ -1,7 +1,10 @@
 import re
-
+from selenium.webdriver.support import expected_conditions as EC
 from appium.webdriver.extensions.android.nativekey import AndroidKey
 from selenium.common import NoSuchElementException
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 from features.pages.ux_page import UXPage
@@ -10,39 +13,40 @@ from features.pages.ux_page import UXPage
 class RevisarPedidoPage(Page):
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
     like_eat_foods_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-location"]')
-    precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 866.455"]')
-    productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="10"]')
-    productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="6"]')
+    precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 35.000"]')
+    productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="10 caj - 10 pac"]')
+    productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="10 caj - 10 pac"]')
     google_maps_opcion = (MobileBy.ACCESSIBILITY_ID, 'Ver mapa')
     anular_pedido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anular pedido"]')
-    entregar_btn = (MobileBy.ACCESSIBILITY_ID, 'Entregar')
-    precio_total_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 508.147"]')
+    aceptar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Aceptar"]')
+    precio_total_pedido = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
-    factura_del_pedido = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[1]')
-    factura_del_pedido2 = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145531"])[2]')
+    factura_del_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Factura N° 812345672, Productos, '
+                                          '10 caj - 10 pac, Transferencia/Efectivo, $20.000"]')
+    factura_del_pedido2 = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Préstamo de envases N° 812345671, '
+                                           'Cantidad, 10 caj, Cheque, $15.000"]')
     factura_del_pedido_foods_spa = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145535"])[1]')
     factura_del_pedido_foods_spa2 = (MobileBy.XPATH, '(//android.widget.TextView[@text="Factura N° 404145535"])[2]')
     factura_del_pedido_erbi_uno = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 83908330"]')
     factura_del_pedido_erbi_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="Factura N° 8390812"]')
-    sprite_MidCal_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
-    benedictino_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Benedictino S/G PT6.5 x 2 Cilindrico "]')
-    fanta_midcal_express_pedido = (
-        MobileBy.XPATH, '//android.widget.TextView[@text="Fanta MidCal Express 237cc x 24 "]')
-    precio_unitario_sprite_midCal = (MobileBy.XPATH, '//android.widget.TextView[@text="$65.064"]')
-    precio_unitario_fanta = (MobileBy.XPATH, '//android.widget.TextView[@text="$66.210"]')
-    precio_unitario_benedictino = (MobileBy.XPATH, '//android.widget.TextView[@text="$376.873"]')
-    cantidad_pack_fanta = (
-        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="2"]')
-    cantidad_pack_sprite = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="1"]')
-    cantidad_pack_benedictino = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and '
-                                                 '@text="7"]')
-    precio_final_sprite = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 65.064 "]')
-    precio_final_fanta = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 66.210 "]')
-    precio_final_benedictino = (
-        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 376.873 "]')
+    coca_cola_sin_azucar = (MobileBy.XPATH, '//android.widget.TextView[@text="Coca Cola Sin Azucar LT350cc x 6 "]')
+    andina_damasco = (MobileBy.XPATH, '//android.widget.TextView[@text="Andina Nectar Damasco PT1,5 x 6 "]')
+    nordic_zero_pedido = (
+        MobileBy.XPATH, '//android.widget.TextView[@text="Nordic Zero Ginger Ale PT3,0 x 6 "]')
+    precio_unitario_sprite_midCal = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[1]')
+    precio_unitario_fanta = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[2]')
+    precio_unitario_benedictino = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[2]')
+    cantidad_pack_coca = (
+        MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="10"]')
+    cantidad_pack_nordic = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="stepperTextCustom"])[2]')
+    cantidad_pack_andina = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="stepperTextCustom"])[3]')
+    precio_final_coca = (
+        MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-amount-total" and @text="$ 10.000"]')
+    precio_final_nordic = (
+        MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
+    precio_final_andina = (
+        MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
     retornar_factura_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar factura"]')
     retornar_todo_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Retornar todo"]')
     sprite_midcal_express_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="Sprite MidCal PT250cc x6 "]')
@@ -71,7 +75,7 @@ class RevisarPedidoPage(Page):
                                                     'parte de pago. Solo se acepta para el total."]')
     vuelta = (MobileBy.XPATH, '//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup')
     numero_telefono_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="phoneNumber"]')
-    texto_cierre_local = (MobileBy.XPATH, '//android.widget.TextView[@text="Cierra a las 23:59"]')
+    texto_cierre_local = (MobileBy.XPATH, '//android.widget.TextView[@text="Cierra a las 19:30"]')
     local_abierto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="storeStatus"]')
     metodo_cheque = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-ContainerTwoPage-TypeCheck"]')
 
@@ -81,7 +85,8 @@ class RevisarPedidoPage(Page):
 
     def cierre_de_local(self):
         self.implicit_wait_visible(self.texto_cierre_local)
-        return self.find_element(self.texto_cierre_local).is_displayed()
+        local_horario_visible = self.find_element(self.texto_cierre_local).is_displayed()
+        return local_horario_visible
 
     def numero_telefono_local_visible(self):
         self.implicit_wait_visible(self.numero_telefono_local)
@@ -158,8 +163,8 @@ class RevisarPedidoPage(Page):
     def click_entregar_btn(self):
         self.click_on_element(self.entregar_btn)
 
-    def click_entregar_boton(self):
-        self.click_on_element(self.entregar_btn)
+    def click_aceptar_boton(self):
+        self.click_on_element(self.aceptar_btn)
 
     def valido_producto_sprite_MidCal(self):
         self.implicit_wait_visible(self.sprite_MidCal_pedido)
@@ -170,22 +175,20 @@ class RevisarPedidoPage(Page):
         super().__init__(driver)
         self.ux_page = UXPage(driver)  # Crear una instancia de UXPage
 
-    def benedictino_cilindrico_pedido(self):
-        try:
-            elemento = self.ux_page.scroll_down_until_element(self.benedictino_pedido)
-            return True if elemento else False
-        except NoSuchElementException:
-            return False
+    def andina_damasco_pedido(self):
+        self.implicit_wait_visible(self.andina_damasco)
+        andina_damasco = self.find_element(self.andina_damasco).is_displayed()
+        return andina_damasco
 
-    def valido_producto_fanta_express(self):
-        self.implicit_wait_visible(self.fanta_midcal_express_pedido)
-        fanta_express = self.find_element(self.fanta_midcal_express_pedido).is_displayed()
-        return fanta_express
+    def valido_producto_coca_cola(self):
+        self.implicit_wait_visible(self.coca_cola_sin_azucar)
+        coca_cola = self.find_element(self.coca_cola_sin_azucar).is_displayed()
+        return coca_cola
 
-    def valido_producto_sprite_express(self):
-        self.implicit_wait_visible(self.sprite_midcal_express_pedido)
-        sprite_express = self.find_element(self.sprite_midcal_express_pedido).is_displayed()
-        return sprite_express
+    def valido_producto_nordic_zero(self):
+        self.implicit_wait_visible(self.nordic_zero_pedido)
+        nordic_zero = self.find_element(self.nordic_zero_pedido).is_displayed()
+        return nordic_zero
 
     def valido_precio_unitario_sprite_midCal(self):
         self.implicit_wait_visible(self.precio_unitario_sprite_midCal)
@@ -212,19 +215,19 @@ class RevisarPedidoPage(Page):
         fanta_midcal_precio_unitario = self.find_element(self.fanta_precio_unitario).is_displayed()
         return fanta_midcal_precio_unitario
 
-    def valido_cantidad_pack_fanta(self):
-        self.implicit_wait_visible(self.cantidad_pack_fanta)
-        cantidad_pack = self.find_element(self.cantidad_pack_fanta).is_displayed()
+    def valido_cantidad_pack_coca(self):
+        self.implicit_wait_visible(self.cantidad_pack_coca)
+        cantidad_pack = self.find_element(self.cantidad_pack_coca).is_displayed()
         return cantidad_pack
 
-    def valido_cantidad_pack_sprite_express(self):
-        self.implicit_wait_visible(self.cantidad_pack_sprite)
-        cantidad_pack = self.find_element(self.cantidad_pack_sprite).is_displayed()
+    def valido_cantidad_pack_nordic(self):
+        self.implicit_wait_visible(self.cantidad_pack_nordic)
+        cantidad_pack = self.find_element(self.cantidad_pack_nordic).is_displayed()
         return cantidad_pack
 
-    def valido_cantidad_pack_benedictino(self):
+    def valido_cantidad_pack_andina(self):
         try:
-            elemento = self.ux_page.scroll_down_until_element(self.cantidad_pack_benedictino)
+            elemento = self.ux_page.scroll_down_until_element(self.cantidad_pack_andina)
             return True if elemento else False
         except NoSuchElementException:
             return False
@@ -234,19 +237,19 @@ class RevisarPedidoPage(Page):
         metodo = self.find_element(self.metodo_cheque).is_displayed()
         return metodo
 
-    def valido_precio_final_sprite(self):
-        self.implicit_wait_visible(self.precio_final_sprite)
-        precio_final = self.find_element(self.precio_final_sprite).is_displayed()
+    def valido_precio_final_coca(self):
+        self.implicit_wait_visible(self.precio_final_coca)
+        precio_final = self.find_element(self.precio_final_coca).is_displayed()
         return precio_final
 
-    def valido_precio_final_fanta(self):
-        self.implicit_wait_visible(self.precio_final_fanta)
-        precio_final = self.find_element(self.precio_final_fanta).is_displayed()
+    def valido_precio_final_nordic(self):
+        self.implicit_wait_visible(self.precio_final_nordic)
+        precio_final = self.find_element(self.precio_final_nordic).is_displayed()
         return precio_final
 
-    def valido_precio_final_benedictino(self):
-        self.implicit_wait_visible(self.precio_final_benedictino)
-        precio_final = self.find_element(self.precio_final_benedictino).is_displayed()
+    def valido_precio_final_andina(self):
+        self.implicit_wait_visible(self.precio_final_andina)
+        precio_final = self.find_element(self.precio_final_andina).is_displayed()
         return precio_final
 
     def valido_precio_total(self):
@@ -264,36 +267,42 @@ class RevisarPedidoPage(Page):
         valido_agregar = self.find_element(self.agregar_btn).is_displayed()
         return valido_agregar
 
-    def valido_comparacion_de_precio(self):
+    def valido_contenido_factura(self):
+        # Buscar y obtener el texto de los productos
         producto_1 = self.driver.find_element(MobileBy.XPATH,
                                               '//android.widget.TextView[@resource-id="title-amount-total" and '
-                                              '@text="$ 66.210 "]')
+                                              '@text="$ 10.000"]')
         precio_producto_1 = producto_1.text
         solo_numeros_1 = re.sub(r'\D', '', precio_producto_1)
         producto1 = int(solo_numeros_1)
 
         producto_2 = self.driver.find_element(MobileBy.XPATH,
-                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
-                                              '@text="$ 65.064 "]')
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[2]')
         precio_producto_2 = producto_2.text
         solo_numeros_2 = re.sub(r'\D', '', precio_producto_2)
         producto2 = int(solo_numeros_2)
 
-        self.ux_page.scroll_down_until_element(self.cantidad_pack_benedictino)
+        # Scroll para encontrar el tercer producto
         producto_3 = self.driver.find_element(MobileBy.XPATH,
-                                              '//android.widget.TextView[@resource-id="title-amount-total" and '
-                                              '@text="$ 376.873 "]')
+                                              '(//android.widget.TextView[@resource-id="title-amount-total"])[3]')
         precio_producto_3 = producto_3.text
         solo_numeros_3 = re.sub(r'\D', '', precio_producto_3)
         producto3 = int(solo_numeros_3)
 
+        # Obtener el precio total
         valor_total = self.driver.find_element(MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')
         precio_producto_total = valor_total.text
         solo_numeros_total = re.sub(r'\D', '', precio_producto_total)
         productoTotal = int(solo_numeros_total)
 
+        # Validación de la suma de los precios de los productos con el precio total
         comparacion_de_precios = (producto1 + producto2 + producto3) == productoTotal
         assert comparacion_de_precios, "La comparación de precios no es válida"
+
+        # Validar que el precio total sea de "$ 20.000"
+        expected_total = 20000
+        assert productoTotal == expected_total, f"El precio total esperado es {expected_total}, pero se encontró {productoTotal}"
+
         return True
 
     def valido_nota_pedido(self):
@@ -354,10 +363,14 @@ class RevisarPedidoPage(Page):
 
         self.click_on_element(self.campo_texto_efectivo)
         self.input(monto_indivivual, self.campo_texto_efectivo)
-        #self.driver.hide_keyboard()
+        self.driver.hide_keyboard()
         self.click_on_element(self.campo_texto_transferencia)
         self.input(monto_indivivual, self.campo_texto_transferencia)
-        #self.driver.hide_keyboard()
+        self.driver.hide_keyboard()
 
     def click_vuelta_1(self):
-        self.click_on_element(self.vuelta)
+        wait = WebDriverWait(self.driver, 10)
+        self.vuelta = wait.until(EC.element_to_be_clickable(
+            (By.XPATH, "//android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup")
+        ))
+        self.vuelta.click()

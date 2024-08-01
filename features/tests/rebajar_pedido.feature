@@ -8,7 +8,7 @@ Característica: Rebajar Pedido
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
-    Y selecciono la factura con numero "404145531"
+    Y selecciono la factura con numero "812345672"
     Y selecciono para rebajar el pedido
     Y hago click en el boton "Retornar factura"
     Y selecciono "Sobre stock"

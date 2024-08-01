@@ -13,7 +13,7 @@ from features.pages.base_page import Page
 
 class UXPage(Page):
     el_deseo_spa_pedido = (
-        MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='EL DESEO SPA']")
+        MobileBy.XPATH, "//android.widget.TextView[@resource-id='title-location' and @text='El Deseo SPA']")
     comenzar_ruta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Comenzar ruta"]')
 
     def scroll_down_until_element(self, locator, max_attempts=10):
@@ -37,7 +37,7 @@ class UXPage(Page):
         raise NoSuchElementException(f"Elemento no encontrado después de {max_attempts} intentos: {locator}")
 
     def click_el_deseo_spa_btn(self):
-        element = self.scroll_down_until_element(self.el_deseo_spa_pedido)
+        element = self.driver.find_element(*self.el_deseo_spa_pedido)
         element.click()
 
     def valid_value(self, caracteristica, valor):

@@ -6,7 +6,7 @@ class CuadrarPage(Page):
     texto_ruta_fecha = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-route"]')
     texto25Clientes = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-quantity"]')
     rutaComenzar = (MobileBy.ACCESSIBILITY_ID, ', Ruta comenzada')
-    textoRutaEntregada = (MobileBy.XPATH, '//android.widget.TextView[@text="Entregada"]')
+    textoRutaEntregado = (MobileBy.XPATH, '//android.widget.TextView[@text="Entregado"]')
     no_hay_productos_rebajados_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
     total_esperado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 1.885.008"])[1]')
     total_recaudado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 1.885.008"])[2]')
@@ -45,9 +45,9 @@ class CuadrarPage(Page):
         self.implicit_wait_visible(self.rutaComenzar)
         return self.find_element(self.rutaComenzar).is_displayed()
 
-    def validar_texto_entregada(self):
-        self.implicit_wait_visible(self.textoRutaEntregada)
-        texto_entregado = self.find_element(self.textoRutaEntregada).is_displayed()
+    def validar_texto_entregado(self):
+        self.implicit_wait_visible(self.textoRutaEntregado)
+        texto_entregado = self.find_element(self.textoRutaEntregado).is_displayed()
         return texto_entregado
 
     def validar_texto_no_hay_producto(self):

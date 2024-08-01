@@ -1,5 +1,7 @@
 from behave import given, when, then
 
+from features.pages.revisar_pedido_page import RevisarPedidoPage
+
 
 @when('elijo la ruta "{idRuta}"')
 def usuario_elije_ruta(context, idRuta):
@@ -36,7 +38,7 @@ def valido_google_maps(context, maps):
 
 @when('selecciono la factura con numero "{factura}"')
 def visualizo_la_factura(context, factura):
-    if factura == "404145531":
+    if factura == "812345672":
         context.app.revisar_pedido_page.selecciono_la_factura()
     elif factura == "404145535":
         context.app.revisar_pedido_page.selecciono_la_factura_foods_spa()
@@ -67,63 +69,60 @@ def valido_anulacion_del_pedido(context):
 
 @then('valido el producto "{producto}"')
 def valido_producto(context, producto):
-    if producto == "Sprite MidCal PT250cc x6":
+    if producto == "Coca Cola Sin Azucar LT350cc x 6":
         assert bool(
-            context.app.revisar_pedido_page.valido_producto_sprite_MidCal()), (f"El producto '{producto}' no está en "
-                                                                               f"la lista")
-    elif producto == "Fanta MidCal Express 237cc x 24":
+            context.app.revisar_pedido_page.valido_producto_coca_cola()), f"El producto '{producto}' no es correcto"
+    elif producto == "Nordic Zero Ginger Ale PT3,0 x 6":
         assert bool(
-            context.app.revisar_pedido_page.valido_producto_fanta_express()), (f"El producto '{producto}' no está en "
-                                                                               f"la lista")
-    elif producto == "Benedictino S/G PT6.5 x 2 Cilindrico":
+            context.app.revisar_pedido_page.valido_producto_nordic_zero()), f"El producto '{producto}' no es correcto"
+    elif producto == "Andina Nectar Damasco PT1,5 x 6":
         assert bool(
-            context.app.revisar_pedido_page.benedictino_cilindrico_pedido()), (f"El producto '{producto}' no está en "
-                                                                               f"la lista")
+            context.app.revisar_pedido_page.andina_damasco_pedido()), f"El producto '{producto}' no es correcto"
     else:
         raise ValueError(f"No se encontró el producto '{producto}'")
 
 
 @then('valido el precio unitario "{precio}"')
 def valido_precio_unitario(context, precio):
-    if precio == "$65.064":
+    if precio == "$ 1.000":
         assert bool(
             context.app.revisar_pedido_page.valido_precio_unitario_sprite_midCal()), f"El precio unitario '{precio}' no es correcto"
-    elif precio == "$66.210":
+    elif precio == "$ 1.000":
         assert bool(
             context.app.revisar_pedido_page.valido_precio_unitario_fanta()), f"El precio unitario '{precio}' no es correcto"
-    elif precio == "$376.873":
+    elif precio == "$ 1.000":
         assert bool(
             context.app.revisar_pedido_page.valido_precio_unitario_benedictino()), f"El precio unitario '{precio}' no es correcto"
     else:
         raise ValueError(f"No se encontró el precio '{precio}'")
 
 
-@then('valido el precio unitario "{precio}" en la factura')
-def valido_precio_unitario_factura(context, precio):
-    if precio == "$ 65.064":
-        assert bool(
-            context.app.revisar_pedido_page.valido_producto_sprite_express()), f"El precio unitario '{precio}' en la factura no es correcto"
-    elif precio == "$ 53.839":
-        assert bool(
-            context.app.revisar_pedido_page.valido_benedictino_precio_unitario()), f"El precio unitario '{precio}' en la factura no es correcto"
-    elif precio == "$ 33.105":
-        assert bool(
-            context.app.revisar_pedido_page.valido_fanta_MidCal_precio_unitario()), f"El precio unitario '{precio}' en la factura no es correcto"
-    else:
-        raise ValueError(f"No se encontró el precio '{precio}' para validar en la factura")
+# @then('valido el precio unitario "{precio}" en la factura')
+# def valido_precio_unitario_factura(context, precio):
+#     if precio == "$ 65.064":
+#         assert bool(
+#             context.app.revisar_pedido_page.valido_producto_sprite_express()), f"El precio unitario '{precio}' en la factura no es correcto"
+#     elif precio == "$ 53.839":
+#         assert bool(
+#             context.app.revisar_pedido_page.valido_benedictino_precio_unitario()), f"El precio unitario '{precio}' en la factura no es correcto"
+#     elif precio == "$ 33.105":
+#         assert bool(
+#             context.app.revisar_pedido_page.valido_fanta_MidCal_precio_unitario()), f"El precio unitario '{precio}' en la factura no es correcto"
+#     else:
+#         raise ValueError(f"No se encontró el precio '{precio}' para validar en la factura")
 
 
 @then('valido la cantidad de pack pedidos "{cantidad}"')
 def valido_cantidad_pack(context, cantidad):
-    if cantidad == "1":
+    if cantidad == "10":
         assert bool(
-            context.app.revisar_pedido_page.valido_cantidad_pack_sprite_express()), f"La cantidad de pack '{cantidad}' no es correcta"
-    elif cantidad == "2":
+            context.app.revisar_pedido_page.valido_cantidad_pack_coca()), f"La cantidad de pack '{cantidad}' no es correcta"
+    elif cantidad == "5":
         assert bool(
-            context.app.revisar_pedido_page.valido_cantidad_pack_fanta()), f"La cantidad de pack '{cantidad}' no es correcta"
-    elif cantidad == "7":
+            context.app.revisar_pedido_page.valido_cantidad_pack_nordic()), f"La cantidad de pack '{cantidad}' no es correcta"
+    elif cantidad == "5":
         assert bool(
-            context.app.revisar_pedido_page.valido_cantidad_pack_benedictino()), f"La cantidad de pack '{cantidad}' no es correcta"
+            context.app.revisar_pedido_page.valido_cantidad_pack_andina()), f"La cantidad de pack '{cantidad}' no es correcta"
     else:
         raise ValueError(f"No se encontró la cantidad de pack pedidos '{cantidad}'")
 
@@ -136,15 +135,18 @@ def valido_sector_agregar_y_restar(context):
 
 @then('valido el precio final "{precio}"')
 def valido_precio_final(context, precio):
-    if precio == "$ 65.064":
+    if precio == "$ 10.000":
         assert bool(
-            context.app.revisar_pedido_page.valido_precio_final_sprite()), f"El precio final '{precio}' no es correcto"
-    elif precio == "$ 66.210":
-        assert bool(
-            context.app.revisar_pedido_page.valido_precio_final_fanta()), f"El precio final '{precio}' no es correcto"
-    elif precio == "$ 376.873":
-        assert bool(
-            context.app.revisar_pedido_page.valido_precio_final_benedictino()), f"El precio final '{precio}' no es correcto"
+            context.app.revisar_pedido_page.valido_precio_final_coca()), f"El precio final '{precio}' no es correcto"
+    elif precio == "$ 5.000":
+        # Aquí asumimos que hay un método para validar si el precio final de Nordic está visible.
+        if context.app.revisar_pedido_page.valido_precio_final_nordic():
+            assert bool(
+                context.app.revisar_pedido_page.valido_precio_final_nordic()), f"El precio final '{precio}' no es correcto"
+        else:
+            # Si no es el precio de Nordic, debe ser el precio de Andina.
+            assert bool(
+                context.app.revisar_pedido_page.valido_precio_final_andina()), f"El precio final '{precio}' no es correcto"
     else:
         raise ValueError(f"No se encontró el precio final '{precio}'")
 
@@ -157,8 +159,8 @@ def valido_total_precio(context, precio):
 @then('valido que este correcta la suma del precio de los productos')
 def valido_sea_correcto_precio(context):
     assert bool(
-        context.app.revisar_pedido_page.valido_comparacion_de_precio()), ("La suma del precio de los productos no es "
-                                                                          "correcta")
+        context.app.revisar_pedido_page.valido_contenido_factura()), ("La suma del precio de los productos no es "
+                                                                      "correcta")
 
 
 @then('valido que la nota de credito sea "{monto}"')

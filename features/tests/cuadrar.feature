@@ -10,7 +10,7 @@ Característica: Cuadrar
         Y selecciono la vuelta "Vuelta 1"
         Y hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "LIKE EAT FOODS SPA"
-        Y selecciono la factura con numero "404145535"
+        Y selecciono la factura con numero "812345672"
         Y hago click en el boton "entregar"
         Y hago click en el boton "Confirmar"
         Y selecciono la segunda factura con numero "404145535"
@@ -47,7 +47,7 @@ Característica: Cuadrar
         Dado Ingreso con el conductor a la aplicacion
         Cuando hago click en el boton "Iniciar vuelta"
         Y elijo la ruta "El Deseo SPA"
-        Y selecciono la factura con numero "404145531"
+        Y selecciono la factura con numero "812345672"
         Y hago click en el boton "entregar"
         Y hago click en el boton "Confirmar"
         Entonces valido el texto "Entregada"

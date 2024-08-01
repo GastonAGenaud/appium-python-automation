@@ -52,8 +52,8 @@ def click_en_el_boton(context, boton):
         context.app.revisar_pedido_page.click_retornar_todo_btn()
     elif boton == "Entregar":
         context.app.revisar_pedido_page.click_entregar_btn()
-    elif boton == "entregar":
-        context.app.revisar_pedido_page.click_entregar_boton()
+    elif boton == "aceptar":
+        context.app.revisar_pedido_page.click_aceptar_boton()
     elif boton == "Confirmar":
         context.app.entregar_pedido_page.click_confirmar_boton()
     elif boton == "Modificar":
