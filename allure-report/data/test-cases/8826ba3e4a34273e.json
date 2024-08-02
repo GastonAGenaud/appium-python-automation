@@ -1,0 +1,113 @@
+{
+  "uid" : "8826ba3e4a34273e",
+  "name" : "Validación de motivo de anulación",
+  "fullName" : "Anular pedido: Validación de motivo de anulación",
+  "historyId" : "d593486ca55df8906ae6470c66fc6b4f",
+  "time" : {
+    "start" : 1722610164908,
+    "stop" : 1722610236397,
+    "duration" : 71489
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1722610165454,
+        "stop" : 1722610165454,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Cuando visualizo la pantalla de selección de motivo de anulacion",
+      "time" : {
+        "start" : 1722610165454,
+        "stop" : 1722610165747,
+        "duration" : 293
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Entonces valido la presencia de los motivos de anulacion",
+      "time" : {
+        "start" : 1722610165747,
+        "stop" : 1722610235481,
+        "duration" : 69734
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b577bcc0a18f81b5",
+        "name" : ".table",
+        "source" : "b577bcc0a18f81b5.csv",
+        "type" : "text/csv",
+        "size" : 361
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 1
+    } ],
+    "attachments" : [ {
+      "uid" : "c2db248ff44f9f22",
+      "name" : "Validación de motivo de anulación",
+      "source" : "c2db248ff44f9f22.mp4",
+      "type" : "video/mp4",
+      "size" : 3812853
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "anular_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Anular pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "anular_pedido" ]
+  },
+  "source" : "8826ba3e4a34273e.json",
+  "parameterValues" : [ ]
+}

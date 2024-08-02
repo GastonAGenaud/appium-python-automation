@@ -48,6 +48,7 @@ class EntregarPedidoPage(Page):
         return valor_precio_rebajado
 
     def click_confirmar_boton(self):
+        self.implicit_wait_visible(self.confirmar_btn)
         self.click_on_element(self.confirmar_btn)
 
     def click_modificar_btn(self):

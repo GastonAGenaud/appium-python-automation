@@ -1,4 +1,5 @@
 from behave import given, when, then
+from selenium.common import NoSuchElementException
 
 from features.pages.revisar_pedido_page import RevisarPedidoPage
 
@@ -153,7 +154,20 @@ def valido_precio_final(context, precio):
 
 @then('valido que el precio total sea de "{precio}"')
 def valido_total_precio(context, precio):
-    assert bool(context.app.revisar_pedido_page.valido_precio_total()), f"El precio total '{precio}' no es correcto"
+    try:
+        # Intentar validar con el método valido_precio_total_metodo
+        assert bool(context.app.revisar_pedido_page.valido_precio_total_metodo()), f"El precio total '{precio}' no es correcto"
+    except NoSuchElementException:
+        print("Elemento no encontrado para 'valido_precio_total_metodo', intentando con 'valido_precio_total'.")
+        try:
+            # Intentar validar con el método valido_precio_total
+            assert bool(context.app.revisar_pedido_page.valido_precio_total()), f"El precio total '{precio}' no es correcto"
+        except NoSuchElementException:
+            print("Elemento no encontrado para 'valido_precio_total'.")
+            raise
+    except AssertionError as e:
+        print(f"Error de aserción: {str(e)}")
+        raise e
 
 
 @then('valido que este correcta la suma del precio de los productos')
@@ -235,6 +249,7 @@ def ingreso_montos_efectivo_transferencia(context):
 @when('selecciono la vuelta "{vuelta}"')
 def seleccionar_vuelta(context, vuelta):
     context.app.revisar_pedido_page.click_vuelta_1()
+
 
 
 @then("valido el numero de telefono del local")

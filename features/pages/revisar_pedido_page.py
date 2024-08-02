@@ -20,6 +20,7 @@ class RevisarPedidoPage(Page):
     anular_pedido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anular pedido"]')
     aceptar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Aceptar"]')
     precio_total_pedido = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')
+    precio_total_metodo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
     agregar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="+"])[1]')
     factura_del_pedido = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Factura N° 812345672, Productos, '
@@ -256,6 +257,11 @@ class RevisarPedidoPage(Page):
         self.implicit_wait_visible(self.precio_total_pedido)
         precio_total = self.find_element(self.precio_total_pedido).is_displayed()
         return precio_total
+
+    def valido_precio_total_metodo(self):
+        self.implicit_wait_visible(self.precio_total_metodo)
+        precio_metodo_total = self.find_element(self.precio_total_metodo).is_displayed()
+        return precio_metodo_total
 
     def valido_restar_btn(self):
         self.implicit_wait_visible(self.restar_btn)

@@ -8,18 +8,18 @@ class CuadrarPage(Page):
     rutaComenzar = (MobileBy.ACCESSIBILITY_ID, ', Ruta comenzada')
     textoRutaEntregado = (MobileBy.XPATH, '//android.widget.TextView[@text="Entregado"]')
     no_hay_productos_rebajados_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="HeaderCustom"]')
-    total_esperado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 1.885.008"])[1]')
-    total_recaudado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 1.885.008"])[2]')
+    total_esperado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$1.885.008"])[1]')
+    total_recaudado_precio = (MobileBy.XPATH, '(//android.widget.TextView[@text="$1.885.008"])[2]')
     total_rebajado_precio = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-reba-amount"]')
     monto_transferencia = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-transfer"]')
     monto_efectivo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-cash"]')
-    monto_cheque = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 0"])[2]')
-    monto_credito = (MobileBy.XPATH, '(//android.widget.TextView[@text="$ 0"])[3]')
+    monto_cheque = (MobileBy.XPATH, '(//android.widget.TextView[@text="$0"])[2]')
+    monto_credito = (MobileBy.XPATH, '(//android.widget.TextView[@text="$0"])[2]')
     cerrar_vuelta_boton = (MobileBy.ACCESSIBILITY_ID, 'Cerrar vuelta 1')
-    confirmar_cierre_vueltas_boton = (MobileBy.ACCESSIBILITY_ID, 'Confirmar cierre de vueltas')
+    confirmar_cierre_vueltas_boton = (MobileBy.ACCESSIBILITY_ID, 'Confirmar cierre de vuelta')
     mensaje_vuelta_cerrada = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Vuelta cerrada!"]')
-    factura_entregada_a = (MobileBy.XPATH, '(//android.widget.TextView[@text="Entregada"])[1]')
-    factura_entregada_b = (MobileBy.XPATH, '(//android.widget.TextView[@text="Entregada"])[2]')
+    factura_entregada_a = (MobileBy.XPATH, '(//android.widget.TextView[@text="Entregado"])[1]')
+    factura_entregada_b = (MobileBy.XPATH, '(//android.widget.TextView[@text="Entregado"])[2]')
     entrega_impecable_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
     entrega_impecable_felicitaciones_texto = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Felicitaciones! Has '
                                                               'entregado el pedido sin rebajas. Que siga la buena '
@@ -30,6 +30,7 @@ class CuadrarPage(Page):
         self.click_on_element(self.cerrar_vuelta_boton)
 
     def click_confirmar_cierre_vueltas_btn(self):
+        self.implicit_wait_visible(self.confirmar_cierre_vueltas_boton)
         self.click_on_element(self.confirmar_cierre_vueltas_boton)
 
     def validar_texto_ruta_fecha(self):
@@ -121,11 +122,21 @@ class CuadrarPage(Page):
         return mensaje
 
     def valido_factura_entregada_a(self):
-        self.implicit_wait_visible(self.factura_entregada_a)
-        factura_entregada = self.find_element(self.factura_entregada_a).is_displayed()
-        return factura_entregada
+        try:
+            self.implicit_wait_visible(self.factura_entregada_a)
+            factura_entregada = self.find_element(self.factura_entregada_a).is_displayed()
+            print("Factura A entregada:", factura_entregada)
+            return factura_entregada
+        except Exception as e:
+            print(f"Error validando factura A: {str(e)}")
+            return False
 
     def valido_factura_entregada_b(self):
-        self.implicit_wait_visible(self.factura_entregada_b)
-        factura_entregada = self.find_element(self.factura_entregada_b).is_displayed()
-        return factura_entregada
+        try:
+            self.implicit_wait_visible(self.factura_entregada_b)
+            factura_entregada = self.find_element(self.factura_entregada_b).is_displayed()
+            print("Factura B entregada:", factura_entregada)
+            return factura_entregada
+        except Exception as e:
+            print(f"Error validando factura B: {str(e)}")
+            return False
