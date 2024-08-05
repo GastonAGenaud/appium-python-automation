@@ -1,3 +1,8 @@
+from telnetlib import EC
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 
@@ -122,21 +127,11 @@ class CuadrarPage(Page):
         return mensaje
 
     def valido_factura_entregada_a(self):
-        try:
-            self.implicit_wait_visible(self.factura_entregada_a)
-            factura_entregada = self.find_element(self.factura_entregada_a).is_displayed()
-            print("Factura A entregada:", factura_entregada)
-            return factura_entregada
-        except Exception as e:
-            print(f"Error validando factura A: {str(e)}")
-            return False
+        self.implicit_wait_visible(self.factura_entregada_a)
+        factura = self.find_element(self.factura_entregada_a).is_displayed()
+        return factura
 
     def valido_factura_entregada_b(self):
-        try:
-            self.implicit_wait_visible(self.factura_entregada_b)
-            factura_entregada = self.find_element(self.factura_entregada_b).is_displayed()
-            print("Factura B entregada:", factura_entregada)
-            return factura_entregada
-        except Exception as e:
-            print(f"Error validando factura B: {str(e)}")
-            return False
+        self.implicit_wait_visible(self.factura_entregada_b)
+        factura = self.find_element(self.factura_entregada_b).is_displayed()
+        return factura

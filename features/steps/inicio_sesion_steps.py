@@ -56,6 +56,8 @@ def click_en_el_boton(context, boton):
         context.app.revisar_pedido_page.click_aceptar_boton()
     elif boton == "Confirmar":
         context.app.entregar_pedido_page.click_confirmar_boton()
+    elif boton == "Confirmar 2":
+        context.app.entregar_pedido_page.click_confirmar_2_btn()
     elif boton == "Modificar":
         context.app.entregar_pedido_page.click_modificar_btn()
     elif boton == "Iniciar vuelta":

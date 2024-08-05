@@ -4,470 +4,86 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
-      "children" : [ {
-        "name" : "Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles",
-        "uid" : "ca7a3432f207cecb",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609643799,
-          "stop" : 1722609680550,
-          "duration" : 36751
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla del menu lateral",
-        "uid" : "b998da274a90f7d0",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609680551,
-          "stop" : 1722609713867,
-          "duration" : 33316
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla de Términos y condiciones",
-        "uid" : "d1a105c5cdd71a4d",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609713868,
-          "stop" : 1722609745685,
-          "duration" : 31817
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion del modal de Eliminar mi cuenta",
-        "uid" : "64ed4de497ba2cd5",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609745685,
-          "stop" : 1722609792678,
-          "duration" : 46993
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
-        "uid" : "ad4d5370eb3eb15",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609792679,
-          "stop" : 1722609842258,
-          "duration" : 49579
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531",
-        "uid" : "b5dbe338e1a0da41",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609883349,
-          "stop" : 1722609917769,
-          "duration" : 34420
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion del desplegable \"Ordenar por\"",
-        "uid" : "86a20d6a5e92b260",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609919119,
-          "stop" : 1722609965764,
-          "duration" : 46645
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de los botones de la seccion Cuadratura",
-        "uid" : "c457e263a43f1912",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609965766,
-          "stop" : 1722610049650,
-          "duration" : 83884
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validación de la pantalla de retomar pedidos",
-        "uid" : "3a0944b6143517d8",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722610421138,
-          "stop" : 1722610511151,
-          "duration" : 90013
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validación de la pantalla \"Vuelta finalizada\"",
-        "uid" : "ebc3b5e424df72c",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722610637711,
-          "stop" : 1722610722313,
-          "duration" : 84602
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
-        "uid" : "2387ed2b7ecee8ff",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722610954234,
-          "stop" : 1722610985633,
-          "duration" : 31399
-        },
-        "flaky" : false,
-        "parameters" : [ "$65.064", "Sprite MidCal PT250cc x6" ]
-      }, {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
-        "uid" : "4754d2ba00a4f251",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722610985633,
-          "stop" : 1722611016979,
-          "duration" : 31346
-        },
-        "flaky" : false,
-        "parameters" : [ "$66.210", "Fanta MidCal Express 237cc x 24" ]
-      }, {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
-        "uid" : "f245a49992807e57",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611016980,
-          "stop" : 1722611048448,
-          "duration" : 31468
-        },
-        "flaky" : false,
-        "parameters" : [ "$376.873", "Benedictino S/G PT6.5 x 2 Cilindrico" ]
-      }, {
-        "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
-        "uid" : "f229ea1b1a02eeb9",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611104266,
-          "stop" : 1722611135641,
-          "duration" : 31375
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion de Vuelta 1",
-        "uid" : "85d7c71cb2aa9a86",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611285469,
-          "stop" : 1722611361596,
-          "duration" : 76127
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Acepto termino y condiciones",
-        "uid" : "de01cbd9f0c7e500",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611367604,
-          "stop" : 1722611416624,
-          "duration" : 49020
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion de eliminar cuenta exitosamente",
-        "uid" : "d5e618a24282bdc3",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611416624,
-          "stop" : 1722611463754,
-          "duration" : 47130
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Reseteo la aplicacion luesgo de eliminar la cuenta",
-        "uid" : "6ab0d122068c3bfa",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611463754,
-          "stop" : 1722611509651,
-          "duration" : 45897
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion del boton \"Comenzar ruta\"",
-        "uid" : "de8e436b0f71dd97",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611528377,
-          "stop" : 1722611627260,
-          "duration" : 98883
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion de la ruta -- @1.1 ",
-        "uid" : "5f4eab595d6b1eb7",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611627261,
-          "stop" : 1722611705342,
-          "duration" : 78081
-        },
-        "flaky" : false,
-        "parameters" : [ "Local", "EL DESEO SPA" ]
-      }, {
-        "name" : "Validacion de la ruta -- @1.2 ",
-        "uid" : "1b5cdd2427b72d7a",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611705343,
-          "stop" : 1722611783753,
-          "duration" : 78410
-        },
-        "flaky" : false,
-        "parameters" : [ "Direccion", "AVDA ANDRES BELLO 2447" ]
-      }, {
-        "name" : "Validacion de la ruta -- @1.3 ",
-        "uid" : "42f351128fc38a1c",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611783754,
-          "stop" : 1722611862602,
-          "duration" : 78848
-        },
-        "flaky" : false,
-        "parameters" : [ "Producto", "16 caj" ]
-      }, {
-        "name" : "Validacion de la ruta -- @1.4 ",
-        "uid" : "1eec0dd662f5dfef",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611862603,
-          "stop" : 1722611941716,
-          "duration" : 79113
-        },
-        "flaky" : false,
-        "parameters" : [ "Transferencia", "$866.455" ]
-      }, {
-        "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
-        "uid" : "2132dc5681b5b68e",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611980798,
-          "stop" : 1722612066557,
-          "duration" : 85759
-        },
-        "flaky" : false,
-        "parameters" : [ "Más cajas primero" ]
-      }, {
-        "name" : "Validacion del desplegable \"Ordenar por\" -- @1.2 ",
-        "uid" : "3fe04458b45bb435",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722612066557,
-          "stop" : 1722612151633,
-          "duration" : 85076
-        },
-        "flaky" : false,
-        "parameters" : [ "Menos cajas primero" ]
-      }, {
-        "name" : "Validacion del desplegable \"Ordenar por\" -- @1.4 ",
-        "uid" : "19d776dc73b32b39",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722612168672,
-          "stop" : 1722612254322,
-          "duration" : 85650
-        },
-        "flaky" : false,
-        "parameters" : [ "Personalizado" ]
-      } ],
-      "uid" : "c761cc1e1f67c97166ba2758d9324261"
-    }, {
       "name" : "ValueError: No se encontro el boton de 'entregar'\n",
       "children" : [ {
-        "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531",
-        "uid" : "5d6c62727ff19f9e",
-        "parentUid" : "2b2a4956a61ad22df769561f35b4f718",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722609917769,
-          "stop" : 1722609919119,
-          "duration" : 1350
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion del texto \"Entregada\"",
-        "uid" : "f3f072fc4605f9",
-        "parentUid" : "2b2a4956a61ad22df769561f35b4f718",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722610742276,
-          "stop" : 1722610781464,
-          "duration" : 39188
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Retornados\"",
-        "uid" : "d3a54e2dd9add1c4",
+        "uid" : "c2d3372d533ba13b",
         "parentUid" : "2b2a4956a61ad22df769561f35b4f718",
         "status" : "broken",
         "time" : {
-          "start" : 1722610898733,
-          "stop" : 1722610954233,
-          "duration" : 55500
+          "start" : 1722889756573,
+          "stop" : 1722889813037,
+          "duration" : 56464
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Valido la entrega de un pedido",
-        "uid" : "d492f61716ef0fdc",
+        "uid" : "4fd5cb2ed43c1a0c",
         "parentUid" : "2b2a4956a61ad22df769561f35b4f718",
         "status" : "broken",
         "time" : {
-          "start" : 1722611048449,
-          "stop" : 1722611104265,
-          "duration" : 55816
+          "start" : 1722889907380,
+          "stop" : 1722889963278,
+          "duration" : 55898
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "2b2a4956a61ad22df769561f35b4f718"
     }, {
-      "name" : "ValueError: No se encontro el mensaje de error en el campo de 'No se admiten caracteres especiales'\n",
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
       "children" : [ {
-        "name" : "Validacion de error de caracteres especiales",
-        "uid" : "f89469b452de66bd",
-        "parentUid" : "76e0989a4c2e32c6e54b70187119a654",
+        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
+        "uid" : "b96fe6e18ce55f2d",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
         "status" : "broken",
         "time" : {
-          "start" : 1722611185324,
-          "stop" : 1722611198934,
-          "duration" : 13610
+          "start" : 1722889813038,
+          "stop" : 1722889844448,
+          "duration" : 31410
+        },
+        "flaky" : false,
+        "parameters" : [ "$65.064", "Sprite MidCal PT250cc x6" ]
+      }, {
+        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
+        "uid" : "e2f3413c219408ba",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722889844449,
+          "stop" : 1722889875866,
+          "duration" : 31417
+        },
+        "flaky" : false,
+        "parameters" : [ "$66.210", "Fanta MidCal Express 237cc x 24" ]
+      }, {
+        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
+        "uid" : "2232bc3407860d0f",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722889875867,
+          "stop" : 1722889907378,
+          "duration" : 31511
+        },
+        "flaky" : false,
+        "parameters" : [ "$376.873", "Benedictino S/G PT6.5 x 2 Cilindrico" ]
+      }, {
+        "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
+        "uid" : "216a0d13731b41fc",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722889963278,
+          "stop" : 1722890025219,
+          "duration" : 61941
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "76e0989a4c2e32c6e54b70187119a654"
-    }, {
-      "name" : "ValueError: No se encontró el texto 'Hola conductor-01'\n",
-      "children" : [ {
-        "name" : "Validacion de pantalla de transporte",
-        "uid" : "a984850acca406e",
-        "parentUid" : "307f95e9d18122efc50de295997b728e",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722611209324,
-          "stop" : 1722611216077,
-          "duration" : 6753
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "307f95e9d18122efc50de295997b728e"
-    }, {
-      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: The element 'By.xpath: //android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup' is not linked to the same object in DOM anymore\nStacktrace:\nio.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element 'By.xpath: //android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup' is not linked to the same object in DOM anymore\n\tat io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:122)\n\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)\n\tat io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:1012)\n\n",
-      "children" : [ {
-        "name" : "Validacion del desplegable \"Ordenar por\" -- @1.3 ",
-        "uid" : "8daa71198ed1a76f",
-        "parentUid" : "4cc8b4def10121b4710bef2982b55de0",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722612151634,
-          "stop" : 1722612168670,
-          "duration" : 17036
-        },
-        "flaky" : false,
-        "parameters" : [ "Ruta" ]
-      } ],
-      "uid" : "4cc8b4def10121b4710bef2982b55de0"
+      "uid" : "c761cc1e1f67c97166ba2758d9324261"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
-  }, {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError\n",
-      "children" : [ {
-        "name" : "Valido las zonas de accion de la pantalla del Pedido",
-        "uid" : "64d4ba2017d5a69a",
-        "parentUid" : "a730cf0b0a23aabea6d11aa0391c8a76",
-        "status" : "failed",
-        "time" : {
-          "start" : 1722609842259,
-          "stop" : 1722609883348,
-          "duration" : 41089
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion de boton \"Login\" deshabilitado",
-        "uid" : "1ffa46dae118db6d",
-        "parentUid" : "a730cf0b0a23aabea6d11aa0391c8a76",
-        "status" : "failed",
-        "time" : {
-          "start" : 1722611198935,
-          "stop" : 1722611209324,
-          "duration" : 10389
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "a730cf0b0a23aabea6d11aa0391c8a76"
-    }, {
-      "name" : "AssertionError: La ruta 'El Deseo SPA' no está presente en el sector 'Retornados'.\n",
-      "children" : [ {
-        "name" : "Validación del sector \"Retornados\"",
-        "uid" : "5b5830c44ed91247",
-        "parentUid" : "9b2185874276469908eeb20abf175d2a",
-        "status" : "failed",
-        "time" : {
-          "start" : 1722610295580,
-          "stop" : 1722610360566,
-          "duration" : 64986
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "9b2185874276469908eeb20abf175d2a"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }

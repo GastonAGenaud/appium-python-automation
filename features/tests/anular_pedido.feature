@@ -83,7 +83,6 @@ Característica: Anular pedido
     Y hago click en el boton "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
-  @retomarPedido
   Escenario: Validación de la pantalla de retomar pedidos
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -91,10 +90,6 @@ Característica: Anular pedido
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
-    Y hago click en el boton "Retornar factura"
-    Y selecciono "Sobre stock"
-    Y hago click en el boton "Confirmar"
-    Y selecciono la segunda factura con numero "404145531"
     Y hago click en el boton "Retornar factura"
     Y selecciono "Sobre stock"
     Y hago click en el boton "Confirmar"

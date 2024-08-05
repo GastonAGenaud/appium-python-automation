@@ -11,6 +11,7 @@ class EntregarPedidoPage(Page):
     precio_total_factura = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 872.818"]')
     precio_rebajado = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 57.652"]')
     confirmar_btn = (MobileBy.ACCESSIBILITY_ID, 'Confirmar')
+    confirmar_btn2= (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Confirmar"]')
     entrega_completada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="¡Entrega impecable!"]')
     cerrar_cuadro_btn = (MobileBy.XPATH, '//android.widget.FrameLayout['
                                          '@resource-id="android:id/content"]/android.widget.FrameLayout/android.view'
@@ -50,6 +51,10 @@ class EntregarPedidoPage(Page):
     def click_confirmar_boton(self):
         self.implicit_wait_visible(self.confirmar_btn)
         self.click_on_element(self.confirmar_btn)
+
+    def click_confirmar_2_btn(self):
+        self.implicit_wait_visible(self.confirmar_btn2)
+        self.click_on_element(self.confirmar_btn2)
 
     def click_modificar_btn(self):
         max_attempts = 4  # Número máximo de intentos

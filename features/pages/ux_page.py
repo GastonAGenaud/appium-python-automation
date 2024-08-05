@@ -109,7 +109,7 @@ class UXPage(Page):
 
         # Eliminar la imagen capturada después de la comparación
         try:
-            os.remove(ruta_captura)
+            # os.remove(ruta_captura)
             print(f"Imagen eliminada: {ruta_captura}")
         except Exception as e:
             print(f"Error al eliminar la imagen: {ruta_captura}. Error: {e}")

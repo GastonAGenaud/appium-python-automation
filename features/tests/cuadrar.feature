@@ -2,6 +2,7 @@
 @cuadrar
 Característica: Cuadrar
 
+    @vueltaFinalizada
     Escenario: Validación de la pantalla "Vuelta finalizada"
         Dado Reseteo la app
         Y el usuario ingresa el correo electronico "simple"
@@ -51,6 +52,6 @@ Característica: Cuadrar
         Y hago click en el boton "Aceptar"
         Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Y hago click en el boton "Confirmar"
+        Y hago click en el boton "Confirmar 2"
         Entonces valido el texto "Entregado"
 

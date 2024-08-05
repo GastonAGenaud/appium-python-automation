@@ -3,937 +3,925 @@
   "name" : "packages",
   "children" : [ {
     "name" : "Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion",
-    "uid" : "714f3c84fbf0fccc",
+    "uid" : "76c7d0039c2fbeab",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609639477,
-      "stop" : 1722609643798,
-      "duration" : 4321
+      "start" : 1722889756510,
+      "stop" : 1722889756510,
+      "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles",
-    "uid" : "ca7a3432f207cecb",
+    "uid" : "f74f9e13f4c8a7e3",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609643799,
-      "stop" : 1722609680550,
-      "duration" : 36751
+      "start" : 1722889756511,
+      "stop" : 1722889756512,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla del menu lateral",
-    "uid" : "b998da274a90f7d0",
+    "uid" : "2da87bac95ed81a2",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609680551,
-      "stop" : 1722609713867,
-      "duration" : 33316
+      "start" : 1722889756513,
+      "stop" : 1722889756514,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla de Términos y condiciones",
-    "uid" : "d1a105c5cdd71a4d",
+    "uid" : "dfb0b39f76c0d4b0",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609713868,
-      "stop" : 1722609745685,
-      "duration" : 31817
-    },
-    "flaky" : false,
-    "parameters" : [ ]
-  }, {
-    "name" : "Valido las zonas de accion del modal de Eliminar mi cuenta",
-    "uid" : "64ed4de497ba2cd5",
-    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
-    "time" : {
-      "start" : 1722609745685,
-      "stop" : 1722609792678,
-      "duration" : 46993
+      "start" : 1722889756515,
+      "stop" : 1722889756516,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
-    "uid" : "ad4d5370eb3eb15",
+    "uid" : "f1ac522f5812eb92",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609792679,
-      "stop" : 1722609842258,
-      "duration" : 49579
+      "start" : 1722889756517,
+      "stop" : 1722889756519,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla del Pedido",
-    "uid" : "64d4ba2017d5a69a",
+    "uid" : "b6191691bfb11104",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "failed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609842259,
-      "stop" : 1722609883348,
-      "duration" : 41089
+      "start" : 1722889756520,
+      "stop" : 1722889756521,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531",
-    "uid" : "b5dbe338e1a0da41",
+    "uid" : "7e326fb5703543ee",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609883349,
-      "stop" : 1722609917769,
-      "duration" : 34420
+      "start" : 1722889756522,
+      "stop" : 1722889756524,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531",
-    "uid" : "5d6c62727ff19f9e",
+    "uid" : "832b923ffbed6210",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609917769,
-      "stop" : 1722609919119,
-      "duration" : 1350
+      "start" : 1722889756524,
+      "stop" : 1722889756526,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion del desplegable \"Ordenar por\"",
-    "uid" : "86a20d6a5e92b260",
+    "uid" : "a53e9ce19606df9f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609919119,
-      "stop" : 1722609965764,
-      "duration" : 46645
+      "start" : 1722889756526,
+      "stop" : 1722889756527,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion de los botones de la seccion Cuadratura",
-    "uid" : "c457e263a43f1912",
+    "uid" : "ea1e4c7210bdcdcf",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722609965766,
-      "stop" : 1722610049650,
-      "duration" : 83884
+      "start" : 1722889756528,
+      "stop" : 1722889756531,
+      "duration" : 3
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido las zonas de accion del modal de Metodo de Pago",
-    "uid" : "cfd3688c76de075e",
+    "uid" : "dc2419a41ed6cb47",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610049651,
-      "stop" : 1722610107794,
-      "duration" : 58143
+      "start" : 1722889756532,
+      "stop" : 1722889756534,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de presionar el boton \"Anular pedido\"",
-    "uid" : "9ff6c4117e2073ff",
+    "uid" : "a4cf6bcc2bae8d9e",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610107796,
-      "stop" : 1722610164906,
-      "duration" : 57110
+      "start" : 1722889756536,
+      "stop" : 1722889756537,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de motivo de anulación",
-    "uid" : "8826ba3e4a34273e",
+    "uid" : "bf25c0f8babcbe12",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610164908,
-      "stop" : 1722610236397,
-      "duration" : 71489
+      "start" : 1722889756538,
+      "stop" : 1722889756541,
+      "duration" : 3
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de pantalla de selección de motivo de anulación",
-    "uid" : "12e7afe033d86f74",
+    "uid" : "30fd76a30d3e10d7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610236397,
-      "stop" : 1722610295578,
-      "duration" : 59181
+      "start" : 1722889756541,
+      "stop" : 1722889756543,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación del sector \"Retornados\"",
-    "uid" : "5b5830c44ed91247",
+    "uid" : "48422d56c2c0a7bd",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "failed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610295580,
-      "stop" : 1722610360566,
-      "duration" : 64986
+      "start" : 1722889756544,
+      "stop" : 1722889756546,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de retornar pedido de factura",
-    "uid" : "a3aed547a622b6c4",
+    "uid" : "3c47647973f79db0",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610360566,
-      "stop" : 1722610421137,
-      "duration" : 60571
+      "start" : 1722889756546,
+      "stop" : 1722889756548,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de la pantalla de retomar pedidos",
-    "uid" : "3a0944b6143517d8",
+    "uid" : "111bbc3734b715f7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610421138,
-      "stop" : 1722610511151,
-      "duration" : 90013
+      "start" : 1722889756548,
+      "stop" : 1722889756549,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de pantalla de selección de motivo de anulación mediante busqueda de numero",
-    "uid" : "3d5efaee09281b0a",
+    "uid" : "904658381b3c8e43",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610511152,
-      "stop" : 1722610575155,
-      "duration" : 64003
+      "start" : 1722889756551,
+      "stop" : 1722889756553,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de pantalla de selección de motivo de anulación mediante busqueda de texto",
-    "uid" : "161510864d018645",
+    "uid" : "79024a052ddf175d",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610575155,
-      "stop" : 1722610637710,
-      "duration" : 62555
+      "start" : 1722889756554,
+      "stop" : 1722889756556,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de la pantalla \"Vuelta finalizada\"",
-    "uid" : "ebc3b5e424df72c",
+    "uid" : "142439b7cc6cd841",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610637711,
-      "stop" : 1722610722313,
-      "duration" : 84602
+      "start" : 1722889756558,
+      "stop" : 1722889756559,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación del texto de la fecha de ruta",
-    "uid" : "c93e0179d7f284b0",
+    "uid" : "c31dba2679deeb9e",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610722314,
-      "stop" : 1722610740582,
-      "duration" : 18268
+      "start" : 1722889756560,
+      "stop" : 1722889756562,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación del texto \"25 clientes\"",
-    "uid" : "b8b10713f9b4c119",
+    "uid" : "1a482cb7394bd33f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610740583,
-      "stop" : 1722610742276,
-      "duration" : 1693
+      "start" : 1722889756562,
+      "stop" : 1722889756564,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion del texto \"Entregada\"",
-    "uid" : "f3f072fc4605f9",
+    "uid" : "4fd9435f3e7470fe",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610742276,
-      "stop" : 1722610781464,
-      "duration" : 39188
+      "start" : 1722889756565,
+      "stop" : 1722889756566,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de pantalla \"Entregados\"",
-    "uid" : "e4b443b769adf29",
+    "uid" : "b3386f1bc006a4e7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610781466,
-      "stop" : 1722610866598,
-      "duration" : 85132
+      "start" : 1722889756567,
+      "stop" : 1722889756569,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de pantalla \"Retornados\"",
-    "uid" : "e3227bd55301f242",
+    "uid" : "79b5c214997cac88",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722610866598,
-      "stop" : 1722610898731,
-      "duration" : 32133
+      "start" : 1722889756570,
+      "stop" : 1722889756571,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Retornados\"",
-    "uid" : "d3a54e2dd9add1c4",
+    "uid" : "c2d3372d533ba13b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "broken",
     "time" : {
-      "start" : 1722610898733,
-      "stop" : 1722610954233,
-      "duration" : 55500
+      "start" : 1722889756573,
+      "stop" : 1722889813037,
+      "duration" : 56464
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
-    "uid" : "2387ed2b7ecee8ff",
+    "uid" : "b96fe6e18ce55f2d",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "broken",
     "time" : {
-      "start" : 1722610954234,
-      "stop" : 1722610985633,
-      "duration" : 31399
+      "start" : 1722889813038,
+      "stop" : 1722889844448,
+      "duration" : 31410
     },
     "flaky" : false,
     "parameters" : [ "$65.064", "Sprite MidCal PT250cc x6" ]
   }, {
     "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
-    "uid" : "4754d2ba00a4f251",
+    "uid" : "e2f3413c219408ba",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "broken",
     "time" : {
-      "start" : 1722610985633,
-      "stop" : 1722611016979,
-      "duration" : 31346
+      "start" : 1722889844449,
+      "stop" : 1722889875866,
+      "duration" : 31417
     },
     "flaky" : false,
     "parameters" : [ "$66.210", "Fanta MidCal Express 237cc x 24" ]
   }, {
     "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
-    "uid" : "f245a49992807e57",
+    "uid" : "2232bc3407860d0f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "broken",
     "time" : {
-      "start" : 1722611016980,
-      "stop" : 1722611048448,
-      "duration" : 31468
+      "start" : 1722889875867,
+      "stop" : 1722889907378,
+      "duration" : 31511
     },
     "flaky" : false,
     "parameters" : [ "$376.873", "Benedictino S/G PT6.5 x 2 Cilindrico" ]
   }, {
     "name" : "Valido la entrega de un pedido",
-    "uid" : "d492f61716ef0fdc",
+    "uid" : "4fd5cb2ed43c1a0c",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "broken",
     "time" : {
-      "start" : 1722611048449,
-      "stop" : 1722611104265,
-      "duration" : 55816
+      "start" : 1722889907380,
+      "stop" : 1722889963278,
+      "duration" : 55898
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
-    "uid" : "f229ea1b1a02eeb9",
+    "uid" : "216a0d13731b41fc",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
     "status" : "broken",
     "time" : {
-      "start" : 1722611104266,
-      "stop" : 1722611135641,
-      "duration" : 31375
+      "start" : 1722889963278,
+      "stop" : 1722890025219,
+      "duration" : 61941
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de Iniciar sesion exitosamente",
-    "uid" : "c989bd96d37775b7",
+    "uid" : "2522fbe757349281",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611135643,
-      "stop" : 1722611152110,
-      "duration" : 16467
+      "start" : 1722890025221,
+      "stop" : 1722890025222,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de error por falta de correo",
-    "uid" : "cbf1cdee29a706d0",
+    "uid" : "fefa4ff7539ad0db",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611152111,
-      "stop" : 1722611166579,
-      "duration" : 14468
+      "start" : 1722890025222,
+      "stop" : 1722890025223,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de mensaje de error por falta de contraseña",
-    "uid" : "5037a8b0ec8c9e1d",
+    "uid" : "312c4b7de453970b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611166580,
-      "stop" : 1722611185323,
-      "duration" : 18743
+      "start" : 1722890025223,
+      "stop" : 1722890025224,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de error de caracteres especiales",
-    "uid" : "f89469b452de66bd",
+    "uid" : "c1f4425d5686e2db",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611185324,
-      "stop" : 1722611198934,
-      "duration" : 13610
+      "start" : 1722890025225,
+      "stop" : 1722890025226,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de boton \"Login\" deshabilitado",
-    "uid" : "1ffa46dae118db6d",
+    "uid" : "13e26020851fd2ad",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "failed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611198935,
-      "stop" : 1722611209324,
-      "duration" : 10389
+      "start" : 1722890025227,
+      "stop" : 1722890025228,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de pantalla de transporte",
-    "uid" : "a984850acca406e",
+    "uid" : "431b8d5a7809d9aa",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611209324,
-      "stop" : 1722611216077,
-      "duration" : 6753
+      "start" : 1722890025228,
+      "stop" : 1722890025229,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de vuelta 1 iniciada",
-    "uid" : "5c6acc7a01442ebb",
+    "uid" : "da2187e8d184ddee",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611216078,
-      "stop" : 1722611285468,
-      "duration" : 69390
+      "start" : 1722890025229,
+      "stop" : 1722890025231,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de Vuelta 1",
-    "uid" : "85d7c71cb2aa9a86",
+    "uid" : "f403d26dfb5df55f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611285469,
-      "stop" : 1722611361596,
-      "duration" : 76127
+      "start" : 1722890025231,
+      "stop" : 1722890025232,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de cerrar sesion exitosamente",
-    "uid" : "2d93354d38e36bb5",
+    "uid" : "bf9ac6ca4673a75b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611361598,
-      "stop" : 1722611367602,
-      "duration" : 6004
+      "start" : 1722890025233,
+      "stop" : 1722890025234,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Acepto termino y condiciones",
-    "uid" : "de01cbd9f0c7e500",
+    "uid" : "27b2fe7b31a0804d",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611367604,
-      "stop" : 1722611416624,
-      "duration" : 49020
+      "start" : 1722890025234,
+      "stop" : 1722890025236,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de eliminar cuenta exitosamente",
-    "uid" : "d5e618a24282bdc3",
+    "uid" : "26d7a70c2a0a1db7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611416624,
-      "stop" : 1722611463754,
-      "duration" : 47130
+      "start" : 1722890025237,
+      "stop" : 1722890025238,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Reseteo la aplicacion luesgo de eliminar la cuenta",
-    "uid" : "6ab0d122068c3bfa",
+    "uid" : "7dcf954ade94fd41",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611463754,
-      "stop" : 1722611509651,
-      "duration" : 45897
+      "start" : 1722890025239,
+      "stop" : 1722890025241,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de la pantalla Comenzar ruta",
-    "uid" : "e7d21a577e075572",
+    "uid" : "da7476fe7442fdd",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611509654,
-      "stop" : 1722611528375,
-      "duration" : 18721
+      "start" : 1722890025243,
+      "stop" : 1722890025244,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion del boton \"Comenzar ruta\"",
-    "uid" : "de8e436b0f71dd97",
+    "uid" : "a52e5005bdffd8e6",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611528377,
-      "stop" : 1722611627260,
-      "duration" : 98883
+      "start" : 1722890025244,
+      "stop" : 1722890025246,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de la ruta -- @1.1 ",
-    "uid" : "5f4eab595d6b1eb7",
+    "uid" : "1f468f714d7ca05b",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611627261,
-      "stop" : 1722611705342,
-      "duration" : 78081
+      "start" : 1722890025246,
+      "stop" : 1722890025247,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Local", "EL DESEO SPA" ]
   }, {
     "name" : "Validacion de la ruta -- @1.2 ",
-    "uid" : "1b5cdd2427b72d7a",
+    "uid" : "be2dd06993320100",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611705343,
-      "stop" : 1722611783753,
-      "duration" : 78410
+      "start" : 1722890025248,
+      "stop" : 1722890025249,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Direccion", "AVDA ANDRES BELLO 2447" ]
   }, {
     "name" : "Validacion de la ruta -- @1.3 ",
-    "uid" : "42f351128fc38a1c",
+    "uid" : "cb11a5bbc40bca77",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611783754,
-      "stop" : 1722611862602,
-      "duration" : 78848
+      "start" : 1722890025249,
+      "stop" : 1722890025251,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ "Producto", "16 caj" ]
   }, {
     "name" : "Validacion de la ruta -- @1.4 ",
-    "uid" : "1eec0dd662f5dfef",
+    "uid" : "d300c997709d8ba9",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611862603,
-      "stop" : 1722611941716,
-      "duration" : 79113
+      "start" : 1722890025252,
+      "stop" : 1722890025253,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Transferencia", "$866.455" ]
   }, {
     "name" : "Validacion de seleccion de ruta",
-    "uid" : "99460ec5baa57d76",
+    "uid" : "84733b18102202d9",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611941716,
-      "stop" : 1722611980797,
-      "duration" : 39081
+      "start" : 1722890025253,
+      "stop" : 1722890025254,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
-    "uid" : "2132dc5681b5b68e",
+    "uid" : "a265857b9383d045",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722611980798,
-      "stop" : 1722612066557,
-      "duration" : 85759
+      "start" : 1722890025255,
+      "stop" : 1722890025256,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Más cajas primero" ]
   }, {
     "name" : "Validacion del desplegable \"Ordenar por\" -- @1.2 ",
-    "uid" : "3fe04458b45bb435",
+    "uid" : "1d99f81bb2501eee",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612066557,
-      "stop" : 1722612151633,
-      "duration" : 85076
+      "start" : 1722890025256,
+      "stop" : 1722890025257,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Menos cajas primero" ]
   }, {
     "name" : "Validacion del desplegable \"Ordenar por\" -- @1.3 ",
-    "uid" : "8daa71198ed1a76f",
+    "uid" : "890b4987794ab909",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612151634,
-      "stop" : 1722612168670,
-      "duration" : 17036
+      "start" : 1722890025258,
+      "stop" : 1722890025259,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Ruta" ]
   }, {
     "name" : "Validacion del desplegable \"Ordenar por\" -- @1.4 ",
-    "uid" : "19d776dc73b32b39",
+    "uid" : "3d4500ef19e1e210",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "broken",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612168672,
-      "stop" : 1722612254322,
-      "duration" : 85650
+      "start" : 1722890025259,
+      "stop" : 1722890025260,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Personalizado" ]
   }, {
     "name" : "Validacion de opcion \"Entregados\"",
-    "uid" : "d48eb72b1570bed5",
+    "uid" : "55f09c3922fc755",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612254323,
-      "stop" : 1722612341404,
-      "duration" : 87081
+      "start" : 1722890025261,
+      "stop" : 1722890025262,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de opcion \"Retornados\"",
-    "uid" : "9540362476a23761",
+    "uid" : "4a1b4e248cfc3756",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612341406,
-      "stop" : 1722612426872,
-      "duration" : 85466
+      "start" : 1722890025263,
+      "stop" : 1722890025264,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
-    "uid" : "38f9ed4f8c3a18c1",
+    "uid" : "f8ba73e649848b94",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612426873,
-      "stop" : 1722612486991,
-      "duration" : 60118
+      "start" : 1722890025265,
+      "stop" : 1722890025266,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
-    "uid" : "3d9ba74d996ebfa5",
+    "uid" : "ff03b30112012eae",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612486991,
-      "stop" : 1722612614486,
-      "duration" : 127495
+      "start" : 1722890025267,
+      "stop" : 1722890025268,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de visualizacion de ruta de pedido",
-    "uid" : "ccdb01f8605c7b2b",
+    "uid" : "a1a3ec1c8b4f1b2e",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612614489,
-      "stop" : 1722612670864,
-      "duration" : 56375
+      "start" : 1722890025272,
+      "stop" : 1722890025273,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de visualizacion de la cantidad de productos y el monto de transferencia",
-    "uid" : "5ffc3856b0990459",
+    "uid" : "9d3e3cfa4c20af26",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612670864,
-      "stop" : 1722612672692,
-      "duration" : 1828
+      "start" : 1722890025273,
+      "stop" : 1722890025274,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
-    "uid" : "f96565a2f2176bc1",
+    "uid" : "7e726b83fec9838f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612672693,
-      "stop" : 1722612674067,
-      "duration" : 1374
+      "start" : 1722890025276,
+      "stop" : 1722890025277,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion del contenido de la factura -- @1.1 ",
-    "uid" : "ea20c337ecd106cd",
+    "uid" : "c982d452e389849f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612674068,
-      "stop" : 1722612792954,
-      "duration" : 118886
+      "start" : 1722890025277,
+      "stop" : 1722890025277,
+      "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ "10", "$ 10.000", "$ 1.000", "Coca Cola Sin Azucar LT350cc x 6" ]
   }, {
     "name" : "Validacion del contenido de la factura -- @1.2 ",
-    "uid" : "79061eb977aa3698",
+    "uid" : "929b7bbffe5c664",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612792955,
-      "stop" : 1722612914044,
-      "duration" : 121089
+      "start" : 1722890025278,
+      "stop" : 1722890025279,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "5", "$ 5.000", "$ 1.000", "Nordic Zero Ginger Ale PT3,0 x 6" ]
   }, {
     "name" : "Validacion del contenido de la factura -- @1.3 ",
-    "uid" : "afe183d061eb9bd2",
+    "uid" : "5e69edac59ffba1f",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722612914045,
-      "stop" : 1722613033081,
-      "duration" : 119036
+      "start" : 1722890025279,
+      "stop" : 1722890025281,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ "5", "$ 5.000", "$ 1.000", "Andina Nectar Damasco PT1,5 x 6" ]
   }, {
     "name" : "Anular pedido de la factura",
-    "uid" : "fac40f8010998d2",
+    "uid" : "2057767cb18ee91c",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613033082,
-      "stop" : 1722613090627,
-      "duration" : 57545
+      "start" : 1722890025282,
+      "stop" : 1722890025283,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Validacion del precio total del pedido",
-    "uid" : "60f6831fb514bd12",
+    "uid" : "69e3ab98041fa198",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613090628,
-      "stop" : 1722613148290,
-      "duration" : 57662
+      "start" : 1722890025283,
+      "stop" : 1722890025285,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Entregar pedido de la factura",
-    "uid" : "8bb5170633133091",
+    "uid" : "b24a25aac9f7ea6a",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613148291,
-      "stop" : 1722613209779,
-      "duration" : 61488
+      "start" : 1722890025285,
+      "stop" : 1722890025286,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido la seccion de metodo de pago desde la factura -- @1.1 ",
-    "uid" : "4e97258c684a4afc",
+    "uid" : "511ced056fe0a8a9",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613209779,
-      "stop" : 1722613268932,
-      "duration" : 59153
+      "start" : 1722890025287,
+      "stop" : 1722890025288,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Transferencia" ]
   }, {
     "name" : "Valido la seccion de metodo de pago desde la factura -- @1.2 ",
-    "uid" : "761787c0a56df325",
+    "uid" : "4a6f350419f9129c",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613268933,
-      "stop" : 1722613326895,
-      "duration" : 57962
+      "start" : 1722890025289,
+      "stop" : 1722890025289,
+      "duration" : 0
     },
     "flaky" : false,
     "parameters" : [ "Efectivo" ]
   }, {
     "name" : "Valido la seccion de metodo de pago desde la factura -- @1.3 ",
-    "uid" : "a974684f9a152ac5",
+    "uid" : "b66cd5489a1f5da7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613326896,
-      "stop" : 1722613385460,
-      "duration" : 58564
+      "start" : 1722890025291,
+      "stop" : 1722890025292,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ "Con más de un método de pago" ]
   }, {
     "name" : "Valido la seccion de metodo de pago \"Transferencia\"",
-    "uid" : "f6df01225706916f",
+    "uid" : "96956b5ae3444fba",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613385461,
-      "stop" : 1722613445800,
-      "duration" : 60339
+      "start" : 1722890025292,
+      "stop" : 1722890025294,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido la seccion de metodo de pago \"Efectivo\"",
-    "uid" : "40baf9374ad12ea6",
+    "uid" : "64b31881e924abe4",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613445801,
-      "stop" : 1722613506005,
-      "duration" : 60204
+      "start" : 1722890025294,
+      "stop" : 1722890025296,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido la seccion de metodo de pago \"Con mas de un metodo de pago\"",
-    "uid" : "a13d249fb0f901c6",
+    "uid" : "66cd294058f82672",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613506006,
-      "stop" : 1722613577499,
-      "duration" : 71493
+      "start" : 1722890025296,
+      "stop" : 1722890025297,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido el texto que se muestra en el sector de pago con Cheque",
-    "uid" : "9c76538e967e2b97",
+    "uid" : "956d0717546725c",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613577500,
-      "stop" : 1722613637367,
-      "duration" : 59867
+      "start" : 1722890025298,
+      "stop" : 1722890025300,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "Valido el numero de telefono del local",
-    "uid" : "b6c98763b1eb7da2",
+    "uid" : "256b81c956cd0151",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613637368,
-      "stop" : 1722613693499,
-      "duration" : 56131
+      "start" : 1722890025300,
+      "stop" : 1722890025301,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "valido el horario del cierre del local",
-    "uid" : "884253e78055d7d3",
+    "uid" : "abc0a6e0e7a3db20",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613693500,
-      "stop" : 1722613749866,
-      "duration" : 56366
+      "start" : 1722890025301,
+      "stop" : 1722890025303,
+      "duration" : 2
     },
     "flaky" : false,
     "parameters" : [ ]
   }, {
     "name" : "valido que el local está abierto",
-    "uid" : "f16d11cb64cfab78",
+    "uid" : "d1c8080f14c42bf7",
     "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-    "status" : "passed",
+    "status" : "skipped",
     "time" : {
-      "start" : 1722613749866,
-      "stop" : 1722613805523,
-      "duration" : 55657
+      "start" : 1722890025304,
+      "stop" : 1722890025305,
+      "duration" : 1
     },
     "flaky" : false,
     "parameters" : [ ]
