@@ -1,7 +1,6 @@
 import re
 import time
 from telnetlib import EC
-
 from selenium.common import NoSuchElementException
 from selenium.webdriver.support.wait import WebDriverWait
 from features.pages.base_page import Page

@@ -1,0 +1,254 @@
+{
+  "uid" : "eed4b7a63aefc424",
+  "name" : "Validacion del contenido de la factura -- @1.1 ",
+  "fullName" : "Revisar pedido: Validacion del contenido de la factura",
+  "historyId" : "c383c3188fad1956a9627ea148f2efe6",
+  "time" : {
+    "start" : 1722974309428,
+    "stop" : 1722974427364,
+    "duration" : 117936
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1722974309914,
+        "stop" : 1722974315553,
+        "duration" : 5639
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1722974315553,
+        "stop" : 1722974323481,
+        "duration" : 7928
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1722974323481,
+        "stop" : 1722974324973,
+        "duration" : 1492
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1722974324973,
+        "stop" : 1722974362170,
+        "duration" : 37197
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1722974362170,
+        "stop" : 1722974362358,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y selecciono la factura con numero \"812345672\"",
+      "time" : {
+        "start" : 1722974362358,
+        "stop" : 1722974363705,
+        "duration" : 1347
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Entonces valido el producto \"Coca Cola Sin Azucar LT350cc x 6\"",
+      "time" : {
+        "start" : 1722974363705,
+        "stop" : 1722974364657,
+        "duration" : 952
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y valido el precio unitario \"$ 1.000\"",
+      "time" : {
+        "start" : 1722974364657,
+        "stop" : 1722974364841,
+        "duration" : 184
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y valido la cantidad de pack pedidos \"10\"",
+      "time" : {
+        "start" : 1722974364841,
+        "stop" : 1722974365014,
+        "duration" : 173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y valido el sector de botones de agregar y restar",
+      "time" : {
+        "start" : 1722974365015,
+        "stop" : 1722974365367,
+        "duration" : 352
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y valido el precio final \"$ 10.000\"",
+      "time" : {
+        "start" : 1722974365367,
+        "stop" : 1722974365544,
+        "duration" : 177
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    }, {
+      "name" : "Y valido que el precio total sea de \"$ 20.000\"",
+      "time" : {
+        "start" : 1722974365544,
+        "stop" : 1722974426392,
+        "duration" : 60848
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "8941399cfca1e79c",
+      "name" : "Validacion del contenido de la factura -- @1.1 ",
+      "source" : "8941399cfca1e79c.mp4",
+      "type" : "video/mp4",
+      "size" : 6742924
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 12,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "revisar_pedido"
+  }, {
+    "name" : "feature",
+    "value" : "Revisar pedido"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "cantidadPack",
+    "value" : "10"
+  }, {
+    "name" : "precioTotal",
+    "value" : "$ 10.000"
+  }, {
+    "name" : "precioUnitario",
+    "value" : "$ 1.000"
+  }, {
+    "name" : "producto",
+    "value" : "Coca Cola Sin Azucar LT350cc x 6"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "revisar_pedido" ]
+  },
+  "source" : "eed4b7a63aefc424.json",
+  "parameterValues" : [ "10", "$ 10.000", "$ 1.000", "Coca Cola Sin Azucar LT350cc x 6" ]
+}

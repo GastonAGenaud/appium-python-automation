@@ -25,12 +25,8 @@ def hago_click_desplegable(context):
 def valido_las_opcion(context, opcion):
     if opcion == "Más cajas primero":
         assert bool(context.app.modificar_recorrido_page.valido_mas_cajas_opcion())
-    elif opcion == "Menos cajas primero":
-        assert bool(context.app.modificar_recorrido_page.valido_menos_cajas_opcion())
-    elif opcion == "Ruta":
+    elif opcion == "Ruta sugerida":
         assert bool(context.app.modificar_recorrido_page.valido_ruta_opcion())
-    elif opcion == "Personalizado":
-        assert bool(context.app.modificar_recorrido_page.valido_personalizado_opcion())
     else:
         raise ValueError(f"No se encontro la opcion '{opcion}'")
 

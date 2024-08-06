@@ -1,9 +1,9 @@
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
-
+from features.pages.ux_page import Page
 
 class InicioSesionPage(Page):
     correo_campo = (MobileBy.XPATH, '//android.widget.EditText[contains(@resource-id, "customTextInput")][1]')
@@ -151,8 +151,32 @@ class InicioSesionPage(Page):
     def click_terminos_condiciones_btn(self):
         self.click_on_element(self.terminos_y_condiciones_btn)
 
+    def scroll_down_until_element(self, locator, max_attempts=10):
+        attempts = 0
+        move_end_executed = False
+
+        while attempts < max_attempts:
+            try:
+                element = self.driver.find_element(*locator)
+                return element
+            except NoSuchElementException:
+                print(f"Intento {attempts + 1} de {max_attempts} fallido. Desplazando hacia abajo.")
+                if not move_end_executed:
+                    self.driver.press_keycode(AndroidKey.MOVE_END)
+                    move_end_executed = True
+
+                # Realiza un desplazamiento hacia abajo más largo
+                self.driver.swipe(start_x=500, start_y=1500, end_x=500, end_y=500, duration=500)
+                attempts += 1
+
+        raise NoSuchElementException(f"Elemento no encontrado después de {max_attempts} intentos: {locator}")
+
     def click_aceptar_terminos_y_condiciones_btn(self):
-        self.click_on_element(self.aceptar_terminos_y_condiciones_btn)
+        try:
+            elemento = self.scroll_down_until_element(self.aceptar_terminos_y_condiciones_btn)
+            return True if elemento else False
+        except NoSuchElementException:
+            return False
 
     def click_eliminar_cuenta_btn(self):
         self.click_on_element(self.eliminar_cuenta_btn)

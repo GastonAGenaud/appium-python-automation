@@ -4,86 +4,286 @@
   "children" : [ {
     "name" : "Test defects",
     "children" : [ {
+      "name" : "selenium.common.exceptions.InvalidSelectorException: Message: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 8: 1\nStacktrace:\nio.appium.uiautomator2.common.exceptions.InvalidSelectorException: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 8: 1\n\tat io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodesUsingXpath2(AccessibilityNodeInfoDumper.java:329)\n\tat io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodes(AccessibilityNodeInfoDumper.java:388)\n\tat io.appium.uiautomator2.utils.ElementLocationHelpers.getXPathNodeMatch(ElementLocationHelpers.java:127)\n\tat io.appium.uiautomator2.utils.ElementLocationHelpers.findElement(ElementLocationHelpers.java:154)\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:60)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:1012)\nCaused by: org.eclipse.wst.xml.xpath2.processor.XPathParserException: CUP parser error: Parser error: line 1 col 8: 1\n\tat org.eclipse.wst.xml.xpath2.processor.internal.InternalXPathParser.parse(InternalXPathParser.java:69)\n\tat org.eclipse.wst.xml.xpath2.processor.JFlexCupParser.parse(JFlexCupParser.java:35)\n\tat org.eclipse.wst.xml.xpath2.processor.Engine.parseExpression(Engine.java:29)\n\tat io.appium.uiautomator2.core.AccessibilityNodeInfoDumper.findNodesUsingXpath2(AccessibilityNodeInfoDumper.java:327)\n\t... 38 more\n\n",
+      "children" : [ {
+        "name" : "Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles",
+        "uid" : "db57701a9c7f17ed",
+        "parentUid" : "351271901120ee55c37c723fa52e409d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722971768945,
+          "stop" : 1722971776067,
+          "duration" : 7122
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "351271901120ee55c37c723fa52e409d"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "children" : [ {
+        "name" : "Valido las zonas de accion de la pantalla de Términos y condiciones",
+        "uid" : "6ec330413ff476e2",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722971779360,
+          "stop" : 1722971811116,
+          "duration" : 31756
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531",
+        "uid" : "62a5e451d7bac1db",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722971873095,
+          "stop" : 1722971907862,
+          "duration" : 34767
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valido las zonas de accion del desplegable \"Ordenar por\"",
+        "uid" : "50f886e87fa71f85",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722971909163,
+          "stop" : 1722971957226,
+          "duration" : 48063
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valido las zonas de accion de los botones de la seccion Cuadratura",
+        "uid" : "5c7fb9ea6a7f762f",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722971957226,
+          "stop" : 1722972040372,
+          "duration" : 83146
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
+        "uid" : "fb4659460d4b4577",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722972907613,
+          "stop" : 1722972970656,
+          "duration" : 63043
+        },
+        "flaky" : false,
+        "parameters" : [ "$ 1.000", "Coca Cola Sin Azucar LT350cc x 6" ]
+      }, {
+        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
+        "uid" : "eaba69ad363e280b",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722972970658,
+          "stop" : 1722973032846,
+          "duration" : 62188
+        },
+        "flaky" : false,
+        "parameters" : [ "$ 1.000", "Nordic Zero Ginger Ale PT3,0 x 6" ]
+      }, {
+        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
+        "uid" : "9ecfa87f6a501dc5",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722973032846,
+          "stop" : 1722973095008,
+          "duration" : 62162
+        },
+        "flaky" : false,
+        "parameters" : [ "$ 1.000", "Andina Nectar Damasco PT1,5 x 6" ]
+      }, {
+        "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
+        "uid" : "676fa6dc7e84477a",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722973149625,
+          "stop" : 1722973211566,
+          "duration" : 61941
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validacion de Vuelta 1",
+        "uid" : "c8ae3401a83b1488",
+        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722973353243,
+          "stop" : 1722973428648,
+          "duration" : 75405
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c761cc1e1f67c97166ba2758d9324261"
+    }, {
       "name" : "ValueError: No se encontro el boton de 'entregar'\n",
       "children" : [ {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Retornados\"",
-        "uid" : "c2d3372d533ba13b",
+        "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531",
+        "uid" : "6d043b2fae7eb55b",
         "parentUid" : "2b2a4956a61ad22df769561f35b4f718",
         "status" : "broken",
         "time" : {
-          "start" : 1722889756573,
-          "stop" : 1722889813037,
-          "duration" : 56464
+          "start" : 1722971907863,
+          "stop" : 1722971909162,
+          "duration" : 1299
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
         "name" : "Valido la entrega de un pedido",
-        "uid" : "4fd5cb2ed43c1a0c",
+        "uid" : "fe5fbfe0132d556d",
         "parentUid" : "2b2a4956a61ad22df769561f35b4f718",
         "status" : "broken",
         "time" : {
-          "start" : 1722889907380,
-          "stop" : 1722889963278,
-          "duration" : 55898
+          "start" : 1722973095008,
+          "stop" : 1722973149624,
+          "duration" : 54616
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "2b2a4956a61ad22df769561f35b4f718"
     }, {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
+      "name" : "ValueError: No se encontro el mensaje de error en el campo de 'No se admiten caracteres especiales'\n",
       "children" : [ {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
-        "uid" : "b96fe6e18ce55f2d",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
+        "name" : "Validacion de error de caracteres especiales",
+        "uid" : "f9c9e63ed6586520",
+        "parentUid" : "76e0989a4c2e32c6e54b70187119a654",
         "status" : "broken",
         "time" : {
-          "start" : 1722889813038,
-          "stop" : 1722889844448,
-          "duration" : 31410
-        },
-        "flaky" : false,
-        "parameters" : [ "$65.064", "Sprite MidCal PT250cc x6" ]
-      }, {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
-        "uid" : "e2f3413c219408ba",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722889844449,
-          "stop" : 1722889875866,
-          "duration" : 31417
-        },
-        "flaky" : false,
-        "parameters" : [ "$66.210", "Fanta MidCal Express 237cc x 24" ]
-      }, {
-        "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
-        "uid" : "2232bc3407860d0f",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722889875867,
-          "stop" : 1722889907378,
-          "duration" : 31511
-        },
-        "flaky" : false,
-        "parameters" : [ "$376.873", "Benedictino S/G PT6.5 x 2 Cilindrico" ]
-      }, {
-        "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
-        "uid" : "216a0d13731b41fc",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1722889963278,
-          "stop" : 1722890025219,
-          "duration" : 61941
+          "start" : 1722973254813,
+          "stop" : 1722973267274,
+          "duration" : 12461
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c761cc1e1f67c97166ba2758d9324261"
+      "uid" : "76e0989a4c2e32c6e54b70187119a654"
+    }, {
+      "name" : "ValueError: No se encontró el texto 'Buenas '\n",
+      "children" : [ {
+        "name" : "Validacion de pantalla de transporte",
+        "uid" : "c9fe2b6017beede8",
+        "parentUid" : "04cc713bae278ea694407b4888f25fe8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722973277116,
+          "stop" : 1722973283680,
+          "duration" : 6564
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "04cc713bae278ea694407b4888f25fe8"
+    }, {
+      "name" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@given(u'ingreso el correo electronico \"<correoElectronico>\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: Given ingreso el correo electronico \"<correoElectronico>\"')\n\n",
+      "children" : [ {
+        "name" : "Validacion de pantalla de transporte en curso",
+        "uid" : "2826f8bdb4a7b439",
+        "parentUid" : "19ab357b0dc62910389f0c3958dab898",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722973469177,
+          "stop" : 1722973470464,
+          "duration" : 1287
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "19ab357b0dc62910389f0c3958dab898"
+    }, {
+      "name" : "ValueError: No se encontro el boton de 'aceptar'\n",
+      "children" : [ {
+        "name" : "Entregar pedido de la factura",
+        "uid" : "46cbecc07afed699",
+        "parentUid" : "44ef4f6c6602aef845f5ab33909f6be4",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722974776325,
+          "stop" : 1722974831981,
+          "duration" : 55656
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "44ef4f6c6602aef845f5ab33909f6be4"
+    }, {
+      "name" : "selenium.common.exceptions.StaleElementReferenceException: Message: The element 'By.xpath: //android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup' is not linked to the same object in DOM anymore\nStacktrace:\nio.appium.uiautomator2.common.exceptions.StaleElementReferenceException: The element 'By.xpath: //android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup' is not linked to the same object in DOM anymore\n\tat io.appium.uiautomator2.model.ElementsCache.restore(ElementsCache.java:122)\n\tat io.appium.uiautomator2.model.ElementsCache.get(ElementsCache.java:153)\n\tat io.appium.uiautomator2.handler.GetElementAttribute.safeHandle(GetElementAttribute.java:23)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:277)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:271)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)\n\tat io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)\n\tat io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)\n\tat io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:266)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)\n\tat io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)\n\tat io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)\n\tat io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)\n\tat io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)\n\tat io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)\n\tat io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)\n\tat java.lang.Thread.run(Thread.java:1012)\n\n",
+      "children" : [ {
+        "name" : "Valido el numero de telefono del local",
+        "uid" : "cd8da20f1e62c43a",
+        "parentUid" : "4cc8b4def10121b4710bef2982b55de0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1722975255128,
+          "stop" : 1722975271349,
+          "duration" : 16221
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4cc8b4def10121b4710bef2982b55de0"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError\n",
+      "children" : [ {
+        "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+        "uid" : "7ed6335135920159",
+        "parentUid" : "a730cf0b0a23aabea6d11aa0391c8a76",
+        "status" : "failed",
+        "time" : {
+          "start" : 1722971811117,
+          "stop" : 1722971832310,
+          "duration" : 21193
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Valido las zonas de accion de la pantalla del Pedido",
+        "uid" : "f17a7bbbb62541e7",
+        "parentUid" : "a730cf0b0a23aabea6d11aa0391c8a76",
+        "status" : "failed",
+        "time" : {
+          "start" : 1722971832311,
+          "stop" : 1722971873095,
+          "duration" : 40784
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Validacion de boton \"Login\" deshabilitado",
+        "uid" : "d3ab8b3ea586840",
+        "parentUid" : "a730cf0b0a23aabea6d11aa0391c8a76",
+        "status" : "failed",
+        "time" : {
+          "start" : 1722973267275,
+          "stop" : 1722973277116,
+          "duration" : 9841
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a730cf0b0a23aabea6d11aa0391c8a76"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]
 }

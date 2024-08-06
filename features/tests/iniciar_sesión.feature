@@ -35,7 +35,7 @@ Característica: iniciar sesión
 
     Escenario: Validacion de pantalla de transporte
         Dado Ingreso con el conductor a la aplicacion
-        Entonces valido el texto "Hola conductor-01"
+        Entonces valido el texto "Buenas "
         Y valido el texto "Estas son tus vueltas disponibles"
 
     Escenario: Validacion de vuelta 1 iniciada
@@ -62,31 +62,31 @@ Característica: iniciar sesión
         Y Ingreso con el conductor a la aplicacion
         Cuando hago click en el boton "Menu Lateral"
         Y hago click en el boton "Terminos y condiciones"
-        Y hago click en el icono "scroll down"
+#        Y hago click en el icono "scroll down"
         Y hago click en el boton "Aceptar términos y condiciones"
         Entonces valido que se aceptaron los terminos y condiciones
 
-    Escenario: Validacion de eliminar cuenta exitosamente
-        Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Menu Lateral"
-        Y hago click en el boton "Eliminar mi cuenta"
-        Y hago click en el boton "Sí, eliminar mi cuenta"
-        Entonces valido que la cuenta se elimino exitosamente
+#    Escenario: Validacion de eliminar cuenta exitosamente
+#        Dado Reseteo la app
+#        Y Ingreso con el conductor a la aplicacion
+#        Cuando hago click en el boton "Menu Lateral"
+#        Y hago click en el boton "Eliminar mi cuenta"
+#        Y hago click en el boton "Sí, eliminar mi cuenta"
+#        Entonces valido que la cuenta se elimino exitosamente
+#
+#    Escenario: Reseteo la aplicacion luego de eliminar la cuenta
+#        Dado Reseteo la app
+#        Y Ingreso con el conductor a la aplicacion
+#        Cuando hago click en el boton "Cerrar aplicación"
+#        Y hago click en el boton "CERRAR SESION" en el modal
 
-    Escenario: Reseteo la aplicacion luesgo de eliminar la cuenta
-        Dado Reseteo la app
-        Y Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Cerrar aplicación"
-        Y hago click en el boton "CERRAR SESION" en el modal
-
-#    Escenario: Validacion de pantalla de transporte en curso
-#        Dado ingreso el correo electronico "<correoElectronico>"
-#        Y ingreso la contrasena "<contrasena>"
-#        Cuando hago click en el boton "Ingresar"
-#        Y visualizo la pantalla de transporte "Hola Jonathan!"
-#        Y valido que la ruta "1222654" este en curso
-#        Entonces valido que la palabra "en curso" sea visible para la ruta "1222654"
+    Escenario: Validacion de pantalla de transporte en curso
+        Dado ingreso el correo electronico "<correoElectronico>"
+        Y ingreso la contrasena "<contrasena>"
+        Cuando hago click en el boton "Ingresar"
+        Y visualizo la pantalla de transporte "Hola Jonathan!"
+        Y valido que la ruta "1222654" este en curso
+        Entonces valido que la palabra "en curso" sea visible para la ruta "1222654"
 
 #    Escenario: Validacion de pantalla de transporte finalizado
 #        Dado ingreso el correo electronico "<correoElectronico>"

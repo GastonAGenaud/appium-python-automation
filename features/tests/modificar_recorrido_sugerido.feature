@@ -8,6 +8,7 @@ Característica: Modificar recorrido sugerido
     Cuando selecciono la vuelta "Vuelta 1"
     Entonces valido que se visualice el boton "Iniciar vuelta"
 
+  @botonComenzarRuta
   Escenario: Validacion del boton "Comenzar ruta"
     Dado Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
@@ -20,11 +21,11 @@ Característica: Modificar recorrido sugerido
     Cuando selecciono la vuelta "Vuelta 1"
     Entonces valido que sea visible la "<caracteristica>" con el "<valor>" del pedido
     Ejemplos:
-      | caracteristica | valor                  |
-      | Local          | EL DESEO SPA           |
-      | Direccion      | AVDA ANDRES BELLO 2447 |
-      | Producto       | 16 caj                 |
-      | Transferencia  | $866.455               |
+      | caracteristica    | valor                  |
+      | Local             | El Deseo SPA           |
+      | Direccion         | Avda Andres Bello 2447 |
+      | Producto          | 20 caj - 10 pac        |
+      | 2 métodos de pago | $35.000                |
 
   Escenario: Validacion de seleccion de ruta
     Dado Ingreso con el conductor a la aplicacion
@@ -33,6 +34,7 @@ Característica: Modificar recorrido sugerido
     Y elijo la ruta "El Deseo SPA"
     Entonces se valida que la ruta "El Deseo SPA" este seleccionada
 
+  @validacionDesplegable
   Esquema del escenario: Validacion del desplegable "Ordenar por"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -42,11 +44,9 @@ Característica: Modificar recorrido sugerido
     Entonces valido que sea visible la opcion "<opcion>"
 
     Ejemplos:
-      | opcion              |
-      | Más cajas primero   |
-      | Menos cajas primero |
-      | Ruta                |
-      | Personalizado       |
+      | opcion            |
+      | Ruta sugerida     |
+      | Más cajas primero |
 
 
 #  Escenario: Validacion de la modificacion de la ruta por boton (hacia arriba)

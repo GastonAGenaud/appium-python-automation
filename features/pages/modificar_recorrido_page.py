@@ -9,11 +9,13 @@ class ModificarRecorridoPage(Page):
     iniciar_vuelta_btn = (MobileBy.XPATH,
                           '//android.view.ViewGroup[@content-desc="Iniciar vuelta"]')
     el_deseo_spa_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
-    boton_desplegable_mas = (MobileBy.XPATH, '//android.widget.TextView[@text="Más cajas primero"]')
+    boton_desplegable_mas = (MobileBy.XPATH, '//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout'
+                                             '/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]')
     boton_desplegable_menos = (MobileBy.XPATH, '//android.widget.TextView[@text="Menos cajas primero"]')
     boton_desplegable_ruta = (MobileBy.XPATH, '//android.widget.TextView[@text="Ruta"]')
     boton_desplegable_personalizado = (MobileBy.XPATH, '//android.widget.TextView[@text="Personalizado"]')
-    ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Ruta"]')
+    ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Ruta sugerida"]')
+    click_desplegable = (MobileBy.XPATH, '//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]')
     mas_cajas_texto = (
     MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Más cajas primero"]')
     menos_cajas_texto = (
@@ -34,7 +36,7 @@ class ModificarRecorridoPage(Page):
     mover_hacia_arriba_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado arriba de la lista')
     mover_hacia_abajo_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado al final de la lista')
     cerrar_pedido_boton = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="closeIcon"]')
-    vueltaComenzadaValidar = (MobileBy.XPATH, '//android.widget.TextView[@text="0 de 25 clientes completados"]')
+    vueltaComenzadaValidar = (MobileBy.XPATH, '//android.widget.TextView[@text="0 de 9 clientes gestionados"]')
 
     def valido_comenzar_vuelta_boton(self):
         self.implicit_wait_visible(self.iniciar_vuelta_btn)
@@ -73,16 +75,8 @@ class ModificarRecorridoPage(Page):
                 print("El botón aún está presente. Intentando nuevamente...")
 
     def click_desplegador_btn(self):
-        while True:
-            self.click_on_element(self.boton_desplegable_mas)
-            try:
-                WebDriverWait(self.driver, 1).until(
-                    EC.presence_of_element_located(self.boton_desplegable_menos)
-                )
-                print("El botón ha desaparecido.")
-                break
-            except TimeoutException:
-                print("El botón aún está presente. Intentando nuevamente...")
+        self.implicit_wait_visible(self.click_desplegable)
+        self.click_on_element(self.click_desplegable)
 
     def valido_mas_cajas_opcion(self):
         self.implicit_wait_visible(self.mas_cajas_texto)
