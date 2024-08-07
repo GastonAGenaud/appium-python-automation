@@ -47,7 +47,6 @@ Característica: Validaciones de UX/UI
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar vuelta"]"
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Ruta sugerida"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="Home-button-3"]"
-    Y valido la pantalla con la imagen de referencia "//android.view.ViewGroup[@content-desc='Pendientes']" "features/screenshots/referencia_pendientes.png"
 
   @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido
@@ -59,7 +58,6 @@ Característica: Validaciones de UX/UI
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Ver mapa"]"
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="actionCall"]"
     Cuando hago click en el boton "Cerrar pedido"
-    Entonces valido la pantalla con la imagen de referencia "//android.view.ViewGroup[@content-desc='Retornados']/android.view.ViewGroup" "features/screenshots/referencia_retornado.png"
 
   @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531

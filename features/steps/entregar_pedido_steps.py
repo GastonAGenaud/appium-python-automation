@@ -8,32 +8,43 @@ def rebajar_el_pedido(context):
 
 @then('valido el total de la factura como "{precio}"')
 def valido_el_total_de_factura(context, precio):
-    assert bool(context.app.entregar_pedido_page.valido_precio_total_factura())
+    assert context.app.entregar_pedido_page.valido_precio_total_factura(
+        precio), f"El total de la factura no es {precio}"
 
 
 @then('valido el total rebajado como "{precio}"')
 def valido_el_total_rebajado(context, precio):
-    assert bool(context.app.entregar_pedido_page.valido_precio_rebajado())
+    assert context.app.entregar_pedido_page.valido_precio_rebajado(precio), f"El total rebajado no es {precio}"
 
 
 @then('valido mensaje de entrega completada')
 def mensaje_entrega_completada(context):
-    assert bool(context.app.entregar_pedido_page.valido_entrega_completada())
+    assert context.app.entregar_pedido_page.valido_entrega_completada(), "El mensaje de entrega completada no es visible"
 
 
 @then('valido el botón "Confirmar"')
 def valido_boton_volver_a_mi_ruta(context):
-    assert bool(context.app.cuadrar_page.valido_confirmar_btn())
+    assert context.app.cuadrar_page.valido_confirmar_btn(), 'El botón "Confirmar" no es visible'
 
 
 @then('valido el icono de la pantalla "Entrega impecable"')
 def valido_icono_entrega_impecable(context):
-    assert bool(context.app.entregar_pedido_page.valido_icono_entregar_pedido())
+    assert context.app.entregar_pedido_page.valido_icono_entregar_pedido(), 'El icono de "Entrega impecable" no es visible'
 
 
 @then('Valido el pedido entregado correctamente')
 def valido_productos_en_entregados(context):
-    assert bool(context.app.empty_states_page.productos_en_entregados())
+    assert context.app.empty_states_page.productos_en_entregados(), "El pedido no se entregó correctamente"
+
+
+@then('valido la pantalla y textos de "Entregados"')
+def validar_pantalla_y_textos_entregados(context):
+    assert context.app.entregar_pedido_page.validar_pantalla_y_textos_entregados(), "La pantalla o los textos de 'Entregados' no son visibles."
+
+
+@when('hago click en el boton "Confirmar" de la pantalla Felicitaciones')
+def click_confirmar_entrega(context):
+    context.app.entregar_pedido_page.click_confirmar_entrega()
 
 
 @when('cierro el cuadro de texto')

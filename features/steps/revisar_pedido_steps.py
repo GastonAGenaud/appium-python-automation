@@ -47,6 +47,8 @@ def visualizo_la_factura(context, factura):
         context.app.revisar_pedido_page.selecciono_la_factura_erbi_A()
     elif factura == "8390812":
         context.app.revisar_pedido_page.selecciono_la_factura_erbi_B()
+    elif factura == "812345671":
+        context.app.revisar_pedido_page.selecciono_prestamo_envase()
     else:
         raise ValueError(f"No se encontró la factura con número '{factura}'")
 
@@ -156,12 +158,14 @@ def valido_precio_final(context, precio):
 def valido_total_precio(context, precio):
     try:
         # Intentar validar con el método valido_precio_total_metodo
-        assert bool(context.app.revisar_pedido_page.valido_precio_total_metodo()), f"El precio total '{precio}' no es correcto"
+        assert bool(
+            context.app.revisar_pedido_page.valido_precio_total_metodo()), f"El precio total '{precio}' no es correcto"
     except NoSuchElementException:
         print("Elemento no encontrado para 'valido_precio_total_metodo', intentando con 'valido_precio_total'.")
         try:
             # Intentar validar con el método valido_precio_total
-            assert bool(context.app.revisar_pedido_page.valido_precio_total()), f"El precio total '{precio}' no es correcto"
+            assert bool(
+                context.app.revisar_pedido_page.valido_precio_total()), f"El precio total '{precio}' no es correcto"
         except NoSuchElementException:
             print("Elemento no encontrado para 'valido_precio_total'.")
             raise
@@ -249,7 +253,6 @@ def ingreso_montos_efectivo_transferencia(context):
 @when('selecciono la vuelta "{vuelta}"')
 def seleccionar_vuelta(context, vuelta):
     context.app.revisar_pedido_page.click_vuelta_1()
-
 
 
 @then("valido el numero de telefono del local")

@@ -29,6 +29,10 @@ class EntregarPedidoPage(Page):
                                                               'entregado el pedido sin rebajas. Que siga la buena '
                                                               'racha."]')
     volver_a_mi_ruta_boton = (MobileBy.ACCESSIBILITY_ID, 'Volver a mi ruta')
+    confirmar_btn_entrega = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Confirmar"]')
+    textos_sector_entregado = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="El Deseo SPA, Avda Andres '
+                                               'Bello 2447, Abierto, Cierra a las 19:30, Productos , 30, 2 métodos de'
+                                               ' pago, $35.000"]')
 
     def click_volver_a_mi_ruta(self):
         self.implicit_wait_visible(self.volver_a_mi_ruta_boton)
@@ -92,3 +96,12 @@ class EntregarPedidoPage(Page):
         self.implicit_wait_visible(self.entrega_impecable_icon)
         valido_icono = self.find_element(self.entrega_impecable_icon).is_displayed()
         return valido_icono
+
+    def click_confirmar_entrega(self):
+        self.implicit_wait_visible(self.confirmar_btn_entrega)
+        self.click_on_element(self.confirmar_btn_entrega)
+
+    def validar_pantalla_y_textos_entregados(self):
+        pantalla_visible = self.is_element_visible(self.textos_sector_entregado)
+        texto_visible = self.is_element_visible(self.textos_sector_entregado)
+        return pantalla_visible and texto_visible

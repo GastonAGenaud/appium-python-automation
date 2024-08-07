@@ -65,7 +65,7 @@ Característica: Revisar pedido
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
-    Y hago click en el boton "aceptar"
+    Y hago click en el boton "Aceptar"
     Y selecciono el metodo que te van a pagar "efectivo"
     Y hago click en el boton "Confirmar"
     Entonces valido el texto "No hay productos rebajados"
@@ -151,6 +151,7 @@ Característica: Revisar pedido
     Y selecciono el metodo de pago "Con más de un método de pago"
     Entonces valido el mensaje que se muestra en el sector Cheque
 
+    @numeroTelefonoLocal
   Escenario: Valido el numero de telefono del local
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
