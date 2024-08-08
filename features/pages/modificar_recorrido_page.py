@@ -35,7 +35,7 @@ class ModificarRecorridoPage(Page):
     mover_a_lo_mas_abajo_boton = (MobileBy.ACCESSIBILITY_ID, 'Mover a lo más abajo')
     mover_hacia_arriba_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado arriba de la lista')
     mover_hacia_abajo_mensaje = (MobileBy.ACCESSIBILITY_ID, ', Cliente ubicado al final de la lista')
-    cerrar_pedido_boton = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="closeIcon"]')
+    cerrar_pedido_boton = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="closeIcon"]/com.horcrux.svg.GroupView/com.horcrux.svg.GroupView')
     vueltaComenzadaValidar = (MobileBy.XPATH, '//android.widget.TextView[@text="0 de 9 clientes gestionados"]')
 
     def valido_comenzar_vuelta_boton(self):

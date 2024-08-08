@@ -1,0 +1,185 @@
+{
+  "uid" : "9b801fe409c8e061",
+  "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+  "historyId" : "1e0d01dc500cd12a070bf35f69c23873",
+  "time" : {
+    "start" : 1723146480836,
+    "stop" : 1723146499344,
+    "duration" : 18508
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1723146481369,
+        "stop" : 1723146486811,
+        "duration" : 5442
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1723146486811,
+        "stop" : 1723146494503,
+        "duration" : 7692
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1723146494503,
+        "stop" : 1723146495786,
+        "duration" : 1283
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Retornados\"]/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1723146495786,
+        "stop" : 1723146497169,
+        "duration" : 1383
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Entregados\"]/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1723146497169,
+        "stop" : 1723146497470,
+        "duration" : 301
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Pendientes\"]/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1723146497470,
+        "stop" : 1723146497750,
+        "duration" : 280
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Iniciar vuelta\"]\"",
+      "time" : {
+        "start" : 1723146497750,
+        "stop" : 1723146498030,
+        "duration" : 280
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Ruta sugerida\"]\"",
+      "time" : {
+        "start" : 1723146498031,
+        "stop" : 1723146498307,
+        "duration" : 276
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "58e8bfe5b96a1f78",
+      "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
+      "source" : "58e8bfe5b96a1f78.mp4",
+      "type" : "video/mp4",
+      "size" : 10183152
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 8,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "regresion"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "regresion", "ux" ]
+  },
+  "source" : "9b801fe409c8e061.json",
+  "parameterValues" : [ ]
+}

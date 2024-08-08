@@ -1,0 +1,107 @@
+{
+  "uid" : "a9606094bf26da6c",
+  "name" : "Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion",
+  "historyId" : "9ddae50f00a80386ba06b3293007ce72",
+  "time" : {
+    "start" : 1723146463562,
+    "stop" : 1723146467286,
+    "duration" : 3724
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado estoy en la pantalla de inicio de sesion",
+      "time" : {
+        "start" : 1723146464185,
+        "stop" : 1723146465622,
+        "duration" : 1437
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Iniciar sesión\"]\"",
+      "time" : {
+        "start" : 1723146465622,
+        "stop" : 1723146466382,
+        "duration" : 760
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.widget.TextView[@text=\"\uDB80\uDE08\"]\"",
+      "time" : {
+        "start" : 1723146466382,
+        "stop" : 1723146466478,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "f8fa5d5855ed4057",
+      "name" : "Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion",
+      "source" : "f8fa5d5855ed4057.mp4",
+      "type" : "video/mp4",
+      "size" : 884045
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 3,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "ux" ]
+  },
+  "source" : "a9606094bf26da6c.json",
+  "parameterValues" : [ ]
+}

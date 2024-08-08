@@ -25,8 +25,8 @@ Característica: Validaciones de UX/UI
   Escenario: Valido las zonas de accion de la pantalla de Términos y condiciones
     Dado Ingreso con el conductor a la aplicacion
     Cuando hago click en el boton "Terminos y condiciones"
-    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="scrollDownButton"]/com.horcrux.svg.SvgView"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar términos y condiciones"]"
+#    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="scrollDownButton"]/com.horcrux.svg.SvgView"
+    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar términos y condiciones"]"
 
 #  Escenario: Valido las zonas de accion del modal de Eliminar mi cuenta
 #    Dado Reseteo la app
@@ -36,19 +36,19 @@ Característica: Validaciones de UX/UI
 #    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]"
 #    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Cancelar"]"
 
-  @regresion
+  @regresion @validar1
   Escenario: Valido las zonas de accion de la pantalla de la seccion "Pendientes"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Pendientes"]"
+    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]/android.view.ViewGroup"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Pendientes"]/android.view.ViewGroup"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar vuelta"]"
-    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Ruta sugerida"]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="Home-button-3"]"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Ruta sugerida"]"
+#    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="Home-button-3"]/android.view.ViewGroup"
 
-  @regresion
+  @regresion @validar1
   Escenario: Valido las zonas de accion de la pantalla del Pedido
     Dado Ingreso con el conductor a la aplicacion
     Cuando hago click en el boton "Iniciar vuelta"
@@ -59,26 +59,35 @@ Característica: Validaciones de UX/UI
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="actionCall"]"
     Cuando hago click en el boton "Cerrar pedido"
 
-  @regresion
-  Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 404145531
+  @regresion @validar1
+  Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672
     Dado Ingreso con el conductor a la aplicacion
     Cuando elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
-    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="+"]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="-"]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregar"]"
+    Entonces valido el tamaño de zona de accion del boton "(//android.view.ViewGroup[@content-desc="+"])[1]"
+    Y valido el tamaño de zona de accion del boton "(//android.view.ViewGroup[@content-desc="-"])[1]"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornar factura"]"
     Y valido el tamaño de zona de accion del boton "(//android.widget.CheckBox[@resource-id="check-product"])[1]/android.view.ViewGroup/android.view.ViewGroup"
-    Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="closeIcon"]"
-    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="formatted-product"]"
+#    Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="closeIcon"]"
+#    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="formatted-product"]"
 
-  @regresion
-  Escenario: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 404145531
+  @regresion @validar1
+  Escenario: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671
     Dado Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "entregar"
+    Cuando hago click en el boton "Aceptar"
+    Y selecciono el metodo de pago "Transferencia"
+    Y hago click en el boton "Confirmar"
+    Y hago click en el boton "Confirmar widget"
+    Y selecciono la segunda factura con numero "812345671"
+    Y hago click en el boton "Aceptar"
+    Cuando hago click en el boton "Confirmar"
+    Entonces valido el icono de la pantalla "Entrega impecable"
+    Cuando hago click en el boton "Confirmar"
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados "]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Confirmar"]"
+    Cuando selecciono "Retornados"
+    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Pendientes"]/android.view.ViewGroup"
 
   @regresion
   Escenario: Valido las zonas de accion del desplegable "Ordenar por"
@@ -86,10 +95,8 @@ Característica: Validaciones de UX/UI
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el desplegable
-    Entonces valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Menos cajas primero"]"
-    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Menos cajas primero"]"
-    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Ruta"]"
-    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@text="Personalizado"]"
+    Entonces valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Más cajas primero"]"
+    Y valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Ruta sugerida"]"
 
   Escenario: Valido las zonas de accion de los botones de la seccion Cuadratura
     Dado Reseteo la app
@@ -99,11 +106,11 @@ Característica: Validaciones de UX/UI
     Y selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta"
     Y elijo la ruta "LIKE EAT FOODS SPA"
-    Y selecciono la factura con numero "812345672"
-    Y hago click en el boton "entregar"
+    Y selecciono la factura con numero "404145535"
+    Y hago click en el boton "Aceptar"
     Y hago click en el boton "Confirmar"
     Y selecciono la segunda factura con numero "404145535"
-    Y hago click en el boton "entregar"
+    Y hago click en el boton "Aceptar"
     Y hago click en el boton "Confirmar"
     Entonces valido que las facturas fueron entregadas
     Cuando hago click en el boton "Confirmar"

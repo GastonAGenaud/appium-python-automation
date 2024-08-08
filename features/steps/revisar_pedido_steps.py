@@ -55,7 +55,7 @@ def visualizo_la_factura(context, factura):
 
 @when('selecciono la segunda factura con numero "{factura}"')
 def visualizo_la_factura2(context, factura):
-    if factura == "404145531":
+    if factura == "812345671":
         context.app.revisar_pedido_page.selecciono_la_factura2()
     elif factura == "404145535":
         context.app.revisar_pedido_page.selecciono_la_factura_foods_spa2()

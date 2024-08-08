@@ -4,45 +4,34 @@
     "uid" : "a798121a847b20988440e5fe2e56a8c9",
     "name" : "Validaciones de UX/UI",
     "statistic" : {
-      "failed" : 2,
-      "broken" : 6,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 11
-    }
-  }, {
-    "uid" : "d7d5217b489d5c22cd53910c0b118662",
-    "name" : "iniciar sesión",
-    "statistic" : {
-      "failed" : 1,
+      "failed" : 0,
       "broken" : 4,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 7,
       "unknown" : 0,
       "total" : 11
-    }
-  }, {
-    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
-    "name" : "Entregar pedido",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 5,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 6
     }
   }, {
     "uid" : "08a9ea78c977b359dcf6bec3fcc05566",
     "name" : "Revisar pedido",
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
-      "skipped" : 0,
-      "passed" : 17,
+      "broken" : 0,
+      "skipped" : 19,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 19
+    }
+  }, {
+    "uid" : "d7d5217b489d5c22cd53910c0b118662",
+    "name" : "iniciar sesión",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 11,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 11
     }
   }, {
     "uid" : "06bababefb3c8696475b9760b65f8227",
@@ -50,8 +39,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 11,
+      "skipped" : 11,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 11
     }
@@ -61,10 +50,21 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 8,
+      "skipped" : 8,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 8
+    }
+  }, {
+    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
+    "name" : "Entregar pedido",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 6,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 6
     }
   }, {
     "uid" : "b6bf0ae5120f106aa3f19ec552e14e38",
@@ -72,8 +72,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 4,
+      "skipped" : 4,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 4
     }
@@ -83,8 +83,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
+      "skipped" : 2,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
     }
@@ -94,8 +94,8 @@
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
-      "skipped" : 0,
-      "passed" : 2,
+      "skipped" : 2,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 2
     }

@@ -1,0 +1,242 @@
+{
+  "uid" : "fc8f42a894803184",
+  "name" : "Valido las zonas de accion del modal de Metodo de Pago",
+  "fullName" : "Validaciones de UX/UI: Valido las zonas de accion del modal de Metodo de Pago",
+  "historyId" : "eb9251602b1f94ff82b270e41e1aa216",
+  "time" : {
+    "start" : 1723146707503,
+    "stop" : 1723146764769,
+    "duration" : 57266
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Dado Reseteo la app",
+      "time" : {
+        "start" : 1723146708040,
+        "stop" : 1723146713838,
+        "duration" : 5798
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y Ingreso con el conductor a la aplicacion",
+      "time" : {
+        "start" : 1723146713838,
+        "stop" : 1723146721430,
+        "duration" : 7592
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Cuando selecciono la vuelta \"Vuelta 1\"",
+      "time" : {
+        "start" : 1723146721430,
+        "stop" : 1723146722735,
+        "duration" : 1305
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en el boton \"Iniciar vuelta\"",
+      "time" : {
+        "start" : 1723146722736,
+        "stop" : 1723146759663,
+        "duration" : 36927
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y elijo la ruta \"El Deseo SPA\"",
+      "time" : {
+        "start" : 1723146759663,
+        "stop" : 1723146759910,
+        "duration" : 247
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y selecciono la factura con numero \"812345672\"",
+      "time" : {
+        "start" : 1723146759910,
+        "stop" : 1723146761168,
+        "duration" : 1258
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y hago click en la opcion \"metodo de pago\"",
+      "time" : {
+        "start" : 1723146761168,
+        "stop" : 1723146762161,
+        "duration" : 993
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Entonces valido el tamaño de zona de accion del boton \"(//android.widget.RadioButton[@resource-id=\"RadioButtonConfirm\"])[1]/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1723146762161,
+        "stop" : 1723146763365,
+        "duration" : 1204
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"(//android.widget.RadioButton[@resource-id=\"RadioButtonConfirm\"])[2]/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1723146763365,
+        "stop" : 1723146763438,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"(//android.widget.RadioButton[@resource-id=\"RadioButtonConfirm\"])[3]/android.view.ViewGroup\"",
+      "time" : {
+        "start" : 1723146763439,
+        "stop" : 1723146763512,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//android.view.ViewGroup[@content-desc=\"Confirmar\"]\"",
+      "time" : {
+        "start" : 1723146763513,
+        "stop" : 1723146763588,
+        "duration" : 75
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "Y valido el tamaño de zona de accion del boton \"//com.horcrux.svg.SvgView[@resource-id=\"ChevronRightIcon\"]\"",
+      "time" : {
+        "start" : 1723146763588,
+        "stop" : 1723146763661,
+        "duration" : 73
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "6d518f80d57f5e49",
+      "name" : "Valido las zonas de accion del modal de Metodo de Pago",
+      "source" : "6d518f80d57f5e49.mp4",
+      "type" : "video/mp4",
+      "size" : 13258914
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 1,
+    "stepsCount" : 12,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "tag",
+    "value" : "ux"
+  }, {
+    "name" : "feature",
+    "value" : "Validaciones de UX/UI"
+  }, {
+    "name" : "framework",
+    "value" : "behave"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "ux" ]
+  },
+  "source" : "fc8f42a894803184.json",
+  "parameterValues" : [ ]
+}

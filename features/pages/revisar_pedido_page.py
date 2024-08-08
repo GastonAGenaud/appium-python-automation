@@ -37,7 +37,7 @@ class RevisarPedidoPage(Page):
         MobileBy.XPATH, '//android.widget.TextView[@text="Nordic Zero Ginger Ale PT3,0 x 6 "]')
     precio_unitario_sprite_midCal = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[1]')
     precio_unitario_fanta = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[2]')
-    precio_unitario_benedictino = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[2]')
+    precio_unitario_benedictino = (MobileBy.XPATH, '(//android.widget.TextView[@resource-id="title-unit-price"])[3]')
     cantidad_pack_coca = (
         MobileBy.XPATH, '//android.widget.EditText[@resource-id="stepperTextCustom" and @text="10"]')
     cantidad_pack_nordic = (MobileBy.XPATH, '(//android.widget.EditText[@resource-id="stepperTextCustom"])[2]')
