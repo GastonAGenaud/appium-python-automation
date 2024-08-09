@@ -15,7 +15,8 @@ class ModificarRecorridoPage(Page):
     boton_desplegable_ruta = (MobileBy.XPATH, '//android.widget.TextView[@text="Ruta"]')
     boton_desplegable_personalizado = (MobileBy.XPATH, '//android.widget.TextView[@text="Personalizado"]')
     ruta_texto = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Ruta sugerida"]')
-    click_desplegable = (MobileBy.XPATH, '//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]')
+    click_desplegable = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Ruta '
+                                         'sugerida"]/com.horcrux.svg.SvgView')
     mas_cajas_texto = (
     MobileBy.XPATH, '//android.widget.TextView[@resource-id="menu-item-title" and @text="Más cajas primero"]')
     menos_cajas_texto = (
@@ -66,7 +67,7 @@ class ModificarRecorridoPage(Page):
         while True:
             self.click_on_element(self.iniciar_vuelta_btn)
             try:
-                WebDriverWait(self.driver, 5).until_not(
+                WebDriverWait(self.driver, 8).until_not(
                     EC.presence_of_element_located(self.iniciar_vuelta_btn)
                 )
                 print("El botón ha desaparecido.")

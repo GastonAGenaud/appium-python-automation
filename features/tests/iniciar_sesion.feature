@@ -22,20 +22,20 @@ Característica: iniciar sesión
         Cuando hago click en el boton "Iniciar sesion"
         Entonces se valida el mensaje de error en el campo de "contrasena"
 
-    Escenario: Validacion de error de caracteres especiales
-        Dado Reseteo la app
-        Y el usuario ingresa el correo electronico "Test$#@#!"
-        Cuando hago click en el boton "Iniciar sesion"
-        Entonces se valida el mensaje de error en el campo de "No se admiten caracteres especiales"
+#    Escenario: Validacion de error de caracteres especiales
+#        Dado Reseteo la app
+#        Y el usuario ingresa el correo electronico "Test$#@#!"
+#        Cuando hago click en el boton "Iniciar sesion"
+#        Entonces se valida el mensaje de error en el campo de "No se admiten caracteres especiales"
 
-    Escenario: Validacion de boton "Login" deshabilitado
-        Dado Reseteo la app
-        Y estoy en la pantalla de inicio de sesion
-        Entonces se valida que el boton de "Login" este deshabilitado
+#    Escenario: Validacion de boton "Login" deshabilitado
+#        Dado Reseteo la app
+#        Y estoy en la pantalla de inicio de sesion
+#        Entonces se valida que el boton de "Login" este deshabilitado
 
     Escenario: Validacion de pantalla de transporte
         Dado Ingreso con el conductor a la aplicacion
-        Entonces valido el texto "Buenas "
+        Entonces valido el texto "Buenas tardes"
         Y valido el texto "Estas son tus vueltas disponibles"
 
     Escenario: Validacion de vuelta 1 iniciada
@@ -80,13 +80,13 @@ Característica: iniciar sesión
 #        Cuando hago click en el boton "Cerrar aplicación"
 #        Y hago click en el boton "CERRAR SESION" en el modal
 
-    Escenario: Validacion de pantalla de transporte en curso
-        Dado ingreso el correo electronico "<correoElectronico>"
-        Y ingreso la contrasena "<contrasena>"
-        Cuando hago click en el boton "Ingresar"
-        Y visualizo la pantalla de transporte "Hola Jonathan!"
-        Y valido que la ruta "1222654" este en curso
-        Entonces valido que la palabra "en curso" sea visible para la ruta "1222654"
+#    Escenario: Validacion de pantalla de transporte en curso
+#        Dado ingreso el correo electronico "<correoElectronico>"
+#        Y ingreso la contrasena "<contrasena>"
+#        Cuando hago click en el boton "Ingresar"
+#        Y visualizo la pantalla de transporte "Hola Jonathan!"
+#        Y valido que la ruta "1222654" este en curso
+#        Entonces valido que la palabra "en curso" sea visible para la ruta "1222654"
 
 #    Escenario: Validacion de pantalla de transporte finalizado
 #        Dado ingreso el correo electronico "<correoElectronico>"

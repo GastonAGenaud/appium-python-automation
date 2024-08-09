@@ -16,8 +16,8 @@ class InicioSesionPage(Page):
     vueltas_disponibles_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="subtitle-home"]')
     icono_back = (MobileBy.XPATH, '//com.horcrux.svg.SvgView[@resource-id="ChevronRightIcon"]')
     vuelta_iniciada_txt = (MobileBy.XPATH, '//android.widget.TextView[@text="Iniciada"]')
-    vuelta_1 = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 1234567, Clientes '
-                                'gestionados, 0/25"]')
+    vuelta_1 = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 12345678, Zona de '
+                                'carga, 10, Clientes gestionados, 0/9"]')
     menu_lateral_btn = (MobileBy.XPATH, '//android.widget.FrameLayout['
                                         '@resource-id="android:id/content"]/android.widget.FrameLayout/android.view'
                                         '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'

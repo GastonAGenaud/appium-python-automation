@@ -135,3 +135,5 @@ Capabilities.txt
 videos/*
 allure-results
 videos
+*.mp4
+allure-report

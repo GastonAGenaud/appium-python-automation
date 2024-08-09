@@ -2,7 +2,6 @@
 @ux
 Característica: Validaciones de UX/UI
 
-
   Escenario: Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion
     Dado estoy en la pantalla de inicio de sesion
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar sesión"]"
@@ -11,8 +10,8 @@ Característica: Validaciones de UX/UI
 
   Escenario: Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles
     Dado Ingreso con el conductor a la aplicacion
-    Entonces valido el tamaño de zona de accion del boton "Vuelta 1, Transporte, 12345678, Zona de carga, 10, Clientes gestionados, 0/9"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 12345678, Zona de carga, 10, Clientes gestionados, 0/9"]"
+    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 12345678, Zona de carga, 10, Clientes gestionados, 0/9"]"
+#    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Vuelta 1, Transporte, 12345678, Zona de carga, 10, Clientes gestionados, 0/9"]"
 
 
   Escenario: Valido las zonas de accion de la pantalla del menu lateral
@@ -36,7 +35,7 @@ Característica: Validaciones de UX/UI
 #    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]"
 #    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Cancelar"]"
 
-  @regresion @validar1
+  @regresion
   Escenario: Valido las zonas de accion de la pantalla de la seccion "Pendientes"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
@@ -48,7 +47,7 @@ Característica: Validaciones de UX/UI
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Ruta sugerida"]"
 #    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="Home-button-3"]/android.view.ViewGroup"
 
-  @regresion @validar1
+  @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido
     Dado Ingreso con el conductor a la aplicacion
     Cuando hago click en el boton "Iniciar vuelta"
@@ -59,7 +58,7 @@ Característica: Validaciones de UX/UI
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="actionCall"]"
     Cuando hago click en el boton "Cerrar pedido"
 
-  @regresion @validar1
+  @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672
     Dado Ingreso con el conductor a la aplicacion
     Cuando elijo la ruta "El Deseo SPA"
@@ -72,7 +71,7 @@ Característica: Validaciones de UX/UI
 #    Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="closeIcon"]"
 #    Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="formatted-product"]"
 
-  @regresion @validar1
+  @regresion
   Escenario: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671
     Dado Ingreso con el conductor a la aplicacion
     Cuando hago click en el boton "Aceptar"
@@ -89,11 +88,12 @@ Característica: Validaciones de UX/UI
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Pendientes"]/android.view.ViewGroup"
 
-  @regresion
+  @regresion @validar1
   Escenario: Valido las zonas de accion del desplegable "Ordenar por"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta"
     Y hago click en el desplegable
     Entonces valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Más cajas primero"]"
     Y valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Ruta sugerida"]"
