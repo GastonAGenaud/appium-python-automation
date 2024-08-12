@@ -52,7 +52,7 @@ def click_en_el_boton(context, boton):
         context.app.revisar_pedido_page.click_retornar_todo_btn()
     elif boton == "Entregar":
         context.app.revisar_pedido_page.click_entregar_btn()
-    elif boton == "Aceptar":
+    elif boton == "Entregar factura":
         context.app.revisar_pedido_page.click_aceptar_boton()
     elif boton == "Confirmar":
         context.app.entregar_pedido_page.click_confirmar_boton()
@@ -62,7 +62,7 @@ def click_en_el_boton(context, boton):
         context.app.entregar_pedido_page.click_confirmarwidget_btn()
     elif boton == "Modificar":
         context.app.entregar_pedido_page.click_modificar_btn()
-    elif boton == "Iniciar vuelta":
+    elif boton == "Iniciar vuelta 1":
         context.app.modificar_recorrido_page.click_iniciar_vuelta_btn()
     elif boton == "Entendido":
         context.app.modificar_recorrido_page.click_entendido_boton()

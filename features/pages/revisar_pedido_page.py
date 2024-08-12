@@ -18,7 +18,7 @@ class RevisarPedidoPage(Page):
     productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="10 caj - 10 pac"]')
     google_maps_opcion = (MobileBy.ACCESSIBILITY_ID, 'Ver mapa')
     anular_pedido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anular pedido"]')
-    aceptar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Aceptar"]')
+    aceptar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregar factura"]')
     precio_total_pedido = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')
     precio_total_metodo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')

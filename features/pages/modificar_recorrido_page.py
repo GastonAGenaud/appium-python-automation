@@ -7,7 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 class ModificarRecorridoPage(Page):
     iniciar_vuelta_btn = (MobileBy.XPATH,
-                          '//android.view.ViewGroup[@content-desc="Iniciar vuelta"]')
+                          '//android.view.ViewGroup[@content-desc="Iniciar vuelta 1"]')
     el_deseo_spa_local = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
     boton_desplegable_mas = (MobileBy.XPATH, '//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout'
                                              '/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]')

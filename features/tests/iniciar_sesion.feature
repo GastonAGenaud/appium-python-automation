@@ -41,7 +41,7 @@ Característica: iniciar sesión
     Escenario: Validacion de vuelta 1 iniciada
         Dado Ingreso con el conductor a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
-        Y hago click en el boton "Iniciar vuelta"
+        Y hago click en el boton "Iniciar vuelta 1"
         Y hago click en el icono "back"
         Entonces Valido que la vuelta 1 fue iniciada
 

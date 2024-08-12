@@ -50,7 +50,7 @@ Característica: Validaciones de UX/UI
   @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido
     Dado Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Iniciar vuelta"
+    Cuando hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornar todo"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Confirmar"]"
@@ -93,7 +93,7 @@ Característica: Validaciones de UX/UI
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y hago click en el desplegable
     Entonces valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Más cajas primero"]"
     Y valido el tamaño de zona de accion del boton "//android.view.View[@content-desc="Ruta sugerida"]"
@@ -104,7 +104,7 @@ Característica: Validaciones de UX/UI
     Y el usuario ingresa una contraseña
     Cuando hago click en el boton "Iniciar sesion"
     Y selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "LIKE EAT FOODS SPA"
     Y selecciono la factura con numero "404145535"
     Y hago click en el boton "Aceptar"
@@ -125,7 +125,7 @@ Característica: Validaciones de UX/UI
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"

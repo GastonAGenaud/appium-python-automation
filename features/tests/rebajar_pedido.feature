@@ -6,7 +6,7 @@ Característica: Rebajar Pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y selecciono para rebajar el pedido
@@ -19,7 +19,7 @@ Característica: Rebajar Pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y hago click en el boton "Retornar todo"
     Cuando visualizo la pantalla de selección de motivo de anulacion

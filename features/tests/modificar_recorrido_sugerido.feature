@@ -12,7 +12,7 @@ Característica: Modificar recorrido sugerido
   Escenario: Validacion del boton "Comenzar ruta"
     Dado Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Entonces se valida que el boton "Iniciar vuelta" haya sido seleccionado correctamente
 
   Esquema del escenario: Validacion de la ruta
@@ -30,7 +30,7 @@ Característica: Modificar recorrido sugerido
   Escenario: Validacion de seleccion de ruta
     Dado Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Entonces se valida que la ruta "El Deseo SPA" este seleccionada
 
@@ -39,7 +39,7 @@ Característica: Modificar recorrido sugerido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y hago click en el desplegable
     Entonces valido que sea visible la opcion "<opcion>"
 
@@ -69,7 +69,7 @@ Característica: Modificar recorrido sugerido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y selecciono "Entregados"
     Entonces valido la pantalla de "Entregados"
 
@@ -77,6 +77,6 @@ Característica: Modificar recorrido sugerido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y selecciono "Retornados"
     Entonces valido la pantalla de "Retornados"

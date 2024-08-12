@@ -9,13 +9,13 @@ Característica: Cuadrar
         Y el usuario ingresa una contraseña
         Cuando hago click en el boton "Iniciar sesion"
         Y selecciono la vuelta "Vuelta 1"
-        Y hago click en el boton "Iniciar vuelta"
+        Y hago click en el boton "Iniciar vuelta 1"
         Y elijo la ruta "LIKE EAT FOODS SPA"
         Y selecciono la factura con numero "404145535"
-        Y hago click en el boton "Aceptar"
+        Y hago click en el boton "Entregar factura"
         Y hago click en el boton "Confirmar"
         Y selecciono la segunda factura con numero "404145535"
-        Y hago click en el boton "Aceptar"
+        Y hago click en el boton "Entregar factura"
         Y hago click en el boton "Confirmar"
         Entonces valido que las facturas fueron entregadas
         Cuando hago click en el boton "Confirmar"
@@ -46,7 +46,7 @@ Característica: Cuadrar
     @modalComenzarRuta
     Escenario: Validacion del texto "Entregada"
         Dado Ingreso con el conductor a la aplicacion
-        Cuando hago click en el boton "Iniciar vuelta"
+        Cuando hago click en el boton "Iniciar vuelta 1"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "812345672"
         Y hago click en el boton "Aceptar"

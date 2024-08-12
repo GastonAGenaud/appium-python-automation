@@ -7,7 +7,7 @@ Característica: Anular pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y hago click en el boton "Retornar todo"
     Entonces valido que se haya abierto la pantalla de selección de motivo de anulación
@@ -41,7 +41,7 @@ Característica: Anular pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y hago click en el boton "Retornar todo"
     #Entonces valido la presencia de los motivos de anulacion:
@@ -75,7 +75,7 @@ Característica: Anular pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Retornar factura"
@@ -83,11 +83,12 @@ Característica: Anular pedido
     Y hago click en el boton "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
+
   Escenario: Validación de la pantalla de retomar pedidos
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Retornar factura"
@@ -99,11 +100,12 @@ Característica: Anular pedido
     Y selecciono "Retornados"
     Entonces Valido la pantalla de retomar pedidos
 
+
   Escenario: Validación de pantalla de selección de motivo de anulación mediante busqueda de numero
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Retornar factura"
@@ -112,12 +114,12 @@ Característica: Anular pedido
     Y hago click en el boton "Confirmar"
     Entonces verifico la validacion del retorno de la factura
 
-
+    @numero10
   Escenario: Validación de pantalla de selección de motivo de anulación mediante busqueda de texto
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Retornar factura"

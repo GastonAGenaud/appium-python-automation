@@ -16,7 +16,7 @@ class AnularPedidoPage(Page):
     textoPorqueRetornar = (MobileBy.XPATH, '//android.widget.TextView[@text=" Retornada - Sobre stock"]')
     validar_pantalla_retomar_detalles = (
         MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="El Deseo SPA, Sobre stock, Avda Andres Bello 2447, '
-                        'Abierto, Cierra a las 19:30, Productos , 30, 2 métodos de pago, $35.000"]')
+                        'Abierto, Cierra a las 19:30, Productos , 20 caj - 10 pac, 2 métodos de pago, $35.000"]')
     campo_busqueda_motivo = (MobileBy.XPATH, '//android.widget.EditText[@resource-id="text-input-outlined"]')
 
     def ingresar_texto_busqueda_motivo(self, texto):

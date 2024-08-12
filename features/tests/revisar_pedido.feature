@@ -6,7 +6,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Entonces se valida que la visualizacion de pedido para la ruta "El Deseo SPA" sea correcta
 
@@ -23,7 +23,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Entonces valido el producto "<producto>"
@@ -43,7 +43,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Retornar factura"
@@ -53,7 +53,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Entonces valido que este correcta la suma del precio de los productos
@@ -62,7 +62,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en el boton "Aceptar"
@@ -79,7 +79,7 @@ Característica: Revisar pedido
 #    Y el usuario ingresa una contraseña
 #    Cuando hago click en el boton "Iniciar sesion"
 #    Y selecciono la vuelta "Vuelta 1"
-#    Y hago click en el boton "Iniciar vuelta"
+#    Y hago click en el boton "Iniciar vuelta 1"
 #    Y elijo la ruta "Erbi"
 #    Entonces valido que la nota de credito sea "- $ 25.000"
 
@@ -87,7 +87,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"
@@ -105,7 +105,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"
@@ -117,7 +117,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "metodo de pago"
@@ -129,7 +129,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "método de pago"
@@ -144,7 +144,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Y hago click en la opcion "método de pago"
@@ -156,7 +156,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Entonces valido el numero de telefono del local
 
@@ -164,7 +164,7 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Entonces valido el horario del cierre del local
 
@@ -172,6 +172,6 @@ Característica: Revisar pedido
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
-    Y hago click en el boton "Iniciar vuelta"
+    Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
     Entonces valido que el local se encuentra abierto
