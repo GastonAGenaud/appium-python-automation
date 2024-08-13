@@ -49,7 +49,7 @@ Característica: Cuadrar
         Cuando hago click en el boton "Iniciar vuelta 1"
         Y elijo la ruta "El Deseo SPA"
         Y selecciono la factura con numero "812345672"
-        Y hago click en el boton "Aceptar"
+        Y hago click en el boton "Entregar factura"
         Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
         Y hago click en el boton "Confirmar 2"

@@ -74,7 +74,7 @@ Característica: Validaciones de UX/UI
   @regresion
   Escenario: Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671
     Dado Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Aceptar"
+    Cuando hago click en el boton "Entregar factura"
     Y selecciono el metodo de pago "Transferencia"
     Y hago click en el boton "Confirmar"
     Y hago click en el boton "Confirmar widget"
@@ -107,10 +107,10 @@ Característica: Validaciones de UX/UI
     Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "LIKE EAT FOODS SPA"
     Y selecciono la factura con numero "404145535"
-    Y hago click en el boton "Aceptar"
+    Y hago click en el boton "Entregar factura"
     Y hago click en el boton "Confirmar"
     Y selecciono la segunda factura con numero "404145535"
-    Y hago click en el boton "Aceptar"
+    Y hago click en el boton "Entregar factura"
     Y hago click en el boton "Confirmar"
     Entonces valido que las facturas fueron entregadas
     Cuando hago click en el boton "Confirmar"

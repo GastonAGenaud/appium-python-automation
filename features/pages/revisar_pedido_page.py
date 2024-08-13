@@ -13,12 +13,13 @@ from features.pages.ux_page import UXPage
 class RevisarPedidoPage(Page):
     el_deseo_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="address"]')
     like_eat_foods_spa_titulo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-location"]')
-    precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$ 35.000"]')
+    precio_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="$35.000"]')
     productos_del_pedido = (MobileBy.XPATH, '//android.widget.TextView[@text="10 caj - 10 pac"]')
     productos_del_pedido_dos = (MobileBy.XPATH, '//android.widget.TextView[@text="10 caj - 10 pac"]')
     google_maps_opcion = (MobileBy.ACCESSIBILITY_ID, 'Ver mapa')
     anular_pedido_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Anular pedido"]')
-    aceptar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregar factura"]')
+    entregar_factura_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Entregar factura"]')
+    aceptar_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Aceptar"]')
     precio_total_pedido = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="total-price"]')
     precio_total_metodo = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
     restar_btn = (MobileBy.XPATH, '(//android.view.ViewGroup[@content-desc="-"])[1]')
@@ -166,6 +167,9 @@ class RevisarPedidoPage(Page):
 
     def click_aceptar_boton(self):
         self.click_on_element(self.aceptar_btn)
+
+    def click_entregar_factura_boton(self):
+        self.click_on_element(self.entregar_factura_btn)
 
     def valido_producto_sprite_MidCal(self):
         self.implicit_wait_visible(self.sprite_MidCal_pedido)
@@ -364,14 +368,19 @@ class RevisarPedidoPage(Page):
                                          '//android.widget.TextView[@resource-id="title-CardAmount-a"]')
         precio_total = total.text
         solo_numeros = re.sub(r'\D', '', precio_total)
+
+        # Convertir a int para asegurar que no haya problemas con los decimales
         total = int(solo_numeros)
-        monto_indivivual = total / 2
+
+        # Dividir por 2 y convertir de nuevo a int para eliminar cualquier decimal
+        monto_individual = int(total / 2)
 
         self.click_on_element(self.campo_texto_efectivo)
-        self.input(monto_indivivual, self.campo_texto_efectivo)
+        self.input(str(monto_individual), self.campo_texto_efectivo)
         self.driver.hide_keyboard()
+
         self.click_on_element(self.campo_texto_transferencia)
-        self.input(monto_indivivual, self.campo_texto_transferencia)
+        self.input(str(monto_individual), self.campo_texto_transferencia)
         self.driver.hide_keyboard()
 
     def click_vuelta_1(self):

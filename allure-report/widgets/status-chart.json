@@ -1,711 +1,711 @@
 [ {
-  "uid" : "8566e39498cfc418",
-  "name" : "valido el horario del cierre del local",
+  "uid" : "4c8007147560b99a",
+  "name" : "Valido la entrega de un pedido",
   "time" : {
-    "start" : 1723493786626,
-    "stop" : 1723493786628,
-    "duration" : 2
+    "start" : 1723574658996,
+    "stop" : 1723574726919,
+    "duration" : 67923
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "cc088a8829685ef1",
-  "name" : "Validación de retornar pedido de factura",
-  "time" : {
-    "start" : 1723493690225,
-    "stop" : 1723493690227,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "9084d25e6813440c",
-  "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671",
-  "time" : {
-    "start" : 1723493690207,
-    "stop" : 1723493690208,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "f0ebe0c53ab19210",
-  "name" : "Acepto termino y condiciones",
-  "time" : {
-    "start" : 1723493786570,
-    "stop" : 1723493786571,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "44d17ce60a0105ac",
-  "name" : "Valido el numero de telefono del local",
-  "time" : {
-    "start" : 1723493786624,
-    "stop" : 1723493786626,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "c6a307dd1b5d4f46",
-  "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672",
-  "time" : {
-    "start" : 1723493690204,
-    "stop" : 1723493690206,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "e8edfe0f1c0fedb9",
-  "name" : "Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion",
-  "time" : {
-    "start" : 1723493690193,
-    "stop" : 1723493690194,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "d249031f2fb8e978",
-  "name" : "Valido las zonas de accion de los botones de la seccion Cuadratura",
-  "time" : {
-    "start" : 1723493690211,
-    "stop" : 1723493690212,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "358604bf1a906657",
-  "name" : "Validación del sector \"Retornados\"",
-  "time" : {
-    "start" : 1723493690224,
-    "stop" : 1723493690225,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "b1934fe81f12b36e",
-  "name" : "Validacion del boton \"Comenzar ruta\"",
-  "time" : {
-    "start" : 1723493786574,
-    "stop" : 1723493786576,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "6bfbb445f2cf3367",
-  "name" : "Validacion de visualizacion de la cantidad de productos y el monto de transferencia",
-  "time" : {
-    "start" : 1723493786599,
-    "stop" : 1723493786600,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3d6c0d9da9b0cc02",
-  "name" : "Valido las zonas de accion de la pantalla del menu lateral",
-  "time" : {
-    "start" : 1723493690197,
-    "stop" : 1723493690198,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "886f7c7e0c4e9ee6",
-  "name" : "Validación de pantalla \"Retornados\"",
-  "time" : {
-    "start" : 1723493786545,
-    "stop" : 1723493786546,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "615575b9eb33610e",
-  "name" : "Validacion de seleccion de ruta",
-  "time" : {
-    "start" : 1723493786582,
-    "stop" : 1723493786583,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "1a142b87ba3d92a3",
-  "name" : "Validación del texto \"25 clientes\"",
-  "time" : {
-    "start" : 1723493786540,
-    "stop" : 1723493786541,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "da61f04f37c882de",
-  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
-  "time" : {
-    "start" : 1723493786552,
-    "stop" : 1723493786553,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "86b166d081fdfa27",
-  "name" : "Validacion de la ruta -- @1.3 ",
-  "time" : {
-    "start" : 1723493786579,
-    "stop" : 1723493786580,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ad8c28d2f849bdba",
-  "name" : "Validacion de vuelta 1 iniciada",
-  "time" : {
-    "start" : 1723493786564,
-    "stop" : 1723493786566,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ac9619f470a23c47",
-  "name" : "Validacion de la pantalla Comenzar ruta",
-  "time" : {
-    "start" : 1723493786573,
-    "stop" : 1723493786574,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "37abe1b5fe1eccd8",
-  "name" : "Validación de presionar el boton \"Anular pedido\"",
-  "time" : {
-    "start" : 1723493690217,
-    "stop" : 1723493690218,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "aa53d0be9303f05d",
-  "name" : "Valido la seccion de metodo de pago \"Efectivo\"",
-  "time" : {
-    "start" : 1723493786619,
-    "stop" : 1723493786620,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "38b50c3b3ca28ce1",
-  "name" : "Valido el texto que se muestra en el sector de pago con Cheque",
-  "time" : {
-    "start" : 1723493786622,
-    "stop" : 1723493786624,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "bf32df9aebeabe3f",
-  "name" : "Validacion de la ruta -- @1.4 ",
-  "time" : {
-    "start" : 1723493786581,
-    "stop" : 1723493786582,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "896b274c6244168f",
-  "name" : "Validación de la pantalla de retomar pedidos",
-  "time" : {
-    "start" : 1723493690228,
-    "stop" : 1723493690230,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "286a248ef67e7e4c",
-  "name" : "Validacion del contenido de la factura -- @1.3 ",
-  "time" : {
-    "start" : 1723493786605,
-    "stop" : 1723493786606,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "969492ca112bbcae",
-  "name" : "Valido la seccion de metodo de pago desde la factura -- @1.2 ",
-  "time" : {
-    "start" : 1723493786614,
-    "stop" : 1723493786615,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "58bbf72c1dc0c2c6",
-  "name" : "Valido las zonas de accion del modal de Metodo de Pago",
-  "time" : {
-    "start" : 1723493690213,
-    "stop" : 1723493690215,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3f33a9e5b2d61c5a",
-  "name" : "Valido las zonas de accion de la pantalla del Pedido",
-  "time" : {
-    "start" : 1723493690202,
-    "stop" : 1723493690204,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "4180c25b9e9a78d7",
-  "name" : "Validacion de mensaje de error por falta de contraseña",
-  "time" : {
-    "start" : 1723493786562,
-    "stop" : 1723493786563,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "33168fbda67da63e",
-  "name" : "Validacion de opcion \"Retornados\"",
-  "time" : {
-    "start" : 1723493786589,
-    "stop" : 1723493786590,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "515745a1e8383872",
-  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.2 ",
-  "time" : {
-    "start" : 1723493786585,
-    "stop" : 1723493786586,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "7847d0249d619530",
-  "name" : "Validacion de la ruta -- @1.1 ",
-  "time" : {
-    "start" : 1723493786576,
-    "stop" : 1723493786577,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "6e3dc92234a1976d",
-  "name" : "Validacion del contenido de la factura -- @1.1 ",
-  "time" : {
-    "start" : 1723493786601,
-    "stop" : 1723493786601,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "15112cbf1e304373",
-  "name" : "Anular pedido de la factura",
-  "time" : {
-    "start" : 1723493786607,
-    "stop" : 1723493786608,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "e5ac87c540dd19d1",
+  "uid" : "23a70dd505f78d92",
   "name" : "Validación de la pantalla \"Vuelta finalizada\"",
   "time" : {
-    "start" : 1723493690238,
-    "stop" : 1723493786537,
-    "duration" : 96299
+    "start" : 1723574057042,
+    "stop" : 1723574126097,
+    "duration" : 69055
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1fd31a478f0822cf",
+  "name" : "Validacion de Vuelta 1",
+  "time" : {
+    "start" : 1723574944254,
+    "stop" : 1723574960108,
+    "duration" : 15854
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b3c8e4937cc8faab",
+  "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671",
+  "time" : {
+    "start" : 1723573311869,
+    "stop" : 1723573360210,
+    "duration" : 48341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a6bb41dd69998bd",
+  "name" : "Validación de presionar el boton \"Anular pedido\"",
+  "time" : {
+    "start" : 1723573542426,
+    "stop" : 1723573600832,
+    "duration" : 58406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "beda891a94d02bac",
+  "name" : "Valido la seccion de metodo de pago \"Transferencia\"",
+  "time" : {
+    "start" : 1723576611953,
+    "stop" : 1723576673465,
+    "duration" : 61512
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "78d49542cea6bdbc",
+  "name" : "Valido la seccion de metodo de pago desde la factura -- @1.1 ",
+  "time" : {
+    "start" : 1723576431393,
+    "stop" : 1723576491960,
+    "duration" : 60567
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "19eae593356aa0a3",
+  "name" : "Validacion del boton \"Comenzar ruta\"",
+  "time" : {
+    "start" : 1723575053738,
+    "stop" : 1723575125587,
+    "duration" : 71849
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "117a0b5ff6cef9b5",
+  "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672",
+  "time" : {
+    "start" : 1723573277650,
+    "stop" : 1723573311868,
+    "duration" : 34218
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "15de98f197dfc6b6",
-  "name" : "Validacion de error por falta de correo",
-  "time" : {
-    "start" : 1723493786561,
-    "stop" : 1723493786561,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "101b61bb84dad666",
-  "name" : "Validación de pantalla \"Entregados\"",
-  "time" : {
-    "start" : 1723493786544,
-    "stop" : 1723493786545,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "8d1cc34072550b58",
-  "name" : "Valido la seccion de metodo de pago desde la factura -- @1.1 ",
-  "time" : {
-    "start" : 1723493786612,
-    "stop" : 1723493786614,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3605906b4604d585",
-  "name" : "Validación de pantalla de selección de motivo de anulación",
-  "time" : {
-    "start" : 1723493690221,
-    "stop" : 1723493690222,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "b23ffeba3560ed8c",
-  "name" : "Validacion de Vuelta 1",
-  "time" : {
-    "start" : 1723493786567,
-    "stop" : 1723493786568,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "7009c6d1de46af9d",
-  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
-  "time" : {
-    "start" : 1723493786584,
-    "stop" : 1723493786585,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "2b80545f2444005e",
-  "name" : "Validacion del precio total del pedido",
-  "time" : {
-    "start" : 1723493786609,
-    "stop" : 1723493786610,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "9a47ffbc5e83fc15",
-  "name" : "Valido la seccion de metodo de pago \"Con mas de un metodo de pago\"",
-  "time" : {
-    "start" : 1723493786621,
-    "stop" : 1723493786622,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "75773876b086381b",
-  "name" : "Validación de motivo de anulación",
-  "time" : {
-    "start" : 1723493690219,
-    "stop" : 1723493690220,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "352f6e482d5306c4",
-  "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
-  "time" : {
-    "start" : 1723493786600,
-    "stop" : 1723493786601,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "46fd54eb24c5767e",
-  "name" : "Validación de pantalla de selección de motivo de anulación mediante busqueda de numero",
-  "time" : {
-    "start" : 1723493690231,
-    "stop" : 1723493690233,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "91338c31de90664d",
-  "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
-  "time" : {
-    "start" : 1723493786591,
-    "stop" : 1723493786592,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "a47549ab0b650f0e",
-  "name" : "Entregar pedido de la factura",
-  "time" : {
-    "start" : 1723493786610,
-    "stop" : 1723493786612,
-    "duration" : 2
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "800c7ff9c96ba898",
-  "name" : "Valido las zonas de accion del desplegable \"Ordenar por\"",
-  "time" : {
-    "start" : 1723493690209,
-    "stop" : 1723493690210,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "326823037598e8d6",
+  "uid" : "97010285e7fd3f86",
   "name" : "Validación del texto de la fecha de ruta",
   "time" : {
-    "start" : 1723493786538,
-    "stop" : 1723493786539,
-    "duration" : 1
+    "start" : 1723574126098,
+    "stop" : 1723574143295,
+    "duration" : 17197
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7da04817dfd9c51f",
-  "name" : "Validacion del contenido de la factura -- @1.2 ",
+  "uid" : "e56026719fcd1772",
+  "name" : "Valido las zonas de accion de la pantalla del Pedido",
   "time" : {
-    "start" : 1723493786603,
-    "stop" : 1723493786604,
-    "duration" : 1
+    "start" : 1723573234946,
+    "stop" : 1723573277649,
+    "duration" : 42703
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "eac9a975b65cca89",
-  "name" : "Valido la seccion de metodo de pago desde la factura -- @1.3 ",
+  "uid" : "85cbeeeac073ea90",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.1 ",
   "time" : {
-    "start" : 1723493786616,
-    "stop" : 1723493786617,
-    "duration" : 1
+    "start" : 1723575353510,
+    "stop" : 1723575410725,
+    "duration" : 57215
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7146635b6939f5a",
-  "name" : "Validacion de visualizacion de ruta de pedido",
-  "time" : {
-    "start" : 1723493786598,
-    "stop" : 1723493786598,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "5e7b97469145c894",
-  "name" : "Validacion de opcion \"Entregados\"",
-  "time" : {
-    "start" : 1723493786587,
-    "stop" : 1723493786588,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "2219f70fdf79ed1f",
-  "name" : "Validación de pantalla de selección de motivo de anulación mediante busqueda de texto",
-  "time" : {
-    "start" : 1723493690234,
-    "stop" : 1723493690235,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "eaf1a50093d146b8",
-  "name" : "Validacion del texto \"Entregada\"",
-  "time" : {
-    "start" : 1723493786542,
-    "stop" : 1723493786543,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "bed62903b17b35d",
-  "name" : "Validacion de cerrar sesion exitosamente",
-  "time" : {
-    "start" : 1723493786569,
-    "stop" : 1723493786570,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "6808742166473707",
-  "name" : "Validacion de la ruta -- @1.2 ",
-  "time" : {
-    "start" : 1723493786578,
-    "stop" : 1723493786579,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "58a2041ea4b89a82",
-  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Retornados\"",
-  "time" : {
-    "start" : 1723493786548,
-    "stop" : 1723493786549,
-    "duration" : 1
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ba42ae74df1e0689",
-  "name" : "Valido la seccion de metodo de pago \"Transferencia\"",
-  "time" : {
-    "start" : 1723493786618,
-    "stop" : 1723493786618,
-    "duration" : 0
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ea7d2fb266152b42",
+  "uid" : "6675bd17b51a5738",
   "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
   "time" : {
-    "start" : 1723493690200,
-    "stop" : 1723493690202,
-    "duration" : 2
+    "start" : 1723573187048,
+    "stop" : 1723573234945,
+    "duration" : 47897
   },
-  "status" : "skipped",
+  "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "746ef68a87fb24f9",
-  "name" : "Validacion de pantalla de transporte",
+  "uid" : "182d79ca7723ee7e",
+  "name" : "Valido la seccion de metodo de pago \"Con mas de un metodo de pago\"",
   "time" : {
-    "start" : 1723493786563,
-    "stop" : 1723493786564,
-    "duration" : 1
+    "start" : 1723576734906,
+    "stop" : 1723576808059,
+    "duration" : 73153
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "65482fe6429632ce",
-  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
+  "uid" : "b08015152356036f",
+  "name" : "Validacion del desplegable \"Ordenar por\" -- @1.2 ",
   "time" : {
-    "start" : 1723493786553,
-    "stop" : 1723493786554,
-    "duration" : 1
+    "start" : 1723575410725,
+    "stop" : 1723575468179,
+    "duration" : 57454
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ff61aa6de799117d",
-  "name" : "valido que el local está abierto",
+  "uid" : "29030b5926801333",
+  "name" : "Validacion de la ruta -- @1.1 ",
   "time" : {
-    "start" : 1723493786628,
-    "stop" : 1723493786629,
-    "duration" : 1
+    "start" : 1723575125588,
+    "stop" : 1723575171937,
+    "duration" : 46349
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e69810bfef3bd728",
-  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
+  "uid" : "51d8341a47c64be7",
+  "name" : "Validacion de seleccion de ruta",
   "time" : {
-    "start" : 1723493786550,
-    "stop" : 1723493786551,
-    "duration" : 1
+    "start" : 1723575311335,
+    "stop" : 1723575353509,
+    "duration" : 42174
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a49a0107005b19fe",
+  "uid" : "ce88e1ddf5b0b11e",
+  "name" : "Validacion de vuelta 1 iniciada",
+  "time" : {
+    "start" : 1723574871543,
+    "stop" : 1723574944253,
+    "duration" : 72710
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4124f64788877528",
   "name" : "Valido las zonas de accion de la pantalla de Términos y condiciones",
   "time" : {
-    "start" : 1723493690198,
-    "stop" : 1723493690200,
-    "duration" : 2
+    "start" : 1723573155717,
+    "stop" : 1723573187046,
+    "duration" : 31329
   },
-  "status" : "skipped",
+  "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "958d0fd8353e3e1a",
-  "name" : "Valido la entrega de un pedido",
+  "uid" : "7582358c094bd523",
+  "name" : "Validación de la pantalla de retomar pedidos",
   "time" : {
-    "start" : 1723493786554,
-    "stop" : 1723493786557,
-    "duration" : 3
+    "start" : 1723573829309,
+    "stop" : 1723573928655,
+    "duration" : 99346
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a1187151f36f1880",
-  "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
+  "uid" : "706d8927bb0c323d",
+  "name" : "Valido la seccion de metodo de pago desde la factura -- @1.3 ",
   "time" : {
-    "start" : 1723493786557,
-    "stop" : 1723493786558,
-    "duration" : 1
+    "start" : 1723576551546,
+    "stop" : 1723576611952,
+    "duration" : 60406
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a5cc5d07bd7e8445",
+  "uid" : "b0b2b54568c6f705",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.2 ",
+  "time" : {
+    "start" : 1723574420155,
+    "stop" : 1723574539923,
+    "duration" : 119768
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f44b1c175207280c",
+  "name" : "Validacion de visualizacion de la cantidad de productos y el monto de transferencia",
+  "time" : {
+    "start" : 1723575887142,
+    "stop" : 1723575888870,
+    "duration" : 1728
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a3d0c74065ee0189",
+  "name" : "Anular pedido de la factura",
+  "time" : {
+    "start" : 1723576251015,
+    "stop" : 1723576309356,
+    "duration" : 58341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "30d5922b643d5dee",
+  "name" : "Validacion de cerrar sesion exitosamente",
+  "time" : {
+    "start" : 1723574960109,
+    "stop" : 1723574991464,
+    "duration" : 31355
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c50f20c09b6bf264",
+  "name" : "Validación de pantalla de selección de motivo de anulación mediante busqueda de texto",
+  "time" : {
+    "start" : 1723573992300,
+    "stop" : 1723574057039,
+    "duration" : 64739
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "326c9ce4fe30dbf9",
+  "name" : "Valido las zonas de accion del desplegable \"Ordenar por\"",
+  "time" : {
+    "start" : 1723573360210,
+    "stop" : 1723573417531,
+    "duration" : 57321
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84ae47ced29d8400",
+  "name" : "Valido las zonas de accion de la pantalla de la pantalla de inicio de sesion",
+  "time" : {
+    "start" : 1723573113000,
+    "stop" : 1723573116669,
+    "duration" : 3669
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7fcd9b7571be0f91",
+  "name" : "Validacion de la ruta -- @1.4 ",
+  "time" : {
+    "start" : 1723575264937,
+    "stop" : 1723575311334,
+    "duration" : 46397
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "53ce618243cdd57a",
+  "name" : "Validación del texto \"25 clientes\"",
+  "time" : {
+    "start" : 1723574143295,
+    "stop" : 1723574145026,
+    "duration" : 1731
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d9311224726ae1ce",
+  "name" : "Validacion de mensaje de error por falta de contraseña",
+  "time" : {
+    "start" : 1723574850888,
+    "stop" : 1723574863260,
+    "duration" : 12372
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "17d28ff5f366b6a8",
+  "name" : "Entregar pedido de la factura",
+  "time" : {
+    "start" : 1723576367982,
+    "stop" : 1723576431390,
+    "duration" : 63408
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "666b405006974706",
+  "name" : "Validacion del contenido de la factura -- @1.1 ",
+  "time" : {
+    "start" : 1723575890247,
+    "stop" : 1723576010397,
+    "duration" : 120150
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "52bf1f872ed3bd3d",
+  "name" : "Valido la seccion de metodo de pago desde la factura -- @1.2 ",
+  "time" : {
+    "start" : 1723576491962,
+    "stop" : 1723576551546,
+    "duration" : 59584
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3594fa3015cddf41",
+  "name" : "Validación del sector \"Retornados\"",
+  "time" : {
+    "start" : 1723573733112,
+    "stop" : 1723573767645,
+    "duration" : 34533
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f6cc5bd2f1ddeb41",
+  "name" : "Validación de pantalla de selección de motivo de anulación",
+  "time" : {
+    "start" : 1723573671514,
+    "stop" : 1723573733112,
+    "duration" : 61598
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "65dcae826aa4431b",
+  "name" : "Validacion de la ruta -- @1.2 ",
+  "time" : {
+    "start" : 1723575171938,
+    "stop" : 1723575218279,
+    "duration" : 46341
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9a18645cdd69804e",
   "name" : "Validacion de Iniciar sesion exitosamente",
   "time" : {
-    "start" : 1723493786559,
-    "stop" : 1723493786560,
-    "duration" : 1
+    "start" : 1723574821590,
+    "stop" : 1723574837078,
+    "duration" : 15488
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4828b426b38d577",
+  "uid" : "69afc29b087d47ea",
+  "name" : "Validación de retornar pedido de factura",
+  "time" : {
+    "start" : 1723573767646,
+    "stop" : 1723573829309,
+    "duration" : 61663
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ccd1c66f28d1089c",
+  "name" : "Valido la seccion de metodo de pago \"Efectivo\"",
+  "time" : {
+    "start" : 1723576673465,
+    "stop" : 1723576734905,
+    "duration" : 61440
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fcf388140d8444e1",
+  "name" : "Validacion del contenido de la factura -- @1.3 ",
+  "time" : {
+    "start" : 1723576130957,
+    "stop" : 1723576251014,
+    "duration" : 120057
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "980693b6383bfcd8",
+  "name" : "Valido las zonas de accion del modal de Metodo de Pago",
+  "time" : {
+    "start" : 1723573483402,
+    "stop" : 1723573542425,
+    "duration" : 59023
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4177f5f49139b0cf",
+  "name" : "Validacion de error por falta de correo",
+  "time" : {
+    "start" : 1723574837079,
+    "stop" : 1723574850888,
+    "duration" : 13809
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0b0020f142dde29",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.3 ",
+  "time" : {
+    "start" : 1723574539923,
+    "stop" : 1723574658995,
+    "duration" : 119072
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "acf19795fd032076",
+  "name" : "Validacion de pantalla de transporte",
+  "time" : {
+    "start" : 1723574863261,
+    "stop" : 1723574871542,
+    "duration" : 8281
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "95f70f1bf23b222e",
+  "name" : "Validacion de opcion \"Retornados\"",
+  "time" : {
+    "start" : 1723575555666,
+    "stop" : 1723575641170,
+    "duration" : 85504
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5602062339a15595",
   "name" : "Validacion de pantalla de seleccion de motivo de rebaja",
   "time" : {
-    "start" : 1723493786592,
-    "stop" : 1723493786594,
-    "duration" : 2
+    "start" : 1723575702377,
+    "stop" : 1723575829201,
+    "duration" : 126824
   },
-  "status" : "skipped",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d80e5bd89cf63def",
+  "uid" : "eb578548ef4419a3",
+  "name" : "Validación de pantalla de selección de motivo de anulación mediante busqueda de numero",
+  "time" : {
+    "start" : 1723573928656,
+    "stop" : 1723573992300,
+    "duration" : 63644
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a04381d1dadb2638",
+  "name" : "Validación de pantalla \"Retornados\"",
+  "time" : {
+    "start" : 1723574205081,
+    "stop" : 1723574240520,
+    "duration" : 35439
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a027bc08c6ac566d",
+  "name" : "Valido las zonas de accion de los botones de la seccion Cuadratura",
+  "time" : {
+    "start" : 1723573417532,
+    "stop" : 1723573483400,
+    "duration" : 65868
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a20ef209c7ece70",
+  "name" : "Validacion de la ruta -- @1.3 ",
+  "time" : {
+    "start" : 1723575218279,
+    "stop" : 1723575264936,
+    "duration" : 46657
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "26ca8f765c9b7ca",
+  "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
+  "time" : {
+    "start" : 1723574726920,
+    "stop" : 1723574821589,
+    "duration" : 94669
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c7f9898e410245cc",
+  "name" : "Validacion del contenido de la factura -- @1.2 ",
+  "time" : {
+    "start" : 1723576010398,
+    "stop" : 1723576130956,
+    "duration" : 120558
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ae33c282cdec64bd",
+  "name" : "Validacion de opcion \"Entregados\"",
+  "time" : {
+    "start" : 1723575468180,
+    "stop" : 1723575555665,
+    "duration" : 87485
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f295f6485230194a",
+  "name" : "Validacion del precio total del pedido",
+  "time" : {
+    "start" : 1723576309356,
+    "stop" : 1723576367982,
+    "duration" : 58626
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c42f10dc89da9d4f",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Entregados\" -- @1.1 ",
+  "time" : {
+    "start" : 1723574301488,
+    "stop" : 1723574420154,
+    "duration" : 118666
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "191be9764ed42819",
+  "name" : "valido que el local está abierto",
+  "time" : {
+    "start" : 1723576984129,
+    "stop" : 1723577041915,
+    "duration" : 57786
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3a22b729191b1ce5",
+  "name" : "Acepto termino y condiciones",
+  "time" : {
+    "start" : 1723574991465,
+    "stop" : 1723575036468,
+    "duration" : 45003
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "36c9ea2ef8d3caa1",
+  "name" : "Validación de la pantalla \"Entregar pedidos\" en el sector \"Retornados\"",
+  "time" : {
+    "start" : 1723574240523,
+    "stop" : 1723574301487,
+    "duration" : 60964
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1a601632491caeb7",
+  "name" : "Validación de motivo de anulación",
+  "time" : {
+    "start" : 1723573600833,
+    "stop" : 1723573671514,
+    "duration" : 70681
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "88a700aad2b61309",
+  "name" : "Validacion del texto \"Entregada\"",
+  "time" : {
+    "start" : 1723574145026,
+    "stop" : 1723574189421,
+    "duration" : 44395
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "6c8524697209ccd0",
   "name" : "Valido las zonas de accion de la pantalla de la pantalla de vueltas disponibles",
   "time" : {
-    "start" : 1723493690194,
-    "stop" : 1723493690196,
-    "duration" : 2
+    "start" : 1723573116670,
+    "stop" : 1723573124338,
+    "duration" : 7668
   },
-  "status" : "skipped",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6cce195885c27506",
+  "name" : "Validacion de opciones en el modal al presionar \"Ver indicaciones en mapa\"",
+  "time" : {
+    "start" : 1723575888870,
+    "stop" : 1723575890247,
+    "duration" : 1377
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aac45e86d598da5d",
+  "name" : "Rebajar precio de un producto y seleccionar motivo de anulacion en la factura",
+  "time" : {
+    "start" : 1723575641172,
+    "stop" : 1723575702376,
+    "duration" : 61204
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e50ecd0b55149d00",
+  "name" : "Valido el numero de telefono del local",
+  "time" : {
+    "start" : 1723576869000,
+    "stop" : 1723576926190,
+    "duration" : 57190
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "92240b78e5a923e",
+  "name" : "valido el horario del cierre del local",
+  "time" : {
+    "start" : 1723576926192,
+    "stop" : 1723576984128,
+    "duration" : 57936
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "20f0dacf3d9034ef",
+  "name" : "Validación de pantalla \"Entregados\"",
+  "time" : {
+    "start" : 1723574189422,
+    "stop" : 1723574205080,
+    "duration" : 15658
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "15d24671cb6db4d6",
+  "name" : "Validacion de visualizacion de ruta de pedido",
+  "time" : {
+    "start" : 1723575829206,
+    "stop" : 1723575887140,
+    "duration" : 57934
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a4cd50fa14df1187",
+  "name" : "Valido el texto que se muestra en el sector de pago con Cheque",
+  "time" : {
+    "start" : 1723576808060,
+    "stop" : 1723576868999,
+    "duration" : 60939
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "aa8f090099203454",
+  "name" : "Valido las zonas de accion de la pantalla del menu lateral",
+  "time" : {
+    "start" : 1723573124339,
+    "stop" : 1723573155716,
+    "duration" : 31377
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "27604771898b99a7",
+  "name" : "Validacion de la pantalla Comenzar ruta",
+  "time" : {
+    "start" : 1723575036470,
+    "stop" : 1723575053737,
+    "duration" : 17267
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]
