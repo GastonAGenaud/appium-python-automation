@@ -62,7 +62,8 @@ Característica: Validaciones de UX/UI
 
   @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672
-    Dado Ingreso con el conductor a la aplicacion
+    Dado Reseteo la app
+    Y Ingreso con el conductor a la aplicacion
     Cuando selecciono la vuelta "Vuelta 1"
     Y hago click en el boton "Iniciar vuelta 1"
     Y elijo la ruta "El Deseo SPA"
@@ -92,7 +93,7 @@ Característica: Validaciones de UX/UI
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Pendientes"]/android.view.ViewGroup"
 
-  @regresion @validar1
+  @regresion
   Escenario: Valido las zonas de accion del desplegable "Ordenar por"
     Dado Reseteo la app
     Y Ingreso con el conductor a la aplicacion

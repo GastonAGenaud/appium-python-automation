@@ -1,17 +1,6 @@
 {
   "total" : 9,
   "items" : [ {
-    "uid" : "a798121a847b20988440e5fe2e56a8c9",
-    "name" : "Validaciones de UX/UI",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 2,
-      "skipped" : 0,
-      "passed" : 9,
-      "unknown" : 0,
-      "total" : 11
-    }
-  }, {
     "uid" : "08a9ea78c977b359dcf6bec3fcc05566",
     "name" : "Revisar pedido",
     "statistic" : {
@@ -21,6 +10,17 @@
       "passed" : 19,
       "unknown" : 0,
       "total" : 19
+    }
+  }, {
+    "uid" : "a798121a847b20988440e5fe2e56a8c9",
+    "name" : "Validaciones de UX/UI",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 11,
+      "unknown" : 0,
+      "total" : 11
     }
   }, {
     "uid" : "06bababefb3c8696475b9760b65f8227",

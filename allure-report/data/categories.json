@@ -1,37 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
   "name" : "categories",
-  "children" : [ {
-    "name" : "Test defects",
-    "children" : [ {
-      "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
-      "children" : [ {
-        "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672",
-        "uid" : "65bd1a129d2f6295",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723825668946,
-          "stop" : 1723825700278,
-          "duration" : 31332
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671",
-        "uid" : "8d950045f1e45d51",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723825700279,
-          "stop" : 1723825731689,
-          "duration" : 31410
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "c761cc1e1f67c97166ba2758d9324261"
-    } ],
-    "uid" : "bdbf199525818fae7a8651db9eafe741"
-  } ]
+  "children" : [ ]
 }
