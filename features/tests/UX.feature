@@ -21,9 +21,11 @@ Característica: Validaciones de UX/UI
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-terms-conditions"]"
     Y valido el tamaño de zona de accion del boton "//android.widget.TextView[@resource-id="title-menu-close-session"]"
 
+  @terminosyCondiciones
   Escenario: Valido las zonas de accion de la pantalla de Términos y condiciones
     Dado Ingreso con el conductor a la aplicacion
-    Cuando hago click en el boton "Terminos y condiciones"
+    Cuando hago click en el boton "Menu Lateral"
+    Y hago click en el boton "Terminos y condiciones"
 #    Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="scrollDownButton"]/com.horcrux.svg.SvgView"
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar términos y condiciones"]"
 
@@ -43,7 +45,7 @@ Característica: Validaciones de UX/UI
     Entonces valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornados"]/android.view.ViewGroup"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregados"]/android.view.ViewGroup"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Pendientes"]/android.view.ViewGroup"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar vuelta"]"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Iniciar vuelta 1"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Ruta sugerida"]"
 #    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@resource-id="Home-button-3"]/android.view.ViewGroup"
 
@@ -61,11 +63,13 @@ Característica: Validaciones de UX/UI
   @regresion
   Escenario: Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672
     Dado Ingreso con el conductor a la aplicacion
-    Cuando elijo la ruta "El Deseo SPA"
+    Cuando selecciono la vuelta "Vuelta 1"
+    Y hago click en el boton "Iniciar vuelta 1"
+    Y elijo la ruta "El Deseo SPA"
     Y selecciono la factura con numero "812345672"
     Entonces valido el tamaño de zona de accion del boton "(//android.view.ViewGroup[@content-desc="+"])[1]"
     Y valido el tamaño de zona de accion del boton "(//android.view.ViewGroup[@content-desc="-"])[1]"
-    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Aceptar"]"
+    Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Entregar factura"]"
     Y valido el tamaño de zona de accion del boton "//android.view.ViewGroup[@content-desc="Retornar factura"]"
     Y valido el tamaño de zona de accion del boton "(//android.widget.CheckBox[@resource-id="check-product"])[1]/android.view.ViewGroup/android.view.ViewGroup"
 #    Y valido el tamaño de zona de accion del boton "//com.horcrux.svg.SvgView[@resource-id="closeIcon"]"

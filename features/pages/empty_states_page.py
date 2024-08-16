@@ -27,7 +27,9 @@ class EmptyStatesPage(Page):
                                 '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/com.horcrux.svg.SvgView/com'
                                 '.horcrux.svg.GroupView/com.horcrux.svg.PathView[1]')
     rebajados_seccion = (MobileBy.ACCESSIBILITY_ID, 'Rebajados')
-    producto_en_entregados = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="El Deseo SPA, Avda Andres Bello 2447, Abierto, Cierra a las 19:30, Productos , 30, 2 métodos de pago, $35.000"]')
+    producto_en_entregados = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="El Deseo SPA, Avda Andres '
+                                              'Bello 2447, Abierto, Cierra a las 19:30, Productos , 20 caj - 10 pac, '
+                                              '2 métodos de pago, $35.000"]')
 
     def productos_en_entregados(self):
         self.implicit_wait_visible(self.producto_en_entregados)

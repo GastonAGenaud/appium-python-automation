@@ -5,55 +5,11 @@
     "name" : "Validaciones de UX/UI",
     "statistic" : {
       "failed" : 0,
-      "broken" : 4,
-      "skipped" : 0,
-      "passed" : 7,
-      "unknown" : 0,
-      "total" : 11
-    }
-  }, {
-    "uid" : "d7d5217b489d5c22cd53910c0b118662",
-    "name" : "iniciar sesión",
-    "statistic" : {
-      "failed" : 0,
       "broken" : 2,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 9,
       "unknown" : 0,
-      "total" : 8
-    }
-  }, {
-    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
-    "name" : "Entregar pedido",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 5,
-      "unknown" : 0,
-      "total" : 6
-    }
-  }, {
-    "uid" : "b6bf0ae5120f106aa3f19ec552e14e38",
-    "name" : "Cuadrar",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 3,
-      "unknown" : 0,
-      "total" : 4
-    }
-  }, {
-    "uid" : "aa27a4883f03339e6ee080f8d9d5a976",
-    "name" : "Estados Vacíos",
-    "statistic" : {
-      "failed" : 0,
-      "broken" : 1,
-      "skipped" : 0,
-      "passed" : 1,
-      "unknown" : 0,
-      "total" : 2
+      "total" : 11
     }
   }, {
     "uid" : "08a9ea78c977b359dcf6bec3fcc05566",
@@ -87,6 +43,50 @@
       "passed" : 8,
       "unknown" : 0,
       "total" : 8
+    }
+  }, {
+    "uid" : "d7d5217b489d5c22cd53910c0b118662",
+    "name" : "iniciar sesión",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 8,
+      "unknown" : 0,
+      "total" : 8
+    }
+  }, {
+    "uid" : "c4b5d869e3338dcc5b69a65fd3dc522a",
+    "name" : "Entregar pedido",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "b6bf0ae5120f106aa3f19ec552e14e38",
+    "name" : "Cuadrar",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 4,
+      "unknown" : 0,
+      "total" : 4
+    }
+  }, {
+    "uid" : "aa27a4883f03339e6ee080f8d9d5a976",
+    "name" : "Estados Vacíos",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
     }
   }, {
     "uid" : "bed46d1c55ea649d183f8a5d80b9e6bc",

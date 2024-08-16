@@ -52,6 +52,6 @@ Característica: Cuadrar
         Y hago click en el boton "Entregar factura"
         Y selecciono el metodo de pago "Transferencia"
         Y hago click en el boton "Confirmar"
-        Y hago click en el boton "Confirmar 2"
+        Y hago click en el boton "Confirmar widget"
         Entonces valido el texto "Entregado"
 

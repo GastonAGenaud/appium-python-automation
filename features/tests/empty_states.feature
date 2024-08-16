@@ -7,7 +7,7 @@ Característica: Estados Vacíos
         Dado Reseteo la app
         Y Ingreso con el conductor a la aplicacion
         Cuando selecciono la vuelta "Vuelta 1"
-        Y "Iniciar vuelta 1"
+        Y hago click en el boton "Iniciar vuelta 1"
         Y selecciono "Entregados"
         Entonces valido la pantalla de "Entregados"
 

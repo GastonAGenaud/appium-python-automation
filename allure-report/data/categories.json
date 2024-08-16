@@ -6,123 +6,31 @@
     "children" : [ {
       "name" : "selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.\nStacktrace:\nNoSuchElementError: An element could not be located on the page using the given search parameters.\n    at AndroidUiautomator2Driver.findElOrEls (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-android-driver\\lib\\commands\\find.ts:86:11)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at AndroidUiautomator2Driver.findElOrElsWithProcessing (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:60:12)\n    at AndroidUiautomator2Driver.findElement (C:\\Users\\Rogo_\\node_modules\\appium-uiautomator2-driver\\node_modules\\@appium\\base-driver\\lib\\basedriver\\commands\\find.ts:75:12)\n",
       "children" : [ {
-        "name" : "Valido las zonas de accion de la pantalla del menu lateral",
-        "uid" : "aa8f090099203454",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723573124339,
-          "stop" : 1723573155716,
-          "duration" : 31377
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla de Términos y condiciones",
-        "uid" : "4124f64788877528",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723573155717,
-          "stop" : 1723573187046,
-          "duration" : 31329
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Valido las zonas de accion de la pantalla de la seccion \"Pendientes\"",
-        "uid" : "6675bd17b51a5738",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723573187048,
-          "stop" : 1723573234945,
-          "duration" : 47897
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
         "name" : "Valido las zonas de accion de la pantalla del Pedido de la Factura N 812345672",
-        "uid" : "117a0b5ff6cef9b5",
+        "uid" : "65bd1a129d2f6295",
         "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
         "status" : "broken",
         "time" : {
-          "start" : 1723573277650,
-          "stop" : 1723573311868,
-          "duration" : 34218
+          "start" : 1723825668946,
+          "stop" : 1723825700278,
+          "duration" : 31332
         },
         "flaky" : false,
         "parameters" : [ ]
       }, {
-        "name" : "Valido que un pedido entregado este en el sector \"Entregados\"",
-        "uid" : "26ca8f765c9b7ca",
+        "name" : "Valido las zonas de accion de la pantalla de confirmar entrega de factura N 812345671",
+        "uid" : "8d950045f1e45d51",
         "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
         "status" : "broken",
         "time" : {
-          "start" : 1723574726920,
-          "stop" : 1723574821589,
-          "duration" : 94669
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Validacion de cerrar sesion exitosamente",
-        "uid" : "30d5922b643d5dee",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723574960109,
-          "stop" : 1723574991464,
-          "duration" : 31355
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      }, {
-        "name" : "Acepto termino y condiciones",
-        "uid" : "3a22b729191b1ce5",
-        "parentUid" : "c761cc1e1f67c97166ba2758d9324261",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723574991465,
-          "stop" : 1723575036468,
-          "duration" : 45003
+          "start" : 1723825700279,
+          "stop" : 1723825731689,
+          "duration" : 31410
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
       "uid" : "c761cc1e1f67c97166ba2758d9324261"
-    }, {
-      "name" : "ValueError: No se encontro el boton de 'Confirmar 2'\n",
-      "children" : [ {
-        "name" : "Validacion del texto \"Entregada\"",
-        "uid" : "88a700aad2b61309",
-        "parentUid" : "dbe5008715c2666d2e7a22062f6b5b42",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723574145026,
-          "stop" : 1723574189421,
-          "duration" : 44395
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "dbe5008715c2666d2e7a22062f6b5b42"
-    }, {
-      "name" : "\nYou can implement step definitions for undefined steps with these snippets:\n\n@when(u'\"Iniciar vuelta 1\"')\ndef step_impl(context):\n    raise NotImplementedError(u'STEP: When \"Iniciar vuelta 1\"')\n\n",
-      "children" : [ {
-        "name" : "Validación de pantalla \"Entregados\"",
-        "uid" : "20f0dacf3d9034ef",
-        "parentUid" : "eaca1fd600a76275cd8a65bb14b71d5a",
-        "status" : "broken",
-        "time" : {
-          "start" : 1723574189422,
-          "stop" : 1723574205080,
-          "duration" : 15658
-        },
-        "flaky" : false,
-        "parameters" : [ ]
-      } ],
-      "uid" : "eaca1fd600a76275cd8a65bb14b71d5a"
     } ],
     "uid" : "bdbf199525818fae7a8651db9eafe741"
   } ]

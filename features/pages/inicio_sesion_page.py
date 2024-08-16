@@ -1,9 +1,12 @@
+from appium.webdriver.extensions.android.nativekey import AndroidKey
+
 from features.pages.base_page import Page
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.support.ui import WebDriverWait
 from features.pages.ux_page import Page
+
 
 class InicioSesionPage(Page):
     correo_campo = (MobileBy.XPATH, '//android.widget.EditText[contains(@resource-id, "customTextInput")][1]')
@@ -24,16 +27,18 @@ class InicioSesionPage(Page):
                                         '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
                                         '.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view'
                                         '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
-                                        '.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.view'
+                                        '.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view'
                                         '.ViewGroup/android.view.ViewGroup[1]/com.horcrux.svg.SvgView')
     cerrar_sesion_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-session"]')
     si_eliminar_mi_cuenta_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Sí, eliminar mi cuenta"]')
-    terminos_y_condiciones_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-terms-conditions"]')
+    terminos_y_condiciones_btn = (MobileBy.XPATH, '//android.widget.TextView['
+                                                  '@resource-id="title-menu-terms-conditions"]')
     aceptar_terminos_y_condiciones_btn = (MobileBy.ACCESSIBILITY_ID, 'Aceptar términos y condiciones')
     scroll_down_icono = (MobileBy.XPATH, '//android.view.ViewGroup[@resource-id="scrollDownButton"]')
     eliminar_cuenta_btn = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-delete-account"]')
-    cerrar_sesion_modal_btn = (MobileBy.XPATH, '//android.widget.Button[@resource-id="android:id/button1"]')
-    mensaje_exito_termino_condiciones = (MobileBy.XPATH, '//android.widget.TextView[@text="Aceptar términos y condiciones"]')
+    cerrar_sesion_modal_btn = (MobileBy.XPATH, '//android.view.ViewGroup[@content-desc="Cerrar sesión"]')
+    mensaje_exito_termino_condiciones = (
+    MobileBy.XPATH, '//android.widget.TextView[@text="Aceptar términos y condiciones"]')
     cuenta_eliminada_txt = (MobileBy.XPATH, '//android.widget.TextView[@resource-id="title-menu-close-title-app"]')
     cerrar_aplicacion_btn = (MobileBy.ACCESSIBILITY_ID, 'Cerrar aplicación')
 
